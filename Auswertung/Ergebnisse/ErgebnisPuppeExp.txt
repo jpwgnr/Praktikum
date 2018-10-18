@@ -1,0 +1,2 @@
+Trägheitsmoment Position 1: -0.001444+/-0.000006
+  Trägheitsmoment Position 2:-0.001182+/-0.000011

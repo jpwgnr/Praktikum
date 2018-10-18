@@ -1,0 +1,5 @@
+Y-Abschnitt: 5.0+/-0 
+ Trägheitsmoment m1= 0.0001367+/-0.0000004 
+ Trägheitsmoment m2= 0.0001361+/-0.0000004 
+ Winkelrichtgröße D= 0.014088+/-0.000027 
+ Trägheitsmoment Id= 0.0015115+/-0.0000035
