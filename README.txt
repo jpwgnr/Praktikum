@@ -1,4 +1,3 @@
-These are our protocols for the experimetal physics course.
+Protocols and other stuff.
 
-From Karina and Jan
  
