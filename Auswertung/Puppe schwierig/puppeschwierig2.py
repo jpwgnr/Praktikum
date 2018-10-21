@@ -79,6 +79,6 @@ a_6= unp.uarray(0.00945, 0.0005)
 #Satz von Steiner in Position 1
 Iges= Ikug[0]+ Ikug[4] + Izyl2[0]+ Izyl2[1]+ Izyl2[2] + Izyl2[7] + 2*(Ikug[2]+mkug[2]*a_1**2)+2*(Izyl2[3]+mzyl[3]*a_2**2)+2*(Ikug[1]+mkug[1]*a_3**2)+2*(Izyl[4]+mzyl[4]*a_4**2)+2*(Ikug[3]+ mkug[3]*a_5**2)+2*(Ikug[5]+mkug[5]*a_6**2)+2*(Izyl[5]+mzyl[5]*a_6**2)+2*(Ikug[6]+mkug[6]*a_6**2)+2*(Izyl[6]+mzyl[6]*a_6**2)+2*(Ikug[7]+mkug[7]*a_6**2)+2*(Ihzyl[1]+mhzyl[1]*a_6**2)+2*(Ihzyl[0]+mhzyl[0]*a_1**2)+Ihkug 
 
-file = open("ErgebnisPuppe1.txt", "w")
+file = open("ErgebnisPuppe1schwierig.txt", "w")
 file.write("Volumen Gesamt: {}\n I Gesamt Position 1: {}".format(Vges, Iges))
 file.close()

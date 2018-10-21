@@ -46,5 +46,5 @@ a_2= unp.uarray(0.0246, 0.00005)
 
 Iges= Ikug+ Izyl[2]+2*(Izyl[0]+mzyl[0]*(a_1**2))+2*(Izyl[3]+mzyl[3]*(a_2**2))
 
-file = open("ErgebnisPuppe.txt", "w")
-file.write("Volumen Gesamt: {}\n I Zylinder: {}\n I Kugel: {}\n I Gesamt: {}".format(Vges, Izyl, Ikug, Iges))
+file = open("ErgebnisPuppeeinfach.txt", "w")
+file.write("Volumen Gesamt: {} \n I Gesamt: {}".format(Vges, Iges))
