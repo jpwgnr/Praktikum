@@ -1,0 +1,4 @@
+Average of T: 20.036+/-0.012 
+ Average of L: 0.6860+/-0.0008 
+ Average of d= 0.0001+/-0 
+ Value G: (9.224+/-0.016)e+11
