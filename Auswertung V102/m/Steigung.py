@@ -8,7 +8,7 @@ slope, intercept, r_value, p_value, std_err= stats.linregress(x,y)
 
 y2= slope*x+intercept
 
-plt.plot(x,y)
+plt.plot(x,y, "xr")
 plt.plot(x, y2)
 plt.savefig("Steigung.pdf")
 

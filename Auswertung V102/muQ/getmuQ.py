@@ -8,7 +8,7 @@ def functionQ(E, mu):
     return E/(3*(1-2*mu))
 
 E= ufloat(210e11, 0) 
-G= unp.uarray(9.5e22,0.5e22)
+G= unp.uarray(9.5e10,0.5e10)
 
 mu= functionmu(E, G)
 Q= functionQ(E, mu)

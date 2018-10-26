@@ -14,14 +14,14 @@ data_T=np.genfromtxt("valuesT.txt", unpack= True)
 # L in cm transform to m
 data_L=np.genfromtxt("valuesL.txt", unpack= True)*1e-2
 # d in micrometer transform to meter
-data_d=np.genfromtxt("valuesd.txt", unpack= True)*1e-6
+data_d=np.genfromtxt("valuesd.txt", unpack= True)*1e-3
 
 #Average of T 
 T= ufloat(np.mean(data_T), np.std(data_T)) 
 #Average of L
 L= ufloat(np.mean(data_L), np.std(data_L)) 
 #Average of d 
-d= ufloat(np.mean(data_d), np.std(data_d)) # Besser: ufloat(0.001, 0) 
+d= ufloat(np.mean(data_d), np.std(data_d))  
 #
 G= functionG(T, mk, Rk, L, d/2)
 
