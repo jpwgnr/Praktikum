@@ -30,7 +30,7 @@ file = open("ErgebnisG.txt", "w")
 
 file.write("Average of T: {} \n Average of L: {} \n Average of d= {} \n Value G: {}".format(T, L, d, G))
 
-#Experimentalwert: 9,3 +-0.5 
+#Experimentalwert: 9,5 +-0.5 
 #Literaturwert: 79,3 GPa [1e9 kg/(m*s²)]
 file.close()
 
