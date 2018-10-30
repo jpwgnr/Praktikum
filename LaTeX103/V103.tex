@@ -1,0 +1,93 @@
+\input{header.tex}
+\begin{document}
+\section{Ziel}
+Ziel dieses Versuches ist es, die Elastizitätsmodule
+verschiedener Stäbe durch Messung ihrer Biegung
+zu bestimmen.
+\section{Theorie}
+%Spannung
+Die Spannung ist die Kraft auf einen Körper pro Flächeneinheit.
+Die Komponente, die senkrecht zur Oberfläche steht,
+ist die Normalspannung $\sigma$. Ihre oberflächenparallele
+Komponente heißt Tangentialspannung.
+%Hookesches Gesetz
+Das Hookesche Gesetz stellt den Zusammenhang zwischen
+der Spannung $\sigma$, die am Körper angreift, und der
+Deformation des Körpers dar:
+\begin{equation}
+\sigma = E \frac{\Delta L}{L}
+\label{eqn:Hooke}
+\end{equation}
+%Elastizitätsmodul
+$E$ ist dabei das Elastizitätsmodul.
+Das Elastizitätsmodul ist eine Materialkonstante, die
+anhand der Deformation eines Körpers bestimmt werden kann.
+%Biegung
+Eine Art der Deformation ist die Biegung. Sie entsteht, wenn
+eine Kraft, wie in Abbildung 1 und in Abbildung 2 gezeigt, auf einen Körper wirkt. %Abbildung 1 erwähnen
+%Berechnung der Durchbiegung, einseitig
+Zunächst wird die Berechnung der Biegung eines Stabes bei einseitiger
+Einspannung beschrieben. %Abbildung 1
+Die Durchbiegung $D(x)$ bezeichnet die Verschiebung eines Oberflächenpunktes
+an der Stelle x zwischen dem belasteten und unbelasteten Zustand des Stabes.
+Es wird eine Drehmomentgleichung aufgestellt, um $D(x)$ zu bestimmen.
+Die Zug- und Druckspannungen, die an der Querschnittsfläche $Q$ angreifen,
+sind entgegesetzt gleich und bewirken deshalb ein Drehmoment $M_{\sigma}$:
+\begin{equation}
+M_{\sigma} = \int_{Q} y \sigma(y) dq
+\end{equation}
+$y$ ist der Abstand des Flächenelementes $dq$ von der neutralen
+Faser. Die neutrale Faser ist die Fläche, in der keine Spannungen
+auftreten. Ihre Länge ändert sich bei der Biegung folglich nicht.
+Ein weiteres Drehmoment $M_{F}$ entsteht durch die Kraft auf einen senkrecht
+zur Stabachse stehenden Querschnitt. Es verdreht den Querschnitt aus 
+seiner ursprünglichen vertikalen Lage.
+Die Deformation des Körpers stellt sich so ein, dass die Drehmomente an
+jeder Stelle $x$ übereinstimmen:
+\begin{equation}
+M_{F} = M_{\sigma}.
+\end{equation}
+Dabei ist
+\begin{equation}
+M_{F} = F (L-x),
+\end{equation}
+da die Kraft $F$ über den Hebelarm $L-x$ an $Q$ angreift.
+Damit ist das Gleichgewicht der Drehmomente durch
+\begin{equation}
+\int_{Q} y \sigma(y) dq = F(L-x)
+\label{eqn:Momente}
+\end{equation}
+gegeben.
+Mit dem Hookeschen Gesetz \eqref{eqn:Hooke} wird die Normalspannung
+$\sigma(y)$ mittels
+\begin{equation}
+\sigma(y) = E \frac{\delta x}{\Delta x}
+\end{equation}
+berechnet. Hier ist $\Delta x$ die Länge eines kurzen Stabstücks
+und $\delta x$ die Längenänderung der Faser.
+Es gilt außerdem
+\begin{equation}
+\delta x = y \Delta \phi = y \frac{\Delta x}{R},
+\end{equation}
+wobei $R$ der Krümmungsradius der Faser bei $x$ ist.
+Damit ist
+\begin{equation}
+\sigma(y) = E \frac{y}{R} = E y \frac{d^2D}{dx^2},
+\end{equation}
+da für geringe Kurvenkrümmungen
+\begin{equation}
+\frac{1}{R} = \frac{d^2D}{dx^2} %nicht gleich sondern ungefähr!
+\end{equation}
+gilt, falls
+\begin{equation}
+(\frac{dD}{dx})^2 << 1
+\end{equation}
+ist. Für \eqref{eqn:Momente} ergibt sich damit:
+\begin{equation}
+E \frac{d^2D}{dx^2} \int_{Q}
+\end{equation}
+%Berechnung der Durchbiegung, zweiseitig
+%D(x)=D_M(x)-D_0(x)
+
+%Diskussion: Wert hat sich bei Erschütterung geändert
+\end{document}

@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[1] Config.pm:305> INFO - Logfile is 'V102.blg'
+[58] biber-darwin:313> INFO - === Sa Okt 27, 2018, 22:27:56
+[91] Biber.pm:371> INFO - Reading 'V102.bcf'
+[230] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[244] Utils.pm:193> WARN - The file 'V102.bcf' does not contain any citations!
+[255] bbl.pm:617> INFO - Writing 'V102.bbl' with encoding 'UTF-8'
+[256] bbl.pm:720> INFO - Output to V102.bbl
+[257] Biber.pm:110> INFO - WARNINGS: 1

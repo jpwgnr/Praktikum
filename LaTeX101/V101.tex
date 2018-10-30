@@ -1,0 +1,334 @@
+\input{header.tex}
+
+\begin{document}
+    \section{Ziel}
+    Bei diesem Versuch soll das
+    Trägheitsmoment zweier verschiedener
+    Körper, sowie die Trägheitsmomente
+    einer Modellpuppe in zwei verschiedenen
+    Körperhaltungen gemessen werden.
+    Die experimentellen Werte sollen
+    jeweils mit theoretischen Ergebnissen
+    verglichen und der Satz von Steiner
+    verifiziert werden.
+
+    \section{Theorie}
+    %Drehmoment
+    Wirkt auf einen Körper eine Kraft
+    im Abstand $\vec{r}$ von der Achse, entsteht ein auf
+    diesen wirkendes Drehmoment $\vec{M} = \vec{F} \times \vec{r}$.
+    Das Drehmoment bei Rotationsbewegungen ist das Analogon zur
+    Kraft bei Translationsbewegungen.
+    Es lässt sich auch durch die Winkelrichtgröße $D$ und den
+    Winkel der Auslenkung $\phi$ ausdrücken:
+
+    $M = D \cdot \phi$
+
+    Wenn die Kraft $\vec{F}$ senkrecht zu dem Hebelarm $\vec{r}$
+    steht, kann man die Winkelrichtgröße berechnen durch
+
+    $D = \frac{Fr}{\phi}$.
+
+    %Schwingungsdauer
+    Bei schwingungsfähigen Systemen wird
+    beim Loslassen eines um den Winkel $\phi$
+    ausgelenkten Körpers eine harmonische
+    Schwingung ausgeführt. Die Schwingungsdauer
+    wird folgendermaßen bestimmt:
+
+    $T = 2\pi \sqrt{\frac{I}{D}}$.
+
+    Dabei ist $I$ das Trägheitsmoment des Körpers.
+    Dieses gesamte Trägheitsmoment setzt sich aus den
+    Trägheitsmomenten $I_D$ der Drillachse und $I_K$ des
+    Körpers zusammen. Für $I_K$ ergibt sich dann
+
+    $I_K = \frac{T^2D}{4 \pi^2} - I_D$.
+
+    %Trägheitsmoment
+    Das Trägheitsmoment bei Rotationsbewegungen
+    ist das Analogon zur Masse bei Translationsbewegungen. Es wird im
+    Allgemeinen durch das folgende Integral bestimmt:
+
+
+    $I = \int \vec{r}^2_{\perp} dm$.
+
+    
+    %Satz von Steiner
+    Wenn die Drehachse parallel zu der
+    Achse, die durch den Schwerpunkt des
+    Körpers geht, verschoben ist, berechnet
+    man das Trägheitsmoment bezüglich
+    dieser Drehachse mit dem Satz
+    von Steiner:
+
+
+    $I = I_S + m \cdot a^2$.
+
+    $I_S$ ist das Trägheitsmoment bezüglich der Drehachse durch 
+    den Schwerpunkt des Körpers und $m$ die Masse des Körpers.
+    $a$ ist der Abstand der beiden Achsen.
+
+    %Formeln herleiten
+    Die im Versuch verwendeten Körper haben die
+    Trägheitsmomente
+
+    $I_{Kugel} = \frac{2}{5} m r^2$
+
+    $I_{Zylinder} = \frac{1}{2} m r^2$.
+
+    Für die Berechnung der Puppe wird für die einfache und schwierige Variante für beide
+    Körperhaltungen jeweils der Satz von Steiner verwendet:
+
+    $I_{ges} = \sum_{i=1}^N I_i + a_i^2 \cdot m_i$.
+
+    Dabei ist $I_i$ jeweils das Trägheitsmoment eines einzelnen Körperteils.
+    $m_i$ ist seine Masse und $a_i$ sein Abstand zur Drehachse.
+    Bei der Berechnung der einfachen Variante wird die Puppe als ein aus
+    fünf Zylindern und einer Kugel bestehenden Körper angenommen.
+    Für die Berechnung der schwierigeren Vatriante wird der Körper in
+    19 Zylinder bzw. Kugeln eingeteilt.
+
+    $I_{Pos1}$ ist im Folgenden das gesamte Trägheitsmoment der Modellpuppe
+    in der ersten Körperhaltung. $I_{Pos2}$ ist das gesamte
+    Trägheitsmoment der Modellpuppe in der zweiten Körperhaltung.
+    $I_{Pos1exp}$ und $I_{Pos2exp}$ sind die dazugehörigen experimentell
+    errechneten Werte.
+
+    Die Massen der einzelnen Körperteile der Puppe werden durch das Verhältnis
+    zum Volumen bestimmt:
+
+    $m_{i} = \frac{V_{i}}{V_{ges}} \cdot m_{ges}$
+
+    $V_{i}$ ist das Volumen eines einzelnen Körperteil, $V_{ges}$ das gesamte Volumen der Puppe, $m_{ges}$
+    die Masse der Puppe und $m_{i}$ die Masse eines einzelnen Körperteils.
+    Das Volumen der Körperteile (Kugeln und Zylinder) kann folgendermaßen bestimmt werden:
+
+    $V_{Kugel} = \frac{4}{3} \pi r^3$
+
+    $V_{Zylinder} = \pi r^2 h$.
+
+    \section{Durchführung}
+    Um das Trägheitsmoment $I$ eines Körpers zu
+    bestimmen, wird der Körper auf einer Drillachse
+    befestigt. Der Körper wird in Schwingung versetzt.
+    Durch die Periodendauer $T$, die Winkelrichtgröße
+    $D$ und das Eigenträgheitsmoment $I_D$ der Drillachse lässt
+    sich das Trägheitsmoment des Körpers bestimmen.
+
+    SKIZZE
+
+    %Winkelrichtgröße D
+    Zunächst muss die Winkelrichtgröße $D$ bestimmt
+    werden. Um diese zu bestimmen,
+    wird eine Federwaage an eine nahezu masselose
+    Metallstange, die mittig an der Drillachse befestigt wird, eingehakt und um den Winkel
+    $\phi$ ausgelenkt. Die Federwaage wird senkrecht
+    zum Radius der Kreisbahn der Metallstange
+    gehalten. Die Kraft wird für zehn verschiedene
+    Auslenkwinkel $\phi$ gemessen.
+
+    %Eigenträgheitsmoment I_D
+    Um das Eigenträgheitsmoment $I_D$ der Drillachse
+    zu bestimmen, werden zwei Gewichte auf
+    der Metallstange befestigt. Die Stange mit
+    Gewichten wird ausgelenkt und losgelassen.
+    Die zehnfache Schwingungsdauer $T$ wird für zehn verschiedene
+    gemessene Abstände $a$ der Gewichte zur Drillachse gemessen.
+    Die Massen der Gewichte werden durch eine
+    fehlerfreie Waage bestimmt.
+
+    %Trägheitsmomente zwei Körper
+    Die Trägheitsmomente der zwei Körper werden
+    bestimmt, indem die Körper jeweils auf der
+    Drillachse befestigt und ausgelenkt werden.
+    Die zehnfache Schwingungsdauer wird zehn mal gemessen.
+    Die Massen der beiden Körper werden wieder
+    durch eine fehlerfreie Waage gemessen.
+    Durchmesser und Höhe werden mit einer Schieblehre
+    bestimmt.
+
+    %Trägheitsmomente Puppe
+    Zuletzt soll das Trägheitsmoment einer
+    Modellpuppe in zwei verschiedenen
+    Körperhaltungen bestimmt werden.
+    Die Puppe wird durch einen an ihr befestigten Stab auf der
+    Drillachse befestigt und ausgelenkt. Die
+    zehnfache Schwingungsdauer wird jeweils
+    zehn mal für beide Körperhaltungen gemessen.
+    Das Gesamtgewicht der Puppe wird gewogen.
+    Die Körperteile der Puppe werden einzeln vermessen.
+
+    \section{Fehlerrechnung}
+    %Mittelwert
+    Der Mittelwert einer Stichprobe von $N$ Werten
+    wird durch
+
+    $\overline{x} = \frac{1}{N} \sum_{i=1}^N x_i$
+
+    bestimmt.
+
+    %Standardabweichung
+    Die Standardabweichung der Stichprobe wird berechnet mit:
+
+    $\sigma_x = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}$.
+
+    %Gauß'sche Fehlerfortpflanzung
+    Das sogenannte Gauß'sche Fehlerfortpflanzungsgesetz
+    ist gegeben durch
+
+    $\sigma_f = \sqrt{\sum_{i=1}^N (\frac{\partial f}{\partial x_i} \sigma_i)^2}$.
+
+    Dabei ist $f$ eine von unsicheren Werten $x_i$
+    abhängige Funktion mit Standardabweichungen $\sigma_i$.
+
+    %Lineare Regression
+    Bei der linearen Regression wird die Gerade
+    $y(x) = mx + b$
+    durch das Streudiagramm gelegt.
+    Dabei ist $m$ die Steigung mit
+    $m = \frac{\overline{xy} - \overline{x} \cdot \overline{y}}{\overline{x^2} - \overline{x}^2}$
+    und $b$ der $y$-Achsenabschnitt mit
+    $b = \frac{\overline{y} \cdot \overline{x^2} - \overline{xy} \cdot \overline{x}}{\overline{x^2} - \overline{x}^2}$.
+
+    (Wenn im Folgenden Mittelwert, Standardabweichung
+    oder die Standardabweichung von Funktionen unsicherer
+    Größen berechnet werden, werden diese Formeln
+    verwendet.)
+    Zur Auswertung und Berechnung der Fehler
+    wurde Python, im Speziellen uncertainties.unumpy
+    und numpy, benutzt.
+
+    \section{Auswertung}
+
+    \subsection{Bestimmung der Apparatenkonstanten}
+    Im Folgenden werden die Winkelrichtgröße $D$ und das Eigenträgheitsmoment
+    $I_D$ der Drillachse aus den gemessenen Werten berechnet.
+
+    \subsubsection{Bestimmung der Winkelrichtgröße}
+    Die Messwerte, die zur Bestimmung der Winkelrichtgröße $D$ verwendet werden,
+    sind in Tabelle 1 aufgelistet. Bei der Messung wurde die 
+    Federwaage in dem Abstand $r = 25,9 cm$ gehalten.
+
+    HIER TABELLE 1
+
+    Die Messwerte werden gemittelt und in die Formel für $D$ eingesetzt.
+    Für die Winkelrichtgröße ergibt sich
+    $D = (0,014088 \pm 0,000027)Nm$.
+
+    \subsubsection{Bestimmung des Eigenträgheitsmoments der Drillachse}
+    Zunächst werden aus der Periodendauer $T$ der Schwingung der Massen
+    und ihrem Abstand $a$ von der Drehachse ihre Quadrate gebildet, um
+    eine lineare Regression von $T^2$ gegen $a^2$ zu bilden.
+    Mit der Schwingungsgleichung und $I = I_D + I_{ges1} + I_{ges2}$, wobei
+    aufgrund des Steinerschen Satzes
+    $I_{ges1} = I_1 + m_1 r_1^2$ und $I_{ges2} = I_2 + m_2 r_2^2$ sind, ergibt sich
+    für $I_D$ die Gleichung
+
+    $I_D = T^2 \cdot \frac{D}{4\pi^2} -I_{ges1} -I_{ges2}$.
+
+    $T^2$ ist der $y$-Achsenabschnitt.
+    $r$ ist der Abstand von der Drehachse bis zum Schwerpunkt
+    der als Punktmassen angenommenen Zylinder.
+    Die lineare Regression der Messwerte aus Tabelle 2 ist in
+    Abbildung 2 dargestellt.
+
+    HIER TABELLE 2
+
+    HIER GRAPH
+
+    Das Eigenträgheitsmoment $I_D$ der Drillachse ist somit
+    $I_D = (9,762 \pm 0,025) \cdot 10^-4 kg m^2$.
+
+    \subsection{Bestimmung der Trägheitsmomente zweier Körper}
+    Die Trägheitsmomente zweier Körper sollen experimentell bestimmt
+    und mit den theoretisch berechneten Werten verglichen werden.
+    Die verwendeten Körper sind ein Zylinder und eine Kugel.
+
+    \subsubsection{Bestimmung des Trägheitsmoments eines Zylinders}
+    Die Maße des Zylinders sind $h_Z = 138 mm$ und $d_Z = 77,95 mm$.
+    Seine Masse ist $m_Z = 1005,28g$.
+    Die gemessenen zehnfachen Periodendauern sowie die Periodendauern
+    sind in Tabelle 3 dargestellt.
+
+    HIER TABELLE 3
+
+    Die Werte werden gemittelt. Mit der mittleren Schwingungsdauer $T_{Zyl} = (1,195 \pm 0,016) s$ und mit $I_{Zyl,exp} = \frac{DT_{Zyl}^2}{4\pi^2} -I_D$ wird das Trägheitsmoment zu
+    $I_{Zyl,exp} = (-4,67 \pm 0,14) \cdot 10^-4 kg m^2$ berechnet.
+    Der theoretisch berechnete Wert für das Trägheitsmoment eines
+    Zylinders ist $I_{Zyl,theo} = (7,635 \pm 0,010) \cdot 10^-4 kg m^2$.
+
+
+    \subsubsection{Bestimmung des Trägheitsmoments einer Kugel}
+    Der Durchmesser der Kugel beträgt $d_K = 132,95 mm$. Die Masse
+    der Kugel ist $m_K = 811,9 g$.
+    Die gemessenen zehnfachen Periodendauern und die Periodendauern
+    sind in Tabelle 4 aufgelistet.
+
+    HIER TABELLE 4
+
+    Mit der gemittelten Periodendauer $T_{Kug} = (1,687 \pm 0,016) s$ und mit $I_{Kug,exp} = \frac{DT_{Kug}^2}{4\pi^2} - I_D$
+    ergibt sich für das Trägheitsmoment der Kugel $I_{Kug,exp} = (3,9 \pm 1,9) \cdot 10^-5 kg m^2$.
+    Der theoretisch errechnete Wert ist $I_{Kug,theo} = (1,435 \pm 0,001) \cdot 10^-3 kg m^2$.
+
+    \subsection{Bestimmung der Trägheitsmomente einer Modellpuppe}
+    Das Trägheitsmoment einer Modellpuppe soll in zwei verschiedenen
+    Körperhaltungen bestimmt werden und mit den theoretisch berechneten
+    Werten verglichen werden.
+    Die Abmessungen der einzelnen Körperteile für die einfache Variante
+    sind in Tabelle 5 und die für die schwierige Variante in Tabelle 6 dargestellt.
+
+    TABELLE 5
+
+    TABELLE 6
+
+    Im Folgenden wird die einfache Variante als $Var1$ und die schwierige Variante als $Var2$ bezeichnet.
+    Das Volumen der Puppe beträgt also $V_{Var1} = (1,93 \pm 0,04) \cdot 10^-4 m^3$ 
+    beziehungsweise $V_{Var2} = (1,314 \pm 0,023) \cdot 10^-4 $.
+
+    \subsubsection{Bestimmung des Trägheitsmoments der Puppe in der ersten Körperhaltung}
+
+    SKIZZE KÖRPERHALTUNG 1
+
+    Die zehnfache Periodendauer der Rotation der Puppe in der ersten Stellung
+    und die Periodendauer sind in Tabelle 7 aufgelistet.
+
+    TABELLE 7
+
+    Die Periodendauer wird gemittelt. Für das Trägheitsmoment ergibt sich
+    $I_{Pos1,exp} = \frac{DT_{Pos1}^2}{4\pi^2} - I_D = -(9,08 \pm 0,06) \cdot 10^-4 kg m^2$.
+    Das theoretisch berechnete Trägheitsmoment für die einfache
+    Variante, dass die Puppe aus fünf Zylindern und einer Kugel besteht,
+    ist $I_{Pos1,Var1} = (6,927 \pm 0,2784) \cdot 10^-4 kg m^2$.
+    Unter der Annahme, dass die Puppe aus 19 Zylindern bzw. Kugeln
+    besteht, ist das Trägheitsmoment $I_{Pos1,Var2} = (6,42 \pm 0,13) \cdot 10^-5 kg m^2$.
+
+    \subsubsection{Bestimmung des Trägheitsmoments der Puppe in der zweiten Körperhaltung}
+
+    SKIZZE KÖRPERHALTUNG 2
+
+    Die zenfache Periodendauer sowie die Periodendauer der Modellpuppe
+    in der zweiten Stellung sind in Tabelle 8 zu finden.
+
+    TABELLE 8
+
+    Mit der gemittelten Periodendauer beträgt das Trägheitsmoment $I_{Pos2,exp} = \frac{DT_{Pos2}^2}{4\pi^2} - I_D = -(6,47 \pm 0,11) \cdot 10^-4 kg m^2$.
+    Für den theoretischen Wert ergibt sich mit der einfachen Annahme $I_{Pos2,Var1} = (3,8758 \pm 0,1466) \cdot 10^-5 kg m^2$.
+    Die schwierigere Variante liefert für das Trägheitsmoment der Puppe in der zweiten Körperhaltung
+    $I_{Pos2,Var2} = (1,23 \pm 0,60) \cdot 10^-5 kg m^2$.
+
+    \section{Diskussion}
+    Nach unserer Auswertung muss man die Messung der Trägheitsmomente durch Schwingungsdauern verschiedener Figuren auf der mit einer Spiralfeder verbundenen Drillachse als ungenau bewerten.
+Die experimentell ermittelten Werte für das Trägheitsmoment des Zylinders und der Puppe in beiden Körperhaltungen sind beispielsweise negativ. Dies deutet auf einen Fehler in der Messung hin. In der Formel für die Bestimmung des Trägheitsmoments wird das Trägheitsmoment der Drillachse $I_D$ abgezogen. Zieht man diesen Wert nicht ab, entstehen deutlich konsistentere Werte, die sowohl positiv als auch nah am theoretisch berechnet Wert liegen.
+    Die Ungenauigkeit entsteht hier dadurch, dass die Stange, die ein erhebliches Gewicht hat, in der Theorie als masselos angenommen wird. Dadurch ist das Trägheitsmoment natürlich deutlich höher, als es sein sollte.
+    Die Messung durch Stoppuhren auf dem Handy ist ebenfalls ziemlich ungenau, denn diese wird immer nur dann gestoppt, wenn der Umkehrpunkt der Pendelbewegung vermeintlich erreicht ist, was aber nicht exakt zu erkennen ist. Daher beinhaltet die Messung vermutlich sogar einen größeren Fehler als die vorgegeben 0,5 Sekunden. 
+    Auch das Direktionsmoment $D$ könnte Grund für die Ungenauigkeiten sein. Es wurde natürlich versucht, den Kraftmesser genau im 90° Winkel zur Stange zu halten. Dies wurde allerdings nicht exakt gemessen. Insofern kann es auch dabei zu Fehlern gekommen sein. Außerdem war es nicht gut möglich, die Werte für kleine Auslenkungen zu bestimmen. Da man die Feder nicht über 360° auslenken sollte, war das Spektrum der zu sammelnden Werte nicht sehr groß.
+    Das theoretische Trägheitsmoment der Puppe wurde, wie in der Auswertung gezeigt, auf einfache und komplizierte Weise jeweils in zwei Positionen bestimmt. Dabei wurde von einer homogenen Massenverteilung ausgegangen, wobei zum Beispiel der Metallstab bei der einfachen Variante völlig außer Acht gelassen wurde. Bei der schwierigeren Auswertung wurde er nur als weiteres Stück Holz betrachtet, obwohl der Stab natürlich eine andere Dichte hat, als beispielsweise das Bauchstück. Auch die kleinen Schrauben und Verbindungsstücke aus Metall wurden bei der Berechnung nicht beachtet. 
+    Ein weiteres Problem war, dass die Puppe nicht wirklich fixiert war. Bei der Drehung hat sie sich durch die Fliehkräfte vor allem in Position 1 stark nach außen bewegt. 
+    Bei fast allen Werten wurden zehn Drehschwingungen durchgeführt, damit der Fehler kleiner wurde. Dadurch gingen einzelne Durchgänge länger als eine Minute. In dieser Zeit sind möglicherweise bereits Fehler durch Luftwiderstand und Reibung des Materials entstanden, die auch Auswirkungen auf einige der Ergebnisse haben könnten.
+
+
+
+    \section{Literatur}
+    
+\end{document}

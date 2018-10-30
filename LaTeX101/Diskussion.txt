@@ -1,0 +1,20 @@
+
+Diskussion
+
+Nach unserer Auswertung muss man die Messung der Trägheitsmomente durch Schwingungsdauern verschiedener Figuren auf einer mit der Spiralfeder verbundenen Drillachse als ungenau bewerten. 
+Die experimentell ermittelten Werte für das Trägheitsmoment der Kugel und des Zylinders sind zum Beispiel negativ. Dies deutet auf einen Fehler in der Messung hin. In der Formel für die Bestimmung des Trägheitsmoments wird am Ende der Wert Id, das Trägheitsmoment der Drillachse abgezogen. Zieht man diesen Wert nicht ab, entstehen deutlich konsistentere Werte, die sowohl positiv, als auch nah am theoretisch berechnet Wert liegen. 
+
+Die Ungenauigkeit entsteht hier dadurch, dass die Stange, die ein erhebliches Gewicht hat, als masselos angenommen wird in der Theorie. Dadurch ist das Trägheitsmoment natürlich deutlich höher als es sein sollte. 
+
+Die Messung durch Stoppuhren auf dem Handy ist auch ziemlich ungenau, denn diese wird immer nur dann gestoppt, wenn der Umkehrpunkt der Pendelbewegung vermeintlich erreicht ist, was aber nicht exakt zu erkennen ist und daher vermutlich sogar einen größeren Fehler als die vorgegeben 0,5 Sekunden beinhaltet. 
+
+Auch das Direktionsmoment D könnte Grund für die Ungenaugkeiten sein. Es wurde natürlich versucht den Kraftmesser genau im 90° Winkel zur Stange zu halten, aber dies wurde nicht exakt gemessen, insofern kann es dabei auch zu Fehlern gekommen sein. Außerdem war es nicht gut möglich die Werte für kleine Auslenkungen zu bestimmen, aber man sollte die Feder ja nicht über 360° auslenken, insofern war das Spektrum der zu sammelnden Werte nicht sehr groß. 
+
+Das theoretische Trägheitsmoment der Puppe wurden, wie in der Auswertung gezeigt, auf einfache und komplizierte Weise bestimmt, jeweils in zwei Positionen. Dabei wurde von einer homogenen Massenverteilung ausgegangen, wobei z.B. bei der einfachen Variante der Metallstab völlig außer acht gelassen wurde und bei der schwierigeren Auswertung auch nur als weiteres Stück Holz betrachtet wurde, obwohl der Stab natürlich eine andere Dichte hat, als zum Beispiel das Bauchstück. Auch die kleinen Schrauben und Verbindungsstücke aus Metall wurden bei der Berechnung völlig außer acht gelassen. 
+
+Ein weiteres Problem war, dass die Puppe nicht wirklich fixiert war, bei der Drehung, vor allem in Position 1, hat sie sich durch die Fliehkräfte stark nach außen bewegt. 
+
+Bei fast allen Werten wurde zehn Drehschwingungen durchgeführt damit der Fehler kleiner wurde. Dadurch gingen einzelne Durchgänge länger als eine Minute. In dieser Zeit sind möglicherweise bereits Fehler durch Luftwiderstand und Reibung des Materials entstanden, die auch Auswirkungen auf einige der Ergebnisse haben könnten. 
+
+  
+ 
