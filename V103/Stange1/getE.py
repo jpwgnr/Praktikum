@@ -7,13 +7,13 @@ def xnew(xvalue, L):
     return L*(xvalue**2)-((xvalue**3)/3)
 
 def Dnew(D1, D2):
-    return D1-D2
+    return np.abs(D1-D2)
 
 def F(m):
     return m*9.81
 
-def IKreis(lganz, radius):
-    return lganz*radius*0 
+def IKreis(radius):
+    return np.pi*(radius**4)/4 
 
 def IQuadrat(a):
     return a**4/12
@@ -35,7 +35,7 @@ D= Dnew(ohneD,mitD)/1000
 x= xnew(x1/100, L)
 
 #output newD and newx
-np.savetxt("newDnewX.txt", np.column_stack([D, x]), header="D in m, x in m")
+np.savetxt("newDnewX1.txt", np.column_stack([D, x]), header="D in m, x in m")
 Steigung, yAbschnitt, r_value, p_value, std_err= stats.linregress(x,D)
 
 y= Steigung*x+yAbschnitt
@@ -51,6 +51,6 @@ Estd= np.std(E)
 
 Elinreg=getElinreg(Fg, Iq, Steigung)
 
-file = open("ErgebnisE.txt", "w")
+file = open("ErgebnisE1.txt", "w")
 file.write("Steigung der Funktion: {}\n Durchschnitt E: {}\n Fehler E: {}\n linReg E= {}".format(Steigung, Emean, Estd, Elinreg))
 file.close()
