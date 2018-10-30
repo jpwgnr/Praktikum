@@ -1,0 +1,5 @@
+# diameter of the wire, in micrometer
+
+0.180
+0.175
+0.175
