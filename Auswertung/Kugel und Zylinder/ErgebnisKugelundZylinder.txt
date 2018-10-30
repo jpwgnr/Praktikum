@@ -1,8 +1,0 @@
-Theoretisches Trägheitsmoment Kugel: 0.0014351+/-0.0000011
- Theoretisches Trägheitsmoment Zylinder: 0.0007635+/-0.0000010 
- Mittelwert T Kugel: 1.687+/-0.016 
- Mittelwert T Zylinder: 1.195+/-0.016 
- Winkelrichtgröße D= 0.014088+/-0.000027
- Trägheitsmoment Id: 0.0009762+/-0.0000025 
- Trägheitsmoment Kugel exp.: (3.9+/-1.9)e-05 
- Trägheitsmoment Zylinder exp.: -0.000467+/-0.000014
