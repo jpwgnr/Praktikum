@@ -1,0 +1,3 @@
+#Puppe schwierig, halbe Kugel, d in mm
+
+7.25 #18  0
