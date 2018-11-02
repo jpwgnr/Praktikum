@@ -13,10 +13,10 @@ def F(m):
     return m*9.81
 
 def IKreis(radius):
-    return np.pi*(radius**4)/4 
+    return  (np.pi*(radius**4))/4 
 
 def IQuadrat(a):
-    return a**4/12
+    return (a**4)/12
 
 def getE(F, I, newx, newD):
    return (F/(2*I*newD))*newx
