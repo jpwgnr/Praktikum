@@ -1,5 +1,8 @@
 \input{header.tex}
 \begin{document}
+\maketitle
+\tableofcontents
+\newpage
 \section{Ziel}
 Ziel dieses Versuches ist es, die Elastizitätsmodule
 verschiedener Stäbe durch Messung ihrer Biegung
@@ -33,9 +36,9 @@ an der Stelle x zwischen dem belasteten und unbelasteten Zustand des Stabes.
 Es wird eine Drehmomentgleichung aufgestellt, um $D(x)$ zu bestimmen.
 Die Zug- und Druckspannungen, die an der Querschnittsfläche $Q$ angreifen,
 sind entgegesetzt gleich und bewirken deshalb ein Drehmoment $M_{\sigma}$:
-\begin{equation}
+\begin{equation*}
 M_{\sigma} = \int_{Q} y \sigma(y) dq
-\end{equation}
+\end{equation*}
 $y$ ist der Abstand des Flächenelementes $dq$ von der neutralen
 Faser. Die neutrale Faser ist die Fläche, in der keine Spannungen
 auftreten. Ihre Länge ändert sich bei der Biegung folglich nicht.
@@ -44,13 +47,13 @@ zur Stabachse stehenden Querschnitt. Es verdreht den Querschnitt aus
 seiner ursprünglichen vertikalen Lage.
 Die Deformation des Körpers stellt sich so ein, dass die Drehmomente an
 jeder Stelle $x$ übereinstimmen:
-\begin{equation}
+\begin{equation*}
 M_{F} = M_{\sigma}.
-\end{equation}
+\end{equation*}
 Dabei ist
-\begin{equation}
+\begin{equation*}
 M_{F} = F (L-x),
-\end{equation}
+\end{equation*}
 da die Kraft $F$ über den Hebelarm $L-x$ an $Q$ angreift.
 Damit ist das Gleichgewicht der Drehmomente durch
 \begin{equation}
@@ -60,37 +63,37 @@ Damit ist das Gleichgewicht der Drehmomente durch
 gegeben.
 Mit dem Hookeschen Gesetz \eqref{eqn:Hooke} wird die Normalspannung
 $\sigma(y)$ mittels
-\begin{equation}
+\begin{equation*}
 \sigma(y) = E \frac{\delta x}{\Delta x}
-\end{equation}
+\end{equation*}
 berechnet. Hier ist $\Delta x$ die Länge eines kurzen Stabstücks
 und $\delta x$ die Längenänderung der Faser.
 Es gilt außerdem
-\begin{equation}
+\begin{equation*}
 \delta x = y \Delta \phi = y \frac{\Delta x}{R},
-\end{equation}
+\end{equation*}
 wobei $R$ der Krümmungsradius der Faser bei $x$ ist.
 Damit ist
-\begin{equation}
+\begin{equation*}
 \sigma(y) = E \frac{y}{R} = E y \frac{d^2D}{dx^2},
-\end{equation}
+\end{equation*}
 da für geringe Kurvenkrümmungen
-\begin{equation}
-\frac{1}{R} = \frac{d^2D}{dx^2} %nicht gleich sondern ungefähr!
-\end{equation}
+\begin{equation*}
+\frac{1}{R} \approx \frac{d^2D}{dx^2}
+\end{equation*}
 gilt, falls
-\begin{equation}
+\begin{equation*}
 (\frac{dD}{dx})^2 << 1
-\end{equation}
+\end{equation*}
 ist. Für \eqref{eqn:Momente} ergibt sich damit:
 \begin{equation}
 E \frac{d^2D}{dx^2} \int_{Q} y^2 dq = F(L-x).
 \label{eqn:Momente2}
 \end{equation}
 Dabei ist
-\begin{equation}
+\begin{equation*}
 I = \int_{Q} y^2 dq(y)
-\end{equation}
+\end{equation*}
 das Flächenträgheitsmoment.
 Integriert man \eqref{eqn:Momente2} und stellt die Gleichung
 nach $D(x)$ um, erhält man für die Biegung bei einseitiger Einspannung
@@ -100,66 +103,97 @@ D(x) = \frac{F}{2EI} (Lx^2- \frac{x^3}{3}).
 \end{equation}
 Diese Gleichung ist für $0 \leq x \leq L$ definiert.
 Die Integrationskonstanten verschwinden, weil $D(0) = 0$ und $\frac{dD}{dx} = 0$ sein müssen.
+
 %Berechnung der Durchbiegung, zweiseitig
-Liegen beide Stabenden auf und lässt man in der Mitte des Stabes
+\noindent Liegen beide Stabenden auf und lässt man in der Mitte des Stabes
 eine Kraft angreifen, greift an der Querschnittsfläche die Kraft
-$\frac{F}{2}$ mit dem Hebelarm $x$ an. Für die erste Stabhälfte
+$\frac{F}{2}$ mit dem Hebelarm $x$ an. Für die erste Stabhälfte $0 \leq x \leq \frac{L}{2}$
 gilt für das Drehmoment
-\begin{equation}
-M_{F} = - \frac{F}{2} x, 0 \leq x \leq \frac{L}{2}.
-\end{equation}
-Für die zweite Hälfte gilt
-\begin{equation}
-M_{F} = - \frac{F}{2} (L-x), \frac{L}{2} \leq x \leq L.
-\end{equation}
+\begin{equation*}
+M_{F} = - \frac{F}{2} x.
+\end{equation*}
+Für die zweite Hälfte $\frac{L}{2} \leq x \leq L$ gilt
+\begin{equation*}
+M_{F} = - \frac{F}{2} (L-x).
+\end{equation*}
 Damit ergibt sich hier für \eqref{eqn:Momente2}
 \begin{equation}
-\frac{d^2D}{dx^2} = - \frac{F}{EI} \frac{x}{2}, 0 \leq x \leq \frac{L}{2}
+\frac{d^2D}{dx^2} = - \frac{F}{EI} \frac{x}{2} \qq{für $0 \leq x \leq \frac{L}{2}$}
 \label{eqn:links}
 \end{equation}
 und
 \begin{equation}
-\frac{d^2D}{dx^2} = -\frac{1}{2} \frac{F}{EI} (L-x), \frac{L}{2} \leq x \leq L.
+\frac{d^2D}{dx^2} = -\frac{1}{2} \frac{F}{EI} (L-x) \qq{für $\frac{L}{2} \leq x \leq L$}.
 \label{eqn:rechts}
 \end{equation}
 Integriert man beide Gleichungen, ergibt sich 
-\begin{equation}
-\frac{dD}{dx} = - \frac{F}{EI} \frac{x^2}{4} + C , 0 \leq x \leq \frac{L}{2}
-\end{equation}
+\begin{equation*}
+\frac{dD}{dx} = - \frac{F}{EI} \frac{x^2}{4} + C \qq{für $0 \leq x \leq \frac{L}{2}$}
+\end{equation*}
 und
-\begin{equation}
-\frac{dD}{dx} = - \frac{1}{2} \frac{F}{EI} (Lx-\frac{x^2}{2}) + C' , \frac{L}{2} \leq x \leq L.
-\end{equation}
+\begin{equation*}
+\frac{dD}{dx} = - \frac{1}{2} \frac{F}{EI} (Lx-\frac{x^2}{2}) + C' \qq{für $\frac{L}{2} \leq x \leq L$}.
+\end{equation*}
 Da die Biegekurve in der Mitte des Stabes eine horizontale Tangente
 haben muss, muss für die Konstanten gelten:
-\begin{equation}
+\begin{equation*}
 C = \frac{F}{EI} \frac{L^2}{16}
-\end{equation}
+\end{equation*}
 und
-\begin{equation}
+\begin{equation*}
 C' = \frac{3}{16} \frac{F}{EI} L^2.
-\end{equation}.
+\end{equation*}
 Setzt man die Konstanten in \eqref{eqn:links} und \eqref{eqn:rechts}
 ein und integriert die Ausdrücke, erhält man die Gleichungen
 für die Biegung bei zweiseitiger Auflage des Stabes:
 \begin{equation}
-D(x) = \frac{F}{48EI} (3L^2x - 4x^3), 0 \leq x \leq \frac{L}{2}
+D(x) = \frac{F}{48EI} (3L^2x - 4x^3) \qq{für $0 \leq x \leq \frac{L}{2}$}
 \label{eqn:D2links}
 \end{equation}
 und
 \begin{equation}
-D(x) = \frac{F}{48EI} (4x^3 - 12Lx^2 + 9L^2x - L^3) , \frac{L}{2} \leq x \leq L.
+D(x) = \frac{F}{48EI} (4x^3 - 12Lx^2 + 9L^2x - L^3) \qq{für $\frac{L}{2} \leq x \leq L$}.
 \label{eqn:D2rechts}
 \end{equation}
 Die Integrationskonstanten verschwinden hier, weil $D(0) = 0$ und $D(L) = 0$ sein müssen.
 Die Biegung eines elastischen Stabes kann also durch
-\eqref{eqn:D1}, \eqref{eqn:D2links} und \eqref{D2rechts} bestimmen.
+\eqref{eqn:D1}, \eqref{eqn:D2links} und \eqref{eqn:D2rechts} bestimmen.
+
 %D(x)=D_M(x)-D_0(x)
-Weil die Stäbe nicht als exakt gerade angenommen werden können,
+\noindent Weil die Stäbe nicht als exakt gerade angenommen werden können,
 muss die Biegung ohne angehängtes Gewicht gemessen werden.
 Die Biegung des Stabes durch die Last ist dann 
 \begin{equation}
 D(x) = D_{M}(x) - D_{0}(x).
+\label{eqn:D(x)}
 \end{equation}
+%Lineare Regression Erklärung?
+\section{Durchführung}
+Die Apparatur ist in Abbildung xy zu sehen. %Abbildung Apparatur erwähnen
+Die Stäbe werden entweder einseitig eingeklemmt oder zweiseitig
+auf den Punkten $A$ und $B$ gelagert. Die Stäbe werden belastet, indem
+ein Gewicht entweder am Stabende oder in der Stabmitte angehängt wird.
+Die Biegung wird mit zwei Messuhren, die sich auf einer Längen-Skala befinden
+und verschiebbar sind, sodass die Biegung an verschiedenen Stellen $x$ bestimmt
+werden kann, gemessen. Bei Messuhren wird die Verschiebung eines Objektes mittels
+eines federnden Taststiftes gemessen. %andere Formulierung
+%Hier Abbildung einfügen
+Zunächst wird jeweils für zwei einseitig eingespannte Stäbe die Biegung ohne
+angehängtes Gewicht gemessen. Danach wird an das Stabende ein Gewicht angehängt.
+Die Biegung wird mit einer der Messuhren gemessen. %Abbildung einseitiger Stab
+Ein dritter Stab wird
+zweiseitig aufgelegt. Es wird wieder zunächst die Biegung ohne Gewicht und dann
+mit Gewicht gemessen. Hier wird für die erste Hälfte des Stabes $\frac{L}{2} \leq x \leq L$
+die linke Messuhr und für die zweite Hälfte $0 \leq x \leq \frac{L}{2}$ die rechte Messuhr
+verwendet. %Abbildung zweiseitiger Stab
+Zuletzt werden die Längen, Breiten, beziehungsweise Durchmesser und Massen der Stäbe,
+sowie die Masse des angehängten Gewichts bestimmt.
+\section{Auswertung}
+%\input{./content/auswertung.tex}
+\section{Diskussion}
 %Diskussion: Wert hat sich bei Erschütterung geändert
+\section{Literatur}
+%\nocite{}
+\nocite{*}
+\printbibliography
 \end{document}

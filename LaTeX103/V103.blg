@@ -1,0 +1,11 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'V103.blg'
+[61] biber-darwin:313> INFO - === Fr Nov  2, 2018, 16:26:03
+[93] Biber.pm:371> INFO - Reading 'V103.bcf'
+[228] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[252] Biber.pm:3976> INFO - Processing section 0
+[270] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[271] bibtex.pm:1500> INFO - LaTeX decoding ...
+[277] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
+[285] Utils.pm:209> ERROR - BibTeX subsystem: /var/folders/x6/p5s3_0l108x0l1ygcb37_1_40000gn/T/ouib797rAH/lit.bib_3998.utf8, line 3, syntax error: found ""Versuch Nr. 103 Biegung elastischer StÃ¤be"", expected "="
+[285] Biber.pm:114> INFO - ERRORS: 1
