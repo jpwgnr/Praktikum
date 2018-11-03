@@ -41,12 +41,12 @@ y= Steigung*x+yAbschnitt
 
 plt.plot(x,D, "xr", label="Messwerte")
 plt.plot(x,y, "r", label="Ausgleichsgerade")
-plt.xlabel(r"$4x^{3}-12Lx^{2}+9L^{2}x-L^{3} /m³$")
-plt.ylabel(r"$D(x)/m$")
+plt.xlabel(r"$4x^{3}-12Lx^{2}+9L^{2}x-L^{3} /\si{\cubic\meter}$")
+plt.ylabel(r"$D(x)/\si{\meter}$")
 plt.legend(loc="best")
 plt.grid()
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig("Stange3b.pdf")
+plt.savefig("build/Stange3b.pdf")
 
 # get E
 
