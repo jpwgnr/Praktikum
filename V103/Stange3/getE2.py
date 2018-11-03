@@ -38,8 +38,14 @@ np.savetxt("newDnewX3b.txt", np.column_stack([D, x]), header="D in m, x in m")
 Steigung, yAbschnitt, r_value, p_value, std_err= stats.linregress(x,D)
 
 y= Steigung*x+yAbschnitt
-plt.plot(x,D)
-plt.plot(x,y)
+
+plt.plot(x,D, "xr", label="Messwerte")
+plt.plot(x,y, "r", label="Ausgleichsgerade")
+plt.xlabel(r"$4x^{3}-12Lx^{2}+9L^{2}x-L^{3} /m³$")
+plt.ylabel(r"$D(x)/m$")
+plt.legend(loc="best")
+plt.grid()
+plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig("Stange3b.pdf")
 
 # get E
@@ -51,5 +57,5 @@ Estd= np.std(E)
 Elinreg=getElinreg(Fg, Iq, Steigung)
 
 file = open("ErgebnisE3b.txt", "w")
-file.write("Steigung der Funktion: {}\n Durchschnitt E: {}\n Fehler E: {}\n linReg E= {}".format(Steigung, Emean, Estd, Elinreg))
+file.write("Steigung der Funktion: {}\n linReg E= {}".format(Steigung, Elinreg))
 file.close()

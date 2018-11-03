@@ -39,11 +39,12 @@ np.savetxt("newDnewX1.txt", np.column_stack([D, x]), header="D in m, x in m")
 Steigung, yAbschnitt, r_value, p_value, std_err= stats.linregress(x,D)
 
 y= Steigung*x+yAbschnitt
-plt.plot(x,D, "xr", label="Werte")
-plt.plot(x,y, label="Fit")
-plt.xlabel(r"$x \:/\: m²")
-plt.ylabel(r"y")
+plt.plot(x,D, "xr", label="Messwerte")
+plt.plot(x,y, "r", label="Ausgleichsgerade")
+plt.xlabel(r"$Lx^2-\frac{x^3}{3} /m³$")
+plt.ylabel(r"$D(x)/m$")
 plt.legend(loc="best")
+plt.grid()
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig("Stange1.pdf")
 
