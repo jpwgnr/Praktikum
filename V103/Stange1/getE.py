@@ -57,5 +57,5 @@ Estd= np.std(E)
 Elinreg=getElinreg(Fg, Iq, Steigung)
 
 file = open("ErgebnisE1.txt", "w")
-file.write("Steigung der Funktion: {}\n Durchschnitt E: {}\n Fehler E: {}\n linReg E= {}".format(Steigung, Emean, Estd, Elinreg))
+file.write("Steigung der Funktion: {}\n linReg E= {}".format(Steigung, Elinreg))
 file.close()
