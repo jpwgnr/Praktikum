@@ -54,9 +54,14 @@ tabnew3b = TexTable([newD3b,newx3b], [r'$D(x)/\si{\meter}$ Differenz', r'$4x^3-1
 tabnew3b.setRowRounding(5, 3)
 tabnew3b.writeFile('../tables/tablenew3b.tex')
 
-#newD3b, newx3b=np.genfromtxt("newDnewX3b.txt", unpack=True)
+G1, L1,d1=np.genfromtxt("Stab1.txt", unpack=True)
+G2, L2,d2=np.genfromtxt("Stab2.txt", unpack=True)
+G3, L3,d3=np.genfromtxt("Stab3.txt", unpack=True)
 
-#tabnew3b = TexTable([newD3b,newx3b], [r'$D(x)/\si{\meter}$ Differenz', r'$4x^3-12Lx^2+9L^2x-L^3 /\si{\cubic\meter}$'])
+Stab1 = TexTable([G1, L1, d1], [r'Gewicht$/\si{\gram}$', r'Länge$/\si{\centi\meter}$', 'Durchmesser$/\si{\milli\meter}$'])
+Stab2 = TexTable([G2, L2, d2], [r'Gewicht$/\si{\gram}$', r'Länge$/\si{\centi\meter}$', 'Durchmesser$/\si{\milli\meter}$'])
+Stab3 = TexTable([G3, L3, d3], [r'Gewicht$/\si{\gram}$', r'Länge$/\si{\centi\meter}$', 'Durchmesser$/\si{\milli\meter}$'])
 
-#tabnew3b.setRowRounding(5, 3)
-#tabnew3b.writeFile('../tables/tablenew3b.tex')
+Stab1.writeFile('../tables/Stab1.tex')
+Stab2.writeFile('../tables/Stab2.tex')
+Stab3.writeFile('../tables/Stab3.tex')
