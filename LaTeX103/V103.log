@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  3 NOV 2018 09:13
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  3 NOV 2018 17:33
  restricted system commands enabled.
 **V103.tex
 (./V103.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.107 seconds
+luaotfload | main : initialization completed in 0.106 seconds
 (./header.tex
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.c
 ls
@@ -931,9 +931,9 @@ File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	table: 0x4d44440
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x608ea90
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
@@ -943,9 +943,9 @@ Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	table: 0x4d44610
 (polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x608ec60
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
@@ -3408,46 +3408,49 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 c/fonts/otl/lmroman8-regular.luc)(load luc: /home/lewis206/.local/texlive/2018/t
 exmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
 [4] [5] (./content/auswertung.tex (./tables/tableD1.tex)
+
+LaTeX Warning: Reference `eqn:' on page 6 undefined on input line 11.
+
 (./tables/tablenew1.tex)
-<./plots/Stange1.pdf, id=68, 462.52798pt x 346.89601pt>
+<./plots/Stange1.pdf, id=68, 417.7206pt x 258.00488pt>
 File: ./plots/Stange1.pdf Graphic file (type pdf)
 <use ./plots/Stange1.pdf>
-Package luatex.def Info: ./plots/Stange1.pdf  used on input line 11.
-(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+Package luatex.def Info: ./plots/Stange1.pdf  used on input line 19.
+(luatex.def)             Requested size: 341.43042pt x 256.07518pt.
  (./tables/tableD2.tex) (./tables/tablenew2.tex)
-<./plots/Stange2.pdf, id=69, 462.52798pt x 346.89601pt>
+<./plots/Stange2.pdf, id=69, 417.7206pt x 258.00488pt>
 File: ./plots/Stange2.pdf Graphic file (type pdf)
 <use ./plots/Stange2.pdf>
-Package luatex.def Info: ./plots/Stange2.pdf  used on input line 23.
-(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+Package luatex.def Info: ./plots/Stange2.pdf  used on input line 34.
+(luatex.def)             Requested size: 341.43042pt x 256.07518pt.
 
 (./tables/tableD3a.tex) (./tables/tablenew3a.tex)
-<./plots/Stange3a.pdf, id=70, 462.52798pt x 346.89601pt>
+<./plots/Stange3a.pdf, id=70, 417.7206pt x 258.00488pt>
 File: ./plots/Stange3a.pdf Graphic file (type pdf)
 <use ./plots/Stange3a.pdf>
-Package luatex.def Info: ./plots/Stange3a.pdf  used on input line 35.
-(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+Package luatex.def Info: ./plots/Stange3a.pdf  used on input line 46.
+(luatex.def)             Requested size: 341.43042pt x 256.07518pt.
  (./tables/tableD3b.tex)
 (./tables/tablenew3b.tex)
-<./plots/Stange3b.pdf, id=71, 462.52798pt x 346.89601pt>
+<./plots/Stange3b.pdf, id=71, 417.7206pt x 258.00488pt>
 File: ./plots/Stange3b.pdf Graphic file (type pdf)
 <use ./plots/Stange3b.pdf>
-Package luatex.def Info: ./plots/Stange3b.pdf  used on input line 47.
-(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+Package luatex.def Info: ./plots/Stange3b.pdf  used on input line 58.
+(luatex.def)             Requested size: 341.43042pt x 256.07518pt.
 ) (./content/diskussion.tex [6] [7<./plots/Stange1.pdf>] [8] [9<./plots/Stange2.
 pdf>] [10<./plots/Stange3a.pdf>] [11] [12<./plots/Stange3b.pdf>])
 
-LaTeX Warning: Empty bibliography on input line 199.
+LaTeX Warning: Empty bibliography on input line 200.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (./V103.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 26
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `V103.aux' has not changed.
 (rerunfilecheck)             Checksum: E1A01886F247C5A5B430A85B8F1F6DB0;5796.
 Package rerunfilecheck Info: File `V103.toc' has not changed.
@@ -3470,19 +3473,19 @@ Package logreq Info: Writing requests to 'V103.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42685 strings out of 494412
+ 42901 strings out of 494412
  100000,1648299 words of node,token memory allocated
  711 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 40 attribute, 75 glue_spec, 40 attr
 ibute_list, 1 write nodes
-   avail lists: 1:2,2:6844,3:272,4:44,5:692,6:51,7:6391,8:221,9:2835,10:21,11:25
+   avail lists: 1:2,2:6926,3:272,4:44,5:714,6:51,7:6586,8:228,9:2812,10:21,11:25
 5
- 45536 multiletter control sequences out of 65536+600000
- 138 fonts using 50691695 bytes
- 61i,12n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/lat
-inmodern-math.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/
-public/lm/lmroman8-regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fo
+ 45682 multiletter control sequences out of 65536+600000
+ 208 fonts using 77152011 bytes
+ 61i,21n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8
+-regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/publi
+c/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive/2018/texmf-dist/fo
 nts/opentype/public/lm/lmroman10-bold.otf></home/lewis206/.local/texlive/2018/te
 xmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lewis206/.loc
 al/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></
@@ -3490,10 +3493,10 @@ home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-
 regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public
 /lm/lmroman12-regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/o
 pentype/public/lm/lmsans10-bold.otf>
-Output written on V103.pdf (13 pages, 111530 bytes).
+Output written on V103.pdf (13 pages, 110983 bytes).
 
-PDF statistics: 396 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
+PDF statistics: 328 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  42 named destinations out of 1000 (max. 131072)
  49 words of extra memory for PDF output out of 10000 (max. 100000000)
 
