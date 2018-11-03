@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  3 NOV 2018 01:00
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  3 NOV 2018 01:24
  restricted system commands enabled.
 **V103.tex
 (./V103.tex
@@ -929,24 +929,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 an.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x6709fe0
-(polyglossia)            righthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	table: 0x52220e0
 (polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x670a1b0
-(polyglossia)            righthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	table: 0x52222b0
 (polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3188,10 +3188,10 @@ LaTeX Warning: Label `' multiply defined.
 LaTeX Warning: Label `' multiply defined.
 
 
-LaTeX Warning: Label `' multiply defined.
-
-
 LaTeX Warning: Label `fig:plot' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -3413,52 +3413,34 @@ exmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
 File: ./plots/Stange1.pdf Graphic file (type pdf)
 <use ./plots/Stange1.pdf>
 Package luatex.def Info: ./plots/Stange1.pdf  used on input line 11.
-(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
-
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-(./tables/tableD2.tex) (./tables/tablenew2.tex)
+(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+ (./tables/tableD2.tex) (./tables/tablenew2.tex)
 <./plots/Stange2.pdf, id=71, 462.52798pt x 346.89601pt>
 File: ./plots/Stange2.pdf Graphic file (type pdf)
 <use ./plots/Stange2.pdf>
 Package luatex.def Info: ./plots/Stange2.pdf  used on input line 23.
-(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
-
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 23--24
- [][] 
- []
+(luatex.def)             Requested size: 341.44666pt x 256.085pt.
 
 (./tables/tableD3a.tex) (./tables/tablenew3a.tex)
 <./plots/Stange3a.pdf, id=72, 462.52798pt x 346.89601pt>
 File: ./plots/Stange3a.pdf Graphic file (type pdf)
 <use ./plots/Stange3a.pdf>
 Package luatex.def Info: ./plots/Stange3a.pdf  used on input line 35.
-(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
-
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 35--36
- [][] 
- []
-
-(./tables/tableD3b.tex) (./tables/tablenew3b.tex)
+(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+ (./tables/tableD3b.tex)
+(./tables/tablenew3b.tex)
 <./plots/Stange3b.pdf, id=73, 462.52798pt x 346.89601pt>
 File: ./plots/Stange3b.pdf Graphic file (type pdf)
 <use ./plots/Stange3b.pdf>
 Package luatex.def Info: ./plots/Stange3b.pdf  used on input line 47.
-(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
-
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 47--48
- [][] 
- []
-
-) [6] [7] [8<./plots/Stange1.pdf>] [9] [10<./plots/Stange2.pdf>] [11<./plots/Sta
-nge3a.pdf>] [12<./plots/Stange3b.pdf>]
+(luatex.def)             Requested size: 341.44666pt x 256.085pt.
+) [6] [7<./plots/Stange1.pdf>] [8] [9<./plots/Stange2.pdf>] [10<./plots/Stange3a
+.pdf>] [11]
 
 LaTeX Warning: Empty bibliography on input line 198.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
-[13]
+[12<./plots/Stange3b.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
  (./V103.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -3471,10 +3453,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Warning: File `V103.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `V103.aux':
-(rerunfilecheck)             Before: 92399BD5F0445BFBEDF9E64EE7FD5929;5939
-(rerunfilecheck)             After:  C71CC76857E6755AFF73BB9E3A9EE54E;6001.
+(rerunfilecheck)             Before: 0724B7B6A3EFD785563575B03A5E3550;5999
+(rerunfilecheck)             After:  B5AED13E2BBE21943D087B199A23B53C;5999.
 Package rerunfilecheck Info: File `V103.toc' has not changed.
-(rerunfilecheck)             Checksum: 405734464248C5CC788786BD69C4247E;615.
+(rerunfilecheck)             Checksum: 058EFA31531B70CD1D832ED603B193B5;615.
 
 LaTeX Warning: There were undefined references.
 
@@ -3492,12 +3474,12 @@ Package logreq Info: Writing requests to 'V103.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42676 strings out of 494412
+ 42675 strings out of 494412
  100000,1648299 words of node,token memory allocated
  711 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 40 attribute, 75 glue_spec, 40 attr
 ibute_list, 1 write nodes
-   avail lists: 1:2,2:6640,3:272,4:24,5:694,6:51,7:5989,8:221,9:2731,10:10,11:25
+   avail lists: 1:2,2:6860,3:272,4:24,5:694,6:51,7:6413,8:222,9:2837,10:10,11:25
 5
  45535 multiletter control sequences out of 65536+600000
  138 fonts using 50691483 bytes
@@ -3511,10 +3493,10 @@ al/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home
 /lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regu
 lar.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/
 lmsans10-bold.otf>
-Output written on V103.pdf (13 pages, 102734 bytes).
+Output written on V103.pdf (12 pages, 103129 bytes).
 
-PDF statistics: 394 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 131072)
+PDF statistics: 390 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 131072)
  57 words of extra memory for PDF output out of 10000 (max. 100000000)
 
