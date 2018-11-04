@@ -76,7 +76,7 @@
       \verb http://matplotlib.org/
       \endverb
     \endentry
-    \entry{scipy}{article}{}
+    \entry{scipy}{online}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{3}{}{%
