@@ -1,11 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'V103.blg'
-[61] biber-darwin:313> INFO - === Fr Nov  2, 2018, 16:26:03
-[93] Biber.pm:371> INFO - Reading 'V103.bcf'
-[228] Biber.pm:854> INFO - Using all citekeys in bib section 0
-[252] Biber.pm:3976> INFO - Processing section 0
-[270] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[271] bibtex.pm:1500> INFO - LaTeX decoding ...
-[277] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
-[285] Utils.pm:209> ERROR - BibTeX subsystem: /var/folders/x6/p5s3_0l108x0l1ygcb37_1_40000gn/T/ouib797rAH/lit.bib_3998.utf8, line 3, syntax error: found ""Versuch Nr. 103 Biegung elastischer StÃ¤be"", expected "="
-[285] Biber.pm:114> INFO - ERRORS: 1
+[48] biber:313> INFO - === So Nov  4, 2018, 17:39:45
+[70] Biber.pm:371> INFO - Reading 'V103.bcf'
+[148] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[165] Biber.pm:3976> INFO - Processing section 0
+[179] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[181] bibtex.pm:1500> INFO - LaTeX decoding ...
+[186] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
+[213] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[214] bibtex.pm:1500> INFO - LaTeX decoding ...
+[219] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
+[273] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[273] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[273] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[273] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[288] bbl.pm:617> INFO - Writing 'V103.bbl' with encoding 'UTF-8'
+[292] bbl.pm:720> INFO - Output to V103.bbl
