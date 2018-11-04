@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
 \contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}Bestimmung des Elastizitätsmoduls des ersten Stabes}{6}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Bestimmung des Elastizitätsmoduls des zweiten Stabes}{6}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Bestimmung des Elastizitätsmoduls des dritten Stabes}{6}{subsection.4.3}
-\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
-\contentsline {section}{\nonumberline Literatur}{16}{section*.14}
+\contentsline {subsection}{\numberline {4.2}Bestimmung des Elastizitätsmoduls des zweiten Stabes}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung des Elastizitätsmoduls des dritten Stabes}{12}{subsection.4.3}
+\contentsline {section}{\numberline {5}Diskussion}{16}{section.5}
+\contentsline {section}{\nonumberline Literatur}{18}{section*.14}
