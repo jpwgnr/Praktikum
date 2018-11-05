@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Ziel}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Bestimmung des Elastizitätsmoduls des ersten Stabes}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Bestimmung des Elastizitätsmoduls des zweiten Stabes}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung des Elastizitätsmoduls des dritten Stabes}{14}{subsection.4.3}
+\contentsline {section}{\numberline {5}Diskussion}{18}{section.5}
+\contentsline {section}{\nonumberline Literatur}{20}{section*.20}
