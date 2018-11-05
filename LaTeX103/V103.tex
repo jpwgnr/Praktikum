@@ -27,14 +27,14 @@ Das Elastizitätsmodul ist eine Materialkonstante, die
 anhand der Deformation eines Körpers bestimmt werden kann.
 %Biegung
 Eine Art der Deformation ist die Biegung. Sie entsteht, wenn
-eine Kraft, wie in Abbildung 1 und in Abbildung 2 gezeigt, auf einen Körper wirkt. %Abbildung 1 erwähnen
+eine Kraft, wie in Abbildung \ref{fig:abb1} und in Abbildung \ref{fig:abb2} gezeigt, auf einen Körper wirkt.
 %Berechnung der Durchbiegung, einseitig
 Zunächst wird die Berechnung der Biegung eines Stabes bei einseitiger
-Einspannung beschrieben. %Abbildung 1
+Einspannung beschrieben.
 \begin{figure}
     \centering
 \includegraphics[width= 10cm, height= 5cm]{./plots/abb1.png}
-\caption{}
+\caption{Biegung eines elastischen Stabes bei einseitiger Einspannung}
 \label{fig:abb1}
 \end{figure}
 Die Durchbiegung $D(x)$ bezeichnet die Verschiebung eines Oberflächenpunktes
@@ -113,12 +113,12 @@ Die Integrationskonstanten verschwinden, weil $D(0) = 0$ und $\frac{dD}{dx} = 0$
 \begin{figure}
     \centering
 \includegraphics[width= 10cm, height= 5cm]{./plots/abb2.png}
-\caption{}
+\caption{Biegung eines elastischen Stabes bei zweiseitiger Auflage}
 \label{fig:abb2}
 \end{figure}
 %Berechnung der Durchbiegung, zweiseitig
 \noindent Liegen beide Stabenden auf und lässt man in der Mitte des Stabes
-eine Kraft angreifen, greift an der Querschnittsfläche die Kraft
+eine Kraft angreifen (siehe Abbildung \ref{fig:abb2}), greift an der Querschnittsfläche die Kraft
 $\frac{F}{2}$ mit dem Hebelarm $x$ an. Für die erste Stabhälfte $0 \leq x \leq \frac{L}{2}$
 gilt für das Drehmoment
 \begin{equation*}
@@ -206,7 +206,7 @@ E = \frac{F}{48mI}.
 \end{equation}
 
 \section{Durchführung}
-Die Apparatur ist in Abbildung xy zu sehen. %Abbildung Apparatur erwähnen
+Die Apparatur ist in Abbildung \ref{fig:abb3} zu sehen.
 Die Stäbe werden entweder einseitig eingeklemmt oder zweiseitig
 auf den Punkten $A$ und $B$ gelagert. Die Stäbe werden belastet, indem
 ein Gewicht entweder am Stabende oder in der Stabmitte angehängt wird.
@@ -218,18 +218,18 @@ eines federnden Taststiftes gemessen. %andere Formulierung
 \begin{figure}
     \centering
 \includegraphics[width= 10cm, height= 5cm]{./plots/abb3.png}
-\caption{}
+\caption{Skizze einer Messapparatur zur Bestimmung der Biegung elastischer Stäbe}
 \label{fig:abb3}
 \end{figure}
 
-Zunächst wird jeweils für zwei einseitig eingespannte Stäbe die Biegung ohne
-angehängtes Gewicht gemessen. Danach wird an das Stabende ein Gewicht angehängt.
-Die Biegung wird mit einer der Messuhren gemessen. %Abbildung einseitiger Stab
+\noindent Zunächst wird jeweils für zwei einseitig eingespannte Stäbe die Biegung ohne
+angehängtes Gewicht gemessen. Danach wird an das Stabende ein Gewicht angehängt (siehe Abbildung \ref{fig:abb1}).
+Die Biegung wird mit einer der Messuhren gemessen.
 Ein dritter Stab wird
 zweiseitig aufgelegt. Es wird wieder zunächst die Biegung ohne Gewicht und dann
-mit Gewicht gemessen. Hier wird für die erste Hälfte des Stabes $\frac{L}{2} \leq x \leq L$
+mit Gewicht gemessen (siehe Abbildung \ref{fig:abb2}). Hier wird für die erste Hälfte des Stabes $\frac{L}{2} \leq x \leq L$
 die linke Messuhr und für die zweite Hälfte $0 \leq x \leq \frac{L}{2}$ die rechte Messuhr
-verwendet. %Abbildung zweiseitiger Stab
+verwendet.
 Zuletzt werden die Längen, Breiten, beziehungsweise Durchmesser und Massen der Stäbe,
 sowie die Masse des angehängten Gewichts bestimmt.
 
