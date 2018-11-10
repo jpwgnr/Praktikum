@@ -1,0 +1,245 @@
+\input{header.tex}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Ziel}
+Ziel dieses Versuches ist es, die Elastizitätsmodule
+verschiedener Stäbe durch Messung ihrer Biegung
+zu bestimmen.
+\section{Theorie}
+%Spannung
+Die Spannung ist die Kraft auf einen Körper pro Flächeneinheit.
+Die Komponente, die senkrecht zur Oberfläche steht,
+ist die Normalspannung $\sigma$. Ihre oberflächenparallele
+Komponente heißt Tangentialspannung.
+%Hookesches Gesetz
+Das Hookesche Gesetz stellt den Zusammenhang zwischen
+der Spannung $\sigma$, die am Körper angreift, und der
+Deformation des Körpers dar:
+\begin{equation}
+\sigma = E \frac{\Delta L}{L}
+\label{eqn:Hooke}
+\end{equation}
+%Elastizitätsmodul
+$E$ ist dabei das Elastizitätsmodul.
+Das Elastizitätsmodul ist eine Materialkonstante, die
+anhand der Deformation eines Körpers bestimmt werden kann.
+%Biegung
+Eine Art der Deformation ist die Biegung. Sie entsteht, wenn
+eine Kraft, wie in Abbildung 1 und in Abbildung 2 gezeigt, auf einen Körper wirkt. %Abbildung 1 erwähnen
+%Berechnung der Durchbiegung, einseitig
+Zunächst wird die Berechnung der Biegung eines Stabes bei einseitiger
+Einspannung beschrieben. %Abbildung 1
+\begin{figure}
+    \centering
+\includegraphics[width= 10cm, height= 5cm]{./plots/abb1.png}
+\caption{}
+\label{fig:abb1}
+\end{figure}
+Die Durchbiegung $D(x)$ bezeichnet die Verschiebung eines Oberflächenpunktes
+an der Stelle x zwischen dem belasteten und unbelasteten Zustand des Stabes.
+Es wird eine Drehmomentgleichung aufgestellt, um $D(x)$ zu bestimmen.
+Die Zug- und Druckspannungen, die an der Querschnittsfläche $Q$ angreifen,
+sind entgegesetzt gleich und bewirken deshalb ein Drehmoment $M_{\sigma}$:
+\begin{equation*}
+M_{\sigma} = \int_{Q} y \sigma(y) dq
+\end{equation*}
+$y$ ist der Abstand des Flächenelementes $dq$ von der neutralen
+Faser. Die neutrale Faser ist die Fläche, in der keine Spannungen
+auftreten. Ihre Länge ändert sich bei der Biegung folglich nicht.
+Ein weiteres Drehmoment $M_{F}$ entsteht durch die Kraft auf einen senkrecht
+zur Stabachse stehenden Querschnitt. Es verdreht den Querschnitt aus 
+seiner ursprünglichen vertikalen Lage.
+Die Deformation des Körpers stellt sich so ein, dass die Drehmomente an
+jeder Stelle $x$ übereinstimmen:
+\begin{equation*}
+M_{F} = M_{\sigma}.
+\end{equation*}
+Dabei ist
+\begin{equation*}
+M_{F} = F (L-x),
+\end{equation*}
+da die Kraft $F$ über den Hebelarm $L-x$ an $Q$ angreift.
+Damit ist das Gleichgewicht der Drehmomente durch
+\begin{equation}
+\int_{Q} y \sigma(y) dq = F(L-x)
+\label{eqn:Momente}
+\end{equation}
+gegeben.
+Mit dem Hookeschen Gesetz \eqref{eqn:Hooke} wird die Normalspannung
+$\sigma(y)$ mittels
+\begin{equation*}
+\sigma(y) = E \frac{\delta x}{\Delta x}
+\end{equation*}
+berechnet. Hier ist $\Delta x$ die Länge eines kurzen Stabstücks
+und $\delta x$ die Längenänderung der Faser.
+Es gilt außerdem
+\begin{equation*}
+\delta x = y \Delta \phi = y \frac{\Delta x}{R},
+\end{equation*}
+wobei $R$ der Krümmungsradius der Faser bei $x$ ist.
+Damit ist
+\begin{equation*}
+\sigma(y) = E \frac{y}{R} = E y \frac{d^2D}{dx^2},
+\end{equation*}
+da für geringe Kurvenkrümmungen
+\begin{equation*}
+\frac{1}{R} \approx \frac{d^2D}{dx^2}
+\end{equation*}
+gilt, falls
+\begin{equation*}
+(\frac{dD}{dx})^2 << 1
+\end{equation*}
+ist. Für \eqref{eqn:Momente} ergibt sich damit:
+\begin{equation}
+E \frac{d^2D}{dx^2} \int_{Q} y^2 dq = F(L-x).
+\label{eqn:Momente2}
+\end{equation}
+Dabei ist
+\begin{equation*}
+I = \int_{Q} y^2 dq(y)
+\end{equation*}
+das Flächenträgheitsmoment.
+Integriert man \eqref{eqn:Momente2} und stellt die Gleichung
+nach $D(x)$ um, erhält man für die Biegung bei einseitiger Einspannung
+\begin{equation}
+D(x) = \frac{F}{2EI} (Lx^2- \frac{x^3}{3}).
+\label{eqn:D1}
+\end{equation}
+Diese Gleichung ist für $0 \leq x \leq L$ definiert.
+Die Integrationskonstanten verschwinden, weil $D(0) = 0$ und $\frac{dD}{dx} = 0$ sein müssen.
+
+\begin{figure}
+    \centering
+\includegraphics[width= 10cm, height= 5cm]{./plots/abb2.png}
+\caption{}
+\label{fig:abb2}
+\end{figure}
+%Berechnung der Durchbiegung, zweiseitig
+\noindent Liegen beide Stabenden auf und lässt man in der Mitte des Stabes
+eine Kraft angreifen, greift an der Querschnittsfläche die Kraft
+$\frac{F}{2}$ mit dem Hebelarm $x$ an. Für die erste Stabhälfte $0 \leq x \leq \frac{L}{2}$
+gilt für das Drehmoment
+\begin{equation*}
+M_{F} = - \frac{F}{2} x.
+\end{equation*}
+Für die zweite Hälfte $\frac{L}{2} \leq x \leq L$ gilt
+\begin{equation*}
+M_{F} = - \frac{F}{2} (L-x).
+\end{equation*}
+Damit ergibt sich hier für \eqref{eqn:Momente2}
+\begin{equation}
+\frac{d^2D}{dx^2} = - \frac{F}{EI} \frac{x}{2} \qq{für $0 \leq x \leq \frac{L}{2}$}
+\label{eqn:links}
+\end{equation}
+und
+\begin{equation}
+\frac{d^2D}{dx^2} = -\frac{1}{2} \frac{F}{EI} (L-x) \qq{für $\frac{L}{2} \leq x \leq L$}.
+\label{eqn:rechts}
+\end{equation}
+Integriert man beide Gleichungen, ergibt sich 
+\begin{equation*}
+\frac{dD}{dx} = - \frac{F}{EI} \frac{x^2}{4} + C \qq{für $0 \leq x \leq \frac{L}{2}$}
+\end{equation*}
+und
+\begin{equation*}
+\frac{dD}{dx} = - \frac{1}{2} \frac{F}{EI} (Lx-\frac{x^2}{2}) + C' \qq{für $\frac{L}{2} \leq x \leq L$}.
+\end{equation*}
+Da die Biegekurve in der Mitte des Stabes eine horizontale Tangente
+haben muss, muss für die Konstanten gelten:
+\begin{equation*}
+C = \frac{F}{EI} \frac{L^2}{16}
+\end{equation*}
+und
+\begin{equation*}
+C' = \frac{3}{16} \frac{F}{EI} L^2.
+\end{equation*}
+Setzt man die Konstanten in \eqref{eqn:links} und \eqref{eqn:rechts}
+ein und integriert die Ausdrücke, erhält man die Gleichungen
+für die Biegung bei zweiseitiger Auflage des Stabes:
+\begin{equation}
+D(x) = \frac{F}{48EI} (3L^2x - 4x^3) \qq{für $0 \leq x \leq \frac{L}{2}$}
+\label{eqn:D2links}
+\end{equation}
+und
+\begin{equation}
+D(x) = \frac{F}{48EI} (4x^3 - 12Lx^2 + 9L^2x - L^3) \qq{für $\frac{L}{2} \leq x \leq L$}.
+\label{eqn:D2rechts}
+\end{equation}
+Die Integrationskonstanten verschwinden hier, weil $D(0) = 0$ und $D(L) = 0$ sein müssen.
+Die Biegung eines elastischen Stabes kann also durch
+\eqref{eqn:D1}, \eqref{eqn:D2links} und \eqref{eqn:D2rechts} bestimmt werden.
+
+%D(x)=D_M(x)-D_0(x)
+\noindent Weil die Stäbe nicht als exakt gerade angenommen werden können,
+muss die Biegung ohne angehängtes Gewicht gemessen werden.
+Die Biegung des Stabes durch die Last ist dann 
+\begin{equation}
+D(x) = D_{M}(x) - D_{0}(x).
+\label{eqn:D(x)}
+\end{equation}
+
+%Lineare Regression, Berechnung von E
+\noindent Der Elastizitätsmodul lässt sich mittels einer
+linearen Regression bestimmen. Die Werte für die Biegung \eqref{eqn:D(x)}
+werden gegen eine liearisierte Form des horizontalen Abstands aufgetragen.
+Diese können aus den Gleichungen \eqref{eqn:D1}, \eqref{eqn:D2links} und \eqref{eqn:D2rechts} entnommen werden.
+Die Steigung berechnet sich dabei wie folgt:
+\begin{equation}
+m = \frac{\overline{xy} - \overline{x} \cdot \overline{y}}{\overline{x^2} - \overline{x}^2}.
+\label{eqn:m}
+\end{equation} %MW etc auch erwähnen?
+Bei dem ersten und zweiten Stab entspricht die Steigung
+$\frac{F}{2EI}$.
+Stellt man den Ausdruck nach $E$ um, erhält man
+eine Gleichung für den Elastizitätsmodul:
+\begin{equation}
+E = \frac{F}{2mI}.
+\label{eqn:E12}
+\end{equation}
+Für den dritten Stab ergibt sich für den Elastizitätsmodul auf die
+selbe Weise die Gleichung:
+\begin{equation}
+E = \frac{F}{48mI}.
+\label{eqn:E3}
+\end{equation}
+
+\section{Durchführung}
+Die Apparatur ist in Abbildung xy zu sehen. %Abbildung Apparatur erwähnen
+Die Stäbe werden entweder einseitig eingeklemmt oder zweiseitig
+auf den Punkten $A$ und $B$ gelagert. Die Stäbe werden belastet, indem
+ein Gewicht entweder am Stabende oder in der Stabmitte angehängt wird.
+Die Biegung wird mit zwei Messuhren, die sich auf einer Längen-Skala befinden
+und verschiebbar sind, sodass die Biegung an verschiedenen Stellen $x$ bestimmt
+werden kann, gemessen. Bei Messuhren wird die Verschiebung eines Objektes mittels
+eines federnden Taststiftes gemessen. %andere Formulierung
+%Hier Abbildung einfügen
+\begin{figure}
+    \centering
+\includegraphics[width= 10cm, height= 5cm]{./plots/abb3.png}
+\caption{}
+\label{fig:abb3}
+\end{figure}
+
+Zunächst wird jeweils für zwei einseitig eingespannte Stäbe die Biegung ohne
+angehängtes Gewicht gemessen. Danach wird an das Stabende ein Gewicht angehängt.
+Die Biegung wird mit einer der Messuhren gemessen. %Abbildung einseitiger Stab
+Ein dritter Stab wird
+zweiseitig aufgelegt. Es wird wieder zunächst die Biegung ohne Gewicht und dann
+mit Gewicht gemessen. Hier wird für die erste Hälfte des Stabes $\frac{L}{2} \leq x \leq L$
+die linke Messuhr und für die zweite Hälfte $0 \leq x \leq \frac{L}{2}$ die rechte Messuhr
+verwendet. %Abbildung zweiseitiger Stab
+Zuletzt werden die Längen, Breiten, beziehungsweise Durchmesser und Massen der Stäbe,
+sowie die Masse des angehängten Gewichts bestimmt.
+
+\input{./content/auswertung.tex}
+\newpage
+\input{./content/diskussion.tex}
+
+%Diskussion: Wert hat sich bei Erschütterung geändert
+
+\nocite{*}
+\newpage
+\printbibliography
+\end{document}

@@ -1,0 +1,2 @@
+Steigung der Funktion: 0.016938780869706835
+ linReg E= 459045457283.30365
