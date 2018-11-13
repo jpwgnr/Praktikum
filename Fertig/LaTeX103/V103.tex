@@ -33,8 +33,8 @@ Zunächst wird die Berechnung der Biegung eines Stabes bei einseitiger
 Einspannung beschrieben. %Abbildung 1
 \begin{figure}
     \centering
-\includegraphics[width= 10cm, height= 5cm]{./plots/abb1.png}
-\caption{}
+\includegraphics[width= 8cm, height= 5cm]{./plots/abb1.png}
+\caption{Biegung eines elastischen Stabes bei einseitiger Einspannung. \cite{V103}}
 \label{fig:abb1}
 \end{figure}
 Die Durchbiegung $D(x)$ bezeichnet die Verschiebung eines Oberflächenpunktes
@@ -46,8 +46,8 @@ sind entgegesetzt gleich und bewirken deshalb ein Drehmoment $M_{\sigma}$:
 M_{\sigma} = \int_{Q} y \sigma(y) dq
 \end{equation*}
 $y$ ist der Abstand des Flächenelementes $dq$ von der neutralen
-Faser. Die neutrale Faser ist die Fläche, in der keine Spannungen
-auftreten. Ihre Länge ändert sich bei der Biegung folglich nicht.
+Faser. Die neutrale Faser ist die Fläche, in der sich die angreifenden Spannungen gegenseitig aufheben.
+Ihre Länge ändert sich bei der Biegung folglich nicht.
 Ein weiteres Drehmoment $M_{F}$ entsteht durch die Kraft auf einen senkrecht
 zur Stabachse stehenden Querschnitt. Es verdreht den Querschnitt aus 
 seiner ursprünglichen vertikalen Lage.
@@ -112,8 +112,8 @@ Die Integrationskonstanten verschwinden, weil $D(0) = 0$ und $\frac{dD}{dx} = 0$
 
 \begin{figure}
     \centering
-\includegraphics[width= 10cm, height= 5cm]{./plots/abb2.png}
-\caption{}
+\includegraphics[width= 8cm, height= 5cm]{./plots/abb2.png}
+\caption{Biegung eines elastischen Stabes bei zweitseitiger Auflage.\cite{V103}}
 \label{fig:abb2}
 \end{figure}
 %Berechnung der Durchbiegung, zweiseitig
@@ -149,14 +149,14 @@ und
 Da die Biegekurve in der Mitte des Stabes eine horizontale Tangente
 haben muss, muss für die Konstanten gelten:
 \begin{equation*}
-C = \frac{F}{EI} \frac{L^2}{16}
+C = \frac{F}{EI} \frac{L^2}{16}.
 \end{equation*}
 und
 \begin{equation*}
 C' = \frac{3}{16} \frac{F}{EI} L^2.
 \end{equation*}
-Setzt man die Konstanten in \eqref{eqn:links} und \eqref{eqn:rechts}
-ein und integriert die Ausdrücke, erhält man die Gleichungen
+Die Konstanten werden in \eqref{eqn:links} und \eqref{eqn:rechts}
+eingesetzt. Durch Integration der Ausdrücke ergeben sich die Gleichungen
 für die Biegung bei zweiseitiger Auflage des Stabes:
 \begin{equation}
 D(x) = \frac{F}{48EI} (3L^2x - 4x^3) \qq{für $0 \leq x \leq \frac{L}{2}$}
@@ -183,7 +183,7 @@ D(x) = D_{M}(x) - D_{0}(x).
 %Lineare Regression, Berechnung von E
 \noindent Der Elastizitätsmodul lässt sich mittels einer
 linearen Regression bestimmen. Die Werte für die Biegung \eqref{eqn:D(x)}
-werden gegen eine liearisierte Form des horizontalen Abstands aufgetragen.
+werden gegen eine linearisierte Form des horizontalen Abstands aufgetragen.
 Diese können aus den Gleichungen \eqref{eqn:D1}, \eqref{eqn:D2links} und \eqref{eqn:D2rechts} entnommen werden.
 Die Steigung berechnet sich dabei wie folgt:
 \begin{equation}
@@ -192,7 +192,7 @@ m = \frac{\overline{xy} - \overline{x} \cdot \overline{y}}{\overline{x^2} - \ove
 \end{equation} %MW etc auch erwähnen?
 Bei dem ersten und zweiten Stab entspricht die Steigung
 $\frac{F}{2EI}$.
-Stellt man den Ausdruck nach $E$ um, erhält man
+Der Ausdruck wird nach $E$ umgestellt. Dadurch ergibt sich
 eine Gleichung für den Elastizitätsmodul:
 \begin{equation}
 E = \frac{F}{2mI}.
@@ -218,7 +218,7 @@ eines federnden Taststiftes gemessen. %andere Formulierung
 \begin{figure}
     \centering
 \includegraphics[width= 10cm, height= 5cm]{./plots/abb3.png}
-\caption{}
+\caption{Skizze einer Messapparatur zur Bestimmung der Biegung elastischer Stäbe.\cite{V103}}
 \label{fig:abb3}
 \end{figure}
 
