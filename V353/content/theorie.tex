@@ -2,21 +2,38 @@
 \section{Ziel}
 In diesem Versuch soll das Relaxationsverhalten eines RC-Kreises untesucht und ausgewertet werden. 
 
-\section{Theorie }
+\section{Theorie}
 %\cite{V353}
 \label{sec:Theorie}
-\subsection{Auf- und Entladevorgang}
+\subsection{Bestimmung der Zeitkonstante}
+Die Zeitkonstante $RC$ kann durch die Messung eines Auflade- bzw. Entladevorgangs bestimmt werden.
 Der Aufladevorgang eines Kondensators mit Kapazität $C$, der über einen Widerstand $R$ mit der Spannung $U_{0}$ verbunden ist, wird durch die Gleichung
 \begin{align*}
      U(t)&= U_{0} (1-\mathbf{exp}(-\frac{t}{RC}))
 \end{align*}
 beschrieben. Der Vorgang wird durch die Spannung $U$ zum Zeitpunkt $t$ dargestellt. 
-
-\noindent Auf dieselbe Art und Weise wird der Entladevorgang durch
+Auf dieselbe Art und Weise wird der Entladevorgang durch
 \begin{align*}
      U(t)&= U_{0} \mathbf{exp}(-\frac{t}{RC})
 \end{align*}
-beschrieben. 
+beschrieben.
+Die Zeitkonstante wird anhand der Steigung einer linearen Regression bestimmt.
+Die negative logarithmierte Kondensatorspannung wird gegen die Zeit aufgetragen.
+Die Steigung bei der linearen Regression ist
+\begin{equation}
+    m = \frac{\overline{xy} - \overline{x}\overline{y}}{\overline{x^2} - \overline{x}^2}.
+    \label{eqn: m}
+\end{equation}
+Da die Steigung
+\begin{equation*}
+$m = \frac{1}{RC}$ 
+\end{equation*}
+ist, wird $RC$ bestimmt durch
+\begin{equation}
+    RC= \frac{1}{m} = \frac{\overline{x^2} - \overline{x}^2}{\overline{xy} - \overline{x} \overline{y}}.
+\end{equation}
+
+\subsection{}
 
 \subsection{Spannung messen}
 Eine Wechselspannung $U(t)$ wird durch die Formel 
