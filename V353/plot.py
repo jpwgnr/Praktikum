@@ -7,70 +7,83 @@ from scipy import stats
 #Generate data 
 
 #a   
-freq1, Amp1 = np.genfromtxt("data/freq1.txt", unpack= True)
-tab1 = TexTable([freq1, Amp1, np.log(Amp1)], ["Frequenz", "Amplitude", "logarithmierte Amplitude"])
-tab1.writeFile("build/tab1.tex")
+U, t = np.genfromtxt("data/dataa.txt", unpack= True)
+tab1 = TexTable([U, t], [r"Spannung in \si{\volt}", r"t in \si{\second}"])
+tab1.writeFile("build/taba.tex")
+
+U0=1.47 
+differentU = U0-U
+newU=-np.log(differentU/U0)
+
 #b
-U0= 
-R=
-freq2, Amp2 = np.genfromtxt("data/freq2.txt", unpack= True)
-tab2 = TexTable([freq2, Amp2, Amp2/U0], ["Frequenz", "Amplitude", "Amplitude/U0"])
-tab2.writeFile("build/tab2.tex")
-#c 
-freq3, phase3 = np.genfromtxt("data/freq3.txt", unpack= True)
-tab3 = TexTable([freq3, phase], ["Frequenz", "Phasenverschiebung"])
-tab3.writeFile("build/tab3.tex")
-#d
-Ampr4, phase = np.genfromtxt("data/freqr4.txt", unpack= True)
-tab4 = TexTable([phase, Amp4, Amp4/U0], ["Phasenverschiebung", "Amplitude", "Amplitude/U0"])
-tab4.writeFile("build/tab4.tex")
+freq2, U2, a2 = np.genfromtxt("data/databc.txt", unpack= True)
+tab2 = TexTable([freq2, U2, a2], [r"Frequenz in \si{\Hertz}", r"Amplitude der Spannung in \si{\hertz}",r"Phasenverschiebung in \si{\second}"])
+tab2.writeFile("build/tabb.tex")
 
+U1= 621e-3 
+A2= np.sqrt(1/(((U1/U2)**2)-1))
+omega=2*np.pi*freq2
 
-#Functions to calculate with data
-#a 
-get1RCa(Steigung):
-    return -Steigung 
-#b 
-RC(x, R, C): 
-    return np.log(1/np.sqrt(1+(x**2)*(R**2)*(C**2)))
 #c 
-getRCc(x, R, C):
-    return np.arctan(-x*R*C)
+b= 1/freq2
+phase= (a2/b)*np.pi
+newphase= -1/np.tan(phase)
+
 #d 
-getRCd(x, omega, R, C):
-    - np.sin(x)/(omega*R*C)
+Aw=U2/U1
+
 # Calculate
 #a
-Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(freq1,np.log(Amp1))
+Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(t,newU)
+
+def Funktion(m, n, x):
+    return m*x+n
 #b
-params2, pcov2 = curve_fit(RC, freq2, Amp2/U0)
+Steigung2, yAbschnitt2, r_value2, p_value2, std_err2= stats.linregress(1/omega,A2)
 #c 
-params3, pcov3 = curve_fit(getRCc, freq3, phase)
+Steigung3, yAbschnitt3, r_value3, p_value3, std_err3= stats.linregress(1/omega,newphase)
 #d 
-params4, pcov4 = curve_fit(getRCd, Amp4, phase)
+def Kreis(phi, RC):
+    return -np.sin(phi)*(1/omega)*RC
+
 #Save Solutions
-#a
-taba = TexTable([freq1, Amp1], ["Frequenz", "Amplitude"])
+#a 
+taba =TexTable([t, newU], [r"t in \si{\second}", r"$log (\frac{U(t)}{U_{0}})"])
 taba.writeFile("build/tabsolutiona.tex")
 #b
-tabb = TexTable([freq2,Amp2], ["Frequenz", "Amplitude"])
+tabb = TexTable([1/omega ,A2], [r"\frac{1}{\omega}",r"\sqrt{\frac{1}{\frac{U_{0}{A(\omega)}}^{2}}}"])
 tabb.writeFile("build/tabsolutionb.tex")
-#c 
-tabc =TexTable([freq3, phase], ["Frequenz", "Phasenverschiebung"])
-tabc.writeFile("build/tabsolutionc.tex")
 #d 
-tabd =TexTable([Amp4, phase], ["Frequenz", "Phasenverschiebung"])
-tabc.writeFile("build/tabsolutionc.tex")
+tabd =TexTable([phase, Aw], [r"Phasenverschiebung in \si{\radian}", r"\frac{A(\omega)}{U_{0}}"])
+tabd.writeFile("build/tabsolutiond.tex")
 #Make plots for data
 #a
-plt.plot(freq1, np.log(Amp))
-plt.plot(freq1, Steigung1*freq1+yAbschnitt1)
+plt.figure(1)
+plt.plot(t, newU, "xr")
+plt.plot(t,Funktion(Steigung1, yAbschnitt1, t), "r")
 plt.savefig("build/plota.pdf")
 #b
-plt.plot(freq2, np.log(Amp2/U0))
-plt.plot(freq2, RC(freq2, *params2))
+plt.figure(2)
+plt.plot(1/omega, A2, "xr")
+plt.plot(1/omega, Funktion(Steigung2, yAbschnitt2, 1/omega), "r" )
 plt.savefig("build/plotb.pdf")
 #c
-plt.plot(freq3, np.log(phase))
-plt.plot(freq3,getRCc(freq3, *params3))
+plt.figure(3)
+plt.plot(1/omega, newphase, "xr")
+plt.plot(1/omega, Funktion(Steigung3, yAbschnitt3, 1/omega), "r")
 plt.savefig("build/plotc.pdf")
+#d Plot1
+plt.figure(4)
+plt.plot(phase, Kreis(phase, Steigung1), "r")
+plt.plot(phase, Aw, "r")
+plt.savefig("build/plotd1.pdf")
+#d Plot2
+plt.figure(5)
+plt.plot(phase, Kreis(phase, Steigung2), "r")
+plt.plot(phase, Aw, "r")
+plt.savefig("build/plotd2.pdf")
+#d Plot3
+plt.figure(6)
+plt.plot(phase, Kreis(phase, Steigung3), "r")
+plt.plot(phase, Aw, "r")
+plt.savefig("build/plotd3.pdf")
