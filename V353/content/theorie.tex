@@ -6,73 +6,60 @@ In diesem Versuch soll das Relaxationsverhalten eines RC-Kreises untesucht und a
 %\cite{V353}
 \label{sec:Theorie}
 \subsection{Auf- und Entladevorgang}
-
 Der Aufladevorgang eines Kondensators mit Kapazität $C$, der über einen Widerstand $R$ mit der Spannung $U_{0}$ verbunden ist, wird durch die Gleichung
 \begin{align*}
-     Q(t)&= CU_{0} (1-\mathbf{exp}(-\frac{t}{RC}))
+     U(t)&= U_{0} (1-\mathbf{exp}(-\frac{t}{RC}))
 \end{align*}
-beschrieben. Der Vorgang wird durch die Ladung $Q$ zum Zeitpunkt $t$ dargestellt. 
+beschrieben. Der Vorgang wird durch die Spannung $U$ zum Zeitpunkt $t$ dargestellt. 
 
-Auf dieselbe Art und Weise wird der Entladevorgang durch
+\noindent Auf dieselbe Art und Weise wird der Entladevorgang durch
 \begin{align*}
-     Q(t)&= Q(0) \mathbf{exp}(-\frac{t}{RC})
+     U(t)&= U_{0} \mathbf{exp}(-\frac{t}{RC})
 \end{align*}
 beschrieben. 
 
 \subsection{Spannung messen}
-
 Eine Wechselspannung $U(t)$ wird durch die Formel 
-
 \begin{align*} 
     U(t)&= U_{0} \mathbf{cos}\omega t 
 \end{align*}
-dargestellt. Dabei ist $U_{0}$ die maximale Spannung/Auslenkung und der zweite Teil der Funktion beschreibt die Oszillation um den Nullpunkt in Abhängigkeit der Frequenz $\omega$ und der Zeit $t$. 
+dargestellt. Dabei ist $U_{0}$ die maximale Spannung. $\mathbf{cos}\omega t$ beschreibt die Oszillation um den Nullpunkt in Abhängigkeit von der Frequenz $\omega$ und der Zeit $t$. 
 
-Bei einer Phasenverschiebung $\phi$ verschiebt sich diese Oszillation um einen gewissen Wert. Die neue Formel lautet dann 
-
+\noindent Mit einer Phasenverschiebung $\phi$ verschiebt sich die Oszillation der Kondensatorspannung um einen gewissen Wert. Die neue Formel lautet dann 
 \begin{align*} 
-    U(t)&= U_{0} \mathbf{cos}(\omega t + \phi)
+    U_{C}(t)&= U_{0} \mathbf{cos}(\omega t + \phi).
 \end{align*}
-
 Ein $RC$-System setzt sich nach der zweiten Kirchhoffschen Regel aus der Spannung $U_{R}$ des Widerstands und der Spannung $U_{C}$ des Kondensators zusammen.
 Es gilt 
 \begin{align*} 
     U(t) &= U_{R}(t) + U_{C}(t).
 \end{align*}
-
-Werden die oberen Zusammenhänge und das Ohmsche Gesetz in diesen Zusammenhang eingesetzt ergibt sich 
-
+Mit den oberen Gleichungen für $U(t)$, $U_{C}(t)$ und dem Ohmsche Gesetz, ergibt sich 
 \begin{align*} 
 U_{0} \mathbf{cos}\omega t &= -A(\omega) RC \mathbf{sin}(\omega t + \phi) + A(\omega) \mathbf{cos}(\omega t + \phi),  
 \end{align*}
-
-wobei hierbei für die Phasenverschiebung $\phi$ gilt 
-
-\begin{align*} 
-\phi (\omega)&= \mathbf{arctan}(-\omega RC) 
-\end{align*}
-
-und für die Amplitude $A(\omega)$ 
-
-\begin{align*} 
-    A(\omega) &= - frac{\mathbf{sin}\phi}{\omega RC} U_{0}.
-\end{align*}
-    
-Durch einige Umformungen ergibt sich dann 
-
-\begin{equation}
-A(\omega) = \frac{U_{0}}{sqrt{1 + \omega^2 R^2 C^2}}
+wobei für die Phasenverschiebung 
+\begin{equation} 
+\phi (\omega) = \mathbf{arctan}(-\omega RC) 
+\label{eqn: phi}
 \end{equation}
-
-Dabei wird die Amplitude $A$ der Kondensatorspannung durch die Frequenz $\omega$ der Erregerspannung beeinflusst. 
+gilt. Die Amplitude $A(\omega)$ ist
+\begin{equation} 
+    A(\omega) = - \frac{\mathbf{sin}\phi}{\omega RC} U_{0}.
+    \label{eqn: A1}
+\end{equation}
+Durch einige Umformungen ergibt sich dann 
+\begin{equation}
+A(\omega) = \frac{U_{0}}{\sqrt{1 + \omega^2 R^2 C^2}}.
+\label{eqn: A2}
+\end{equation}
+Dabei wird die Amplitude $A(\omega)$ der Kondensatorspannung durch die Frequenz $\omega$ der Erregerspannung beeinflusst. 
 
 \subsection{RC-Schwingkreis als Integrator der Spannung U(t)}
-
-Ein RC-SChwingkreis kann dazu genutzt werden eine zeitlich veränderliche Spannung $U(t)$ unter bestimmten Bedingungen zu integrieren. 
-Es wird ein proportionaler Zusammenhang zwischen der Spannung des Kondensators $U_{C}$ und dem Integral $int{U(t) dt}$ festgestellt. Dieser ergibt sich durch 
-
+Ein RC-Schwingkreis kann dazu genutzt werden eine zeitlich veränderliche Spannung $U(t)$ unter bestimmten Bedingungen zu integrieren. 
+Es wird ein proportionaler Zusammenhang zwischen der Spannung des Kondensators $U_{C}$ und dem Integral $\int U(t) dt$ festgestellt. Dieser ergibt sich durch 
 \begin{equation}
-    U_{C} = \frac{1}{RC} \int{0}{t}{U(t') dt'} 
+    U_{C}(t) = \frac{1}{RC} \int_{0}^{t} U(t') dt'.
 \end{equation} 
 
 
