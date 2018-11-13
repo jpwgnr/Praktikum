@@ -306,9 +306,6 @@ INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstop
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 OUTPUT build/main.bcf
-INPUT build/main.bbl
-INPUT build/main.bbl
-INPUT build/main.bbl
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -344,15 +341,5 @@ INPUT /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/ot
 INPUT /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-bold.luc
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
-INPUT /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
-INPUT /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
-INPUT ./plot.pdf
-INPUT ./plot.pdf
-INPUT ./content/diskussion.tex
-INPUT ./content/diskussion.tex
-INPUT /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
-INPUT build/main.aux
-INPUT build/main.run.xml
-OUTPUT build/main.run.xml

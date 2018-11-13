@@ -27,7 +27,7 @@ omega=2*np.pi*freq2
 #c 
 b= 1/freq2
 phase= (a2/b)*np.pi
-newphase= -1/np.tan(phase)
+newphase= (1/np.tan(phase))
 
 #d 
 Aw=U2/U1
@@ -56,11 +56,17 @@ tabb.writeFile("build/tabsolutionb.tex")
 #d 
 tabd =TexTable([phase, Aw], [r"Phasenverschiebung in \si{\radian}", r"\frac{A(\omega)}{U_{0}}"])
 tabd.writeFile("build/tabsolutiond.tex")
+
+#all solutions 
+
+file = open("build/solutions.txt", "w")
+file.write("a) 1/RC= {} \n Fehler der Ausgleichsgeraden: {} \nb) 1/RC= {} \nFehler der Ausgleichsgeraden: {} \nc) 1/RC= {} \nFehler der Ausgleichsgeraden: {} \n".format(Steigung1, std_err1, Steigung2, std_err2, Steigung3, std_err3))
+file.close()
 #Make plots for data
 #a
 plt.figure(1)
 plt.plot(t, newU, "xr")
-plt.plot(t,Funktion(Steigung1, yAbschnitt1, t), "r")
+plt.plot(t, Funktion(Steigung1, yAbschnitt1, t), "r")
 plt.savefig("build/plota.pdf")
 #b
 plt.figure(2)
@@ -74,6 +80,7 @@ plt.plot(1/omega, Funktion(Steigung3, yAbschnitt3, 1/omega), "r")
 plt.savefig("build/plotc.pdf")
 #d Plot1
 plt.figure(4)
+#ax = plt.subplot()
 plt.plot(phase, Kreis(phase, Steigung1), "r")
 plt.plot(phase, Aw, "r")
 plt.savefig("build/plotd1.pdf")
