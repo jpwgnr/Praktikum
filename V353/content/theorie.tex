@@ -6,7 +6,7 @@ In diesem Versuch soll das Relaxationsverhalten eines RC-Kreises untesucht und a
 %\cite{V353}
 \label{sec:Theorie}
 \subsection{Bestimmung der Zeitkonstante}
-Die Zeitkonstante $RC$ kann durch die Messung eines Auflade- bzw. Entladevorgangs bestimmt werden.
+Die Zeitkonstante $RC$ kann durch die Messung des Auflade- bzw. Entladevorgangs eines Kondensators bestimmt werden.
 Der Aufladevorgang eines Kondensators mit Kapazität $C$, der über einen Widerstand $R$ mit der Spannung $U_{0}$ verbunden ist, wird durch die Gleichung
 \begin{align*}
      U(t)&= U_{0} (1-\mathbf{exp}(-\frac{t}{RC}))
@@ -17,6 +17,7 @@ Auf dieselbe Art und Weise wird der Entladevorgang durch
      U(t)&= U_{0} \mathbf{exp}(-\frac{t}{RC})
 \end{align*}
 beschrieben.
+%Lineare Regression: mehr erklären?
 Die Zeitkonstante wird anhand der Steigung einer linearen Regression bestimmt.
 Die negative logarithmierte Kondensatorspannung wird gegen die Zeit aufgetragen.
 Die Steigung bei der linearen Regression ist
@@ -24,25 +25,24 @@ Die Steigung bei der linearen Regression ist
     m = \frac{\overline{xy} - \overline{x}\overline{y}}{\overline{x^2} - \overline{x}^2}.
     \label{eqn: m}
 \end{equation}
+%x und y angeben?
 Da die Steigung
 \begin{equation*}
-$m = \frac{1}{RC}$ 
+    m = \frac{1}{RC}
 \end{equation*}
 ist, wird $RC$ bestimmt durch
 \begin{equation}
     RC= \frac{1}{m} = \frac{\overline{x^2} - \overline{x}^2}{\overline{xy} - \overline{x} \overline{y}}.
+    \label{eqn: RC}
 \end{equation}
 
-\subsection{}
-
-\subsection{Spannung messen}
+\subsection{Bestimmung der Kondensatorspannung} %Andere Überschrift?
 Eine Wechselspannung $U(t)$ wird durch die Formel 
 \begin{align*} 
     U(t)&= U_{0} \mathbf{cos}\omega t 
 \end{align*}
 dargestellt. Dabei ist $U_{0}$ die maximale Spannung. $\mathbf{cos}\omega t$ beschreibt die Oszillation um den Nullpunkt in Abhängigkeit von der Frequenz $\omega$ und der Zeit $t$. 
-
-\noindent Mit einer Phasenverschiebung $\phi$ verschiebt sich die Oszillation der Kondensatorspannung um einen gewissen Wert. Die neue Formel lautet dann 
+Mit einer Phasenverschiebung $\phi$ verschiebt sich die Oszillation der Kondensatorspannung um einen gewissen Wert. Die neue Formel lautet dann 
 \begin{align*} 
     U_{C}(t)&= U_{0} \mathbf{cos}(\omega t + \phi).
 \end{align*}
@@ -70,14 +70,38 @@ Durch einige Umformungen ergibt sich dann
 A(\omega) = \frac{U_{0}}{\sqrt{1 + \omega^2 R^2 C^2}}.
 \label{eqn: A2}
 \end{equation}
-Dabei wird die Amplitude $A(\omega)$ der Kondensatorspannung durch die Frequenz $\omega$ der Erregerspannung beeinflusst. 
+Dabei wird die Amplitude $A(\omega)$ der Kondensatorspannung durch die Frequenz $\omega$ der Erregerspannung beeinflusst.
+%Lineare Regression:
+Um die Zeitkonstante $RC$ zu bestimmen, wird wieder eine lineare Regression $y=mx$ durchgeführt. %Formulierung ändern
+Die Gleichung \eqref{eqn: A2} wird so umgeformt, dass $\frac{1}{RC}$ die Steigung $m$ ist.
+Für x und y ergeben sich: $x=$ und $y=$. %x und y einfügen
+Durch die Steigung der Geraden kann dann $RC$ mittels \eqref{eqn: RC} bestimmt werden.
+
+\subsection{Bestimmung der Phasenverschiebung} %Andere Überschrift?
+Die Phasenverschiebung $\phi(\omega)$ lässt sich mit
+\begin{equation}
+    \phi = \frac{a}{T}2\pi
+\end{equation}
+bestimmen. Dabei ist $a$ der Abstand der Nulldurchgänge der Spannung des Kondensators und der Spannung des Generators.
+$T$ ist die Schwingungsdauer, die durch
+\begin{equation}
+    T = \frac{1}{\omega}
+\end{equation}
+gegeben ist. $\omega$ ist die Kreisfrequenz.
+%Gibt der Generator die Frequenz oder Kreisfrequez an?
+%Lineare Regression:
+Um die Zeitkonstante zu berechnen, wird eine lineare Regression benötigt.
+Die Gleichung \eqref{eqn: phi} wird so umgestellt, dass die Steigung $m = \frac{1}{RC}$ ist.
+Dann ist $x= $ und $y= $. %x und y einfügen
+$RC$ kann somit wieder durch \eqref{eqn: RC} bestimmt werden.
 
 \subsection{RC-Schwingkreis als Integrator der Spannung U(t)}
 Ein RC-Schwingkreis kann dazu genutzt werden eine zeitlich veränderliche Spannung $U(t)$ unter bestimmten Bedingungen zu integrieren. 
 Es wird ein proportionaler Zusammenhang zwischen der Spannung des Kondensators $U_{C}$ und dem Integral $\int U(t) dt$ festgestellt. Dieser ergibt sich durch 
 \begin{equation}
     U_{C}(t) = \frac{1}{RC} \int_{0}^{t} U(t') dt'.
-\end{equation} 
+\end{equation}
+%Formel A1 benutzen?
 
 
 
