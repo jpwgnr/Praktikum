@@ -8,7 +8,7 @@ from scipy import stats
 
 #a   
 U, t = np.genfromtxt("data/dataa.txt", unpack= True)
-tab1 = TexTable([U, t], [r"Spannung in \si{\volt}", r"t in \si{\second}"])
+tab1 = TexTable([U, t], [r"$U/ \si{\volt}$", r"$t/ \si{\second}$"])
 tab1.writeFile("build/taba.tex")
 
 U0=1.47 
@@ -17,7 +17,7 @@ newU=-np.log(differentU/U0)
 
 #b
 freq2, U2, a2 = np.genfromtxt("data/databc.txt", unpack= True)
-tab2 = TexTable([freq2, U2, a2], [r"Frequenz in \si{\Hertz}", r"Amplitude der Spannung in \si{\hertz}",r"Phasenverschiebung in \si{\second}"])
+tab2 = TexTable([freq2, U2, a2], [r"$f/ \si{\Hertz}$", r"$A(\omega)/ \si{V}$",r"$a / \si{\second}$"])
 tab2.writeFile("build/tabb.tex")
 
 U1= 621e-3 
@@ -48,19 +48,22 @@ def Kreis(phi, RC):
 
 #Save Solutions
 #a 
-taba =TexTable([t, newU], [r"t in \si{\second}", r"$log (\frac{U(t)}{U_{0}})"])
+taba =TexTable([t, newU], [r"$t/ \si{\second}$", r"$-log(\frac{U(t)}{U_{0}})$"])
 taba.writeFile("build/tabsolutiona.tex")
 #b
-tabb = TexTable([1/omega ,A2], [r"\frac{1}{\omega}",r"\sqrt{\frac{1}{\frac{U_{0}{A(\omega)}}^{2}}}"])
+tabb = TexTable([1/omega ,A2], [r"$\frac{1}{\omega}/ \si{\second}$",r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$"])
 tabb.writeFile("build/tabsolutionb.tex")
+#c 
+tabc = TexTable([1/omega ,newphase], [r"$\frac{1}{\omega}/ \si{\second}$",r"$-\frac{1}{tan(\phi(\omega))}$"])
+tabc.writeFile("build/tabsolutionc.tex")
 #d 
-tabd =TexTable([phase, Aw], [r"Phasenverschiebung in \si{\radian}", r"\frac{A(\omega)}{U_{0}}"])
+tabd =TexTable([phase, Aw], [r"$\phi/ \si{\radian}$", r"$\frac{A(\omega)}{U_{0}}$"])
 tabd.writeFile("build/tabsolutiond.tex")
 
 #all solutions 
 
 file = open("build/solutions.txt", "w")
-file.write("a) 1/RC= {} \n Fehler der Ausgleichsgeraden: {} \nb) 1/RC= {} \nFehler der Ausgleichsgeraden: {} \nc) 1/RC= {} \nFehler der Ausgleichsgeraden: {} \n".format(Steigung1, std_err1, Steigung2, std_err2, Steigung3, std_err3))
+file.write("a) 1/RC= {} +/- {} 1/s \nb) 1/RC= {}  +/- {} 1/s \nc) 1/RC= {}  +/- {} 1/s \n".format(Steigung1, std_err1, Steigung2, std_err2, Steigung3, std_err3))
 file.close()
 
 #Theoriekurve d, dafür Theoriewerte phi
@@ -76,7 +79,7 @@ plt.plot(t, Funktion(Steigung1+std_err1, yAbschnitt1, t), "b--", label="Fehler d
 plt.plot(t, Funktion(Steigung1-std_err1, yAbschnitt1, t), "b--", linewidth=0.5)
 plt.xlim(t[0], t[-1])
 plt.xlabel(r"$t/\si{\second}$")
-plt.ylabel(r"$U something$")
+plt.ylabel(r"$-log(\frac{U(t)}{U_{0}})$")
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("build/plota.pdf")
@@ -87,8 +90,8 @@ plt.plot(1/omega, Funktion(Steigung2, yAbschnitt2, 1/omega), "r", label="Fit")
 plt.plot(1/omega, Funktion(Steigung2+std_err2, yAbschnitt2, 1/omega), "b--", label="Fehler des Fits", linewidth=0.5)
 plt.plot(1/omega, Funktion(Steigung2-std_err2, yAbschnitt2, 1/omega), "b--", linewidth=0.5)
 plt.xlim(t[0], t[-1])
-plt.xlabel(r"$t/\si{\second}$")
-plt.ylabel(r"$U something$")
+plt.xlabel(r"$\frac{1}{\omega}/ \si{\second}$")
+plt.ylabel(r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$")
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("build/plotb.pdf")
@@ -99,8 +102,8 @@ plt.plot(1/omega, Funktion(Steigung3, yAbschnitt3, 1/omega), "r", label="Fit")
 plt.plot(1/omega, Funktion(Steigung3+std_err3, yAbschnitt3, 1/omega), "b--", label="Fehler des Fits", linewidth=0.5)
 plt.plot(1/omega, Funktion(Steigung3-std_err3, yAbschnitt3, 1/omega), "b--", linewidth=0.5)
 plt.xlim(t[0], t[-1])
-plt.xlabel(r"$t/\si{\second}$")
-plt.ylabel(r"$U something$")
+plt.xlabel(r"$\frac{1}{\omega}/ \si{\second}$")
+plt.ylabel(r"$-\frac{1}{tan(\phi(\omega))}$")
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("build/plotc.pdf")
