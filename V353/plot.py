@@ -8,7 +8,7 @@ from scipy import stats
 
 #a   
 U, t = np.genfromtxt("data/dataa.txt", unpack= True)
-tab1 = TexTable([U, t], [r"$U/ \si{\volt}$", r"$t/ \si{\second}$"])
+tab1 = TexTable([U, t], [r"$U/ \si{\volt}$", r"$t/ \si{\second}$"], label="tab1", caption=r"iSpannung $U$ zum Zeitpunkt t, während der Entladung eines Kondensators ", roundPrecision=5)
 tab1.writeFile("build/taba.tex")
 
 U0=1.47 
@@ -17,7 +17,7 @@ newU=-np.log(differentU/U0)
 
 #b
 freq2, U2, a2 = np.genfromtxt("data/databc.txt", unpack= True)
-tab2 = TexTable([freq2, U2, a2], [r"$f/ \si{\Hertz}$", r"$A(\omega)/ \si{V}$",r"$a / \si{\second}$"])
+tab2 = TexTable([freq2, U2, a2], [r"$f/ \si{\Hertz}$", r"$A(\omega)/ \si{V}$",r"$a / \si{\second}$"], label="tab2", caption=r"Verschiedene Frequenzen und die dazu entstehende Amplitude der Spannung des Kondensatorsi, $U_{C}$, und die zeitliche Phasenverschiebung zur Spannung $U(t)$", roundPrecision=5)
 tab2.writeFile("build/tabb.tex")
 
 U1= 621e-3 
@@ -48,16 +48,16 @@ def Kreis(phi, RC):
 
 #Save Solutions
 #a 
-taba =TexTable([t, newU], [r"$t/ \si{\second}$", r"$-log(\frac{U(t)}{U_{0}})$"])
+taba =TexTable([t, newU], [r"$t/ \si{\second}$", r"$-log(\frac{U(t)}{U_{0}})$"], label="taba", caption=r"Der zeitliche Verlauf $t$ gegen den negativen Logarithmus der Spannungswerte geteilt durch die maximale Spannung", roundPrecision=5)
 taba.writeFile("build/tabsolutiona.tex")
 #b
-tabb = TexTable([1/omega ,A2], [r"$\frac{1}{\omega}/ \si{\second}$",r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$"])
+tabb = TexTable([1/omega ,A2], [r"$\frac{1}{\omega}/ \si{\second}$",r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$"], label="tabb", caption=r"Der Kehrwert der Kreisfrequenz $\omega$ gegen die Wurzel aus dem Bruch in dessen Nenner die maximale Spannung durch die Amplitudenwerte von $U_{C} zum Quadrat um eins subtrahiert werden", roundPrecision=5)
 tabb.writeFile("build/tabsolutionb.tex")
 #c 
-tabc = TexTable([1/omega ,newphase], [r"$\frac{1}{\omega}/ \si{\second}$",r"$-\frac{1}{tan(\phi(\omega))}$"])
+tabc = TexTable([1/omega ,newphase], [r"$\frac{1}{\omega}/ \si{\second}$",r"$-\frac{1}{tan(\phi(\omega))}$"], label="tabc", caption="Der Kehrwert der Kreisfrequenz gegen den negativen Kehrwert des Tangens der Phase, die sich durch die negative Division der zeitlichen Phasenverschiebung durch die Periodendauer multipliziert mit \pi ergibt", roundPrecision=5)
 tabc.writeFile("build/tabsolutionc.tex")
 #d 
-tabd =TexTable([phase, Aw], [r"$\phi/ \si{\radian}$", r"$\frac{A(\omega)}{U_{0}}$"])
+tabd =TexTable([phase, Aw], [r"$\phi/ \si{\radian}$", r"$\frac{A(\omega)}{U_{0}}$"], label="tabd", caption="Die Phasenverschiebung gegen die Amplitude der Spannung $U_{C}$ geteilt durch die maximale Spannung $U_{0}", roundPrecision=5)
 tabd.writeFile("build/tabsolutiond.tex")
 
 #all solutions 
