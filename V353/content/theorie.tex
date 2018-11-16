@@ -3,9 +3,9 @@
 In diesem Versuch soll das Relaxationsverhalten eines RC-Kreises untesucht und ausgewertet werden. 
 
 \section{Theorie}
-%\cite{V353}
+\cite{V353}
 \label{sec:Theorie}
-\subsection{Bestimmung der Zeitkonstante}
+\subsection{Bestimmung von RC über den Entladevorgang des Kondensators}
 Die Zeitkonstante $RC$ kann durch die Messung des Auflade- bzw. Entladevorgangs eines Kondensators bestimmt werden.
 Der Aufladevorgang eines Kondensators mit Kapazität $C$, der über einen Widerstand $R$ mit der Spannung $U_{0}$ verbunden ist, wird durch die Gleichung
 \begin{align*}
@@ -36,7 +36,7 @@ ist, wird $RC$ bestimmt durch
     \label{eqn: RC}
 \end{equation}
 
-\subsection{Bestimmung der Kondensatorspannung} %Andere Überschrift?
+\subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 Eine Wechselspannung $U(t)$ wird durch die Formel 
 \begin{align*} 
     U(t)&= U_{0} \mathbf{cos}\omega t 
@@ -77,7 +77,7 @@ Die Gleichung \eqref{eqn: A2} wird so umgeformt, dass $\frac{1}{RC}$ die Steigun
 Für x und y ergeben sich: $x=$ und $y=$. %x und y einfügen
 Durch die Steigung der Geraden kann dann $RC$ mittels \eqref{eqn: RC} bestimmt werden.
 
-\subsection{Bestimmung der Phasenverschiebung} %Andere Überschrift?
+\subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
 Die Phasenverschiebung $\phi(\omega)$ lässt sich mit
 \begin{equation}
     \phi = \frac{a}{T}2\pi
@@ -88,7 +88,6 @@ $T$ ist die Schwingungsdauer, die durch
     T = \frac{1}{\omega}
 \end{equation}
 gegeben ist. $\omega$ ist die Kreisfrequenz.
-%Gibt der Generator die Frequenz oder Kreisfrequez an?
 %Lineare Regression:
 Um die Zeitkonstante zu berechnen, wird eine lineare Regression benötigt.
 Die Gleichung \eqref{eqn: phi} wird so umgestellt, dass die Steigung $m = \frac{1}{RC}$ ist.
@@ -101,7 +100,6 @@ Es wird ein proportionaler Zusammenhang zwischen der Spannung des Kondensators $
 \begin{equation}
     U_{C}(t) = \frac{1}{RC} \int_{0}^{t} U(t') dt'.
 \end{equation}
-%Formel A1 benutzen?
 
-
-
+\subsection{Amplitude der Kondensatorspannung gegen Phasenverschiebung}
+%Formel A1
