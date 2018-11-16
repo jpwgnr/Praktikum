@@ -48,16 +48,16 @@ def Kreis(phi, RC):
 
 #Save Solutions
 #a 
-taba =TexTable([t, newU], [r"$t/ \si{\second}$", r"$-log(\frac{U(t)}{U_{0}})$"], label="taba", caption=r"Der zeitliche Verlauf $t$ gegen den negativen Logarithmus der Spannungswerte geteilt durch die maximale Spannung", roundPrecision=5)
+taba =TexTable([t, newU], [r"$t/ \si{\second}$", r"$-log(\frac{U(t)}{U_{0}})$"], label="taba", caption=r"Die Zeit $t$ gegen den negativen Logarithmus der Spannungswerte geteilt durch die maximale Spannung", roundPrecision=5)
 taba.writeFile("build/tabsolutiona.tex")
 #b
-tabb = TexTable([1/omega ,A2], [r"$\frac{1}{\omega}/ \si{\second}$",r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$"], label="tabb", caption=r"Der Kehrwert der Kreisfrequenz $\omega$ gegen die Wurzel aus dem Bruch in dessen Nenner die maximale Spannung durch die Amplitudenwerte von $U_{C} zum Quadrat um eins subtrahiert werden", roundPrecision=5)
+tabb = TexTable([1/omega ,A2], [r"$\frac{1}{\omega}/ \si{\second}$",r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$"], label="tabb", caption=r"Der Kehrwert der Kreisfrequenz $\omega$ gegen die Wurzel aus dem Bruch in dessen Nenner die maximale Spannung durch die Amplitudenwerte von $U_{C}$ zum Quadrat um eins subtrahiert werden", roundPrecision=5)
 tabb.writeFile("build/tabsolutionb.tex")
 #c 
 tabc = TexTable([1/omega ,newphase], [r"$\frac{1}{\omega}/ \si{\second}$",r"$-\frac{1}{tan(\phi(\omega))}$"], label="tabc", caption="Der Kehrwert der Kreisfrequenz gegen den negativen Kehrwert des Tangens der Phase, die sich durch die negative Division der zeitlichen Phasenverschiebung durch die Periodendauer multipliziert mit \pi ergibt", roundPrecision=5)
 tabc.writeFile("build/tabsolutionc.tex")
 #d 
-tabd =TexTable([phase, Aw], [r"$\phi/ \si{\radian}$", r"$\frac{A(\omega)}{U_{0}}$"], label="tabd", caption="Die Phasenverschiebung gegen die Amplitude der Spannung $U_{C}$ geteilt durch die maximale Spannung $U_{0}", roundPrecision=5)
+tabd =TexTable([phase, Aw], [r"$\phi/ \si{\radian}$", r"$\frac{A(\omega)}{U_{0}}$"], label="tabd", caption="Die Phasenverschiebung gegen die Amplitude der Spannung $U_{C}$ geteilt durch die maximale Spannung $U_{0}$", roundPrecision=5)
 tabd.writeFile("build/tabsolutiond.tex")
 
 #all solutions 
@@ -89,7 +89,7 @@ plt.plot(1/omega, A2, "xr", label="Daten")
 plt.plot(1/omega, Funktion(Steigung2, yAbschnitt2, 1/omega), "r", label="Fit")
 plt.plot(1/omega, Funktion(Steigung2+std_err2, yAbschnitt2, 1/omega), "b--", label="Fehler des Fits", linewidth=0.5)
 plt.plot(1/omega, Funktion(Steigung2-std_err2, yAbschnitt2, 1/omega), "b--", linewidth=0.5)
-plt.xlim(t[0], t[-1])
+plt.xlim(1/omega[0], 1/omega[-1])
 plt.xlabel(r"$\frac{1}{\omega}/ \si{\second}$")
 plt.ylabel(r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$")
 plt.legend(loc="best")
@@ -101,7 +101,7 @@ plt.plot(1/omega, newphase, "xr", label="Daten")
 plt.plot(1/omega, Funktion(Steigung3, yAbschnitt3, 1/omega), "r", label="Fit")
 plt.plot(1/omega, Funktion(Steigung3+std_err3, yAbschnitt3, 1/omega), "b--", label="Fehler des Fits", linewidth=0.5)
 plt.plot(1/omega, Funktion(Steigung3-std_err3, yAbschnitt3, 1/omega), "b--", linewidth=0.5)
-plt.xlim(t[0], t[-1])
+plt.xlim(1/omega[0], 1/omega[-1])
 plt.xlabel(r"$\frac{1}{\omega}/ \si{\second}$")
 plt.ylabel(r"$-\frac{1}{tan(\phi(\omega))}$")
 plt.legend(loc="best")
