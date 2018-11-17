@@ -14,7 +14,7 @@ Der Aufladevorgang eines Kondensators mit Kapazität $C$, der über einen Widers
 beschrieben. Der Vorgang wird durch die Spannung $U$ zum Zeitpunkt $t$ dargestellt. 
 Auf dieselbe Art und Weise wird der Entladevorgang durch
 \begin{equation*}
-     U(t)&= U_{0} \mathbf{exp}(-\frac{t}{RC})
+     U(t) = U_{0} \mathbf{exp}(-\frac{t}{RC})
 \end{equation*}
 beschrieben.
 %Lineare Regression:
@@ -40,6 +40,15 @@ beschrieben. Also wird $\frac{1}{RC}$ bestimmt durch
     \label{eqn: RC}
 \end{equation}
 Dabei sind, ebenfalls aus Gleichung \eqref{eqn: linreg1} entnehmbar, $x=t$ und $y=-\log(\frac{U(t)}{U_{0}})$. %nebeneinander schreiben?
+Der Fehler der inversen Zeitkonstante ist gegeben durch
+\begin{equation}
+    \frac{1}{N} \sum_{i=1}^N f(x_{i}) - y_{i},
+    \label{eqn: fehler}
+\end{equation}
+wobei $N$ die Anzahl der %?????
+$f(x_{i})$ %???
+und $y_{i}$ %???
+ist. Der Fehler gilt ebenfalls für die im Folgenden beschriebenen Zeitkonstanten.
 
 \subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 Eine Wechselspannung $U(t)$ wird durch die Formel 
@@ -117,5 +126,12 @@ Es wird ein proportionaler Zusammenhang zwischen der Spannung des Kondensators $
     U_{C}(t) = \frac{1}{RC} \int_{0}^{t} U(t') dt'.
 \end{equation}
 
-\subsection{Amplitude der Kondensatorspannung gegen Phasenverschiebung}
-%Formel A1
+\subsection{Abhängigkeit der Relativamplitude von der Phasenverschiebung}
+Die Abhängigkeit der Relativamplitude $\frac{A(\omega)}{U_{0}}$ von der Phase $\phi$ ist in
+Gleichung \eqref{eqn: A1} zu sehen.
+Bei gegebenem Wert für die Zeitkonstante lässt sie die Phase also mittels
+\begin{equation}
+    \phi = \mathbf{arcsin}(- \frac{A(\omega)}{U_{0}} \omega RC) %richtige Formel?
+    \label{eqn: phi2}
+\end{equation}
+berechnen.
