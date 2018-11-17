@@ -2,53 +2,61 @@
 \label{sec:Auswertung}
 
 
-\subsection{Bestimmung der Zeitkonstante}
-Die Werte, die für die Bestimmung der Zeitkonstante $RC$ nötig sind, befinden sich in Tabelle \ref{table: tab1}.
+\subsection{Bestimmung von RC über den Entladevorgang des Kondensators}
+Die Werte, die für die Bestimmung der Zeitkonstante $RC$ nötig sind, befinden sich in Tabelle \ref{table: tab1}. %Anderer Satz
 \input{build/taba.tex}
-%Tabelle solution a?
+Die $x$ und $y$ Werte der linearen Regression \eqref{eqn: linreg1} sind in Tabelle \ref{table: taba} dargestellt.
+Abbildung \ref{fig: plota} stellt die Gerade dieser linearen Regression dar.
 \input{build/tabsolutiona.tex}
-Die Zeitkonstante berechnet sich mittels Gleichung \eqref{eqn: RC} zu $RC = $. %Wert für RC 
 
-%Was zeigt der Plot?
 \begin{figure}
   \centering
   \includegraphics{build/plota.pdf}
-  \caption{}
+  \caption{Auftragung des negativen Logarithmus der Spannung geteilt durch die maximale Spannung gegen die Zeit.
+  Dargestellt werden die Messwerte, ein Fit und der Fehler des Fits.} %keine Messwerte
   \label{fig:plota}
 \end{figure}
 
-\subsection{4b}
-Die Kondensatorspannungen in Abhängigkeit von der Frequenz sind in Tabelle \ref{table: tab2} dargstellt. %und Phasenverschiebung
+\noindent Die Steigung der Geraden ist das Inverse der Zeitkonstante. %Fehler von RC erwähnen
+Mittels \eqref{eqn: RC} berechnet sich das Inverse der Zeitkonstante zu
+$\frac{1}{RC} = \SI{836.5006359605215 \pm 51.5139818147638}{\per\second}$.
+
+\subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
+Die Kondensatorspannungen und die zeitlichen Phasenverschiebungen in Abhängigkeit
+von der Frequenz sind in Tabelle \ref{table: tab2} dargstellt.
 \input{build/tabb.tex}
-%Tabelle solution b?
+Um die Zeitkonstante aus der Amplitude der Kondensatorspannung errechnen zu können, wird eine lineare Regression 
+\eqref{eqn: linreg2} durchgeführt. Die $x$ und $y$ Werte dazu finden sich in Tabelle \ref{table: tabb}.
+In Abbildung \ref{fig: plotb} sind diese $x$ und $y$ Werte gegeneinander aufgetragen.
 \input{build/tabsolutionb.tex}
 
-Die Zeitkonstante wird wieder durch \eqref{eqn: RC} berechnet. Es ergibt sich $RC = $. %Wert für RC
-
-%Was zeigt der Plot?
 \begin{figure}
   \centering
   \includegraphics{build/plotb.pdf}
-  \caption{}
+  \caption{Auftragung der Werte aus der linearen Regression. Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
   \label{fig:plotb}
 \end{figure}
 
-\subsection{4c}
-%Das gehört zur Tabelle tab2:
-In Tabelle \ref{table: } sind die Abstände der Nulldurchgänge der Spannung des Kondensators und der Spannung %Tabelle
-des Generators in Abhängigkeit von der Frequenz dargestellt.
-\input{build/tabc.tex}
-%Tabelle solution c?
-\input{build/tabsolutionc.tex}
-Mittels \eqref{eqn: RC} berechnet sich die Zeitkonstante zu $RC = $. %Wert für RC
+Das Inverse der Zeitkonstante wird wieder durch \eqref{eqn: RC} berechnet. Es ergibt sich %Fehler von RC erwähnen
+$\frac{1}{RC} = \SI{885.6821479847594  \pm 19.461732063767485}{\per\second}$.
 
-%Was zeigt der Plot?
+\subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
+Die Abstände der Nulldurchgänge der Spannung des Kondensators und der Spannung des Generators in Abhängigkeit
+von der Frequenz sind bereits in Tabelle \ref{table: tab2} aufgelistet.
+Um die Zeitkonstante aus dieser Phasenverschiebung zu bestimmen, wird die lineare Regression \eqref{eqn: linreg3} benötigt.
+Die $x$ und $y$ Werte befinden sich in Tabelle \ref{table: tabc}. Abbildung \ref{fig: plotc} stellt die Gerade der
+linearen Regression dar, deren Steigung das Inverse der Zeitkonstante ist.
+\input{build/tabsolutionc.tex}
+
 \begin{figure}
   \centering
   \includegraphics{build/plotc.pdf}
-  \caption{}
+  \caption{Auftragung der Werte aus der linearen Regression. Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
   \label{fig:plotc}
 \end{figure}
+
+Mittels \eqref{eqn: RC} berechnet sich das Inverse der Zeitkonstante zu %Fehler von RC erwähnen
+$\frac{1}{RC} = \SI{873.0148092485724  \pm 26.684330083133542}{\per\second}$.
 
 \subsection{4d}
 
@@ -97,4 +105,3 @@ Mittels \eqref{eqn: RC} berechnet sich die Zeitkonstante zu $RC = $. %Wert für 
   \includegraphics{build/integrator3.pdf}
   \label{fig:plot}
 \end{figure}
-%jeweils einzelne Formeln für RC in der Theorie angeben und hier erwähnen!

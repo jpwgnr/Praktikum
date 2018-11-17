@@ -13,28 +13,33 @@ Der Aufladevorgang eines Kondensators mit Kapazität $C$, der über einen Widers
 \end{align*}
 beschrieben. Der Vorgang wird durch die Spannung $U$ zum Zeitpunkt $t$ dargestellt. 
 Auf dieselbe Art und Weise wird der Entladevorgang durch
-\begin{align*}
+\begin{equation*}
      U(t)&= U_{0} \mathbf{exp}(-\frac{t}{RC})
-\end{align*}
+\end{equation*}
 beschrieben.
-%Lineare Regression: mehr erklären?
+%Lineare Regression:
 Die Zeitkonstante wird anhand der Steigung einer linearen Regression bestimmt.
-Die negative logarithmierte Kondensatorspannung wird gegen die Zeit aufgetragen.
-Die Steigung bei der linearen Regression ist
+Dazu wird die Gleichung für die Entladung eines Kondensators in die Form $y=mx$ gebracht:
+\begin{equation}
+    - \log(\frac{U(t)}{U_{0}}) = \frac{1}{RC} t.
+    \label{eqn: linreg1}
+\end{equation}
+Der negative logarithmierte Quotient der Kondensatorspannung durch die maximale Spannung wird gegen die Zeit aufgetragen.
+Die Steigung bei der linearen Regression ist gegeben durch
 \begin{equation}
     m = \frac{\overline{xy} - \overline{x}\overline{y}}{\overline{x^2} - \overline{x}^2}.
     \label{eqn: m}
 \end{equation}
-%x und y angeben?
-Da die Steigung
+Die Steigung, wie aus Gleichung \eqref{eqn: linreg1} entnommen werden kann, wird durch
 \begin{equation*}
     m = \frac{1}{RC}
 \end{equation*}
-ist, wird $RC$ bestimmt durch
+beschrieben. Also wird $\frac{1}{RC}$ bestimmt durch
 \begin{equation}
-    RC= \frac{1}{m} = \frac{\overline{x^2} - \overline{x}^2}{\overline{xy} - \overline{x} \overline{y}}.
+    \frac{1}{RC}= \frac{\overline{xy} - \overline{x}\overline{y}}{\overline{x^2} - \overline{x}^2}.
     \label{eqn: RC}
 \end{equation}
+Dabei sind, ebenfalls aus Gleichung \eqref{eqn: linreg1} entnehmbar, $x=t$ und $y=-\log(\frac{U(t)}{U_{0}})$. %nebeneinander schreiben?
 
 \subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 Eine Wechselspannung $U(t)$ wird durch die Formel 
@@ -51,7 +56,7 @@ Es gilt
 \begin{align*} 
     U(t) &= U_{R}(t) + U_{C}(t).
 \end{align*}
-Mit den oberen Gleichungen für $U(t)$, $U_{C}(t)$ und dem Ohmsche Gesetz, ergibt sich 
+Mit den oberen Gleichungen für $U(t)$, $U_{C}(t)$ und dem Ohmschen Gesetz ergibt sich 
 \begin{align*} 
 U_{0} \mathbf{cos}\omega t &= -A(\omega) RC \mathbf{sin}(\omega t + \phi) + A(\omega) \mathbf{cos}(\omega t + \phi),  
 \end{align*}
@@ -72,10 +77,14 @@ A(\omega) = \frac{U_{0}}{\sqrt{1 + \omega^2 R^2 C^2}}.
 \end{equation}
 Dabei wird die Amplitude $A(\omega)$ der Kondensatorspannung durch die Frequenz $\omega$ der Erregerspannung beeinflusst.
 %Lineare Regression:
-Um die Zeitkonstante $RC$ zu bestimmen, wird wieder eine lineare Regression $y=mx$ durchgeführt. %Formulierung ändern
-Die Gleichung \eqref{eqn: A2} wird so umgeformt, dass $\frac{1}{RC}$ die Steigung $m$ ist.
-Für x und y ergeben sich: $x=$ und $y=$. %x und y einfügen
-Durch die Steigung der Geraden kann dann $RC$ mittels \eqref{eqn: RC} bestimmt werden.
+Um die Zeitkonstante $RC$ anhand der Amplitude der Kondensatorspannung zu bestimmen, wird wieder eine lineare Regression $y=mx$ durchgeführt. %Formulierung ändern
+Die Gleichung \eqref{eqn: A2} wird so umgeformt, dass $\frac{1}{RC}$ die Steigung $m$ ist:
+\begin{equation}
+    \sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)}})^2 -1} = \frac{1}{RC} \frac{1}{\omega}.
+    \label{eqn: linreg2}
+\end{equation}
+Für x und y ergeben sich also: $x=\frac{1}{\omega}$ und $y=\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)}})^2 -1}$. %Doppelpunkt?
+Durch die Steigung \eqref{eqn: m} der Geraden kann dann $\frac{1}{RC}$ mittels \eqref{eqn: RC} bestimmt werden.
 
 \subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
 Die Phasenverschiebung $\phi(\omega)$ lässt sich mit
@@ -87,11 +96,18 @@ $T$ ist die Schwingungsdauer, die durch
 \begin{equation}
     T = \frac{1}{\omega}
 \end{equation}
-gegeben ist. $\omega$ ist die Kreisfrequenz.
+gegeben ist. $\omega$ ist die Kreisfrequenz
+\begin{equation*}
+    \omega = 2\pi f.
+\end{equation*}
 %Lineare Regression:
-Um die Zeitkonstante zu berechnen, wird eine lineare Regression benötigt.
-Die Gleichung \eqref{eqn: phi} wird so umgestellt, dass die Steigung $m = \frac{1}{RC}$ ist.
-Dann ist $x= $ und $y= $. %x und y einfügen
+Um die Zeitkonstante zu berechnen, wird wieder eine lineare Regression benötigt.
+Die Gleichung \eqref{eqn: phi} wird so umgestellt, dass die Steigung $m = \frac{1}{RC}$ ist:
+\begin{equation}
+    -\frac{1}{\mathbf{tan}(\phi(\omega))} = \frac{1}{RC} \frac{1}{\omega}.
+    \label{eqn: linreg3} 
+\end{equation}
+Dann ist $x= \frac{1}{\omega}$ und $y= -\frac{1}{\mathbf{tan}(\phi(\omega))}$.
 $RC$ kann somit wieder durch \eqref{eqn: RC} bestimmt werden.
 
 \subsection{RC-Schwingkreis als Integrator der Spannung U(t)}
