@@ -17,13 +17,13 @@ newU=-np.log(differentU/U0)
 
 #b
 freq2, U2, a2 = np.genfromtxt("data/databc.txt", unpack= True)
-tab2 = TexTable([freq2, U2, a2], [r"$f/ \si{\Hertz}$", r"$A(\omega)/ \si{V}$",r"$a / \si{\second}$"], label="tab2", caption=r"Verschiedene Frequenzen und die dazu entstehende Amplitude der Spannung des Kondensatorsi, $U_{C}$, und die zeitliche Phasenverschiebung zur Spannung $U(t)$", roundPrecision=5)
+tab2 = TexTable([freq2, U2, a2], [r"$f/ \si{\hertz}$", r"$A(\omega)/ \si{V}$",r"$a / \si{\second}$"], label="tab2", caption=r"Verschiedene Frequenzen und die dazu entstehende Amplitude der Spannung des Kondensatorsi, $U_{C}$, und die zeitliche Phasenverschiebung zur Spannung $U(t)$", roundPrecision=5)
 tab2.writeFile("build/tabb.tex")
 
 U1= 621e-3 
 A2= np.sqrt(1/(((U1/U2)**2)-1))
 omega=2*np.pi*freq2
-
+q=1/omega
 #c 
 b= 1/freq2
 phase= (-a2/b)*np.pi
@@ -89,7 +89,7 @@ plt.plot(1/omega, A2, "xr", label="Daten")
 plt.plot(1/omega, Funktion(Steigung2, yAbschnitt2, 1/omega), "r", label="Fit")
 plt.plot(1/omega, Funktion(Steigung2+std_err2, yAbschnitt2, 1/omega), "b--", label="Fehler des Fits", linewidth=0.5)
 plt.plot(1/omega, Funktion(Steigung2-std_err2, yAbschnitt2, 1/omega), "b--", linewidth=0.5)
-plt.xlim(1/omega[0], 1/omega[-1])
+plt.xlim(q[-1], q[0])
 plt.xlabel(r"$\frac{1}{\omega}/ \si{\second}$")
 plt.ylabel(r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$")
 plt.legend(loc="best")
@@ -101,7 +101,7 @@ plt.plot(1/omega, newphase, "xr", label="Daten")
 plt.plot(1/omega, Funktion(Steigung3, yAbschnitt3, 1/omega), "r", label="Fit")
 plt.plot(1/omega, Funktion(Steigung3+std_err3, yAbschnitt3, 1/omega), "b--", label="Fehler des Fits", linewidth=0.5)
 plt.plot(1/omega, Funktion(Steigung3-std_err3, yAbschnitt3, 1/omega), "b--", linewidth=0.5)
-plt.xlim(1/omega[0], 1/omega[-1])
+plt.xlim(q[-1], q[0])
 plt.xlabel(r"$\frac{1}{\omega}/ \si{\second}$")
 plt.ylabel(r"$-\frac{1}{tan(\phi(\omega))}$")
 plt.legend(loc="best")

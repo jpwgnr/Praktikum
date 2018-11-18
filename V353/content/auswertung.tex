@@ -4,18 +4,18 @@
 
 \subsection{Bestimmung von RC über den Entladevorgang des Kondensators}
 \label{sec: a}
-Die Werte, die für die Bestimmung der Zeitkonstante $RC$ nötig sind, befinden sich in Tabelle \ref{table: tab1}. %Anderer Satz
+Die Werte, die für die Bestimmung der Zeitkonstante $RC$ nötig sind, befinden sich in Tabelle \ref{tab1}. %Anderer Satz
 \input{build/taba.tex}
-Die $x$ und $y$ Werte der linearen Regression \eqref{eqn: linreg1} sind in Tabelle \ref{table: taba} dargestellt.
-Abbildung \ref{fig: plota} stellt die Gerade dieser linearen Regression dar.
+Die $x$ und $y$ Werte der linearen Regression \eqref{eqn: linreg1} sind in Tabelle \ref{taba} dargestellt.
+Abbildung \ref{fig:plota} stellt die Gerade dieser linearen Regression dar.
 \input{build/tabsolutiona.tex}
 
 \begin{figure}
   \centering
-  \includegraphics{build/plota.pdf}
+  \includegraphics[width=8cm, height=5cm]{build/plota.pdf}
   \caption{Auftragung des negativen Logarithmus der Spannung geteilt durch die maximale Spannung gegen die Zeit.
   Dargestellt werden die Messwerte, ein Fit und der Fehler des Fits.} %keine Messwerte
-  \label{fig: plota}
+  \label{fig:plota}
 \end{figure}
 
 \noindent Die Steigung der Geraden ist das Inverse der Zeitkonstante.
@@ -25,18 +25,18 @@ sich das Inverse der Zeitkonstante zu $\frac{1}{RC} = \SI{836.5006359605215 \pm 
 \subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 \label{sec: b}
 Die Kondensatorspannungen und die zeitlichen Phasenverschiebungen in Abhängigkeit
-von der Frequenz sind in Tabelle \ref{table: tab2} dargstellt.
+von der Frequenz sind in Tabelle \ref{tab2} dargstellt.
 \input{build/tabb.tex}
 Um die Zeitkonstante aus der Amplitude der Kondensatorspannung errechnen zu können, wird eine lineare Regression 
-\eqref{eqn: linreg2} durchgeführt. Die $x$ und $y$ Werte dazu finden sich in Tabelle \ref{table: tabb}.
-In Abbildung \ref{fig: plotb} sind diese $x$ und $y$ Werte gegeneinander aufgetragen.
+\eqref{eqn: linreg2} durchgeführt. Die $x$ und $y$ Werte dazu finden sich in Tabelle \ref{tabb}.
+In Abbildung \ref{fig:plotb} sind diese $x$ und $y$ Werte gegeneinander aufgetragen.
 \input{build/tabsolutionb.tex}
 
 \begin{figure}
   \centering
-  \includegraphics{build/plotb.pdf}
+  \includegraphics[width=8cm, height=5cm]{build/plotb.pdf}
   \caption{Auftragung der Werte aus der linearen Regression. Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
-  \label{fig: plotb}
+  \label{fig:plotb}
 \end{figure}
 
 Das Inverse der Zeitkonstante wird wieder durch \eqref{eqn: RC} und der Fehler durch \eqref{eqn: fehler}
@@ -45,17 +45,17 @@ berechnet. Es ergibt sich $\frac{1}{RC} = \SI{885.6821479847594  \pm 19.46173206
 \subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
 \label{sec: c}
 Die Abstände der Nulldurchgänge der Spannung des Kondensators und der Spannung des Generators in Abhängigkeit
-von der Frequenz sind bereits in Tabelle \ref{table: tab2} aufgelistet.
+von der Frequenz sind bereits in Tabelle \ref{tab2} aufgelistet.
 Um die Zeitkonstante aus dieser Phasenverschiebung zu bestimmen, wird die lineare Regression \eqref{eqn: linreg3} benötigt.
-Die $x$ und $y$ Werte befinden sich in Tabelle \ref{table: tabc}. Abbildung \ref{fig: plotc} stellt die Gerade der
+Die $x$ und $y$ Werte befinden sich in Tabelle \ref{tabc}. Abbildung \ref{fig:plotc} stellt die Gerade der
 linearen Regression dar, deren Steigung das Inverse der Zeitkonstante ist.
 \input{build/tabsolutionc.tex}
 
 \begin{figure}
   \centering
-  \includegraphics{build/plotc.pdf}
+  \includegraphics[width=8cm, height=5cm]{build/plotc.pdf}
   \caption{Auftragung der Werte aus der linearen Regression. Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
-  \label{fig: plotc}
+  \label{fig:plotc}
 \end{figure}
 
 Mittels \eqref{eqn: RC} und \eqref{eqn: fehler} berechnet sich das Inverse der Zeitkonstante zu
@@ -64,17 +64,17 @@ $\frac{1}{RC} = \SI{873.0148092485724  \pm 26.684330083133542}{\per\second}$.
 \subsection{Abhängigkeit der Relativamplitude von der Phasenverschiebung}
 %Tabelle
 Die Werte, die zur Bestimmung der Abhängigkeit der Relativamplitude $\frac{A(\omega)}{U_{0}}$ von der
-Phasenverschiebung $\phi$ nötig sind, befinden sich in Tabelle \ref{table: tabd}.
+Phasenverschiebung $\phi$ nötig sind, befinden sich in Tabelle \ref{tabd}.
 \input{build/tabsolutiond.tex}
 %Plots
 Um die verschiedenen errechneten Werte für die Zeitkonstante vergleichen
 zu können, wird für die in \ref{sec: a} und \ref{sec: b} berechneten Werte die Phasenverschiebung mittels
-Gleichung \eqnref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: plotd1}, \ref{fig: plotd2} und
+Gleichung \eqref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: plotd1}, \ref{fig: plotd2} und
 \ref{fig: plotd3} ist die Relativamplitude $\frac{A(\omega)}{U_{0}}$ der Radius und die Phase $\phi$ der Winkel.
 \begin{figure}
   \centering
-  \includegraphics{build/plotd1.pdf}
-  \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \red{sec: a} 
+  \includegraphics[width=8cm, height=5cm]{build/plotd1.pdf}
+  \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \ref{sec: a} 
   berechnete Zeitkonstante in einem Polarkoordinatensystem dargestellt. Es sind Daten, ein Fit, der Fehler
   des Fits und die Theoriekurve eingezeichnet.}
   \label{fig: plotd1}
@@ -82,8 +82,8 @@ Gleichung \eqnref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: p
 
 \begin{figure}
   \centering
-  \includegraphics{build/plotd2.pdf}
-  \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \red{sec: b} 
+  \includegraphics[width=8cm, height=5cm]{build/plotd2.pdf}
+  \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \ref{sec: b} 
   berechnete Zeitkonstante in einem Polarkoordinatensystem dargestellt. Es sind Daten, ein Fit, der Fehler
   des Fits und die Theoriekurve eingezeichnet.}
   \label{fig: plotd2}
@@ -91,8 +91,8 @@ Gleichung \eqnref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: p
 
 \begin{figure}
   \centering
-  \includegraphics{build/plotd3.pdf}
-  \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \red{sec: c} 
+  \includegraphics[width=8cm, height=5cm]{build/plotd3.pdf}
+  \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \ref{sec: c} 
   berechnete Zeitkonstante in einem Polarkoordinatensystem dargestellt. Es sind Daten, ein Fit, der Fehler
   des Fits und die Theoriekurve eingezeichnet.}
   \label{fig: plotd3}
@@ -102,21 +102,21 @@ Gleichung \eqnref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: p
 %SÄTZE, ERKLÄRUNG
 \begin{figure}
   \centering
-  \includegraphics{build/integrator1.pdf}
+  \includegraphics[width=8cm, height=5cm]{build/integrator1.pdf}
   \caption{Aufnahme des Bildschirms des Oszillokops bei eingestellter Sinusspannung.}
   \label{fig: sinus}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics{build/integrator2.pdf}
+  \includegraphics[width=8cm, height=5cm]{build/integrator2.pdf}
   \caption{Aufnahme des Bildschirms des Oszillokops bei eingestellter Dreiecksspannung.}
   \label{fig: dreieck}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics{build/integrator3.pdf}
+  \includegraphics[width=8cm, height=5cm]{build/integrator3.pdf}
   \caption{Aufnahme des Bildschirms des Oszillokops bei eingestellter Rechteckspannung.}
   \label{fig: rechteck}
 \end{figure}
