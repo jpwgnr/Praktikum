@@ -8,7 +8,7 @@ from scipy import stats
 
 #a   
 U, t = np.genfromtxt("data/dataa.txt", unpack= True)
-tab1 = TexTable([U, t], [r"$U/ \si{\volt}$", r"$t/ \si{\second}$"], label="tab1", caption=r"iSpannung $U$ zum Zeitpunkt t, während der Entladung eines Kondensators ", roundPrecision=5)
+tab1 = TexTable([U, t], [r"$U/ \si{\volt}$", r"$t/ \si{\second}$"], label="tab1", caption=r"Spannung $U$ zum Zeitpunkt t, während der Entladung eines Kondensators ", roundPrecision=5)
 tab1.writeFile("build/taba.tex")
 
 U0=1.47 

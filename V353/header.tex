@@ -77,6 +77,15 @@
 \floatplacement{figure}{htbp}
 \floatplacement{table}{htbp}
 
+%dasselbe für subsections 
+\makeatletter
+\AtBeginDocument{%
+    \expandafter\renewcommand\expandafter\subsection\expandafter{%
+        \expandafter\@fb@secFB\subsection
+    }%
+}
+\makeatother
+
 % Floats innerhalb einer Section halten
 \usepackage[
   section, % Floats innerhalb der Section halten

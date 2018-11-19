@@ -12,7 +12,7 @@ Abbildung \ref{fig:plota} stellt die Gerade dieser linearen Regression dar.
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/plota.pdf}
+  \includegraphics[width=13cm, height=9cm]{build/plota.pdf}
   \caption{Auftragung des negativen Logarithmus der Spannung geteilt durch die maximale Spannung gegen die Zeit.
   Dargestellt werden die Messwerte, ein Fit und der Fehler des Fits.} %keine Messwerte
   \label{fig:plota}
@@ -34,12 +34,12 @@ In Abbildung \ref{fig:plotb} sind diese $x$ und $y$ Werte gegeneinander aufgetra
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/plotb.pdf}
+  \includegraphics[width=13cm, height=9cm]{build/plotb.pdf}
   \caption{Auftragung der Werte aus der linearen Regression. Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
   \label{fig:plotb}
 \end{figure}
 
-Das Inverse der Zeitkonstante wird wieder durch \eqref{eqn: RC} und der Fehler durch \eqref{eqn: fehler}
+\noindent Das Inverse der Zeitkonstante wird wieder durch \eqref{eqn: RC} und der Fehler durch \eqref{eqn: fehler}
 berechnet. Es ergibt sich $\frac{1}{RC} = \SI{885.682  \pm 19.461}{\per\second}$.
 
 \subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
@@ -53,7 +53,7 @@ linearen Regression dar, deren Steigung das Inverse der Zeitkonstante ist.
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/plotc.pdf}
+  \includegraphics[width=13cm, height=9cm]{build/plotc.pdf}
   \caption{Auftragung der Werte aus der linearen Regression. Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
   \label{fig:plotc}
 \end{figure}
@@ -73,7 +73,7 @@ Gleichung \eqref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: pl
 \ref{fig: plotd3} ist die Relativamplitude $\frac{A(\omega)}{U_{0}}$ der Radius und die Phase $\phi$ der Winkel.
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/plotd1.pdf}
+  \includegraphics[width=12cm, height=7cm]{build/plotd1.pdf}
   \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \ref{sec: a} 
   berechnete Zeitkonstante in einem Polarkoordinatensystem dargestellt. Es sind Daten, ein Fit, der Fehler
   des Fits und die Theoriekurve eingezeichnet.}
@@ -82,7 +82,7 @@ Gleichung \eqref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: pl
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/plotd2.pdf}
+  \includegraphics[width=12cm, height=7cm]{build/plotd2.pdf}
   \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \ref{sec: b} 
   berechnete Zeitkonstante in einem Polarkoordinatensystem dargestellt. Es sind Daten, ein Fit, der Fehler
   des Fits und die Theoriekurve eingezeichnet.}
@@ -91,32 +91,37 @@ Gleichung \eqref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: pl
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/plotd3.pdf}
+  \includegraphics[width=12cm, height=7cm]{build/plotd3.pdf}
   \caption{Abhängigkeit der Relativamplitude in Abhängigkeit von der Phase für die in \ref{sec: c} 
   berechnete Zeitkonstante in einem Polarkoordinatensystem dargestellt. Es sind Daten, ein Fit, der Fehler
   des Fits und die Theoriekurve eingezeichnet.}
   \label{fig: plotd3}
 \end{figure}
 
+\subsection{Spannung als Integrator}
 %Integrator Bilder
-Die folgenden Abbildungen zeigen die integrierte sowie die zu integrierende Spannung. %Noch was?
+Die folgenden Abbildungen zeigen die integrierte sowie die zu integrierende Spannung.
+Dabei wurde eine Sinusspannung angelegt. Die Kondensatorspannung wurde dadurch zu einem Cosinus. Die Dreiecksspannung wurde zu einer Funktion integriert, die einem Sinus ähnelt. Die Rechteckspannung integriert sich zur Dreiecksspannung. \newline \newline \newline %Noch was?
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/integrator1.pdf}
+  \includegraphics[width=9cm, height=6cm]{build/integrator1.pdf}
   \caption{Aufnahme des Bildschirms des Oszillokops bei eingestellter Sinusspannung.}
   \label{fig: sinus}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/integrator2.pdf}
+  \includegraphics[width=9cm, height=6cm]{build/integrator2.pdf}
   \caption{Aufnahme des Bildschirms des Oszillokops bei eingestellter Dreiecksspannung.}
   \label{fig: dreieck}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=8cm, height=5cm]{build/integrator3.pdf}
+  \includegraphics[width=9cm, height=6cm]{build/integrator3.pdf}
   \caption{Aufnahme des Bildschirms des Oszillokops bei eingestellter Rechteckspannung.}
   \label{fig: rechteck}
 \end{figure}
+
+\newpage
+\newpage
