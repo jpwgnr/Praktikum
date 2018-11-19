@@ -54,7 +54,7 @@ taba.writeFile("build/tabsolutiona.tex")
 tabb = TexTable([1/omega ,A2], [r"$\frac{1}{\omega}/ \si{\second}$",r"$\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)})^{2}-1}}$"], label="tabb", caption=r"Der Kehrwert der Kreisfrequenz $\omega$ gegen die Wurzel aus dem Bruch in dessen Nenner die maximale Spannung durch die Amplitudenwerte von $U_{C}$ zum Quadrat um eins subtrahiert werden", roundPrecision=5)
 tabb.writeFile("build/tabsolutionb.tex")
 #c 
-tabc = TexTable([1/omega ,newphase], [r"$\frac{1}{\omega}/ \si{\second}$",r"$-\frac{1}{tan(\phi(\omega))}$"], label="tabc", caption="Der Kehrwert der Kreisfrequenz gegen den negativen Kehrwert des Tangens der Phase, die sich durch die negative Division der zeitlichen Phasenverschiebung durch die Periodendauer multipliziert mit \pi ergibt", roundPrecision=5)
+tabc = TexTable([1/omega ,newphase], [r"$\frac{1}{\omega}/ \si{\second}$",r"$-\frac{1}{tan(\phi(\omega))}$"], label="tabc", caption="Der Kehrwert der Kreisfrequenz gegen den negativen Kehrwert des Tangens der Phase, die sich durch die negative Division der zeitlichen Phasenverschiebung durch die Periodendauer multipliziert mit $\pi$ ergibt", roundPrecision=5)
 tabc.writeFile("build/tabsolutionc.tex")
 #d 
 tabd =TexTable([phase, Aw], [r"$\phi/ \si{\radian}$", r"$\frac{A(\omega)}{U_{0}}$"], label="tabd", caption="Die Phasenverschiebung gegen die Amplitude der Spannung $U_{C}$ geteilt durch die maximale Spannung $U_{0}$", roundPrecision=5)

@@ -1,6 +1,6 @@
 
 \section{Ziel}
-In diesem Versuch soll das Relaxationsverhalten eines RC-Kreises untesucht und ausgewertet werden. 
+In diesem Versuch soll das Relaxationsverhalten eines RC-Kreises untersucht und ausgewertet werden. 
 
 \section{Theorie}
 \cite{versuch}
@@ -47,7 +47,7 @@ Der Fehler der inversen Zeitkonstante ist gegeben durch
 wobei $N$ die Anzahl der Datenpaare, 
 $f(x_{i})$ die Werte des Fits an der Stelle $x_{i}$
 und $y_{i}$ die gemessenen $y$-Werte an der Stelle $x_{i}$ sind.
-ist. Der Fehler gilt ebenfalls für die im Folgenden beschriebenen Zeitkonstanten.
+Der Fehler gilt ebenfalls für die im Folgenden beschriebenen Zeitkonstanten.
 
 \subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 Eine Wechselspannung $U(t)$ wird durch die Formel 
@@ -118,19 +118,13 @@ Die Gleichung \eqref{eqn: phi} wird so umgestellt, dass die Steigung $m = \frac{
 Dann ist $x= \frac{1}{\omega}$ und $y= -\frac{1}{\mathbf{tan}(\phi(\omega))}$.
 $RC$ kann somit wieder durch \eqref{eqn: RC} bestimmt werden.
 
+\subsection{Abhängigkeit der Relativamplitude von der Phasenverschiebung}
+Die Abhängigkeit der Relativamplitude $\frac{A(\omega)}{U_{0}}$ von der Phase $\phi$ ist in
+Gleichung \eqref{eqn: A1} zu sehen.
+
 \subsection{RC-Schwingkreis als Integrator der Spannung U(t)}
 Ein RC-Schwingkreis kann dazu genutzt werden eine zeitlich veränderliche Spannung $U(t)$ unter bestimmten Bedingungen zu integrieren. 
 Es wird ein proportionaler Zusammenhang zwischen der Spannung des Kondensators $U_{C}$ und dem Integral $\int U(t) dt$ festgestellt. Dieser ergibt sich durch 
 \begin{equation}
     U_{C}(t) = \frac{1}{RC} \int_{0}^{t} U(t') dt'.
 \end{equation}
-
-\subsection{Abhängigkeit der Relativamplitude von der Phasenverschiebung}
-Die Abhängigkeit der Relativamplitude $\frac{A(\omega)}{U_{0}}$ von der Phase $\phi$ ist in
-Gleichung \eqref{eqn: A1} zu sehen.
-Bei gegebenem Wert für die Zeitkonstante lässt sie die Phase also mittels
-\begin{equation}
-    \phi = \mathbf{arcsin}(- \frac{A(\omega)}{U_{0}} \omega RC) %richtige Formel?
-    \label{eqn: phi2}
-\end{equation}
-berechnen.

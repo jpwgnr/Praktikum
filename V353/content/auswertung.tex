@@ -5,23 +5,23 @@ Für die Berechnung vieler Ergebnisse wird der Wert $U_0$ benötigt. Dieser wird
 
 \subsection{Bestimmung von RC über den Entladevorgang des Kondensators}
 \label{sec: a}
-Die Werte, die für die Bestimmung der Zeitkonstante $RC$ nötig sind, befinden sich in Tabelle \ref{tab1}. %Anderer Satz
+Die Werte, die für die Bestimmung der Zeitkonstanten $RC$ nötig sind, befinden sich in Tabelle \ref{tab1}.
 \input{build/taba.tex}
 Die $x$ und $y$ Werte der linearen Regression \eqref{eqn: linreg1} sind in Tabelle \ref{taba} dargestellt.
 Abbildung \ref{fig:plota} stellt die Gerade dieser linearen Regression dar.
-\input{build/tabsolutiona.tex} %Diese Tabelle ist in der PDF nach dem Plot?
+\input{build/tabsolutiona.tex}
 
 \begin{figure}
   \centering
   \includegraphics[width=13cm, height=9cm]{build/plota.pdf}
   \caption{Auftragung des negativen Logarithmus der Spannung geteilt durch die maximale Spannung gegen die Zeit.
-  Dargestellt werden die Messwerte, ein Fit und der Fehler des Fits.} %keine Messwerte
+  Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
   \label{fig:plota}
 \end{figure}
 
 \noindent Die Steigung der Geraden ist das Inverse der Zeitkonstante.
 Mittels Gleichung \eqref{eqn: RC} und der Gleichung für den Fehler \eqref{eqn: fehler} berechnet
-sich das Inverse der Zeitkonstante zu $\frac{1}{RC} = \SI{836.500 \pm 51.5139}{\per\second}$.
+sich das Inverse der Zeitkonstante zu $\frac{1}{RC} = \SI[per-mode=fraction]{836.500 \pm 51.514}{\per\second}$.
 
 \subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 \label{sec: b}
@@ -41,7 +41,7 @@ In Abbildung \ref{fig:plotb} sind diese $x$ und $y$ Werte gegeneinander aufgetra
 \end{figure}
 
 \noindent Das Inverse der Zeitkonstante wird wieder durch \eqref{eqn: RC} und der Fehler durch \eqref{eqn: fehler}
-berechnet. Es ergibt sich $\frac{1}{RC} = \SI{885.682  \pm 19.461}{\per\second}$.
+berechnet. Es ergibt sich $\frac{1}{RC} = \SI[per-mode=fraction]{885.682  \pm 19.461}{\per\second}$.
 
 \subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
 \label{sec: c}
@@ -59,19 +59,19 @@ linearen Regression dar, deren Steigung das Inverse der Zeitkonstante ist.
   \label{fig:plotc}
 \end{figure}
 
-Mittels \eqref{eqn: RC} und \eqref{eqn: fehler} berechnet sich das Inverse der Zeitkonstante zu
-$\frac{1}{RC} = \SI{873.0148  \pm 26.684}{\per\second}$.
+\noindent Mittels \eqref{eqn: RC} und \eqref{eqn: fehler} berechnet sich das Inverse der Zeitkonstante zu
+$\frac{1}{RC} = \SI[per-mode=fraction]{873.015 \pm 26.684}{\per\second}$.
 
 \subsection{Abhängigkeit der Relativamplitude von der Phasenverschiebung}
-%Tabelle
 Die Werte, die zur Bestimmung der Abhängigkeit der Relativamplitude $\frac{A(\omega)}{U_{0}}$ von der
 Phasenverschiebung $\phi$ nötig sind, befinden sich in Tabelle \ref{tabd}.
 \input{build/tabsolutiond.tex}
-%Plots
-Um die verschiedenen errechneten Werte für die Zeitkonstante vergleichen
-zu können, wird für die in \ref{sec: a} und \ref{sec: b} berechneten Werte die Phasenverschiebung mittels
-Gleichung \eqref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: plotd1}, \ref{fig: plotd2} und
-\ref{fig: plotd3} ist die Relativamplitude $\frac{A(\omega)}{U_{0}}$ der Radius und die Phase $\phi$ der Winkel.
+Um die verschiedenen errechneten Werte für die Zeitkonstante $RC$ vergleichen
+zu können, wird für die in \ref{sec: a}, \ref{sec: b} und \ref{sec: c} berechneten Werte in den folgenden Abbildungen
+\ref{fig: plotd1}, \ref{fig: plotd2} und \ref{fig: plotd3} die Relativamplitude $\frac{A(\omega)}{U_{0}}$ als Radius
+und die Phase $\phi$ als Winkel dargestellt. Die rote Linie entspricht den berechneten Werten 
+$\frac{A(\omega)}{U_{0}}$, die durch Einsetzen von $\phi$ in die Formel \eqref{eqn: A1} bestimmt werden. Die grüne Linie entspricht der 
+Theoriekurve, welche durch die Formel \eqref{eqn: phi} mit den Werten für $RC$ bestimmt wird.
 \begin{figure}
   \centering
   \includegraphics[width=12cm, height=7cm]{build/plotd1.pdf}
@@ -101,7 +101,7 @@ Gleichung \eqref{eqn: phi2} berechnet. In den folgenden Abbildungen \ref{fig: pl
 
 \subsection{Spannung als Integrator}
 %Integrator Bilder
-Die folgenden Abbildungen zeigen die integrierte sowie die zu integrierende Spannung.
+Die folgenden Abbildungen zeigen die integrierte, sowie die zu integrierende Spannung.
 Dabei wird eine Sinusspannung angelegt. Die Kondensatorspannung wird dadurch zu einem Cosinus. Die Dreiecksspannung wird zu einer Funktion integriert, die einem Sinus ähnelt. Die Rechteckspannung integriert sich zur Dreiecksspannung. \newline \newline \newline %Noch was?
 \begin{figure}
   \centering
@@ -124,5 +124,5 @@ Dabei wird eine Sinusspannung angelegt. Die Kondensatorspannung wird dadurch zu 
   \label{fig: rechteck}
 \end{figure}
 
-\newpage
-\newpage
+
+

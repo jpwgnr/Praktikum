@@ -6,8 +6,8 @@
 \contentsline {subsection}{\numberline {2.1}Bestimmung von RC über den Entladevorgang des Kondensators}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Bestimmung von RC über die Amplitude der Kondensatorspannung}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}RC-Schwingkreis als Integrator der Spannung U(t)}{5}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Abhängigkeit der Relativamplitude von der Phasenverschiebung}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.4}Abhängigkeit der Relativamplitude von der Phasenverschiebung}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}RC-Schwingkreis als Integrator der Spannung U(t)}{5}{subsection.2.5}
 \contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Messung des Entladevorgangs}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Messung der Amplitude der Kondensatorspannung}{6}{subsection.3.2}
