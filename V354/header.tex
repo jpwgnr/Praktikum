@@ -4,6 +4,7 @@
   titlepage=firstiscover, % Titelseite ist Deckblatt
 ]{scrartcl}
 
+
 % Paket float verbessern
 \usepackage{scrhack}
 
@@ -74,14 +75,23 @@
 
 % Standardplatzierung für Floats einstellen
 \usepackage{float}
-\floatplacement{figure}{htbp}
-\floatplacement{table}{htbp}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
 
 % Floats innerhalb einer Section halten
 \usepackage[
   section, % Floats innerhalb der Section halten
   below,   % unterhalb der Section aber auf der selben Seite ist ok
 ]{placeins}
+
+%dassselbe für Subsections 
+\makeatletter
+\AtBeginDocument{%
+  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+    \expandafter\@fb@secFB\subsection
+  }%
+}
+\makeatother
 
 % Seite drehen für breite Tabellen: landscape Umgebung
 \usepackage{pdflscape}
@@ -130,8 +140,8 @@
 %selbst hinzugefügt
 \usepackage{physics}
 
-\title{V354 - Gedämpfte und erzwungene Schwingungen}
-\date{Durchführung: 20.11.2018, Abgabe: 27.11.2018}
+\title{V103 - Biegung elastischer Stäbe}
+\date{Durchführung: 30.10.2018, Abgabe: 06.11.2018}
 \author{
   Jan Herdieckerhoff
   \texorpdfstring{%
