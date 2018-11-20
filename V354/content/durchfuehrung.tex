@@ -1,20 +1,32 @@
 \section{Durchführung}
 \label{sec:durchfuehrung}
 
-Im ersten Teil wird die Zeitabhängigkeit der Amplitude einer gedämpften Schwingung untersucht und im Anschluss kann daraus in der Auswertung ein Wert für den effektiven Dämpfungswiderstand ermittelt werden. 
-Dafür wird mit einem Nadelimpulsgenerator der Schwingkreis zu einer gedämpften Schwingung angeregt. 
-Die Werte, die dem Graphen entnommen werden müssen, werden dabei von einem Speicheroszillographen ausgegeben und ein Thermodruck wird angefertigt, der bei der Auswertung hilft. 
+\subsection{Zeitabhängigkeit der Amplitude einer gedämpften Schwingung}
+Im ersten Teil wird die Zeitabhängigkeit der Amplitude einer gedämpften Schwingung untersucht. Im Anschluss kann 
+daraus in der Auswertung ein Wert für den effektiven Dämpfungswiderstand ermittelt werden. 
+Dafür wird mit einem Rechteckimpulsgenerator der Schwingkreis zu einer gedämpften Schwingung angeregt. %Rechteckimpuls?
+In der Schaltung wird dazu der kleine Festwiderstand verwendet.
 
+\subsection{Bestimmung des Dämpfungswiderstands}
+Durch Variation des regelbaren Widerstands kann der Wert $R_{ap}$ ermittelt werden, bei dem der aperiodische
+Grenzfall erreicht wird.
+Der Widerstand wird am Anfang auf seinen Minimalwert eingestellt. Nach und nach wird der Widerstand dann erhöht. %richtig? 
+Sobald ein Kurvenbereich auftritt, in dem die Steigung des Graphen $\frac{dU_{C}}{dt}$ größer 0 ist, wurde 
+$R_{ap}$ überschritten. Auf diese Weise lässt sich ablesen, wie groß der Dämpfungswiderstand $R_{ap}$
+sein muss, um den aperiodischen Grenzfall zu erreichen.
 
-Durch Variation des Widerstands kann danach der Wert $R_{aperiodisch}$ ermittelt werden, bei dem der aperiodische Grenzfall erreicht wird. 
-Der Widerstand wird am Anfang auf seinen Maximalwert eingestellt. Nach und nach wird der Widerstand dann verringert. Sobald ein Kurvenbereich auftritt in dem die Steigung des Graphen $\frac{dU_{C}}{dt}$ größer 0 ist, wurde $R_{aperiodisch}$ überschritten.
+\subsection{Frequenzabhängigkeit der Kondensatorspannung}
+\label{sec:c}
+Die Kondesatorspannung und deren Frequenzabhängigkeit wird an einem Serienresonanzkreis gemessen. Hierfür wird eine 
+Wechselspannung an den Schwingkreis angeschlossen. An einem Sinusspannungsgenerator wird die Frequenz eingestellt.
+Die Kondensatorspannung wird mit einem Oszilloskop gemessen. Der Dämpfunswiderstand soll hierbei der 
+größere der beiden Festwiderstände sein. %Auch der Dämpfungswiderstand des Sinusgenerators ist mit zu kalkulieren. NÖ
+Insgesamt werden 30 Messwertpaare aufgenommen. Im Bereich von $\num{9}$ bis $\SI{29}{\kilo\hertz}$ und
+im Bereich von $\num{39}$ bis $\SI{59}{\kilo\hertz}$ wird jeweils in $\SI{2}{\kilo\hertz}$ Schritten
+gemessen. Im Bereich von $\num{29}$ bis $\SI{39}{\kilo\hertz}$ wird in $\SI{1}{\kilo\hertz}$ Schritten
+gemessen.
 
-
-Die Kondesatorspannung und deren Frequenzabhängigkeit wird an einem Serienresonanzkreis gemessen. Hierfür wird eine Wechselspannung an den Schwingkreis angeschloßen, welche mit einem Frequenzmesser abgenommen wird. Auf der anderen Seite wird die Kondensatorspannung mit einem AC-Milli-Voltmeter gemessen.Der Dämpfunswiderstand soll hierbei der größere sein. Auch der Dämpfungswiderstand des Sinusgenerators ist mit zu kalkulieren.  
-
-Anschließend wird die Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung verglichen. Dafür wird der Abstand zwischen den beiden Spannungen im Nullpunkt und die Periodendauer der Spannung gemessen.
-
-Im letzten Schritt wird der Scheinwiderstand eines Serienresonanzkreises gemessen. Da aber kein Amperemeter zur Verfügung steht, welches Hochfrequenzströme messen kann, muss die effektive Stromstärke $I_{eff}$ als Spannungsabfall an einem niederohmigen Widerstand $R_{M}$ der deutlich kleiner ist als der Widerstand $R$ des RLC-Kreises. Das Millivoltmeter muss dabei mit der Gehäuseerde an den Sinusgerator angeelgt werden, wie in Abb. \ref{fig: Abb1} zu erkennen ist. 
-Alternativ kann der Scheinwiderstand mit einem Impedanzmeter gemessen werden. 
-
-
+\subsection{Frequenzabhängigkeit der Phase}
+Anschließend wird die Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung verglichen. Dafür 
+wird der zeitliche Abstand der beiden Nulldurchgänge der Schwingungen gemessen. Die benötigte Periodendauer ergibt sich aus der eingestellten
+Frequenz. Die Messbereiche sind hier die selben wie in \ref{sec:c}.
