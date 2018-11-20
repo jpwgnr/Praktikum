@@ -1,0 +1,13 @@
+Reff = 2*pi*mü = R/2L= (1.69+/-0.07)e+03  
+Texp=1/Reff =2L/R= 0.000590+/-0.000026
+Rap= 3500.0 Ohm
+ theo Rap= 4390+/-9 Ohm 
+experimental: 
+ q= 0.34047619047619043 
+ omegares= 213628.30044410593 
+ omegaminus= 182212.373908208 
+ omegaplus= 245044.22698000388 
+diff+-= 62831.853071795864 
+ theoretisch: 
+qtheo= 4.309+/-0.010, 
+diffomegatheo= (5.040+/-0.016)e+04 
