@@ -1,41 +1,93 @@
+\section{Ziel}
+Das Ziel dieses Versuchs ist es, verschiedene Eigenschaften eines $LRC$-Schwingkreises
+anhand von erzwungenen bzw. gedämpften Schwingungen zu untersuchen.
+
 \section{Theorie}
 \label{sec:Theorie}
 \cite{V354}
+%R_eff fehlt im ersten Teil
 
+\subsection{Amplitude einer gedämpften Schwingung}
 % Amplitude einer gedämpften Schwingung mit Dämpfungswiderstand 
-Die Spannung lässt sich im allgemeinen als Differentialgleichung darstellen. Nach dem 2. Kirchhoffschen Gesetz gilt für die Spannung in einer Masche, also einem Schaltkreis, dass die Summe aller Spannungen gleich Null ergeben muss, also 
+Die Spannung lässt sich im Allgemeinen als Differentialgleichung darstellen.
+Nach dem 2. Kirchhoffschen Gesetz gilt für die Spannung in einer Masche,
+also einem Schaltkreis, dass die Summe aller Spannungen gleich Null ergeben muss:
 \begin{align*}
-U_{R}(t)+U_{C}(t)+U_{L}(t) &= 0 
+    U_{R}(t)+U_{C}(t)+U_{L}(t) &= 0 
 \end{align*}
-, wobei U_{R}(t) die zeitlich veränderliche Spannung an dem Widerstand, U_{C}(t) die Spannung am Kondensator und U_{L}(t) die Spannung an der Spule ist, also die induktive Spannung. 
+Dabei ist $U_{R}(t)$ die zeitlich veränderliche Spannung an dem Widerstand $R$,
+$U_{C}(t)$ die Spannung am Kondensator mit Kapazität $C$ und $U_{L}(t)$ die Spannung
+an der Spule mit Induktivität $L$, also die induktive Spannung.
+Für die gedämpfte Schwingung ergibt sich die Gleichung:
 \begin{equation}
-I(t)= A_{0}* e^{-2\pi\mue t} cos(2\pi \nue t +\eta)
+    I(t)= A_{0} e^{-2 \pi \mu t} \cos(2 \pi \nu t + \eta),
 \end{equation}
-mit $2\pi\mue = R/2L$. 
+wobei $2 \pi \mu = \frac{R}{2L}$ ist. $\nu$ ist die Frequenz.
+Die Abklingdauer ist durch
+\begin{equation}
+    T_{ex} = \frac{1}{2 \pi \mu} = \frac{2L}{R}
+    \label{eqn:t_ex}
+\end{equation}
+gegeben.
+%R_eff???
 
+\subsection{Aperiodischer Grenzfall}
 %R(aperiodischer Grenzfall) Formel mit Amplitude, Schwingungsdauer und was sonst aus a gegeben ist 
-Wenn die Spannung ohne Überschwingung an schnellsten gegen null geht (gestrichelte Linie Abb. \ref{Abb.1}), dann heißt dieser Fall aperiodischer Grenzfall. Dieser kann durch die Gleichung 
+Beim aperiodischen Grenzfall geht die Spannung ohne Überschwingung am schnellsten gegen null
+(gestrichelte Linie Abb. \ref{Abb.1}). Dieser kann durch die Gleichung
 \begin{equation} 
-I(t)=A e^{-\frac{R}{2L}*t}= A e^{-\frac{t}{\sqrt{LC}}}
+    I(t)=A e^{-\frac{R}{2L}*t}= A e^{-\frac{t}{\sqrt{LC}}}
 \end{equation}
-.
+beschrieben werden.
+Der Dämpfungswiderstand dabei ist gegeben durch
+\begin{equation}
+    R_{ap} = \sqrt{\frac{4L}{C}}.
+    \label{eqn:r_ap}
+\end{equation}
 
+\subsection{Frequenzabhängigkeit der Kondensatorspannung}
 %Frequenz zu Kondensatorspannung Verbindung
-
-Die Abhängigkeit zwischen Frequenz und Kondensatorspannung lässst sich mittels 
-
+Die Abhängigkeit der Kondensatorspannung von der Kreisfrequenz
+\begin{equation*}
+    \omega = 2\pi f
+\end{equation*}
+der Erregerspannung lässt sich mittels 
 \begin{equation}
-U_{C}(\omega)= \frac{U_{0}}{\sqrt{(1-LC\omega^{2})^{2} + (\omega R C)^{2}}}
+    U_{C}(\omega)= \frac{U_{0}}{\sqrt{(1-LC\omega^{2})^{2} + (\omega R C)^{2}}}
 \end{equation}
+beschreiben.
+Bei dem Phänomen der Resonanz erreicht $U_{C}$ ein Maximum, das über der Amplitude $U_{0}$ der Erregerspannung liegt:
 % Frequenz zu Erreger und Kondensatorspannung, bzw. die jeweiligen Spannung in ihrer Verbindung zu einander
-Mit 
 \begin{equation}
-U_{C, max} = \frac{1}{\omega_{0}RC} U_{0} = \frac{1}{R} \sqrt{\frac{L}{C}} U_{0}
+    U_{C, max} = \frac{1}{\omega_{0}RC} U_{0} = \frac{1}{R} \sqrt{\frac{L}{C}} U_{0}.
 \end{equation}
-ergibt sich eine Abhängigkeit zwischen der Erregerspannung $U_0$ und der Kondensatorspannung U_C. 
-% Frequenz zu Scheinwiderstand entweder mit R(klein) oder Impedanzmeter 
-
-Die Impedanz $Z$ kann in einem Schwingkreis über die Formel 
-
+$U_{C}$ überschreitet die Erregerspannung also um den Faktor 
 \begin{equation}
-\abs{Z} = \sqrt{(R^2+(\omega L- \frac{1}{\omega C}))}
+    q = \frac{1}{\omega_{0}RC}.
+    \label{eqn:q}
+\end{equation}
+Dieser Faktor ist die Güte, bzw. Resonanzüberhöhung.
+Daraus lässt sich die Breite der Resonanzkurve bestimmen:
+\begin{equation}
+    \omega_{+} - \omega_{-} = \frac{\omega_{0}}{q}.
+    \label{eqn:breite}
+\end{equation}
+Die Resonanzfrequenz ist gegeben durch
+\begin{equation}
+    \omega_{res} = \sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}.
+    \label{eqn:omega_res}
+\end{equation}
+
+\subsection{Frequenzabhängigkeit der Phase}
+Die Phase in Abhängigkeit von der Frequenz der Erregerspannung wird durch
+\begin{equation}
+    \varphi(\omega) = \arctan(-\frac{\omega RC}{1-LC\omega^2})
+    \label{eqn:phi}
+\end{equation}
+beschrieben.
+An den Stellen $\frac{\pi}{4}$ oder $\frac{3}{4}$ gilt für die Frequenzen $\omega_{1}$
+und $\omega_{2}$:
+\begin{equation}
+    \omega_{1,2} = \pm \frac{R}{2L} + \sqrt{\frac{R^2}{4L^2} + \frac{1}{LC}}.
+    \label{eqn:omega_12}
+\end{equation}
