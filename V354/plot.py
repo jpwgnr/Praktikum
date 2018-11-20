@@ -93,11 +93,11 @@ file.write("Reff = 2*pi*mü = R/2L= {}  \nTexp=1/Reff =2L/R= {}\nRap= {} Ohm\n t
 file.close()
 
 #c)
-tabc = TexTable([omega/1e5,Amp], [r"$\omega\cdot 10^{5}$ /\[per-mode=fraction]si{1\second}", r"Amplitude $\frac{U_C(\omega}{U_0}$"], label="tabc", caption="Kreisfrequenz $\omega$ gegen die Amplitude der Kondensatorspannung $U_C$ durch die Generatorspannung $U_0$ dividiert.", roundPrecision=2)
+tabc = TexTable([omega/1e5,Amp], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]{\per\second}", r"Amplitude $\frac{U_C(\omega}{U_0}$"], label="tabc", caption="Kreisfrequenz $\omega$ gegen die Amplitude der Kondensatorspannung $U_C$ durch die Generatorspannung $U_0$ dividiert.", roundPrecision=2)
 tabc.writeFile("build/tabc.tex")
 
 #d) 
-tabd = TexTable([omega/1e5,phase], [r"$\omega\cdot 10^{5}$ /\[per-mode=fraction]si{1\second}", r"$Phase \varphi$"], label="tabd", caption="Kreisfrequenz $\omega$ gegen die Phasenverschiebung $\varphi$ der Kondensatorspannung $U_C$ und der Generatorspannungi $U_0$.", roundPrecision=2)
+tabd = TexTable([omega/1e5,phase], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]{\per\second}", r"$Phase \varphi$"], label="tabd", caption=r"Kreisfrequenz $\omega$ gegen die Phasenverschiebung $\varphi$ der Kondensatorspannung $U_C$ und der Generatorspannungi $U_0$.", roundPrecision=2)
 tabd.writeFile("build/tabd.tex")
 
 
