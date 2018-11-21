@@ -57,7 +57,8 @@ logU= np.log(U1)
 Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(t,logU)
 zweipimü= ufloat(-Steigung1,std_err1)
 Reff= zweipimü*2*L
-Texp=1/Reff 
+Texp=1/zweipimü 
+Texptheo=(2*L)/R1 
 
 #b)
 theoRap= 2*unp.sqrt(L/C)
@@ -75,7 +76,7 @@ linAmp=Amp[10:21]
 linOmega= omega[10:21]
 
 parameters, pcov =curve_fit(Amplitude, omega/1e5, Amp)
-
+parameters2, pcov2 =curve_fit(Amplitude, omega/1e5, Amp)
 #theoretisch:
 qtheo= (1/R2)*unp.sqrt(L/C)
 diffomegatheo=R2/L  
@@ -99,7 +100,7 @@ taba.writeFile("build/taba.tex")
 
 #b)
 file = open("build/solution.txt", "w")
-file.write("R_eff = 4*pi*mü*L= {}  \nT_exp=1/R_eff = {}\nR_ap= {} Ohm\n theo R_ap= {} Ohm \nexperimental: \n q= {} \n omega_res= {} \n omega_minus= {} \n omega_plus= {} \ndiff_omega= {} \n theoretisch: \nq_theo= {}, \ntheo diff_omega= {} \ntheo omega_res= {}\ntheo omega_eins= {} \ntheo omega_zwei= {} \nZu d): Parameter: {} \nFehler des Fits= {}".format(Reff, Texp, Rap, theoRap, q, omegares, omegaminus, omegaplus, diffomega, qtheo, diffomegatheo, omega_restheo, omega_eins, omega_zwei, parameters, np.sqrt(np.diag(pcov))))
+file.write("a)\n\tExperimental:\n\tR_eff = 4*pi*mü*L= {} ohm\n\tT_exp=(1/2pimü)= {} s\n\n\tTheoretisch:\n\tR_eff= {} ohm\n\tT_exp= {} s\n\nb)\n\tExperimental:\n\tR_ap=  {} ohm\n\n\tTheoretisch:\n\tR_ap= {} ohm\n\nc)\n\tExperimental:\n\tq= {}\n\tOmega_res= {} 1/s\n\tOmega_minus= {} 1/s\n\tOmega_plus= {} 1/s\n\tOmega_diff= {} 1/s\n\n\tTheoretisch:\n\tq= {}\n\tOmega_res= {} 1/s\n\tOmega_eins= {} 1/s\n\tOmega_zwei= {} 1/s\n\tOmega_diff= {} 1/s\n\nd)\n\tExperimental:\n\tParameter(L/H,R2/Ohm,C/F):{}\n\tFehler(L,R2,C)={}\n\n\tTheorie:\n\tL= {} H\n\tR2= {} ohm\n\tC= {} F".format(Reff, Texp, R1, Texptheo, Rap, theoRap, q, omegares, omegaminus, omegaplus, diffomega, qtheo, omega_restheo, omega_eins, omega_zwei, diffomegatheo, parameters2, np.sqrt(np.diag(pcov2)), L, R2, C))
 file.close()
 
 #c)
@@ -138,7 +139,7 @@ plt.savefig("build/plotc.pdf")
 #d) 
 plt.figure(3)
 plt.plot(omega/1e5, phase, "xr", label="Daten")
-plt.plot(linOmega/1e5, function(Steigung3,linOmega/1e5,yAbschnitt3), "r", label="Fit", linewidth=1.0)
+plt.plot(linOmega/1e5, function(Steigung3,linOmega/1e5,yAbschnitt3), "b", label="Fit", linewidth=1.0)
 plt.xlim(omega[0]/1e5, omega[-1]/1e5)
 plt.xlabel(r"$\omega/\cdot 10^{5}\si[per-mode=fraction]{\per\second}$")
 plt.ylabel(r"$\varphi$")

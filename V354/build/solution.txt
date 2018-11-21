@@ -1,18 +1,40 @@
-R_eff = 4*pi*mü*L= 34.2+/-1.5  
-T_exp=1/R_eff = 0.0292+/-0.0013
-R_ap= 3500.0 Ohm
- theo R_ap= 4390+/-9 Ohm 
-experimental: 
- q= 3.404761904761904 
- omega_res= 213628.30044410593 
- omega_minus= 182212.373908208 
- omega_plus= 245044.22698000388 
-diff_omega= 62831.853071795864 
- theoretisch: 
-q_theo= 4.309+/-0.010, 
-theo diff_omega= (5.040+/-0.016)e+04 
-theo omega_res= (2.142+/-0.004)e+05
-theo omega_eins= (1.934+/-0.004)e+05 
-theo omega_zwei= (2.438+/-0.005)e+05 
-Zu d): Parameter: [-0.9552689   0.64042111 -0.21946846] 
-Fehler des Fits= [397110.86122281 266226.79587398  91234.31747906]
+a)
+	Experimental:
+	R_eff = 4*pi*mü*L= 34.2+/-1.5 ohm
+	T_exp=(1/2pimü)= 0.000590+/-0.000026 s
+
+	Theoretisch:
+	R_eff= 48.10+/-0.10 ohm
+	T_exp= 0.0004204+/-0.0000015 s
+
+b)
+	Experimental:
+	R_ap=  3500.0 ohm
+
+	Theoretisch:
+	R_ap= 4390+/-9 ohm
+
+c)
+	Experimental:
+	q= 3.404761904761904
+	Omega_res= 213628.30044410593 1/s
+	Omega_minus= 182212.373908208 1/s
+	Omega_plus= 245044.22698000388 1/s
+	Omega_diff= 62831.853071795864 1/s
+
+	Theoretisch:
+	q= 4.309+/-0.010
+	Omega_res= (2.142+/-0.004)e+05 1/s
+	Omega_eins= (1.934+/-0.004)e+05 1/s
+	Omega_zwei= (2.438+/-0.005)e+05 1/s
+	Omega_diff= (5.040+/-0.016)e+04 1/s
+
+d)
+	Experimental:
+	Parameter(L/H,R2/Ohm,C/F):[-0.9552689   0.64042111 -0.21946846]
+	Fehler(L,R2,C)=[397110.86122281 266226.79587398  91234.31747906]
+
+	Theorie:
+	L= 0.010110+/-0.000030 H
+	R2= 509.5+/-0.5 ohm
+	C= (2.098+/-0.006)e-09 F
