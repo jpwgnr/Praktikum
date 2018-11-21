@@ -3,7 +3,7 @@ import numpy as np
 import uncertainties.unumpy as unp
 from table import TexTable
 from scipy import stats
-
+from scipy.optimize import curve_fit
 #Generate data 
 
 #from txt

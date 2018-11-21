@@ -4,6 +4,7 @@ import uncertainties.unumpy as unp
 from uncertainties import ufloat
 from table import TexTable
 from scipy import stats
+from scipy.optimize import curve_fit
 
 #Generate data 
 
@@ -35,7 +36,7 @@ Rap= 3.5e3
 
 #c),d)
 U0= 8.4
-U2=U_2/2
+U2=10*U_2/2
 #give back data
 file = open("build/databegin.txt", "w")
 file.write("L = {} mV \nC: {} nF \nR1= {} Ohm \nR2= {} Ohm \nU0= {}".format(LmV, CnF, R1, R2, U0))
@@ -46,12 +47,16 @@ file.close()
 def function(m,x,n):
     return m*x+n
 
+def Amplitude(omega, L, R, C):
+    return  1/np.sqrt((1-(L*C)*(omega**2))**2+(omega**2)*(R**2)*(C**2))
+     
 #calculate 
 #a)
 logU= np.log(U1)
 
 Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(t,logU)
-Reff= ufloat(-Steigung1,std_err1)
+zweipimü= ufloat(-Steigung1,std_err1)
+Reff= zweipimü*2*L
 Texp=1/Reff 
 
 #b)
@@ -69,17 +74,22 @@ diffomega=omegaplus- omegaminus
 linAmp=Amp[10:21]
 linOmega= omega[10:21]
 
-Steigung2, yAbschnitt2, r_value2, p_value2, std_err2= stats.linregress(linOmega,linAmp)
+parameters, pcov =curve_fit(Amplitude, omega/1e5, Amp)
+
 #theoretisch:
 qtheo= (1/R2)*unp.sqrt(L/C)
 diffomegatheo=R2/L  
+omega_restheo=unp.sqrt(1/(L*C)-((R2**2)/(2*L**2))) 
+omega_zwei= (R2/(2*L))+ unp.sqrt(((R2**2)/(4*L**2))+(1/(L*C)))
+omega_eins= -(R2/(2*L))+ unp.sqrt(((R2**2)/(4*L**2))+(1/(L*C)))
 
 #d) 
 b=1/f
 phase=2*np.pi*(deltat/b) 
 linPhase= phase[10:21] 
 
-Steigung3, yAbschnitt3, r_value3, p_value3, std_err3= stats.linregress(linOmega,linPhase)
+
+Steigung3, yAbschnitt3, r_value3, p_value3, std_err3= stats.linregress(linOmega/1e5,linPhase)
 
 #save solution 
 
@@ -89,7 +99,7 @@ taba.writeFile("build/taba.tex")
 
 #b)
 file = open("build/solution.txt", "w")
-file.write("Reff = 2*pi*mü = R/2L= {}  \nTexp=1/Reff =2L/R= {}\nRap= {} Ohm\n theo Rap= {} Ohm \nexperimental: \n q= {} \n omegares= {} \n omegaminus= {} \n omegaplus= {} \ndiff+-= {} \n theoretisch: \nqtheo= {}, \ndiffomegatheo= {} ".format(Reff, Texp, Rap, theoRap, q, omegares, omegaminus, omegaplus, diffomega, qtheo, diffomegatheo))
+file.write("R_eff = 4*pi*mü*L= {}  \nT_exp=1/R_eff = {}\nR_ap= {} Ohm\n theo R_ap= {} Ohm \nexperimental: \n q= {} \n omega_res= {} \n omega_minus= {} \n omega_plus= {} \ndiff_omega= {} \n theoretisch: \nq_theo= {}, \ntheo diff_omega= {} \ntheo omega_res= {}\ntheo omega_eins= {} \ntheo omega_zwei= {} \nZu d): Parameter: {} \nFehler des Fits= {}".format(Reff, Texp, Rap, theoRap, q, omegares, omegaminus, omegaplus, diffomega, qtheo, diffomegatheo, omega_restheo, omega_eins, omega_zwei, parameters, np.sqrt(np.diag(pcov))))
 file.close()
 
 #c)
@@ -117,7 +127,7 @@ plt.savefig("build/plota.pdf")
 #experimental:
 plt.figure(2)
 plt.plot(omega/1e5, Amp, "xr", label="Daten")
-#plt.plot(linOmega, function(Steigung2,linOmega,yAbschnitt2), "r", label="Fit", linewidth=1.0)
+plt.plot(omega/1e5, Amplitude(omega/1e5, *parameters), "b", label="Fit", linewidth=1.0)
 plt.xlim(omega[0]/1e5, omega[-1]/1e5)
 plt.xlabel(r"$\omega\cdot 10^{5}/\si[per-mode=fraction]{\per\second}$")
 plt.ylabel(r"$\frac{U_C(\omega)}{U_0}$")
@@ -128,7 +138,7 @@ plt.savefig("build/plotc.pdf")
 #d) 
 plt.figure(3)
 plt.plot(omega/1e5, phase, "xr", label="Daten")
-plt.plot(linOmega, function(Steigung3,linOmega,yAbschnitt3), "r", label="Fit", linewidth=1.0)
+plt.plot(linOmega/1e5, function(Steigung3,linOmega/1e5,yAbschnitt3), "r", label="Fit", linewidth=1.0)
 plt.xlim(omega[0]/1e5, omega[-1]/1e5)
 plt.xlabel(r"$\omega/\cdot 10^{5}\si[per-mode=fraction]{\per\second}$")
 plt.ylabel(r"$\varphi$")
