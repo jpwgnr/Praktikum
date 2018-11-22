@@ -25,19 +25,20 @@ wobei $2 \pi \mu = \frac{R}{2L}$ ist. $I$ ist die Stromstärke, $A_{0}$ der Star
 $\nu$ die Frequenz und $\eta$ eine Phasenverschiebung.
 Die Abklingdauer ist durch
 \begin{equation}
-    T_{ex} = \frac{1}{2 \pi \mu} = \frac{2L}{R}
+    T_{ex} = \frac{1}{R_{eff}} = \frac{1}{2 \pi \mu} = \frac{2L}{R}
     \label{eqn:t_ex}
 \end{equation}
 gegeben.
 Der effektive Dämpfungswiderstand bestimmt sich durch
 \begin{equation}
     R_{eff} = 2 \pi \mu. %??????????????
+    \label{eqn:reff}
 \end{equation}
 
 \subsection{Aperiodischer Grenzfall}
 %R(aperiodischer Grenzfall) Formel mit Amplitude, Schwingungsdauer und was sonst aus a gegeben ist 
 Beim aperiodischen Grenzfall geht die Spannung ohne Überschwingung am schnellsten gegen null
-(gestrichelte Linie Abb. \ref{Abb.1}). Dieser kann durch die Gleichung
+(gestrichelte Linie Abb. \ref{fig:ap_gr}). Dieser kann durch die Gleichung
 \begin{equation} 
     I(t)=A e^{-\frac{R}{2L}*t}= A e^{-\frac{t}{\sqrt{LC}}}
 \end{equation}
@@ -47,6 +48,12 @@ Der Dämpfungswiderstand dabei ist gegeben durch
     R_{ap} = \sqrt{\frac{4L}{C}}.
     \label{eqn:r_ap}
 \end{equation}
+\begin{figure}
+  \centering
+  \includegraphics{build/ap_grenzfall.png}
+  \caption{Mögliche zeitliche Verläufe des Stroms in einem Schwingkreis mit aperiodischer Dämpfung.}
+  \label{fig:ap_gr}
+\end{figure}
 
 \subsection{Frequenzabhängigkeit der Kondensatorspannung}
 %Frequenz zu Kondensatorspannung Verbindung
@@ -62,9 +69,10 @@ beschreiben.
 Bei dem Phänomen der Resonanz erreicht $U_{C}$ ein Maximum, das über der Amplitude $U_{0}$ der Erregerspannung liegt:
 % Frequenz zu Erreger und Kondensatorspannung, bzw. die jeweiligen Spannung in ihrer Verbindung zu einander
 \begin{equation}
-    U_{C, max} = \frac{1}{\omega_{0}RC} U_{0} = \frac{1}{R} \sqrt{\frac{L}{C}} U_{0}.
+    U_{C, max} = \frac{1}{\omega_{0}RC} U_{0} = q U_{0} = \frac{1}{R} \sqrt{\frac{L}{C}} U_{0}.
+    \label{eqn:ucmax}
 \end{equation}
-$U_{C}$ überschreitet die Erregerspannung also um den Faktor 
+$U_{C}$ überschreitet bzw. unterschreitet die Erregerspannung also um den Faktor 
 \begin{equation}
     q = \frac{1}{\omega_{0}RC} = \frac{1}{R} \sqrt{\frac{L}{C}}.
     \label{eqn:q}

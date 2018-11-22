@@ -1,4 +1,5 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["biber build/main"] 1542049083 "build/main.bcf" "build/main.bbl" "build/main" 1542049098
   "build/main.bcf" 1542049098 91546 b44f54ca97d42b553944354bf94b06b0 ""
   "lit.bib" 1542048693 108 853146e75edb9920cc5d12fbacc5bcb5 ""
@@ -24,6 +25,9 @@
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1541846690 1524 4414a8315f39513458b80dfc63bff03a ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1541846690 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm" 1541846690 1528 e2423ae06dc7dee599cceb79d1c9dc32 ""
+=======
+["lualatex"] 1542731034 "main.tex" "build/main.pdf" "main" 1542820906
+>>>>>>> 252b602da14c14809158feb7356a846e65290dca
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1541846690 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua" 1541846785 1972 1fb7c07d88e23d4594015b8b0aa21544 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1541846511 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -194,9 +198,17 @@
   "main.tex" 1542048593 256 0c1848378c78f067ea86f7f4872e2c7e ""
   "plot.pdf" 1542049075 3971 4830dc846ed417387e0b39e7623a378f ""
   (generated)
+<<<<<<< HEAD
   "build/main.toc"
   "build/main.run.xml"
   "build/main.log"
   "build/main.pdf"
   "build/main.bcf"
+=======
+  "build/main.run.xml"
+  "build/main.bcf"
+  "build/main.log"
+  "build/main.toc"
+  "build/main.pdf"
+>>>>>>> 252b602da14c14809158feb7356a846e65290dca
   "build/main.aux"
