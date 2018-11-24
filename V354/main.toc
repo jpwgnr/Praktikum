@@ -18,4 +18,4 @@
 \contentsline {subsection}{\numberline {4.3}Resonanzüberhöhung und Breite der Resonanzkurve}{8}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}d}{11}{subsection.4.4}
 \contentsline {section}{\numberline {5}Diskussion}{13}{section.5}
-\contentsline {section}{\nonumberline Literatur}{13}{section*.11}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.11}
