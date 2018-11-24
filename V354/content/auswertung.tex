@@ -1,14 +1,11 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-%Die SI-Werte mit e müssen anders dargestellt werden (R_eff und theoretische Breite)
 
-<<<<<<< HEAD
-\begin{figure}
-  \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot }
-  \label{fig:plot}
-=======
+% \begin{figure}
+  % \centering
+  % \includegraphics{plot.pdf}
+  % \caption{Plot }
+  % \label{fig:plot}
 %a)
 \subsection{Effektiver Widerstand und Abklingdauer} 
 Die Zeit und die Amplitude der Spannung sind in Tabelle
@@ -26,8 +23,11 @@ Logarithmus der Spannung gegen die Zeit aufgetragen.
   \label{fig:plota}
 \end{figure}
 \noindent Daraus ergibt sich durch \eqref{eqn:reff}%die Steigung???
-der effektive Widerstand zu $R_{eff} = \SI{1.69(07)e3}{\ohm}$. %Einheit?
-Die Abklingdauer \ref{eqn:t_ex} ist somit $T_{ex} = \SI{0.000590 \pm 0.000026}{}$. %Einheit?
+der effektive Widerstand zu $R_{eff} = \SI{34.2 \pm 1.5}{\ohm}$.
+Die Abklingdauer \ref{eqn:t_ex} ist somit $T_{ex} = \SI{0.000590 \pm 0.000026}{\second}$.
+\newline
+Der theoretische effektive Widerstand ist $R_{eff,theo} = \SI{48.1 \pm 0.1}{\ohm}$
+und die Abklingdauer $T_{ex,theo} = \SI{0.0004204 \pm 0.0000015}{\second}$. %ex für experimental? Gleichungen angeben
 
 \subsection{Dämpfungswiderstand beim aperiodischen Grenzfall}
 %b)
@@ -56,13 +56,15 @@ Die Abbildung \ref{fig:plotc} stellt diese Werte dar.
 \noindent Daraus lässt sich der Wert für die Resonanzüberhöhung, bzw. die Güte $q$ entnehmen.
 Sie ist nach Gleichung \eqref{eqn:ucmax} das Maximum.
 %Die Resonanzfrequenz ist der zugehörige $\omega$-Wert.
-Also ergibt sich für die Güte $q = \num{0.34}$
+Also ergibt sich für die Güte $q = \num{3.40}$
 %und für die Resonanzfrequenz $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
+%omega_+ und omega_- einfügen
 Der Breite der Resonanzkurve ist
 $\omega_{+} - omega_{-} = \SI[per-mode=fraction]{62831.85}{\per\second}$. %wie?
 \newline
 Der theoretisch errechnete Wert für die Güte, der mit Gleichung
 \eqref{eqn:q} bestimmt werden kann, ist $q_{theo} = \num{4.309 \pm.010}$.
+%omega_+ und omega_- einfügen
 Der mit Gleichung \eqref{eqn:breite} berechnete Wert für die Breite der
 Resonanzkurve ist
 $\omega_{+,theo} - \omega_{-,theo} = \SI[per-mode=fraction]{5.040(016)e4}{\per\second}$.
@@ -82,7 +84,6 @@ bestimmt.
   \includegraphics{build/plotd.pdf}
   \caption{Plot.}
   \label{fig:plotd}
->>>>>>> 252b602da14c14809158feb7356a846e65290dca
 \end{figure}
 \noindent Aus Abbildung \ref{fig:plotd} kann man die gesuchten Werte entnehmen. %wie?
 Die Resonanzfrequenz ist $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
