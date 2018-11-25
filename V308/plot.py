@@ -35,9 +35,9 @@ file.close()
 
 #Make plots for data
 plt.figure(1)
-plt.plot(x, y, "xr", label="Daten")
-plt.plot(x, function(x), "r", label="Fit", linewidth=1.0)
-plt.xlim(x[0], x[-1])
+plt.plot(<++>, <++>, "xr", label="Daten")
+plt.plot(<++>, function(<++>), "r", label="Fit", linewidth=1.0)
+plt.xlim([0], x[-1])
 plt.xlabel(r"$t/\si{\second}$")
 plt.ylabel(r"$y(x)$")
 plt.legend(loc="best")
