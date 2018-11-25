@@ -9,13 +9,13 @@
 \contentsline {subsection}{\numberline {2.4}Frequenzabhängigkeit der Phase}{5}{subsection.2.4}
 \contentsline {section}{\numberline {3}Durchführung}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Zeitabhängigkeit der Amplitude einer gedämpften Schwingung}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Bestimmung des Dämpfungswiderstands}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung}{9}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phase}{10}{subsection.3.4}
-\contentsline {section}{\numberline {4}Auswertung}{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}Effektiver Widerstand und Abklingdauer}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Dämpfungswiderstand beim aperiodischen Grenzfall}{13}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Resonanzüberhöhung und Breite der Resonanzkurve}{13}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Resonanzfrequenz}{16}{subsection.4.4}
-\contentsline {section}{\numberline {5}Diskussion}{18}{section.5}
-\contentsline {section}{\nonumberline Literatur}{19}{section*.14}
+\contentsline {subsection}{\numberline {3.2}Bestimmung des Dämpfungswiderstands}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phase}{7}{subsection.3.4}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Effektiver Widerstand und Abklingdauer}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Dämpfungswiderstand beim aperiodischen Grenzfall}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Resonanzüberhöhung und Breite der Resonanzkurve}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Resonanzfrequenz}{12}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
+\contentsline {section}{\nonumberline Literatur}{15}{section*.14}

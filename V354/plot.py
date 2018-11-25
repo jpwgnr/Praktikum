@@ -17,7 +17,7 @@ tab1.writeFile("build/tab1.tex")
 
 #c),d) 
 f, U_2, deltat = np.genfromtxt("data/datac.txt", unpack=True)
-tab1 = TexTable([f/1e3, U_2, deltat*1e-6], [r"$f$ /\si{\kilo\hertz}", r"$2U$ /\si{\volt}", r"$t$ /\si{\micro\second}"], label="tab2", caption="Kondensatorspannung und Generatorspannung. Verschiedene Frequenzen, Amplitude der Kondensatorspannung und Zeitdifferenz der beiden Spannungen.", roundPrecision=2)
+tab1 = TexTable([f/1e3, U_2, deltat/1e-6], [r"$f$ /\si{\kilo\hertz}", r"$2U$ /\si{\volt}", r"$t$ /\si{\micro\second}"], label="tab2", caption="Kondensatorspannung und Generatorspannung. Verschiedene Frequenzen, Amplitude der Kondensatorspannung und Zeitdifferenz der beiden Spannungen.", roundPrecision=2)
 tab1.writeFile("build/tab2.tex")
 
 
@@ -104,7 +104,7 @@ file.write("a)\n\tExperimental:\n\tR_eff = 4*pi*mü*L= {} ohm\n\tT_exp=(1/2pimü
 file.close()
 
 #c)
-tabc = TexTable([omega/1e5,Amp], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]{\per\second}", r"Amplitude $\frac{U_C(\omega}{U_0}$"], label="tabc", caption="Kreisfrequenz $\omega$ gegen die Amplitude der Kondensatorspannung $U_C$ durch die Generatorspannung $U_0$ dividiert.", roundPrecision=2)
+tabc = TexTable([omega/1e5,Amp], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]{\per\second}", r"Amplitude $\frac{U_C(\omega)}{U_0}$"], label="tabc", caption="Kreisfrequenz $\omega$ gegen die Amplitude der Kondensatorspannung $U_C$ durch die Generatorspannung $U_0$ dividiert.", roundPrecision=2)
 tabc.writeFile("build/tabc.tex")
 
 #d) 
@@ -141,7 +141,7 @@ plt.figure(3)
 plt.plot(omega/1e5, phase, "xr", label="Daten")
 plt.plot(linOmega/1e5, function(Steigung3,linOmega/1e5,yAbschnitt3), "b", label="Fit", linewidth=1.0)
 plt.xlim(omega[0]/1e5, omega[-1]/1e5)
-plt.xlabel(r"$\omega/\cdot 10^{5}\si[per-mode=fraction]{\per\second}$")
+plt.xlabel(r"$\omega\cdot 10^{5}\si[per-mode=fraction]{\per\second}$")
 plt.ylabel(r"$\varphi$")
 plt.legend(loc="best")
 plt.tight_layout()
