@@ -1,11 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-% \begin{figure}
-  % \centering
-  % \includegraphics{plot.pdf}
-  % \caption{Plot }
-  % \label{fig:plot}
 %a)
 \subsection{Effektiver Widerstand und Abklingdauer} 
 Die Zeit und die Amplitude der Spannung sind in Tabelle
@@ -19,15 +14,17 @@ Logarithmus der Spannung gegen die Zeit aufgetragen.
 \begin{figure}
   \centering
   \includegraphics{build/plota.pdf}
-  \caption{Plot.}
+  \caption{Die logarithmierte Spannung ist gegen die Zeit aufgetragen.} %Erklären, was die Steigung ist
   \label{fig:plota}
 \end{figure}
-\noindent Daraus ergibt sich durch \eqref{eqn:reff}%die Steigung???
+\noindent Daraus ergibt sich durch \eqref{eqn:reff} %die Steigung???
 der effektive Widerstand zu $R_{eff} = \SI{34.2 \pm 1.5}{\ohm}$.
 Die Abklingdauer \ref{eqn:t_ex} ist somit $T_{ex} = \SI{0.000590 \pm 0.000026}{\second}$.
+%Ist T_ex = 1/R_eff? Hier wurde jetzt dieselbe Gleichung für den experimentalen
+%und den theoretischen Wert benutzt.
 \newline
-Der theoretische effektive Widerstand ist $R_{eff,theo} = \SI{48.1 \pm 0.1}{\ohm}$
-und die Abklingdauer $T_{ex,theo} = \SI{0.0004204 \pm 0.0000015}{\second}$. %ex für experimental? Gleichungen angeben
+Der theoretische effektive Widerstand ist $R_{eff,theo} = \SI{48.1 \pm 0.1}{\ohm}$ %Gleichung angeben
+und die Abklingdauer \eqref{eqn:t_ex} $T_{ex,theo} = \SI{0.0004204 \pm 0.0000015}{\second}$. %ex für experimental?
 
 \subsection{Dämpfungswiderstand beim aperiodischen Grenzfall}
 %b)
@@ -50,13 +47,15 @@ Die Abbildung \ref{fig:plotc} stellt diese Werte dar.
 \begin{figure}
   \centering
   \includegraphics{build/plotc.pdf}
-  \caption{Plot.}
+  \caption{Die Amplitude der Kondensatorspannung geteilt durch die Generatorspannung
+  ist gegen die Kreisfrequenz aufgetragen. Das Maximum ist die Güte. Es liegt bei der
+  Resonanzfrequenz.}
   \label{fig:plotc}
 \end{figure}
 \noindent Daraus lässt sich der Wert für die Resonanzüberhöhung, bzw. die Güte $q$ entnehmen.
 Sie ist nach Gleichung \eqref{eqn:ucmax} das Maximum.
 %Die Resonanzfrequenz ist der zugehörige $\omega$-Wert.
-Also ergibt sich für die Güte $q = \num{3.40}$
+Also ergibt sich für die Güte $q = \num{3.40}$.
 %und für die Resonanzfrequenz $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
 %omega_+ und omega_- einfügen
 Der Breite der Resonanzkurve ist
@@ -64,12 +63,11 @@ $\omega_{+} - omega_{-} = \SI[per-mode=fraction]{62831.85}{\per\second}$. %wie?
 \newline
 Der theoretisch errechnete Wert für die Güte, der mit Gleichung
 \eqref{eqn:q} bestimmt werden kann, ist $q_{theo} = \num{4.309 \pm.010}$.
-%omega_+ und omega_- einfügen
 Der mit Gleichung \eqref{eqn:breite} berechnete Wert für die Breite der
 Resonanzkurve ist
 $\omega_{+,theo} - \omega_{-,theo} = \SI[per-mode=fraction]{5.040(016)e4}{\per\second}$.
 
-\subsection{d}
+\subsection{Resonanzfrequenz} %und omega_1, omega_2?
 %d)
 Die Abstände der Nulldurchgänge der Kondensatorspannung und
 der Erregerspannung sind bereits in Tabelle \ref{table:tab2}
@@ -82,18 +80,20 @@ bestimmt.
 \begin{figure}
   \centering
   \includegraphics{build/plotd.pdf}
-  \caption{Plot.}
+  \caption{Die Phasenverschiebung der Kondensatorspannung und der
+  Generatorspannung ist gegen die Kreisfrequenz aufgetragen.} %Erklären, was die Steigung ist
   \label{fig:plotd}
 \end{figure}
 \noindent Aus Abbildung \ref{fig:plotd} kann man die gesuchten Werte entnehmen. %wie?
 Die Resonanzfrequenz ist $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
 $\omega_{1}$ und $\omega_{2}$ haben die Werte
-$\omega_{1} = \SI{}{}$ und
-$\omega_{2} = \SI{}{}$.
+$\omega_{1} = \SI[per-mode=fraction]{182212.37}{\per\second}$ und
+$\omega_{2} = \SI[per-mode=fraction]{245044.23}{\per\second}$.
 \newline
 Die Resonanzfrequenz lässt sich in der Theorie durch 
 Gleichung \eqref{eqn:omega_res} bestimmen.
-Der Wert für diese ist $\omega_{res,theo} = \SI{}{}$.
+Der Wert für diese ist $\omega_{res,theo} = \SI[per-mode=fraction]{2.142(004)e5}{\per\second}$.
 Für die Frequenzen $\omega_{1,theo}$ und $\omega_{2,theo}$ ergibt sich
 mittels Gleichung \eqref{eqn:omega_12}:
-$\omega_{1,theo} = \SI{}{}$ und $\omega_{2,theo} = \SI{}{}$.
+$\omega_{1,theo} = \SI[per-mode=fraction]{1.934(004)e5}{\per\second}$ und
+$\omega_{2,theo} = \SI[per-mode=fraction]{2.438(005)e5}{\per\second}$.
