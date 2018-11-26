@@ -25,13 +25,13 @@ wobei $2 \pi \mu = \frac{R}{2L}$ ist. $I$ ist die Stromstärke, $A_{0}$ der Star
 $\nu$ die Frequenz und $\eta$ eine Phasenverschiebung.
 Die Abklingdauer ist durch
 \begin{equation}
-    T_{ex} = \frac{1}{R_{eff}} = \frac{1}{2 \pi \mu} = \frac{2L}{R}
+    T_{ex} = \frac{1}{2 \pi \mu} = \frac{2L}{R}
     \label{eqn:t_ex}
 \end{equation}
 gegeben.
 Der effektive Dämpfungswiderstand bestimmt sich durch
 \begin{equation}
-    R_{eff} = 2 \pi \mu. %??????????????
+    R_{eff} = 4 \pi \mu L.
     \label{eqn:reff}
 \end{equation}
 
@@ -80,9 +80,13 @@ $U_{C}$ überschreitet bzw. unterschreitet die Erregerspannung also um den Fakto
 Dieser Faktor ist die Güte, bzw. Resonanzüberhöhung.
 Daraus lässt sich die Breite der Resonanzkurve bestimmen:
 \begin{equation}
-    \omega_{+} - \omega_{-} = \frac{\omega_{0}}{q}.
+    \frac{U_{C}(\omega_+)}{U_0} = \frac{U_{C}(\omega_-)}{U_0} = \frac{q}{\sqrt{2}}.
     \label{eqn:breite}
 \end{equation}
+% \begin{equation}
+    % \omega_{+} - \omega_{-} = \frac{\omega_{0}}{q}.
+    % \label{eqn:breite}
+% \end{equation}
 
 \subsection{Frequenzabhängigkeit der Phase}
 Die Phase in Abhängigkeit von der Frequenz der Erregerspannung wird durch
@@ -110,4 +114,9 @@ und $\omega_{2}$:
 \begin{equation}
     \omega_{1,2} = \pm \frac{R}{2L} + \sqrt{\frac{R^2}{4L^2} + \frac{1}{LC}}.
     \label{eqn:omega_12}
+\end{equation}
+Die Differenz bzw. die Breite der Resonanzkurve ist also
+\begin{equation}
+    \omega_+ - \omega_- = \frac{R}{L}.
+    \label{eqn:diff}
 \end{equation}

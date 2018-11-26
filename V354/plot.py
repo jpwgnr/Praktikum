@@ -108,7 +108,7 @@ tabc = TexTable([omega/1e5,Amp], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]
 tabc.writeFile("build/tabc.tex")
 
 #d) 
-tabd = TexTable([omega/1e5,phase], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]{\per\second}", r"$Phase \varphi$"], label="tabd", caption=r"Kreisfrequenz $\omega$ gegen die Phasenverschiebung $\varphi$ der Kondensatorspannung $U_C$ und der Generatorspannungi $U_0$.", roundPrecision=2)
+tabd = TexTable([omega/1e5,phase], [r"$\omega\cdot 10^{5}$ /\si[per-mode=fraction]{\per\second}", r"$Phase \varphi$"], label="tabd", caption=r"Kreisfrequenz $\omega$ gegen die Phasenverschiebung $\varphi$ der Kondensatorspannung $U_C$ und der Generatorspannung $U_0$.", roundPrecision=2)
 tabd.writeFile("build/tabd.tex")
 
 

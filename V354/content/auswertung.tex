@@ -1,6 +1,8 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+Die aufgenommenen Werte der Spannungen $U_{C}$ wurden mit dem Schalter am Tastkopf
+auf $X10$ gemessen. Deshalb werden die Werte mit einem Faktor $10$ multipliziert.
 %a)
 \subsection{Effektiver Widerstand und Abklingdauer} 
 Die Zeit und die Amplitude der Spannung sind in Tabelle
@@ -17,14 +19,14 @@ Logarithmus der Spannung gegen die Zeit aufgetragen.
   \caption{Die logarithmierte Spannung ist gegen die Zeit aufgetragen.} %Erklären, was die Steigung ist
   \label{fig:plota}
 \end{figure}
-\noindent Daraus ergibt sich durch \eqref{eqn:reff} %die Steigung???
+\noindent Daraus ergibt sich aus der Steigung und durch die Gleichung \eqref{eqn:reff}
 der effektive Widerstand zu $R_{eff} = \SI{34.2 \pm 1.5}{\ohm}$.
 Die Abklingdauer \ref{eqn:t_ex} ist somit $T_{ex} = \SI{0.000590 \pm 0.000026}{\second}$.
-%Ist T_ex = 1/R_eff? Hier wurde jetzt dieselbe Gleichung für den experimentalen
+%Hier wurde jetzt dieselbe Gleichung für den experimentalen
 %und den theoretischen Wert benutzt.
 \newline
-Der theoretische effektive Widerstand ist $R_{eff,theo} = \SI{48.1 \pm 0.1}{\ohm}$ %Gleichung angeben
-und die Abklingdauer \eqref{eqn:t_ex} $T_{ex,theo} = \SI{0.0004204 \pm 0.0000015}{\second}$. %ex für experimental?
+Der theoretische effektive Widerstand \eqref{eqn:reff} ist $R_{eff,theo} = \SI{48.1 \pm 0.1}{\ohm}$ %Gleichung angeben
+und die Abklingdauer \eqref{eqn:t_ex} $T_{ex,theo} = \SI{0.0004204 \pm 0.0000015}{\second}$.
 
 \subsection{Dämpfungswiderstand beim aperiodischen Grenzfall}
 %b)
@@ -39,7 +41,7 @@ bestimmt wird, ist $R_{ap,theo} = (4390 \pm 9) \si{\ohm}$.
 Tabelle \ref{tab2} beinhaltet die Spannung der Kondensators
 sowie die Abstände der Nulldurchgänge der Kondensatorspannung
 und der Erregerspannung zu verschiedenen Frequenzen.
-Die Werte zur Berechnung von %?
+Die Werte zur Bestimmung der Güte und der Breite der Resonanzkurve
 sind in Tabelle \ref{tabc} aufgelistet.
 Die Abbildung \ref{fig:plotc} stellt diese Werte dar.
 \input{build/tab2.tex}
@@ -57,13 +59,12 @@ Sie ist nach Gleichung \eqref{eqn:ucmax} das Maximum.
 %Die Resonanzfrequenz ist der zugehörige $\omega$-Wert.
 Also ergibt sich für die Güte $q = \num{3.40}$.
 %und für die Resonanzfrequenz $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
-%omega_+ und omega_- einfügen
-Der Breite der Resonanzkurve ist
-$\omega_{+} - omega_{-} = \SI[per-mode=fraction]{62831.85}{\per\second}$. %wie?
+Die Breite der Resonanzkurve ist mit Gleichung \eqref{eqn:breite}
+$\omega_{+} - \omega_{-} = \SI[per-mode=fraction]{62831.85}{\per\second}$.
 \newline
 Der theoretisch errechnete Wert für die Güte, der mit Gleichung
 \eqref{eqn:q} bestimmt werden kann, ist $q_{theo} = \num{4.309 \pm.010}$.
-Der mit Gleichung \eqref{eqn:breite} berechnete Wert für die Breite der
+Der mit Gleichung \eqref{eqn:diff} berechnete Wert für die Breite der
 Resonanzkurve ist
 $\omega_{+,theo} - \omega_{-,theo} = \SI[per-mode=fraction]{5.040(016)e4}{\per\second}$.
 
@@ -81,11 +82,14 @@ bestimmt.
   \centering
   \includegraphics{build/plotd.pdf}
   \caption{Die Phasenverschiebung der Kondensatorspannung und der
-  Generatorspannung ist gegen die Kreisfrequenz aufgetragen.} %Erklären, was die Steigung ist
+  Generatorspannung ist gegen die Kreisfrequenz aufgetragen.}
   \label{fig:plotd}
 \end{figure}
-\noindent Aus Abbildung \ref{fig:plotd} kann man die gesuchten Werte entnehmen. %wie?
-Die Resonanzfrequenz ist $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
+\noindent Aus Abbildung \ref{fig:plotd} kann man die gesuchten Werte in Verbindung mit Tabelle
+\ref{tabc} entnehmen.
+Die Resonanzfrequenz liegt an der Stelle des Maximums und ist somit
+ $\omega_{res} = \SI[per-mode=fraction]{213628.30}{\per\second}$.
+Die Werte $\omega_{1}$ und $\omega_{2}$ sind näherungsweise $\omega_{-}$ und $\omega_{+}$.
 $\omega_{1}$ und $\omega_{2}$ haben die Werte
 $\omega_{1} = \SI[per-mode=fraction]{182212.37}{\per\second}$ und
 $\omega_{2} = \SI[per-mode=fraction]{245044.23}{\per\second}$.
