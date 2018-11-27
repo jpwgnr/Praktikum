@@ -1,10 +1,42 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-Für die Berechnung vieler Ergebnisse wird der Wert $U_0$ benötigt. Dieser wird auf einen Wert von \SI{621}{\milli\volt} gesetzt, damit die Rechnungen funktionieren. \ref{sec: dis}
+Für die Berechnung vieler Ergebnisse wird der Wert $U_0$ benötigt. Dieser wird auf einen Wert von \SI{621}{\milli\volt} gesetzt, damit die Rechnungen funktionieren. %\ref{sec: dis}
+Bei der Auswertung bzw. Berechnung wird Python, im Speziellen matplotlib.pyplot \cite{matplotlib}, numpy \cite{numpy}, uncertainties.unumpy \cite{uncertainties} und scipy \cite{scipy} verwendet.
 
 \subsection{Bestimmung von RC über den Entladevorgang des Kondensators}
 \label{sec: a}
+Die Zeitkonstante wird anhand der Steigung einer linearen Regression bestimmt.
+Dazu wird die Gleichung für die Entladung eines Kondensators in die Form $y=mx+b$ gebracht:
+\begin{equation}
+    - \log(\frac{U(t)}{U_{0}}) = \frac{1}{RC} t.
+    \label{eqn: linreg1}
+\end{equation}
+Der negative logarithmierte Quotient der Kondensatorspannung durch die maximale Spannung wird gegen die Zeit aufgetragen.
+Die Steigung bei der linearen Regression ist gegeben durch
+\begin{equation*}
+    m = \frac{\overline{xy} - \overline{x}\overline{y}}{\overline{x^2} - \overline{x}^2}.
+\end{equation*}
+Die Steigung, wie aus Gleichung \eqref{eqn: linreg1} entnommen werden kann, wird durch
+\begin{equation*}
+    m = \frac{1}{RC}
+\end{equation*}
+beschrieben. Also wird $\frac{1}{RC}$ bestimmt durch
+\begin{equation}
+    \frac{1}{RC}= \frac{\overline{xy} - \overline{x}\overline{y}}{\overline{x^2} - \overline{x}^2}.
+    \label{eqn: RC}
+\end{equation}
+Dabei sind, ebenfalls aus Gleichung \eqref{eqn: linreg1} entnehmbar, $x=t$ und $y=-\log(\frac{U(t)}{U_{0}})$. %nebeneinander schreiben?
+Der Fehler der inversen Zeitkonstante ist gegeben durch
+\begin{equation}
+    \frac{1}{N} \sum_{i=1}^N f(x_{i}) - y_{i},
+    \label{eqn: fehler}
+\end{equation}
+wobei $N$ die Anzahl der Datenpaare, 
+$f(x_{i})$ die Werte des Fits an der Stelle $x_{i}$
+und $y_{i}$ die gemessenen $y$-Werte an der Stelle $x_{i}$ sind.
+Der Fehler gilt ebenfalls für die im Folgenden beschriebenen Zeitkonstanten.
+\newline
 Die Werte, die für die Bestimmung der Zeitkonstanten $RC$ nötig sind, befinden sich in Tabelle \ref{tab1}.
 \input{build/taba.tex}
 Die $x$ und $y$ Werte der linearen Regression \eqref{eqn: linreg1} sind in Tabelle \ref{taba} dargestellt.
@@ -14,8 +46,8 @@ Abbildung \ref{fig:plota} stellt die Gerade dieser linearen Regression dar.
 \begin{figure}
   \centering
   \includegraphics[width=13cm, height=9cm]{build/plota.pdf}
-  \caption{Auftragung des negativen Logarithmus der Spannung geteilt durch die maximale Spannung gegen die Zeit.
-  Dargestellt werden die Daten, ein Fit und der Fehler des Fits.}
+  \caption{Auftragung des negativen Logarithmus der Kondensatorpannung geteilt durch die maximale Spannung gegen die Zeit beim Entladevorgang.
+  Dargestellt werden die Daten, der dazugehörige Fit und der Fehler des Fits.}
   \label{fig:plota}
 \end{figure}
 
@@ -25,6 +57,15 @@ sich das Inverse der Zeitkonstante zu $\frac{1}{RC} = \SI[per-mode=fraction]{836
 
 \subsection{Bestimmung von RC über die Amplitude der Kondensatorspannung}
 \label{sec: b}
+Um die Zeitkonstante $RC$ anhand der Amplitude der Kondensatorspannung zu bestimmen, wird wieder eine lineare Regression $y=mx+b$ durchgeführt. %Formulierung ändern
+Die Gleichung \eqref{eqn: A2} wird so umgeformt, dass $\frac{1}{RC}$ die Steigung $m$ ist:
+\begin{equation}
+    \sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)}})^2 -1} = \frac{1}{RC} \frac{1}{\omega}.
+    \label{eqn: linreg2}
+\end{equation}
+Für x und y ergeben sich also: $x=\frac{1}{\omega}$ und $y=\sqrt{\frac{1}{(\frac{U_{0}}{A(\omega)}})^2 -1}$. %Doppelpunkt?
+Durch die Steigung der Geraden kann dann $\frac{1}{RC}$ mittels \eqref{eqn: RC} bestimmt werden.
+\newline
 Die Kondensatorspannungen und die zeitlichen Phasenverschiebungen in Abhängigkeit
 von der Frequenz sind in Tabelle \ref{tab2} dargstellt.
 \input{build/tabb.tex}
@@ -45,6 +86,15 @@ berechnet. Es ergibt sich $\frac{1}{RC} = \SI[per-mode=fraction]{885.682  \pm 19
 
 \subsection{Bestimmung von RC über die Phasenverschiebung der Kondensatorspannung}
 \label{sec: c}
+Um die Zeitkonstante zu berechnen, wird wieder eine lineare Regression benötigt.
+Die Gleichung \eqref{eqn: phi} wird so umgestellt, dass die Steigung $m = \frac{1}{RC}$ ist:
+\begin{equation}
+    -\frac{1}{\mathbf{tan}(\phi(\omega))} = \frac{1}{RC} \frac{1}{\omega}.
+    \label{eqn: linreg3} 
+\end{equation}
+Dann ist $x= \frac{1}{\omega}$ und $y= -\frac{1}{\mathbf{tan}(\phi(\omega))}$.
+$RC$ kann somit wieder durch \eqref{eqn: RC} bestimmt werden.
+\newline
 Die Abstände der Nulldurchgänge der Spannung des Kondensators und der Spannung des Generators in Abhängigkeit
 von der Frequenz sind bereits in Tabelle \ref{tab2} aufgelistet.
 Um die Zeitkonstante aus dieser Phasenverschiebung zu bestimmen, wird die lineare Regression \eqref{eqn: linreg3} benötigt.
