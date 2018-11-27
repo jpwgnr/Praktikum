@@ -1975,18 +1975,11 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">versuch</bcf:citekey>
-    <bcf:citekey order="2">versuch</bcf:citekey>
-    <bcf:citekey order="3">versuch</bcf:citekey>
-    <bcf:citekey order="4">versuch</bcf:citekey>
-    <bcf:citekey order="5">versuch</bcf:citekey>
-    <bcf:citekey order="6">versuch</bcf:citekey>
-    <bcf:citekey order="7">versuch</bcf:citekey>
-    <bcf:citekey order="8">matplotlib</bcf:citekey>
-    <bcf:citekey order="9">numpy</bcf:citekey>
-    <bcf:citekey order="10">uncertainties</bcf:citekey>
-    <bcf:citekey order="11">scipy</bcf:citekey>
-    <bcf:citekey order="12">versuch</bcf:citekey>
+    <bcf:citekey order="1">V308</bcf:citekey>
+    <bcf:citekey order="2">matplotlib</bcf:citekey>
+    <bcf:citekey order="3">numpy</bcf:citekey>
+    <bcf:citekey order="4">scipy</bcf:citekey>
+    <bcf:citekey order="5">uncertainties</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
