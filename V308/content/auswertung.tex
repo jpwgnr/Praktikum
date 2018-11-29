@@ -12,83 +12,150 @@ SciPy \cite{scipy} und Uncertainties \cite{uncertainties} verwendet.
 
 \subsection{Magnetische Flussdichte einer langen und einer kurzen Spule}
 %Tabelle lange Spule
+Die verwendete lange Spule hat $\num{300}$ Windungen und eine Länge
+von $\SI{24}{\centi\meter}$. %richtige Werte einfügen
+Die Werte der magnetischen Flussdichte an den Stellen $x$ inner- und außerhalb
+der langen Spule befinden sich in Tabelle \ref{taba1}.
+Dieselben Werte sind in Abbildung \ref{plota1} gegeneinander aufgetragen.
+\input{build/taba1.tex}
 
 %Grafik lange Spule (xB-Diagramm)
 \begin{figure}
     \centering
-    \includegraphics{build/Hysterese.png} %richtigen Plot einfügen
-    \caption{Plot}
-    %\label{}
+    \includegraphics{build/plota1.pdf}
+    \caption{Die magnetische Flussdichte $B$ ist gegen die Position $x$ inner- 
+    und außerhalb der langen Spule aufgetragen.}
+    \label{plota1}
 \end{figure}
 
 %Vergleich der Werte mit Theorie
-
+\noindent 
 
 %Tabelle kurze Spule
+\noindent Die kurze Spule hat $\num{100}$ Windungen und eine Länge von
+$\SI{12}{\centi\meter}$. %richtige Werte einfügen
+In Tabelle \ref{taba2} sind die Werte des magnetischen Flusses $B$
+an verschiedenen Stellen $x$ aufgelistet.
+Die Werte aus Tabelle \ref{taba2} sind in Abbildung \ref{plota2}
+gegeneinadner aufgetragen.
+\input{build/taba2.tex}
 
 %Grafik kurze Spule (xB-Diagramm)
 \begin{figure}
     \centering
-    \includegraphics{build/Hysterese.png} %richtigen Plot einfügen
-    \caption{Plot}
-    %\label{}
+    \includegraphics{build/plota2.pdf}
+    \caption{Die magnetische Flussdichte $B$ ist gegen die Position $x$ inner-
+    und außerhalb der kurzen Spule aufgetragen.}
+    \label{plota2}
 \end{figure}
 
 %Vergleich der Werte mit Theorie
+\noindent 
 
 \subsection{Magnetische Flussdichte eines Spulenpaares}
 %ABSTAND=RADIUS
 %Tabelle mit I=4A
+Zunächst wird der Abstand der beiden Spulen so festgelegt, dass
+er den Radien der Spulen entspricht. Es handelt sich um ein
+Helmholtz-Spulenpaar.
+Es wird eine Stromstärke von $I = \SI{4}{\ampere}$ für die
+Messung eingestellt.
+Die Werte des magnetischen Flusses an verschiedenen Stellen
+$x$ sind in Tabelle \ref{tabb1} aufgelistet. Dabei wird inner-
+und außerhalb der Spulen gemessen.
+Dieselben Werte sind in Abbildung \ref{plotb1} gegeneinander
+aufgetragen.
+\input{build/tabb1.tex}
 
 %Grafik (xB-Diagramm)
 \begin{figure}
     \centering
-    \includegraphics{build/Hysterese.png} %richtigen Plot einfügen
-    \caption{Plot}
-    %\label{}
+    \includegraphics{build/plotb1.pdf}
+    \caption{Die magnetische Flussdichte $B$ ist gegen die Position $x$ inner-
+    und außerhalb des Helmholtz-Spulenpaares für eine Stromstärke von
+    $\SI{4}{\ampere}$ aufgetragen.}
+    \label{plotb1}
 \end{figure}
 
 %Vergleich mit Theorie
-
+\noindent
 
 %ABSTAND=DURCHMESSER
 %Tabelle mit I=4A
+\newline
+\noindent Der Abstand der Spulen wird im nächsten Messabschnitt auf den
+Durchmesser der Spulen erhöht.
+Die eingestellte Stromstärke ist, wie im ersten Teil,
+$I = \SI{4}{\ampere}$.
+Die magnetische Flussdichte an verschiedenen Stellen $x$ ist
+in Tabelle \ref{tabb2} dargestellt.
+Diese Werte sind in Abbildung \ref{plotb2} gegeneinadner
+aufgetragen.
+\input{build/tabb2.tex}
 
 %Grafik (xB-Diagramm)
 \begin{figure}
     \centering
-    \includegraphics{build/Hysterese.png} %richtigen Plot einfügen
-    \caption{Plot}
-    %\label{}
+    \includegraphics{build/plotb2.pdf}
+    \caption{Die magnetische Flussdichte $B$ ist gegen die Position $x$ inner-
+    und außerhalb des Spulenpaares mit einem Abstand, der gleich dem Durchmesser
+    der Spulen ist, und einer Stromstärke von $\SI{4}{\ampere}$ aufgetragen.}
+    \label{plotb2}
 \end{figure}
 
 %Vergleich mit Theorie
+\noindent
 
 %Tabelle mit I=3A
+\noindent Zuletzt wird die angelegte Stromstärke verändert. Der Abstand
+der Spulen bleibt unverändert der Durchmesser der Spulen.
+Die verwendete Stromstärke ist $I = \SI{3}{\ampere}$.
+Der magnetische Fluss an den Positionen $x$ inner- und außerhalb
+der Spulen findet sich in Tabelle \ref{tabb3}.
+Diese Werte sind in Abbildung \ref{plotb3} gegeneinadner
+aufgetragen.
+\input{build/tabb3.tex}
 
 %Grafik (xB-Diagramm)
 \begin{figure}
     \centering
-    \includegraphics{build/Hysterese.png} %richtigen Plot einfügen
-    \caption{Plot}
-    %\label{}
+    \includegraphics{build/plotb3.pdf}
+    \caption{Die magnetische Flussdichte $B$ ist gegen die Position $x$ inner-
+    und außerhalb des Spulenpaares mit einem Abstand, der gleich dem Durchmesser
+    der Spulen ist, und einer Stromstärke von $\SI{3}{\ampere}$ aufgetragen.}
+    \label{plotb3}
 \end{figure}
 
 %Vergleich mit Theorie
+\noindent
 
 \subsection{Hysteresekurve einer Ringspule mit Luftspalt}
 %Tabelle
+Der magnetische Fluss $B$ der Ringspule wird im Luftspalt
+des Rings gemessen.
+In Tabelle \ref{tabc} befinden sich die Werte des magnetischen
+Flusses für verschiedene eingestellte Stromstärken.
+Diese Werte für den magnetischen Fluss sind in Abbildung
+\ref{plotc} gegen die Stromstärke aufgetragen.
+\input{build/tabc.tex}
 
 %Grafik: Hysteresekurve
 \begin{figure}
     \centering
-    \includegraphics{build/Hysterese.png} %richtigen Plot einfügen
-    \caption{Plot}
-    %\label{}
+    \includegraphics{build/plotc.pdf}
+    \caption{Die magnetische Flussdichte $B$ ist gegen die Stromstärke $I$
+    aufgetragen. Bei keinem angelegten Strom ist der magnetische Fluss
+    gleich Null. Bei Erhöhung der Stromstärke entsteht die Neukurve, bis
+    ein Sättigungswert $B_{S}$ (Maximum) erreicht wird. Beim Abschalten des Stroms
+    bleibt eine Restmagnetisierung, die Remanenz $B_{r}$ (y-Achsenabschnitt),
+    zurück. Ein Gegenfeld $H_{c}$, Koerzitivfeld, hebt diese Magnetisierung wieder
+    auf (Schnittpunkt mit der x-Achse). Durch Erhöhung der Stromstärke entsteht
+    eine Hysteresekurve.}
+    \label{plotc}
 \end{figure}
 
 %Werte ablesen:
-Aus der grafischen Darstellung lassen sich verschiedene Faktoren
+\noindent Aus der grafischen Darstellung lassen sich verschiedene Faktoren
 wie die Sättigungsmagnetisierung $B_{S}$, die Remanenz $B_{r}$ und die
 Koerzitivkraft $H_{c}$ ablesen.
 Die Sättigungsmagnetisierung ist das Maximum der gemessenen Werte für
