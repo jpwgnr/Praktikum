@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1543342374 "build/main.bcf" "build/main.bbl" "build/main" 1543342375
-  "build/main.bcf" 1543341822 90005 51b7705eb76574f21d6a125c6ff21b58 ""
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1543408207
+  "main.aux" 1543342529 10911 d1cfe25a3642f13b66d5fc2ebc5e9068 ""
   (generated)
-  "build/main.bbl"
-  "build/main.blg"
-["lualatex"] 1543341815 "main.tex" "build/main.pdf" "main" 1543342375
+  "main.bbl"
+  "main.blg"
+["lualatex"] 1543407569 "main.tex" "build/main.pdf" "main" 1543408207
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1541846688 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1541846688 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1541846688 928 2dc8d444221b7a635bb58038579b861a ""
@@ -172,16 +172,16 @@
   "/home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1541854144 415193 6dcbd245809fe54f0f7f044d76e76825 ""
   "/home/lewis206/.local/texlive/2018/texmf-var/tex/generic/config/language.dat.lua" 1541849670 17426 2f26456afbdb8bae99e151b58c0d042d ""
   "/home/lewis206/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1541846487 1370712 fb12777e330d2baa012a8cd41c3cc684 ""
-  "build/main.aux" 1543341822 2252 865e61f847ef783de776273ba364d500 ""
-  "build/main.bbl" 0 -1 0 "biber build/main"
-  "build/main.toc" 1543341822 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "content/theorie.tex" 1543153011 3287 b47279a9c5626375c37448faf141fad7 ""
+  "build/main.aux" 1543407575 2857 5d1e5e663647c5f0d5b4fa9cf852fa98 ""
+  "build/main.toc" 1543407575 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "content/theorie.tex" 1543342529 4542 c82965c65ea46d28e11be6381881b217 ""
   "header.tex" 1543072648 4015 c96cdbd26636d2b920d60ba73f7457bc ""
+  "main.bbl" 1543342529 6926 50c85b7e11afd5a6e94e957dbca2eec3 "bibtex main"
   "main.tex" 1543072517 256 0c1848378c78f067ea86f7f4872e2c7e ""
   (generated)
-  "build/main.pdf"
+  "build/main.toc"
   "build/main.run.xml"
   "build/main.bcf"
-  "build/main.toc"
-  "build/main.aux"
   "build/main.log"
+  "build/main.pdf"
+  "build/main.aux"

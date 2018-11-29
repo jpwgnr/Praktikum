@@ -63,12 +63,18 @@ n3= 595
 #functions 
 
 #a)
+def allgB(x, mu_0, I, R, n, p):
+    return ((mu_0*I)/2)*(R**2/((R**2+(x-p)**2)**(3/2)))*n
+
+def allgB2(x, mu_0, I, R, n, p, q):
+    return ((mu_0*I)/2)*(R**2/((R**2+(x-p)**2)**(3/2)))*n+((mu_0*I)/2)*(R**2/((R**2+(x-q)**2)**(3/2)))*n
+
 def getBlong(mu_r, mu_0, n, l, I):
     return mu_r*mu_0*(n/l)*I
 
 #b)
 def getBhelm(mu_0, I, n, R, x):
-    return n*mu_0*I*(R**2)/((R**2+x**2)**(3/2))
+    return 2*n*mu_0*I*(R**2)/((R**2+x**2)**(3/2))
 
 def getBhelmgrad(mu_0, I, n, R, x):
     return (-3*mu_0*I*R**2*x)/((R**2+x**2)**(5/2))
@@ -82,19 +88,33 @@ def getBtorus(mu_r, mu_0, n, R, I):
 
 #calculate 
 #a)
-parameterslang, pcovlang = curve_fit(getBlong, x1lang, B1lang)
+theoBlang= getBlong(1, mu_0, n1lang, l1lang, Ilang)
 
-parameterskurz, pcovkurz = curve_fit(getBlong, x1kurz, B1kurz)
+#parameterslang, pcovlang = curve_fit(getBlong, x1lang, B1lang)
+
+theoBkurz= getBlong(1, mu_0, n1kurz, l1kurz, Ikurz)
+
+parameterskurz, pcovkurz = curve_fit(allgB, x1kurz*1e2, B1kurz*1e3)
 
 #b) 
-parametersHelm1, pcovHelm1 = curve_fit(getBhelm, x2r, B2r)
 
-parametersHelm2, pcovHelm2 = curve_fit(getBhelm, x2d, B2d)
+theoBhelmmitte1 = getBhelm(mu_0, I21,n2, R2,d21)
+theoBhelmmitte2 = getBhelm(mu_0, I21,n2, R2,d22)
+theoBhelmmitte3 = getBhelm(mu_0, I23,n2, R2,d22)
 
-parametersHelm3, pcovHelm3 = curve_fit(getBhelm, x23, B23)
+#parametersHelm1, pcovHelm1 = curve_fit(allgB, x2r, B2r)
+
+parametersHelm2, pcovHelm2 = curve_fit(allgB2, x2d*1e2, B2d*1e3)
+
+parametersHelm3, pcovHelm3 = curve_fit(allgB2, x23*1e2, B23*1e3)
 
 #c)
-parametersTorus, pcovTorus = curve_fit(getBtorus, I3, B3)
+#parametersTorus, pcovTorus = curve_fit(getBtorus, I3, B3)
+#abgelesene Ergebnisse: 
+
+SaetMag= 1
+Rema= 1
+Koerz= 1
 
 #allgemeine Rechnungen
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
@@ -104,13 +124,14 @@ parametersTorus, pcovTorus = curve_fit(getBtorus, I3, B3)
 #save solution 
 
 #file = open("build/solution.txt", "w")
-#file.write("Steigung = {} Fehler: {}".format(Steigung1, np.sqrt(np.diag(pcov)) ))
+#file.write("a) \n\tExperimental:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\n\tTheoretisch:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\nb)\n\tExperimental:\n\t\tMittePaar r B= {} T\n\t\tMittePaar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\n\t Theorie:\n\tTheorie:\n\t\tMitte Paar r B= {} T\n\t\t Mitte Paar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\nc)\n\t Ergebnis aus Graph:\n\t\tSättigungsmagnetisierung{}\n\t\tRemanenz: {} T\n\t\tStromstärke bei Koerzitivkraft= {} A".format())
 #file.close()
 
 #Make plots for data
 #a)
 plt.figure(1)
 plt.plot(x1lang*1e2, B1lang*1e3, "xr", label="Daten")
+#plt.plot(t, f(t, *parameters), 'b-', label='Fit')
 #plt.plot(x1, function(<++>), "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$x/\si{\centi\meter}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")
@@ -120,6 +141,7 @@ plt.savefig("build/plota1.pdf")
 
 plt.figure(2)
 plt.plot(x1kurz*1e2, B1kurz*1e3, "xr", label="Daten")
+plt.plot(x1kurz*1e2, allgB(x1kurz*1e2, *parameterskurz), 'b-', label='Fit')
 #plt.plot(x1, function(<++>), "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$x/\si{\centi\meter}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")
@@ -130,6 +152,7 @@ plt.savefig("build/plota2.pdf")
 #b)
 plt.figure(3)
 plt.plot(x2r*1e2, B2r*1e3, "xr", label="Daten")
+#plt.plot(t, allgB(t, *parameterskurz), 'b-', label='Fit')
 #plt.plot(<++>, function(<++>), "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$x/\si{\centi\meter}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")
@@ -137,8 +160,10 @@ plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("build/plotb1.pdf")
 
+x2dnew= np.linspace(x2d[0],x2d[-1], 200)
 plt.figure(4)
 plt.plot(x2d*1e2, B2d*1e3, "xr", label="Daten")
+plt.plot(x2dnew*1e2, allgB2(x2dnew*1e2, *parametersHelm2), 'b-', label='Fit')
 #plt.plot(<++>, function(<++>), "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$x/\si{\centi\meter}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")
@@ -146,8 +171,10 @@ plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("build/plotb2.pdf")
 
+x23new= np.linspace(x23[0],x23[-1], 200)
 plt.figure(5)
 plt.plot(x23*1e2, B23*1e3, "xr", label="Daten")
+plt.plot(x23new*1e2, allgB2(x23new*1e2, *parametersHelm3), 'b-', label='Fit')
 #plt.plot(<++>, function(<++>), "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$x/\si{\centi\meter}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")
@@ -158,6 +185,7 @@ plt.savefig("build/plotb3.pdf")
 #c)
 plt.figure(6)
 plt.plot(I3, B3*1e3, "xr", label="Daten")
+#plt.plot(t, f(t, *parameters), 'b-', label='Fit')
 #plt.plot(<++>, function(<++>), "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$I/\si{\ampere}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")

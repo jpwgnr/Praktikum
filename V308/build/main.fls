@@ -306,6 +306,9 @@ INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstop
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 OUTPUT build/main.bcf
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT ./main.bbl
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
