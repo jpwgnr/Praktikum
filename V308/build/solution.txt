@@ -1,0 +1,25 @@
+a) 
+	Experimental:
+		Lange Spule B= 0.00224 T
+		Kurze Spule B max= 0.0018 T
+
+	Theoretisch:
+		Lange Spule B= 0.002356194490192345 T
+		Kurze Spule B max= 0.003064277945429082 T
+
+b)
+	Experimental:
+		MittePaar r B= 0.0056 T
+		MittePaar d B= 0.0025 T
+		Mitte Paar d2 B= 0.00225 T
+
+	Theorie:
+		Mitte Paar r B= 0.0036716936148531924 T
+		Mitte Paar d B= 0.002808336307204071 T
+		Mitte Paar d2 B= 0.002106252230403053 T
+
+c)
+	 Ergebnis aus Graph:
+		Sättigungsmagnetisierung= 0.7043 T
+		Remanenz= 0.1228 T
+		Stromstärke bei Koerzitivkraft= -0.5 A

@@ -21,6 +21,10 @@ c)
 	Omega_minus= 182212.373908208 1/s
 	Omega_plus= 245044.22698000388 1/s
 	Omega_diff= 62831.853071795864 1/s
+	Omega_eins= 188495.56 1/s
+	Omega_zwei= 245044.22698000388 1/s
+	Omega_diff= 56548.67 1/s
+    q= 3.78 
 
 	Theoretisch:
 	q= 4.309+/-0.010
