@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1543579931 "main.tex" "build/main.pdf" "main" 1543584800
+["lualatex"] 1543579931 "main.tex" "build/main.pdf" "main" 1543671840
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1541846690 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1541846508 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/oberdiek/bigintcalc.sty" 1541846508 40505 00cd7d66904273677d96039436aaa328 ""
@@ -83,7 +83,7 @@
   (generated)
   "build/main.bcf"
   "build/main.toc"
-  "build/main.run.xml"
-  "build/main.aux"
   "build/main.pdf"
+  "build/main.aux"
+  "build/main.run.xml"
   "build/main.log"

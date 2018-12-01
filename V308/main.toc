@@ -14,5 +14,5 @@
 \contentsline {subsection}{\numberline {4.1}Magnetische Flussdichte einer langen und einer kurzen Spule}{6}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Magnetische Flussdichte eines Spulenpaares}{10}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Hysteresekurve einer Ringspule mit Luftspalt}{15}{subsection.4.3}
-\contentsline {section}{\numberline {5}Diskussion}{17}{section.5}
-\contentsline {section}{\nonumberline Literatur}{18}{section*.16}
+\contentsline {section}{\numberline {5}Diskussion}{20}{section.5}
+\contentsline {section}{\nonumberline Literatur}{22}{section*.21}

@@ -1,6 +1,6 @@
 a) 
 	Experimental:
-		Lange Spule B= 0.00224 T
+		Lange Spule B= 0.0021884 T
 		Kurze Spule B max= 0.0018 T
 
 	Theoretisch:
@@ -22,4 +22,4 @@ c)
 	 Ergebnis aus Graph:
 		Sättigungsmagnetisierung= 0.7043 T
 		Remanenz= 0.1228 T
-		Stromstärke bei Koerzitivkraft= -0.5 A
+		Stromstärke bei Koerzitivkraft= 0.6 A/m
