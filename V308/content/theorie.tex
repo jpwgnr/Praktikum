@@ -5,14 +5,15 @@ Spulen zu untersuchen. %zu ähnlich wie die Anleitung?
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{V308}
+%\cite{V308}
 
 \subsection{Allgemeine Grundlagen zu Magnetfeldern} %"Magnetfelder von Spulen"?
 Die magnetische Flussdichte $\symbf{B}$ wird durch die Permeabilität $\mu$ und die 
 magnetische Feldstärke $\symbf{H}$ dargestellt. Es gilt die Beziehung 
-\begin{equation*} 
+\begin{equation} 
     \symbf{B} = \mu \cdot \symbf{H}.
-\end{equation*}
+    \label{eqn:B}
+\end{equation}
 $\mu$ besteht dabei aus der Vakuum-Permeabilität $\mu_{0}$ und der relativen 
 Permeabilität $\mu_{r}$, die von der Materie abhängt. 
 Es gilt 
@@ -24,24 +25,33 @@ Es gilt
 Die magnetische Flussdichte im Mittelpunkt einer Spule wird mit der Formel 
 \begin{equation}
     \symbf{B}(x)= n \cdot \frac{\mu_{0} I}{2} \frac{R^2}{(R^2 +x^2)^{3/2}}\cdot \symbf{\hat{x}}
+    \label{eqn:kurzespule}
 \end{equation}
 beschrieben. 
 Dabei ist $R$ der Radius des Rings und $n$ die Anzahl der Windungen.
+\newline
 %LANGE SPULE:
-Bei einer langen Spule (Solenoid) ist die magnetische Feldstärke in der Mitte der 
+Bei einer langen Spule (Solenoid) ist die magnetische Flussdichte in der Mitte der 
 Spule konstant. Außerhalb der Spule ist der magnetische Fluss inhomogen. 
 Das innere Feld ist proportional zur Länge $l$ der Spule, zur Anzahl der Windungen 
 $n$ und zum Strom $I$, der durch die Spule fließt. 
 Es gilt die Beziehung
 \begin{equation}
-B = \mu_{r} \mu_{0} \frac{n}{l} I.
+    B = \mu_{r} \mu_{0} \frac{n}{l} I.
+    \label{eqn:langespule}
 \end{equation}
 %SPULENRING:
 Wird dieser Solenoid zu einem Ring mit Radius $r_{R}$ gebogen, verschwinden die 
 Randeffekte und das Feld außerhalb des Rings wird null. 
 Im Inneren gilt
 \begin{equation}
-B = \mu_{r} \mu_{0} \frac{n}{2\pi r_{R}} I.
+    B = \mu_{r} \mu_{0} \frac{n}{2\pi r_{R}} I.
+    \label{eqn:ring}
+\end{equation}
+Wegen Gleichung \eqref{eqn:B} muss für das $H$-Feld gelten:
+\begin{equation}
+    H = \frac{n}{2\pi r_{R}} I.
+    \label{eqn:H}
 \end{equation}
 
 \subsection{Magnetfeld eines Spulenpaares}
@@ -50,7 +60,8 @@ Ein Helmholtz-Spulenpaar hat ein homogenes Magnetfeld im Innern der zwei Ringe %
 Spulen.
 Die magnetische Flussdichte im Mittelpunkt des Spulenpaares ist durch 
 \begin{equation}
-B(0)= B_{n}(x) + B_{n}(-x) = 2n \frac{\mu_{0} I R^2}{(R^2 + x^2)^3/2} %mal 2n oder n???????????
+    B(0)= B_{n}(x) + B_{n}(-x) = 2n \frac{\mu_{0} I R^2}{(R^2 + x^2)^{3/2}} %mal 2n oder n???????????
+    \label{eqn:spulenpaar}
 \end{equation}
 gegeben.
 \begin{figure}
@@ -72,7 +83,7 @@ Bereiche.
 Die relative Permeabilität $\mu_{r}$ ist in ferromagnetischen Materialien sehr hoch 
 und ist nicht mehr linear proportional zur magnetischen Flussdichte. 
 Die Abhängigkeit kann durch eine Hysteresekurve dargestellt werden.
-%B wird gegen H aufgetragen. Bei uns I?
+Dabei sind die Achsen das $B$- und das $H$-Feld.
 In der Kurve lassen sich verschiedene markante Punkte erkennen. 
 Ohne äußeres Magnetfeld gilt $B = H = 0$. Wird ein Magnetfeld angelegt, steigt die 
 Magnetisierung an, bis ein Sättigungswert $B_{S}$ bei $H_{S}$ erreicht wird. Der 

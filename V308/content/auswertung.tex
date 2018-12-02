@@ -1,21 +1,19 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-% \begin{figure}
-%  \centering
-%  \includegraphics{<++>}
-%  \caption{<++>}
-%  \label{fig:<++>}
-% \end{figure}
 Für die Auswertung wird Python, im Speziellen Matplotlib \cite{matplotlib}, NumPy \cite{numpy},
 SciPy \cite{scipy} und Uncertainties \cite{uncertainties} verwendet.
 
 \subsection{Magnetische Flussdichte einer langen und einer kurzen Spule}
 %Tabelle lange Spule
-Die verwendete lange Spule hat $\num{300}$ Windungen und eine Länge
-von $\SI{24}{\centi\meter}$. %richtige Werte einfügen
+Die verwendete lange Spule hat $N = \num{300}$ Windungen, eine Länge
+von $L = \SI{16.5}{\centi\meter}$ und einen Durchmesser von
+$D = \SI{4.1}{\centi\meter}$.
 Die Werte der magnetischen Flussdichte an den Stellen $x$ inner- und außerhalb
-der langen Spule befinden sich in Tabelle \ref{taba1}.
+der langen Spule befinden sich in den folgenden Tabellen.
+Die Werte vor der Spule sind in Tabelle \ref{taba1}. Die Werte im Inneren
+der Spule sind in Tabelle \ref{taba12}. Die Werte hinter der Spule befinden
+sich in Tabelle \ref{taba13}. %Label in taba13 ist falsch
 Dieselben Werte sind in Abbildung \ref{plota1} gegeneinander aufgetragen.
 \input{build/taba1.tex}
 \input{build/taba12.tex}
@@ -31,11 +29,21 @@ Dieselben Werte sind in Abbildung \ref{plota1} gegeneinander aufgetragen.
 \end{figure}
 
 %Vergleich der Werte mit Theorie
-\noindent 
+\noindent Der experimentell ermittelte Wert für die 
+magnetische Flussdichte der langen Spule ergibt sich also zu
+\begin{equation*}
+    B_{lang,exp} = \SI{2.188}{\milli\tesla}.
+\end{equation*}
+Der mittels Gleichung \eqref{eqn:langespule} ermittelte Wert für
+das $B$-Feld beträgt
+\begin{equation*}
+    B_{lang,theo} = \SI{2.356}{\milli\tesla}.
+\end{equation*}
 
 %Tabelle kurze Spule
-\noindent Die kurze Spule hat $\num{100}$ Windungen und eine Länge von
-$\SI{12}{\centi\meter}$. %richtige Werte einfügen
+\noindent Die kurze Spule hat $n = \num{100}$ Windungen, eine Länge von
+$l = \SI{5.5}{\centi\meter}$ und einen Durchmesser von
+$d = \SI{4.1}{\centi\meter}$.
 In Tabelle \ref{taba2} sind die Werte des magnetischen Flusses $B$
 an verschiedenen Stellen $x$ aufgelistet.
 Die Werte aus Tabelle \ref{taba2} sind in Abbildung \ref{plota2}
@@ -52,9 +60,22 @@ gegeneinadner aufgetragen.
 \end{figure}
 
 %Vergleich der Werte mit Theorie
-\noindent 
+\noindent Für die maximale magnetische Flussdichte ergibt sich also
+\begin{equation*}
+   B_{kurz,exp} = \SI{1.8}{\milli\tesla}.
+\end{equation*}
+Die theoretisch errechnete maximale magnetische Flussdichte
+ergibt sich mit Gleichung \eqref{eqn:kurzespule} zu
+\begin{equation*}
+   B_{kurz,theo} = \SI{3.1}{\milli\tesla}.
+\end{equation*}
 
 \subsection{Magnetische Flussdichte eines Spulenpaares}
+Die einzelnen Spulen des gegebenen Spulenpaares haben jeweils
+eine Windungszahl von $n_{Spule} = \num{100}$. Der mittlere
+Spulendurchmesser beträgt $d_{Spule} = \SI{125}{\milli\meter}$.
+Die Spulenbreite ist jeweils $b_{Spule} = \SI{33}{\milli\meter}$.
+\newline
 %ABSTAND=RADIUS
 %Tabelle mit I=4A
 Zunächst wird der Abstand der beiden Spulen so festgelegt, dass
@@ -80,11 +101,19 @@ aufgetragen.
 \end{figure}
 
 %Vergleich mit Theorie
-\noindent
+\noindent Der experimentelle Wert für die magnetische Flussdichte
+des Helmholtz-Spulenpaares ist also
+\begin{equation*}
+   B_{1,exp} = \SI{5.6}{\milli\tesla}.
+\end{equation*}
+Der mit Gleichung \eqref{eqn:spulenpaar} errechnete theoretische
+Wert ist 
+\begin{equation*}
+   B_{1,theo} = \SI{3.7}{\milli\tesla}.
+\end{equation*}
 
 %ABSTAND=DURCHMESSER
 %Tabelle mit I=4A
-\newline
 \noindent Der Abstand der Spulen wird im nächsten Messabschnitt auf den
 Durchmesser der Spulen erhöht.
 Die eingestellte Stromstärke ist, wie im ersten Teil,
@@ -106,7 +135,17 @@ aufgetragen.
 \end{figure}
 
 %Vergleich mit Theorie
-\noindent
+\noindent Der experimentell ermittelte Wert für das $B$-Feld
+des Spulenpaares bei einem Abstand, der gleich dem Durchmesser
+der Spulen ist, und gleicher Stromstärke wie zuvor ist 
+\begin{equation*}
+   B_{2,exp} = \SI{2.5}{\milli\tesla}.
+\end{equation*}
+Der mittels \eqref{eqn:spulenpaar} berechnete zugehörige theoretische Wert
+ist 
+\begin{equation*}
+   B_{2,theo} = \SI{2.8}{\milli\tesla}.
+\end{equation*}
 
 %Tabelle mit I=3A
 \noindent Zuletzt wird die angelegte Stromstärke verändert. Der Abstand
@@ -129,16 +168,38 @@ aufgetragen.
 \end{figure}
 
 %Vergleich mit Theorie
-\noindent
+\noindent Der experimentelle Wert für das $B$-Feld des Spulenpaares
+mit Abstand $d_{Spule}$ und einer Stromstärke von $I = \SI{3}{\ampere}$
+ist
+\begin{equation*}
+   B_{3,exp} = \SI{2.25}{\milli\tesla}.
+\end{equation*}
+Der durch Gleichung \eqref{eqn:spulenpaar} berechnete Theoriewert
+lautet
+\begin{equation*}
+   B_{3,theo} = \SI{2.11}{\milli\tesla}.
+\end{equation*}
 
 \subsection{Hysteresekurve einer Ringspule mit Luftspalt}
+Die Windungszahl der TRingspule beträgt $n_{Ring} = \num{595}$.
+Die Breite des Luftspalts ist $d_{Spalt} = \SI{3}{\milli\meter}$.
+\newline
 %Tabelle
 Der magnetische Fluss $B$ der Ringspule wird im Luftspalt
 des Rings gemessen.
-In Tabelle \ref{tabc} befinden sich die Werte des magnetischen
+In den folgenden Tabellen befinden sich die Werte des magnetischen
 Flusses für verschiedene eingestellte Stromstärken.
-Diese Werte für den magnetischen Fluss sind in Abbildung
-\ref{plotc} gegen die Stromstärke aufgetragen.
+In Tabelle \ref{tabc} befinden sich die Werte des magnetischen Flusses
+für verschiedene eingestellte Stromstärken, die zur Erzeugung der Neukurve
+führen. In Tabelle \ref{tabc2} sind die restlichen Werte dargestellt.
+\newline
+In den Tabellen \ref{tabc3} und \ref{tabc4} sind dieselben Werte der
+magnetischen Flussdichten zu finden. Diese sind statt gegen $I$ nun
+gegen $H$ dargestellt, um eine Hysteresekurve zu erhalten.
+Die Umrechnung von $I$ nach $H$ erfolgt mittels Gleichung \eqref{eqn:H}.
+\newline
+Diese Werte für den magnetischen Fluss in Abhängigkeit vom
+$H$-Feld sind in Abbildung \ref{plotc} gegen die Stromstärke aufgetragen.
 \input{build/tabc.tex}
 \input{build/tabc2.tex}
 \input{build/tabc3.tex}
@@ -148,7 +209,7 @@ Diese Werte für den magnetischen Fluss sind in Abbildung
 \begin{figure}
     \centering
     \includegraphics{build/plotc.pdf}
-    \caption{Die magnetische Flussdichte $B$ ist gegen die Stromstärke $I$
+    \caption{Die magnetische Flussdichte $B$ ist gegen die magnetische Feldstärke $H$
     aufgetragen. Bei keinem angelegten Strom ist der magnetische Fluss
     gleich Null. Bei Erhöhung der Stromstärke entsteht die Neukurve, bis
     ein Sättigungswert $B_{S}$ (Maximum) erreicht wird. Beim Abschalten des Stroms
@@ -164,11 +225,15 @@ Diese Werte für den magnetischen Fluss sind in Abbildung
 wie die Sättigungsmagnetisierung $B_{S}$, die Remanenz $B_{r}$ und die
 Koerzitivkraft $H_{c}$ ablesen.
 Die Sättigungsmagnetisierung ist das Maximum der gemessenen Werte für
-die magnetische Flussdichte: $B_{S} = \SI{}{\milli\tesla}$. %Wert
-Die negative Sättigungsmagnetisierung ist das Minimum:
-$-B_{S} = \SI{}{\milli\tesla}$. %Wert
+die magnetische Flussdichte: $B_{S} = \SI{704.3}{\milli\tesla}$.
+%Die negative Sättigungsmagnetisierung ist das Minimum:
+%$-B_{S} = \SI{}{\milli\tesla}$. %Wert
 Die Remanenz ist der obere Schnittpunkt mit der $y$-Achse.
 Bestimmt man diesen aus der Grafik, ist die Remanenz also
-$B_{r} = \SI{}{\milli\tesla}$. %Wert
-Die Koerzitivktaft ist der linke, d.h. kleinere Schnittpunkt mit der Achse.
-Hier ist die Koerzitivkraft $H_{c} = \SI{}{\milli\tesla}$. %Wert
+$B_{r} = \SI{122.8}{\milli\tesla}$.
+% Die Koerzitivktaft ist der linke, d.h. kleinere Schnittpunkt mit der Achse.
+% Hier ist die Koerzitivkraft $H_{c} = \SI{}{\milli\tesla}$. %Wert
+Die eingestellte Stromstärke an der Stelle der Koerzitivkraft $H_{c}$ ist
+$I = \SI{0.6}{\ampere\per\meter}$.
+
+%H_c noch ausrechnen?
