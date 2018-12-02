@@ -17,7 +17,7 @@ taba12 = TexTable([B1lang[12:42]*1e3,x1lang[12:42]*1e2], [r"$B$/ \si{\milli\tesl
 
 taba12.writeFile("build/taba12.tex")
 
-taba13 = TexTable([B1lang[43:-1]*1e3,x1lang[43:-1]*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="taba1", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ nach der langen Spule.", roundPrecision=3)
+taba13 = TexTable([B1lang[43:-1]*1e3,x1lang[43:-1]*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="taba13", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ hinter der langen Spule.", roundPrecision=3)
 taba13.writeFile("build/taba13.tex")
 
 B1kurz, x1kurz= np.genfromtxt("data/dataa2.txt", unpack=True)
@@ -26,28 +26,27 @@ taba2.writeFile("build/taba2.tex")
 
 #b)
 B2r, x2r = np.genfromtxt("data/datab1.txt", unpack=True)
-tabb1 = TexTable([B2r*1e3,x2r*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb1", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{3.125}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
+tabb1 = TexTable([B2r*1e3,x2r*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb1", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{6.25}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
 tabb1.writeFile("build/tabb1.tex")
 
 B2d, x2d = np.genfromtxt("data/datab2.txt", unpack=True)
-tabb2 = TexTable([B2d*1e3,x2d*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb2", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{6.25}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
+tabb2 = TexTable([B2d*1e3,x2d*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb2", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{12.5}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
 tabb2.writeFile("build/tabb2.tex")
 
 B23, x23 = np.genfromtxt("data/datab3.txt", unpack=True)
-tabb3 = TexTable([B23*1e3,x23*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb3", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{6.25}{\centi\meter} und einem Strom $I$ von \SI{3}{\ampere}.", roundPrecision=3)
+tabb3 = TexTable([B23*1e3,x23*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb3", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{12.5}{\centi\meter} und einem Strom $I$ von \SI{3}{\ampere}.", roundPrecision=3)
 tabb3.writeFile("build/tabb3.tex")
 
 #c)
 B3, I3 = np.genfromtxt("data/datac.txt", unpack=True)
-tabc = TexTable([B3[0:10]*1e3,I3[0:10]], [r"$B$/ \si{\milli\tesla}", r"$I$/ \si{\ampere}"], label="tabc", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen den Strom $I$ des erzeugenden Magnetfelds, Neukurve.", roundPrecision=1)
+tabc = TexTable([B3[0:11]*1e3,I3[0:11]], [r"$B$/ \si{\milli\tesla}", r"$I$/ \si{\ampere}"], label="tabc", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen den Strom $I$ des erzeugenden Magnetfelds, Neukurve.", roundPrecision=1)
 tabc.writeFile("build/tabc.tex")
 tabc2 = TexTable([B3[11:-1]*1e3,I3[11:-1]], [r"$B$/ \si{\milli\tesla}", r"$I$/ \si{\ampere}"], label="tabc2", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen den Strom $I$ des erzeugenden Magnetfelds.", roundPrecision=1)
 tabc2.writeFile("build/tabc2.tex")
-H3= (595*I3)/(2*np.pi*13e-2)
-tabc3 = TexTable([B3[0:10]*1e3,I3[0:10]], [r"$B$/ \si{\milli\tesla}", r"$I$/ \si{\ampere}"], label="tabc3", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen das erzeugende H-Feld $H$, Neukurve.", roundPrecision=1)
+H3=I3*(595/(2*np.pi*0.13))
+tabc3 = TexTable([B3[0:11]*1e3,H3[0:11]], [r"$B$/ \si{\milli\tesla}", r"$H$/ \si{\ampere\per\meter}"], label="tabc3", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen das erzeugende H-Feld, Neukurve.", roundPrecision=1)
 tabc3.writeFile("build/tabc3.tex")
-B3, H3 = np.genfromtxt("data/datac.txt", unpack=True)
-tabc4 = TexTable([B3[11:-1]*1e3,H3[11:-1]], [r"$B$/ \si{\milli\tesla}", r"$I$/ \si{\ampere}"], label="tabc4", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen das erzeugende H-Feld $H$.", roundPrecision=1)
+tabc4 = TexTable([B3[11:-1]*1e3,H3[11:-1]], [r"$B$/ \si{\milli\tesla}", r"$H$/ \si{\ampere\per\meter}"], label="tabc4", caption=r"Der magnetische Fluss $B$ des gemessenen Magnetfelds gegen das erzeugende H-Feld.", roundPrecision=1)
 tabc4.writeFile("build/tabc4.tex")
 
 #extra values 
@@ -232,8 +231,8 @@ plt.savefig("build/plotb3.pdf")
 
 #c)
 plt.figure(6)
-plt.plot(H3[11:-1], B3[11:-1]*1e3, "r-", label="Hysteresekurve")
-plt.plot(H3[0:10], B3[0:10]*1e3, 'b-', label='Neukurve')
+plt.plot(H3[10:-1], B3[10:-1]*1e3, "r-", label="Hysteresekurve")
+plt.plot(H3[0:11], B3[0:11]*1e3, 'b-', label='Neukurve')
 plt.xlabel(r"$H/\si{\ampere\per\meter}$")
 plt.ylabel(r"$B/\si{\milli\tesla}$")
 plt.grid()

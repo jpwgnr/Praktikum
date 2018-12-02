@@ -1,13 +1,13 @@
 \section{Ziel}
 Ziel dieses Versuchs ist es, die Magnetfelder von verschiedenen
-Spulen zu untersuchen. %zu ähnlich wie die Anleitung?
+Spulen und ihre Eigenschaften zu untersuchen und zu bestimmen. %zu ähnlich wie die Anleitung?
 
 \section{Theorie}
 \label{sec:Theorie}
 
 %\cite{V308}
 
-\subsection{Allgemeine Grundlagen zu Magnetfeldern} %"Magnetfelder von Spulen"?
+\subsection{Allgemeine Grundlagen zu spulenerzeugten Magnetfeldern } %"Magnetfelder von Spulen"?
 Die magnetische Flussdichte $\symbf{B}$ wird durch die Permeabilität $\mu$ und die 
 magnetische Feldstärke $\symbf{H}$ dargestellt. Es gilt die Beziehung 
 \begin{equation} 
@@ -28,12 +28,13 @@ Die magnetische Flussdichte im Mittelpunkt einer Spule wird mit der Formel
     \label{eqn:kurzespule}
 \end{equation}
 beschrieben. 
-Dabei ist $R$ der Radius des Rings und $n$ die Anzahl der Windungen.
+Dabei ist $R$ der Radius des Rings, $n$ die Anzahl der Windungen, $I$ die Stromstärke von der die Spule durchflossen wird und $x$ die Position auf der Achse.
+Der Vektor $\symbf{\hat{x}}$ ist die normierte Richtungsableitung, wobei hier nur der Betrag des Vektors $\symbf{B}$ betrachtet wird.
 \newline
 %LANGE SPULE:
 Bei einer langen Spule (Solenoid) ist die magnetische Flussdichte in der Mitte der 
 Spule konstant. Außerhalb der Spule ist der magnetische Fluss inhomogen. 
-Das innere Feld ist proportional zur Länge $l$ der Spule, zur Anzahl der Windungen 
+Das innere Feld ist antiproportional zur Länge $l$ der Spule und proportional zur Anzahl der Windungen %antiproportional zu l oder nicht? 
 $n$ und zum Strom $I$, der durch die Spule fließt. 
 Es gilt die Beziehung
 \begin{equation}
@@ -55,18 +56,18 @@ Wegen Gleichung \eqref{eqn:B} muss für das $H$-Feld gelten:
 \end{equation}
 
 \subsection{Magnetfeld eines Spulenpaares}
-Ein Helmholtz-Spulenpaar hat ein homogenes Magnetfeld im Innern der zwei Ringe %Spulen statt Ringe
-(s. Abb \ref{fig:helmholtz}). Der Abstand der Spulen entspricht den Radien der
+Ein Helmholtz-Spulenpaar hat ein annähernd homogenes Magnetfeld im Innern der zwei Spulen %Spulen statt Ringe
+(s. Abb \ref{fig:helmholtz}). Der Abstand der Spulen entspricht bei einem Helmholtz-Spulenpaar den Radien der
 Spulen.
-Die magnetische Flussdichte im Mittelpunkt des Spulenpaares ist durch 
+Die magnetische Flussdichte im Mittelpunkt eines allgemeinen Spulenpaares ist durch 
 \begin{equation}
-    B(0)= B_{n}(x) + B_{n}(-x) = 2n \frac{\mu_{0} I R^2}{(R^2 + x^2)^{3/2}} %mal 2n oder n???????????
+    B(0)= B_{n}(x) + B_{n}(-x) = n \frac{\mu_{0} I R^2}{(R^2 + x^2)^{3/2}} %mal 2n oder n??????????? ich glaub nur n. ist ja in beiden Spulen gleich und wenn man dann beide Spulen addiert zieht man das n einfach raus aus der Summe. Deshalb nur ein n. Passt auch besser zu unseren Theoriewerten. 
     \label{eqn:spulenpaar}
 \end{equation}
 gegeben.
 \begin{figure}
     \centering
-    \includegraphics[width=6cm,height=8cm]{build/Helmholtz.png}
+    \includegraphics[width=8cm,height=6cm]{build/Helmholtz.png}%nicht hübsch, nochmal gucken mit den Werten
     \caption{Aufbau eines Helmholtz-Spulenpaares. Der Abstand der Spulen
     entspricht den Radien der Spulen.}
     \label{fig:helmholtz}
@@ -87,15 +88,15 @@ Dabei sind die Achsen das $B$- und das $H$-Feld.
 In der Kurve lassen sich verschiedene markante Punkte erkennen. 
 Ohne äußeres Magnetfeld gilt $B = H = 0$. Wird ein Magnetfeld angelegt, steigt die 
 Magnetisierung an, bis ein Sättigungswert $B_{S}$ bei $H_{S}$ erreicht wird. Der 
-Kurvenverlauf dorthin wird Neukurve genannt. 
+Kurvenverlauf dorthin wird Neukurve (1) genannt. 
 Wird das äußere Magnetfeld verringert, bilden sich Bereiche mit entgegengesetzer 
 Magnetisierung. So bleibt, wenn das äußere Magnetfeld abgeschaltet wird, eine 
 Restmagnetisierung $B_{r}$, genannt Remanenz, bestehen. 
-Ein Gegendfeld $H_{c}$, genannt Koerzitivkraft, kann diese Ausrichtungen wieder 
-aufheben, sodass die magnetische Flussdichte Null wird. Wenn dieses Feld noch weiter 
-erhöht wird, wird die Magnetisierung %Magnetisierung oder magnetische Flussdichte? Magnetisierung ist doch schon negativ gewesen.
+Ein Gegendfeld $H$ kann diese Ausrichtungen wieder 
+aufheben (2), sodass die magnetische Flussdichte beim erreichen der sogenannten Koerzitivkraft $H_C$ Null wird. Wenn dieses Feld noch weiter 
+erhöht wird, wird die magnetische Flussdichte %Magnetisierung oder magnetische Flussdichte? Magnetisierung ist doch schon negativ gewesen.
 in dem Stoff negativ und erreicht den Sättigungswert $-B_{S}$. Wird das äußere 
-Magnetfeld wieder umgekehrt, entsteht eine zum Ursprung punktsymmetrische Kurve, welche
+Magnetfeld wieder umgekehrt (3), entsteht eine zum Ursprung punktsymmetrische Kurve, welche
 Hysteresekurve genannt wird. Hysteresekurven verschiedener Stoffe unterscheiden sich je
 nach Materialeigenschaften in der Schärfe bzw. Breite. 
 \begin{figure}
@@ -104,9 +105,3 @@ nach Materialeigenschaften in der Schärfe bzw. Breite.
     \caption{Allgemeine Hysteresekurve. Eingezeichnet sind der Sättigungswert $B_{S}$
     sowie $H_{S}$, die Remanenz $B_{r}$ und die Koerzitivkraft $H_{c}$.}
 \end{figure}
-%\newline
-% Die differentielle Permeabilität $\mu_{diff}$ ist als
-% \begin{equation}
-% \mu_{diff} = \frac{1}{\mu_{0}} \frac{dB}{dH}
-% \end{equation}
-% definiert.
