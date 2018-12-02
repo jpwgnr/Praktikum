@@ -1,0 +1,38 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+Die Spannung $U$, also die Potentialdiffferenz zwischen zwei Punkten, wird bei Brückenschaltungen in Abhängigkeit von ihren Widerstandsverhältnissen untersucht.
+Bei einer allgemeinen Brückenschaltung (s. Abb 1), bezeichnet man die Spannung, die zwischen Punkt A und B auftritt als Brückenspannung. $U_S$ wird dabei als Speisespannung bezeichnet. 
+Wichtig sind dabei die Kirchhoffschen Gesetze. Das erste lautet, dass die Summe der zufließenden Ströme gleich der Summe der abfließenden Ströme sein muss. 
+Das zweite Gesetzt heißt Maschenregel und besagt, dass innerhalb einer Masche, also einem in sich geschlossenen Stromkreis die Summe der elektromotorischen Kräfte, also zum Beispiel die Spannung der Stromquelle, gleich der Summe aus der Stromstärke und den Widerständen der Bauteile sein muss. 
+
+Aus diesen Gesetzmäßigkeiten lässt sich folgern, dass die Brückenspannung $U$ und die Speisespannung $U_S$ in Abb.1 in folgendem Verhältnis zu einander stehen:
+
+\begin{equation}
+    U = \frac{R_2R_3 - R_1R_4}{(R_3 + R_4)(R_1 + R_2)}U_S 
+\end{equation}.
+
+Wenn gilt, $R_1R_4 = R_2R_3$ nennt man diesen Fall abgeglichene Brücke. Da die Abgleichbedingung nur vom Verhältnis der Widerstände abhängt, ist mit der Brückenschaltung eine Widerstandsmessung durchführbar. 
+
+Kennt man Beispielsweise $R_1$ nicht, so variiert man einen der drei anderen Widerstände solang bis die Brückenspannung verschwindet und kann anschließend über die Abgleichbedingung den Widerstand bestimmen. 
+
+Mit Kapazitiv- und Induktivwiderständen ist es sinnvoll komplexe Widerstandsoperatoren zu benutzen. 
+Eine Brückenschaltung mit vier komplexen Widerständen hat die gleiche Abgleichbedingung wie eine reele Brückenschaltung. Der einzige Unterschied ist, dass sich daraus zwei Bedingungen ergeben. Der Realteil $X$ und der Imaginärteil $Y$ müssen dabei von einander separiert betrachtet werden. 
+
+\begin{equation}
+    X_1X_4 - Y_1Y_4 = X_2X_3 - Y_2Y_3 
+\end{equation}
+
+ist die erste Bedingung und die zweite lautet: 
+\begin{equation}
+    X_1Y_4 + X_4Y_1 = X_2Y_3 + X_3Y_2 
+\end{equation}.
+
+\subsection{Wheatstonesche Brücke}
+
+Diese Brücke enthält ohmsche Widerstände (s. Abb xy). Sie kann, wie oben beschrieben, zur Bestimmung eines unbekannten Widerstands $R_X$ benutzt werden:
+\begin{equation}
+    R_X = R_2 \frac{R_3}{R_4}
+\end{equation}.
+
+
