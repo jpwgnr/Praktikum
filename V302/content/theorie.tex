@@ -35,4 +35,75 @@ Diese Brücke enthält ohmsche Widerstände (s. Abb xy). Sie kann, wie oben besc
     R_X = R_2 \frac{R_3}{R_4}
 \end{equation}.
 
+\subsection{Kapazitätsmessbrücke}
+
+Für die Berechnung muss die Eigenschaft eines realen Kondensators berücksichtigt werden, dass dieser zum Teil Energie in Wärme umwandelt. Dafür wird ein Ersatzschaltbild betrachtet, bei dem man einen fiktiven ohmschen Widerstand mit dem Kondensator in Reihe schaltet. Für die Messung der Kapazität eines unbekannten Kondensators $C_X$ gilt somit unter Berücksichtigung der Abgleichbedingungen, für den ohmschen Widerstand 
+\begin{equation}
+    R_X = R_2 \frac{R_3}{R_4}
+\end{equation}
+und für den Kondensator 
+\begin{equation}
+    C_X = C_2 \frac{R_4}{R_3}
+\end{equation}. 
+
+\subsection{Induktivitätamessbrücke}
+
+Analog zur Kapazitätsmessbrücke verliert auch ein induktives Bauteil Energie indem sie irreversibel in Wärme umgewandelt wird. Diese Verluste und die Phasenverschiebung werden erneut durch einen fiktiven Widerstand kompensiert. Die Formeln ergeben sich auf dieselbe Weise zu 
+\begin{equation}
+    R_X = R_2 \frac{R_3}{R_4}
+\end{equation}
+und für die Spule $L_X$ zu 
+\begin{equation}
+    L_X = L_2 \frac{R_3}{R_4}
+\end{equation}.
+
+\subsection{Maxwell-Brücke}
+
+Da die Induktivitätsmessbrücke auf Grund der zweiten Spule ähnliche starke Verluste hat, insbesondere bei niedrigen Frequenzen, benutzt man eine andere Schaltung, die anstelle der Normalinduktivität $L_2$ eine Normalkapazität benutzt. Der Kondensator sollte eine möglichst verlustarmen Kapazität $C_4$ besitzen. 
+Aus den Abgleichbedingungen folgen folgende Ausdrücke:
+
+\begin{equation}
+     R_X = \frac{R_2R_3}{R_4}
+\end{equation}
+und 
+\begin{equation}
+    L_X = R_2R_3C_4
+\end{equation}.
+
+\subsection{Frequenzabhängige Brückenschaltungen}
+
+Bei den vorherigen Schaltungen war die Frequenz nicht wichtig. Es gibt aber einen Frequenzbereich, in dem der Abgleich unter optimalen Bedingungen durchführbar ist.
+
+\subsubsection{Wien-Robinson-Brücke}
+
+Nach Umformung der Formeln, die sich aus der Abb. <++> ergeben, erkennt man, dass 
+\begin{equation}
+    \omega_0 = \frac{1}{RC}
+\end{equation} ergibt und man mit $\Omega = \frac{\omega}{\omega_0}$ 
+
+auf ein Verhältnis zwischen den Spannungen $U_B$ und $U_S$ kommt. 
+Es gilt:
+\begin{equation}
+    (\frac{U_B}{U_S})^2 = \frac{1}{9} \frac{(\Omega^2 -1)^2}{(1- \Omega)^2 + 9 \Omega^2}
+\end{equation}.
+
+Bei der Bestimmung des Klirrfaktors wird der Anteil der Oberwellen im Verhältnis zur Grundwelle gemessen. 
+Die Kleinheit des Faktors legt ein Maß für die Qualität eines Spannungsgenerators fest. 
+
+\subsubsection{TT-Brücke}
+
+Die Funktion ist, genau wie bei der Wien-Robinson-Brücke, die eines elektronischen Filters. 
+Der Vorteil dieser Schaltung ist, dass beide Spannungen gegen Masse angeschlossen werden. 
+Aus den Kirchhoffschen Gesetzen ergibt sich wieder, dass 
+\begin{equation}
+    \omega_0 = \frac{1}{RC}
+\end{equation}
+gilt und dass $U_B$ für $\omega_0$ für diese Frequenz verschwindet, aber sonst von Null verschieden ist. 
+Für den Betrag des Spannungsverhältnisses gilt hierbei 
+
+\begin{equation}
+    (\frac{U_B}{U_S})^2 = \frac{(\Omega^2 -1)^2}{(1- \Omega^2)^2 + 16 \Omega^2}
+\end{equation}.
+
+
 
