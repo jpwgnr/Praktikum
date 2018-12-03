@@ -26,15 +26,15 @@ taba2.writeFile("build/taba2.tex")
 
 #b)
 B2r, x2r = np.genfromtxt("data/datab1.txt", unpack=True)
-tabb1 = TexTable([B2r*1e3,x2r*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb1", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{6.25}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
+tabb1 = TexTable([B2r*1e3,x2r*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb1", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ inner- und außerhalb des Spulenpaares bei einem Abstand von \SI{6.25}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
 tabb1.writeFile("build/tabb1.tex")
 
 B2d, x2d = np.genfromtxt("data/datab2.txt", unpack=True)
-tabb2 = TexTable([B2d*1e3,x2d*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb2", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{12.5}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
+tabb2 = TexTable([B2d*1e3,x2d*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb2", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ inner- und außerhalb des Spulenpaares bei einem Abstand von \SI{12.5}{\centi\meter} und einem Strom $I$ von \SI{4}{\ampere}.", roundPrecision=3)
 tabb2.writeFile("build/tabb2.tex")
 
 B23, x23 = np.genfromtxt("data/datab3.txt", unpack=True)
-tabb3 = TexTable([B23*1e3,x23*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb3", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ in- und außerhalb des Spulenpaares bei einem Abstand von \SI{12.5}{\centi\meter} und einem Strom $I$ von \SI{3}{\ampere}.", roundPrecision=3)
+tabb3 = TexTable([B23*1e3,x23*1e2], [r"$B$/ \si{\milli\tesla}", r"$x$/ \si{\centi\meter}"], label="tabb3", caption=r"Der magnetische Fluss $B$ an verschiedenen Stellen $x$ inner- und außerhalb des Spulenpaares bei einem Abstand von \SI{12.5}{\centi\meter} und einem Strom $I$ von \SI{3}{\ampere}.", roundPrecision=3)
 tabb3.writeFile("build/tabb3.tex")
 
 #c)
