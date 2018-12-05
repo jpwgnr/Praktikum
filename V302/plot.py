@@ -64,7 +64,7 @@ def getLxd(C4, R3, R4):
     return C4*R3*R4 
 #e 
 def getU_Br(omega, R, C):
-    return (((omega*R*C)**2 -1)**2)/(9*((1- (omega*R*C)**2)**2+ 9*(omega*R*C)**2))
+    return np.sqrt(np.abs((((omega**2)*(R**2)*(C**2)-1)**2)/(9*(((1-(omega**2)*(R**2)*(C**2))**2)+(9*(omega**2)*(R**2)*(C**2))))))
 
 #def function(x, a, b, c, d, U_S):
 #     return a * np.sin(b * x + c) + d
@@ -96,7 +96,7 @@ tabe.writeFile("build/tab1.tex")
 k= (1/U_Se)*(60.8e-3/0.149)
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
  
-parameters, pcov = curve_fit(getU_Br, omegae, U_Bre/U_Se)
+parameters, pcov = curve_fit(getU_Br, omegae/omega0e, U_Bre/U_Se)
 
 #save solution 
 
@@ -108,7 +108,10 @@ file.close()
 #theoriekurve 
 newomega=np.linspace(omegae[0]/omega0e, omegae[-1]/omega0e, 300)
 theoU_Br=getU_Br(newomega, Re, Ce)
-
+print(parameters)
+print(getU_Br(newomega, *parameters))
+print(theoU_Br)
+print(U_Bre/U_Se)
 plt.figure(1)
 plt.plot(omegae/omega0e, U_Bre/U_Se, "xr", label="Daten")
 plt.plot(newomega, getU_Br(newomega, *parameters), "r", label="Fit", linewidth=1.0)
