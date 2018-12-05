@@ -44,7 +44,7 @@ C4d= ufloat(C4d_var, C4d_var*0.0002)
 R_extrae= 332 
 Re= 1000
 Ce= 420e-9 
-U_Se = 5 
+U_Se = 2.5
 U_Bre = U_Brezwei/2 
 omega0etheo= 1/(Re*Ce)
 omega0e= 400*2*np.pi
@@ -96,7 +96,7 @@ tabe.writeFile("build/tab1.tex")
 k= (1/U_Se)*(60.8e-3/0.149)
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
  
-parameters, pcov = curve_fit(getU_Br, omegae, U_Bre/U_Se, p0=[Re,Ce])
+parameters, pcov = curve_fit(getU_Br, omegae[0:17], U_Bre[0:17]/U_Se, p0=(Re,Ce))
 
 #save solution 
 
@@ -108,6 +108,7 @@ file.close()
 #theoriekurve 
 newomega=np.linspace(omegae[0], omegae[-1], 2000)
 theoU_Br=getU_Br(newomega, Re, Ce)
+
 plt.figure(1)
 plt.plot(omegae/omega0e, U_Bre/U_Se, "xr", label="Daten")
 plt.plot(newomega/omega0e, getU_Br(newomega, *parameters), "r", label="Fit", linewidth=1.0)
