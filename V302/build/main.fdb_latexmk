@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1544035139 "main.tex" "build/main.pdf" "main" 1544040981
+["lualatex"] 1544035139 "main.tex" "build/main.pdf" "main" 1544041826
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1480098698 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1480098698 928 2dc8d444221b7a635bb58038579b861a ""
@@ -124,9 +124,9 @@
   "header.tex" 1544034687 4023 727ef8e301320be0260a4eaffc5453f2 ""
   "main.tex" 1544034687 264 a30ccbfb7d35e90cd6113271c491ef20 ""
   (generated)
-  "build/main.aux"
   "build/main.toc"
-  "build/main.pdf"
+  "build/main.run.xml"
+  "build/main.aux"
   "build/main.bcf"
   "build/main.log"
-  "build/main.run.xml"
+  "build/main.pdf"
