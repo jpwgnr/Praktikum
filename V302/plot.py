@@ -96,7 +96,7 @@ tabe.writeFile("build/tab1.tex")
 k= (1/U_Se)*(60.8e-3/0.149)
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
  
-parameters, pcov = curve_fit(getU_Br, omegae/omega0e, U_Bre/U_Se)
+parameters, pcov = curve_fit(getU_Br, omegae, U_Bre/U_Se, p0=[Re,Ce])
 
 #save solution 
 
@@ -106,16 +106,12 @@ file.close()
 
 #Make plots for data
 #theoriekurve 
-newomega=np.linspace(omegae[0]/omega0e, omegae[-1]/omega0e, 300)
+newomega=np.linspace(omegae[0], omegae[-1], 2000)
 theoU_Br=getU_Br(newomega, Re, Ce)
-print(parameters)
-print(getU_Br(newomega, *parameters))
-print(theoU_Br)
-print(U_Bre/U_Se)
 plt.figure(1)
 plt.plot(omegae/omega0e, U_Bre/U_Se, "xr", label="Daten")
-plt.plot(newomega, getU_Br(newomega, *parameters), "r", label="Fit", linewidth=1.0)
-plt.plot(newomega, theoU_Br, "b", label="Theoriekurve", linewidth=1.0)
+plt.plot(newomega/omega0e, getU_Br(newomega, *parameters), "r", label="Fit", linewidth=1.0)
+plt.plot(newomega/omega0e, theoU_Br, "b", label="Theoriekurve", linewidth=1.0)
 plt.xlabel(r"$\frac{\omega}{\omega_0}$")
 plt.ylabel(r"$\frac{U_{Br}}{U_S}$")
 plt.xscale("log")
