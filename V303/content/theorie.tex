@@ -1,9 +1,24 @@
 \section{Ziel}
 \label{sec:Ziel}
 
-Die Funktionsweise eines Lock-In-Verstärkers soll kennengelernt, verstanden und durchgemessen werden. 
+Die Funktionsweise eines Lock-In-Verstärkers soll kennengelernt und verstanden werden. 
 
 \section{Theorie}
 \label{sec:Theorie}
 
+Der Lock-In-Verstärker wird genutzt um bestimmte Eigenschaften einer Signalspannung $U_{Sig}$ zu bestimmen.
+Hierzu wird das das Signal mit einer Referenzfrequenz $\omega_0$ moduliert.
+Dieses unter Umstände verrauschte Signal wird durch einen Bandpaß von Rauschanteilen deutlich höher oder niedriger als die Referenzfrequenz befreit. 
+In einem sogenannten Mischer wird die Signalspannung dann mit einem Referenzsignal $U_{Ref}$, das die Referenzfrequenz $\omega_0$ hat, multipliziert. 
 
+/noindent Dieses neue Signal wird in einen Tiefpass eingespeist. Dieser hat die Eigenschaft, dass er das entstandene Mischsignal über mehrere Perioden der Modulationsfrequenz integriert.
+Die nicht zur Frequenz synchronisierten Rauschbeiträge werden sich dadurch herausmitteln, sodass eine zur Eingangsspannung $U_{Sig}$ proportionale Gleichspannung $U_{out}$ gemessen werden kann. 
+
+/noindent Der Tiefpass entscheidet dabei über die Bandbreite des Restrauschens. Je größer die Zeitkonstante des Passes gewählt wird, desto kleiner wird die Bandbreite des Rauschens sein. Mit einem Lock-In-Verstärker kann man somit Güten erreichen, die weit über der Güte eines normalen Bandpasses liegt. 
+
+Sind die Signal- und Referenzspannungen nicht in Phase, sondern haben eine Phasendifferenz $\varphi$ erhält man eine folgende Ausgangsspannung: 
+
+\begin{equation}
+    U_{out} \propto U_0 cos(\varphi).
+\end{equation}
+Sie erreicht somit ihr Maximum bei einer Phase von $\varphi = 0$. 
