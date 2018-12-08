@@ -23,4 +23,32 @@ $\kappa$ ist die Wärmeleitfähigkeit. Für die Wärmestromdichte $j_\omega$ gil
     \label{eq:jomega}
 \end{equation}
 
+Mit Hilfe der Kontinuitätsgleichung kann hieraus die eindimensionale Wärmeleitungsgleichung aufgestellt werden:
 
+\begin{equation}
+    \frac{\partial T}{\partial t} = \frac{\kappa}{\roh c} \frac{\partial^2 T}{\partial x^2}.
+    \label{eq:warmeleitung}
+\end{equation}
+
+Dabei ist $\frac{\kappa}{rho c}$ die Temperaturleitfähig. Sie gibt die Schnelligkeit an, mit der sich ein Temperaturunterschied ausgleicht. Die Lösung hängt von der Geometrie des Stabes und den Anfangsbedingungen ab. 
+
+Wird ein Stab abwechselnd erwärmt und abgekühlt, so pflanz sich aufgrund der periodischen Wechsel  eine räumliche und zeitliche Temperaturwelle aus. Diese wird folgendermaßen beschrieben: 
+
+\begin{equation}
+    T(x,t) = T_{max} e^{-\sqrt{\frac{\omega \rho c}{2 \kappa}} x} cos(\omega t - \sqrt{\frac{\omega \rho c}{2 \kappa}} x).
+    \label{eq:Wellengleichung}
+\end{equation}
+
+Die Phasengeschwindigkeit $v$ der Welle lässt sich beschreiben als:
+
+\begin{equation}
+    v= \frac{\omega}{k} = \sqrt{\frac{2\kappa \omega}{\rho c}}.
+    \label{eq:phasengesch}
+\end{equation}
+Für die Wärmeleitfähigkeit ergibt sich nach einigen kleinen Umformungen folgendermaßen:
+
+\begin{equation}
+    \kappa = \frac{\rho c (\Delta x)^2}{2 \Delta t ln(A_{nah}/A_{fern})}.
+    \label{eq:Wärme}
+\end{equation}
+Dabei sind $A_{nah}$ und $A_{fern}$ die Amplituden an verschiedenen Stellen $x_{nah}$ und $x_{fern}$. $\Delta x$ ist der Abstand zwischen diesen beiden Messstellen und $\Delta t$ die Phasendifferenz der Temperaturwelle zwischen beiden Messstellen. 
