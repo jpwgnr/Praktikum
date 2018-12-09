@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1544035139 "main.tex" "build/main.pdf" "main" 1544041826
+["lualatex"] 1544035139 "main.tex" "build/main.pdf" "main" 1544376878
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1480098698 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1480098698 928 2dc8d444221b7a635bb58038579b861a ""
@@ -120,13 +120,13 @@
   "/home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1538662187 248632 01b5572adbf8bf1f36d5dba0683eb241 ""
   "/home/lewis206/.local/texlive/2018/texmf-var/tex/generic/config/language.dat.lua" 1536583965 17426 eacdf8955469eec1d5a7436df1b4473d ""
   "/home/lewis206/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1536584007 1362502 e7450945a0e6492c36a50c6a151d4e12 ""
-  "build/main.aux" 1543776684 3725 12c6f09bc156dac36ec934a740563354 ""
-  "header.tex" 1544034687 4023 727ef8e301320be0260a4eaffc5453f2 ""
-  "main.tex" 1544034687 264 a30ccbfb7d35e90cd6113271c491ef20 ""
+  "build/main.aux" 1543164928 3725 12c6f09bc156dac36ec934a740563354 ""
+  "header.tex" 1544046978 4023 727ef8e301320be0260a4eaffc5453f2 ""
+  "main.tex" 1544046978 264 a30ccbfb7d35e90cd6113271c491ef20 ""
   (generated)
+  "build/main.log"
   "build/main.toc"
   "build/main.run.xml"
   "build/main.aux"
   "build/main.bcf"
-  "build/main.log"
   "build/main.pdf"
