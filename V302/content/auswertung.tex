@@ -19,7 +19,7 @@ Der zweite Widerstand berechnet sich zu
 
 \subsection{Bestimmung von Kapazitäten mittels Kapazitätsmessbrücke}
 Die Werte zur Berechnung der Kapazität und des Verlustwiderstandes sind in Tabelle \ref{tabb} aufgelistet.
-Für alle drei Kapazitäten $C_2$ liegen drei Messdaten vor.
+Für alle drei Kapazitäten $C_2$ liegen jeweils drei Messreihen vor.
 \input{build/tabb.tex}
 \noindent Der Verlustwiderstand lässt sich mittels Gleichung \eqref{eqn:b_r} zu
 \begin{equation*}
@@ -60,31 +60,31 @@ Die mit Gleichung \eqref{eqn:d_l} errechnete Induktivität ist
 
 \subsection{Bestimmung der Frequenzabhängigkeit der Brückenspannung mittels Wien-Robinson-Brücke}
 Die doppelte Brückenspannung in Abhängigkeit von der Frequenz ist in Tabelle \ref{tabe} dargestellt.
-Die Werte $\omega / \omega_0$ und $U_B / U_S$ befinden sich in Tabelle \ref{tab1}.
+Die Werte $\omega / \omega_0$ und $U_{Br} / U_S$ befinden sich in Tabelle \ref{tab1}, wobei die Spannung $U_S = \SI{2.5}{\volt}$ ist.
 $\omega_0$ ist dabei die Frequenz, bei der das Brückenspannungsminimum liegt:
 \begin{equation*}
     \omega_{0,exp} = \SI[per-mode=fraction]{2513.27}{\per\second}.
 \end{equation*}
-% Der mittels Gleichung \eqref{eqn:omega0} theoretisch errechnete Wert für $\omega_0$ liegt bei 
-% \begin{equation*}
-%     \omega_{0,theo} = \SI{per-mode=fraction}{2380.95}{\per\second}.
-% \end{equation*}
+ Der mittels Gleichung \eqref{omega0} theoretisch errechnete Wert für $\omega_0$ liegt bei 
+ \begin{equation*}
+     \omega_{0,theo} = \SI[per-mode=fraction]{2380.95}{\per\second}.
+ \end{equation*}
 \input{build/tabe.tex}
 \input{build/tab1.tex}
 \noindent Die Werte aus Tabelle \ref{tab1} sind in Abbildung \ref{fig:plot} gegeneinander aufgetragen.
 \begin{figure}
  \centering
- \includegraphics{build/plot1.pdf}
- \caption{$U_B/U_S$ ist gegen $\omega / \omega_0$ aufgetragen. Es sind die Daten, ein Fit und die
+ \includegraphics[width= 13cm, height= 9cm]{build/plot1.pdf}
+ \caption{$U_{Br}/U_S$ ist gegen $\omega / \omega_0$ aufgetragen. Es sind die Daten, ein Fit und die
  Theoriekurve eingezeichnet.}
  \label{fig:plot}
 \end{figure}
 
 \subsection{Bestimmung des Klirrfaktors}
-Die minimale Wert der Brückenspannung liegt bei $U_{B,Min} = \SI{30.4}{\milli\volt}$ bei einer Frequenz von 
-$\omega_0 = 2 \pi \cdot 400$.
+Der minimale Wert der Brückenspannung liegt bei $U_{Br,Min} = \SI{30.4}{\milli\volt}$ bei einer Frequenz von 
+$\omega_0 = 2 \pi \cdot 400$. 
 \newline
-Der Klirrfakto, der mit Gleichung \eqref{eqn:k} bestimmt werden kann, ergibt sich zu
+Der Klirrfaktor, der mit Gleichung \eqref{eqn:k} bestimmt werden kann, ergibt sich zu
 \begin{equation*}
-    k = \num{0.16}. %Wie viele Nachkommastellen?
+    k = \num{0.16322}. %Wie viele Nachkommastellen?
 \end{equation*}

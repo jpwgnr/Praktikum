@@ -3,7 +3,7 @@
 
 Die Messungen werden mehrfach ausgeführt, um ein Maß für die Zufallsfehler zu bekommen.
 Es wird Wechselstrom verwendet. Die Frequenz wird auf $\SI{1}{\kilo\hertz}$ gestellt.
-Die Toleranz der Referenzbauteile $R_2$, $C_2$ und $L_2$ liegt bei $\pm \SI{0.2}{\percent}$.
+Die Toleranz der Referenzbauteile $R_2$, $C_2$ und $L_2$ liegt bei $\pm \SI{0.2}{\percent}$, wobei diese in der Auswertung vernachlässigt wird, da der Fehler der Ergebnisse über die Standardabweichung der Mittelwerte gebildet wird.
 
 \subsection{Bestimmung von Widerständen mittels Wheatstone-Brücke}
 Mit der Wheatoneschen Brückenschaltung (s. Abb. \ref{wheatstone}) werden im ersten Aufgabenteil zwei unbekannte Widerstände ausgemessen.
@@ -12,14 +12,14 @@ Der Drehknopf des Potentiometers wird für jeden der beiden Widerstände
 jeweils so eingestellt, dass die Brückenspannung Null wird. 
 Der am Drehknopf angezeigte Wert ist der Wert für $R_3$ in Promille. 
 $R_4$ ergibt sich, indem $R_3$ von $\num{1000}$ abgezogen wird.
-Der Widerstand $R_2$ wird hier variiert. Für jeden unbekannten Widerstand $R_X$
+Der Widerstand $R_2$ wird hier mehrfach variiert. Für jeden unbekannten Widerstand $R_X$
 werden drei unterschiedliche Widerstände $R_2$ benutzt.
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=8cm]{build/wheatstone.png}
+    \includegraphics[width=5cm, height=5cm]{build/wheatstone.png}
     \caption{Wheatstonesche Brücke. Diese Schaltung wird zur Bestimmung
     des Widerstandes $R_X$ genutzt. Die Widerstände $R_3$ und $R_4$
-    sind als Potentiometer ausgebildet. $R_2$ ist bekannt.}
+    sind als Potentiometer ausgebildet. $R_2$ ist bekannt.}%ausgebildet?
     \label{wheatstone}
 \end{figure}
 
@@ -35,7 +35,7 @@ Potentiometern abgelesen werden. $R_4$ ergibt sich, indem $R_3$ von
 $\num{1000}$ abgezogen wird.
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=8cm]{build/kapazitaet.png}
+    \includegraphics[width=5cm, height=5cm]{build/kapazitaet.png}
     \caption{Kapazitätsmessbrücke. Diese Schaltung wird zur Bestimmung
     der Kapazität $C_X$ genutzt. Der Widerstand $R_X$ folgt aus dem
     Ersatzschaltbild des Kondensators. Die Widerstände $R_3$ und $R_4$
@@ -56,7 +56,7 @@ Potentiometern abgelesen werden. $R_4$ ergibt sich, indem $R_3$ von
 $\num{1000}$ abgezogen wird.
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=8cm]{build/induktivitaet.png}
+    \includegraphics[width=5cm, height=5cm]{build/induktivitaet.png}
     \caption{Induktivitätsmessbrücke. Diese Schaltung wird zur Bestimmung
     von $L_X$ genutzt. Der Widerstand $R_X$ folgt aus dem
     Ersatzschaltbild der Induktivität (Spule). Die Widerstände $R_3$ und $R_4$
@@ -72,7 +72,7 @@ $R_3$ und $R_4$ werden alternierend so eingestellt, dass die Brückenspannung
 Null wird. 
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=8cm]{build/maxwell.png}
+    \includegraphics[width=5cm, height=5cm]{build/maxwell.png}
     \caption{Maxwell-Brücke. Diese Schaltung wird zur Bestimmung
     von $L_X$ genutzt. Der Widerstand $R_X$ folgt aus dem
     Ersatzschaltbild der Induktivität (Spule). Die Widerstände
@@ -82,7 +82,7 @@ Null wird.
 
 \subsection{Bestimmung der Frequenzabhängigkeit der Brückenspannung mittels Wien-Robinson-Brücke}
 %Die Frequenzabhängigkeit der Brückenspannung in einer Wien-Robinson-Brücke wird mit dem Theoriewert verglichen. 
-Um die Frequenzabhängigkeit der Brückenspannung $U_B$ zu messen, wird eine 
+Um die Frequenzabhängigkeit der Brückenspannung $U_{Br}$ zu messen, wird eine 
 Wien-Robinson-Brücke verwendet.
 \newline
 Die eingestellten Frequenzen liegen in einem Bereich von $\num{20}$ bis $\SI{30000}{\hertz}$.
@@ -92,7 +92,7 @@ Die eingestellte Spannung $U_S$ lässt sich ebenfalls mit dem Oszillographen
 bestimmen.
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=8cm]{build/wien-robinson.png}
+    \includegraphics[width=5cm, height=5cm]{build/wien-robinson.png}
     \caption{Wien-Robinson-Brücke. Diese Schaltung wird zur Bestimmung
     der Brückenspannung $U_B$ genutzt. Die Widerstände $R'$ und $R$,
     sowie die Kapazität $C$ sind bekannt.}
@@ -102,7 +102,7 @@ bestimmen.
 \subsection{Bestimmung des Klirrfaktors}
 Als letztes soll der Klirrfaktor des verwendeten Generators bestimmt werden.
 \newline
-Dabei wird das Minimum der Brückenspannung $U_B$ bestimmt.
+Dabei wird das Minimum der Brückenspannung $U_{Br}$ bestimmt.
 Daraus lässt sich der Klirrfaktor errechnen.
 %und der Quotient aus der vorhandenen Oberwellen und der Grundwelle bestimmt.
 

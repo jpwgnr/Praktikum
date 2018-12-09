@@ -10,23 +10,23 @@ from scipy.optimize import curve_fit
 #from txt
 #a
 R3a, R4a, R2a_var = np.genfromtxt("data/dataa.txt", unpack=True)
-taba = TexTable([R3a,R4a,R2a_var], [r"$R3/\si{\ohm}$", r"$R4/\si{\ohm}$", r"$R2/\si{\ohm}$"], label="taba", caption=" Die verschiedenen Werte der bekannten Widerstände der Wheatstoneschen Brücke.", roundPrecision=0)
+taba = TexTable([R3a,R4a,R2a_var], [r"$R_3/\si{\ohm}$", r"$R_4/\si{\ohm}$", r"$R2/\si{\ohm}$"], label="taba", caption=" Die verschiedenen Werte der bekannten Widerstände der Wheatstoneschen Brücke. In Zeile 1-3 werden die Werte für den Widerstand 13 angegeben. In Zeile 4-6 für Widerstand 14.", roundPrecision=1)
 taba.writeFile("build/taba.tex")
 #b 
 R3b, R2b, R4b, C2b_var = np.genfromtxt("data/datab.txt", unpack=True)
-tabb = TexTable([R3b, R2b, R4b, C2b_var*1e9], [r"$R3/\si{\ohm}$", r"$R2/\si{\ohm}$", r"$R4/\si{\ohm}$", r"$C2/\si{\nano\farad}$"], label="tabb", caption="Die verschiedenen Werte der Widerstände und Kapazitäten einer Kapazitätsmessbrücke. ", roundPrecision=0)
+tabb = TexTable([R3b, R2b, R4b, C2b_var*1e9], [r"$R_3/\si{\ohm}$", r"$R_2/\si{\ohm}$", r"$R_4/\si{\ohm}$", r"$C_2/\si{\nano\farad}$"], label="tabb", caption="Die verschiedenen Werte der Widerstände und Kapazitäten einer Kapazitätsmessbrücke. ", roundPrecision=1)
 tabb.writeFile("build/tabb.tex")
 #c 
 R3c, R2c, R4c, L2c_var = np.genfromtxt("data/datac.txt", unpack=True)
-tabc = TexTable([R3c, R2c, R3c, L2c_var*1e3], [r"$R3/\si{\ohm}$", r"$R2/\si{\ohm}$", r"$R4/\si{\ohm}$", r"$L2/\si{\milli\henry$}"], label="tabc", caption="Die verschiedenen Werte der Widerstände und der  Spule einer Induktivitätsmessbrücke.", roundPrecision=0)
+tabc = TexTable([R3c, R2c, R3c, L2c_var*1e3], [r"$R_3/\si{\ohm}$", r"$R_2/\si{\ohm}$", r"$R_4/\si{\ohm}$", r"$L_2/\si{\milli\henry}$"], label="tabc", caption="Die verschiedenen Werte der Widerstände und der  Spule einer Induktivitätsmessbrücke.", roundPrecision=1)
 tabc.writeFile("build/tabc.tex")
 #d 
 R3d, R4d = np.genfromtxt("data/datad.txt", unpack=True)
-tabd = TexTable([R3d,R4d], [r"$R3/\si{ohm}$", r"$R4/\si{\ohm}$"], label="tabd", caption="Die verschiedenen Widerstände für eine Maxwell-Brücke.", roundPrecision=0)
+tabd = TexTable([R3d,R4d], [r"$R_3/\si{\ohm}$", r"$R_4/\si{\ohm}$"], label="tabd", caption="Die verschiedenen Widerstände für eine Maxwell-Brücke.", roundPrecision=1)
 tabd.writeFile("build/tabd.tex")
 #e
 fe, U_Brezwei = np.genfromtxt("data/datae.txt", unpack=True)
-tabe = TexTable([fe,U_Brezwei], [r"$f/\si{\Hz}$", r"$2 U_{Br}/\si{\V}$"], label="tabe", caption="Die Frequenz gegen den doppelten Wert der Amplitude der Brückenspannung.", roundPrecision=3)
+tabe = TexTable([fe[0:-4],U_Brezwei[0:-4]], [r"$f/\si{\Hz}$", r"$2 U_{Br}/\si{\V}$"], label="tabe", caption="Die Frequenz gegen den doppelten Wert der Amplitude der Brückenspannung.", roundPrecision=2)
 tabe.writeFile("build/tabe.tex")
 #extra values 
 #a 
@@ -90,7 +90,7 @@ Rxd= ufloat(val_Rxd.mean(), val_Rxd.std())
 val_Lxd= getLxd(C4d.nominal_value, R3d, R2d.nominal_value)
 Lxd= ufloat(val_Lxd.mean(), val_Lxd.std()) 
 #e
-tab1 = TexTable([omegae/omega0e,U_Bre/U_Se], [r"$\omega/\omega_1$", r"$\frac{U_{Br}}{U_S}$"], label="tab1", caption="Die Kreisfrequenz gegen das Verhältnis aus Brückenpannung durch Speisespannung.", roundPrecision=3)
+tab1 = TexTable([omegae[0:-4]/omega0e,U_Bre[0:-4]/U_Se], [r"$\frac{\omega}{\omega_0}$", r"$\frac{U_{Br}}{U_S}$"], label="tab1", caption="Die Kreisfrequenz gegen das Verhältnis aus Brückenpannung durch Speisespannung.", roundPrecision=2)
 tab1.writeFile("build/tab1.tex")
 #f 
 k= (1/U_Se)*(60.8e-3/0.149)
@@ -110,11 +110,14 @@ newomega=np.linspace(omegae[0], omegae[-1], 2000)
 theoU_Br=getU_Br(newomega, Re, Ce)
 
 plt.figure(1)
-plt.plot(omegae/omega0e, U_Bre/U_Se, "xr", label="Daten")
+plt.plot(omegae[0:17]/omega0e, U_Bre[0:17]/U_Se, "xr", label="Daten")
 plt.plot(newomega/omega0e, getU_Br(newomega, *parameters), "r", label="Fit", linewidth=1.0)
 plt.plot(newomega/omega0e, theoU_Br, "b", label="Theoriekurve", linewidth=1.0)
 plt.xlabel(r"$\frac{\omega}{\omega_0}$")
 plt.ylabel(r"$\frac{U_{Br}}{U_S}$")
+plt.grid()
+plt.axhline(y=0, color="k")
+plt.axvline(x=0, color="k")
 plt.xscale("log")
 plt.legend(loc="best")
 plt.tight_layout()
