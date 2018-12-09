@@ -90,7 +90,7 @@ Rxd= ufloat(val_Rxd.mean(), val_Rxd.std())
 val_Lxd= getLxd(C4d.nominal_value, R3d, R2d.nominal_value)
 Lxd= ufloat(val_Lxd.mean(), val_Lxd.std()) 
 #e
-tab1 = TexTable([omegae/omega0e,U_Bre/U_Se], [r"$\omega/\omega_e$", r"$\frac{U_{Br}}{U_S}$"], label="tab1", caption="Die Kreisfrequenz gegen das Verhältnis aus Brückenpannung durch Speisespannung.", roundPrecision=3)
+tab1 = TexTable([omegae/omega0e,U_Bre/U_Se], [r"$\omega/\omega_1$", r"$\frac{U_{Br}}{U_S}$"], label="tab1", caption="Die Kreisfrequenz gegen das Verhältnis aus Brückenpannung durch Speisespannung.", roundPrecision=3)
 tab1.writeFile("build/tab1.tex")
 #f 
 k= (1/U_Se)*(60.8e-3/0.149)
