@@ -17,5 +17,10 @@
 \contentsline {subsection}{\numberline {2.5}Bestimmung der Frequenzabhängigkeit der Brückenspannung mittels Wien-Robinson-Brücke}{10}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Bestimmung des Klirrfaktors}{11}{subsection.2.6}
 \contentsline {section}{\numberline {3}Auswertung}{11}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{11}{section.4}
-\contentsline {section}{\nonumberline Literatur}{12}{section*.8}
+\contentsline {subsection}{\numberline {3.1}Bestimmung von Widerständen mittels Wheatstone-Brücke}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung von Kapazitäten mittels Kapazitätsmessbrücke}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Bestimmung von Induktivitäten mittels Induktivitätsmessbrücke}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Bestimmung von Induktivitäten mittels Maxwell-Brücke}{13}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Bestimmung der Frequenzabhängigkeit der Brückenspannung mittels Wien-Robinson-Brücke}{13}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Bestimmung des Klirrfaktors}{16}{subsection.3.6}
+\contentsline {section}{\nonumberline Literatur}{17}{section*.14}
