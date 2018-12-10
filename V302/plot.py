@@ -93,7 +93,7 @@ Lxd= ufloat(val_Lxd.mean(), val_Lxd.std())
 tab1 = TexTable([omegae[0:-4]/omega0e,U_Bre[0:-4]/U_Se], [r"$\frac{\omega}{\omega_0}$", r"$\frac{U_{Br}}{U_S}$"], label="tab1", caption="Die Kreisfrequenz gegen das Verhältnis aus Brückenpannung durch Speisespannung.", roundPrecision=2)
 tab1.writeFile("build/tab1.tex")
 #f 
-k= (1/U_Se)*(60.8e-3/0.149)
+k= (1/U_Se)*(60.8e-3/(np.sqrt(37)/37))
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
  
 parameters, pcov = curve_fit(getU_Br, omegae[0:17], U_Bre[0:17]/U_Se, p0=(Re,Ce))
