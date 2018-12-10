@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  10 DEC 2018 14:30
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  10 DEC 2018 14:45
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.181 seconds
+luaotfload | main : initialization completed in 0.180 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x7fe7d2be62c0
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	table: 0x7f94b11bf250
+(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x7fe7d2be6480
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	table: 0x7f94b11bf410
+(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3424,7 +3424,7 @@ blic/lm-math/latinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/open
 type/public/lm/lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/o
 pentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/font
 s/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (16 pages, 318050 bytes).
+Output written on main.pdf (16 pages, 318096 bytes).
 
 PDF statistics: 397 PDF objects out of 1000 (max. 8388607)
  320 compressed objects within 4 object streams
