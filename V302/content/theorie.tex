@@ -105,7 +105,7 @@ und
 % Es gibt aber einen Frequenzbereich, in dem der Abgleich unter optimalen Bedingungen durchführbar ist.
 
 \subsubsection{Wien-Robinson-Brücke}
-Bei den vorherigen Schaltungen ist die Frequenz für die Ergebnise nicht relevant gewesen. %Nicht wichtig ist auch falsch, da die Frequenz schon einen Einfluss hat. Aber nicht auf die Ergebnisse. 
+Bei den vorherigen Schaltungen ist die Frequenz für die Ergebnise nicht relevant. %Nicht wichtig ist auch falsch, da die Frequenz schon einen Einfluss hat. Aber nicht auf die Ergebnisse. 
 %Es gibt aber einen Frequenzbereich, in dem der Abgleich unter optimalen Bedingungen durchführbar ist. %Keine Ahnung, was das für ein Bereich sein soll, wenn sie fragt, wüsste ich das nicht. Finde den Satz also doof :D. 
 \newline
 Die Wien-Robinson-Brücke (s. Abb. \ref{wien-robinson}) ist eine frequenzabhängige Brückenschaltung.
@@ -136,18 +136,18 @@ ein Maß für die Qualität eines Spannungsgenerators.
 Es wird angenommen, dass die Summe der Oberwellen aus der zweiten
 Oberwelle besteht. Damit ist der Klirrfaktor:
 \begin{equation*}
-    k = \frac{U_2}{U_1}.
+    k = \frac{U_2}{U_S}.
 \end{equation*}
 $U_2$ ist dabei
 \begin{equation*}
     U_2 = \frac{U_{Br}}{n(2)},
 \end{equation*}
-wobei der Faktor $n(2)$ das Verhältnis \eqref{eqn:verhaeltnis} ist. %Oder Wurzel aus dem Verhätnis? Versteh ich allgemein nicht, wie bist du auf diese 0.149 gekommen? :D das U Br ändert sich doch. Das ist ja kein konstantes Verhältnis. Und wir haben ja auch einen eigenen Wert für U_S gehabt. 
+wobei der Faktor $n(2)$ das Verhältnis \eqref{eqn:verhaeltnis} ist: $n(2) = \frac{\sqrt{37}}{37}$. %Oder Wurzel aus dem Verhätnis? Versteh ich allgemein nicht, wie bist du auf diese 0.149 gekommen? :D das U Br ändert sich doch. Das ist ja kein konstantes Verhältnis. Und wir haben ja auch einen eigenen Wert für U_S gehabt. 
 Da $\omega = 2 \cdot \omega_0$ gilt, ergibt sich für $\Omega$ durch Gleichung \eqref{eqn:omega}
 $\Omega = 2$.
 Damit wird der Klirrfaktor mittels
 \begin{equation}
-    k = \frac{U_{Br}}{U_1 \cdot n(2)}. %n(2) berechnen und einsetzen %Was ist U_1?
+    k = \frac{U_{Br}}{U_S \cdot n(2)} = \frac{U_{Br} \cdot 37}{U_S \cdot \sqrt{37}}. %n(2) berechnen und einsetzen %Was ist U_1?
     \label{eqn:k}
 \end{equation}
 berechnet.
