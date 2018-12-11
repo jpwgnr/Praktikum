@@ -114,14 +114,19 @@ def getBtorus(mu_r, mu_0, n, R, I):
 
 #calculate 
 #a)
+theox1lang= np.linspace(x1lang[0], x1lang[-1], 200)
 theoBlang= getBlong(1, mu_0, n1lang, l1lang, Ilang)
-
+parameterslang, pcovlang= curve_fit(allgB, x1lang*1e2, B1lang*1e3)
+paramlang, pcovlang2= curve_fit(allgB, x1lang, B1lang, p0=[mu_0, 1, 2.05e-2, 300, 12.5e-2])
+errlang=np.sqrt(np.abs(np.diag(pcovlang2)))
 #parameterslang, pcovlang = curve_fit(getBlong, x1lang, B1lang)
 
 theox1kurz= np.linspace(x1kurz[0], x1kurz[-1], 200)
 theoBkurz= allgB(theox1kurz, mu_0, Ikurz, Rkurz, n1kurz, expkurzmax)
 theoBkurzmax= max(theoBkurz)
 parameterskurz, pcovkurz = curve_fit(allgB, x1kurz*1e2, B1kurz*1e3)
+paramkurz, pcovkurz2 = curve_fit(allgB, x1kurz, B1kurz, p0=[mu_0, 1, 2.05e-2, 100, 5e-2])
+errkurz=np.sqrt(np.abs(np.diag(pcovkurz2)))
 
 
 #b) 
@@ -139,8 +144,14 @@ theoBhelm2= allgB2(theohelmx2d, mu_0, I21, R2, n2, exphelmlinks, exphelmrechts)
 theoBhelm3= allgB2(theohelmx23, mu_0, I23, R2, n2, exphelmlinks, exphelmrechts)
 
 parametersHelm1, pcovHelm1 = curve_fit(allgB, x2r*1e2, B2r*1e3)
+paramHelm1, pcovHelm12 = curve_fit(allgB, x2r, B2r, p0=[mu_0, 4, 12.5e-2, 100, 1e-2])
+errHelm1 = np.sqrt(np.abs(np.diag(pcovHelm12)))
 parametersHelm2, pcovHelm2 = curve_fit(allgB2, x2d*1e2, B2d*1e3)
+paramHelm2, pcovHelm22 = curve_fit(allgB2, x2d, B2d, p0=[mu_0, 4, 12.5e-2, 100, 9e-2, -2e-2])
+errHelm2= np.sqrt(np.abs(np.diag(pcovHelm22)))
 parametersHelm3, pcovHelm3 = curve_fit(allgB2, x23*1e2, B23*1e3)
+paramHelm3, pcovHelm32= curve_fit(allgB2, x23, B23, p0=[mu_0, 3, 12.5e-2, 100, 10e-2, -2.5e-2])
+errHelm3 = np.sqrt(np.abs(np.diag(pcovHelm32)))
 
 #c)
 #parametersTorus, pcovTorus = curve_fit(getBtorus, I3, B3)
@@ -158,13 +169,14 @@ Koerz= 0.6
 #save solution 
 
 file = open("build/solution.txt", "w")
-file.write("a) \n\tExperimental:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\n\tTheoretisch:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\nb)\n\tExperimental:\n\t\tMittePaar r B= {} T\n\t\tMittePaar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\n\tTheorie:\n\t\tMitte Paar r B= {} T\n\t\tMitte Paar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\nc)\n\t Ergebnis aus Graph:\n\t\tSättigungsmagnetisierung= {} T\n\t\tRemanenz= {} T\n\t\tStromstärke bei Koerzitivkraft= {} A/m".format(explangBmax, expkurzBmax, theoBlang, theoBkurzmax, exphelmB1, exphelmB2, exphelmB3, theoBhelmmitte1, theoBhelmmitte2, theoBhelmmitte3, SaetMag, Rema, Koerz ))
+file.write("a) \n\tExperimental:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\n\tTheoretisch:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\nb)\n\tExperimental:\n\t\tMittePaar r B= {} T\n\t\tMittePaar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\n\tTheorie:\n\t\tMitte Paar r B= {} T\n\t\tMitte Paar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\nc)\n\t Ergebnis aus Graph:\n\t\tSättigungsmagnetisierung= {} T\n\t\tRemanenz= {} T\n\t\tStromstärke bei Koerzitivkraft= {} A/m \n\n a1: mu0, I, R, n, p: {},{} \n\n a2: mu0, I, R, n, p: {},{} \n\n b1: mu0, I, R, n, p: {},{} \n\n b:2 mu0, I, R, n, p, q: {},{} \n\n b3: m0, I, R, n, p, q: {}, {}".format(explangBmax, expkurzBmax, theoBlang, theoBkurzmax, exphelmB1, exphelmB2, exphelmB3, theoBhelmmitte1, theoBhelmmitte2, theoBhelmmitte3, SaetMag, Rema, Koerz, paramlang,errlang, paramkurz, errkurz,paramHelm1,errHelm1, paramHelm2, errHelm2, paramHelm3,errHelm3))
 file.close()
 
 #Make plots for data
 #a)
 plt.figure(1)
 plt.plot(x1lang*1e2, B1lang*1e3, "xr", label="Daten")
+plt.plot(theox1lang*1e2, allgB(theox1lang*1e2, *parameterslang), 'b-', label='Fit')
 #plt.plot(t, f(t, *parameters), 'b-', label='Fit')
 #plt.plot(x1lang*1e2, theoBlang*1e3, "r", label="Fit", linewidth=1.0)
 plt.xlabel(r"$x/\si{\centi\meter}$")
