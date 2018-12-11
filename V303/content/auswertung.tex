@@ -1,16 +1,110 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+%Sollen wir U_Out oder U_out nehmen?
 
+Das sinusförmige Signal, das auf den Verstärker gegeben wird, hat eine Frequenz
+von $\SI{1}{\kilo\hertz}$ und eine Spannung von $\SI{10}{\milli\volt}$. %gehört das zu allen Teilen? Sonst lieber in die Subsection schreiben
+
+\subsection{Überprüfung der Funktion eines phasenempfindlichen Gleichrichters}
+Die Aufnahmen der Ausgangssignale für fünf verschiedene Phasen sind im Folgenden abgebildet.
 \begin{figure}
- \centering
- \includegraphics{<++>}
- \caption{<++>}
- \label{fig:<++>}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/1.BMP}
+    \caption{Ausgangsspannung bei einer Phase von $\varphi = \SI{0}{\degree}$.}
+    \label{fig:bild1}
 \end{figure}
 
-%1) 1 kHz, 10mV, mit Gl. 5 vergleichen
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/2.BMP}
+    \caption{Ausgangsspannung bei einer Phase von $\varphi = \SI{15}{\degree}$.}
+    \label{fig:bild2}
+\end{figure}
 
-%2) Wie verändern sich die Signale?
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/3.BMP}
+    \caption{Ausgangsspannung bei einer Phase von $\varphi = \SI{30}{\degree}$.}
+    \label{fig:bild3}
+\end{figure}
 
-%3) r_max
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/4.BMP}
+    \caption{Ausgangsspannung bei einer Phase von $\varphi = \SI{45}{\degree}$.}
+    \label{fig:bild4}
+\end{figure}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/5.BMP}
+    \caption{Ausgangsspannung bei einer Phase von $\varphi = \SI{60}{\degree}$.}
+    \label{fig:bild5}
+\end{figure}
+
+\noindent Die Werte der Amplitude der Ausgangsspannung $U_{out}$ in Abhängigkeit von der Phasenverschiebung $\varphi$
+zwischen der Signalspannung $U_{Sig}$ und der Referenzspannung $U_{Ref}$
+sind in Tabelle \ref{tab2} dargestellt. Die Ausgangsspannung $U_{out}$ wird in Abb. \ref{fig:plot2} gegen die Phasenverschiebung $\varphi$
+aufgetragen.
+\input{build/tab2.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/plot2.pdf}
+    \caption{Plot2}
+    \label{fig:plot2}
+\end{figure}
+
+\noindent Der experimentell ermittelte Wert für die Signalspannung ist
+\begin{equation*}
+    U_{0,exp} = \SI{3.75 \pm 0.17}{\volt}.
+\end{equation*}
+Der mit Gleichung \eqref{eqn:u_out} berechnete theoretische Wert ergibt sich zu
+\begin{equation*}
+    U_{0,theo} = \SI{123456789}{\volt}. %richtigen Wert einfügen
+\end{equation*}
+
+\subsection{Überprüfung der Funktion eines Lock-In-Verstärkers}
+In Tabelle \ref{tab3} befinden sich die Werte der Amplitude der Ausgangsspannung $U_{out}$ in
+Abhängigkeit von der Phasenverschiebung $\varphi$ zwischen der Signalspannung $U_{Sig}$ und
+der Referenzspannung $U_{Ref}$. Die Werte der Ausgangsspannung $U_{out}$ wird gegen die Phasenverschiebung $\varphi$
+in Abb. \ref{fig:plot3} aufgetragen.
+\input{build/tab3.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/plot3.pdf}
+    \caption{Plot3}
+    \label{fig:plot3}
+\end{figure}
+
+\noindent Experimentell ergibt sich für die Signalspannung ein Wert von
+\begin{equation*}
+    U_{0} = \SI{3.86 \pm 0.09}{\volt}.
+\end{equation*}
+Mit Gleichung \eqref{eqn:u_out} wird der theoretische Wert zu
+\begin{equation*}
+    U_{0} = \SI{123456789}{\volt} %richtigen Wert einfügen
+\end{equation*}
+berechnet.
+
+\subsection{Überprüfung der Rauschunterdrückung des Lock-In-Verstärkers}
+Die Werte der Ausgangsspannung $U_{out}$ mit Verstärkung des Tiefpasses und des Detektors in Abhängigkeit vom Abstand $r$ der LED
+zur Photodiode sind in Tabelle \ref{tab4} zu finden.
+Die tatsächliche Ausgangsspannung $U_{out}$ in Abhängigkeit vom Abstand $r$ der LED
+zur Photodiode befindet sich in Tabelle \ref{tab5}.
+Die Werte aus Tabelle \ref{tab5} sind in Abbildung \ref{fig:plot4}
+gegeneinander aufgetragen. Es ist also die Ausgangsspannung in Abhängigkeit
+vom Abstand dargestellt.
+\input{build/tab4.tex}
+\input{build/tab5.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=8cm]{build/plot4.pdf}
+    \caption{Plot4}
+    \label{fig:plot4}
+\end{figure}
+
+\noindent Der maximale Abstand $r_{max}$, bei dem das Licht der LED %"LED"? In der Anleitung steht "Photodiode" aber das ergibt doch keinen Sinn oder?
+noch nachgewiesen werden kann, ist nicht eindeutig bestimmbar. 
