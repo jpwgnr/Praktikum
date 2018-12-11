@@ -110,14 +110,17 @@ def getBtorus(mu_r, mu_0, n, R, I):
 
 #def f(x, a, b, c, d):
 #    return a * np.sin(b * x + c) + d
-
+def f(x,m,n):
+    return x*m+n
 
 #calculate 
 #a)
 theox1lang= np.linspace(x1lang[0], x1lang[-1], 200)
 theoBlang= getBlong(1, mu_0, n1lang, l1lang, Ilang)
-parameterslang, pcovlang= curve_fit(allgB, x1lang*1e2, B1lang*1e3)
-paramlang, pcovlang2= curve_fit(allgB, x1lang, B1lang, p0=[mu_0, 1, 2.05e-2, 300, 12.5e-2])
+#parameterslang1, pcovlang1= curve_fit(allgB, x1lang[0:8]*1e2, B1lang[0:8]*1e3)
+#parameterslang2, pcovlang2= curve_fit(allgB, x1lang[-7:-1]*1e2, B1lang[-7:-1]*1e3)
+parameterslangx, pcovlangx = curve_fit(f,x1lang[10:38]*1e2, B1lang[10:38]*1e3)
+paramlang, pcovlang2= curve_fit(f, x1lang, B1lang)
 errlang=np.sqrt(np.abs(np.diag(pcovlang2)))
 #parameterslang, pcovlang = curve_fit(getBlong, x1lang, B1lang)
 
@@ -169,14 +172,17 @@ Koerz= 0.6
 #save solution 
 
 file = open("build/solution.txt", "w")
-file.write("a) \n\tExperimental:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\n\tTheoretisch:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\nb)\n\tExperimental:\n\t\tMittePaar r B= {} T\n\t\tMittePaar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\n\tTheorie:\n\t\tMitte Paar r B= {} T\n\t\tMitte Paar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\nc)\n\t Ergebnis aus Graph:\n\t\tSättigungsmagnetisierung= {} T\n\t\tRemanenz= {} T\n\t\tStromstärke bei Koerzitivkraft= {} A/m \n\n a1: mu0, I, R, n, p: {},{} \n\n a2: mu0, I, R, n, p: {},{} \n\n b1: mu0, I, R, n, p: {},{} \n\n b:2 mu0, I, R, n, p, q: {},{} \n\n b3: m0, I, R, n, p, q: {}, {}".format(explangBmax, expkurzBmax, theoBlang, theoBkurzmax, exphelmB1, exphelmB2, exphelmB3, theoBhelmmitte1, theoBhelmmitte2, theoBhelmmitte3, SaetMag, Rema, Koerz, paramlang,errlang, paramkurz, errkurz,paramHelm1,errHelm1, paramHelm2, errHelm2, paramHelm3,errHelm3))
+file.write("a) \n\tExperimental:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\n\tTheoretisch:\n\t\tLange Spule B= {} T\n\t\tKurze Spule B max= {} T\n\nb)\n\tExperimental:\n\t\tMittePaar r B= {} T\n\t\tMittePaar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\n\tTheorie:\n\t\tMitte Paar r B= {} T\n\t\tMitte Paar d B= {} T\n\t\tMitte Paar d2 B= {} T\n\nc)\n\t Ergebnis aus Graph:\n\t\tSättigungsmagnetisierung= {} T\n\t\tRemanenz= {} T\n\t\tStromstärke bei Koerzitivkraft= {} A/m \n\n a1: Steigung, y-Abschnitt ( in T): {},{} \n\n a2: mu0, I, R, n, p: {},{} \n\n b1: mu0, I, R, n, p: {},{} \n\n b:2 mu0, I, R, n, p, q: {},{} \n\n b3: m0, I, R, n, p, q: {}, {}".format(explangBmax, expkurzBmax, theoBlang, theoBkurzmax, exphelmB1, exphelmB2, exphelmB3, theoBhelmmitte1, theoBhelmmitte2, theoBhelmmitte3, SaetMag, Rema, Koerz, paramlang,errlang, paramkurz, errkurz,paramHelm1,errHelm1, paramHelm2, errHelm2, paramHelm3,errHelm3))
 file.close()
 
 #Make plots for data
 #a)
 plt.figure(1)
 plt.plot(x1lang*1e2, B1lang*1e3, "xr", label="Daten")
-plt.axhline(y=2.188, color="b", label="Fit")
+#plt.plot(x1lang[0:11]*1e2*1e2, allgB(x1lang[0:11]*1e2*1e2,*parameterslang1), "b")
+#plt.plot(x1lang[43:-1]*1e2, allgB(x1lang[43:-1]*1e2,*parameterslang2), "b")
+plt.plot(x1lang[10:38]*1e2,f(x1lang[10:38]*1e2, *parameterslangx), "b", label="Fit")
+#plt.axhline(y=2.188, color="b", label="Fit")
 #plt.plot(theox1lang*1e2, allgB(theox1lang*1e2, *parameterslang), 'b-', label='Fit')
 #plt.plot(t, f(t, *parameters), 'b-', label='Fit')
 #plt.plot(x1lang*1e2, theoBlang*1e3, "r", label="Fit", linewidth=1.0)

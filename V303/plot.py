@@ -15,11 +15,11 @@ tab2.writeFile("build/tab2.tex")
 
 phi31, zweiUout3 = np.genfromtxt("data/datab.txt", unpack=True)
 phi3= (phi31/360)* np.pi* 2
-tab3 = TexTable([phi3,zweiUout3/2], [r"$\varphi / \si{\\radian}$", r"$U_{Out} / \si{\volt}$"], label="tab3", caption="Die Phasenverschiebung $\varphi$ wird gegen die Werte der Ausgangsspannung $U_{Out} aufgetragen.$", roundPrecision=1)
+tab3 = TexTable([phi3,zweiUout3/2], [r"$\varphi / \si{\radian}$", r"$U_{Out} / \si{\volt}$"], label="tab3", caption=r"Die Phasenverschiebung $\varphi$ wird gegen die Werte der Ausgangsspannung $U_{Out} aufgetragen.$", roundPrecision=1)
 tab3.writeFile("build/tab3.tex")
 
 r4, Uout4, GainLP, GainD = np.genfromtxt("data/datac.txt", unpack=True)
-tab4 = TexTable([r4*1e2, Uout4, GainLP,GainD], [r"$r / \si{\centi\meter}$", r"$U_{Out} / \si{\volt}$", r"Gain Tiefpass", r"Gain Detektor"], label="tab4", caption="Der Abstand $r$ zwischen Leucht- und Photodiode aufgetragen gegen die Spannung U_{Out}. Dazu jeweils den Wert für die Verstärkung des Tiefpasses und des Detektors.", roundPrecision=1)
+tab4 = TexTable([r4*1e2, Uout4, GainLP,GainD], [r"$r / \si{\centi\meter}$", r"$U_{Out} / \si{\volt}$", r"Gain Tiefpass", r"Gain Detektor"], label="tab4", caption=r"Der Abstand $r$ zwischen Leucht- und Photodiode aufgetragen gegen die Spannung $U_{Out}$. Dazu jeweils den Wert für die Verstärkung des Tiefpasses und des Detektors.", roundPrecision=1)
 tab4.writeFile("build/tab4.tex")
 #extra values 
 U_Anfang= 6.56/2
@@ -47,7 +47,7 @@ newphi= np.linspace(phi2[0], phi2[-1], 400)
 U03params, pcov3 = curve_fit(getUout, phi3, Uout3, p0=[6.56])
 errU03 = np.sqrt(np.abs(np.diag(pcov3)))
 #4 
-newr = np.linspace(r4[0], r4[-1], 400)
+newr = np.linspace(r4[0], r4[-1], 4000)
 Ueff4= Uout4*(1/(GainLP*GainD))
 U04params, pcov4 = curve_fit(func, np.log(r4*1e2),np.log(Ueff4))
 errU04 = np.sqrt(np.abs(np.diag(pcov4)))
@@ -57,11 +57,11 @@ errU04 = np.sqrt(np.abs(np.diag(pcov4)))
 
 #save solution 
 
-tab5 = TexTable([r4*1e2, Ueff4], [r"$r / \si{\centi\meter}$", r"$U_{Out} / \si{\volt}$"], label="tab5", caption="Der Abstand $r$ zwischen Leucht- und Photodiode aufgetragen gegen die tatsächliche Spannung U_{Out}, nach Division durch die Verstärker Werte.", roundPrecision=1)
+tab5 = TexTable([r4*1e2, Ueff4], [r"$r / \si{\centi\meter}$", r"$U_{Out} / \si{\volt}$"], label="tab5", caption=r"Der Abstand $r$ zwischen Leucht- und Photodiode aufgetragen gegen die tatsächliche Spannung $U_{Out}$, nach Division durch die Verstärkerwerte.", roundPrecision=1)
 tab5.writeFile("build/tab5.tex")
 
 file = open("build/solution.txt", "w")
-file.write("\tU02 = {} Fehler: {} \n\tU03 = {} Fehler: {}\n\t Steigung, Y-Abschnitt Gerade: {} Fehler: {} ".format(U02params, errU02, U03params, errU03, U04params, errU04))
+file.write("\tU02 = {} Fehler: {} \n\tU03 = {} Fehler: {}\n\t Steigung, Y-Abschnitt:\t{}\n\tFehler:\t{} ".format(U02params, errU02, U03params, errU03, U04params, errU04))
 
 file.close()
 
@@ -86,7 +86,7 @@ plt.savefig("build/plot3.pdf")
 
 plt.figure(3)
 plt.plot(r4*1e2,Ueff4, "xr", label="Daten")
-plt.plot(newr*1e2, func(np.log(newr*1e2), *U04params), "r", label="Fit", linewidth=1.0)
+plt.plot(newr*1e2, np.exp(func(np.log(newr*1e2), *U04params)), "b", label="Fit", linewidth=1.0)
 plt.xlabel(r"$r/\si{\centi\meter}$")
 plt.ylabel(r"$U_{Out} / \si{\volt}$")
 plt.legend(loc="best")
