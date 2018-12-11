@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  11 DEC 2018 15:21
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  11 DEC 2018 17:32
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.174 seconds
+luaotfload | main : initialization completed in 0.169 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -898,11 +898,11 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x7f8a181d4300
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x7ff7c9d03eb0
+(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
@@ -910,11 +910,11 @@ n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x7f8a181d44c0
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x7ff7c9d04070
+(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
@@ -3342,43 +3342,43 @@ luc) [5<./build/Hysteresekurve.png>]) (./content/fehlerrechnung.tex)
 (./content/auswertung.tex (./build/taba1.tex(load luc: /Users/Karina/Library/tex
 live/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)
 [6]) (./build/taba12.tex) (./build/taba13.tex [7])
-<build/plota1.pdf, id=108, 417.7206pt x 258.00488pt>
+<build/plota1.pdf, id=110, 417.7206pt x 258.00488pt>
 File: build/plota1.pdf Graphic file (type pdf)
 <use build/plota1.pdf>
 Package luatex.def Info: build/plota1.pdf  used on input line 25.
 (luatex.def)             Requested size: 417.71957pt x 258.00424pt.
  [8] [9<./build/plota1.pdf>]
 (./build/taba2.tex)
-<build/plota2.pdf, id=142, 417.7206pt x 258.00488pt>
+<build/plota2.pdf, id=148, 417.7206pt x 258.00488pt>
 File: build/plota2.pdf Graphic file (type pdf)
 <use build/plota2.pdf>
-Package luatex.def Info: build/plota2.pdf  used on input line 57.
+Package luatex.def Info: build/plota2.pdf  used on input line 60.
 (luatex.def)             Requested size: 417.71957pt x 258.00424pt.
  [10] (./build/tabb1.tex) [11<./build/plota2.pdf>]
-<build/plotb1.pdf, id=180, 417.7206pt x 258.00488pt>
+<build/plotb1.pdf, id=190, 417.7206pt x 258.00488pt>
 File: build/plotb1.pdf Graphic file (type pdf)
 <use build/plotb1.pdf>
-Package luatex.def Info: build/plotb1.pdf  used on input line 97.
+Package luatex.def Info: build/plotb1.pdf  used on input line 103.
 (luatex.def)             Requested size: 417.71957pt x 258.00424pt.
  [12]
 (./build/tabb2.tex) [13<./build/plotb1.pdf>]
-<build/plotb2.pdf, id=214, 417.7206pt x 258.00488pt>
+<build/plotb2.pdf, id=228, 417.7206pt x 258.00488pt>
 File: build/plotb2.pdf Graphic file (type pdf)
 <use build/plotb2.pdf>
-Package luatex.def Info: build/plotb2.pdf  used on input line 131.
+Package luatex.def Info: build/plotb2.pdf  used on input line 140.
 (luatex.def)             Requested size: 417.71957pt x 258.00424pt.
  [14] (./build/tabb3.tex) [15<./build/plotb2.pdf>]
-<build/plotb3.pdf, id=248, 417.7206pt x 258.00488pt>
+<build/plotb3.pdf, id=266, 417.7206pt x 258.00488pt>
 File: build/plotb3.pdf Graphic file (type pdf)
 <use build/plotb3.pdf>
-Package luatex.def Info: build/plotb3.pdf  used on input line 164.
+Package luatex.def Info: build/plotb3.pdf  used on input line 177.
 (luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [16] (./build/tabc.tex) (./build/tabc3.tex [17<./build/plotb3.pdf>]) (./build/
-tabc2.tex) (./build/tabc4.tex [18]) [19]
-<build/plotc.pdf, id=298, 417.7206pt x 258.00488pt>
+ [16] (./build/tabc.tex [17<./build/plotb3.pdf>])
+(./build/tabc3.tex) (./build/tabc2.tex) (./build/tabc4.tex [18]) [19]
+<build/plotc.pdf, id=321, 417.7206pt x 258.00488pt>
 File: build/plotc.pdf Graphic file (type pdf)
 <use build/plotc.pdf>
-Package luatex.def Info: build/plotc.pdf  used on input line 212.
+Package luatex.def Info: build/plotc.pdf  used on input line 229.
 (luatex.def)             Requested size: 417.71957pt x 258.00424pt.
  [20])
 (./content/diskussion.tex [21<./build/plotc.pdf>]) [22](load luc: /Users/Karina/
@@ -3393,24 +3393,32 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 954FF30F27C0AB6444D3563D3C64EDB9;19926.
+
+
+Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.aux':
+(rerunfilecheck)             Before: 49C4FBD210AE5EFD433359784B81E373;23264
+(rerunfilecheck)             After:  E09EA387EA521C71F81C6947A13C6DD1;24068.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 292EF40DC1EB6E06CAA519BD39EDF5CB;1574.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42311 strings out of 494413
+ 42315 strings out of 494413
  100000,1648299 words of node,token memory allocated
- 719 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 35 attribute, 77 glue_spec, 35 attr
+ 727 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 37 attribute, 77 glue_spec, 37 attr
 ibute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:2,2:4783,3:341,4:50,5:459,6:180,7:4367,8:148,9:1779,10:28,11:3
+   avail lists: 1:2,2:4807,3:341,4:50,5:472,6:180,7:4626,8:150,9:1783,10:28,11:3
 49
- 44990 multiletter control sequences out of 65536+600000
+ 44992 multiletter control sequences out of 65536+600000
  220 fonts using 81732415 bytes
  61i,14n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
@@ -3423,10 +3431,10 @@ ath/latinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/publ
 ic/lm/lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/p
 ublic/lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentyp
 e/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (23 pages, 228727 bytes).
+Output written on main.pdf (23 pages, 234506 bytes).
 
-PDF statistics: 475 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 131072)
+PDF statistics: 498 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 131072)
  129 words of extra memory for PDF output out of 10000 (max. 100000000)
 
