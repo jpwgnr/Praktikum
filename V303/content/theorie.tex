@@ -8,12 +8,22 @@ Die Funktionsweise eines Lock-In-Verstärkers soll kennengelernt und verstanden 
 \label{sec:Theorie}
 
 Der Lock-In-Verstärker wird genutzt, um bestimmte Eigenschaften einer Signalspannung 
-$U_{Sig}$ zu bestimmen. 
-Hierzu wird das das Signal mit einer Referenzfrequenz $\omega_0$ moduliert.
+$U_{Sig}$ zu bestimmen. Lock-In-Verstärker werden hauptsächlich zur Messung stark
+verrauschter Signale verwendet.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=5cm]{build/lockin1.png}
+    \caption{Aufbau eines Lock-In-Verstärkers.}
+\end{figure}
+
+\noindent Hierzu wird das das Signal mit einer Referenzfrequenz $\omega_0$ moduliert.
 Dieses unter Umständen verrauschte Signal wird durch einen Bandpass von Rauschanteilen 
-deutlich höher oder niedriger als die Referenzfrequenz befreit. %
-In einem sogenannten Mischer wird die Signalspannung dann mit einem Referenzsignal 
+deutlich höherer oder niedrigerer Frequenzen als der Referenzfrequenz befreit.
+In einem sogenannten Mischer wird die Signalspannung $U_{Sig}$ mit einem Referenzsignal 
 $U_{Ref}$, das die Referenzfrequenz $\omega_0$ hat, multipliziert. 
+% Die Phasenverschiebung zwischen $U_{Sig}$ und $U_{Ref}$ kann durch einen Phasenschieber
+% variiert werden.
 
 \noindent Dieses neue Signal wird in einen Tiefpass eingespeist. Dieser hat die 
 Eigenschaft, dass er das entstandene Mischsignal über mehrere Perioden der 
@@ -24,13 +34,14 @@ $U_{out}$ gemessen werden kann.
 
 \noindent Der Tiefpass entscheidet dabei über die Bandbreite des Restrauschens. 
 Je größer die Zeitkonstante des Passes gewählt wird, desto kleiner wird die Bandbreite 
-des Rauschens sein. Mit einem Lock-In-Verstärker kann man somit Güten erreichen, 
-die weit über der Güte eines normalen Bandpasses liegt. %
+des Rauschens sein. Mit einem Lock-In-Verstärker kann man somit Güten, 
+die weit über der Güte eines normalen Bandpasses liegen, erreichen.
 
-Sind die Signal- und Referenzspannungen nicht in Phase, sondern haben eine 
-Phasendifferenz $\varphi$, erhält man eine folgende Ausgangsspannung: 
+\noindent Sind die Signal- und Referenzspannungen nicht in Phase, sondern haben eine 
+Phasendifferenz $\varphi$, erhält man die folgende Ausgangsspannung: 
 
 \begin{equation}
-    U_{out} \propto U_0 cos(\varphi).
+    U_{out} = \frac{2}{\pi} U_0 cos(\varphi). %nach U_0 umformen
+    \label{eqn:u_out}
 \end{equation}
-Sie erreicht somit ihr Maximum bei einer Phase von $\varphi = 0$. 
+Diese erreicht somit ihr Maximum bei einer Phase von $\varphi = 0$. 

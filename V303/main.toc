@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Ziel}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {section}{\numberline {3}Durchführung}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Phasenempfindlicher Gleichrichter}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Lock-In-Verstärker}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Rauschunterdrückung mit Photodetektorschaltung}{4}{subsection.3.3}
+\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Überprüfung der Funktion eines phasenempfindlichen Gleichrichters}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Überprüfung der Funktion eines Lock-In-Verstärkers}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Überprüfung der Rauschunterdrückung des Lock-In-Verstärkers}{8}{subsection.4.3}
+\contentsline {section}{\numberline {5}Diskussion}{10}{section.5}
