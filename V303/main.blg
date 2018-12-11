@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0] Config.pm:302> INFO - This is Biber 2.11
 [1] Config.pm:305> INFO - Logfile is 'main.blg'
 [62] biber-darwin:313> INFO - === Di Dez 11, 2018, 21:20:32
@@ -16,3 +17,24 @@
 [363] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
 [389] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
 [392] bbl.pm:720> INFO - Output to main.bbl
+||||||| merged common ancestors
+=======
+[0] Config.pm:302> INFO - This is Biber 2.11
+[1] Config.pm:305> INFO - Logfile is 'main.blg'
+[37] biber:313> INFO - === Di Dez 11, 2018, 21:47:29
+[58] Biber.pm:371> INFO - Reading 'main.bcf'
+[131] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[147] Biber.pm:3976> INFO - Processing section 0
+[158] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[159] bibtex.pm:1500> INFO - LaTeX decoding ...
+[162] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
+[167] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[168] bibtex.pm:1500> INFO - LaTeX decoding ...
+[173] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
+[212] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[212] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[212] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[212] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[223] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[225] bbl.pm:720> INFO - Output to main.bbl
+>>>>>>> update
