@@ -10,9 +10,10 @@
 \contentsline {subsection}{\numberline {3.1}Magnetfelder von langen und kurzen Spulen}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Magnetfelder von Spulenpaaren}{5}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Hysteresekurve einer Ringspule}{6}{subsection.3.3}
-\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Magnetische Flussdichte einer langen und einer kurzen Spule}{6}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Magnetische Flussdichte eines Spulenpaares}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Hysteresekurve einer Ringspule mit Luftspalt}{16}{subsection.4.3}
-\contentsline {section}{\numberline {5}Diskussion}{20}{section.5}
-\contentsline {section}{\nonumberline Literatur}{22}{section*.21}
+\contentsline {section}{\numberline {4}Fehlerrechnung}{6}{section.4}
+\contentsline {section}{\numberline {5}Auswertung}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}Magnetische Flussdichte einer langen und einer kurzen Spule}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Magnetische Flussdichte eines Spulenpaares}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Hysteresekurve einer Ringspule mit Luftspalt}{17}{subsection.5.3}
+\contentsline {section}{\numberline {6}Diskussion}{21}{section.6}
+\contentsline {section}{\nonumberline Literatur}{23}{section*.21}
