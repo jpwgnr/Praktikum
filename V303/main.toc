@@ -11,4 +11,5 @@
 \contentsline {subsection}{\numberline {4.1}Überprüfung der Funktion eines phasenempfindlichen Gleichrichters}{5}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Überprüfung der Funktion eines Lock-In-Verstärkers}{7}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Überprüfung der Rauschunterdrückung des Lock-In-Verstärkers}{8}{subsection.4.3}
-\contentsline {section}{\numberline {5}Diskussion}{10}{section.5}
+\contentsline {section}{\numberline {5}Diskussion}{11}{section.5}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.17}

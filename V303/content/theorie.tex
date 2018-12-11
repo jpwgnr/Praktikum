@@ -1,6 +1,5 @@
 \section{Ziel}
 \label{sec:Ziel}
-%NICHT VERGESSEN
 
 Die Funktionsweise eines Lock-In-Verstärkers soll kennengelernt und verstanden werden. 
 
@@ -13,7 +12,7 @@ verrauschter Signale verwendet.
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=5cm]{build/lockin1.png}
+    \includegraphics[width=8cm, height=3cm]{build/lockin1.png}
     \caption{Aufbau eines Lock-In-Verstärkers.}
 \end{figure}
 
@@ -39,9 +38,14 @@ die weit über der Güte eines normalen Bandpasses liegen, erreichen.
 
 \noindent Sind die Signal- und Referenzspannungen nicht in Phase, sondern haben eine 
 Phasendifferenz $\varphi$, erhält man die folgende Ausgangsspannung: 
-
 \begin{equation}
-    U_{out} = \frac{2}{\pi} U_0 cos(\varphi). %nach U_0 umformen
+    U_{out} = \frac{2}{\pi} U_{0} cos(\varphi).
     \label{eqn:u_out}
 \end{equation}
-Diese erreicht somit ihr Maximum bei einer Phase von $\varphi = 0$. 
+Diese erreicht somit ihr Maximum bei einer Phase von $\varphi = 0$.
+Aus der Ausgangsspannung $U_{out}$ lässt sich die Spannung $U_{0}$ mittels
+\begin{equation}
+    U_{0} = \frac{U_{out} \pi}{2 cos(\varphi)} %brauchen wir das? sonst weglassen.
+    \label{eqn:u_0}
+\end{equation}
+bestimmen.
