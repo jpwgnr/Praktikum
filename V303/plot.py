@@ -15,7 +15,7 @@ tab2.writeFile("build/tab2.tex")
 
 phi31, zweiUout3 = np.genfromtxt("data/datab.txt", unpack=True)
 phi3= (phi31/360)* np.pi* 2
-tab3 = TexTable([phi3,zweiUout3/2], [r"$\varphi / \si{\radian}$", r"$U_{Out} / \si{\volt}$"], label="tab3", caption=r"Die Phasenverschiebung $\varphi$ wird gegen die Werte der Ausgangsspannung $U_{Out} aufgetragen.$", roundPrecision=1)
+tab3 = TexTable([phi3,zweiUout3/2], [r"$\varphi / \si{\radian}$", r"$U_{Out} / \si{\volt}$"], label="tab3", caption=r"Die Phasenverschiebung $\varphi$ wird gegen die Werte der Ausgangsspannung $U_{Out}$ aufgetragen.", roundPrecision=1)
 tab3.writeFile("build/tab3.tex")
 
 r4, Uout4, GainLP, GainD = np.genfromtxt("data/datac.txt", unpack=True)
@@ -57,7 +57,7 @@ errU04 = np.sqrt(np.abs(np.diag(pcov4)))
 
 #save solution 
 
-tab5 = TexTable([r4*1e2, Ueff4], [r"$r / \si{\centi\meter}$", r"$U_{Out} / \si{\volt}$"], label="tab5", caption=r"Der Abstand $r$ zwischen Leucht- und Photodiode aufgetragen gegen die tatsächliche Spannung $U_{Out}$, nach Division durch die Verstärkerwerte.", roundPrecision=1)
+tab5 = TexTable([r4*1e2, Ueff4*1e6], [r"$r / \si{\centi\meter}$", r"$U_{Out} / \si{\micro\volt}$"], label="tab5", caption=r"Der Abstand $r$ zwischen Leucht- und Photodiode aufgetragen gegen die tatsächliche Spannung $U_{Out}$, nach Division durch die Verstärkerwerte.", roundPrecision=1)
 tab5.writeFile("build/tab5.tex")
 
 file = open("build/solution.txt", "w")

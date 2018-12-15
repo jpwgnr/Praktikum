@@ -1,40 +1,28 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.10)  11 DEC 2018 17:42
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  15 DEC 2018 15:41
  restricted system commands enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2018-04-01> patch level 5
-Lua module: luaotfload-main 2018-10-28 2.93 luaotfload entry point
-Lua module: luaotfload-init 2018-10-28 2.93 luaotfload submodule / initialization
-Lua module: lualibs 2018-10-18 2.61 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2018-10-18 2.61 ConTeXt Lua libraries -- extended collection.
-Lua module: luaotfload-log 2018-10-28 2.93 luaotfload submodule / logging
-Lua module: luaotfload-parsers 2018-10-28 2.93 luaotfload submodule / filelist
-Lua module: luaotfload-configuration 2018-10-28 2.93 luaotfload submodule / config file reader
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended collection.(using write cache: /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic)(using read cache: /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic /home/lewis206/.texlive2018/texmf-var/luatex-cache/generic)
 luaotfload | conf : Root cache directory is /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/names.
-luaotfload | init : Loading fontloader “fontloader-2018-10-28.lua” from kpse-resolved path “/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontloader-2018-10-28.lua”.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse-resolved path “/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontloader-2017-02-11.lua”.
 Lua-only attribute luaotfload@state = 1
 Lua-only attribute luaotfload@noligature = 2
 Lua-only attribute luaotfload@syllabe = 3
-luaotfload | init : Context OpenType loader version “3.106”
+luaotfload | init : Context OpenType loader version “3.027”
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
-Lua module: luaotfload-loaders 2018-10-28 2.93 luaotfload submodule / callback handling
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
-Lua module: luaotfload-database 2018-10-28 2.93 luaotfload submodule / database
-Lua module: luaotfload-colors 2018-10-28 2.93 luaotfload submodule / color
 Lua-only attribute luaotfload_color_attribute = 4
-Lua module: luaotfload-resolvers 2018-10-28 2.93 luaotfload submodule / resolvers
 luaotfload | conf : Root cache directory is /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/names.
-Lua module: luaotfload-features 2018-10-28 2.93 luaotfload submodule / features
-Lua module: luaotfload-letterspace 2018-10-28 2.93 luaotfload submodule / color
-Lua module: luaotfload-auxiliary 2018-10-28 2.93 luaotfload submodule / auxiliary functions
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.206 seconds
-(./header.tex (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
+luaotfload | main : initialization completed in 0.111 seconds (./header.tex (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
@@ -57,7 +45,7 @@ Class scrartcl Info: File `scrsize11pt.clo' used instead of
 (scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2114.
  (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
 File: scrsize11pt.clo 2018/03/30 v3.25 KOMA-Script font size class option (11pt)
-luaotfload | db : Font names database loaded from /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc) (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/typearea.sty
+luaotfload | db : Font names database loaded from /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc)) (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2018/03/30 v3.25 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count80
@@ -113,9 +101,9 @@ Class scrartcl Info: Redefining `\numberline' on input line 5615.
 ) (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrhack.sty
 Package: scrhack 2018/03/30 v3.25 KOMA-Script package 
  (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/xpatch/xpatch.sty (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2018-10-31 L3 programming layer (loader) 
+Package: expl3 2018-08-23 L3 programming layer (loader) 
  (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2018-10-31 L3 programming layer (code)
+Package: expl3 2018-08-23 L3 programming layer (code)
 \ucharcat@table=\catcodetable5
 \c_max_int=\count89
 \l_tmpa_int=\count90
@@ -251,18 +239,18 @@ Package: expl3 2018-10-31 L3 programming layer (code)
 \g__file_internal_ior=\read1
 
 ! Interruption.
-\tl_if_blank:nF ...if_empty_if:o {\use_none:n #1?}
-                                                  \exp_after:wN \use_none:nn...
-l.24910   }
+<argument> __int_compare_\token_to_str:N e
+                               \if_meaning:w ==nd_=\fi: :NNw
+l.24738   }
          
 
 Here is how much of LuaTeX's memory you used:
- 9920 strings out of 494407
+ 9860 strings out of 494412
  100000,383344 words of node,token memory allocated
- 405 words of node memory still in use:
-   2 hlist, 1 rule, 1 dir, 3 kern, 1 glyph, 4 attribute, 53 glue_spec, 4 attribute_list, 1 if_stack, 1 write nodes
+ 379 words of node memory still in use:
+   2 hlist, 1 rule, 1 dir, 3 attribute, 53 glue_spec, 3 attribute_list, 1 if_stack, 1 write nodes
    avail lists: 2:16,3:3,4:1,5:2,7:29,8:1,9:2,11:3
- 14108 multiletter control sequences out of 65536+600000
+ 14043 multiletter control sequences out of 65536+600000
  25 fonts using 5549591 bytes
  49i,1n,51p,9101b,138s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!
