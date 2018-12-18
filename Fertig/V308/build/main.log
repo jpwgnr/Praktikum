@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.10)  3 DEC 2018 14:15
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.10)  11 DEC 2018 19:28
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.205 seconds
+luaotfload | main : initialization completed in 0.210 seconds
 (./header.tex (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -472,20 +472,20 @@ File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x2d4b110
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	table: 0x5c7bd10
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x47c2220
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	table: 0x5c7bee0
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -1541,20 +1541,13 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 6.
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex
-
-LaTeX Warning: Reference `eqn:B' on page 3 undefined on input line 52.
-
-
-LaTeX Warning: Reference `fig:helmholtz' on page 3 undefined on input line 60.
-
-[3]
-<build/Helmholtz.png, id=35, 709.65125pt x 735.74875pt>
+] (./content/theorie.tex [3]
+<build/Helmholtz.png, id=37, 709.65125pt x 735.74875pt>
 File: build/Helmholtz.png Graphic file (type png)
 <use build/Helmholtz.png>
 Package luatex.def Info: build/Helmholtz.png  used on input line 70.
 (luatex.def)             Requested size: 227.62363pt x 170.71179pt.
-<build/Hysteresekurve.png, id=36, 882.29625pt x 743.77875pt>
+<build/Hysteresekurve.png, id=38, 882.29625pt x 743.77875pt>
 File: build/Hysteresekurve.png Graphic file (type png)
 <use build/Hysteresekurve.png>
 Package luatex.def Info: build/Hysteresekurve.png  used on input line 104.
@@ -1563,7 +1556,7 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 106.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 106.
- [4<./build/Helmholtz.png>]) (./content/durchfuehrung.tex [5<./build/Hysteresekurve.png>]) (./content/auswertung.tex
+ [4<./build/Helmholtz.png>]) (./content/durchfuehrung.tex [5<./build/Hysteresekurve.png>]) (./content/fehlerrechnung.tex) (./content/auswertung.tex
 
 LaTeX Warning: Reference `taba1' on page 6 undefined on input line 14.
 
@@ -1576,116 +1569,20 @@ LaTeX Warning: Reference `taba13' on page 6 undefined on input line 16.
 
 LaTeX Warning: Reference `plota1' on page 6 undefined on input line 17.
 
-(./build/taba1.tex) (./build/taba12.tex) (./build/taba13.tex [6])
-<build/plota1.pdf, id=70, 417.7206pt x 258.00488pt>
-File: build/plota1.pdf Graphic file (type pdf)
-<use build/plota1.pdf>
-Package luatex.def Info: build/plota1.pdf  used on input line 25.
-(luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [7]
-
-LaTeX Warning: Reference `eqn:langespule' on page 8 undefined on input line 37.
-
-[8<./build/plota1.pdf>]
-
-LaTeX Warning: Reference `taba2' on page 9 undefined on input line 48.
-
-
-LaTeX Warning: Reference `taba2' on page 9 undefined on input line 50.
-
-
-LaTeX Warning: Reference `plota2' on page 9 undefined on input line 50.
-
-(./build/taba2.tex)
-<build/plota2.pdf, id=101, 417.7206pt x 258.00488pt>
-File: build/plota2.pdf Graphic file (type pdf)
-<use build/plota2.pdf>
-Package luatex.def Info: build/plota2.pdf  used on input line 57.
-(luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [9]
-
-LaTeX Warning: Reference `eqn:kurzespule' on page 10 undefined on input line 69.
-
-
-LaTeX Warning: Reference `tabb1' on page 10 undefined on input line 88.
-
-
-LaTeX Warning: Reference `plotb1' on page 10 undefined on input line 90.
-
-(./build/tabb1.tex) [10<./build/plota2.pdf>]
-<build/plotb1.pdf, id=132, 417.7206pt x 258.00488pt>
-File: build/plotb1.pdf Graphic file (type pdf)
-<use build/plotb1.pdf>
-Package luatex.def Info: build/plotb1.pdf  used on input line 97.
-(luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [11]
-
-LaTeX Warning: Reference `eqn:spulenpaar' on page 12 undefined on input line 110.
-
-
-LaTeX Warning: Reference `tabb2' on page 12 undefined on input line 123.
-
-
-LaTeX Warning: Reference `plotb2' on page 12 undefined on input line 124.
-
-(./build/tabb2.tex) [12<./build/plotb1.pdf>]
-<build/plotb2.pdf, id=164, 417.7206pt x 258.00488pt>
-File: build/plotb2.pdf Graphic file (type pdf)
-<use build/plotb2.pdf>
-Package luatex.def Info: build/plotb2.pdf  used on input line 131.
-(luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [13]
-
-LaTeX Warning: Reference `eqn:spulenpaar' on page 14 undefined on input line 145.
-
-
-LaTeX Warning: Reference `tabb3' on page 14 undefined on input line 156.
-
-
-LaTeX Warning: Reference `plotb3' on page 14 undefined on input line 157.
-
-(./build/tabb3.tex) [14<./build/plotb2.pdf>]
-<build/plotb3.pdf, id=194, 417.7206pt x 258.00488pt>
-File: build/plotb3.pdf Graphic file (type pdf)
-<use build/plotb3.pdf>
-Package luatex.def Info: build/plotb3.pdf  used on input line 164.
-(luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [15]
-
-LaTeX Warning: Reference `eqn:spulenpaar' on page 16 undefined on input line 178.
-
-
-LaTeX Warning: Reference `tabc' on page 16 undefined on input line 193.
-
-
-LaTeX Warning: Reference `tabc2' on page 16 undefined on input line 195.
-
-
-LaTeX Warning: Reference `tabc3' on page 16 undefined on input line 197.
-
-
-LaTeX Warning: Reference `tabc4' on page 16 undefined on input line 197.
-
-
-LaTeX Warning: Reference `eqn:H' on page 16 undefined on input line 200.
-
-
-LaTeX Warning: Reference `plotc' on page 16 undefined on input line 203.
-
-(./build/tabc.tex) (./build/tabc3.tex [16<./build/plotb3.pdf>]) (./build/tabc2.tex
+(./build/taba1.tex
 ! Interruption.
-\__str_escape:n ..._kernel_tl_to_str:w \use:e {{#1
-                                                  }}}
-l.35 -519.5999999999999 &
-                        -3.0\\
+\use:e #1->\tex_expanded:D {#1}
+                               
+l.12 0.959 & 1.5\\
+                
 
 Here is how much of LuaTeX's memory you used:
- 43056 strings out of 494407
+ 42902 strings out of 494407
  100000,1648299 words of node,token memory allocated
- 32515 words of node memory still in use:
-   884 hlist, 9 vlist, 79 rule, 51 disc, 9 local_par, 4 dir, 230 math, 1230 glue, 221 kern, 29 penalty, 81 unset, 3 margin_kern, 803 glyph, 2 align_record, 1207 attribute, 91 glue_spec, 1207 attribute_list, 10 temp, 1 align_stack, 1 if_stack, 6 write, 3 pdf_dest nodes
-   avail lists: 1:2,2:671,3:265,4:45,5:79,6:91,7:1864,8:11,9:49,10:28,11:293
- 45868 multiletter control sequences out of 65536+600000
- 155 fonts using 56037751 bytes
+ 24691 words of node memory still in use:
+   207 hlist, 12 vlist, 22 rule, 170 disc, 15 local_par, 4 dir, 98 math, 520 glue, 131 kern, 80 penalty, 13 unset, 15 margin_kern, 1857 glyph, 2 align_record, 366 attribute, 91 glue_spec, 366 attribute_list, 11 temp, 1 align_stack, 1 if_stack, 9 write, 3 pdf_start_link, 3 pdf_end_link, 7 pdf_dest, 3 pdf_action nodes
+   avail lists: 1:2,2:4,3:44,4:33,5:28,7:684,8:28,9:3,10:28,11:179
+ 45832 multiletter control sequences out of 65536+600000
+ 155 fonts using 56037287 bytes
  61i,13n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!
