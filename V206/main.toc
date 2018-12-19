@@ -9,5 +9,7 @@
 \contentsline {subsection}{\numberline {2.4}Bestimmung des Massendurchsatzes}{5}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Bestimmung der mechanischen Kompressorleistung}{5}{subsection.2.5}
 \contentsline {section}{\numberline {3}Durchführung}{5}{section.3}
-\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
-\contentsline {section}{\numberline {5}Diskussion}{6}{section.5}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Bestimmung der Güteziffer}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Bestimmung des Massendurchsatzes}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung der mechanischen Kompressorleistung}{7}{subsection.4.3}
