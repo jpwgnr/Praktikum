@@ -12,7 +12,7 @@ from scipy.optimize import curve_fit
 t, T1, pa1, T2, pb1, N = np.genfromtxt("data/dataa.txt", unpack=True)
 pa= pa1+1
 pb= pb1+1
-tab1 = TexTable([t, T1, pb, T2, pa, N], [r"$t /\si{\minute}$", r"$T_{1} /\si{\degree\celsius}", r"$p_{b} / \si{\bar}", r"T_{2} /\si{\degree\celsius}", r"p_{a} /\si{\bar}", r"N /\si{\watt}"], label="tab1", caption="Die Temperatur in Reservoire 1 und Reservoir 2 und die dazugehörenden Drücke und die Leistungsaufnahme des Kompressors zu verschiedenen Zeitpunkten.", roundPrecision=2)
+tab1 = TexTable([t, T1, pb, T2, pa, N], [r"$t /\si{\minute}$", r"$T_{1} /\si{\degreeCelsius}", r"$p_{b} / \si{\bar}", r"T_{2} /\si{\degreeCelsius}", r"p_{a} /\si{\bar}", r"N /\si{\watt}"], label="tab1", caption="Die Temperatur in Reservoir 1 und Reservoir 2 und die dazugehörenden Drücke und die Leistungsaufnahme des Kompressors zu verschiedenen Zeitpunkten.", roundPrecision=2)
 tab1.writeFile("build/tab1.tex")
 
 tsi= t*60 
@@ -40,7 +40,7 @@ T3err= unp.uarray(T3si, 1)
 #extra values 
 #d)
 m1= ufloat(1, 0.0004) 
-cw= 4.182  
+cw= 4182  
 mk= 1
 ck= 750
 
@@ -50,7 +50,7 @@ p0= 1
  
 
 #f)
-rho= 5.51 
+rho= 5.51*1000 
 kappa= 1.14
 #functions 
 
@@ -58,7 +58,7 @@ def function1(t, a, b, c, d):
      return a*t**3+ b*t**2 + c*t+ d  
 
 def ableitung1(t, a, b, c):
-    return 3*a*t**2+ b*t + c
+    return 3*a*t**2+2*b*t + c
 
 def function2(t, a, b, c):
      return a/(1+b*(t**c)) 
@@ -119,20 +119,20 @@ L= ufloat(Steigung3,std_err1)
 m1= ((m2*cw + mk*ck)*dT21)/L
 m2= ((m2*cw + mk*ck)*dT22)/L
 m3= ((m2*cw + mk*ck)*dT23)/L
-m4= -((m2*cw + mk*ck)*dT24)/L
+m4= ((m2*cw + mk*ck)*dT24)/L
 
 #f)
 
-rho0= 5.51/18.01528
+rho0= 5.51/120.91
 rho1= (paerr[1]*rho0*273.15)/(1e5*T2err[1])
 rho2= (paerr[5]*rho0*273.15)/(1e5*T2err[5])
 rho3= (paerr[10]*rho0*273.15)/(1e5*T2err[10])
 rho4= (paerr[15]*rho0*273.15)/(1e5*T2err[15])
 
-Nmech1 = (1/(kappa-1))*(pberr[1]*(paerr[1]/pberr[1])**(1/kappa) - paerr[1])*(1/rho1)*m1
-Nmech2 = (1/(kappa-1))*(pberr[5]*(paerr[5]/pberr[5])**(1/kappa) - paerr[5])*(1/rho2)*m2
-Nmech3 = (1/(kappa-1))*(pberr[10]*(paerr[10]/pberr[10])**(1/kappa) - paerr[10])*(1/rho3)*m3
-Nmech4 = (1/(kappa-1))*(pberr[15]*(paerr[15]/pberr[15])**(1/kappa) - paerr[15])*(1/rho4)*m4
+Nmech1 = (1/(kappa-1))*(pberr[1]*(paerr[1]/pberr[1])**(1/kappa) - paerr[1])*(1/rho1)*m1/1000
+Nmech2 = (1/(kappa-1))*(pberr[5]*(paerr[5]/pberr[5])**(1/kappa) - paerr[5])*(1/rho2)*m2/1000
+Nmech3 = (1/(kappa-1))*(pberr[10]*(paerr[10]/pberr[10])**(1/kappa) - paerr[10])*(1/rho3)*m3/1000
+Nmech4 = (1/(kappa-1))*(pberr[15]*(paerr[15]/pberr[15])**(1/kappa) - paerr[15])*(1/rho4)*m4/1000
 
 #save solution 
 
