@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  19 DEC 2018 17:27
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  19 DEC 2018 18:48
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.171 seconds
+luaotfload | main : initialization completed in 0.167 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	table: 0x7ff953d081f0
 (polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x7ffc65377270
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	table: 0x7ff953d083b0
 (polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x7ffc65377430
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3309,10 +3309,7 @@ var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc) [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 6.
- (./main.toc
-Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
-3
-)
+ (./main.toc)
 \tf@toc=\write5
 
 \openout5 = main.toc
@@ -3320,7 +3317,7 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 
 ]
 (./content/Theorie.tex
-<build/1.png, id=46, 926.46124pt x 789.95125pt>
+<build/1.png, id=21, 926.46124pt x 789.95125pt>
 File: build/1.png Graphic file (type png)
 <use build/1.png>
 Package luatex.def Info: build/1.png  used on input line 61.
@@ -3337,71 +3334,60 @@ luc) [3]
 
 LaTeX Warning: Reference `eq:Q1' on page 4 undefined on input line 85.
 
-[4<./build/1.png>]) (./content/durchfuehrung.tex
-<build/2.png, id=63, 883.3pt x 796.9775pt>
+[4<./build/1.png>]) (./content/fehlerrechnung.tex) (./content/durchfuehrung.tex
+
+LaTeX Warning: Reference `fig:aufbau2' on page 5 undefined on input line 4.
+
+<build/2.png, id=42, 883.3pt x 796.9775pt>
 File: build/2.png Graphic file (type png)
 <use build/2.png>
 Package luatex.def Info: build/2.png  used on input line 12.
 (luatex.def)             Requested size: 284.52174pt x 284.52814pt.
-) (./content/auswertung.tex
-[5]
-<build/plot1.pdf, id=75, 417.7206pt x 258.00488pt>
+) (./content/auswertung.tex [5]
+
+LaTeX Warning: Reference `tab1' on page 6 undefined on input line 7.
+
+
+LaTeX Warning: Reference `fig:plot1' on page 6 undefined on input line 11.
+
+<build/plot1.pdf, id=55, 417.7206pt x 258.00488pt>
 File: build/plot1.pdf Graphic file (type pdf)
 <use build/plot1.pdf>
-Package luatex.def Info: build/plot1.pdf  used on input line 6.
-(luatex.def)             Requested size: 417.71957pt x 258.00424pt.
- [6<./build/2.png>])
+Package luatex.def Info: build/plot1.pdf  used on input line 16.
+(luatex.def)             Requested size: 284.52429pt x 284.53061pt.
+[6<./build/2.png>]
+! Undefined control sequence.
+\degreeCelsius ->\ERROR 
+                        
+l.34 \end{align*}
+               
+? 
+! Undefined control sequence.
+\degreeCelsius ->\ERROR 
+                        
+l.34 \end{align*}
+               
+? 
+! Undefined control sequence.
+\degreeCelsius ->\ERROR 
+                        
+l.34 \end{align*}
+               
+? X
 
-LaTeX Warning: Empty bibliography on input line 16.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
-[7<./build/plot1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
- (./main.aux
-Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
-26
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: B98D9C7F0154343FC502C918BD70420A;9710
-(rerunfilecheck)             After:  12E94F3FE1819599E40BCA2C4165E23A;9710.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: AFC7E74A1742B7EAC7E457ADB392709E;1220
-(rerunfilecheck)             After:  AE37257C115AE8857C2E163C6C286F87;1220.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-)
 
 Here is how much of LuaTeX's memory you used:
- 41856 strings out of 494413
- 100000,1648299 words of node,token memory allocated
- 653 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 22 attribute, 76 glue_spec, 22 attr
-ibute_list, 1 write nodes
-   avail lists: 1:2,2:438,3:98,4:33,5:184,6:25,7:2389,8:53,9:191,10:15,11:258
- 44717 multiletter control sequences out of 65536+600000
- 219 fonts using 81602559 bytes
- 61i,20n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 41644 strings out of 494413
+ 100000,1648299 words of node,token memory allocated 6279 words of node memory still in use:
+   88 hlist, 9 vlist, 14 rule, 39 disc, 4 local_par, 6 dir, 44 math, 113 glue, 3
+1 kern, 18 penalty, 13 unset, 1 style, 1 choice, 9 noad, 3 math_char, 4 sub_box,
+ 2 sub_mlist, 2 margin_kern, 311 glyph, 5 align_record, 136 attribute, 78 glue_s
+pec, 136 attribute_list, 10 temp, 1 align_stack, 2 write, 1 pdf_dest, 1 pdf_setm
+atrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:209,3:54,4:29,5:143,6:13,7:1923,8:26,9:86,10:15,11:219
+ 44575 multiletter control sequences out of 65536+600000
+ 153 fonts using 55668151 bytes
+ 61i,13n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
 f></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/xits/xits-math.otf><
 /usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-mat
@@ -3412,10 +3398,10 @@ atinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm
 /lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public
 /lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-bold.otf>
-Output written on main.pdf (7 pages, 218591 bytes).
+Output written on main.pdf (6 pages, 206757 bytes).
 
-PDF statistics: 201 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 131072)
- 97 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 122 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

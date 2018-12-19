@@ -16,4 +16,3 @@
 \contentsline {subsection}{\numberline {5.2}Magnetische Flussdichte eines Spulenpaares}{11}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Hysteresekurve einer Ringspule mit Luftspalt}{17}{subsection.5.3}
 \contentsline {section}{\numberline {6}Diskussion}{21}{section.6}
-\contentsline {section}{\nonumberline Literatur}{23}{section*.21}
