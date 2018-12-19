@@ -1,0 +1,14 @@
+\begin{table}\caption{Die Ergebnisse für die realen und idealen Gütewerte für die vier verschiedenen Temperaturwerte.}
+\label{tabsolution1}
+\centering
+\sisetup{round-mode = places, round-precision=2, round-integer-to-decimal=true}
+\begin{tabular}{S[]S[]} 
+\toprule
+{\nu_\text{real}} & {\nu_\text{ideal}}\\
+\midrule
+ 0.094 \pm 0.007 & 270 \pm 350\\
+ 0.082 \pm 0.007 & 25.8 \pm 3.1\\
+ 0.063 \pm 0.011 & 10.8 \pm 0.5\\
+ 0.024 \pm 0.018 & 7.50 \pm 0.23\\
+\bottomrule
+\end{tabular}\end{table}
