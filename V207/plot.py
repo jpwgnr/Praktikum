@@ -23,19 +23,19 @@ tab3 = TexTable([T2,t2], [r"T/\si{\kelvin}", r"t /\si{\second}"], label="tab3", 
 tab3.writeFile("build/tab3.tex")
 #extra values 
 #a)
-mbig=<++>
-msmall=4.4521/1000
-Vbig=<++>
-Vsmall=<++>
+mbig=4.21/1000 #kg
+msmall=3.71/1000 #kg
+Vbig=(0.0158/2)**3 *(4/3)*np.pi #m^3
+Vsmall=(0.0156)**3 * (4/3) *np.pi #m^3
 
 #b)
-rhoFl= <++> 
+rhoFl= 0.9982067*1000 # kg/m^3
 x = 0.1 #m 
-Ksmall= 0.07640*e-6 
+Ksmall= 0.07640*1e-6 
 
-#g) 
-vwater= <++>
-
+#e)
+dbig= 0.0158
+dsmall= 0.0156
 #functions 
 
 def func(x):
@@ -55,14 +55,17 @@ tsmall=ufloat(t1small.mean(), t1small.std())
 tbig= ufloat(t1big.mean(), t1big.std())
 
 #c)
-eta= Ksmall* (rhosmall- rhoFl)*t1
+eta= Ksmall* (rhosmall- rhoFl)*tsmall
 Kbig=eta/((rhobig-rhoFl)*tbig)
 
 #d) 
-eta1= Kbig*(rhobig- rhoFl)*t1 
-eta2= Kbig*(rhobig- rhoFl)*t2 
+eta1=np.abs(Kbig.nominal_value*(rhobig- rhoFl)*t1) 
+eta2= np.abs(Kbig.nominal_value*(rhobig- rhoFl)*t2) 
+
+#g) 
+vwater1= x/tsmall
+vwater2= x/tbig
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
- 
 params1, pcov1 = curve_fit(getEta, T1, np.log(eta1))
 params2, pcov2 = curve_fit(getEta, T2, np.log(eta2))
 
@@ -70,13 +73,14 @@ newT1= np.linspace(T1[0], T1[-1], 200)
 newT2= np.linspace(T2[0], T2[-1], 200)
 
 #e)
-rey1= rhoFl*dbig*vwater/eta 
+rey1= rhoFl*dsmall*vwater1/eta 
+rey1= rhoFl*dbig*vwater2/eta 
 
 
 #save solution 
 
 file = open("build/solution.txt", "w")
-file.write("Dichte_klein= {}\nDichte_groß= {}\nDichte_Fl= {}\nA1= {}\nB1= {}\nA2= {}\nB2= {}\nReynoldsche Zahl= {}".format(rhosmall, rhobig, rhoFl, params1[0], params1[1], params2[0], params2[1], rey1)
+file.write("Dichte_klein= {}\nDichte_groß= {}\nDichte_Fl= {}\nA1= {}\nB1= {}\nA2= {}\nB2= {}\nReynoldsche Zahl= {}".format(rhosmall, rhobig, rhoFl, params1[0], params1[1], params2[0], params2[1], rey1))
 file.close()
 
 #Make plots for data
