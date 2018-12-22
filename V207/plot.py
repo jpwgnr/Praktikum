@@ -5,6 +5,7 @@ from uncertainties import ufloat
 from table import TexTable
 from scipy import stats
 from scipy.optimize import curve_fit
+from math import *
 #Generate data 
 
 #from txt
@@ -26,67 +27,63 @@ tab3.writeFile("build/tab3.tex")
 mbig=4.21/1000 #kg
 msmall=3.71/1000 #kg
 Vbig=(0.0158/2)**3 *(4/3)*np.pi #m^3
-Vsmall=(0.0156)**3 * (4/3) *np.pi #m^3
+Vsmall=(0.0156/2)**3 * (4/3) *np.pi #m^3
 
 #b)
 rhoFl= 0.9982067*1000 # kg/m^3
 x = 0.1 #m 
-Ksmall= 0.07640*1e-6 
+Ksmall= 0.07640*1e-6 #Pa/kg *m^3
 
 #e)
 dbig= 0.0158
 dsmall= 0.0156
 #functions 
 
-def func(x):
-    return x+1
-
-def f(x, a, b, c, d):
-     return a * np.sin(b * x + c) + d
-
 def getEta(T, A, B):
-    return np.log(A)*(B/T) 
+    return np.log(A*np.exp(B*T)) 
+
 #calculate 
 #a)
 rhobig= mbig/Vbig 
 rhosmall = msmall/Vsmall 
+
 #b)
 tsmall=ufloat(t1small.mean(), t1small.std())
 tbig= ufloat(t1big.mean(), t1big.std())
 
 #c)
 eta= Ksmall* (rhosmall- rhoFl)*tsmall
-Kbig=eta/((rhobig-rhoFl)*tbig)
+Kbig= eta/((rhobig-rhoFl)*tbig)
 
 #d) 
-eta1=np.abs(Kbig.nominal_value*(rhobig- rhoFl)*t1) 
-eta2= np.abs(Kbig.nominal_value*(rhobig- rhoFl)*t2) 
+eta1=Kbig.nominal_value*(rhobig- rhoFl)*t1 
+eta2=Kbig.nominal_value*(rhobig- rhoFl)*t2 
 
-#g) 
 vwater1= x/tsmall
 vwater2= x/tbig
+
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
-params1, pcov1 = curve_fit(getEta, T1, np.log(eta1))
-params2, pcov2 = curve_fit(getEta, T2, np.log(eta2))
+params1, pcov1 = curve_fit(getEta, 1/T1,np.log(eta1))
+params2, pcov2 = curve_fit(getEta, 1/T2,np.log(eta2) )
 
 newT1= np.linspace(T1[0], T1[-1], 200)
 newT2= np.linspace(T2[0], T2[-1], 200)
 
 #e)
-rey1= rhoFl*dsmall*vwater1/eta 
-rey1= rhoFl*dbig*vwater2/eta 
+rey1=(rhoFl*dsmall*vwater1)/eta 
+rey2=(rhoFl*dbig*vwater2)/eta 
 
 
 #save solution 
 
 file = open("build/solution.txt", "w")
-file.write("Dichte_klein= {}\nDichte_groß= {}\nDichte_Fl= {}\nA1= {}\nB1= {}\nA2= {}\nB2= {}\nReynoldsche Zahl= {}".format(rhosmall, rhobig, rhoFl, params1[0], params1[1], params2[0], params2[1], rey1))
+file.write("Dichte_klein= {}\nDichte_groß= {}\nDichte_Fl= {}\nA1= {}\nB1= {}\nA2= {}\nB2= {}\nReynoldsche Zahl Kugel_small= {}\nReynoldsche Zahl Kugel_big= {}".format(rhosmall, rhobig, rhoFl, params1[0], params1[1], params2[0], params2[1], rey1, rey2))
 file.close()
 
 #Make plots for data
 plt.figure(1)
 plt.plot(1/T1, np.log(eta1), "xr", label="Daten")
-plt.plot(1/newT1, function(newT1, *params1), "r--", label="Fit", linewidth=1.0)
+plt.plot(1/newT1, getEta(1/newT1, *params1), "r--", label="Fit", linewidth=1.0)
 plt.xlabel(r"$\frac{1}{T}/\si[per-mode=fraction]{\per\kelvin}$")
 plt.ylabel(r"$log(\eta)$")
 plt.legend(loc="best")
@@ -95,7 +92,7 @@ plt.savefig("build/plot1.pdf")
 
 plt.figure(2)
 plt.plot(1/T2, np.log(eta2), "xr", label="Daten")
-plt.plot(1/newT2, function(newT2, *params2), "r--", label="Fit", linewidth=1.0)
+plt.plot(1/newT2, getEta(1/newT2, *params2), "r--", label="Fit", linewidth=1.0)
 plt.xlabel(r"$\frac{1}{T}/\si[per-mode=fraction]{\per\kelvin}$")
 plt.ylabel(r"$log(\eta)$")
 plt.legend(loc="best")

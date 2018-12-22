@@ -1,0 +1,9 @@
+Dichte_klein= 1866.3861037492156
+Dichte_groß= 2038.5070260675504
+Dichte_Fl= 998.2067
+A1= 5.656083057522266e-08
+B1= 3012.120978630618
+A2= 3.758078533312452e-08
+B2= 3140.8723201203693
+Reynoldsche Zahl Kugel_small= 172.7+/-3.1
+Reynoldsche Zahl Kugel_big= 31.27+/-0.31
