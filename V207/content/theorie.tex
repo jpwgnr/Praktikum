@@ -6,6 +6,7 @@ Kugelfall-Viskosimeter zu bestimmen.
 \section{Theorie}
 \label{sec:Theorie}
 
+\subsection{Dynamische Viskosität}
 Ein Körper, der sich in einer Flüssigkeit bewegt, wird von verschiedenen Kräften beeinflusst. 
 Es wirken die Reibungskraft, die Schwerkraft und die Auftriebskraft. 
 Die Reibungskraft hängt dabei von verschiedenen Faktoren ab:
@@ -17,10 +18,9 @@ Mit dem Kugelfallviskosimeter lässt sich diese Viskosität bestimmen.
 Dafür wird eine Kugel in einer Flüssigkeit, deren Ausdehnung hinreichend groß ist, 
 damit sich keine Wirbel bilden, fallen gelassen. 
 Die Stokes'sche Reibung lässt sich folgendermaßen beschreiben:
-\begin{equation}
-    F_R = 6\pi \eta v r.
-    \label{eqn:stokes}
-\end{equation}
+\begin{equation*}
+    F_R = 6 \, \pi \, \eta \, v \, r.
+\end{equation*}
 Beim Fallen nimmt die Reibung mit zunehmender Geschwindigkeit immer weiter zu, 
 bis sich ein Kräftegleichgewicht einstellt. 
 Die Reibungs- und Auftriebskraft wirken entgegen der Schwerkraft. 
@@ -33,24 +33,39 @@ Es gilt:
     \eta = K (\rho_K -\rho_{Fl}) \cdot t.
     \label{eqn:eta}
 \end{equation}
+Die Apparaturkonstante $K$ kann also folgendermaßen bestimmt werden:
+\begin{equation}
+    K = \frac{\eta}{(\rho_{K}-\rho_{Fl}) \cdot t}.
+    \label{eqn:K}
+\end{equation}
+Die Dichte einer Kugel lässt sich mit dem Durchmesser $d$ und der Masse $m$ durch 
+\begin{equation}
+    \rho = \frac{m}{V} = \frac{m}{\frac{4}{3} \, \pi \, \left( \frac{d}{2} \right)^3}
+    \label{eqn:dichte}
+\end{equation}
+bestimmen.
 Die Temperaturabhängigkeit der Viskosität lässt sich mit der Andradeschen Gleichung 
 beschreiben: 
 \begin{equation}
-    \eta(T) = A exp(\frac{B}{T}). %höhere Klammern
-    \label{eqn:Temperatur}
+    \eta(T) = A exp \left( \frac{B}{T} \right). %höhere Klammern
+    \label{eqn:temp}
 \end{equation}
 $A$ und $B$ sind hier Konstanten.
 
-%Reynoldszahlen
+\subsection{Reynoldszahlen}
 Die Reynoldszahlen geben das Verhältnis von Trägheits- zu
 Zähigkeitskräften an:
 \begin{equation*}
-    Re = \frac{\rho v x}{\eta}.
+    Re = \frac{\rho \, v \, x}{\eta}.
 \end{equation*}
 Mit der Fallgeschwindigkeit
-\begin{equation*}
+\begin{equation}
     v = \frac{x}{t}
-\end{equation*}
+    \label{eqn:v}
+\end{equation}
 werden die Reynoldszahlen mittels
-
+\begin{equation}
+    Re = \frac{\rho \, x^2}{\eta \, t}.
+    \label{eqn:Re}
+\end{equation}
 berechnet.

@@ -1,30 +1,50 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Überprüfung der Strömung auf Laminarität} %Laminarität ist kein Wort, Überschrift ändern
-Die Falldauern der kleinen und der großen Kugel im Kugelfall-Viskosimeter
-bei Raumtemperatur befinden sich in Tabelle \ref{tab1}.
-%Daraus besser zwei Tabellen machen?:
-\input{build/tab1.tex}
-\noindent Die Fallstrecke beträgt 
+\subsection{Bestimmung der Apparaturkonstante für die große Kugel}
+Die Fallstrecke beträgt 
 \begin{equation*}
     x = \SI{10}{\centi\meter}.
 \end{equation*}
 Die Masse, der Durchmesser und die Apparaturkonstante der kleinen Kugel sind:
 \begin{align*}
     m_\text{klein} &= \SI{3.71}{\gram} \\
-    d_\text{klein} &= \SI{1.56}{\centi\meter} \\
-    K_\text{klein} &= \SI{0.07640}{\milli\pascal\cubic\centi\meter\per\gram}.
+    d_\text{klein} &= \SI{0.0156}{\meter} \\
+    K_\text{klein} &= \SI{76.4}{\nano\pascal\cubic\meter\per\kilo\gram}.
 \end{align*}
 Die Masse und der Durchmesser der großen Kugel sind:
 \begin{align*}
     m_\text{groß} &= \SI{4.21}{\gram} \\
-    d_\text{groß} &= \SI{1.58}{\gram}. \\
+    d_\text{groß} &= \SI{0.0158}{\meter}. \\
 \end{align*}
-Die Apparaturkonstante der großen Kugel lässt sich mit %...
-bestimmen:
+Die Dichte des destillierten Wassers beträgt
 \begin{equation*}
-    K_\text{groß} = \SI{}{}.
+    \rho_\text{Fl} = \SI{998.2067}{\kilo\gram\per\cubic\meter}.
+\end{equation*}
+Aus der Masse und dem Volumen der Kugeln ergibt sich jeweils mittels Gleichung \eqref{eqn:dichte}
+die Dichte der Kugel:
+\begin{align*}
+    \rho_\text{klein} &= \SI{1866.39}{\kilo\gram\per\cubic\meter} \\
+    \rho_\text{groß} &= \SI{2038.51}{\kilo\gram\per\cubic\meter}.
+\end{align*}
+Die Falldauern der kleinen und der großen Kugel im Kugelfall-Viskosimeter
+bei Raumtemperatur befinden sich in Tabelle \ref{tab1}.
+%Daraus besser zwei Tabellen machen?:
+\input{build/tab1.tex}
+\noindent Für die mittleren Falldauern ergibt sich mit Gleichung \eqref{eqn:mittelwert} %und Standardabweichung?
+\begin{align*}
+    t_\text{klein} &= \SI{11.66 \pm 0.10}{\second} \\
+    t_\text{groß} &= \SI{65.21 \pm 0.30}{\second}.
+\end{align*}
+Mit Gleichung \eqref{eqn:eta} berechnet sich die Viskosität mit $K_\text{klein}$,
+$\rho_\text{klein}$ und $t_\text{klein}$ zu
+\begin{equation*}
+    \eta = \SI{77.3(7)}{\milli\pascal\second}.
+\end{equation*}
+Mit diesem Wert folgt für die Apparaturkonstante $K_\text{groß}$
+mittels Gleichung \eqref{eqn:K}
+\begin{equation*}
+    K_\text{groß} = \SI{11.40(11)}{\nano\pascal\cubic\meter\per\kilo\gram}.
 \end{equation*}
 
 \subsection{Bestimmung der Temperaturabhängigkeit der Viskosität von destilliertem Wasser}
@@ -33,9 +53,51 @@ Die Falldauern der großen Kugel für verschiedene Temperaturen sind in den Tabe
 %Daraus besser eine Tabelle machen?:
 \input{build/tab2.tex}
 \input{build/tab3.tex}
+\noindent Die Viskositäten für die Falldauern der ersten und der zweiten Messung
+sind in Tabelle \ref{tab4} zu finden.
+\input{build/tab4.tex}
+\noindent Das Inverse der Zeit gegen die logarithmierte Viskosität für die erste
+Messung ist in Tabelle \ref{tab5} und für die zweite Messung in Tabelle
+\ref{tab6} dargestellt.
+Diese Werte sind für die erste Messung in Abb. \ref{fig:plot1} und für
+die zweite Messung in Abb. \ref{fig:plot2} gegeneinander aufgetragen.
+\input{build/tab5.tex}
+\input{build/tab6.tex}
+\begin{figure}
+    \centering
+    \includegraphics[width=14cm, height=10cm]{build/plot1.pdf}
+    \caption{Die logarithmierte Viskosität ist gegen das Inverse
+    der Falldauer der ersten Messung aufgetragen. Die Parameter
+    aus Gleichung \eqref{eqn:temp} sind $A_1=\SI{0.566(515)}{\nano\pascal\second}$
+    und $B_1=\SI{3012.12 \pm 304.10}{\kelvin}$.}
+    \label{fig:plot1}
+\end{figure}
 
-%Plot ln(eta) gegen 1/T
-%A und B bestimmen
+\begin{figure}
+    \centering
+    \includegraphics[width=14cm, height=10cm]{build/plot2.pdf}
+    \caption{Die logarithmierte Viskosität ist gegen das Inverse
+    der Falldauer der zweiten Messung aufgetragen. Die Parameter
+    aus Gleichung \eqref{eqn:temp} sind $A_2=\SI{0.376(251)}{\nano\pascal\second}$
+    und $B_2=\SI{3140.87 \pm 223.67}{\kelvin}$.}
+    \label{fig:plot2}
+\end{figure}
 
-%Reynoldszahlen berechnen
-%Strömung laminar?
+\subsection{Bestimmung der Reynoldszahlen}
+Die Geschwindigkeit der kleinen Kugel ergibt sich mit Gleichung \eqref{eqn:v}
+und der Falldauer $t_\text{klein}$ zu
+\begin{equation*}
+    v_\text{klein} = \SI{8.58(08)}{\milli\meter\per\second}.
+\end{equation*}
+Mit Gleichung \eqref{eqn:Re} folgt für die Reynoldszahl für die kleine Kugel
+\begin{equation*}
+    Re_\text{klein} = \num{172.7 \pm 3.1}.
+\end{equation*}
+Die Geschwindigkeit der großen Kugel ist
+\begin{equation*}
+    v_\text{groß} = \SI{1.534(007)}{\milli\meter\per\second}.
+\end{equation*}
+Die Reynoldszahl für die große Kugel ergibt sich auf die gleiche Weise zu
+\begin{equation*}
+    Re_\text{groß} = \num{31.27 \pm 0.31}.
+\end{equation*}
