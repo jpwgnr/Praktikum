@@ -1,4 +1,7 @@
 \section{Ziel}
+Das Ziel dieses Versuchs ist es, die Temperaturabhängigkeit
+der dynamischen Viskosität von destilliertem Wasser mittels
+Kugelfall-Viskosimeter zu bestimmen.
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -9,36 +12,45 @@ Die Reibungskraft hängt dabei von verschiedenen Faktoren ab:
 Von der Berührungsfläche $A$, der Geschwindigkeit $v$ und
 der sogenannten dynamischen Viskosität $\eta$. 
 Diese ist eine Materialkonstante der Flüssigkeit und hängt stark von der Temperatur dieser Flüssigkeit ab. 
-%Zur Durchführung:
-% Mit dem Kugelfallviskosimeter lässt sich diese Viskosität bestimmen. 
-% Dafür wird eine Kugel in einer Flüssigkeit, deren Ausdehnung hinreichend groß ist, 
-% damit sich keine Wirbel bilden, fallen gelassen. 
+\newline
+Mit dem Kugelfallviskosimeter lässt sich diese Viskosität bestimmen. 
+Dafür wird eine Kugel in einer Flüssigkeit, deren Ausdehnung hinreichend groß ist, 
+damit sich keine Wirbel bilden, fallen gelassen. 
 Die Stokes'sche Reibung lässt sich folgendermaßen beschreiben:
 \begin{equation}
     F_R = 6\pi \eta v r.
-    \label{eq:Stokes}
+    \label{eqn:stokes}
 \end{equation}
 Beim Fallen nimmt die Reibung mit zunehmender Geschwindigkeit immer weiter zu, 
 bis sich ein Kräftegleichgewicht einstellt. 
-Die Reibungs- und Auftriebskraft stehen der Schwerkraft gegenüber. 
-%Zur Durchführung:
-% Beim Kugelfallviskosimeter nach Höppler lässt man die Kugel in einem Rohr fallen, 
-% dessen Radius nur geringfügig größer ist als der Radius der Kugel. 
-% Da beim senkrechten Fall evtl Wirbel entstehen würden und die Kugel unkontrolliert an die Rohrwand stoßen würde, 
-% wird das Fallrohr um einen kleinen Winkel gekippt, sodass die Kugel an der Rohrwand heruntergleiten kann und 
-% sich keine Wirbel bilden. 
+Die Reibungs- und Auftriebskraft wirken entgegen der Schwerkraft. 
 Die Viskosität $\eta$ lässt sich aus der Fallzeit $t$, 
 der Dichte der Flüssigkeit $\rho_Fl$ und der Dichte der Kugel $\rho_K$ bestimmen.
-Der Proportionalitätsfaktor K ist eine Apparaturkonstante und enthält sowohl die Höhe,
+Der Proportionalitätsfaktor $K$ ist eine Apparaturkonstante und enthält sowohl die Höhe,
 als auch die Kugelgeometrie.
 Es gilt:
 \begin{equation}
-    \eta = K (\rho_K -\rho_Fl) \cdot t.
-    \label{eq:nu}
+    \eta = K (\rho_K -\rho_{Fl}) \cdot t.
+    \label{eqn:eta}
 \end{equation}
-Die Temperaturabhängigkeit der Viskosität lässt sich mit der Andradeschen Gleichung für viele Flüssigkeiten 
+Die Temperaturabhängigkeit der Viskosität lässt sich mit der Andradeschen Gleichung 
 beschreiben: 
 \begin{equation}
-    \eta(T) = A exp(\frac{B}{T}).
-    \label{eq:Temperatur}
+    \eta(T) = A exp(\frac{B}{T}). %höhere Klammern
+    \label{eqn:Temperatur}
 \end{equation}
+$A$ und $B$ sind hier Konstanten.
+
+%Reynoldszahlen
+Die Reynoldszahlen geben das Verhältnis von Trägheits- zu
+Zähigkeitskräften an:
+\begin{equation*}
+    Re = \frac{\rho v x}{\eta}.
+\end{equation*}
+Mit der Fallgeschwindigkeit
+\begin{equation*}
+    v = \frac{x}{t}
+\end{equation*}
+werden die Reynoldszahlen mittels
+
+berechnet.

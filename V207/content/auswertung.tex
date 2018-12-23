@@ -1,11 +1,41 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
- \centering
- \includegraphics{<++>}
- \caption{<++>}
- \label{fig:<++>}
-\end{figure}
+\subsection{Überprüfung der Strömung auf Laminarität} %Laminarität ist kein Wort, Überschrift ändern
+Die Falldauern der kleinen und der großen Kugel im Kugelfall-Viskosimeter
+bei Raumtemperatur befinden sich in Tabelle \ref{tab1}.
+%Daraus besser zwei Tabellen machen?:
+\input{build/tab1.tex}
+\noindent Die Fallstrecke beträgt 
+\begin{equation*}
+    x = \SI{10}{\centi\meter}.
+\end{equation*}
+Die Masse, der Durchmesser und die Apparaturkonstante der kleinen Kugel sind:
+\begin{align*}
+    m_\text{klein} &= \SI{3.71}{\gram} \\
+    d_\text{klein} &= \SI{1.56}{\centi\meter} \\
+    K_\text{klein} &= \SI{0.07640}{\milli\pascal\cubic\centi\meter\per\gram}.
+\end{align*}
+Die Masse und der Durchmesser der großen Kugel sind:
+\begin{align*}
+    m_\text{groß} &= \SI{4.21}{\gram} \\
+    d_\text{groß} &= \SI{1.58}{\gram}. \\
+\end{align*}
+Die Apparaturkonstante der großen Kugel lässt sich mit %...
+bestimmen:
+\begin{equation*}
+    K_\text{groß} = \SI{}{}.
+\end{equation*}
 
+\subsection{Bestimmung der Temperaturabhängigkeit der Viskosität von destilliertem Wasser}
+Die Falldauern der großen Kugel für verschiedene Temperaturen sind in den Tabellen
+\ref{tab2} und \ref{tab3} dargestellt.
+%Daraus besser eine Tabelle machen?:
+\input{build/tab2.tex}
+\input{build/tab3.tex}
 
+%Plot ln(eta) gegen 1/T
+%A und B bestimmen
+
+%Reynoldszahlen berechnen
+%Strömung laminar?
