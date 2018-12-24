@@ -41,9 +41,10 @@ Prozess der Wärmeübertragung reversibel, also umkehrbar, ist.
     Q_1 = W+ \frac{T_2}{T_1} Q_1 
 \end{equation*}
 gilt und sich die Güteziffer $\nu$ zu folgender Gleichung ergibt: 
-\begin{equation*}
+\begin{equation}
     \nu_{id}= \frac{T_1}{T_1-T_2}.
-\end{equation*} 
+    \label{eqn:ideal}
+\end{equation} 
 
 \noindent Dies gilt aber nur im Idealfall. Für die reale Wärmepumpe gilt die 
 Ungleichung:
@@ -73,12 +74,13 @@ gewonnene Wärmemenge zu
     \frac{\Delta Q_1}{\Delta t} = (m_1 c_w + m_k c_k)\frac{\Delta T_1}{\Delta t}.
     \label{eqn:Q1}
 \end{equation*}
-$m_1 c_w$ ist dabei die Wärmekapazität des Wassers in Reservoir $\num{1}$. $m_kc_k$ ist die 
+$m_1 c_w$ ist dabei die Wärmekapazität des Wassers in Reservoir $\num{1}$. $m_k c_k$ ist die 
 Wärmekapazität der Kupferschlange und des Eimers. Für die Güteziffer ergibt sich dann 
 mit $N$ als die vom Wattmeter angezeigte und über das Zeitintervall $\Delta t$ 
 gemittelte Leistungsaufnahme des Kompressors:
 \begin{equation}
-    \nu = \frac{\Delta Q_1}{\Delta t \cdot N}. 
+    \nu = \frac{\Delta Q_1}{\Delta t \cdot N} = \frac{(m_1 c_\text{w} + m_\text{k} c_\text{k})}{N} \frac{\Delta T_1}{\Delta t}.
+    \label{eqn:güteziffer}
 \end{equation}
 
 \subsection{Bestimmung des Massendurchsatzes}
@@ -91,7 +93,8 @@ verbraucht:
 \end{equation*}
 Der Massendurchsatz wird also durch
 \begin{equation}
-    \frac{\Delta m}{\Delta t} = \frac{\Delta Q_2}{\Delta t \cdot L} 
+    \frac{\Delta m}{\Delta t} = \frac{\Delta Q_2}{\Delta t \cdot L}
+    \label{eqn:massendurchsatz}
 \end{equation}
 bestimmt.
 
@@ -99,6 +102,7 @@ bestimmt.
 Die mechanische Kompressorleistung $N_{mech}$ ergibt sich zu
 \begin{equation}
     N_{mech} = \frac{1}{\kappa - 1} (p_b \sqrt[\kappa]{\frac{p_a}{p_b}} - p_a)\frac{1}{\rho}\frac{\Delta m}{\Delta t}. 
+    \label{eqn:nmech}
 \end{equation}
 Dabei ist $\kappa$ das Verhältnis der Molwärmen $C_P$ und $C_V$.$\rho$ ist die Dichte
 des Transportmediums im gasförmigen Zustand. Diese wird bestimmt durch
@@ -106,4 +110,3 @@ des Transportmediums im gasförmigen Zustand. Diese wird bestimmt durch
     \rho = \frac{p_a}{p_0} \frac{T_0}{T_2} \rho_0.
 \end{equation*}
 Die Normalbedingungen lauten $p_0 = \SI{e5}{\pascal}$ und $T_0 = \SI{273.15}{\kelvin}$.
-%In Pascal und Kelvin umrechnen.

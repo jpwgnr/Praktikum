@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  19 DEC 2018 18:48
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  23 DEC 2018 18:04
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.167 seconds
+luaotfload | main : initialization completed in 0.169 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
+(polyglossia)            synonyms	table: 0x7fa0e13dfd30
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x7ffc65377270
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            hyphenation	
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            synonyms	table: 0x7fa0e13dfef0
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x7ffc65377430
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            hyphenation	
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3175,233 +3175,4 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
-Dictionary: translator-basic-dictionary, Language: English 
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
-File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
-)
-.................................................
-. chemgreek info: "mapping-activated"
-. 
-. Activating mapping `fontspec' on line 3.
-.................................................
- (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count444
-\scratchdimen=\dimen262
-\scratchbox=\box58
-\nofMPsegments=\count445
-\nofMParguments=\count446
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count447
-\MPscratchDim=\dimen263
-\MPnumerator=\count448
-\makeMPintoPDFobject=\count449
-\everyMPtoPDFconversion=\toks29
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
-8.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
-,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 3.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of spacing.
-Package microtype Info: No adjustment of kerning.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mode
-rn Roman (RS)
-)
-Package biblatex Info: LuaTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-
-\openout4 = main.bcf
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 3.
-Package biblatex Info: Reference segment=0 on input line 3.
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count450
-)
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LatinModernMath' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `XITSMath' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/lmsans10-regular.luc)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/lmsans8-regular.luc)(load luc: /Users/Karina/Library/texlive/2018/texmf-v
-ar/luatex-cache/generic/fonts/otl/lmmono10-regular.luc)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/lmmono8-regular.luc)(load luc: /Users/Karina/Library/texlive/2018/texmf-v
-ar/luatex-cache/generic/fonts/otl/lmsans10-bold.luc)(load luc: /Users/Karina/Lib
-rary/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc
-)
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 6.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 6.
-(load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/lmsans12-regular.luc)(load luc: /Users/Karina/Library/texlive/2018/texmf-
-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc) [1
-
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 6.
- (./main.toc)
-\tf@toc=\write5
-
-\openout5 = main.toc
- [2
-
-]
-(./content/Theorie.tex
-<build/1.png, id=21, 926.46124pt x 789.95125pt>
-File: build/1.png Graphic file (type png)
-<use build/1.png>
-Package luatex.def Info: build/1.png  used on input line 61.
-(luatex.def)             Requested size: 284.52818pt x 284.52687pt.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 65.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 65.
-(load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/lmroman7-regular.luc)(load luc: /Users/Karina/Library/texlive/2018/texmf-
-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)(load luc: /Users/Karina
-/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.
-luc) [3]
-
-LaTeX Warning: Reference `eq:Q1' on page 4 undefined on input line 85.
-
-[4<./build/1.png>]) (./content/fehlerrechnung.tex) (./content/durchfuehrung.tex
-
-LaTeX Warning: Reference `fig:aufbau2' on page 5 undefined on input line 4.
-
-<build/2.png, id=42, 883.3pt x 796.9775pt>
-File: build/2.png Graphic file (type png)
-<use build/2.png>
-Package luatex.def Info: build/2.png  used on input line 12.
-(luatex.def)             Requested size: 284.52174pt x 284.52814pt.
-) (./content/auswertung.tex [5]
-
-LaTeX Warning: Reference `tab1' on page 6 undefined on input line 7.
-
-
-LaTeX Warning: Reference `fig:plot1' on page 6 undefined on input line 11.
-
-<build/plot1.pdf, id=55, 417.7206pt x 258.00488pt>
-File: build/plot1.pdf Graphic file (type pdf)
-<use build/plot1.pdf>
-Package luatex.def Info: build/plot1.pdf  used on input line 16.
-(luatex.def)             Requested size: 284.52429pt x 284.53061pt.
-[6<./build/2.png>]
-! Undefined control sequence.
-\degreeCelsius ->\ERROR 
-                        
-l.34 \end{align*}
-               
-? 
-! Undefined control sequence.
-\degreeCelsius ->\ERROR 
-                        
-l.34 \end{align*}
-               
-? 
-! Undefined control sequence.
-\degreeCelsius ->\ERROR 
-                        
-l.34 \end{align*}
-               
-? X
-
-
-Here is how much of LuaTeX's memory you used:
- 41644 strings out of 494413
- 100000,1648299 words of node,token memory allocated 6279 words of node memory still in use:
-   88 hlist, 9 vlist, 14 rule, 39 disc, 4 local_par, 6 dir, 44 math, 113 glue, 3
-1 kern, 18 penalty, 13 unset, 1 style, 1 choice, 9 noad, 3 math_char, 4 sub_box,
- 2 sub_mlist, 2 margin_kern, 311 glyph, 5 align_record, 136 attribute, 78 glue_s
-pec, 136 attribute_list, 10 temp, 1 align_stack, 2 write, 1 pdf_dest, 1 pdf_setm
-atrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:209,3:54,4:29,5:143,6:13,7:1923,8:26,9:86,10:15,11:219
- 44575 multiletter control sequences out of 65536+600000
- 153 fonts using 55668151 bytes
- 61i,13n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
-f></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/xits/xits-math.otf><
-/usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-mat
-h.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bol
-d.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmod
-ern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/l
-atinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm
-/lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public
-/lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/pub
-lic/lm/lmsans10-bold.otf>
-Output written on main.pdf (6 pages, 206757 bytes).
-
-PDF statistics: 122 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+Dictionary: translator-basic-dictionary, La
