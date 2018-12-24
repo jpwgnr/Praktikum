@@ -1,0 +1,3 @@
+Formel: 3*a*t**2 + 2*b*t + c
+
+Fehlerfortpflanzung: \sqrt{9 \sigma_{a}^{2} t^{4} + 4 \sigma_{b}^{2} t^{2} + \sigma_{c}^{2} + \sigma_{t}^{2} \left(6 a t + 2 b\right)^{2}}

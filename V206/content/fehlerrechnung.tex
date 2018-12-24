@@ -1,2 +1,19 @@
 \section{Fehlerrechnung}
 
+%c) Fehler der Ableitung
+\sqrt{9 \sigma_{a}^{2} t^{4} + 4 \sigma_{b}^{2} t^{2} + \sigma_{c}^{2} + \sigma_{t}^{2} \left(6 a t + 2 b\right)^{2}}
+
+%d) Fehler der Güte
+\sqrt{\frac{T^{2} c_{w}^{2} \sigma_{m_{1}}^{2}}{N^{2} t^{2}} + \frac{T^{2} \sigma_{t}^{2}}{N^{2} t^{4}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2} + \frac{\sigma_{T}^{2}}{N^{2} t^{2}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2} + \frac{T^{2} \sigma_{N}^{2}}{N^{4} t^{2}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2}}
+
+%d) Fehler der idealen Güte
+\sqrt{\frac{T_{1}^{2} \sigma_{T_{2}}^{2}}{\left(T_{1} - T_{2}\right)^{4}} + \sigma_{T_{1}}^{2} \left(- \frac{T_{1}}{\left(T_{1} - T_{2}\right)^{2}} + \frac{1}{T_{1} - T_{2}}\right)^{2}}
+
+%e) Fehler des Massendurchsatzes (Delta m_1 / Delta t)
+\sqrt{\frac{T_{2}^{2} c_{w}^{2} \sigma_{m_{2}}^{2}}{L^{2} t^{2}} + \frac{T_{2}^{2} \sigma_{t}^{2}}{L^{2} t^{4}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} + \frac{\sigma_{T_{2}}^{2}}{L^{2} t^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} + \frac{T_{2}^{2} \sigma_{L}^{2}}{L^{4} t^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2}}
+
+%Fehler der Dichte
+\sqrt{\frac{T_{0}^{2} \sigma_{p_{a}}^{2} \rho_{0}^{2}}{T_{a}^{2} p_{0}^{2}} + \frac{T_{0}^{2} \sigma_{T_{a}}^{2} p_{a}^{2} \rho_{0}^{2}}{T_{a}^{4} p_{0}^{2}}}
+
+%Fehler der mechanischen Kompressorleistung
+\sqrt{\frac{\sigma_{m}^{2} \left(- p_{a} + p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}\right)^{2}}{\rho_{0}^{2} t^{2} \left(\kappa - 1\right)^{2}} + \frac{\sigma_{p_{a}}^{2} m^{2} \left(-1 + \frac{p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}}{\kappa p_{a}}\right)^{2}}{\rho_{0}^{2} t^{2} \left(\kappa - 1\right)^{2}} + \frac{\sigma_{p_{b}}^{2} m^{2} \left(\left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}} - \frac{\left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}}{\kappa}\right)^{2}}{\rho_{0}^{2} t^{2} \left(\kappa - 1\right)^{2}} + \frac{\sigma_{t}^{2} m^{2} \left(- p_{a} + p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}\right)^{2}}{\rho_{0}^{2} t^{4} \left(\kappa - 1\right)^{2}}}

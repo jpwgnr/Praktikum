@@ -5,7 +5,8 @@ Die gemessenen Temperaturen $T_1$ und $T_2$, sowie die Drücke
 $p_a$ und $p_b$ und die Leistungsaufnahme des Kompressors
 zu verschiedenen Zeiten $t$ sind in Tabelle \ref{tab1}
 dargestellt.
-\input{build/tab1.tex}
+%\input{build/tab1.tex}
+%Hier ist ein Fehler in der Tabelle, deswegen auskommentiert
 
 \subsection{Temperaturverläufe}
 %a & b) 
@@ -20,10 +21,9 @@ Die Temperaturverläufe der beiden Reservoire sind in Abbildung
     die Temperatur in Reservoir y dar. Dabei wird die Temperatur
     durch ein Polynom dritten Grades dargestellt: $T(t) = At^3+Bt^2+Ct+D$. 
     Die Fitparameter der Kurve der Temperatur im ersten Reservoir sind $A_1=\num{-1.20(17)e-8}$,
-    $B_1=\num{1.83(30)e-5}$, $C_1=\num{1.95(14)e-2}$ und $D_1=\SI{295.11(18)}$.
+    $B_1=\num{1.83(30)e-5}$, $C_1=\num{1.95(14)e-2}$ und $D_1=\SI{295.11 \pm 0.18}$.
     Die Fitparameter der Kurve der Temperatur im zweiten Reservoir sind $A_2=\num{2.61(30)e-8}$,
-    $B_2=\num{-3.87(52)e-5}$, $C_2=\num{-0.87(25)e-2}$ und $D_2=\num{295.99(32)}$.
-    }
+    $B_2=\num{-3.87(52)e-5}$, $C_2=\num{-0.87(25)e-2}$ und $D_2=\num{295.99 \pm 0.32}$.} %hier ist irgendwas falsch
     \label{fig:plot1}
 \end{figure}
 
@@ -31,10 +31,10 @@ Die Temperaturverläufe der beiden Reservoire sind in Abbildung
 Die Differentialquotienten $\frac{dT}{dt}$ für vier verschiedene Temperaturen
 sind im Folgenden zu sehen. Es werden die Temperaturen
 \begin{align*}
-    T_1 &= \SI{1}{\degreeCelsius} &= \SI{274.15}{\kelvin} \\
-    T_2 &= \SI{5}{\degreeCelsius} &= \SI{278.15}{\kelvin}\\
-    T_3 &= \num{10}{\degreeCelsius} &= \SI{283.15}{\kelvin}\\
-    T_4 &= \num{15}{\degreeCelsius} &= \SI{288.15}{\kelvin}
+    T_1 &= \SI{1}{\celsius} &= \SI{274.15}{\kelvin} \\ %celsius geht nicht, degreeCelsius auch nicht, keine Ahnung warum
+    T_2 &= \SI{5}{\celsius} &= \SI{278.15}{\kelvin}\\
+    T_3 &= \num{10}{\celsius} &= \SI{283.15}{\kelvin}\\
+    T_4 &= \num{15}{\celsius} &= \SI{288.15}{\kelvin}
 \end{align*}
 betrachtet.
 %Das schon in die Theorie?:
@@ -49,7 +49,7 @@ Für $\frac{dT_1}{dt}$ folgt:
 \end{align*}
 Für $\frac{dT_2}{dt}$ gilt:
 \begin{align*}
-    dT_{2,1}(1) &= \num{-0.0130 \pm 0.0026} \\ %0 oder 1?
+    dT_{2,1}(1) &= \num{-0.0130 \pm 0.0026} \\ %0 oder 1 Grad? Lieber in Kelvin angeben?
     dT_{2,2}(5) &= \num{-0.025 \pm 0.004} \\
     dT_{2,3}(10) &= \num{-0.027 \pm 0.007} \\
     dT_{2,4}(15) &= \num{-0.015 \pm 0.012}
@@ -57,6 +57,7 @@ Für $\frac{dT_2}{dt}$ gilt:
 
 %d)
 \subsection{Bestimmung der Güteziffern}
+%c_w angeben
 Die Wärmekapazität der Kupferschlange und des Eimers beträgt
 \begin{equation*}
     m_\text{k} c_\text{k} = \SI{750}{\joule\per\kelvin}.
@@ -106,8 +107,9 @@ Dichlordifluormethan hat bei den Werten
 \end{align*}
 die Dichte 
 \begin{equation*}
-    \rho_0 = \SI{5.51}{\gram\per\liter}.
+    \rho_0 = \SI{5.51}{\gram\per\liter},
 \end{equation*}
+die mit Gleichung \eqref{eqn:dichte} berechnet werden kann.
 Die mechanischen Kompressorleistungen für die vier Temperaturen
 ergeben sich mit Gleichung \eqref{eqn:nmech}
 zu den in Tabelle \ref{tabsolution2} stehen Werten.
