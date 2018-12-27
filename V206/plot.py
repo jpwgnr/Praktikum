@@ -12,7 +12,7 @@ from scipy.optimize import curve_fit
 t, T1, pa1, T2, pb1, N = np.genfromtxt("data/dataa.txt", unpack=True)
 pa= pa1+1
 pb= pb1+1
-tab1 = TexTable([t, T1, pb, T2, pa, N], [r"$t /\si{\minute}$", r"$T_{1} /\si{\degreeCelsius}", r"$p_{b} / \si{\bar}", r"T_{2} /\si{\degreeCelsius}", r"p_{a} /\si{\bar}", r"N /\si{\watt}"], label="tab1", caption="Die Temperatur in Reservoir 1 und Reservoir 2 und die dazugehörenden Drücke und die Leistungsaufnahme des Kompressors zu verschiedenen Zeitpunkten.", roundPrecision=2)
+tab1 = TexTable([t, T1, pb, T2, pa, N], [r"$t /\si{\minute}$", r"$T_{1} /\si{\degreeCelsius}$", r"$p_{b} / \si{\bar}$", r"$T_{2} /\si{\degreeCelsius}$", r"$p_{a} /\si{\bar}$", r"$N /\si{\watt}$"], label="tab1", caption="Die Temperatur in Reservoir 1 und Reservoir 2 und die dazugehörenden Drücke und die Leistungsaufnahme des Kompressors zu verschiedenen Zeitpunkten.", roundPrecision=2)
 tab1.writeFile("build/tab1.tex")
 
 tsi= t*60 
