@@ -1,0 +1,3 @@
+Formel: E_x*a + 3*b**2 + q**2*r
+
+Fehlerfortpflanzung: \sqrt{a^{2} \sigma_{E_{x}}^{2} + 4 \sigma_{q}^{2} q^{2} r^{2} + \sigma_{r}^{2} q^{4}}
