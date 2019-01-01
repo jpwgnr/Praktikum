@@ -29,7 +29,7 @@ pberr = unp.uarray(pbsi, 0.1e5)
 Nerr = unp.uarray(N, 5)
 
 p, T3 = np.genfromtxt("data/datad.txt", unpack=True)
-tab2 = TexTable([p,T3], [r"p / \si{\bar}", r"T /\si{\degreeCelsius}"], label="tab2", caption="Druck und Temperaturskala gegeneinander aufgetragen.", roundPrecision=2)
+tab2 = TexTable([p,T3], [r"p / \si{\bar}", r"T /\si{\degreeCelsius}"], label="tab2", caption="Druck- und Temperaturskala gegeneinander aufgetragen.", roundPrecision=1)
 tab2.writeFile("build/tab2.tex")
 psi= p*1e5
 T3si= T3+273.15 

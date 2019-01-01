@@ -4,7 +4,7 @@
 Die Formel der Gauß'schen Fehlerfortpflanzung für die Ableitung eines Polynoms dritten Grades mit den Fehler behafteten Größen 
  $a$, $b$, $c$ und $t$ lautet:
 \begin{equation}
-\sqrt{9 \sigma_{a}^{2} t^{4} + 4 \sigma_{b}^{2} t^{2} + \sigma_{c}^{2} + \sigma_{t}^{2} \left(6 a t + 2 b\right)^{2}}
+    \sigma_\text{T'(t)} = \sqrt{9 \sigma_{a}^{2} t^{4} + 4 \sigma_{b}^{2} t^{2} + \sigma_{c}^{2} + \sigma_{t}^{2} \left(6 a t + 2 b\right)^{2}}.
     \label{eqn:pol3}
 \end{equation}
 
@@ -12,8 +12,12 @@ Die Formel der Gauß'schen Fehlerfortpflanzung für die Ableitung eines Polynoms
 Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:güteziffer} mit der die Güteziffer bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
 $m_1$, $N$, $\frac{\Delta T_1}{\Delta t}$ zu:
 \begin{equation}
-\sqrt{\frac{T^{2} c_{w}^{2} \sigma_{m_{1}}^{2}}{N^{2} t^{2}} + \frac{T^{2} \sigma_{t}^{2}}{N^{2} t^{4}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2} + \frac{\sigma_{T}^{2}}{N^{2} t^{2}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2} + \frac{T^{2} \sigma_{N}^{2}}{N^{4} t^{2}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2}}
-    \label{eq:gütefehler}
+    \begin{split}
+        \sigma_{\nu} = {} &\Biggl(\left(\frac{\Delta T_1}{\Delta t}\right)^{2}\frac{c_{w}^{2} \sigma_{m_{1}}^{2}}{N^{2}}  
+    + \frac{\sigma_{\frac{\Delta T_1}{\Delta t}}^{2}}{N^{2}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2}  \\
+    &+\left(\frac{\Delta T_1}{\Delta t}\right)^{2} \frac{\sigma_{N}^{2}}{N^{4}} \left(c_{k} m_{k} + c_{w} m_{1}\right)^{2}\Biggr)^{\frac{1}{2}}.
+    \end{split}
+\label{eq:gütefehler}
 \end{equation}
 %d) Fehler der idealen Güte
 Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:ideal} mit der die ideale Güteziffer bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
@@ -24,9 +28,13 @@ $T_1$ und $T_2$ zu:
 \end{equation}
 %e) Fehler des Massendurchsatzes (Delta m_1 / Delta t)
 Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:massendurchsatz} mit der der Massendurchsatz bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
-$m_1$, $N$, $\frac{\Delta m}{\Delta t}$ zu:
+$m_2$, $N$, $\frac{\Delta T_2}{\Delta t}$ zu:
 \begin{equation}
-\sqrt{\frac{T_{2}^{2} c_{w}^{2} \sigma_{m_{2}}^{2}}{L^{2} t^{2}} + \frac{T_{2}^{2} \sigma_{t}^{2}}{L^{2} t^{4}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} + \frac{\sigma_{T_{2}}^{2}}{L^{2} t^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} + \frac{T_{2}^{2} \sigma_{L}^{2}}{L^{4} t^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2}}.
+    \begin{split}
+        \sigma_{\frac{\Delta m}{\Delta t}} = {} & \Biggl(\left(\frac{\Delta T_2}{\Delta t}\right)^{2}\frac{c_{w}^{2} \sigma_{m_{2}}^{2}}{N^{2}} 
+    + \frac{\sigma_{\frac{\Delta T_2}{\Delta t}}^{2}}{N^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} \\ 
+    &    +\left(\frac{\Delta T_2}{\Delta t}\right)^{2} \frac{\sigma_{N}^{2}}{N^{4}} \left(c_{k} m_{k} + c_{w} m_{2}\Biggr)^{2}\right)^{\frac{1}{2}}.
+    \end{split}
     \label{eq:massendurchsatzFehler}
 \end{equation}
 
@@ -34,13 +42,17 @@ $m_1$, $N$, $\frac{\Delta m}{\Delta t}$ zu:
 Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:dichte} mit der die Dichte bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
 $p_a$, $T_2$ zu:
 \begin{equation}
-\sqrt{\frac{T_{0}^{2} \sigma_{p_{a}}^{2} \rho_{0}^{2}}{T_{a}^{2} p_{0}^{2}} + \frac{T_{0}^{2} \sigma_{T_{a}}^{2} p_{a}^{2} \rho_{0}^{2}}{T_{a}^{4} p_{0}^{2}}}.
+ \sigma_{\rho} =\sqrt{\frac{T_{0}^{2} \sigma_{p_{a}}^{2} \rho_{0}^{2}}{T_{a}^{2} p_{0}^{2}} + \frac{T_{0}^{2} \sigma_{T_{a}}^{2} p_{a}^{2} \rho_{0}^{2}}{T_{a}^{4} p_{0}^{2}}}.
     \label{eq:dichteFehler}
 \end{equation}
 %Fehler der mechanischen Kompressorleistung
 Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:nmech} mit der die mechanische Leistung bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
 $p_a$, $p_b$,$\rho$ und $\frac{\Delta m}{\Delta t}$ zu:
 \begin{equation}
-\sqrt{\frac{\sigma_{m}^{2} \left(- p_{a} + p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}\right)^{2}}{\rho_{0}^{2} t^{2} \left(\kappa - 1\right)^{2}} + \frac{\sigma_{p_{a}}^{2} m^{2} \left(-1 + \frac{p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}}{\kappa p_{a}}\right)^{2}}{\rho_{0}^{2} t^{2} \left(\kappa - 1\right)^{2}} + \frac{\sigma_{p_{b}}^{2} m^{2} \left(\left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}} - \frac{\left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}}{\kappa}\right)^{2}}{\rho_{0}^{2} t^{2} \left(\kappa - 1\right)^{2}} + \frac{\sigma_{t}^{2} m^{2} \left(- p_{a} + p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}\right)^{2}}{\rho_{0}^{2} t^{4} \left(\kappa - 1\right)^{2}}}.
+    \begin{split}
+        \sigma_{N_{mech}}= {} & \Biggl(\frac{\sigma_{\frac{\Delta m}{\Delta t}}^{2} \left(- p_{a} + p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}\right)^{2}}{\rho_{0}^{2} \left(\kappa - 1\right)^{2}} 
+            + \frac{\sigma_{p_{a}}^{2} \left(\frac{\Delta m}{\Delta t}\right)^{2} \left(-1 + \frac{p_{b} \left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}}{\kappa p_{a}}\right)^{2}}{\rho_{0}^{2} \left(\kappa - 1\right)^{2}} \\ 
+                       & + \frac{\sigma_{p_{b}}^{2} \left(\frac{\Delta m}{\Delta t}\right)^{2} \left(\left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}} - \frac{\left(\frac{p_{a}}{p_{b}}\right)^{\frac{1}{\kappa}}}{\kappa}\right)^{2}}{\rho_{0}^{2} \left(\kappa - 1\right)^{2}} \Biggr)^{\frac{1}{2}}.
+    \end{split}
     \label{eq:nmechFehler}
 \end{equation}
