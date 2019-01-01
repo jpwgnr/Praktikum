@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build/main"] 0 "build/main.bcf" "build/main.bbl" "build/main" 0
-  "build/main.bcf" 0 -1 0 ""
+["biber build/main"] 1546347943 "build/main.bcf" "build/main.bbl" "build/main" 1546347943
+  "build/main.bcf" 1546347942 90576 cc099dce87b33115bff7b79b574c1048 ""
   "lit.bib" 1544275218 110 67b183271b24474d1c603a9b762c58b8 ""
   "programme.bib" 1544275218 1040 ecd7c715887b3654c113c5b94488c006 ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1545930157 "main.tex" "build/main.pdf" "main" 1545930157
+["lualatex"] 1546347944 "main.tex" "build/main.pdf" "main" 1546347944
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1480098698 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1480098698 928 2dc8d444221b7a635bb58038579b861a ""
@@ -209,19 +209,20 @@
   "/home/lewis206/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1536584007 1362502 e7450945a0e6492c36a50c6a151d4e12 ""
   "build/1.png" 1545258036 95661 72900d31eb9c44d49eaabc21eeb3d341 ""
   "build/2.png" 1545258036 118135 d06f98b14b01e0966c1f8f03d3888aaf ""
-  "build/main.aux" 1544275218 3725 12c6f09bc156dac36ec934a740563354 ""
-  "build/main.bbl" 1544275218 6688 c948865d0bfbe446fe2b093cdf3b1361 "biber build/main"
-  "build/main.toc" 0 -1 0 ""
-  "build/plot1.pdf" 1545930151 9866 a56667a588300ec10717c692330d02bb ""
-  "content/auswertung.tex" 1545929644 4634 00863aa085b6f19596e6969e909294be ""
-  "content/durchfuehrung.tex" 1545236294 994 f96120dc083bb442067a09f77f995468 ""
-  "content/theorie.tex" 1545929644 4863 e7f6fcb8ffb543ace4f4e0ee669b1032 ""
+  "build/main.aux" 1546347942 17463 cb6c6039556fceeab6c7d425025e6871 ""
+  "build/main.bbl" 1546347944 6690 adc2f06c666ba869b0c6108feddc1264 "biber build/main"
+  "build/main.toc" 1546347942 1896 85162238ca1343eb84a1b1882964e273 ""
+  "build/tab1.tex" 1546347914 1334 4e5bf2c26054cc91823afe3df4c24e2a ""
+  "content/auswertung.tex" 1545937230 5117 d933b7c4bf7a362fdd7f84c5b25af598 ""
+  "content/durchfuehrung.tex" 1546343315 1098 de744dcb71a342bd0e80e305eaaa72a1 ""
+  "content/fehlerrechnung.tex" 1546345275 3627 e2d5f27916508d277667f4ebe8707904 ""
+  "content/theorie.tex" 1546343853 5029 262ebba0ec8aede8578e4250578eb940 ""
   "header.tex" 1544275218 4007 7052ccf49ba783a8c8da6bbc4f2d8112 ""
-  "main.tex" 1545929972 295 0d4b3cad6be98864006a0eff8610b691 ""
+  "main.tex" 1546347753 293 d6c49db67d4a702e64b8402a378904a8 ""
   (generated)
+  "build/main.bcf"
+  "build/main.toc"
+  "build/main.log"
   "build/main.pdf"
   "build/main.run.xml"
-  "build/main.toc"
   "build/main.aux"
-  "build/main.log"
-  "build/main.bcf"

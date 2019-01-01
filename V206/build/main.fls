@@ -391,11 +391,13 @@ INPUT /home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/sy
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./content/fehlerrechnung.tex
+INPUT ./content/fehlerrechnung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./build/2.png
 INPUT ./build/2.png
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
-INPUT ./build/plot1.pdf
-INPUT ./build/plot1.pdf
+INPUT ./build/tab1.tex
+INPUT ./build/tab1.tex
