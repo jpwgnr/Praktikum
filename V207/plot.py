@@ -61,6 +61,8 @@ eta2=Kbig.nominal_value*(rhobig- rhoFl)*t2
 
 vwater1= x/tsmall
 vwater2= x/tbig
+vwater21= x/t1
+vwater22= x/t2
 
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
 params1, pcov1 = curve_fit(getEta, 1/T1,np.log(eta1))
@@ -74,18 +76,24 @@ newT2= np.linspace(T2[0], T2[-1], 200)
 #e)
 rey1=(rhoFl*dsmall*vwater1)/eta 
 rey2=(rhoFl*dbig*vwater2)/eta 
+rey21=(rhoFl*dbig*vwater21)/eta1 
+rey22=(rhoFl*dbig*vwater22)/eta2 
 
 
 #save solution 
 
-tab4 = TexTable([eta1,eta2], [r"$\eta_1 /\si{\pascal\second}$", r"$\eta_2 /\si{\pascal\second}$"], label="tab4", caption= r"Die Viskosität für die erste und zweite Messung.", roundPrecision=1)
+tab4 = TexTable([eta1*1e3,eta2*1e3], [r"$\eta_1 /\si{\milli\pascal\second}$", r"$\eta_2 /\si{\milli\pascal\second}$"], label="tab4", caption= r"Die Viskosität für die erste und zweite Messung.", roundPrecision=3)
 tab4.writeFile("build/tab4.tex")
 
-tab5 = TexTable([1/T1, np.log(eta1)], [r"$1/T_1 /\si[per-mode=fraction]{\per\kelvin}$", r"$\eta_1 /\si{\pascal\second}$"], label="tab5", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die erste Messung.", roundPrecision=1)
+tab5 = TexTable([1e3/T1, np.log(eta1)], [r"$\frac{10^{3}}{T_1} /\si[per-mode=fraction]{\per\kelvin}$", r"$\eta_1 /\si{\pascal\second}$"], label="tab5", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die erste Messung.", roundPrecision=1)
 tab5.writeFile("build/tab5.tex")
 
-tab6 = TexTable([1/T2, np.log(eta2)], [r"$1/T_2 /\si[per-mode=fraction]{\per\kelvin}$", r"$\eta_2 /\si{\pascal\second}$"], label="tab6", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die zweite Messung.", roundPrecision=1)
+tab6 = TexTable([1e3/T2, np.log(eta2)], [r"$\frac{10^{3}}{T_2} /\si[per-mode=fraction]{\per\kelvin}$", r"$\eta_2 /\si{\pascal\second}$"], label="tab6", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die zweite Messung.", roundPrecision=1)
 tab6.writeFile("build/tab6.tex")
+
+tab7 = TexTable([T1, rey21, rey22], [r"$T /\si{\kelvin}$", r"$Re_1$", r"$Re_2$"], label="tab7", caption= r"Die Temperatur und die Reynoldszahlen der erste und zweite Messung.", roundPrecision=2)
+tab7.writeFile("build/tab7.tex")
+
 
 file = open("build/solution.txt", "w")
 file.write("Dichte_klein= {} kg/m^3\nDichte_groß= {} kg/m^3\nDichte_Fl= {} kg/m^3\nDurchmesser_klein= {} m\nDurchmesser_groß= {} m\nt_klein= {} s\nt_groß= {} s\nK_klein= {} Pa*m^3/kg\nK_groß= {} Pa*m^3/kg\nEta_klein= {} Pa*s\nA1= {} +/- {} Pa*s\nB1= {} +/- {} K\nA2= {} +/- {} Pa*s\nB2= {} +/- {} K\nv_klein= {} m/s\nv_groß= {} m/s\nReynoldsche Zahl Kugel_small= {}\nReynoldsche Zahl Kugel_big= {}".format(rhosmall, rhobig, rhoFl, dsmall, dbig, tsmall, tbig, Ksmall, Kbig, eta, params1[0], paramserr1[0], params1[1], paramserr1[1], params2[0], paramserr2[0], params2[1], paramserr2[1], vwater1, vwater2, rey1, rey2))

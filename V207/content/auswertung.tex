@@ -29,17 +29,17 @@ die Dichte der Kugel:
 \end{align*}
 Die Falldauern der kleinen und der großen Kugel im Kugelfall-Viskosimeter
 bei Raumtemperatur befinden sich in Tabelle \ref{tab1}.
-%Daraus besser zwei Tabellen machen?:
+%Daraus besser zwei Tabellen machen?: Nö, denke nicht. Oder wieso meinst du denn?
 \input{build/tab1.tex}
-\noindent Für die mittleren Falldauern ergibt sich mit Gleichung \eqref{eqn:mittelwert} %und Standardabweichung?
+\noindent Für die mittleren Falldauern ergibt sich mit Gleichung \eqref{eqn:mittelwert} %und Standardabweichung? Ja, am besten beide Gleichungen angeben. Der Fehler ist ja die Standardabweichung.
 \begin{align*}
-    t_\text{klein} &= \SI{11.66 \pm 0.10}{\second} \\
-    t_\text{groß} &= \SI{65.21 \pm 0.30}{\second}.
+    t_\text{klein} &= \SI{11.7 \pm 0.1}{\second} \\
+    t_\text{groß} &= \SI{65.2 \pm 0.3}{\second}.
 \end{align*}
 Mit Gleichung \eqref{eqn:eta} berechnet sich die Viskosität mit $K_\text{klein}$,
 $\rho_\text{klein}$ und $t_\text{klein}$ zu
 \begin{equation*}
-    \eta = \SI{77.3(7)}{\milli\pascal\second}.
+    \eta = \SI{77.3(7)}{\milli\pascal\second}.%Das stimmt aber nicht oder? Hatte ich das nochmal geändert? Mit den richtigen Ergebnissen sind das 773 microPascal
 \end{equation*}
 Mit diesem Wert folgt für die Apparaturkonstante $K_\text{groß}$
 mittels Gleichung \eqref{eqn:K}
@@ -101,3 +101,7 @@ Die Reynoldszahl für die große Kugel ergibt sich auf die gleiche Weise zu
 \begin{equation*}
     Re_\text{groß} = \num{31.27 \pm 0.31}.
 \end{equation*}
+
+Die Reynoldszahlen für die große Kugel bei verschiedenen Temperaturen ergeben sich auf die gleiche Weise und sind in folgender Tabelle aufgetragen. 
+\input{build/tab7.tex}
+
