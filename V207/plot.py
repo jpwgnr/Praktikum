@@ -70,8 +70,8 @@ params2, pcov2 = curve_fit(getEta, 1/T2,np.log(eta2) )
 paramserr1= np.sqrt(np.diag(pcov1))
 paramserr2= np.sqrt(np.diag(pcov2))
 
-newT1= np.linspace(T1[0], T1[-1], 200)
-newT2= np.linspace(T2[0], T2[-1], 200)
+newT1= np.linspace(T1[0]-3, T1[-1]+3, 200)
+newT2= np.linspace(T2[0]-3, T2[-1]+3, 200)
 
 #e)
 rey1=(rhoFl*dsmall*vwater1)/eta 

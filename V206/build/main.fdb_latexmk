@@ -1,9 +1,9 @@
 # Fdb version 3
-["bibtex main"] 1546375335 "main.aux" "main.bbl" "main" 1546375335
-  "main.aux" 1546375234 17620 12bc2f48bf1ff3d6f4b703a2b47ce1f5 ""
+["bibtex main"] 1546388245 "main.aux" "main.bbl" "main" 1546388245
+  "main.aux" 1546387931 19058 f8453103412a972ae044b479d04527eb ""
   (generated)
-  "main.blg"
   "main.bbl"
+  "main.blg"
 ["lualatex"] 1546375324 "main.tex" "build/main.pdf" "main" 1546375324
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1480098679 64684 15a2082c8e31f411875a86ea2d29a0ee ""
@@ -220,7 +220,7 @@
   "build/1.png" 1545258036 95661 72900d31eb9c44d49eaabc21eeb3d341 ""
   "build/2.png" 1545258036 118135 d06f98b14b01e0966c1f8f03d3888aaf ""
   "build/main.aux" 1546347950 7906 a07352b82232f01c385db92b7a9208e7 ""
-  "build/main.run.xml" 0 -1 0 ""
+  "build/main.run.xml" 1546375334 2365 7624848d89d5ff107602829cfb45ac0a ""
   "build/main.toc" 1546347949 0 d41d8cd98f00b204e9800998ecf8427e ""
   "build/plot1.pdf" 1546375317 9866 c920cf4881fc93098a2730e97192ff3d ""
   "build/plot2.pdf" 1546375322 8134 2bbeaf79a8811197ffdc142a5d208579 ""
@@ -237,9 +237,9 @@
   "main.bbl" 1546348056 6688 66c0222c4adad31d2fab186d537cabff "bibtex main"
   "main.tex" 1546347753 293 d6c49db67d4a702e64b8402a378904a8 ""
   (generated)
+  "build/main.run.xml"
+  "build/main.bcf"
+  "build/main.log"
   "build/main.toc"
   "build/main.pdf"
-  "build/main.log"
   "build/main.aux"
-  "build/main.bcf"
-  "build/main.run.xml"

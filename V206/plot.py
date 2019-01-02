@@ -76,7 +76,7 @@ def getL(m,x,n):
 #Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
 
 #a) 
-newt= np.linspace(tsi[0], tsi[-1], 200)
+newt= np.linspace(tsi[0]-100, tsi[-1]+100, 200)
 
 #b)
 params1, pcov1 = curve_fit(function1, tsi, T1si)
@@ -158,7 +158,7 @@ plt.savefig("build/plot1.pdf")
 
 #curvefit plot
 plt.figure(2)
-T3sinew= np.linspace(T3si[0], T3si[-1], 200)
+T3sinew= np.linspace(T3si[0]-5, T3si[-1]+5, 200)
 plt.errorbar(1/T3si, np.log(psi), fmt='rx', label='Daten')
 plt.plot(1/T3sinew, getL(Steigung3, 1/(T3sinew*R), yAbschnitt1), 'b--', label='Fit')
 plt.xlabel(r'$\frac{1}{T}/ \si[per-mode=fraction]{\per\kelvin}$')
