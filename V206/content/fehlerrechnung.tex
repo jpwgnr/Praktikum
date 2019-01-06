@@ -1,7 +1,8 @@
 \section{Fehlerrechnung}
+%Mittelwert, Standardabweichung, relative Fehler Formeln auch angeben?
 
 %c) Fehler der Ableitung
-Die Formel der Gauß'schen Fehlerfortpflanzung für die Ableitung eines Polynoms dritten Grades mit den Fehler behafteten Größen 
+Die Formel der Gauß'schen Fehlerfortpflanzung für die Ableitung eines Polynoms dritten Grades mit den fehlerbehafteten Größen 
  $a$, $b$, $c$ und $t$ lautet:
 \begin{equation}
     \sigma_\text{T'(t)} = \sqrt{9 \sigma_{a}^{2} t^{4} + 4 \sigma_{b}^{2} t^{2} + \sigma_{c}^{2} + \sigma_{t}^{2} \left(6 a t + 2 b\right)^{2}}.
@@ -9,7 +10,7 @@ Die Formel der Gauß'schen Fehlerfortpflanzung für die Ableitung eines Polynoms
 \end{equation}
 
 %d) Fehler der Güte
-Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:güteziffer} mit der die Güteziffer bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
+\noindent Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:güteziffer}, mit der die Güteziffer bestimmt wird, ergibt sich mit den fehlerbehafteten Größen 
 $m_1$, $N$, $\frac{\Delta T_1}{\Delta t}$ zu:
 \begin{equation}
     \begin{split}
@@ -19,15 +20,17 @@ $m_1$, $N$, $\frac{\Delta T_1}{\Delta t}$ zu:
     \end{split}
 \label{eq:gütefehler}
 \end{equation}
+
 %d) Fehler der idealen Güte
-Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:ideal} mit der die ideale Güteziffer bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
+\noindent Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:ideal}, mit der die ideale Güteziffer bestimmt wird, ergibt sich mit den fehlerbehafteten Größen 
 $T_1$ und $T_2$ zu:
 \begin{equation}
 \sqrt{\frac{T_{1}^{2} \sigma_{T_{2}}^{2}}{\left(T_{1} - T_{2}\right)^{4}} + \sigma_{T_{1}}^{2} \left(- \frac{T_{1}}{\left(T_{1} - T_{2}\right)^{2}} + \frac{1}{T_{1} - T_{2}}\right)^{2}}.
     \label{eq:idealFehler}
 \end{equation}
+
 %e) Fehler des Massendurchsatzes (Delta m_1 / Delta t)
-Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:massendurchsatz} mit der der Massendurchsatz bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
+\noindent Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:massendurchsatz}, mit der der Massendurchsatz bestimmt wird, ergibt sich mit den fehlerbehafteten Größen 
 $m_2$, $N$, $\frac{\Delta T_2}{\Delta t}$ zu:
 \begin{equation}
     \begin{split}
@@ -39,14 +42,15 @@ $m_2$, $N$, $\frac{\Delta T_2}{\Delta t}$ zu:
 \end{equation}
 
 %Fehler der Dichte
-Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:dichte} mit der die Dichte bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
+\noindent Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:dichte}, mit der die Dichte bestimmt wird, ergibt sich mit den fehlerbehafteten Größen 
 $p_a$, $T_2$ zu:
 \begin{equation}
  \sigma_{\rho} =\sqrt{\frac{T_{0}^{2} \sigma_{p_{a}}^{2} \rho_{0}^{2}}{T_{a}^{2} p_{0}^{2}} + \frac{T_{0}^{2} \sigma_{T_{a}}^{2} p_{a}^{2} \rho_{0}^{2}}{T_{a}^{4} p_{0}^{2}}}.
     \label{eq:dichteFehler}
 \end{equation}
+
 %Fehler der mechanischen Kompressorleistung
-Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:nmech} mit der die mechanische Leistung bestimmt wird, ergibt sich mit den Fehler behafteten Größen 
+\noindent Die Formel der Gauß'schen Fehlerfortpflanzung für die Formel \ref{eqn:nmech}, mit der die mechanische Leistung bestimmt wird, ergibt sich mit den fehlerbehafteten Größen 
 $p_a$, $p_b$,$\rho$ und $\frac{\Delta m}{\Delta t}$ zu:
 \begin{equation}
     \begin{split}

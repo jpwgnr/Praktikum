@@ -39,6 +39,12 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuch 206 - Die Wärmepumpe}
       \field{year}{2018}
+      \verb{urlraw}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V206.pdf
+      \endverb
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V206.pdf
+      \endverb
     \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
