@@ -1,0 +1,1 @@
+#Abstände Messing breit in m, Messing schmal in m, Edelstahlt in m, Aluminium in m
