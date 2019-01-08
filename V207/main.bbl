@@ -39,6 +39,12 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuch 207 - Das Kugelfall-Viskosimeter nach Höppler}
       \field{year}{2018}
+      \verb{urlraw}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/Viskositaet.pdf
+      \endverb
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/Viskositaet.pdf
+      \endverb
     \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%

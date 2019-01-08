@@ -73,8 +73,7 @@ erkennen.
     \includegraphics[width=10cm, height=10cm]{build/1.png}
     \caption{Schematischer Aufbau einer Wärmepumpe. Der Druck $p_b$ und die Temperatur
     $T_1$ beziehen sich auf das Reservoir $\num{1}$. Der Druck $p_a$ und die Temperatur
-    $T_2$ beziehen sich auf das Reservoir $\num{2}$. $p_b$ und $T_1$ sind jeweils
-    größer als die anderen Werte.} %Kann man das hier schon sagen? Das ist doch eher etwas, dass sich aus den Ergebnissen ergibt.
+    $T_2$ beziehen sich auf das Reservoir $\num{2}$.}
     \label{fig:aufbau1}
 \end{figure}
 
@@ -100,22 +99,18 @@ Für $Q_2$ lässt sich die Gleichung \ref{eqn:Q1} analog anwenden:
     \nu = \frac{\Delta Q_2}{\Delta t \cdot N} = \frac{(m_2 c_\text{w} + m_\text{k} c_\text{k})}{N} \frac{\Delta T_2}{\Delta t}.
 \end{equation*}
 
-Die Verdampfungswärme $L$ wird mittels der Temperaturen $T$ und der Drücke $p$ bestimmt.
+\noindent Die Verdampfungswärme $L$ wird mittels der Temperaturen $T$ und der Drücke $p$ bestimmt.
 Es gilt: 
 
-\begin{equation}
-    p = exp \left(L \frac{T}{R} \right).
-    \label{eqn:L}
-\end{equation}
-
+\begin{equation*}
+    p = exp \left(L \frac{1}{TR} \right).
+\end{equation*}
 Umgeformt führt das zu einer Linearität:
+\begin{equation*}
+    log(p) = L \cdot \frac{1}{TR}.
+\end{equation*}
 
-\begin{equation}
-    log(p) = L \cdot \frac{T}{R}.
-    \label{eqn:Llinear}
-\end{equation}
-
-Für die Wärmeentnahme durch Verdampfung des Transportmediums
+\noindent Für die Wärmeentnahme durch Verdampfung des Transportmediums
 wird pro Massen- und Zeiteinheit die Verdampfungswärme $L$ 
 verbraucht:
 \begin{equation*}

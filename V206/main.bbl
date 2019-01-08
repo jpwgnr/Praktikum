@@ -184,6 +184,18 @@
       \verb http://www.numpy.org/
       \endverb
     \endentry
+    \entry{wiki}{article}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Spezifische Wärmekapazität}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Spezifische_Wärmekapazität
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Spezifische_W%C3%A4rmekapazit%C3%A4t
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
