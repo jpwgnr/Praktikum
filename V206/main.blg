@@ -1,18 +1,18 @@
-[0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is 'main.blg'
-[39] biber:315> INFO - === Di Jan  8, 2019, 19:36:36
-[68] Biber.pm:371> INFO - Reading 'main.bcf'
-[164] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[182] Biber.pm:4093> INFO - Processing section 0
-[196] Biber.pm:4254> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[197] bibtex.pm:1523> INFO - LaTeX decoding ...
-[200] bibtex.pm:1340> INFO - Found BibTeX data source 'lit.bib'
-[209] Biber.pm:4254> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[210] bibtex.pm:1523> INFO - LaTeX decoding ...
-[218] bibtex.pm:1340> INFO - Found BibTeX data source 'programme.bib'
-[265] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[265] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[265] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[265] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
-[278] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[281] bbl.pm:739> INFO - Output to main.bbl
+[0] Config.pm:302> INFO - This is Biber 2.11
+[1] Config.pm:305> INFO - Logfile is 'main.blg'
+[37] biber:313> INFO - === Di Jan  8, 2019, 21:38:26
+[59] Biber.pm:371> INFO - Reading 'main.bcf'
+[133] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[149] Biber.pm:3976> INFO - Processing section 0
+[161] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[183] bibtex.pm:1500> INFO - LaTeX decoding ...
+[185] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
+[191] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[192] bibtex.pm:1500> INFO - LaTeX decoding ...
+[199] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
+[237] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[237] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[237] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[238] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[248] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[250] bbl.pm:720> INFO - Output to main.bbl
