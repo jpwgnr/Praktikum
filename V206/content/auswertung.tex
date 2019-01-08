@@ -3,6 +3,17 @@
 Für die Auswertung wird Python, im Speziellen Matplotlib \cite{matplotlib}, NumPy \cite{numpy}, Uncertainties \cite{uncertainties}
 und SciPy \cite{scipy} benutzt.
 
+Die Formel für ein Polynom dritten Grades lautet 
+\begin{equation}
+    T(t)= at^3+bt^2+ct+d.
+    \label{eqn:poly3}
+\end{equation}
+Deren Ableitung ergibt sich folgendermaßen: 
+\begin{equation}
+    \frac{\Delta T(t)}{\Delta t}=3at^2+2bt+c.
+    \label{eqn:poly3ableitung}
+\end{equation}
+
 \noindent Die gemessenen Temperaturen $T_1$ und $T_2$, sowie die Drücke
 $p_a$ und $p_b$ und die Leistungsaufnahme des Kompressors
 zu verschiedenen Zeiten $t$ sind in Tabelle \ref{tab1}
@@ -13,6 +24,20 @@ dargestellt.
 %a & b) 
 Die Temperaturverläufe der beiden Reservoire sind in Abbildung
 \ref{fig:plot1} zu sehen.
+Die Fitparameter der Kurve der Temperatur im ersten Reservoir sind 
+\begin{align*}
+    a_1 &= \num{-1.20(17)e-8} \si{\kelvin\per\cubic\second},\\
+    b_1 &= \num{1.83(30)e-5} \si{\kelvin\per\square\second},\\ 
+    c_1 &= \num{1.95(14)e-2} \si{\kelvin\per\second}, \\
+    d_1 &= \num{295.11 \pm 0.18} \si{\kelvin}. \\
+\end{align*}
+Die Fitparameter der Kurve der Temperatur im zweiten Reservoir sind 
+\begin{align*}
+    a_2 &= \num{2.61(30)e-8} \si{\kelvin\per\cubic\second},\\ 
+    b_2 &= \num{-3.87(52)e-5} \si{\kelvin\per\square\second}, \\
+    c_2 &= \num{-0.87(25)e-2} \si{\kelvin\per\second}, \\
+    d_2 &= \num{295.99 \pm 0.32} \si{\kelvin}. \\
+\end{align*}
 
 \begin{figure} %Funktion in die Abbildung schreiben?
     \centering
@@ -20,11 +45,7 @@ Die Temperaturverläufe der beiden Reservoire sind in Abbildung
     \caption{Temperaturverläufe. Es sind jeweils die Daten und ein Fit dargestellt.
     Die rote Kurve stellt die Temperatur in Reservoir $\num{1}$ dar. Die grüne Kurve stellt 
     die Temperatur in Reservoir $\num{2}$ dar. Dabei wird die Temperatur
-    durch Gleichung \ref{eqn:poly3}, ein Polynom dritten Grades, dargestellt. 
-    Die Fitparameter der Kurve der Temperatur im ersten Reservoir sind $a_1=\num{-1.20(17)e-8} \, \si{\kelvin\per\cubic\second}$,
-    $b_1=\num{1.83(30)e-5}\, \si{\kelvin\per\square\second}$, $c_1=\num{1.95(14)e-2} \, \si{\kelvin\per\second}$ und $d_1=\num{295.11 \pm 0.18} \, \si{\kelvin}$.
-    Die Fitparameter der Kurve der Temperatur im zweiten Reservoir sind $a_2=\num{2.61(30)e-8} \, \si{\kelvin\per\cubic\second}$,
-$b_2=\num{-3.87(52)e-5} \, \si{\kelvin\per\square\second}$, $c_2=\num{-0.87(25)e-2} \, \si{\kelvin\per\second}$ und $d_2=\num{295.99 \pm 0.32} \, \si{\kelvin}$.} %hier ist irgendwas falsch. Der Fehler war, dass du beim ersten D1 SI statt num geschrieben hast. Dann hatte er keine Einheit und konnte das nicht. :)
+durch Gleichung \ref{eqn:poly3}, ein Polynom dritten Grades, dargestellt.} 
 
     \label{fig:plot1}
 \end{figure}
@@ -61,12 +82,13 @@ Für $\frac{\Delta T_2}{\Delta t}$ gilt:
 \subsection{Bestimmung der Güteziffern}
 Die spezifische Wärmekapazität \cite{wiki} beträgt
 \begin{equation*}
-    c_\text{w} = \SI{4182}{\joule\per\kilo\gram\kelvin}.
+    c_\text{w} = \SI{4182}{\joule\per\kilo\gram\per\kelvin}.
 \end{equation*}
 Die Wärmekapazität der Kupferschlange und des Eimers beträgt
 \begin{equation*}
-    m_\text{k} c_\text{k} = \SI{750}{\joule\per\kelvin}.
+    m_\text{k} c_\text{k} = \SI{750}{\joule\per\kelvin}
 \end{equation*}
+und ist eine Größe, deren Wert an der Apparatur vorgegeben ist.
 Die realen Güteziffern für die vier Temperaturen werden mittels
 Gleichung \eqref{eqn:güteziffer} berechnet.
 Die idealen Güteziffern werden mit Gleichung \eqref{eqn:ideal}
@@ -92,19 +114,19 @@ Tabelle \ref{tab2}.
 \end{figure}
 \noindent Die Verdampfungswärme ist durch eine Ausgleichsrechnung somit
 \begin{equation*}
-    L = \SI{-2.032(011)e4}{\joule\per\mol}. %Einheit? Einheiten stehen alle auf dem heiligen Zettel :D müsste Pa*s sein oder so, wenn ich mich richtig erinnere.
+    L = \SI{168.1(9)}{\joule\per\gram}. %Einheit? Einheiten stehen alle auf dem heiligen Zettel :D müsste Pa*s sein oder so, wenn ich mich richtig erinnere.
 \end{equation*}
 Die Massendurchsätze ergeben sich damit mit Gleichung \eqref{eqn:massendurchsatz} zu %was ist Q_2?
 \begin{align*}
-    \frac{\Delta m}{\Delta t}(\phantom{1}1) &= \SI{3.2 \pm 0.6}{\milli\mol\per\second} \\
-    \frac{\Delta m}{\Delta t}(\phantom{1}5) &= \SI{6.0 \pm 1.0}{\milli\mol\per\second} \\
-    \frac{\Delta m}{\Delta t}(10) &= \SI{1.0 \pm 0.3}{\milli\mol\per\second} \\
-    \frac{\Delta m}{\Delta t}(15) &= \SI{0.6 \pm 0.5}{\milli\mol\per\second}. %Einheit? Anders angben? kg/Sekunde vermutlich. Ich hatte die auch nur m1 genannt. Eigentlich ist das dm/delta*t oder so.
+    \frac{\Delta m}{\Delta t}(\phantom{1}1) &= \SI{0.38 \pm 0.08}{\gram\per\second} \\
+    \frac{\Delta m}{\Delta t}(\phantom{1}5) &= \SI{0.73 \pm 0.12}{\gram\per\second} \\
+    \frac{\Delta m}{\Delta t}(10) &= \SI{0.61 \pm 0.24}{\gram\per\second} \\
+    \frac{\Delta m}{\Delta t}(15) &= \SI{0.34 \pm 0.31}{\gram\per\second}. %Einheit? Anders angben? kg/Sekunde vermutlich. Ich hatte die auch nur m1 genannt. Eigentlich ist das dm/delta*t oder so.
 \end{align*}
 
 %f)
 \subsection{Bestimmung der mechanischen Kompressorleistung}
-Dichlordifluormethan hat bei den Werten
+Dichlordifluormethan hat bei den Werten \cite{V206}
 \begin{align*}
     T &= \SI{273.15}{\kelvin} \\
     p &= \SI{1e5}{\pascal} \\

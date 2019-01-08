@@ -115,7 +115,7 @@ vid4 = T1err[15]/(T1err[15]-T2err[15])
 #e)
 
 Steigung3, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(1/(T3si*R),np.log(psi))
-L= ufloat(Steigung3,std_err1) 
+L= ufloat(Steigung3,std_err1)/120.91 
 m1= ((m2*cw + mk*ck)*dT21)/L
 m2= ((m2*cw + mk*ck)*dT22)/L
 m3= ((m2*cw + mk*ck)*dT23)/L
@@ -123,7 +123,7 @@ m4= ((m2*cw + mk*ck)*dT24)/L
 
 #f)
 
-rho0= 5.51/120.91
+rho0= 5.51
 rho1= (paerr[1]*rho0*273.15)/(1e5*T2err[1])
 rho2= (paerr[5]*rho0*273.15)/(1e5*T2err[5])
 rho3= (paerr[10]*rho0*273.15)/(1e5*T2err[10])
