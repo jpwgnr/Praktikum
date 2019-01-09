@@ -66,13 +66,13 @@ A=breite*tiefe
 K=np.array([120, 120, 236, 21])
 L=np.array([0.03, 0.03, 0.03, 0.03])
 
-Ampnah1= amp2*4
-Ampfern1= amp1*4
+Ampnah1= amp1*4
+Ampfern1= amp2*4
 delt1= phase12*50
 phase1= 2*np.pi*delt1/80
 
-Ampnah2= amp6*5/1.5
-Ampfern2= amp5*5/1.5
+Ampnah2= amp5*5/1.5
+Ampfern2= amp6*5/1.5
 delt2= phase56*50
 phase2= 2*np.pi*delt2/80
 
@@ -84,9 +84,9 @@ phase3= 2*np.pi*delt3/80
 
 #calculate 
 
-delT12= (T1new-T2new)/L[0]
+delT12= (T2new-T1new)/L[0]
 delT34= (T3new-T4new)/L[1]
-delT56= (T5new-T6new)/L[2]
+delT56= (T6new-T5new)/L[2]
 delT78= (T7new-T8new)/L[3]
 delQ12= -K[0]*A[0]*delT12
 delQ34= -K[1]*A[1]*delT34
@@ -99,7 +99,7 @@ K3= (rho[3]*c[3]*(L[3])**2)/(2*delt3*unp.log(Ampnah3/Ampfern3))
 #save solution 
 
 file = open("build/solution.txt", "w")
-file.write("delQ12/delt= {} W\ndelQ34/delt= {} W\ndelQ56/delt= {} W\ndelQ78/delt= {} W\n\nMessing:\n\tAmpNah= {} K\n\tAmpFern= {} K\n\tdelt= {} s\n\tPhase= {}\n\nAluminium:\n\tAmpNah= {} K\n\tAmpFern= {} K\n\tdelt= {} s\n\tPhase= {}\n\nEdelstahl:\n\tAmpNah= {} K\n\tAmpFern= {} K\n\tdelt= {} s\n\tPhase= {}\n\n ".format(delQ12, delQ34, delQ56, delQ78, Ampnah1, Ampfern1, delt1, phase1, Ampnah2, Ampfern2, delt2, phase2, Ampnah3, Ampfern3, delt3, phase3 ))
+file.write("delQ12/delt= {} W\ndelQ34/delt= {} W\ndelQ56/delt= {} W\ndelQ78/delt= {} W\n\nMessing:\n\tAmpNah= {} K\n\tAmpFern= {} K\n\tdelt= {} s\n\tPhase= {}\nK= {}\n\nAluminium:\n\tAmpNah= {} K\n\tAmpFern= {} K\n\tdelt= {} s\n\tPhase= {}\nK= {}\n\nEdelstahl:\n\tAmpNah= {} K\n\tAmpFern= {} K\n\tdelt= {} s\n\tPhase= {}\nK= {}\n\n ".format(delQ12, delQ34, delQ56, delQ78, Ampnah1, Ampfern1, delt1, phase1, K1, Ampnah2, Ampfern2, delt2, phase2, K2, Ampnah3, Ampfern3, delt3, phase3, K3 ))
 file.close()
 
 #Make plots for data
