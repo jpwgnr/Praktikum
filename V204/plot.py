@@ -66,18 +66,18 @@ A=breite*tiefe
 K=np.array([120, 120, 236, 21])
 L=np.array([0.03, 0.03, 0.03, 0.03])
 
-Ampnah1= amp1*4
-Ampfern1= amp2*4
+Ampnah1= amp1/2*4
+Ampfern1= amp2/2*4
 delt1= phase12*50
 phase1= 2*np.pi*delt1/80
 
-Ampnah2= amp5*5/1.5
-Ampfern2= amp6*5/1.5
+Ampnah2= amp5/2*5/1.5
+Ampfern2= amp6/2*5/1.5
 delt2= phase56*50
 phase2= 2*np.pi*delt2/80
 
-Ampnah3= amp7*10/2.6 
-Ampfern3= amp8*10/2.6
+Ampnah3= amp7/2*10/2.6 
+Ampfern3= amp8/2*10/2.6
 delt3= phase78*500/4
 phase3= 2*np.pi*delt3/80
 #functions 
