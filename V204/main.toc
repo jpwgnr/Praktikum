@@ -17,5 +17,9 @@
 \contentsline {subsubsection}{\numberline {5.2.3}Edelstahlstab}{8}{subsubsection.5.2.3}
 \contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
 \contentsline {subsection}{\numberline {6.1}Statische Methode}{9}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Dynamische Methode}{9}{subsection.6.2}
-\contentsline {section}{\nonumberline Literatur}{10}{section*.3}
+\contentsline {subsubsection}{\numberline {6.1.1}Vergleich der Temperaturverläufe der fernen Thermoelemente}{9}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Wärmeleitfähigkeit}{9}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Wärmestrom}{9}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Vergleich der Temperaturdifferenzen der Thermoelemente von Edelstahl und Messing}{9}{subsubsection.6.1.4}
+\contentsline {subsection}{\numberline {6.2}Dynamische Methode}{10}{subsection.6.2}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.3}
