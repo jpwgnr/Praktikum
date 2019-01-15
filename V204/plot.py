@@ -47,6 +47,27 @@ amp61= links32+ rechts32
 amp5= ufloat(amp51.mean(), amp51.std())
 amp6= ufloat(amp61.mean(), amp61.std())
 
+tab3a = TexTable([phasemax1, phasemin1], [r"$\varphi_\text{max}/ \si{\second}$", r"$\varphi_\text{min} /\si{\second}$"], label="tab3a", caption="Die Phasenverschiebung der T1- und T2-Funktion der Maxima und der Minima aus dem Plot von Seite V im Anhang.", roundPrecision=2)
+tab3a.writeFile("build/tab3a.tex")
+
+
+tab3b = TexTable([amp11/2, amp21/2], [r"$Amp_\text{T1}/ \si{\degreeCelsius}$", r"$Amp_\text{T2}/ \si{\degreeCelsius}$"], label="tab3b", caption="Die Amplitude der T1-Funktion und die Amplitude der T2-Funktion aus dem Plot von Seite V im Anhang.", roundPrecision=2)
+tab3b.writeFile("build/tab3b.tex")
+
+tab4a = TexTable([phasemax3, phasemin3], [r"$\varphi_\text{max} /\si{\second}$", r"$\varphi_\text{min} /\si{\second}$"], label="tab4a", caption="Die Phasenverschiebung der T5- und T6-Funktion der Maxima und der Minima aus dem Plot von Seite VI im Anhang.", roundPrecision=2)
+tab4a.writeFile("build/tab4a.tex")
+
+tab4b = TexTable([amp51/2, amp61/2], [r"$Amp_\text{T5}/ \si{\degreeCelsius}$", r"$Amp_\text{T6} /\si{\degreeCelsius}$"], label="tab4b", caption="Die Amplitude der T5-Funktion und die Amplitude der T6-Funktion aus dem Plot von Seite VI im Anhang.", roundPrecision=2)
+tab4b.writeFile("build/tab4b.tex")
+
+tab5a = TexTable([phasemax2, phasemin2], [r"$\varphi_\text{max} /\si{\second}$", r"$\varphi_\text{min} /\si{\second}$"], label="tab5", caption="Die Phasenverschiebung der T7- und T8-Funktion der Maxima und der Minima aus dem Plot von Seite V im Anhang.", roundPrecision=2)
+tab5a.writeFile("build/tab5a.tex")
+
+tab5b = TexTable([amp71/2, amp81/2], [r"$Amp_\text{T7}/ \si{\degreeCelsius}$", r"$Amp_\text{T8} /\si{\degreeCelsius}$"], label="tab5b", caption="Die Amplitude der T7-Funktion und die Amplitude der T8-Funktion aus dem Plot von Seite V im Anhang.", roundPrecision=2)
+tab5b.writeFile("build/tab5b.tex")
+
+
+
 T1new= T1+273.15
 T2new= T2+273.15
 T3new= T3+273.15
