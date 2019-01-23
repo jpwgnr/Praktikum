@@ -8,13 +8,14 @@ Die Fallstrecke beträgt
 \begin{equation*}
     x = \SI{10}{\centi\meter}.
 \end{equation*}
-Die Masse, der Durchmesser und die Apparaturkonstante der kleinen Kugel sind:
+Die Masse, der Durchmesser und die Apparaturkonstante der kleinen Kugel sind durch
 \begin{align*}
     m_\text{klein} &= \SI{3.71}{\gram} \\
     d_\text{klein} &= \SI{0.0156}{\meter} \\
-    K_\text{klein} &= \SI{76.4}{\nano\pascal\cubic\meter\per\kilo\gram}.
+    K_\text{klein} &= \SI{76.4}{\nano\pascal\cubic\meter\per\kilo\gram}
 \end{align*}
-Die Masse und der Durchmesser der großen Kugel sind:
+gegeben.
+Die Masse und der Durchmesser der großen Kugel  betragen
 \begin{align*}
     m_\text{groß} &= \SI{4.21}{\gram} \\
     d_\text{groß} &= \SI{0.0158}{\meter}. \\
@@ -24,7 +25,7 @@ Die Dichte des destillierten Wassers beträgt
     \rho_\text{Fl} = \SI{998.2067}{\kilo\gram\per\cubic\meter}.
 \end{equation*}
 Aus der Masse und dem Volumen der Kugeln ergibt sich jeweils mittels Gleichung \eqref{eqn:dichte}
-die Dichte der Kugel:
+die Dichte der Kugel zu
 \begin{align*}
     \rho_\text{klein} &= \SI{1866.39}{\kilo\gram\per\cubic\meter} \\
     \rho_\text{groß} &= \SI{2038.51}{\kilo\gram\per\cubic\meter}.
@@ -39,13 +40,13 @@ und \eqref{eqn:standard}
     t_\text{klein} &= \SI{11.7 \pm 0.1}{\second} \\
     t_\text{groß} &= \SI{65.2 \pm 0.3}{\second}.
 \end{align*}
-Mit Gleichung \eqref{eqn:eta} berechnet sich die Viskosität mit $K_\text{klein}$,
+Mit Gleichung \eqref{eqn:eta} und Gleichung \eqref{eqn:etaerr} berechnet sich die Viskosität mit $K_\text{klein}$,
 $\rho_\text{klein}$ und $t_\text{klein}$ zu
 \begin{equation*}
     \eta = \SI{773 \pm 7}{\micro\pascal\second}.
 \end{equation*}
 Mit diesem Wert folgt für die Apparaturkonstante $K_\text{groß}$
-mittels Gleichung \eqref{eqn:K}
+mittels Gleichung \eqref{eqn:K} und Gleichung \eqref{eqn:Kerr}
 \begin{equation*}
     K_\text{groß} = \SI{11.40(11)}{\nano\pascal\cubic\meter\per\kilo\gram}.
 \end{equation*}
@@ -56,7 +57,7 @@ Die Falldauern der großen Kugel für verschiedene Temperaturen sind in den Tabe
 %Daraus besser eine Tabelle machen?:
 \input{build/tab2.tex}
 \input{build/tab3.tex}
-\noindent Die Viskositäten für die Falldauern der ersten und der zweiten Messung
+\noindent Die Viskositäten die mit der Gleichung \eqref{eqn:eta} für die Falldauern der ersten und der zweiten Messung
 sind in Tabelle \ref{tab4} zu finden.
 \input{build/tabsolution4.tex}
 \noindent Das Inverse der Zeit gegen die logarithmierte Viskosität für die erste
@@ -74,7 +75,7 @@ die zweite Messung in Abb. \ref{fig:plot2} gegeneinander aufgetragen.
     \label{fig:plot1}
 \end{figure}
 
-Die Parameter aus Gleichung \eqref{eqn:temp} sind 
+Die Parameter aus Gleichung \eqref{eqn:temp} ergeben sich mittels einer Regression und derselbigen Formel zu
 \begin{align*} 
     A_1 &= \SI{0.566(515)}{\nano\pascal\second} \\
     B_1 &= \SI{3012.12 \pm 304.10}{\kelvin}. \\
@@ -89,7 +90,7 @@ Die Parameter aus Gleichung \eqref{eqn:temp} sind
     \label{fig:plot2}
 \end{figure}
 
-Die Parameter aus Gleichung \eqref{eqn:temp} sind 
+Die Parameter aus Gleichung \eqref{eqn:temp} ergeben sich mittels einer Regression und derselbigen Formel zu 
 \begin{align*} 
     A_2 &=\SI{0.376(251)}{\nano\pascal\second} \\
     B_2 &=\SI{3140.87 \pm 223.67}{\kelvin}. \\

@@ -17,7 +17,7 @@ Diese ist eine Materialkonstante der Flüssigkeit und hängt stark von der Tempe
 Mit dem Kugelfallviskosimeter lässt sich diese Viskosität bestimmen. 
 Dafür wird eine Kugel in einer Flüssigkeit, deren Ausdehnung hinreichend groß ist, 
 damit sich keine Wirbel bilden, fallen gelassen. 
-Die Stokes'sche Reibung lässt sich folgendermaßen beschreiben:
+Die Stokes'sche Reibung lässt sich folgendermaßen beschreiben
 \begin{equation*}
     F_R = 6 \, \pi \, \eta \, v \, r.
 \end{equation*}
@@ -25,19 +25,20 @@ Beim Fallen nimmt die Reibung mit zunehmender Geschwindigkeit immer weiter zu,
 bis sich ein Kräftegleichgewicht einstellt. 
 Die Reibungs- und Auftriebskraft wirken entgegen der Schwerkraft. 
 Die Viskosität $\eta$ lässt sich aus der Fallzeit $t$, 
-der Dichte der Flüssigkeit $\rho_Fl$ und der Dichte der Kugel $\rho_K$ bestimmen.
+der Dichte der Flüssigkeit $\rho_{Fl}$ und der Dichte der Kugel $\rho_K$ bestimmen.
 Der Proportionalitätsfaktor $K$ ist eine Apparaturkonstante und enthält sowohl die Höhe,
 als auch die Kugelgeometrie.
-Es gilt:
+Es gilt
 \begin{equation}
     \eta = K (\rho_K -\rho_{Fl}) \cdot t.
     \label{eqn:eta}
 \end{equation}
-Die Apparaturkonstante $K$ kann also folgendermaßen bestimmt werden:
+Die Apparaturkonstante $K$ kann also als 
 \begin{equation}
-    K = \frac{\eta}{(\rho_{K}-\rho_{Fl}) \cdot t}.
+    K = \frac{\eta}{(\rho_{K}-\rho_{Fl}) \cdot t}
     \label{eqn:K}
 \end{equation}
+bestimmt werden.
 Die Dichte einer Kugel lässt sich mit dem Durchmesser $d$ und der Masse $m$ durch 
 \begin{equation}
     \rho = \frac{m}{V} = \frac{m}{\frac{4}{3} \, \pi \, \left( \frac{d}{2} \right)^3}
@@ -45,19 +46,21 @@ Die Dichte einer Kugel lässt sich mit dem Durchmesser $d$ und der Masse $m$ dur
 \end{equation}
 bestimmen.
 Die Temperaturabhängigkeit der Viskosität lässt sich mit der Andradeschen Gleichung 
-beschreiben: 
+als 
 \begin{equation}
     \eta(T) = A\cdot exp \left( \frac{B}{T} \right). %höhere Klammern
     \label{eqn:temp}
 \end{equation}
-$A$ und $B$ sind hier Konstanten.
+beschreiben.
+Die Werte $A$ und $B$ sind hier Konstanten.
 
 \subsection{Reynoldszahlen}
 Die Reynoldszahlen $Re$ geben das Verhältnis von Trägheits- zu
-Zähigkeitskräften an:
+Zähigkeitskräften durch
 \begin{equation*}
-    Re = \frac{\rho \, v \, d}{\eta}.
+    Re = \frac{\rho \, v \, d}{\eta}
 \end{equation*}
+an.
 Mit der Fallgeschwindigkeit
 \begin{equation}
     v = \frac{x}{t}
@@ -65,7 +68,7 @@ Mit der Fallgeschwindigkeit
 \end{equation}
 werden die Reynoldszahlen mittels
 \begin{equation}
-    Re = \frac{\rho \, x \, d}{\eta \, t}.
+    Re = \frac{\rho \, x \, d}{\eta \, t}
     \label{eqn:Re}
 \end{equation}
-berechnet.
+berechnet. Sind die Reynoldszahlen größer als 2300, wird eine Flüssigkeit als turbulent bezeichnet. Ist sie kleiner, ist sie laminar. 
