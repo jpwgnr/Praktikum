@@ -15,12 +15,12 @@ tab1.writeFile("build/tab1.tex")
 
 T11, t1 = np.genfromtxt("data/datab.txt", unpack=True)
 T1= T11+273.15
-tab2 = TexTable([T1,t1], [r"$T_1 /\si{\kelvin}$", r"$t /\si{\second}$"], label="tab2", caption= r"Die Fallzeit in Abhängigkeit zur Temperatur der Flüssigkeit.", roundPrecision=1)
+tab2 = TexTable([T1,t1], [r"$T /\si{\kelvin}$", r"$t_1 /\si{\second}$"], label="tab2", caption= r"Die Fallzeit in Abhängigkeit zur Temperatur der Flüssigkeit.", roundPrecision=1)
 tab2.writeFile("build/tab2.tex")
 
 T21, t2 = np.genfromtxt("data/datac.txt", unpack=True)
 T2= T21+273.15
-tab3 = TexTable([T2,t2], [r"$T_2 /\si{\kelvin}$", r"$t /\si{\second}$"], label="tab3", caption= r"Die Fallzeit in Abhängigkeit zur Temperatur der Flüssigkeit.", roundPrecision=1)
+tab3 = TexTable([T2,t2], [r"$T /\si{\kelvin}$", r"$t_2 /\si{\second}$"], label="tab3", caption= r"Die Fallzeit in Abhängigkeit zur Temperatur der Flüssigkeit.", roundPrecision=1)
 tab3.writeFile("build/tab3.tex")
 #extra values 
 #a)
@@ -87,10 +87,10 @@ rey22=(rhoFl*dbig*vwater22)/eta2
 tab4 = TexTable([eta1*1e3,eta2*1e3], [r"$\eta_1 /\si{\milli\pascal\second}$", r"$\eta_2 /\si{\milli\pascal\second}$"], label="tab4", caption= r"Die Viskosität für die erste und zweite Messung.", roundPrecision=3)
 tab4.writeFile("build/tab4.tex")
 
-tab5 = TexTable([1e3/T1, unp.log(eta1)], [r"$\frac{10^{3}}{T_1} /\si[per-mode=fraction]{\per\kelvin}$", r"$ln(\eta_1) /\si{\pascal\second}$"], label="tab5", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die erste Messung.", roundPrecision=1)
+tab5 = TexTable([1e3/T1, unp.log(eta1)], [r"$\frac{10^{3}}{T} /\si[per-mode=fraction]{\per\kelvin}$", r"$ln(\eta_1) /\si{\pascal\second}$"], label="tab5", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die erste Messung.", roundPrecision=1)
 tab5.writeFile("build/tab5.tex")
 
-tab6 = TexTable([1e3/T2, unp.log(eta2)], [r"$\frac{10^{3}}{T_2} /\si[per-mode=fraction]{\per\kelvin}$", r"$ln(\eta_2) /\si{\pascal\second}$"], label="tab6", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die zweite Messung.", roundPrecision=1)
+tab6 = TexTable([1e3/T2, unp.log(eta2)], [r"$\frac{10^{3}}{T} /\si[per-mode=fraction]{\per\kelvin}$", r"$ln(\eta_2) /\si{\pascal\second}$"], label="tab6", caption= r"Die invertierte Temperatur gegen die logarithmierte Viskosität für die zweite Messung.", roundPrecision=1)
 tab6.writeFile("build/tab6.tex")
 
 tab7 = TexTable([T1, rey21, rey22], [r"$T /\si{\kelvin}$", r"$Re_1$", r"$Re_2$"], label="tab7", caption= r"Die Temperatur und die Reynoldszahlen der erste und zweite Messung.", roundPrecision=2)

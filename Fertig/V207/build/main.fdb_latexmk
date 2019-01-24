@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1547814347 "main.tex" "build/main.pdf" "main" 1548266206
+["lualatex"] 1547814347 "main.tex" "build/main.pdf" "main" 1548267446
   "/home/lewis206/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1541846690 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/unicode-data/UnicodeData.txt" 1541846505 1769137 acc291106c3758d2025f8d7bd5518bee ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty" 1541846496 2591 6404d0c7d28505fb38ce0d86c2e28ae7 ""
@@ -26,9 +26,9 @@
   "header.tex" 1546956275 4032 e713386866ef0d0b661fc2ce2231b389 ""
   "main.tex" 1546810419 302 9f57ca68f182a8fcdebb2b5f79b45532 ""
   (generated)
-  "build/main.run.xml"
   "build/main.toc"
+  "build/main.run.xml"
   "build/main.log"
-  "build/main.pdf"
   "build/main.aux"
+  "build/main.pdf"
   "build/main.bcf"

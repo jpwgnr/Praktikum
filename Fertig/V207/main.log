@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.10)  23 JAN 2019 19:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.10)  24 JAN 2019 08:02
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.209 seconds
+luaotfload | main : initialization completed in 0.225 seconds
 (./header.tex
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.c
 ls
@@ -566,24 +566,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 an.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	table: 0x6e63c70
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x5f984e0
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	table: 0x6e63e40
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x5f986b0
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -1738,13 +1738,8 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout3 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'main.bbl' is wrong format version - expected 3.0
-.
-
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 \AtBeginShipoutBox=\box59
@@ -1812,67 +1807,57 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex [3])
-(./content/fehlerrechnung.tex [4]) (./content/durchfuehrung.tex
-<build/viskosimeter.png, id=84, 626.34pt x 803.0pt>
+] (./content/theorie.tex [3]) (./content/durchfuehrung.tex
+<build/viskosimeter.png, id=70, 626.34pt x 803.0pt>
 File: build/viskosimeter.png Graphic file (type png)
 <use build/viskosimeter.png>
 Package luatex.def Info: build/viskosimeter.png  used on input line 10.
 (luatex.def)             Requested size: 284.53595pt x 284.534pt.
- [5<./build/viskosimeter.png>]) (./content/auswertung.tex [6] (./build/tab1.tex
-)
-
-LaTeX Warning: Reference `eqn:etaerr' on page 7 undefined on input line 43.
-
-
-LaTeX Warning: Reference `eqn:Kerr' on page 7 undefined on input line 49.
-
-(./build/tab2.tex) (./build/tab3.tex [7]) (./build/tabsolution4.tex) [8]
-(./build/tabsolution5.tex) (./build/tabsolution6.tex)
-<build/plot1.pdf, id=136, 417.7206pt x 258.00488pt>
+[4]) (./content/fehlerrechnung.tex [5<./build/viskosimeter.png>])
+(./content/auswertung.tex [6] (./build/tab1.tex) [7] (./build/tab2.tex)
+(./build/tab3.tex) [8] (./build/tabsolution4.tex) (./build/tabsolution5.tex)
+(./build/tabsolution6.tex [9])
+<build/plot1.pdf, id=147, 417.7206pt x 258.00488pt>
 File: build/plot1.pdf Graphic file (type pdf)
 <use build/plot1.pdf>
 Package luatex.def Info: build/plot1.pdf  used on input line 72.
 (luatex.def)             Requested size: 398.33655pt x 284.53061pt.
- [9] [10<./build/plot1.pdf>]
-<build/plot2.pdf, id=173, 417.7206pt x 258.00488pt>
+ [10]
+<build/plot2.pdf, id=154, 417.7206pt x 258.00488pt>
 File: build/plot2.pdf Graphic file (type pdf)
 <use build/plot2.pdf>
-Package luatex.def Info: build/plot2.pdf  used on input line 87.
+Package luatex.def Info: build/plot2.pdf  used on input line 86.
 (luatex.def)             Requested size: 398.33655pt x 284.53061pt.
- [11<./build/plot2.pdf>] (./build/tabsolution7.tex))
-(./content/diskussion.tex [12]) [13]
+ [11<./build/plot1.pdf>] [12<./build/plot2.pdf>] (./build/tabsolution7.tex)) (.
+/content/diskussion.tex [13]) [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
- [14]
+ [15]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
- (./main.aux
+
+(./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 26
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: B87CB2D144162BB13562EDB385EFD2B3;17024.
+(rerunfilecheck)             Checksum: FA2111ECB549FA81AF546C8993939369;17025.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 6A765532B5F1BC1304B41FA703649B75;1846.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: B5227EBAE0EAAC0E4DA66A945565B233;1846.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 43532 strings out of 494407
+ 43530 strings out of 494407
  100000,1648299 words of node,token memory allocated
  806 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 46 attribute, 77 glue_spec
 , 46 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:3,2:3550,3:357,4:37,5:294,6:40,7:3245,8:86,9:1245,10:16,11:257
-
- 46196 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:4042,3:360,4:33,5:331,6:40,7:3957,8:107,9:1441,10:16,11:29
+5
+ 46193 multiletter control sequences out of 65536+600000
  304 fonts using 112988575 bytes
  61i,27n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10
@@ -1889,10 +1874,10 @@ xmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/lewis206/.local/t
 exlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/lew
 is206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
 
-Output written on main.pdf (14 pages, 455336 bytes).
+Output written on main.pdf (15 pages, 455404 bytes).
 
-PDF statistics: 360 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 131072)
+PDF statistics: 364 PDF objects out of 1000 (max. 8388607)
+ 295 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 131072)
  145 words of extra memory for PDF output out of 10000 (max. 100000000)
 
