@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1547560079 "main.tex" "build/main.pdf" "main" 1547560079
+["lualatex"] 1547560079 "main.tex" "build/main.pdf" "main" 1547562889
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-basic-merged.lua" 1541846511 136668 3d95e4f47a0d0cc0734d294c90677010 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-basic.lua" 1541846511 2722 2c41832e7e5bca0e54a58e34be26f602 ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-compat.lua" 1541846511 603 398583cb619d20952d67edcedae41608 ""
@@ -7,12 +7,12 @@
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-extended.lua" 1541846511 4863 dac85610fa18349da7d19b832296180f ""
   "/home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/luaotfload/luaotfload-characters.lua" 1541846511 3079519 2769d68826a1c1872ab6faf73a71e611 ""
   "/home/lewis206/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1541846487 1370712 fb12777e330d2baa012a8cd41c3cc684 ""
-  "build/main.aux" 1546969573 1838 01c1d871b9e32b63b44e544c0e728324 ""
-  "main.tex" 1547103755 302 9f57ca68f182a8fcdebb2b5f79b45532 ""
+  "build/main.aux" 1546979202 1838 01c1d871b9e32b63b44e544c0e728324 ""
+  "main.tex" 1546979202 302 9f57ca68f182a8fcdebb2b5f79b45532 ""
   (generated)
+  "build/main.log"
   "build/main.aux"
   "build/main.pdf"
-  "build/main.toc"
   "build/main.bcf"
+  "build/main.toc"
   "build/main.run.xml"
-  "build/main.log"
