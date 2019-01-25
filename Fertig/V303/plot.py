@@ -32,19 +32,19 @@ Uout3 = zweiUout3/2
 
 #functions 
 
-def getUout(phi, U0):
-    return (2/np.pi)*U0*np.cos(phi)
+def getUout(phi, U0, delta):
+    return (2/np.pi)*U0*np.cos(phi +delta)
 
 def func(x, m, n):
     return m*x+n
 
 #calculate 
 #2
-U02params, pcov2 = curve_fit(getUout, phi2, Uout2, p0=[6.56])
+U02params, pcov2 = curve_fit(getUout, phi2, Uout2, p0=[6.56, 0.5])
 errU02 = np.sqrt(np.abs(np.diag(pcov2)))
 newphi= np.linspace(phi2[0], phi2[-1], 400)
 #3
-U03params, pcov3 = curve_fit(getUout, phi3, Uout3, p0=[6.56])
+U03params, pcov3 = curve_fit(getUout, phi3, Uout3, p0=[6.56, 0.5])
 errU03 = np.sqrt(np.abs(np.diag(pcov3)))
 #4 
 newr = np.linspace(r4[0], r4[-1], 4000)

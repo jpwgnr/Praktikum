@@ -1,0 +1,48 @@
+\section{Ziel}
+\label{sec:Ziel}
+
+Bei diesem Versuch soll die Wärmeleitung von Aluminium, Messing und Edelstahl untersucht werden. 
+
+\section{Theorie}
+\label{sec:Theorie}
+
+In einem Körper, der sich in einem Temperaturungleichgewicht befindet, kommt es zu einem Wärmetransport entlang 
+des Temperaturgefälles. Dies kann z.B. durch Wärmeleitung geschehen. In festen Körpern erfolgt der Wärmetransport 
+über Phononen und frei bewegliche Elektronen. In Metallen ist der Gitterbeitrag (Phononen) zu vernachlässigen. 
+
+\noindent Ist das eine Ende eines Stabes wärmer als das andere, durchfließt die Wärmemenge $dQ$ die Querschnittsfläche $A$ in der Zeit $dt$. Es gilt:
+\begin{equation}
+\frac{dQ}{dt} = -\kappa \, A \frac{\partial T}{\partial x},
+\label{eqn:dQ}
+\end{equation}
+wobei $\kappa$ die Wärmeleitfähigkeit ist.
+
+\noindent Für die Wärmestromdichte $j_{\omega}$ gilt:
+\begin{equation*}
+    j_{\omega} = -\kappa \, \frac{\partial T}{\partial x}.
+\end{equation*}
+Mit Hilfe der Kontinuitätsgleichung kann hieraus die eindimensionale Wärmeleitungsgleichung aufgestellt werden:
+\begin{equation*}
+    \frac{\partial T}{\partial t} = \frac{\kappa}{\rho c} \frac{\partial^2 T}{\partial x^2},
+\end{equation*}
+wobei $\rho$ die Dichte und $c$ die spezifische Wärme ist.
+Dabei ist $\frac{\kappa}{\rho c}$ die Temperaturleitfähigkeit. Sie gibt die Schnelligkeit an, mit der sich ein 
+Temperaturunterschied ausgleicht. Die Lösung der Wärmeleitungsgleichung hängt von der Geometrie des Stabes und den Anfangsbedingungen ab. 
+
+\noindent Wird ein Stab abwechselnd erwärmt und abgekühlt, breitet sich wegen der periodischen Temperaturwechsel eine räumliche 
+und zeitliche Temperaturwelle aus. Diese wird folgendermaßen beschrieben:
+\begin{equation*}
+    T(x,t) = T_\text{max} \,  e^{\mathlarger{-\sqrt{\frac{\omega \rho c}{2 \kappa}} x}} cos\!\!\left(\omega t - \sqrt{\frac{\omega \rho c}{2 \kappa}} x\right).
+\end{equation*}
+Die Phasengeschwindigkeit $v$ der Welle ist
+\begin{equation*}
+    v= \frac{\omega}{k} = \sqrt{\frac{2\kappa \omega}{\rho c}}.
+\end{equation*}
+Für die Wärmeleitfähigkeit ergibt sich nach einigen kleinen Umformungen: %ohne "kleinen"?
+\begin{equation}
+    \kappa = \frac{\rho c (\Delta x)^2}{2 \Delta t \, ln\!\!\left(\frac{A_\text{nah}}{A_\text{fern}}\right)}.
+    \label{eqn:Wärme}
+\end{equation}
+Dabei sind $A_\text{nah}$ und $A_\text{fern}$ die Amplituden an verschiedenen Stellen $x_\text{nah}$ und $x_\text{fern}$. Die Größe $\Delta x$ ist 
+der Abstand zwischen diesen beiden Messstellen und $\Delta t$ die Phasendifferenz der Temperaturwelle zwischen beiden 
+Messstellen.

@@ -1,0 +1,135 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+Der Abstand der Thermoelemente der jeweiligen Stäbe beträgt
+\begin{equation*}
+    x = \SI{3}{\centi\meter}.
+\end{equation*}
+Die Werte für die Dichte \cite{V204}, die spezifische Wärme \cite{V204} und 
+die Wärmeleitfähigkeit \cite{wiki} von Messing sind: 
+\begin{align*}
+    \rho &= \SI{8520}{\kilo\gram\per\cubic\meter} \\
+    c &= \SI{385}{\joule\per\kilo\gram\per\kelvin} \\
+    \kappa &= \SI{120}{\watt\per\meter\per\kelvin}.
+\end{align*}
+Die Werte für Aluminium \cite{V204}, \cite{wiki} sind:
+\begin{align*}
+    \rho &= \SI{2800}{\kilo\gram\per\cubic\meter} \\
+    c &= \SI{830}{\joule\per\kilo\gram\per\kelvin} \\
+    \kappa &= \SI{236}{\watt\per\meter\per\kelvin}.
+\end{align*}
+Die Werte für Edelstahl \cite{V204}, \cite{edelstahl} sind:
+\begin{align*}
+    \rho &= \SI{8000}{\kilo\gram\per\cubic\meter} \\
+    c &= \SI{400}{\joule\per\kilo\gram\per\kelvin} \\
+    \kappa &= \SI{21}{\watt\per\meter\per\kelvin}.
+\end{align*}
+
+\subsection{Statische Methode}
+
+\input{build/tab1.tex}
+
+Die Temperaturverläufe der fernen Thermoelemente
+befinden sich im Anhang (I,II).
+\newline
+Der Wärmestrom für die fernen Thermoelemente für fünf Zeiten kann mittels
+Gleichung \ref{eqn:dQ} bestimmt werden.
+Für den breiten Messingstab (T1/T2) ergibt sich somit:
+\begin{align*} %-0.84864 -0.6144  -0.53184 -0.50304 -0.49536
+   \frac{\Delta Q}{\Delta t}(\SI{140}{\second}) &= \SI{-0.848}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{280}{\second}) &= \SI{-0.614}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{420}{\second}) &= \SI{-0.532}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{560}{\second}) &= \SI{-0.503}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{700}{\second}) &= \SI{-0.495}{\watt} \\ 
+\end{align*}
+
+Für den schmalen Messingstab (T3/T4) ergibt sich:
+\begin{align*} %-0.35168 -0.30688 -0.27776 -0.26768 -0.26096
+   \frac{\Delta Q}{\Delta t}(\SI{140}{\second}) &= \SI{-0.351}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{280}{\second}) &= \SI{-0.307}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{420}{\second}) &= \SI{-0.278}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{560}{\second}) &= \SI{-0.268}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{700}{\second}) &= \SI{-0.261}{\watt} \\ 
+\end{align*}
+
+Für den Aluminiumstab (T5/T6) ergibt sich:
+\begin{align*} %-0.449344 -0.143488 -0.05664  -0.033984 -0.022656
+   \frac{\Delta Q}{\Delta t}(\SI{140}{\second}) &= \SI{-0.449}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{280}{\second}) &= \SI{-0.143}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{420}{\second}) &= \SI{-0.057}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{560}{\second}) &= \SI{-0.034}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{700}{\second}) &= \SI{-0.023}{\watt} \\ 
+\end{align*}
+
+Für den Edelstahlstab (T7/T8) ergibt sich:
+\begin{align*} %-0.320208 -0.33432  -0.313152 -0.29904  -0.289968
+   \frac{\Delta Q}{\Delta t}(\SI{140}{\second}) &= \SI{-0.320}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{280}{\second}) &= \SI{-0.334}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{420}{\second}) &= \SI{-0.313}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{560}{\second}) &= \SI{-0.299}{\watt} \\ 
+   \frac{\Delta Q}{\Delta t}(\SI{700}{\second}) &= \SI{-0.290}{\watt} \\ 
+\end{align*}
+\newline
+Die Temperaturdifferenz der beiden Thermoelemente des Edelstahlstabs
+ist graphisch dargestellt und befindet sich im Anhang (III).
+Für den breiten Messingstab ist die Temperaturdifferenz der beiden
+Thermoelemente ebenfalls graphisch dargestellt (IV).
+
+\subsection{Dynamische Methode}
+Die Auswertung der dynamischen Methode für den breiten Messingstab, 
+den Aluminiumstab und den Edelstahlstab ist im Folgenden zu sehen.
+\subsubsection{Breiter Messingstab}
+\label{sec:messing}
+
+\input{build/tab3a.tex}
+\input{build/tab3b.tex}
+
+Die Temperaturverläufe für den breiten Messingstab (Thermoelemente $T1$ und $T2$)
+sind graphisch dargestellt (V).
+\newline
+Durch Abmessung der Amplituden $A1$ und $A2$ und der Phasendifferenzen $\Delta t$ 
+und Mittelung dieser, ergeben sich folgende Werte:
+\begin{align*}
+    A_{1} &= \SI{8.47 \pm 0.18}{\kelvin} \\
+    A_{2} &= \SI{2.69 \pm 0.24}{\kelvin} \\
+    \Delta t &= \SI{14.8 \pm 1.5}{\second}.
+\end{align*}
+Aus diesen Werten lässt sich mittels Gleichung \eqref{eqn:Wärme} die Wärmeleitfähigkeit
+bestimmen. Diese ergibt sich zu
+\begin{equation*}
+    \kappa = \SI{87 \pm 11}{\watt\per\meter\per\kelvin}.
+\end{equation*}
+
+\subsubsection{Aluminiumstab}
+
+\input{build/tab4a.tex}
+\input{build/tab4b.tex}
+
+Die Temperaturverläufe für die Thermoelemente des Aluminiumstabes befinden sich im Anhang (VI).
+Auf die selbe Weise wie in \ref{sec:messing} beschrieben lassen sich die Werte
+für den Aluminiumstab bestimmen:
+\begin{align*}
+    A_{5} &= \SI{8.89 \pm 0.31}{\kelvin} \\
+    A_{6} &= \SI{4.79 \pm 0.25}{\kelvin} \\
+    \Delta t &= \SI{9.6 \pm 1.0}{\second}.
+\end{align*}
+Damit ergibt sich mit \eqref{eqn:Wärme} eine Wärmeleitfähigkeit von
+\begin{equation*}
+    \kappa = \SI{176 \pm 26}{\watt\per\meter\per\kelvin}.
+\end{equation*}
+
+\subsubsection{Edelstahlstab}
+
+\input{build/tab5a.tex}
+\input{build/tab5b.tex}
+
+Die Temperaturverläufe für die Thermoelemente des Edelstahlstabes befinden sich im Anhang (VII).
+Die Amplituden und die Phasendifferenz des Edelstahlstabes ergeben sich zu
+\begin{align*}
+    A_{7} &= \SI{12.19 \pm 0.12}{\kelvin} \\
+    A_{8} &= \SI{1.99 \pm 0.23}{\kelvin} \\
+    \Delta t &= \SI{53.1 \pm 3.4}{\second}.
+\end{align*}
+Die Wärmeleitfähigkeit ist mit Gleichung \eqref{eqn:Wärme}
+\begin{equation*}
+    \kappa = \SI{15.0 \pm 1.4}{\watt\per\meter\per\kelvin}.
+\end{equation*}

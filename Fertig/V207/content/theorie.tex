@@ -1,0 +1,74 @@
+\section{Ziel}
+Das Ziel dieses Versuchs ist es, die Temperaturabhängigkeit
+der dynamischen Viskosität von destilliertem Wasser mittels
+Kugelfall-Viskosimeter zu bestimmen.
+
+\section{Theorie}
+\label{sec:Theorie}
+
+\subsection{Dynamische Viskosität}
+Ein Körper, der sich in einer Flüssigkeit bewegt, wird von verschiedenen Kräften beeinflusst. 
+Es wirken die Reibungskraft, die Schwerkraft und die Auftriebskraft. 
+Die Reibungskraft hängt dabei von verschiedenen Faktoren ab:
+Von der Berührungsfläche $A$, der Geschwindigkeit $v$ und
+der sogenannten dynamischen Viskosität $\eta$. 
+Diese ist eine Materialkonstante der Flüssigkeit und hängt stark von der Temperatur dieser Flüssigkeit ab. 
+\newline
+Mit dem Kugelfallviskosimeter lässt sich diese Viskosität bestimmen. 
+Dafür wird eine Kugel in einer Flüssigkeit, deren Ausdehnung hinreichend groß ist, 
+damit sich keine Wirbel bilden, fallen gelassen. 
+Die Stokes'sche Reibung lässt sich folgendermaßen beschreiben
+\begin{equation*}
+    F_R = 6 \, \pi \, \eta \, v \, r.
+\end{equation*}
+Beim Fallen nimmt die Reibung mit zunehmender Geschwindigkeit immer weiter zu, 
+bis sich ein Kräftegleichgewicht einstellt. 
+Die Reibungs- und Auftriebskraft wirken entgegen der Schwerkraft. 
+Die Viskosität $\eta$ lässt sich aus der Fallzeit $t$, 
+der Dichte der Flüssigkeit $\rho_{Fl}$ und der Dichte der Kugel $\rho_K$ bestimmen.
+Der Proportionalitätsfaktor $K$ ist eine Apparaturkonstante und enthält sowohl die Höhe,
+als auch die Kugelgeometrie.
+Es gilt
+\begin{equation}
+    \eta = K (\rho_K -\rho_{Fl}) \cdot t.
+    \label{eqn:eta}
+\end{equation}
+Die Apparaturkonstante $K$ kann also als 
+\begin{equation}
+    K = \frac{\eta}{(\rho_{K}-\rho_{Fl}) \cdot t}
+    \label{eqn:K}
+\end{equation}
+bestimmt werden.
+Die Dichte einer Kugel lässt sich mit dem Durchmesser $d$ und der Masse $m$ durch 
+\begin{equation}
+    \rho = \frac{m}{V} = \frac{m}{\frac{4}{3} \, \pi \, \left( \frac{d}{2} \right)^3}
+    \label{eqn:dichte}
+\end{equation}
+bestimmen.
+Die Temperaturabhängigkeit der Viskosität lässt sich mit der Andradeschen Gleichung 
+als 
+\begin{equation}
+    \eta(T) = A\cdot exp \left( \frac{B}{T} \right). %höhere Klammern
+    \label{eqn:temp}
+\end{equation}
+beschreiben.
+Die Werte $A$ und $B$ sind hier Konstanten.
+
+\subsection{Reynoldszahlen}
+Die Reynoldszahlen $Re$ geben das Verhältnis von Trägheits- zu
+Zähigkeitskräften durch
+\begin{equation*}
+    Re = \frac{\rho \, v \, d}{\eta}
+\end{equation*}
+an.
+Mit der Fallgeschwindigkeit
+\begin{equation}
+    v = \frac{x}{t}
+    \label{eqn:v}
+\end{equation}
+werden die Reynoldszahlen mittels
+\begin{equation}
+    Re = \frac{\rho \, x \, d}{\eta \, t}
+    \label{eqn:Re}
+\end{equation}
+berechnet. Sind die Reynoldszahlen größer als 2300, wird eine Flüssigkeit als turbulent bezeichnet. Ist sie kleiner, ist sie laminar. 

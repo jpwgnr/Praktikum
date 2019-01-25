@@ -1,0 +1,10 @@
+PWD /home/lewis206/praktikum/V204
+INPUT /home/lewis206/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
+INPUT ./main.tex
+OUTPUT build/main.log
+INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-basic.lua
+INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-basic-merged.lua
+INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-compat.lua
+INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-extended.lua
+INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-extended-merged.lua
+INPUT /home/lewis206/.local/texlive/2018/texmf-dist/tex/luatex/luaotfload/luaotfload-characters.lua
