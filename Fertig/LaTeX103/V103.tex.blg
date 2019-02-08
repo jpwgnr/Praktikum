@@ -1,5 +1,0 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is 'V103.tex.blg'
-[44] biber:313> INFO - === So Nov  4, 2018, 16:44:47
-[161] Utils.pm:209> ERROR - Cannot find control file 'V103.tex.bcf'! - Did latex run successfully on your .tex file before you ran biber?
-[161] Biber.pm:114> INFO - ERRORS: 1
