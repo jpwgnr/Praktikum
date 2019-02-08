@@ -1,0 +1,25 @@
+
+Formeln nummerieren
+
+Nicht "man" benutzen
+
+Formel und Gleichungen alle in der Theorie herleiten und Auswertung Formeln mit Labeln verlinken
+
+Konsistent bleiben mit Bezeichnung a!=r
+
+Abbildungsunterschriften eindeutig und exkat formulieren, ruhig ausführlich
+
+Alle Originalwerte in Tabellen angeben
+
+Diskussion: ohne "man", "beispielsweise" etc. Auch positive Sachen benennen und relative Fehler erwähnen. 
+
+er/sie nicht verwenden (sein/seine, etc)
+
+Theorie Unterkapitel
+
+Herleitungen nicht nötig
+
+also = damit
+
+Quellen angeben
+
