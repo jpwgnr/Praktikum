@@ -1,0 +1,2 @@
+Maxwell'sches Rad
+Trägheitsmoment: I=1.0702442580136449, 
