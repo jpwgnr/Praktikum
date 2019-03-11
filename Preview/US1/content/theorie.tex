@@ -5,4 +5,54 @@ Die grundlegenden Eigenschaften und Begriffe der Ultraschallechographie sollen k
 \section{Theorie}
 \label{sec:Theorie}
 
+Der Frequenzbereich beim Ultraschall liegt zwischen \SI{20}{\kilo\hertz} und ca. \SI{1}{\giga\Hertz}. Die Ultraschalltechnik findet vielreiche Anwendung bei zerstörfreier Materialprüfung und in der Medizin. 
 
+Der Schall ist eine longitudinale Druckwelle und wird beschrieben durch
+
+\begin{equation}
+    p(x,t) = p_0 + v_0 Z cos(wt -kx).
+    \label{eqn:welle}
+\end{equation}
+
+Die akustische Impedanz $Z$ setzt sich dabei aus der Schallgeschwindigkeit in diesem Material und dessen Dichte zusammen. Es gilt $Z = c \cdot \rho$. 
+Die Welle besitzt ähnliche Eigenschaften wie elektromagnetische Wellen, aber die Phasengeschwindigkeit ist materialabhängig. In Gasen und Flüssigkeiten breitet sich der Schall immer longitudinal aus. In Flüssigkeiten ist die Geschwindigkeit abhängig von der Kompressibilität $\kappa$ und der Dichte $\rho$. 
+Sie ergibt sich zu 
+\begin{equation}
+    c_{Fl}= \sqrt{\frac{1}{\kappa \cdot \rho}}.
+    \label{eqn:cfl}
+\end{equation}
+
+Bei einem Festkörper ergibt sich die Geschwindigkeit zu 
+\begin{equation}
+    c_{Fe}= \sqrt{\frac{E}{\rho}}.
+    \label{eqn:cfe}
+\end{equation}
+
+Dabei wird die inverse Kompressibilität durch $E$ der Elastizitätsmodul ersetzt. Die Geschwindigkeit unterscheidet sich im Festkörper aber für die longitudinale und transversale Ausbreitung. 
+
+Ein Teil der Energie bei der Ausbreitung von Schall wird durch Absorption verloren. Die Intensität $I_0$ nimmt exponentiell auf der Strecke $x$ ab und der Faktor $\alpha$ ist der Absorbtionskoeffizient, sodass sich ergibt 
+\begin{equation}
+    I(x)= I_0 \cdot e^{-\alpha x}.
+    \label{eqn:I}
+\end{equation}
+
+In Luft wird Schall starkt absorbiert, weshalb zwischen Schallgeber und untersuchendem Material ein Kontaktmittel verwendet wird. 
+Eine Schallwelle, die auf eine Grenzfläche trifft wird reflektiert. Der Reflexionskoeffizient ergibt sich mit den Impedanzen beider Materialien zu 
+
+\begin{equation}
+    R = (\frac{Z_1-Z_2}{Z_1-Z_2})^2.
+    \label{eqn:R}
+\end{equation}
+
+Der Transmissionsanteil wird mittels $T= 1-R$ bestimmt. 
+
+Die Erzeugung von Ultraschall funktioniert auf verschiedene Arten. Eine Art ist die Verwendung des reziproken piezo-elektrischen Effekts. Dafür bringt man einen piezoelektrischen Kristall in ein elektrisches, sich wechselndes, Feld, sodass der Kristall, wenn eine Achse in Richtung des Feldes gerichtet ist, sich in beginnt zu schwingen. Beim Schwingen strahlt er Ultraschallwellen ab. 
+Stimmen Anregungsfrequenz und Eigenfrequenz überein, entstehen große Amplituden, sodass hohe Schallenergiedichten genutzt werden. Der Kristall kann auch als Schallempfänger genutzt werden. Quarze sind dabei die meist benutzten Piezokristalle, da sie konstante Eigenschaften besitzten. Der piezoelektrische Effekt ist aber relativ schwach. 
+
+In der Ultraschalltechnik werden zwei Verfahren verwendet. 
+Das Duchschallungs-Verfahren und das Impuls-Echo-Verfahren. 
+Das Durchschallungs-Verfahren funktioniert so, dass mit einem Ultraschallsender ein kurzzeitiger Schallimpuls gesendet wird und am anderen Ende der Probe ein Empfänger steht. Ein abgeschwächtes Signal gibt Auskunft darüber, dass eine Fehlstelle vorhanden ist. Dabei kann aber nicht bestimmt werden, wo sich die Fehlstelle befindet.
+
+Beim Impuls-Echo-Verfahren ist der Schallsender auch der Empfänger. Der Ultraschallpuls wird beirbei an Grenzflächen reflektiert und nach der Rückkehr vom Empfänger aufgenommen. Bei Fehlstellen kann dann die Höhe des Echos zu Rückschlüssen über deren Größe führen. 
+
+Laufzeitdiagramm können als A-Scan, B-Scan oder TM-Scan durchgeführt werden. 

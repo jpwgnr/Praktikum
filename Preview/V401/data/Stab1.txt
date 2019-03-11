@@ -1,0 +1,5 @@
+# Stabe und sein Gewicht und Länge und Durchmesser
+
+460.3 51.2 8.0
+0 0 0
+0 0 0
