@@ -1,4 +1,43 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{V<++>}
+\subsection{Theoretische Grundlage}
+Elektronische Felder haben auf ruhende Ladungen ein ausübendes Kraftfeld, magnetostatische Felder im Gegensatz dazu nur auf Ladungen, die sich relativ zum Feld bewegen. 
+Eine Ladung $q$, die sich mit der Geschwindigkeit $\vec{v}$ in einem homogenen Magnetfeld $\vec{B}$ erfärt die Lorentz-Kraft 
+\begin{equation}
+    \vec{F_\text{L}}= q \vec{v} \cross \vec{B}.
+    \label{eqn:Lorentz}
+\end{equation}
+
+Die Lorentz-Kraft ist nur nicht null, wenn es eine Geschwindigkeitskomponente $\vec{v}$ gibt, die senkrecht zu $\vec{B}$ ausgerichtet ist. 
+
+Das  Magnetfeld ändert allerdings nur die Richtung und ändert nicht die Geschwindigkeit. Also ist die Energie konstant innerhalb des Systems der Ladung. 
+
+Der Radius der Krümmungsbahn lässt aus dem Gleichgewicht der Lorentz- und der Zentrifugalkraft bestimmen. Es ergibt sich 
+\begin{equation}
+    r= \frac{m_\text{0}v_\text{0}}{e_\text{0} B}.
+    \label{eqn:radius}
+\end{equation}
+Die rechte Seite der Gleichung ist konstant, insofern ist die Krümmungsbahn iene Kreisbahn. 
+
+\subsection{Praktische Grundlage}
+
+Mit Gleichung \ref{eqn:radius} lässt sich die spezifische Ladung der Elektronen $e_\text{0}/m_\text{0}$ bestimmen. 
+Mit der Beschleunigungsspannung $U_\text{B}$ ergibt sich die konstante Geschwindigkeit $v_\text{0}$ zu 
+\begin{equation}
+    v_\text{0}= \sqrt{2 U_\text{B} \frac{e_\text{0}}{m_\text{0}}}.
+    \label{eqn:v0}
+\end{equation}
+In einem feldfreien Raum bewegen sich die Elektronen eines Kathodenstrahls in Richtung Mittelpunkt des Leuchtschirms und erzeugen einen Leuchtfleck. 
+Wenn das Magnetfeld dann eingeschaltet wird, verschiebt sich der Leuchtfleck aufgrund der Krümmung auf der vertikalen Achse um das Stück $D$. Zwischen dem Wirkungsbereich L, der Weite zwischen der Quelle und dem Schirm, dem Stück $D$ und dem Radius $r$ ergibt sich über den Satz des Pythagoras die Verbindung
+
+\begin{equation}
+    r = \frac{L^2 + D^2}{2D}.
+    \label{eqn:radius2}
+\end{equation}
+
+Dies kann man in \ref{eqn:radius} einsetzen und erhält den Zusammenhang 
+\begin{equation}
+    \frac{D}{L^2 + D^2}= \frac{1}{\sqrt{8 U_\text{B}}}\sqrt{\frac{e_\text{0}}{m_\text{0}}} B.
+    \label{eqn:Ende}
+\end{equation}

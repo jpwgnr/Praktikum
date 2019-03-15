@@ -1,4 +1,64 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{V<++>}
+Um Röntgenstrahlen zu erzeugen werden Elektronen in einer evakuierten Röhre emittiergt und auf eine Anode beschleunigt. Beim Auftreffen ensteht Röntgenstrahlung. 
+Diese setzt sich aus der sogenannten kontinuierlichen Bremssstrahlung und der charakteristischen Röntgenstrahlung des Anodenmaterials zusammen. 
+
+Die Bremsstrahlung entsteht während der Abbremsung durch das Coulombfeld des Atomkerns. Dabei wird ein Photon ausgesandt, dessen Energie genau dem Wert entspricht, den das Elektron verloren hat. Das Spektrum ist kontinuierlich. 
+Die minimale Wellenlänge lässt sich definieren durch
+
+\begin{equation}
+    \lamda_\text{min} = \frac{h \cdot c}{e_\text{0}U}.
+    \label{eqn:lamdamin}
+\end{equation}
+
+Diese ergibt sich bei der vollständigen Abbremsung des Elektrons. 
+Dabei wird $E_\text{kin}= e_\text{0}U$ in Strahlungsenergie 
+\begin{equation}
+    E = h \cdot f
+\end{equation}
+gewandelt.
+
+Das charakteristische Spektrum sieht so aus, dass durch Ionisierung des Anodenmaterials eine Lücke in einer inneren Schale der Atome entsteht. Dadurch kann ein Elektron aus einer äußeren Schale nachrücken. Dabei verliert es einen diskreten Energiewert, der in Form eines Photons emittiert wird. 
+Die Energie entspricht in diesem Fall der Differenz zwischen den Energieniveaus der Schalen, zwischen denen das Elektron gesprungen ist. 
+Zwischen verschiedene Linien gibt es verschiedene diskrete Differenzen, die mit $K_\text{\alpha}, K_\text{\beta}, L_\text{\alpha}$ usw. beschrieben werden, wobei $K, L, M $ usw. die jeweilige Schale beschreiben und der griechische Buchstabe beschreibt, woher das Elektron kommt. 
+
+Die Elektronen der Hülle schirmen den Kern von den Wechselwirkungen der anderen Elektronen ab und die Coulumbkraft verringert sich dadurch für die äußeren Elektronen. Für die Bindungsenergie eines Elektrons auf der n-ten Schale gilt 
+
+\begin{equation}
+    E_\text{n} = -R_\text{\inf} z^{2}_\text{eff} \cdot \frac{1}{n^2}.
+    \label{eqn:En}
+\end{equation}
+
+Dabei ist $z_\text{eff}= z- \sigma$ die effektive Kernladung. $\sigma$ ist die Abschirmkonstante, $R_\text{\inf}= \SI{13.6}{\electron\volt}$ ist die Rydbergenergie.
+
+Die Abschirmkonstante variiert je nach Elektron. Sie ist empirisch zu bestimmen. Jedes Elektron besitzt nicht dieselebe Bindungsenergie, deshalb ist jede charakteristische Linie in eine nah beieinander liegenden Linien aufgelöst, was man Feinstruktur nennt. 
+
+Hier wird eine Kupferanode verwendet. Es können die $K_\text{\alpha}$- und $K_\text{\beta}$-Linien betrachtet werden. Diese überlagern sich in der Bremsstrahlung. 
+
+Bei der Absportion von Röntgenstrahlung unter \SI{1}{\mega\electron\volt} spielen der Comptoneffekt und der Photoeffekt die größte Rolle.
+Der Absorptionskoeffizient nimmt bei zunehmender Energie ab. Sie steigt sprunghaft. 
+Die Absorptionskanten liegen nahezu bei den Bindungsenergien des jeweiligen Elektrons. Sie werden auch mit den Buchstaben der Schalen bezeichnet. Es gibt nur eine $K$-Kante, aber drei $L$- Kanten. Um die Feinstruktur zu berücksichtigen muss die Bindungsenergie $E_\text{n,j}$ wie folgt berechnet werden. Sie ergibt sich mit der Sommerfeldschen Feinstrukturformel zu 
+
+\begin{equation}
+    E_\text{n,j}= -R_\text{\inf}\l(z^2_\text{eff,1}\cdot\frac{1}{n^2}+ \alpha^2 z^2_\text{eff,2} \frac{1}{n^3} \l(\frac{1}{j+\frac{1}{2}}- \frac{3}{4 n} \r)\r).
+    \label{eqn:sommerfeld}
+\end{equation}
+
+Dabei ist $\alpha$ die Sommerfeldsche Feinstrukturkonstante, n die Hauptquantenzahl und j der Gesamtdrehimpuls des Elektrons. 
+Die Bestimmung der Abschirmkonstante $\sigma_\text{L}$ ist recht kompliziert, kann aber vereinfacht werden in dem man die Energiedifferenz $\Delta E_\text{L}$ zweier L-Kanten berechnet. 
+
+Hier kann die Abschirmkonstante als 
+\begin{equation}
+    \sigma_\text{L} = Z - \l(\frac{4}{\alpha} \sqrt{\frac{\Delta E_\text{L}}{R_\text{\inf}}} - \frac{5 \Delta E_\text{L}}{R_\text{\inf}} \r)^{\frac{1}{2}}\cdot \l(1+\frac{19}{32}\alpha^2 \frac{\Delta E_\text{L}}{R_\text{\inf}} \r)^{\frac{1}{2}}
+    \label{eqn:abschirmkonstante}
+\end{equation}
+bestimmt werden. $\Delta E_\text{L} = E_{L_\text{II}} - E_{L_\text{I II}}$ ist die Energiedifferenz, die anderen Konstanten sind bereits bekannt. 
+
+Die Energie $E$ und die Wellenlänge $\lambda$ der Röntgenstrahlung können durch die Bragg'sche Reflexion bestimmt werden. Röntgenlicht fällt dabei auf ein dreidimensionales Gitter. Die Photonen werden dann an jedem Atom des Gitters gebeugt. Die Strahlen interferieren anschließend und beim Winkel $\sigma$ interferieren sie konstruktiv. Die Gitterkonstante $d$ kann so mit der Bragg'schen Bedingung 
+
+\begin{equation}
+    2 d sin(\sigma) = n \lambda
+    \label{eqn:braggbedingung}
+\end{equation}
+bestimmt werden, wobei n die Beugungsordnung ist und aus dem Winkel $\sigma$ und der Wellenlänge $\lambda$ bestimmt werden kann. 
