@@ -1,0 +1,109 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+\subsection{Interferenz}
+
+Die Ausbreitung des Lichts lässt sich recht gut als elektromagnetische Welle beschreiben. Im Fall einer ebenen Welle ergibt sich die Orts- und Zeitabhängigkeit der elektrischen Komponente zu 
+\begin{equation}
+    \var{E}= \var{E}_0 cos(kx - \omega t - \delta).
+    \label{eqn:efeld}
+\end{equation}
+
+Dabei ist x die Ortskoordinate, k die Wellenzahl, \omega die Kreisfrequenz und \delta die Phasenverschiebung. 
+
+Da sich Licht als Maxwellgleichung beschreiben lässt, gilt das Superpositionsprinzip. Daher ist das elektrische Feld eines Lichtstrahls meist die Summe der Felder mehrerer Lichtwellen.
+Dies lässt sich aber nicht unmittelbar nachprüfen. 
+Doch man kann die Intensität $I$ bestimmen. 
+
+Die Lichtintensität, also der zeitliche Mittelwert der auf eine Flächeneinheit treffenden Lichtleistung, lässt sich aus den Maxwellgleichungen als 
+
+\begin{equation}
+    I = const \abs{\vec{E}}^{2}
+    \label{eqn:intensität}
+\end{equation} 
+formulieren. 
+
+Aus der Kombination des Superpositionsprinzips von Wellen und der Gleichung \ref{eqn:intensität} folgt, dass die Lichtintensität insgesamt an einem bestimmten Ort $x$, durch 
+\begin{equation}
+    I_\text{ges}= \frac{const}{t_2-t_1} int[t_1]{t_2} \l(\abs{\vec{E}_1 + \vec{E}_2} \r)^2 (x, t) dt
+    \label{eqn:iges}
+\end{equation}
+beschreiben. Dabei entsprechen die beiden $E$-Felder den in Gleichung \ref{eqn:efeld} beschriebenen Zusammenhängen. 
+Durch das einsetzen dieser beiden Terme entsteht zusätzlich zu der Summe der Einzelintensitäten noch ein zusätzlicher Teil 
+\begin{equation}
+    2 const \vec{E}_{0}^2 cos(\delta_2 - \delta_1).
+    \label{eqn:zusatz}
+\end{equation}
+Die Gesamtintesität kann um diesen Faktor von der Summe der Einzelintensitäten abweichen. Im Fall, dass 
+\begin{equation}
+    \delta_2 - \delta_1 = (2n +1) \pi , n= 0, 1, 2, ...
+\end{equation}
+ist, verschwindet die Gesamtintensität sogar komplett. 
+
+\subsection{Interferenzfähigkeit des Lichts}
+
+Das Licht, das von zwei verschiedenen Punkten ausgeht oder von zwei Lichtquellen ist nicht interferenzfähig, also inkohärent. Um Interferenzeffekte zu erhalten muss also kohärentes Licht erzeugt werden, welches sich durch eine Gleichung \ref{eqn:efeld} beschreiben lässt. LASER (= light amplification by stimulated emisson of radiation) sind dazu in der Lage. Atome emittieren hierbei in konstantem Abstand Licht, sodass dieses kohärent ist. 
+
+Unter bestimmten Voraussetzungen gelingt es aber auch mit konventionellen Lichtquellen Interferenzeffekte zu erzeugen. Dafür muss das Licht mit einer Doppelblende in 2 räumlich getrennte Strahlbündelaufteilen. Durch einen geeigneten Spiegel können diese dann an einen Punkt zusammengeführt werden. Je nach Phasenverschiebung an diesem Punkt verschwindet dann zum Beispiel die Lichtintensität an diesem Punkt, vorausgesetzt, dass der Gangunterschied beträgt $\lambda/2$ und die Feldstärke beträgt in beiden Bündeln dieselbe Größe. 
+
+Der Emissionsakt dauert nur eine endliche Zeit $\tau$, weshalb der Wellenzug auch nur eine endliche Länge besitzt. Ist der Gangunterschied zwischen den Wellen deutlich größer als diese Länge, so verschwindet die Interferenzerscheinung. Daher dürfen die Wegunterschiede zwischen den Teilbündeln nicht zu groß werden. Die Länge, bei der die Erscheinungen so eben verschwinden, nennt man Kohärenzlänge $l$. 
+\begin{equation}
+    l = N \lambda
+\end{equation}
+, wobei N der Anzahl der am Schnittpunkt der Strahlen entstehenden Intensitätsmaxima entspricht und $\lambda$ der Wellenlänge des Lichts. 
+Der Gangunterschied darf also nicht größer als $l$ sein. 
+
+Aus dem Fouriersche Theorem folgt, dass ein Wellenzug endlicher Länge nicht monochromatisch sein kann, sondern ein Frequenzspektrum besitzen muss. Somit muss entweder der Gangunterschied so klein sein oder das Frequenzspektrum so schmal, dass Maximum- und Minimumsbedingung für 2 Wellenlängen nicht am selben Ort realisiert werden können. 
+
+Der Zusammenhang zwischen Kohärenzlänge und der Wellenlängenverteilung, bzw. zwischen der Zeitdauer und der Frequenzverteilung wird im folgenden betrachtet. 
+Das Frequenzspektrum $g(\omega)$ der elektrische Feldstärke lässt sich mittels einer Fouriertransformation zu 
+\begin{equation}
+    g(\omega) = 2 E_0 \frac{sin(\omega - \omega_0) \frac{\tau}{2}}{\omega- \omega_0}
+\end{equation}
+bestimmen. 
+Die Intensität $G(\omega)$ ist somit das Quadrat dieses Terms. 
+
+Die Funktionen $E(t)$, $g(\omega)$ und $G(\omega)$ sind in Abb. \ref{abb:funktionen} zu erkennnen. 
+
+Es ist zu erkennen, dass der größte Teil der Energie im Bereich $\Delta \omega =\pm 2 \frac{\pi}{\tau}$ um $\omega_0$ verteilt ist. Man bezeichnet $\Delta \omega$ als Breite der Verteilungsfunktion $G(\omega)$. Die Breite der Wellenlängenverteilung ergibt sich zu $\Delta \lambda = \frac{\lambda^{2}_0}{l}$.
+
+Eine weitere Bedingung für Interferenzerscheinungen ist, dass bei ausgedehnte Lichtquellen die Richtungsänderung $\zeta$ wie in Abb. \ref{ausgedehnt} dargestellt, klein gegenüber $\pi$ sein muss. Es gilt also die Bedingung 
+\begin{equation}
+    a sin(\zeta) << \frac{\lambda}{2}.
+    \label{eqn:zeta}
+\end{equation}
+
+Sind beide Teilbündel eines Interferenzexperiments linear polarisiert und stehen die beiden Feldstärken senkrecht aufeinander, verschwinden sie und die Intensität verhält sich additiv. Interferenzerscheinungen können also nur bei nicht senkrecht zueinander polarisierten Teilbündeln auftreten. 
+
+\subsection{Aufbau des Michelson-Interferometers}
+
+Ein Interferometer ist ein Gerät, das unter Ausnutzung von Interferenzeffekten die Messung optischer Größen erlaubt. Dafür spaltet man einen Lichtstrahl in mindestens zwei Teilbündel, unterwirft die beiden Bündel einer Veränderung, also fügt einem von beiden zum Beispiel einen Gangunterschied hinzu und führt sie anschließend wieder zusammen. Das Michelson Interferometer nutzt die Methode der Teilung mittels einer semipermeablen Platte. 
+Um die Phasenverschiebung durch den Brechungsindex des Spiegels auszugleichen muss eine Kompensationsplatte auf dem zweiten Strahlweg aufgestellt werden. 
+Mit der in Abb. \ref{abb:michelson} dargestellten Apparatur kann die Intensität am Detektor $D$ gemessen werden. Dadurch lässt sich durch Verschiebung des Detektors feststellen, an welchen Stellen die Maxima liegen. Dadurch lässt sich dann die Wellenlänge berechnen mit 
+\begin{equation}
+    \Delta d = z \cdot \frac{\lambda}{2}.
+\end{equation}
+
+Alternativ setzt man ein Medium mit geändertem Brechungsindex ein mit einer Breite $b$. 
+Entweder kann dafür die Breite oder der Gasdruck geändert werden, um verschiedene Maxima festzustellen. 
+Dann gilt 
+\begin{equation}
+    b \cdot \Delta n = \frac{z \lamdba}{2}.
+\end{equation}
+
+Da $\lambda$ im allgemeinen deutlich kleiner als $b$ ist, lässt sich damit ein Unterschied des Brechungsindex in der Größenordnung von $10^{-5}$ bestimmen. 
+
+Da divergente Strahlbündel genutzt werden, kann der Wegunterschied auch noch vom Winkel zwischen der Spiegelnormalen und der Einfallsrichtung des Strahls abhängen. Für eine Veränderung des Winkels $\alpha$ können ebenso mehrere Maxima festgestellt werden. Diese befinden sich bei 
+\begin{equation}
+    cos (a_k)= \frac{k \lambda}{2 d} (k= 1, 2, ..., \frac{2d}{\lambda}).
+\end{equation}
+Dabei wird ein System konzentrischer Kreise am Detektor betrachtet. Diese werden Interferenzkurven gleicher Neigung genannt. 
+
+\subsection{Fourier-Spektroskopie}
+
+Mit dem Fourierschen Theorem 
+\begin{equation}
+    G(k)= \frac{1}{2\pi} \int{-\inf}{\inf} L(x) e^{-i k x} dx
+    \label{eqn:fourier}
+\end{equation}
+ergibt sich, dass die Intensität $G(k)$ mittles der Wellenzahl $k$ und der Strecke $L(x)$ bestimmt werden kann.

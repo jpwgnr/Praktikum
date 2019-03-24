@@ -1,0 +1,45 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+\subsection{Aufbau und Wirkungsweise eines Geiger-Müller-Zählrohrs}
+
+Das Zählrohr besteht wie in Abb. \ref{zählrohr} zu erkennen aus einem Kathodenzylinder mit Radius $r_\text{k}$ und einem Anodendraht mit Radius $r_\text{a}$. Im Inneren befindet sich ein Gasgemisch. In dem man an das äußere des Rohrs und den Draht eine äußere Spannung anlegt, entsteht ein radiales E-Feld. Die Feldstärke beträgt 
+\begin{equation}
+    E(r) = \frac{U}{r ln(\frac{r_\text{k}}{r_\text{a}})}.
+    \label{eqn:feldstärke}
+\end{equation}
+
+Die Beschleunigung des Teilchens kann somit beliebig groß werden, wenn der Radius des Drahtes beliebig klein gewählt wird. 
+
+Durch die Energie des eindringenden Teilchens werden Atome ionisiert und Elektronen werden los gelöst. Je nach angelegter Spannung können dann verschiedene Phänomene auftreten. Ein Gerät, dass nur so viel Spannung benutzt, dass der Ionisationsstrom proportional zur Energie und Intensität der einfallenden Strahlung ist, ist eine Vorstufe zum Zählrohr und wird Ionisationskammer genannt. 
+
+Wenn die Energie der Elektronen groß genug ist um ihrerseits Atome zu ionisieren, nennt man diesen Vorgang Stoßionisierung. Wenn dann lawinenartig die Zahl der freien Elektronen zu nimmt, nennt man dies eine Townsend-Lawine. 
+Die Ladung ist dann so groß, dass sie als Ladungsimpuls gemessen werden kann.
+
+Eine Proportionalität zwischen der Ladung $Q$ und der Primärteilchenenergie definiert das Zahlrohr dann als Proportionalitätzählrohr. 
+Sobald der Proportionalitätsbereich überschritten ist, wird der Auslösebereich erreicht, der eigentliche Arbeitsbereich des Geiger-Müller-Zählrohrs. Die dabei entstehenden UV-Photonen können sich auch senkrecht zu den Feldlinien bewegen und so auch an anderen Stellen noch zusätzliche Elektronen los lösen. So entstehen im gesamten Zählrohr weitere Lawinen. 
+
+\subsection{Totzeit, Nachentladung}
+
+Während die Elektronen schnell zum Draht wandern, bleiben die positiven Ionen aufgrund der größeren Masse länger im Gasraum. Sie bauen vorübergehend einen sogenannten "Ionenschlauch" auf. Für eine bestimmte Zeit sind dann keine Stoßionisationen mehr möglich. Diese Zeit wird Totzeit genannt, weil während dessen kein Teilchen registriert werden kann. 
+Den Zeitraum, der sich anschließt, bis dies wieder funktioniert, wird Erholungszeit genannt. 
+
+Auf den Zählrohrmantel auftreffende Ionen können dort Elektronen aus der Oberfläche befreien. Diese "Sekundärelektronen" können die Zählrohrentladung erneut zünden, sodass durch den Durchgang nur eines Teilchens mehrere zeitlich versetzte Ausgangsimpulse entstehen können. 
+Diese Impulse nennt man Nachentladungen. 
+Um diese Impulse zu verhindern sind diese Gase im Inneren des Rohres vorhanden. Die Edelgasionen stoßen dann nämlich mit den Atomen den Gasmolekülen zusammen und ionisieren diese. Die haben dann aber weniger Energie und können somit nicht zu Nachentladungen führen. 
+
+
+\subsection{Charakteristik des Zählrohrs}
+
+Wenn man die Teilchenzahl N bei konstanter Strahlungsintensität gegen die angelegte Spannung U aufträgt wird eine Charakteristik wie in Abb. \ref{abb:charakteristik} entstehen. Bei der Spannung $U_\text{E}$ setzt der Auslösebereich ein. Der lineare Teil der darauf folgt wird Plateau genannt. Die Steigung des Plateaus sollte am besten null sein. Am Ende des Plateaus nimmt die Anzahl der Nachentladungen extrem zu. Sie geht über in den Bereich der selbstständigen Gasentladung, der sehr schädlich ist für ein Strahlrohr.
+
+\subsection{Ansprechvermögen des Zählrohrs}
+
+Darunter wird die Wahrscheinlichkeit verstanden, dass ein Teilchen im Zählrohr nachgewiesen wird. Für $\alpha$- und $\beta$-Teilchen liegt diese bei fast \SI{100}{\percent}. Wichtig ist, dass die Teilchen aber überhaupt in das Rohr gelangen. Es wird eine Mylar-Folie als Fenster verwendet. Diese Folie ist leicht nach innen gewölbt, durch den Unterdruck im Inneren des Rohres. 
+
+
+\subsection{Untersuchungen am Zählrohr}
+
+Die Anordnung sieht wie in Abb. \ref{abb:geigerzähler} dargestellt aus. Durch die gesammelten Ladungen $Q$ entsteht ein messbarer Spannungsimpuls. Dieser wird über den Kondensator ausgekoppelt und nach der Verstärkung im Zählgerät registriert. Außerdem wird der Eingang auf dem Oszilloskop angezeigt. 
+
+%Rest siehe in Durchführung

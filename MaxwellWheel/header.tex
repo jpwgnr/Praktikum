@@ -1,15 +1,32 @@
-\documentclass[
-  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
-  captions=tableheading,  % Tabellenüberschriften
-  titlepage=firstiscover, % Titelseite ist Deckblatt
-]{scrartcl}
 
+
+
+%new header 
+
+
+% This example is meant to be compiled with lualatex or xelatex
+% The theme itself also supports pdflatex
+\PassOptionsToPackage{unicode}{hyperref}
+\documentclass[aspectratio=1610, 9pt]{beamer}
+
+% Load packages you need here
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+\usepackage{csquotes}
+    
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{hyperref}
+\usepackage{bookmark}
 
 % Paket float verbessern
 \usepackage{scrhack}
 
 % Warnung, falls nochmal kompiliert werden muss
-\usepackage[aux]{rerunfilecheck}
 
 % unverzichtbare Mathe-Befehle
 \usepackage{amsmath}
@@ -25,7 +42,6 @@
 %\setromanfont{Libertinus Serif}
 %\setsansfont{Libertinus Sans}
 %\setmonofont{Libertinus Mono}
-\recalctypearea % Wenn man andere Schriftarten gesetzt hat,
 % sollte man das Seiten-Layout neu berechnen lassen
 
 % deutsche Spracheinstellungen
@@ -45,14 +61,6 @@
   },                       % ┘
 ]{unicode-math}
 
-% traditionelle Fonts für Mathematik
-\setmathfont{Latin Modern Math}
-% Alternativ:
-%\setmathfont{Libertinus Math}
-
-\setmathfont{XITS Math}[range={scr, bfscr}]
-\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
-
 % Zahlen und Einheiten
 \usepackage[
   locale=DE,                   % deutsche Einstellungen
@@ -66,9 +74,6 @@
   math-greek=default, % ┐ mit unicode-math zusammenarbeiten
   text-greek=default, % ┘
 ]{mhchem}
-
-% richtige Anführungszeichen
-\usepackage[autostyle]{csquotes}
 
 % schöne Brüche im Text
 \usepackage{xfrac}
@@ -125,14 +130,6 @@
 \addbibresource{programme.bib}
 
 % Hyperlinks im Dokument
-\usepackage[
-  unicode,        % Unicode in PDF-Attributen erlauben
-  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
-  pdfcreator={},  % ┐ PDF-Attribute säubern
-  pdfproducer={}, % ┘
-]{hyperref}
-% erweiterte Bookmarks im PDF
-\usepackage{bookmark}
 
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
@@ -140,19 +137,36 @@
 %selbst hinzugefügt
 \usepackage{physics}
 
-\title{V<++> - <++>}
-\date{Durchführung: <++>.<++>.2018, Abgabe: <++>.<++>.2018}
-\author{
-  Jan Herdieckerhoff
-  \texorpdfstring{%
-    \\%
-    \href{mailto:jan.herdieckerhoff@tu-dortmund.de}{jan.herdieckerhoff@tu-dortmund.de}
-  }{}%
-  \texorpdfstring{\and}{, }
-  Karina Overhoff
-  \texorpdfstring{%
-    \\%
-    \href{mailto:karina.overhoff@tu-dortmund.de}{karina.overhoff@tu-dortmund.de}
-  }{}%
+% load the theme after all packages
+
+\usetheme[
+  showtotalframes, % show total number of frames in the footline
+]{tudo}
+
+% Put settings here, like
+\unimathsetup{
+  math-style=ISO,
+  bold-style=ISO,
+  nabla=upright,
+  partial=upright,
+  mathrm=sym,
 }
-\publishers{TU Dortmund – Fakultät Physik}
+
+
+% traditionelle Fonts für Mathematik
+\setmathfont{Latin Modern Math}
+% Alternativ:
+%\setmathfont{Libertinus Math}
+
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+
+% title etc. 
+\title{Das Maxwell'sche Rad}
+\date{Vortragsdatum: 01.04.2019}
+\author{
+   Karina Overhoff \&
+  Jan Herdieckerhoff 
+}
+
+
