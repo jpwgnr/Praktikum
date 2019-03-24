@@ -1,4 +1,69 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{V<++>}
+Die Magnetisierung $\vec{M}$ entsteht durch atomare magnetische Momente innerhalb einer Probe. Sie ergibt sich als Produkt des mittleren magnetischen Moments \bar{\vec{\mu}}, der magnetischen Permeabilität und der Anzahl $N$ der Momente pro Volumeneinheit. 
+Außerdem ist sie aber auch abhängig von der magnetischen Feldstärke $\vec{H}$. 
+Dabei gilt 
+\begin{equation}
+    \vec{M} = \mu_0 \chi \vec{H} 
+    \label{eqn:magnetisierung}
+\end{equation}
+mit der sogenannten Suzeptibilität $\chi$, die keine Konstante ist, sondern von $H$ und der Temperatur $T$ abhängt. 
+
+Das ergibt sich nämlich folgendermaßen. Da es sich bei der Magnetisierung um Paramagnetismus handelt, ergibt sich daraus, warum die Suszeptibilität temperaturabhängig ist. Paramagnetismus wird bei Atomen betrachtet, die einen nicht verschwindendes Drehmoment besitzen. Er entsteht durch die Orientierung der magnetischen Momente, die mit dem Drehimpuls gekoppelt sind, zu einem äußeren Feld. Da diese Ausrichtung durch thermische Bewegung der atomaren Bausteine gestört wird, ist Paramagnetismus temperaturabhängig. 
+
+Der Gesamtdrehimpuls setzt sich hier nur aus dem Gesamtbahndrehimpuls und dem Gesamtspin zusammen, die sich addieren zum Gesamtdrehimpuls $\vec{J}$. 
+
+Nach einigen Ergebnissen der Quantenmechanik ergibt sich für die Suszeptibilität der Zusammenhang 
+
+\begin{equation}
+    \chi = \frac{\mu_0 \mu_\text{B}^2 g_\text{J}^2 N J (J+1)}{3 k T}
+    \label{eqn:chitheo}
+\end{equation}
+, wobei 
+\begin{equation}
+    \mu_\text{B} = \frac{1}{2} \frac{e_0}{m_0} \hbar 
+\end{equation}
+mit der Ladung $\e_0$ und der Masse $\m_0$ des Elektrons und dem Plankschen Wirkungsquantum $\hbar$. $g_\text{J}$ nennt man Landé-Faktor. Dieser ist als 
+\begin{equation}
+    g_\text{J}= \frac{3 J(J+1) + (S(S+1) - L(L+1))}{2J(J+1)}
+\end{equation}
+definiert, mit $J$, der Gesamtdrehimpulsquantenzahl, $S$, der Spinquantenzahl und $L$, der Bahndrehimpulsquantenzahl. $k$ entspricht der Boltzmann-Konstante und $T$ der Temperatur, während $N$ noch immer der Anzahl der Momente pro Volumeneinheit entspricht. 
+
+
+\subsection{Berechnung der Suszeptibilität Seltener-Erd-Verbindungen}
+
+Verbindungen, die Ionen Seltener Erden enthalten besitzen eine starke Paramagnetisierung. Daraus ergibt sich, dass die Elektronenhülle dieser Atome große Drehimpulse besitzen muss. 
+Diese werden von inneren Elektronen erzeugt. Denn der Effekt ist auch bei Ionen zu erkennen. Der Paramagnetismus seltener Erden entsteht durch die 4f-Elektronen, die vom Cer an in die Elektronenhülle eingebaut werden. Die Anordnung der Elektronen in der unabgeschlossenen 4f-Schale und der resultierende Gesamtdrehimpuls $\vec{J}$ werden durch die Hundsche Regel definiert. 
+\begin{enumeration}
+\item Spins $\vec{s}_\text{i}$ summieren sich zum maximalen Gesamtspin, der nach dem Pauli-Prinzip möglich ist. 
+\item Der maximale Drehimpuls ist die Summe der Bahndrehimpulse $\vec{l}_\text{i}$. Er muss mit dem Pauliprinz und der ersten Regel verträglich sein. 
+\item Es gilt $\vec{J}= \vec{L}-\vec{S}$, wenn die Schale weniger als halb voll ist und $\vec{J}= \vec{L}-\vec{S}$, wenn die Schale mehr als halb voll ist.
+\end{enumeration}
+
+Der Drehimpuls J und der Landé-Faktor $g_J$ müssen bestimmt werden um die Suszeptibilität bestimmen zu können. Für ein $Pr^{3+}$-Ion ergibt sich $g_J= 0.8$.
+
+\subsection{Beschreibung der Apperatur}
+
+Eine Zylinderspule besitzt eine Induktivität $L$, die sich aus dem Quadrat der Windungszahl $n$, der magnetischen Permeabilität $\mu_0$ und der Querschnittsfläche $F$ zusammensetzt mit der Länge der Spule $l$ im Nenner. Innerhalb von Materie kommt noch die relative Permeabilität $\mu_r$ dazu. Der Querschnitt einer Probe $Q$ der im Inneren der Spule liegt ist meist kleiner als der Querschnitt der Spule.
+Damit ändert sich die Induktivität insgesamt zu 
+\begin{equation}
+    L_\text{M}= \mu_0 \frac{n^2 F}{l} + \chi \mu_0 \frac{n^2 Q}{l}.
+    \label{eqn:induktivität}
+\end{equation}
+
+Somit lässt sich die Suszeptibilität aus der Messung der Induktivtät berechnen. Um diese zu bestimmen wird eine Brückenschaltung benutzt. 
+Dabei wird die Schaltung wie in Abb. \ref{abb:Brücke} benutzt. Die Abgleichbedingung, die dabei zu erfüllen ist, führt dazu, dass der Widerstand $R_3$ und der Widerstand $R_4$ annähernd gleich sein müssen. Nach dem einführen der Probe wird sich die Brückenspannung wieder erhöhen und der Widerstand $R_3$ muss um einen Wert $\Delta R$ korrigiert werden. Diese Differenz kann genutzt werden um die Suszeptibilität zu bestimmen, denn es gilt nach einigen Umformungen, dass 
+
+\begin{equation}
+    \chi = 2 \frac{\Delta R}{R_3}\frac{F}{Q}.
+    \label{eqn:chiexp}
+\end{equation}
+
+\subsection{Verfahren zur Unterdrückung der Störspannung}
+
+Die Störspannung ist problematisch bei der Messung der Brückenspannung $U_\text{Br}$. Die Brückenspannung wird von der Störspannung komplett überdeckt, aber da die Störung eine monofrequente Spannung ist, lässt sich dieses Problem mittels eines Selektivverstärkers beseitigen. Dessen Filterkurve hat die Gestalt einer Glockenkurve. Interessant ist dabei die Güte $Q$ des Verstärkers. 
+Frequenzen, die nah an der Frequenz $\nu_0$ liegen, werden nicht rausgefiltert, aber um Messungen zur Suszeptibilität an paramagnetischen Proben durchzuführen reicht der Filter. 
+
+Es wird eine Schaltung wie in Abb. \ref{abb:Blockschaltbild} benutzt, um die entsprechenden Spannungen herauszufiltern. 
+Es wird also die Druchlassfrequenz des Selektivverstärkers auf die Signalfrequenz eingestellt. Anschließend wird die Brückenschaltung konfiguriert. Anschließend wird eine Probe in die Zylinderspule eingeführt. Die neue Brückenspannung wird genutzt um die Suszeptibilität zu berechnen. Das einzige was dann noch fehlt ist die Gesamtverstärkung der Apperatur, die abgelesen werden muss. 
