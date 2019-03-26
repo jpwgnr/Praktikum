@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  18 MAR 2019 16:46
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  26 MAR 2019 14:18
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.107 seconds
+luaotfload | main : initialization completed in 0.114 seconds
 (./header.tex
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/09/06 v3.53 A class for typesetting presentations
@@ -1173,11 +1173,11 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 an.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x63ef0a0
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x6ce92d0
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
@@ -1185,11 +1185,11 @@ n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x63ef270
 (polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x6ce94a0
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
@@ -4209,12 +4209,11 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout6 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
-(./main.nav)
+ (./main.nav)
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
 (Font)              scaled to size 4.12048pt on input line 3.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/n' will be
@@ -4291,44 +4290,91 @@ Package luatex.def Info: logos/tu.pdf  used on input line 9.
 
 ] (./content/grundlage.tex
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/n' will be
-(Font)              scaled to size 6.51794pt on input line 19.
+(Font)              scaled to size 6.51794pt on input line 21.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 19.
+Package luatex.def Info: logos/tu.pdf  used on input line 21.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 6.59277pt on input line 19.
+(Font)              scaled to size 6.59277pt on input line 21.
  [3
 
 ])
 (./content/theorie.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 4.
+Package luatex.def Info: logos/tu.pdf  used on input line 12.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [4
+
+]
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(1)/bx/n' undefined
+(Font)              using `TU/LatinModernMath(1)/m/n' instead on input line 31.
+
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(2)/bx/n' undefined
+(Font)              using `TU/LatinModernMath(2)/m/n' instead on input line 31.
+
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
+(Font)              scaled to size 6.3112pt on input line 31.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
+(Font)              scaled to size 4.48273pt on input line 31.
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(3)/bx/n' undefined
+(Font)              using `TU/LatinModernMath(3)/m/n' instead on input line 31.
+
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
+(Font)              scaled to size 6.311pt on input line 31.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
+(Font)              scaled to size 4.48259pt on input line 31.
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
+(Font)              scaled to size 5.20096pt on input line 31.
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
+(Font)              scaled to size 3.69414pt on input line 31.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 31.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+[5
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 45.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [6
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 60.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [7
 
 ]) (./content/durchfuehrung.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 4.
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [5
+ [8
 
-])
-(./content/auswertung.tex
+]) (./content/auswertung.tex
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
+(Font)              scaled to size 2.60046pt on input line 13.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 4.
+Package luatex.def Info: logos/tu.pdf  used on input line 13.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [6
+
+[9
 
 ]) (./content/diskussion.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 4.
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [7
+ [10
 
 ])
 \tf@nav=\write7
@@ -4350,29 +4396,38 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 21.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 51842 strings out of 494412
+ 52094 strings out of 494412
  100000,1977958 words of node,token memory allocated
- 1679 words of node memory still in use:
-   33 hlist, 9 vlist, 5 rule, 3 disc, 6 local_par, 39 glue, 6 kern, 14 penalty, 
-2 margin_kern, 19 glyph, 46 attribute, 78 glue_spec, 46 attribute_list, 3 write,
- 12 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:408,3:86,4:144,5:134,6:25,7:630,8:25,9:161,10:5,11:55
- 54057 multiletter control sequences out of 65536+600000
- 93 fonts using 31934911 bytes
+ 2814 words of node memory still in use:
+   46 hlist, 9 vlist, 8 rule, 14 disc, 8 local_par, 69 glue, 23 kern, 23 penalty
+, 1 sub_mlist, 67 glyph, 84 attribute, 78 glue_spec, 84 attribute_list, 3 write,
+ 26 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:337,3:83,4:145,5:119,6:28,7:552,8:27,9:190,10:13,11:47
+ 54214 multiletter control sequences out of 65536+600000
+ 145 fonts using 54330751 bytes
  66i,18n,137p,789b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSa
 ns-Light.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/publi
-c/fira/FiraSans-Medium.otf>
-Output written on main.pdf (7 pages, 22874 bytes).
+c/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive/2018/texmf-dist/fo
+nts/opentype/public/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive/
+2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lewis2
+06/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf>
+</home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSa
+ns-Medium.otf>
+Output written on main.pdf (10 pages, 38283 bytes).
 
-PDF statistics: 110 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 176 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 131072)
+ 72 words of extra memory for PDF output out of 10000 (max. 100000000)
 

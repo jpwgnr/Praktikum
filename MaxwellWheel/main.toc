@@ -5,6 +5,8 @@
 \select@language {german}
 \beamer@sectionintoc {1}{Grundlage}{3}{0}{1}
 \beamer@sectionintoc {2}{Theorie}{4}{0}{2}
-\beamer@sectionintoc {3}{Durchführung}{5}{0}{3}
-\beamer@sectionintoc {4}{Auswertung}{6}{0}{4}
-\beamer@sectionintoc {5}{Diskussion}{7}{0}{5}
+\beamer@sectionintoc {3}{Durchführung}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Messprogramm}{8}{0}{3}
+\beamer@sectionintoc {4}{Auswertung}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Aufbau}{9}{0}{4}
+\beamer@sectionintoc {5}{Diskussion}{10}{0}{5}
