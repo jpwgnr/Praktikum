@@ -1,6 +1,12 @@
 \section{Theorie}
+
+\begin{frame}{Inhaltsverzeichnis}
+    \tableofcontents[currentsection, hidesubsections]
+\end{frame} 
+
+\subsection{Geschwindigkeit}
 \begin{frame}{Theorie}
-    
+    \begin{block}{Geschwindigkeit}    
     \begin{equation*}
         v= \frac{s}{t}
     \end{equation*}
@@ -8,15 +14,20 @@
     \begin{equation*}
         v = \omega \cdot r
     \end{equation*}
-
+\end{block}
 \end{frame}
-\begin{frame}{Theorie}
 
+\subsection{Dreh- und Trägheitsmoment}
+
+\begin{frame}{Theorie}
+    \begin{block}{Drehmoment}
     \begin{equation}
         \abs{\vec{M}} = \abs{ \vec{r} \cross \vec{F} } = I \cdot \dot{\omega} = r m g
         \label{eqn:drehmoment}
     \end{equation}
+    \end{block}
 
+    \begin{block}{Trägheitsmoment}
     \begin{equation}
         I_\text{S}= \frac{1}{2} m R^2 
         \label{eqn:trägheit}
@@ -26,12 +37,13 @@
         I_\text{M} = I_\text{S}+ m \cdot r^2
         \label{eqn:steiner}
     \end{equation}
-
-
+    \end{block}
 \end{frame}
+
+
+\subsection{Beschleunigung}
 \begin{frame}{Theorie}
-
-
+    \begin{block}{Beschleunigung}
     Mit Gleichung \eqref{eqn:drehmoment}, Gleichung \eqref{eqn:trägheit} und Gleichung \eqref{eqn:steiner} ergibt sich
     \begin{equation*}
         (\frac{R^2}{2 r^2} +1) \dot{v} = g
@@ -41,20 +53,20 @@
         \ddot{s} = \frac{1}{1 + \frac{R^2}{2r^2}} \cdot g.
     \end{equation*}
 
-
+    Die tatsächliche Beschleunigung ergibt sich zu 
+    
+    \begin{equation*}
+        a = \frac{2s}{t^2}.
+    \end{equation*}
+    \end{block}
 \end{frame}
-\begin{frame}{Theorie}
 
+\begin{frame}{Theorie}
+    \begin{block}{Radius}
     Der Radius $r$ ergibt sich mit der abgerollten Länge von 10 Umdrehungen $\Delta s$ zu
 
     \begin{equation*}
         r = \frac{\Delta s}{10 \cdot 2\pi}.
     \end{equation*}
-
-    Die wirkliche Beschleunigung ergibt sich zu 
-    
-    \begin{equation*}
-        a = \frac{2s}{t^2}.
-    \end{equation*}
-
+    \end{block}
 \end{frame}

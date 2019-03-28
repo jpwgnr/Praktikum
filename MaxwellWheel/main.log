@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  26 MAR 2019 14:18
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  28 MAR 2019 23:19
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.114 seconds
+luaotfload | main : initialization completed in 0.117 seconds
 (./header.tex
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/09/06 v3.53 A class for typesetting presentations
@@ -1169,28 +1169,30 @@ Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 luatex-hyphen: using data file: /home/lewis206/.local/texlive/2018/texmf-var/tex
 /generic/config/language.dat.lua
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
+(/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/beamer/beamerfonttheme
+professionalfonts.sty)
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-germ
 an.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x63ef0a0
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x69a4100
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x63ef270
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x69a42d0
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -1477,10 +1479,13 @@ Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             need that hack, on input line 160.
 )
 
-Package polyglossia Warning: gloss-german.ldf is already loaded! on input line 4
-9.
+Package polyglossia Warning: gloss-german.ldf is already loaded! on input line 5
+0.
 
-
+(/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/beamer/multimedia.sty
+Package: multimedia 2012/05/02 ver 0.02
+\mm@movie=\count329
+)
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/unicode-math/unicode-m
 ath.sty
 Package: unicode-math 2018/07/29 vv0.8m Unicode maths in XeLaTeX and LuaLaTeX
@@ -1527,9 +1532,9 @@ h LuaLaTeX
 . I'm going to patch macro \MT_cramped_internal:Nn.
 .................................................
 )
-\g__um_fam_int=\count329
-\g__um_fonts_used_int=\count330
-\l__um_primecount_int=\count331
+\g__um_fam_int=\count330
+\g__um_fonts_used_int=\count331
+\l__um_primecount_int=\count332
 \g__um_primekern_muskip=\muskip18
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1625,27 +1630,27 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 )
 \l__siunitx_tmp_box=\box70
 \l__siunitx_tmp_dim=\dimen289
-\l__siunitx_tmp_int=\count332
-\l__siunitx_number_mantissa_length_int=\count333
-\l__siunitx_number_uncert_length_int=\count334
-\l__siunitx_round_int=\count335
-\l__siunitx_process_decimal_int=\count336
-\l__siunitx_process_uncertainty_int=\count337
-\l__siunitx_process_fixed_int=\count338
-\l__siunitx_process_integer_min_int=\count339
-\l__siunitx_process_precision_int=\count340
-\l__siunitx_group_min_int=\count341
+\l__siunitx_tmp_int=\count333
+\l__siunitx_number_mantissa_length_int=\count334
+\l__siunitx_number_uncert_length_int=\count335
+\l__siunitx_round_int=\count336
+\l__siunitx_process_decimal_int=\count337
+\l__siunitx_process_uncertainty_int=\count338
+\l__siunitx_process_fixed_int=\count339
+\l__siunitx_process_integer_min_int=\count340
+\l__siunitx_process_precision_int=\count341
+\l__siunitx_group_min_int=\count342
 \l__siunitx_angle_marker_box=\box71
 \l__siunitx_angle_unit_box=\box72
 \l__siunitx_angle_marker_dim=\dimen290
 \l__siunitx_angle_unit_dim=\dimen291
-\l__siunitx_unit_int=\count342
-\l__siunitx_unit_denominator_int=\count343
-\l__siunitx_unit_numerator_int=\count344
-\l__siunitx_unit_prefix_int=\count345
-\l__siunitx_unit_prefix_base_int=\count346
-\l__siunitx_unit_prefix_gram_int=\count347
-\l__siunitx_number_product_int=\count348
+\l__siunitx_unit_int=\count343
+\l__siunitx_unit_denominator_int=\count344
+\l__siunitx_unit_numerator_int=\count345
+\l__siunitx_unit_prefix_int=\count346
+\l__siunitx_unit_prefix_base_int=\count347
+\l__siunitx_unit_prefix_gram_int=\count348
+\l__siunitx_number_product_int=\count349
 \c__siunitx_one_fill_skip=\skip69
 \l__siunitx_table_unit_align_skip=\skip70
 \l__siunitx_table_exponent_dim=\dimen292
@@ -1786,8 +1791,8 @@ Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
 y
 Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemis
 try (CN)
-\l__chemgreek_tmpa_int=\count349
-\g__chemgreek_tmpa_int=\count350
+\l__chemgreek_tmpa_int=\count350
+\g__chemgreek_tmpa_int=\count351
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1839,7 +1844,7 @@ try (CN)
 . Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count351
+\l__mhchem_ce_distanceFromLastComma_int=\count352
 \__mhchem_arrow_extPgfLength_skip=\skip73
 \mhchem@minispace@tmp=\skip74
 \mhchem@minibackspace@tmp=\skip75
@@ -1850,7 +1855,7 @@ try (CN)
 \mhchem@smallbondwidth=\skip80
 \mhchem@bondtmp@minussidebearingleft=\skip81
 \mhchem@bondtmp@minussidebearingright=\skip82
-\l__mhchem_option_version_int=\count352
+\l__mhchem_option_version_int=\count353
 \mhchem@option@minusmathsidebearingleft=\dimen301
 \mhchem@option@minusmathsidebearingright=\dimen302
 \mhchem@option@minustextsidebearingleft=\dimen303
@@ -1942,7 +1947,7 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 template.sty
 Package: xtemplate 2018-08-23 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen305
-\l__xtemplate_tmp_int=\count353
+\l__xtemplate_tmp_int=\count354
 \l__xtemplate_tmp_muskip=\muskip19
 \l__xtemplate_tmp_skip=\skip83
 )
@@ -1969,13 +1974,13 @@ Package: xfrac 2018-08-23 L3 Experimental split-level fractions
 )
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count354
+\c@float@type=\count355
 \float@exts=\toks48
 \float@box=\box79
 \@float@everytoks=\toks49
 \@floatcapt=\box80
 )
-Package scrhack Info: loading float hack on input line 83.
+Package scrhack Info: loading float hack on input line 86.
 
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2018/03/30 v3.25 KOMA-Script package (hacking package float)
@@ -2020,7 +2025,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen316
 \caption@hangindent=\dimen317
 )
-\c@ContinuedFloat=\count355
+\c@ContinuedFloat=\count356
 Package caption Info: beamer document class.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -2029,8 +2034,8 @@ Package caption Info: Hyperref support is turned off
 )
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count356
-\c@subtable=\count357
+\c@subfigure=\count357
+\c@subtable=\count358
 ) (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
@@ -2050,23 +2055,23 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen325
 \cmidrulekern=\dimen326
 \defaultaddspace=\dimen327
-\@cmidla=\count358
-\@cmidlb=\count359
+\@cmidla=\count359
+\@cmidlb=\count360
 \@aboverulesep=\dimen328
 \@belowrulesep=\dimen329
-\@thisruleclass=\count360
-\@lastruleclass=\count361
+\@thisruleclass=\count361
+\@lastruleclass=\count362
 \@thisrulewidth=\dimen330
 )
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.st
 y
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks50
-\MT@count=\count362
+\MT@count=\count363
 LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen331
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
-\MT@listname@count=\count363
+\MT@listname@count=\count364
 
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/microtype/microtype-lu
 atex.def
@@ -2087,7 +2092,7 @@ Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count364
+\lrq@indent=\count365
 
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -2098,49 +2103,49 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
-\integerpart=\count365
-\decimalpart=\count366
+\integerpart=\count366
+\decimalpart=\count367
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count367
-\c@listtotal=\count368
-\c@listcount=\count369
-\c@liststart=\count370
-\c@liststop=\count371
-\c@citecount=\count372
-\c@citetotal=\count373
-\c@multicitecount=\count374
-\c@multicitetotal=\count375
-\c@instcount=\count376
-\c@maxnames=\count377
-\c@minnames=\count378
-\c@maxitems=\count379
-\c@minitems=\count380
-\c@citecounter=\count381
-\c@savedcitecounter=\count382
-\c@uniquelist=\count383
-\c@uniquename=\count384
-\c@refsection=\count385
-\c@refsegment=\count386
-\c@maxextratitle=\count387
-\c@maxextratitleyear=\count388
-\c@maxextradate=\count389
-\c@maxextraalpha=\count390
-\c@abbrvpenalty=\count391
-\c@highnamepenalty=\count392
-\c@lownamepenalty=\count393
-\c@maxparens=\count394
-\c@parenlevel=\count395
-\blx@tempcnta=\count396
-\blx@tempcntb=\count397
-\blx@tempcntc=\count398
-\blx@maxsection=\count399
-\blx@maxsegment@0=\count400
-\blx@notetype=\count401
-\blx@parenlevel@text=\count402
-\blx@parenlevel@foot=\count403
-\blx@sectionciteorder@0=\count404
+\c@tabx@nest=\count368
+\c@listtotal=\count369
+\c@listcount=\count370
+\c@liststart=\count371
+\c@liststop=\count372
+\c@citecount=\count373
+\c@citetotal=\count374
+\c@multicitecount=\count375
+\c@multicitetotal=\count376
+\c@instcount=\count377
+\c@maxnames=\count378
+\c@minnames=\count379
+\c@maxitems=\count380
+\c@minitems=\count381
+\c@citecounter=\count382
+\c@savedcitecounter=\count383
+\c@uniquelist=\count384
+\c@uniquename=\count385
+\c@refsection=\count386
+\c@refsegment=\count387
+\c@maxextratitle=\count388
+\c@maxextratitleyear=\count389
+\c@maxextradate=\count390
+\c@maxextraalpha=\count391
+\c@abbrvpenalty=\count392
+\c@highnamepenalty=\count393
+\c@lownamepenalty=\count394
+\c@maxparens=\count395
+\c@parenlevel=\count396
+\blx@tempcnta=\count397
+\blx@tempcntb=\count398
+\blx@tempcntc=\count399
+\blx@maxsection=\count400
+\blx@maxsegment@0=\count401
+\blx@notetype=\count402
+\blx@parenlevel@text=\count403
+\blx@parenlevel@foot=\count404
+\blx@sectionciteorder@0=\count405
 \labelnumberwidth=\skip87
 \labelalphawidth=\skip88
 \biblabelsep=\skip89
@@ -2151,9 +2156,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip94
 \blx@bcfin=\read3
 \blx@bcfout=\write6
-\c@mincomprange=\count405
-\c@maxcomprange=\count406
-\c@mincompwidth=\count407
+\c@mincomprange=\count406
+\c@maxcomprange=\count407
+\c@mincompwidth=\count408
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -2161,74 +2166,74 @@ File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count408
-\c@savedafterword=\count409
-\c@annotator=\count410
-\c@savedannotator=\count411
-\c@author=\count412
-\c@savedauthor=\count413
-\c@bookauthor=\count414
-\c@savedbookauthor=\count415
-\c@commentator=\count416
-\c@savedcommentator=\count417
-\c@editor=\count418
-\c@savededitor=\count419
-\c@editora=\count420
-\c@savededitora=\count421
-\c@editorb=\count422
-\c@savededitorb=\count423
-\c@editorc=\count424
-\c@savededitorc=\count425
-\c@foreword=\count426
-\c@savedforeword=\count427
-\c@holder=\count428
-\c@savedholder=\count429
-\c@introduction=\count430
-\c@savedintroduction=\count431
-\c@namea=\count432
-\c@savednamea=\count433
-\c@nameb=\count434
-\c@savednameb=\count435
-\c@namec=\count436
-\c@savednamec=\count437
-\c@translator=\count438
-\c@savedtranslator=\count439
-\c@shortauthor=\count440
-\c@savedshortauthor=\count441
-\c@shorteditor=\count442
-\c@savedshorteditor=\count443
-\c@labelname=\count444
-\c@savedlabelname=\count445
-\c@institution=\count446
-\c@savedinstitution=\count447
-\c@lista=\count448
-\c@savedlista=\count449
-\c@listb=\count450
-\c@savedlistb=\count451
-\c@listc=\count452
-\c@savedlistc=\count453
-\c@listd=\count454
-\c@savedlistd=\count455
-\c@liste=\count456
-\c@savedliste=\count457
-\c@listf=\count458
-\c@savedlistf=\count459
-\c@location=\count460
-\c@savedlocation=\count461
-\c@organization=\count462
-\c@savedorganization=\count463
-\c@origlocation=\count464
-\c@savedoriglocation=\count465
-\c@origpublisher=\count466
-\c@savedorigpublisher=\count467
-\c@publisher=\count468
-\c@savedpublisher=\count469
-\c@language=\count470
-\c@savedlanguage=\count471
-\c@origlanguage=\count472
-\c@savedoriglanguage=\count473
-\c@pageref=\count474
-\c@savedpageref=\count475
+\c@afterword=\count409
+\c@savedafterword=\count410
+\c@annotator=\count411
+\c@savedannotator=\count412
+\c@author=\count413
+\c@savedauthor=\count414
+\c@bookauthor=\count415
+\c@savedbookauthor=\count416
+\c@commentator=\count417
+\c@savedcommentator=\count418
+\c@editor=\count419
+\c@savededitor=\count420
+\c@editora=\count421
+\c@savededitora=\count422
+\c@editorb=\count423
+\c@savededitorb=\count424
+\c@editorc=\count425
+\c@savededitorc=\count426
+\c@foreword=\count427
+\c@savedforeword=\count428
+\c@holder=\count429
+\c@savedholder=\count430
+\c@introduction=\count431
+\c@savedintroduction=\count432
+\c@namea=\count433
+\c@savednamea=\count434
+\c@nameb=\count435
+\c@savednameb=\count436
+\c@namec=\count437
+\c@savednamec=\count438
+\c@translator=\count439
+\c@savedtranslator=\count440
+\c@shortauthor=\count441
+\c@savedshortauthor=\count442
+\c@shorteditor=\count443
+\c@savedshorteditor=\count444
+\c@labelname=\count445
+\c@savedlabelname=\count446
+\c@institution=\count447
+\c@savedinstitution=\count448
+\c@lista=\count449
+\c@savedlista=\count450
+\c@listb=\count451
+\c@savedlistb=\count452
+\c@listc=\count453
+\c@savedlistc=\count454
+\c@listd=\count455
+\c@savedlistd=\count456
+\c@liste=\count457
+\c@savedliste=\count458
+\c@listf=\count459
+\c@savedlistf=\count460
+\c@location=\count461
+\c@savedlocation=\count462
+\c@organization=\count463
+\c@savedorganization=\count464
+\c@origlocation=\count465
+\c@savedoriglocation=\count466
+\c@origpublisher=\count467
+\c@savedorigpublisher=\count468
+\c@publisher=\count469
+\c@savedpublisher=\count470
+\c@language=\count471
+\c@savedlanguage=\count472
+\c@origlanguage=\count473
+\c@savedoriglanguage=\count474
+\c@pageref=\count475
+\c@savedpageref=\count476
 \shorthandwidth=\skip95
 \shortjournalwidth=\skip96
 \shortserieswidth=\skip97
@@ -2260,13 +2265,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count476
-\c@textcitetotal=\count477
-\c@textcitemaxnames=\count478
-\c@biburlnumpenalty=\count479
-\c@biburlucpenalty=\count480
-\c@biburllcpenalty=\count481
-\c@smartand=\count482
+\c@textcitecount=\count477
+\c@textcitetotal=\count478
+\c@textcitemaxnames=\count479
+\c@biburlnumpenalty=\count480
+\c@biburlucpenalty=\count481
+\c@biburllcpenalty=\count482
+\c@smartand=\count483
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2280,8 +2285,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.
 bbx
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count483
-\c@bbx:relatedtotal=\count484
+\c@bbx:relatedcount=\count484
+\c@bbx:relatedtotal=\count485
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -3260,9 +3265,6 @@ Package: physics
 ) (./beamerthemetudo.sty
 Package: beamerthemetudo 2019/01/29
 Package hyperref Info: Option `colorlinks' set `true' on input line 8.
-
-(/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/beamer/beamerfonttheme
-professionalfonts.sty)
 luaotfload | cache : Lookup cache loaded from /home/lewis206/.local/texlive/2018
 /texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 luaotfload | db : Reload initiated (formats: otf,ttf,ttc); reason: "Font Akkurat
@@ -3764,8 +3766,7 @@ LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 46.
-
-(/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \headerheight=\skip109
@@ -3827,10 +3828,10 @@ LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
 .................................................
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/FiraMath(1)/m/n --> TU/LatinModernMath(1)/m/n on inpu
-t line 160.
+t line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/FiraMath(1)/bx/n --> TU/LatinModernMath(1)/bx/n on in
-put line 160.
+put line 162.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -3877,10 +3878,10 @@ DFLT;+ssty=1;"
 .................................................
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  TU/FiraMath(2)/m/n --> TU/LatinModernMath(2)/m/n on inpu
-t line 160.
+t line 162.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  TU/FiraMath(2)/bx/n --> TU/LatinModernMath(2)/bx/n on in
-put line 160.
+put line 162.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -3919,22 +3920,22 @@ DFLT;+ssty=1;"
 .................................................
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  TU/FiraMath(3)/m/n --> TU/LatinModernMath(3)/m/n on inpu
-t line 160.
+t line 162.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  TU/FiraMath(3)/bx/n --> TU/LatinModernMath(3)/bx/n on in
-put line 160.
+put line 162.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.00014pt on input line 160.
+(Font)              scaled to size 9.00014pt on input line 162.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.3112pt on input line 160.
+(Font)              scaled to size 6.3112pt on input line 162.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.48273pt on input line 160.
+(Font)              scaled to size 4.48273pt on input line 162.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 8.99986pt on input line 160.
+(Font)              scaled to size 8.99986pt on input line 162.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.311pt on input line 160.
+(Font)              scaled to size 6.311pt on input line 162.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.48259pt on input line 160.
+(Font)              scaled to size 4.48259pt on input line 162.
 (load luc: /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fon
 ts/otl/xits-math.luc)(load luc: /home/lewis206/.local/texlive/2018/texmf-var/lua
 tex-cache/generic/fonts/otl/xits-mathbold.luc)
@@ -3972,10 +3973,10 @@ se;script=math;language=DFLT;+ssty=1;"
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 
-161.
+163.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/bx/n on input line
- 161.
+ 163.
 luaotfload | aux : font no 69 (nil) does not define feature smcp for script math
  with language dflt
 luaotfload | aux : no font with id 69
@@ -4010,10 +4011,10 @@ Math:mode=base;script=math;language=DFLT;+ss01;+ssty=1;"
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 
-162.
+164.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/bx/n on input line
- 162.
+ 164.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
@@ -4094,16 +4095,16 @@ LaTeX Font Info:    ... okay on input line 3.
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count485
+\scratchcounter=\count486
 \scratchdimen=\dimen332
 \scratchbox=\box82
-\nofMPsegments=\count486
-\nofMParguments=\count487
+\nofMPsegments=\count487
+\nofMParguments=\count488
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count488
+\MPscratchCnt=\count489
 \MPscratchDim=\dimen333
-\MPnumerator=\count489
-\makeMPintoPDFobject=\count490
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
 \everyMPtoPDFconversion=\toks52
 )
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base
@@ -4135,7 +4136,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ing.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count491
+\c@section@level=\count492
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -4218,7 +4219,7 @@ LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
 (Font)              scaled to size 4.12048pt on input line 3.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/n' will be
 (Font)              scaled to size 4.07372pt on input line 3.
-<logos/tu.pdf, id=13, 355.65945pt x 62.14388pt>
+<logos/tu.pdf, id=14, 355.65945pt x 62.14388pt>
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 3.
@@ -4288,93 +4289,334 @@ Package luatex.def Info: logos/tu.pdf  used on input line 9.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [2
 
-] (./content/grundlage.tex
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/n' will be
-(Font)              scaled to size 6.51794pt on input line 21.
+] (./content/grundlage.tex (./main.toc
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+3
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+5
+)
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 21.
+Package luatex.def Info: logos/tu.pdf  used on input line 5.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 6.59277pt on input line 21.
- [3
+(Font)              scaled to size 6.59277pt on input line 5.
 
-])
-(./content/theorie.tex
+[3
+
+]
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/n' will be
+(Font)              scaled to size 6.51794pt on input line 25.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 12.
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [4
 
 ]
-
-LaTeX Font Warning: Font shape `TU/LatinModernMath(1)/bx/n' undefined
-(Font)              using `TU/LatinModernMath(1)/m/n' instead on input line 31.
-
-
-LaTeX Font Warning: Font shape `TU/LatinModernMath(2)/bx/n' undefined
-(Font)              using `TU/LatinModernMath(2)/m/n' instead on input line 31.
-
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
-(Font)              scaled to size 6.3112pt on input line 31.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
-(Font)              scaled to size 4.48273pt on input line 31.
-
-LaTeX Font Warning: Font shape `TU/LatinModernMath(3)/bx/n' undefined
-(Font)              using `TU/LatinModernMath(3)/m/n' instead on input line 31.
-
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
-(Font)              scaled to size 6.311pt on input line 31.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
-(Font)              scaled to size 4.48259pt on input line 31.
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 5.20096pt on input line 31.
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 3.69414pt on input line 31.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 31.
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
-[5
+ [5
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 45.
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [6
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 60.
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [7
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [8
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [9
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 25.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [10
+
+]
+<build/Bild1.jpg, id=137, 722.7pt x 1284.8pt>
+File: build/Bild1.jpg Graphic file (type jpg)
+<use build/Bild1.jpg>
+Package luatex.def Info: build/Bild1.jpg  used on input line 32.
+(luatex.def)             Requested size: 85.04752pt x 151.18947pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 32.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [11
+
+<./build/Bild1.jpg>]
+<build/Bild2.jpg, id=148, 722.7pt x 1284.8pt>
+File: build/Bild2.jpg Graphic file (type jpg)
+<use build/Bild2.jpg>
+Package luatex.def Info: build/Bild2.jpg  used on input line 38.
+(luatex.def)             Requested size: 85.04752pt x 151.18947pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 38.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [12
+
+<./build/Bild2.jpg>]
+File: build/Bild1.jpg Graphic file (type jpg)
+<use build/Bild1.jpg>
+Package luatex.def Info: build/Bild1.jpg  used on input line 46.
+(luatex.def)             Requested size: 85.04752pt x 151.18947pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 46.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [13
+
+]) (./content/theorie.tex (./main.toc
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+3
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+5
+)
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 5.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [14
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 18.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [15
+
+]
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(1)/bx/n' undefined
+(Font)              using `TU/LatinModernMath(1)/m/n' instead on input line 41.
+
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(2)/bx/n' undefined
+(Font)              using `TU/LatinModernMath(2)/m/n' instead on input line 41.
+
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
+(Font)              scaled to size 6.3112pt on input line 41.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
+(Font)              scaled to size 4.48273pt on input line 41.
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(3)/bx/n' undefined
+(Font)              using `TU/LatinModernMath(3)/m/n' instead on input line 41.
+
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
+(Font)              scaled to size 6.311pt on input line 41.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
+(Font)              scaled to size 4.48259pt on input line 41.
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
+(Font)              scaled to size 5.20096pt on input line 41.
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
+(Font)              scaled to size 3.69414pt on input line 41.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 41.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+[16
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 62.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [17
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 72.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [18
 
 ]) (./content/durchfuehrung.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [8
+ [19
 
 ]) (./content/auswertung.tex
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 2.60046pt on input line 13.
+(./main.toc
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+3
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+5
+)
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 13.
+Package luatex.def Info: logos/tu.pdf  used on input line 5.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [20
+
+]
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
+(Font)              scaled to size 2.60046pt on input line 19.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 19.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [21
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 26.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [22
+
+]
+<build/plot1b.pdf, id=265, 417.7206pt x 258.00488pt>
+File: build/plot1b.pdf Graphic file (type pdf)
+<use build/plot1b.pdf>
+Package luatex.def Info: build/plot1b.pdf  used on input line 39.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 39.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [23
+
+<./build/plot1b.pdf>]
+<build/plot2b.pdf, id=308, 417.7206pt x 258.00488pt>
+File: build/plot2b.pdf Graphic file (type pdf)
+<use build/plot2b.pdf>
+Package luatex.def Info: build/plot2b.pdf  used on input line 50.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 50.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [24
+
+<./build/plot2b.pdf>]
+<build/plot3b.pdf, id=351, 417.7206pt x 258.00488pt>
+File: build/plot3b.pdf Graphic file (type pdf)
+<use build/plot3b.pdf>
+Package luatex.def Info: build/plot3b.pdf  used on input line 61.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 61.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
 
-[9
+[25
 
-]) (./content/diskussion.tex
+<./build/plot3b.pdf>]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 69.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [26
+
+]
+<build/plot1a.pdf, id=403, 417.7206pt x 258.00488pt>
+File: build/plot1a.pdf Graphic file (type pdf)
+<use build/plot1a.pdf>
+Package luatex.def Info: build/plot1a.pdf  used on input line 81.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 81.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [27
+
+<./build/plot1a.pdf>]
+<build/plot2a.pdf, id=432, 417.7206pt x 258.00488pt>
+File: build/plot2a.pdf Graphic file (type pdf)
+<use build/plot2a.pdf>
+Package luatex.def Info: build/plot2a.pdf  used on input line 92.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 92.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [28
+
+<./build/plot2a.pdf>]
+<build/plot3a.pdf, id=461, 417.7206pt x 258.00488pt>
+File: build/plot3a.pdf Graphic file (type pdf)
+<use build/plot3a.pdf>
+Package luatex.def Info: build/plot3a.pdf  used on input line 103.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 103.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+[29
+
+<./build/plot3a.pdf>]
+<build/plot5a.pdf, id=490, 417.7206pt x 258.00488pt>
+File: build/plot5a.pdf Graphic file (type pdf)
+<use build/plot5a.pdf>
+Package luatex.def Info: build/plot5a.pdf  used on input line 114.
+(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 114.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [30
+
+<./build/plot5a.pdf>]) (./content/diskussion.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [10
+
+[31
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [32
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [33
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [34
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [35
 
 ])
 \tf@nav=\write7
@@ -4406,15 +4648,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 52094 strings out of 494412
+ 52526 strings out of 494412
  100000,1977958 words of node,token memory allocated
- 2814 words of node memory still in use:
+ 3038 words of node memory still in use:
    46 hlist, 9 vlist, 8 rule, 14 disc, 8 local_par, 69 glue, 23 kern, 23 penalty
-, 1 sub_mlist, 67 glyph, 84 attribute, 78 glue_spec, 84 attribute_list, 3 write,
- 26 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:337,3:83,4:145,5:119,6:28,7:552,8:27,9:190,10:13,11:47
- 54214 multiletter control sequences out of 65536+600000
- 145 fonts using 54330751 bytes
+, 1 sub_mlist, 67 glyph, 116 attribute, 78 glue_spec, 116 attribute_list, 3 writ
+e, 32 pdf_literal, 26 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore
+ nodes
+   avail lists: 1:4,2:367,3:191,4:256,5:190,6:55,7:808,8:40,9:242,10:13,11:85
+ 54444 multiletter control sequences out of 65536+600000
+ 145 fonts using 54330103 bytes
  66i,18n,137p,789b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSa
 ns-Light.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/publi
@@ -4424,10 +4667,10 @@ nts/opentype/public/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive/
 06/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf>
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSa
 ns-Medium.otf>
-Output written on main.pdf (10 pages, 38283 bytes).
+Output written on main.pdf (35 pages, 528273 bytes).
 
-PDF statistics: 176 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 131072)
- 72 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 651 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 97 named destinations out of 1000 (max. 131072)
+ 149 words of extra memory for PDF output out of 10000 (max. 100000000)
 
