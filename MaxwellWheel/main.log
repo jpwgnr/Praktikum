@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  28 MAR 2019 23:19
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  29 MAR 2019 11:28
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.117 seconds
+luaotfload | main : initialization completed in 0.110 seconds
 (./header.tex
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/09/06 v3.53 A class for typesetting presentations
@@ -1175,24 +1175,24 @@ professionalfonts.sty)
 an.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            righthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x69a4100
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            hyphenation	
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x62ea4d0
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            righthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x69a42d0
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            hyphenation	
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x62ea6a0
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -4356,11 +4356,11 @@ Package luatex.def Info: logos/tu.pdf  used on input line 25.
  [10
 
 ]
-<build/Bild1.jpg, id=137, 722.7pt x 1284.8pt>
+<build/Bild1.jpg, id=139, 722.7pt x 1284.8pt>
 File: build/Bild1.jpg Graphic file (type jpg)
 <use build/Bild1.jpg>
 Package luatex.def Info: build/Bild1.jpg  used on input line 32.
-(luatex.def)             Requested size: 85.04752pt x 151.18947pt.
+(luatex.def)             Requested size: 191.35854pt x 340.19592pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 32.
@@ -4368,29 +4368,18 @@ Package luatex.def Info: logos/tu.pdf  used on input line 32.
  [11
 
 <./build/Bild1.jpg>]
-<build/Bild2.jpg, id=148, 722.7pt x 1284.8pt>
-File: build/Bild2.jpg Graphic file (type jpg)
-<use build/Bild2.jpg>
-Package luatex.def Info: build/Bild2.jpg  used on input line 38.
-(luatex.def)             Requested size: 85.04752pt x 151.18947pt.
+File: build/Bild1.jpg Graphic file (type jpg)
+<use build/Bild1.jpg>
+Package luatex.def Info: build/Bild1.jpg  used on input line 40.
+(luatex.def)             Requested size: 42.527pt x 75.59473pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 38.
+Package luatex.def Info: logos/tu.pdf  used on input line 40.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [12
 
-<./build/Bild2.jpg>]
-File: build/Bild1.jpg Graphic file (type jpg)
-<use build/Bild1.jpg>
-Package luatex.def Info: build/Bild1.jpg  used on input line 46.
-(luatex.def)             Requested size: 85.04752pt x 151.18947pt.
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 46.
-(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [13
-
-]) (./content/theorie.tex (./main.toc
+])
+(./content/theorie.tex (./main.toc
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 3
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -4400,14 +4389,14 @@ File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 5.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [14
+ [13
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 18.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [15
+ [14
 
 ]
 
@@ -4438,28 +4427,28 @@ File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 41.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
-[16
+[15
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 62.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [17
+ [16
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 72.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [18
+ [17
 
 ]) (./content/durchfuehrung.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [19
+ [18
 
 ]) (./content/auswertung.tex
 (./main.toc
@@ -4472,7 +4461,7 @@ File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 5.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [20
+ [19
 
 ]
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
@@ -4481,114 +4470,132 @@ File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 19.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [21
+ [20
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 26.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [22
+ [21
 
 ]
-<build/plot1b.pdf, id=265, 417.7206pt x 258.00488pt>
+<build/plot1b.pdf, id=259, 417.7206pt x 258.00488pt>
 File: build/plot1b.pdf Graphic file (type pdf)
 <use build/plot1b.pdf>
 Package luatex.def Info: build/plot1b.pdf  used on input line 39.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
+
+Overfull \vbox (6.1724pt too high) detected at line 39
+ []
+
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 39.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [23
+[22
 
 <./build/plot1b.pdf>]
-<build/plot2b.pdf, id=308, 417.7206pt x 258.00488pt>
+<build/plot2b.pdf, id=302, 417.7206pt x 258.00488pt>
 File: build/plot2b.pdf Graphic file (type pdf)
 <use build/plot2b.pdf>
 Package luatex.def Info: build/plot2b.pdf  used on input line 50.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
+
+Overfull \vbox (6.1724pt too high) detected at line 50
+ []
+
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 50.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [24
+[23
 
 <./build/plot2b.pdf>]
-<build/plot3b.pdf, id=351, 417.7206pt x 258.00488pt>
+<build/plot3b.pdf, id=345, 417.7206pt x 258.00488pt>
 File: build/plot3b.pdf Graphic file (type pdf)
 <use build/plot3b.pdf>
 Package luatex.def Info: build/plot3b.pdf  used on input line 61.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
+
+Overfull \vbox (6.1724pt too high) detected at line 61
+ []
+
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 61.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
-
-[25
+[24
 
 <./build/plot3b.pdf>]
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 69.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [26
+ [25
 
 ]
-<build/plot1a.pdf, id=403, 417.7206pt x 258.00488pt>
+<build/plot1a.pdf, id=397, 417.7206pt x 258.00488pt>
 File: build/plot1a.pdf Graphic file (type pdf)
 <use build/plot1a.pdf>
 Package luatex.def Info: build/plot1a.pdf  used on input line 81.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 81.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [27
+ [26
 
 <./build/plot1a.pdf>]
-<build/plot2a.pdf, id=432, 417.7206pt x 258.00488pt>
+<build/plot2a.pdf, id=426, 417.7206pt x 258.00488pt>
 File: build/plot2a.pdf Graphic file (type pdf)
 <use build/plot2a.pdf>
 Package luatex.def Info: build/plot2a.pdf  used on input line 92.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 92.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [28
+ [27
 
 <./build/plot2a.pdf>]
-<build/plot3a.pdf, id=461, 417.7206pt x 258.00488pt>
+<build/plot3a.pdf, id=455, 417.7206pt x 258.00488pt>
 File: build/plot3a.pdf Graphic file (type pdf)
 <use build/plot3a.pdf>
 Package luatex.def Info: build/plot3a.pdf  used on input line 103.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 103.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
-[29
+[28
 
 <./build/plot3a.pdf>]
-<build/plot5a.pdf, id=490, 417.7206pt x 258.00488pt>
-File: build/plot5a.pdf Graphic file (type pdf)
-<use build/plot5a.pdf>
-Package luatex.def Info: build/plot5a.pdf  used on input line 114.
-(luatex.def)             Requested size: 227.61815pt x 170.71678pt.
+<build/plot4a.pdf, id=484, 417.7206pt x 258.00488pt>
+File: build/plot4a.pdf Graphic file (type pdf)
+<use build/plot4a.pdf>
+Package luatex.def Info: build/plot4a.pdf  used on input line 114.
+(luatex.def)             Requested size: 284.52429pt x 170.71678pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 114.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [30
+ [29
 
-<./build/plot5a.pdf>]) (./content/diskussion.tex
+<./build/plot4a.pdf>]) (./content/diskussion.tex
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
 Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
 
-[31
+[30
+
+]
+File: logos/tu.pdf Graphic file (type pdf)
+<use logos/tu.pdf>
+Package luatex.def Info: logos/tu.pdf  used on input line 11.
+(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
+ [31
 
 ]
 File: logos/tu.pdf Graphic file (type pdf)
@@ -4610,13 +4617,6 @@ File: logos/tu.pdf Graphic file (type pdf)
 Package luatex.def Info: logos/tu.pdf  used on input line 11.
 (luatex.def)             Requested size: 130.2732pt x 22.76271pt.
  [34
-
-]
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 11.
-(luatex.def)             Requested size: 130.2732pt x 22.76271pt.
- [35
 
 ])
 \tf@nav=\write7
@@ -4648,17 +4648,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 52526 strings out of 494412
+ 53066 strings out of 494412
  100000,1977958 words of node,token memory allocated
  3038 words of node memory still in use:
    46 hlist, 9 vlist, 8 rule, 14 disc, 8 local_par, 69 glue, 23 kern, 23 penalty
 , 1 sub_mlist, 67 glyph, 116 attribute, 78 glue_spec, 116 attribute_list, 3 writ
 e, 32 pdf_literal, 26 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore
  nodes
-   avail lists: 1:4,2:367,3:191,4:256,5:190,6:55,7:808,8:40,9:242,10:13,11:85
- 54444 multiletter control sequences out of 65536+600000
- 145 fonts using 54330103 bytes
- 66i,18n,137p,789b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:4,2:443,3:192,4:267,5:201,6:58,7:853,8:56,9:242,10:19,11:93
+ 54811 multiletter control sequences out of 65536+600000
+ 309 fonts using 125310475 bytes
+ 66i,27n,137p,789b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSa
 ns-Light.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/publi
 c/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive/2018/texmf-dist/fo
@@ -4667,10 +4667,10 @@ nts/opentype/public/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive/
 06/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf>
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraSa
 ns-Medium.otf>
-Output written on main.pdf (35 pages, 528273 bytes).
+Output written on main.pdf (34 pages, 393495 bytes).
 
-PDF statistics: 651 PDF objects out of 1000 (max. 8388607)
- 512 compressed objects within 6 object streams
- 97 named destinations out of 1000 (max. 131072)
- 149 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 647 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 96 named destinations out of 1000 (max. 131072)
+ 157 words of extra memory for PDF output out of 10000 (max. 100000000)
 
