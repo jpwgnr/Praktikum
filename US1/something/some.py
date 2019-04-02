@@ -29,7 +29,8 @@ def linReg(x, y, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}", num=1,  x_ad
     plt.ylabel(y_name)
     plt.legend(loc="best")
     plt.tight_layout()
-    plt.savefig(file_name)
+    plt.savefig(file_name) 
+    return Steigung1, yAbschnitt1
 
 
 def curvefit(x, y, num=1, x_add=5, function=gerade, x_name=r"t/\si{\second}", y_name=r"s/\si{\meter}", file_name="build/plota.pdf"):
@@ -43,5 +44,6 @@ def curvefit(x, y, num=1, x_add=5, function=gerade, x_name=r"t/\si{\second}", y_
     plt.legend(loc="best")
     plt.tight_layout()
     plt.savefig(file_name)
+    return params, pcov
 
 
