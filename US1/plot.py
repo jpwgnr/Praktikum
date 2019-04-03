@@ -23,10 +23,10 @@ c = 2*l1 /t13
 t23=t22-t21 
 t33=t32-t31
 
-some.tabelle([-np.log(U11/U12), l1], finished_file="tab1.tex", vars_name=[r"- ln(U1/U2)", r"l/ \si{\meter}"], label_text="tab1", caption_text=r"Der negative Logarithmus des Verhältnisses der Amplituden aufgetragen gegen die Länge $l$ des Zylinders.", precision=2) 
+some.tabelle([-np.log(U12/U11), l1], finished_file="tab1.tex", vars_name=[r"- ln(U1/U2)", r"l/ \si{\meter}"], label_text="tab1", caption_text=r"Der negative Logarithmus des Verhältnisses der Amplituden aufgetragen gegen die Länge $l$ des Zylinders.", precision=2) 
 
 #Generate linReg-Plot 1
-alpha, y1= some.linReg(x=l1 , y=-np.log(U11/U12), x_name=r"l/ \si{\meter}", y_name=r"- ln(U1/U2)", num=1,  x_add=0.5, file_name="build/plot1.pdf")
+alpha, y1= some.linReg(x=l1 , y=-np.log(U12/U11), x_name=r"l/ \si{\meter}", y_name=r"- ln(U2/U1)", num=1,  x_add=0.5, file_name="build/plot1.pdf")
 
 some.tabelle([t23, l1], finished_file="tab2.tex", vars_name=[r"t/ \si{\second}", r"l/ \si{\meter}"], label_text="tab2", caption_text=r"Die Zeit des Durchschallungsverfahrens gegen die Länge des Zylinders.", precision=2) 
 
