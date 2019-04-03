@@ -6,8 +6,9 @@ werden.
 
 \section{Theorie}
 \label{sec:Theorie}
+\subsection{Allgemeines} %bessere Überschrift?
 %Frequenzbereich
-Der Frequenzbereich beim Ultraschall liegt zwischen 
+Der Frequenzbereich des Ultraschalls liegt zwischen 
 \SI{20}{\kilo\hertz} und ca. \SI{1}{\giga\hertz}. 
 %Anwendung
 Die Ultraschalltechnik findet Anwendung bei 
@@ -21,12 +22,13 @@ beschrieben durch
 \end{equation*}
 
 %Akustische Impedanz
-\noindent Die akustische Impedanz $Z$ setzt sich dabei aus der 
+\noindent Dabei ist $Z$ die akustische Impedanz, die sich aus der 
 Schallgeschwindigkeit in diesem Material und dessen Dichte 
-zusammen. Es gilt 
+zusammensetzt. Es gilt 
 \begin{equation*}
     Z = c \cdot \rho.
 \end{equation*}
+
 %Eigenschaften
 Die Welle besitzt ähnliche Eigenschaften wie 
 elektromagnetische Wellen. Die Phasengeschwindigkeit 
@@ -46,10 +48,11 @@ $E$ abhängige Geschwindigkeit zu
     c_{\text{Fe}}= \sqrt{\frac{E}{\rho}}.
 \end{equation*}
 Die Geschwindigkeit unterscheidet 
-sich im Festkörper aber für die longitudinale und
-transversale Ausbreitung. Diese ist richtungsabhängig.
+sich im Festkörper für die longitudinale und
+transversale Ausbreitung. Die Geschwindigkeit ist richtungsabhängig.
+
 %Intensität
-Ein Teil der Energie bei der Ausbreitung von Schall geht 
+\noindent Ein Teil der Energie bei der Ausbreitung von Schall geht 
 durch Absorption verloren. Die Intensität $I_0$ nimmt 
 exponentiell auf der Strecke $x$ ab:
 \begin{equation}
@@ -58,24 +61,37 @@ exponentiell auf der Strecke $x$ ab:
 \end{equation}
 Der Faktor $\alpha$ 
 ist der Absorptionskoeffizient.
-
 In Luft wird Schall starkt absorbiert, weshalb zwischen 
 Schallgeber und zu untersuchendem Material ein Kontaktmittel 
-verwendet wird. 
+verwendet wird.
+\newline
 Eine Schallwelle, die auf eine Grenzfläche trifft, wird 
 reflektiert. Der Reflexionskoeffizient ergibt sich mit den 
 Impedanzen beider Materialien zu 
 \begin{equation*}
-    R = (\frac{Z_1-Z_2}{Z_1-Z_2})^2.
+    R = (\frac{Z_1-Z_2}{Z_1-Z_2})^2. %höhere Klammern?
 \end{equation*}
-Der Transmissionsanteil wird mittels $T= 1-R$ bestimmt. 
+Der Transmissionsanteil wird mittels $T= 1-R$ bestimmt.
+
+\noindent Wenn die Länge $s$ und die Durchlaufzeit $\Delta t = t_2 - t_1$
+bekannt sind, lässt sich aus der bekannten Gleichung
+\begin{equation}
+    s=\frac{1}{2}c \Delta t
+    \label{eqn:s}
+\end{equation}
+die Schallgeschwindigkeit mittels
+\begin{equation}
+    c = \frac{2 s}{\Delta t}
+    \label{eqn:c}
+\end{equation}
+berechnen.
 
 \subsection{Erzeugung von Ultraschall}
 \noindent Die Erzeugung von Ultraschall funktioniert auf verschiedene 
 Arten. Eine Art ist die Verwendung des reziproken 
 piezo-elektrischen Effekts. Dafür bringt man einen 
 piezoelektrischen Kristall in ein elektrisches, sich
-wechselndes, Feld, sodass der Kristall, wenn eine Achse in 
+wechselndes Feld, sodass der Kristall, wenn eine Achse in 
 Richtung des Feldes gerichtet ist, beginnt zu 
 schwingen. Beim Schwingen strahlt er Ultraschallwellen ab. 
 Stimmen Anregungsfrequenz und Eigenfrequenz überein, 
@@ -84,7 +100,7 @@ genutzt werden. Der Kristall kann auch als Schallempfänger
 verwendet werden. Quarze sind dabei die meist benutzten 
 Piezokristalle, da sie konstante Eigenschaften besitzten. 
 Der piezoelektrische Effekt ist aber relativ schwach. 
-%sich wechselnd?
+%"sich wechselnd"?
 
 \subsection{Verfahren}
 In der Ultraschalltechnik werden zwei Verfahren verwendet. 
@@ -103,6 +119,5 @@ reflektiert und nach der Rückkehr vom Empfänger aufgenommen.
 Bei Fehlstellen kann dann die Höhe des Echos zu Rückschlüssen 
 über deren Größe führen. 
 
-%
-Laufzeitdiagramme können als A-Scan, B-Scan oder TM-Scan 
+\noindent Laufzeitdiagramme können als A-Scan, B-Scan oder TM-Scan 
 durchgeführt werden. %wichtig? 
