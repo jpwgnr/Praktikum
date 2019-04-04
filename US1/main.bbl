@@ -19,7 +19,20 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{V<++>}{manual}{}
+    \entry{auge}{article}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{title}{9.2 Optische Instrumente - Das Auge}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://www.geometrische-optik.de/OPTIK-Texte-html/Kapitel92_Optische%20Instrumente-Auge.htm
+      \endverb
+      \verb{url}
+      \verb http://www.geometrische-optik.de/OPTIK-Texte-html/Kapitel92_Optische%20Instrumente-Auge.htm
+      \endverb
+    \endentry
+    \entry{US1}{article}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
            family={Dortmund},
@@ -37,8 +50,8 @@
       \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Versuch <++> zum Literaturverzeichnis}
-      \field{year}{2018}
+      \field{title}{Versuch US1 - Grundlagen der Ultraschalltechnik}
+      \field{year}{2019}
     \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
@@ -176,6 +189,19 @@
       \endverb
       \verb{url}
       \verb http://www.numpy.org/
+      \endverb
+    \endentry
+    \entry{c}{article}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Schallgeschwindigkeiten im Material}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.olympus-ims.com/de/ndt-tutorials/thickness-gage/appendices-velocities/
+      \endverb
+      \verb{url}
+      \verb https://www.olympus-ims.com/de/ndt-tutorials/thickness-gage/appendices-velocities/
       \endverb
     \endentry
   \enddatalist
