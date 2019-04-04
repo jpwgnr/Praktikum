@@ -36,20 +36,20 @@ t33=t32-t31
 some.tabelle([-np.log(U12/U11), l1*1e3], finished_file="build/tab1.tex", vars_name=[r"$- ln(U2/U1)$", r"$l/ \si{\milli\meter}$"], label_text="tab1", caption_text=r"Der negative Logarithmus des Verhältnisses der Amplituden aufgetragen gegen die Längen $l$ des Zylinder.", precision=2) 
 
 #Generate linReg-Plot 1
-alpha, y1= some.linReg(x=l1*1e3 , y=-np.log(U12/U11), x_name=r"$l/ \si{\milli\meter}$", y_name=r"$- ln(U2/U1)$", num=1,  x_add=0.5, file_name="build/plot1.pdf")
+alpha, y1= some.linReg(x=l1*1e3 , y=-np.log(U12/U11), x_name=r"$l/ \si{\milli\meter}$", y_name=r"$- ln(U2/U1)$", num=1,  x_add=-3, file_name="build/plot1.pdf")
 
 some.tabelle([t23*1e6, l1*1e3], finished_file="build/tab2.tex", vars_name=[r"$t/ \si{\micro\second}$", r"$l/ \si{\milli\meter}$"], label_text="tab2", caption_text=r"Die Zeit des Durchschallungsverfahrens gegen die Länge der Zylinder.", precision=2) 
 
 #Generate linReg-Plot 2
-c2, y2=some.linReg(x=t23*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=2,  x_add=0.5, file_name="build/plot2.pdf")
+c2, y2=some.linReg(x=t23*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=2,  x_add=-3, file_name="build/plot2.pdf")
 
 some.tabelle([t33*1e6, l1*1e3], finished_file="build/tab3.tex", vars_name=[r"$t/ \si{\micro\second}$", r"$l/ \si{\milli\meter}$"], label_text="tab3", caption_text=r"Die Zeit des Durchschallungsverfahrens gegen die Länge der Zylinder.", precision=2) 
 
 #Generate linReg-Plot 3
-c3, y3=some.linReg(x=t33 , y=l1, x_name=r"$t/ \si{\second}$", y_name=r"$l/ \si{\meter}$", num=3,  x_add=0.5, file_name="build/plot3.pdf")
+c3, y3=some.linReg(x=t33*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=3,  x_add=-3, file_name="build/plot3.pdf")
 
 #Augenmodell 
-c_theo1 = 1485
+c_theo1 = 1480
 sA1= 0.5*c_theo1*(tA[2]-tA[1])
 c_theo2 = 2500
 sA2= 0.5*c_theo2*(tA[3]-tA[2])
