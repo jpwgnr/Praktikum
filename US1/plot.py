@@ -20,7 +20,7 @@ t21=t21*1e-6
 t22=t22*1e-6
 
 #Generate data 
-t31, t32 = some.neueWerte(file_name="data/datac.txt", finished_file="build/tabc.tex",  vars_name=[r"$t_1/ \si{\micro\second}$", r"$t2/ \si{\micro\second}$"], label_text="tabc", caption_text=r"Die Zeiten beim Durschallungsverfahren." , precision=2)
+t31, t32 = some.neueWerte(file_name="data/datac.txt", finished_file="build/tabc.tex",  vars_name=[r"$t_1/ \si{\micro\second}$", r"$t_2/ \si{\micro\second}$"], label_text="tabc", caption_text=r"Die Zeiten beim Durschallungsverfahren." , precision=2)
 #Einheiten
 t31=t31*1e-6
 t32=t32*1e-6
@@ -34,7 +34,7 @@ c = 2*l1 /t13
 t23=t22-t21 
 t33=t32-t31
 
-some.tabelle([-np.log(U12/U11), l1*1e3], finished_file="build/tab1.tex", vars_name=[r"$- ln(U2/U1)$", r"$l/ \si{\milli\meter}$"], label_text="tab1", caption_text=r"Der negative Logarithmus des Verhältnisses der Amplituden aufgetragen gegen die Längen $l$ des Zylinder.", precision=2) 
+some.tabelle([-np.log(U12/U11), l1*1e3], finished_file="build/tab1.tex", vars_name=[r"$- ln(U2/U1)$", r"$l/ \si{\milli\meter}$"], label_text="tab1", caption_text=r"Der negative Logarithmus des Verhältnisses der Amplituden aufgetragen gegen die Längen $l$ der Zylinder.", precision=2) 
 
 #Generate linReg-Plot 1
 alpha, y1, std1= some.linReg(x=l1*1e3 , y=-np.log(U12/U11), x_name=r"$l/ \si{\milli\meter}$", y_name=r"$- ln(U2/U1)$", num=1,  x_add=-3, file_name="build/plot1.pdf")
