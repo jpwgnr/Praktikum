@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import uncertainties.unumpy as unp
+from uncertainties import ufloat
 from scipy import stats
 from scipy.optimize import curve_fit
 from something import some 
@@ -36,17 +37,21 @@ t33=t32-t31
 some.tabelle([-np.log(U12/U11), l1*1e3], finished_file="build/tab1.tex", vars_name=[r"$- ln(U2/U1)$", r"$l/ \si{\milli\meter}$"], label_text="tab1", caption_text=r"Der negative Logarithmus des Verhältnisses der Amplituden aufgetragen gegen die Längen $l$ des Zylinder.", precision=2) 
 
 #Generate linReg-Plot 1
-alpha, y1= some.linReg(x=l1*1e3 , y=-np.log(U12/U11), x_name=r"$l/ \si{\milli\meter}$", y_name=r"$- ln(U2/U1)$", num=1,  x_add=-3, file_name="build/plot1.pdf")
+alpha, y1, std1= some.linReg(x=l1*1e3 , y=-np.log(U12/U11), x_name=r"$l/ \si{\milli\meter}$", y_name=r"$- ln(U2/U1)$", num=1,  x_add=-3, file_name="build/plot1.pdf")
 
 some.tabelle([t23*1e6, l1*1e3], finished_file="build/tab2.tex", vars_name=[r"$t/ \si{\micro\second}$", r"$l/ \si{\milli\meter}$"], label_text="tab2", caption_text=r"Die Zeit des Durchschallungsverfahrens gegen die Länge der Zylinder.", precision=2) 
 
 #Generate linReg-Plot 2
-c2, y2=some.linReg(x=t23*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=2,  x_add=-3, file_name="build/plot2.pdf")
+cc2, y2, std2=some.linReg(x=t23*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=2,  x_add=-3, file_name="build/plot2.pdf")
+
+c2= ufloat(cc2, std2)
 
 some.tabelle([t33*1e6, l1*1e3], finished_file="build/tab3.tex", vars_name=[r"$t/ \si{\micro\second}$", r"$l/ \si{\milli\meter}$"], label_text="tab3", caption_text=r"Die Zeit des Durchschallungsverfahrens gegen die Länge der Zylinder.", precision=2) 
 
 #Generate linReg-Plot 3
-c3, y3=some.linReg(x=t33*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=3,  x_add=-3, file_name="build/plot3.pdf")
+cc3, y3, std3=some.linReg(x=t33*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=3,  x_add=-3, file_name="build/plot3.pdf")
+
+c3= ufloat(cc3,std3)
 
 #Augenmodell 
 c_theo1 = 1480
@@ -57,6 +62,6 @@ c_theo3 = 1410
 sA3= 0.5*c_theo3*(tA[4]-tA[3])
 
 file = open("build/solution.txt", "w")
-file.write(f"Ultraschall\nGeschwindigkeiten 1-5 = {c}\nDämpfungsfaktor= {alpha}\nGeschwindigkeit c2={c2*2}\nGeschwindigkeit c3={c3*2}\nAugenweite:\nStrecke 1={sA1}\nStrecke 2={sA2}\nStrecke 3={sA3}")
+file.write(f"Ultraschall\nGeschwindigkeiten 1-5 = {c}\nDämpfungsfaktor= {alpha}+-{std1}\nGeschwindigkeit c2={c2*2}\nGeschwindigkeit c3={c3*2}\nAugenweite:\nStrecke 1={sA1}\nStrecke 2={sA2}\nStrecke 3={sA3}")
 file.close()
 
