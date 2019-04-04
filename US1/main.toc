@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {4.1}Vermessung der Acrylzylinder}{7}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bestimmung der Dämpfung mittels Impuls-Echo-Verfahren}{9}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Bestimmung der Schallgeschwindigkeit mittels Durchschallungs-Verfahren}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Bestimmung der Schallgeschwindigkeit mittels Impuls-Echo-Verfahren}{12}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Biometrische Untersuchung eines Augenmodells}{13}{subsection.4.5}
-\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
-\contentsline {section}{\nonumberline Literatur}{14}{section*.21}
+\contentsline {subsection}{\numberline {4.4}Bestimmung der Schallgeschwindigkeit mittels Impuls-Echo-Verfahren}{14}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Biometrische Untersuchung eines Augenmodells}{15}{subsection.4.5}
+\contentsline {section}{\numberline {5}Diskussion}{16}{section.5}
+\contentsline {section}{\nonumberline Literatur}{16}{section*.26}

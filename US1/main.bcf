@@ -1975,6 +1975,12 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">CS1</bcf:citekey>
+    <bcf:citekey order="2">CS1</bcf:citekey>
+    <bcf:citekey order="3">c</bcf:citekey>
+    <bcf:citekey order="4">c</bcf:citekey>
+    <bcf:citekey order="5">US1</bcf:citekey>
+    <bcf:citekey order="6">auge</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
