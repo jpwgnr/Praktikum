@@ -26,7 +26,7 @@ t31=t31*1e-6
 t32=t32*1e-6
 
 #Generate data 
-tA, UA = some.neueWerte(file_name="data/datad.txt", finished_file="build/tabd.tex",  vars_name=[r"$t_1/ \si{\micro\second}$", r"$U_1/ \si{\volt}$"], label_text="tabd", caption_text=r"Das Auge und seine Daten." , precision=2)
+tA, UA = some.neueWerte(file_name="data/datad.txt", finished_file="build/tabd.tex",  vars_name=[r"$t_1/ \si{\micro\second}$", r"$U_1/ \si{\volt}$"], label_text="tabd", caption_text=r"Laufzeiten und Spannungen der reflektierten Impulse bei dem Modell des Auges." , precision=2)
 tA=tA*1e-6
 #calculate
 t13=t12-t11
@@ -39,7 +39,7 @@ some.tabelle([-np.log(U12/U11), l1*1e3], finished_file="build/tab1.tex", vars_na
 #Generate linReg-Plot 1
 alpha, y1, std1= some.linReg(x=l1*1e3 , y=-np.log(U12/U11), x_name=r"$l/ \si{\milli\meter}$", y_name=r"$- ln(U2/U1)$", num=1,  x_add=-3, file_name="build/plot1.pdf")
 
-some.tabelle([t23*1e6, l1*1e3], finished_file="build/tab2.tex", vars_name=[r"$t/ \si{\micro\second}$", r"$l/ \si{\milli\meter}$"], label_text="tab2", caption_text=r"Die Zeit des Durchschallungsverfahrens gegen die Länge der Zylinder.", precision=2) 
+some.tabelle([t23*1e6, l1*1e3], finished_file="build/tab2.tex", vars_name=[r"$t/ \si{\micro\second}$", r"$l/ \si{\milli\meter}$"], label_text="tab2", caption_text=r"Die Zeit des Impuls-Echo-Verfahrens gegen die Länge der Zylinder.", precision=2) 
 
 #Generate linReg-Plot 2
 cc2, y2, std2=some.linReg(x=t23*1e6 , y=l1*1e3, x_name=r"$t/ \si{\micro\second}$", y_name=r"$l/ \si{\milli\meter}$", num=2,  x_add=-3, file_name="build/plot2.pdf")
