@@ -1,43 +1,83 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-Die Beugung des Lichts wird als Abweichung der Lichtausbreitung von den Gesetzen der geometrischen Optik verstanden. Diese treten auf, wenn Licht auf Öffnungen in Schirmen oder auf undurchlässige Hindernisse trifft. Die Phänomene lassen sich gut beschreiben, wenn man die Ausbreitung des Lichts als einen Wellenvorgang betrachtet. 
-Somit gilt zum Beispiel das Huygenssche Prinzip. 
+\subsection{Allgemeines}
+Die Beugung des Lichts wird als Abweichung der 
+Lichtausbreitung von den Gesetzen der geometrischen Optik 
+verstanden. Diese treten auf, wenn Licht auf Öffnungen in 
+Schirmen oder auf undurchlässige Hindernisse trifft, die klein
+gegenüber dem Strahldurchmesser sind. Die 
+Phänomene lassen sich gut beschreiben, wenn man die 
+Ausbreitung des Lichts als einen Wellenvorgang betrachtet. 
+Somit gilt zum Beispiel das Huygenssche Prinzip. %
 
-Es gibt zwei Versuchsanordnungen die bei Beugungsuntersuchungen auftreten können. Dabei wird die Fresnelsche und die Fraunhofersche Lichtbeugung unterschieden. Bei der Fraunhoferschen Anordnung wird die Lichtquelle ins Unendliche verelgt, sodass ein paralleles Lichtbündel mit einer ebenen Wellenfront erhalten wird. Damit wird auch der Aufpunkt quasi ins Unendliche  verlegt. Das bedeutet, dass alle Strahlen, die in einem Punkt interferieren unter dem selben Winkel abgebeugt werden. Dies ist mathematisch einfacher zu behandeln, insofern wird diese Anordnung im folgenden verwendet. 
+%Fresnel und Fraunhofer
+Es gibt zwei Versuchsanordnungen, die bei Beugungsuntersuchungen 
+auftreten können. Dabei werden die Fresnelsche und die 
+Fraunhofersche Lichtbeugung unterschieden. Bei der 
+Fraunhoferschen Anordnung wird die Lichtquelle ins Unendliche 
+verelgt, sodass ein paralleles Lichtbündel mit einer ebenen 
+Wellenfront auf die Beugungsebene trifft. Damit wird auch der Aufpunkt 
+ins Unendliche  verlegt. Das bedeutet, dass alle Strahlen, die 
+in einem Punkt interferieren, unter dem selben Winkel gebeugt 
+werden. Dies ist mathematisch einfacher zu behandeln, insofern 
+wird diese Anordnung im Folgenden verwendet. 
 
-Die Länge des zu beugenden Objekts ist groß ist gegen seine Breite $b$. Somit wird das Lichtbündel quasi nur in einer Dimension begrenzt. 
+Die Länge des zu beugenden Objekts ist groß gegen seine 
+Breite $b$. Somit wird das Lichtbündel nur in einer 
+Dimension begrenzt.
 
-Es wird ein Laser als Lichtquelle benutzt, um kohärentes Licht zu erhalten und damit Interferenzerscheinungen möglich zu machen. 
+%kohärentes Licht
+Es wird ein Laser als Lichtquelle benutzt, um kohärentes Licht 
+zu erhalten und damit Interferenzerscheinungen möglich zu machen. 
 
-Aus einer Kombination des Huygensschen Prinzips und der Definition dem Interferenzprinzip nach Fresnel lässt sich die Beugungserscheinung erklären. Das Fresnelsche Prinzip besagt, dass jeder Punkt einer Wellenfläche zu gleicher Zeit eine Elementarwelle aussendet, die die Form einer Kugelwelle hat. Diese neue Wellen interferieren miteinander und den Schwingungszustand eines beliebigen Punktes erhält man durch die Superposition aller Elementarwelle an dieser Stelle zum selben Zeitpunkt eingehen. 
+Aus einer Kombination des Huygensschen Prinzips und der 
+Definition dem Interferenzprinzip nach Fresnel lässt sich die 
+Beugungserscheinung erklären. Das Fresnelsche Prinzip besagt, 
+dass jeder Punkt einer Wellenfläche zu gleicher Zeit eine 
+Elementarwelle aussendet, die die Form einer Kugelwelle hat. 
+Diese neuen Wellen interferieren miteinander. Den 
+Schwingungszustand eines beliebigen Punktes erhält man durch 
+die Superposition aller Elementarwellen, die an dieser Stelle zum 
+selben Zeitpunkt eingehen. 
 
-Es wird über die gesamte Spaltbreite integriert um die Amplitude $B$ in Richtung $\phi$ zu bestimmen. Nach Ausführung der Integration und ausklammern eines e-Terms und der Nutzung der Euler-Formel ergibt sich ein längerer Term aus dem zu erkennen ist, dass die Nullstellen der Funktion bei 
+\subsection{Beugung am Einzelspalt}
+Es wird über die gesamte Spaltbreite integriert, um die 
+Amplitude $B$ in Richtung $\phi$ zu bestimmen. Nach Ausführung 
+der Integration, Ausklammern eines e-Terms und der Nutzung 
+der Euler-Formel, ergibt sich für die Amplitude:
+\begin{equation*}
+    B(\phi) = A_0 \, b \frac{\sin(\frac{\pi \, b \, \sin(\phi)}{\lambda})}{\frac{\pi \, b \, \sin(\phi)}{\lambda}},
+\end{equation*}
+wobei $b$ die Spaltbreite und $\lambda$ 
+die Wellenlänge ist. 
+Die Nullstellen der Funktion liegen bei
 \begin{equation} 
-sin(\phi_n)= \pm n \frac{\lambda}{b}
-\label{eqn:nullstellen}
-\end{equation} liegen, wobei $b$ die Spaltbreite und $\lambda$ die Wellenlänge ist. 
-
-Die Amplitude der Lichtwelle lässt sich aufgrund dder hohen Lichtfrequenz nicht messen, insofern kann nur die zeitlich gemittelte Intensität bestimmt werden. 
-
+    sin(\phi_n)= \pm n \frac{\lambda}{b}.
+    \label{eqn:nullstellen}
+\end{equation}
+Die Amplitude der Lichtwelle lässt sich aufgrund der hohen 
+Lichtfrequenz nicht messen. Deshalb kann nur die zeitlich 
+gemittelte Intensität bestimmt werden. 
+\newline
 Diese ergibt sich zu 
-
 \begin{equation}
     I(\phi) \propto B(\phi)^2 = A^{2}_0 b^2 \l(\frac{\lambda}{\pi b sin(\phi)} \r)^2 \cdot sin \l(\frac{\pi b sin(\phi)}{\lambda}\r).
     \label{eqn:intensität}
 \end{equation}
 
 \subsection{Beugung am Doppelspalt}
-
-Analog dazu lassen sich auch Nullstellen der Amplitude und gemittelte Intensität bei der Beugung des Lichts an einem Doppelspalt bestimmen. 
+Analog dazu lassen sich auch Nullstellen der Amplitude und 
+die gemittelte Intensität bei der Beugung des Lichts am 
+Doppelspalt bestimmen.
 Die Nullstellen liegen bei 
 \begin{equation}
     \phi(k) = arcsin(\frac{2k+1}{2s}\cdot \lambda).
     \label{eqn:doppelns}
 \end{equation}
-
-Dabei ist $s$ die Breite des Spalts zusammen mit der Breite der Lücke zwischen den beiden Spalten. 
-
+Dabei ist $s$ die Breite des Spalts zusammen mit
+dem Abstand zwischen den beiden Spalten. 
+\newline
 Die Intensität ergibt sich zu 
 \begin{equation}
     I(\phi) \propto B(\phi)^2 =4 cos^2\l(\frac{\pi s sin(\phi)}{\lambda} \r)\cdot(\frac{\lambda}{\pi b sin(\phi)})^2 \cdot sin^2 \l(\frac{\pi b sin(\phi)}{\lambda}\r).
