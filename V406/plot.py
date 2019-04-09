@@ -27,13 +27,13 @@ I3= I3*1e-9 -dunkelstrom #Ampere
 phi3 = np.arcsin(l3/abstand)
 
 #Generate table with calculated data
-some.tabelle([phi1, I1*1e9], finished_file="build/tab1.tex", vars_name=[r"$\phi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \phi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi1, I1*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi1a, I1a*1e9], finished_file="build/tab1.tex", vars_name=[r"$\phi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \phi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi1a, I1a*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi2, I2*1e9], finished_file="build/tab1.tex", vars_name=[r"$\phi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \phi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi2, I2*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi3, I3*1e9], finished_file="build/tab1.tex", vars_name=[r"$\phi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \phi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi3, I3*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
 #extra values
 welle= 532*1e-9 
@@ -52,18 +52,18 @@ def func1(phi, b, a):
 
 #Generate curve-fit-Plot 
 #Meter and Ampere
-params1, err1 = some.curvefit(x=phi1, y=I1, num=1, x_add= 5, function = func1, x_name=r"\phi / \si{\radian}", y_name=r"$I / \si{\ampere}$", file_name="build/plot1.pdf")
+params1, err1 = some.curvefit(x=phi1, y=I1, num=1, x_add= 0, function = func1, x_name=r"$\phi / \si{\radian}$", y_name=r"$I / \si{\ampere}$", file_name="build/plot4.pdf", p0=[spaltmittel, 0.15])
 
-params2, err2 = some.curvefit(x=phi2, y=I2, num=2, x_add=5, function= func1, x_name=r"\phi /\si{\radian}", y_name=r"$I / \si{\ampere}$", file_name="build/plot2.pdf")
+params2, err2 = some.curvefit(x=phi2, y=I2, num=2, x_add=0, function= func1, x_name=r"$\varphi /\si{\radian}$", y_name=r"$I / \si{\ampere}$", file_name="build/plot5.pdf", p0=[linkerspalt, 2])
 
-params3, err3 = some.curvefit(x= phi3, y=I3, num=3, x_add=5, function= func1, x_name=r"\phi / \si{\radian}", y_name=r"I / \si{\ampere}", file_name="build/plot3.pdf")
+params3, err3 = some.curvefit(x= phi3, y=I3, num=3, x_add=0, function= func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\ampere}", file_name="build/plot6.pdf", p0=[doppelspalt, 2])
 
 #millimeter and nanoampere
-params1a, err1a = some.curvefit(x=l1*1e3, y=I1*1e9, num=4, x_add= 5, function = func1, x_name=r"l / \si{\milli\meter}", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot1.pdf")
+params1a, err1a = some.curvefit(x=phi1, y=I1*1e9, num=4, x_add= 0, function = func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot1.pdf", p0=[3, 8])
 
-params2a, err2a = some.curvefit(x=l2*1e3, y=I2*1e9, num=5, x_add=5, function= func1, x_name=r"l /\si{\milli\meter}", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot2.pdf")
+params2a, err2a = some.curvefit(x=phi2, y=I2*1e9, num=5, x_add=0, function= func1, x_name=r"$\varphi /\si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot2.pdf", p0=[doppelspalt, 2])
 
-params3a, err3a = some.curvefit(x= l3*1e3, y=I3*1e9, num=6, x_add=5, function= func1, x_name=r"l / \si{\milli\meter}", y_name=r"I / \si{\nano\ampere}", file_name="build/plot3.pdf")
+params3a, err3a = some.curvefit(x= phi3, y=I3*1e9, num=6, x_add=0, function= func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\nano\ampere}", file_name="build/plot3.pdf", p0=[doppelspalt, 2])
 
 #save solution
 file = open("build/solution.txt", "w")

@@ -1,11 +1,11 @@
 1.Messung
 Die Spaltbreite b_literatur= 0.0015
-Die Spaltbreite b_experimentell=1.0 +- inf
+Die Spaltbreite b_experimentell=0.0015 +- inf
 
 2.Messung
 Die Spaltbreite b_literatur= 0.00075
-Die Spaltbreite b_experimentell=1.0+-inf
+Die Spaltbreite b_experimentell=0.00075+-inf
 
 3.Messung Doppelspalt
 Die Spaltbreite b_literatur= 0.001 und die Spaltbreite x= 0.002 
-Die Spaltbreite b_experimentell=1.0+-inf
+Die Spaltbreite b_experimentell=0.001+-inf
