@@ -44,6 +44,7 @@ def curvefit(x, y, num=1, x_add=5, function=gerade, x_name=r"t/\si{\second}", y_
     plt.legend(loc="best")
     plt.tight_layout()
     plt.savefig(file_name)
-    return params, pcov
+    err = np.sqrt(np.diag(pcov))
+    return params, err
 
 
