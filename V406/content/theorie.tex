@@ -1,3 +1,8 @@
+\section{Ziel}
+Das Ziel dieses Versuches ist es, anhand der Beugungsfiguren
+zweier Einfachspalte und eines Doppelspaltes die Spaltbreite,
+beziehungsweise den Spaltabstand zu bestimmen.
+
 \section{Theorie}
 \label{sec:Theorie}
 
@@ -7,12 +12,12 @@ Lichtausbreitung von den Gesetzen der geometrischen Optik
 verstanden. Diese treten auf, wenn Licht auf Öffnungen in 
 Schirmen oder auf undurchlässige Hindernisse trifft, die klein
 gegenüber dem Strahldurchmesser sind. Die 
-Phänomene lassen sich gut beschreiben, wenn man die 
-Ausbreitung des Lichts als einen Wellenvorgang betrachtet. 
+Phänomene lassen sich gut beschreiben, wenn die 
+Ausbreitung des Lichts als ein Wellenvorgang betrachtet wird. 
 Somit gilt zum Beispiel das Huygenssche Prinzip. %
 
 %Fresnel und Fraunhofer
-Es gibt zwei Versuchsanordnungen, die bei Beugungsuntersuchungen 
+\noindent Es gibt zwei Versuchsanordnungen, die bei Beugungsuntersuchungen 
 auftreten können. Dabei werden die Fresnelsche und die 
 Fraunhofersche Lichtbeugung unterschieden. Bei der 
 Fraunhoferschen Anordnung wird die Lichtquelle ins Unendliche 
@@ -22,22 +27,22 @@ ins Unendliche  verlegt. Das bedeutet, dass alle Strahlen, die
 in einem Punkt interferieren, unter dem selben Winkel gebeugt 
 werden. Dies ist mathematisch einfacher zu behandeln, insofern 
 wird diese Anordnung im Folgenden verwendet. 
-
+\newline
 Die Länge des zu beugenden Objekts ist groß gegen seine 
 Breite $b$. Somit wird das Lichtbündel nur in einer 
 Dimension begrenzt.
-
-%kohärentes Licht
+\newline
+%kohärentes Licht, lieber in die Durchführung?
 Es wird ein Laser als Lichtquelle benutzt, um kohärentes Licht 
 zu erhalten und damit Interferenzerscheinungen möglich zu machen. 
-
+\newline
 Aus einer Kombination des Huygensschen Prinzips und der 
-Definition dem Interferenzprinzip nach Fresnel lässt sich die 
+Definition des Interferenzprinzips nach Fresnel lässt sich die 
 Beugungserscheinung erklären. Das Fresnelsche Prinzip besagt, 
 dass jeder Punkt einer Wellenfläche zu gleicher Zeit eine 
 Elementarwelle aussendet, die die Form einer Kugelwelle hat. 
-Diese neuen Wellen interferieren miteinander. Den 
-Schwingungszustand eines beliebigen Punktes erhält man durch 
+Diese neuen Wellen interferieren miteinander. Der 
+Schwingungszustand eines beliebigen Punktes ist 
 die Superposition aller Elementarwellen, die an dieser Stelle zum 
 selben Zeitpunkt eingehen. 
 
@@ -47,7 +52,7 @@ Amplitude $B$ in Richtung $\phi$ zu bestimmen. Nach Ausführung
 der Integration, Ausklammern eines e-Terms und der Nutzung 
 der Euler-Formel, ergibt sich für die Amplitude:
 \begin{equation*}
-    B(\phi) = A_0 \, b \frac{\sin(\frac{\pi \, b \, \sin(\phi)}{\lambda})}{\frac{\pi \, b \, \sin(\phi)}{\lambda}},
+    B(\phi) = A_0 \, b \, \frac{\sin(\frac{\pi \, b \, \sin(\phi)}{\lambda})}{\frac{\pi \, b \, \sin(\phi)}{\lambda}},
 \end{equation*}
 wobei $b$ die Spaltbreite und $\lambda$ 
 die Wellenlänge ist. 
@@ -56,13 +61,14 @@ Die Nullstellen der Funktion liegen bei
     sin(\phi_n)= \pm n \frac{\lambda}{b}.
     \label{eqn:nullstellen}
 \end{equation}
+Dabei ist $n$ eine natürliche Zahl.
 Die Amplitude der Lichtwelle lässt sich aufgrund der hohen 
 Lichtfrequenz nicht messen. Deshalb kann nur die zeitlich 
 gemittelte Intensität bestimmt werden. 
 \newline
 Diese ergibt sich zu 
 \begin{equation}
-    I(\phi) \propto B(\phi)^2 = A^{2}_0 b^2 \l(\frac{\lambda}{\pi b sin(\phi)} \r)^2 \cdot sin \l(\frac{\pi b sin(\phi)}{\lambda}\r).
+    I(\phi) \propto B(\phi)^2 = A^{2}_0 \, b^2 \, \left(\frac{\lambda}{\pi \, b \, sin(\phi)} \right)^2 \cdot sin \left(\frac{\pi \, b \, sin(\phi)}{\lambda}\right).
     \label{eqn:intensität}
 \end{equation}
 
@@ -72,7 +78,7 @@ die gemittelte Intensität bei der Beugung des Lichts am
 Doppelspalt bestimmen.
 Die Nullstellen liegen bei 
 \begin{equation}
-    \phi(k) = arcsin(\frac{2k+1}{2s}\cdot \lambda).
+    \phi(k) = arcsin \left(\frac{2k+1}{2s}\cdot \lambda \right).
     \label{eqn:doppelns}
 \end{equation}
 Dabei ist $s$ die Breite des Spalts zusammen mit
@@ -80,8 +86,6 @@ dem Abstand zwischen den beiden Spalten.
 \newline
 Die Intensität ergibt sich zu 
 \begin{equation}
-    I(\phi) \propto B(\phi)^2 =4 cos^2\l(\frac{\pi s sin(\phi)}{\lambda} \r)\cdot(\frac{\lambda}{\pi b sin(\phi)})^2 \cdot sin^2 \l(\frac{\pi b sin(\phi)}{\lambda}\r).
+    I(\phi) \propto B(\phi)^2 =4 \, cos^2 \left(\frac{\pi \, s \, sin(\phi)}{\lambda} \right)\cdot \left(\frac{\lambda}{\pi \, b \, sin(\phi)} \right)^2 \cdot sin^2 \left(\frac{\pi \, b \, sin(\phi)}{\lambda}\right).
     \label{eqn:doppelintensität}
 \end{equation}
-
-

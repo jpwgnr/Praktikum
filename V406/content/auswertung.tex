@@ -1,37 +1,45 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+%Formeln angeben
+
 Die folgende Auswertung wurde mit den Python Paketen numpy \cite{numpy}, scipy \cite{scipy} und matplotlib \cite{matplotlib} durchgeführt. 
+\newline
+Die Wellenlänge des Lichts des verwendeten Lasers beträgt
+\begin{equation*}
+    \lambda = \SI{532}{\nano\meter}. %stimmt die Zahl?
+\end{equation*}
 % Tabelle mit Länge, Spannung 1, Zeit 1, Spannung 2 und Zeit 2 
 %Grafik mit diesen Werten, also Screenshots 
-\subsection{Messung am ersten Einzelspalt}
+\subsection{Beugung am ersten Einzelspalt}
 Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromstärke befinden sich in Tab. \ref{taba}. 
 
 \input{build/taba.tex}
 
-\noindent In Tab. \ref{tab1} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
+\noindent In Tab. \ref{tab1} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen.
+%mit welcher Formel in Winkel umgerechnet?
 
 \input{build/tab1.tex}
 
-In Plot \ref{fig:plot1} werden die Werte aus Tab. \ref{tab1} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
+\noindent  In Plot \ref{fig:plot1} werden die Werte aus Tab. \ref{tab1} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=10cm]{build/plot1.pdf}
+    \includegraphics[width=12cm, height=7cm]{build/plot1.pdf}
     \caption{Die Werte aus Tab. \ref{tab1} gegeneinander aufgetragen.}
     \label{fig:plot1}
 \end{figure}
 
-\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $a$ und $b$ bestimmen, wobei $a$ ein die Amplitude angibt und $b$ der Breite des Spalts entspricht. 
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $a$ und $b$ bestimmen, wobei $a$ die Amplitude angibt und $b$ der Breite des Spalts entspricht. 
 
-Für die Werte gilt
+\noindent Für die Werte gilt %Formel
 \begin{align*}
-    a &= \num{<++>} \\
-    b &= \SI{<++>}{\meter}.
+    a &= \num{0} \\
+    b &= \SI{0}{\meter}.
 \end{align*}
 
-Der Literaturwert für die Breite des Spalts beträgt
+\noindent Der Literaturwert für die Breite des Spalts beträgt
 \begin{equation*}
-    b_{\text{lit}} = \SI{0.15}{\milli\meter}.
+    b_{\text{lit,1}} = \SI{0.15}{\milli\meter}.
 \end{equation*}
 
 
@@ -42,52 +50,55 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
 
 \noindent In Tab. \ref{tab2} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
 
-\input{build/tab2.tex}
+%\input{build/tab2.tex}
 
-In Plot \ref{fig:plot2} werden die Werte aus Tab. \ref{tab2} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
+%es gibt kein tab2.tex
 
+\noindent In Plot \ref{fig:plot2} werden die Werte aus Tab. \ref{tab2} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=10cm]{build/plot2.pdf}
+    \includegraphics[width=12cm, height=7cm]{build/plot2.pdf}
     \caption{Die Werte aus Tab. \ref{tab2} gegeneinander aufgetragen.}
     \label{fig:plot2}
 \end{figure}
 
-\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $a$ und $b$ bestimmen, wobei $a$ ein die Amplitude angibt und $b$ der Breite des Spalts entspricht. 
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $a$ und $b$ bestimmen. 
 
-Für die Werte gilt
+\noindent Für die Werte gilt %Formel
 \begin{align*}
-    a &= \num{<++>} \\
-    b &= \SI{<++>}{\meter}.
+    a &= \num{0} \\
+    b &= \SI{0}{\meter}.
 \end{align*}
 
-Der Literaturwert für die Breite des Spalts beträgt
+\noindent Der Literaturwert für die Breite des Spalts beträgt
 \begin{equation*}
-    b_{\text{lit}} = \SI{0.075}{\milli\meter}.
+    b_{\text{lit,2}} = \SI{0.075}{\milli\meter}.
 \end{equation*}
 
 
-\subsection{Messung am Doppelspalt}
+\subsection{Beugung am Doppelspalt}
 Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromstärke befinden sich in Tab. \ref{tabc}. 
 
 \input{build/tabc.tex}
 
 \noindent In Tab. \ref{tab3} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
 
-\input{build/tab3.tex}
+%\input{build/tab3.tex}
 
-In Plot \ref{fig:plot3} werden die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
+%es gibt keine tab3.tex
+
+\noindent In Plot \ref{fig:plot3} werden die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=8cm, height=10cm]{build/plot3.pdf}
+    \includegraphics[width=12cm, height=7cm]{build/plot3.pdf}
     \caption{Die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen.}
     \label{fig:plot3}
 \end{figure}
 
-Der Literaturwert für die Breite der Spalten beträgt
+\noindent Der Literaturwert für die Breite der Spalten beträgt
 \begin{equation*}
     b_{\text{lit}} = \SI{0.1}{\milli\meter}.
 \end{equation*}
 
-
+%Spaltabstand
