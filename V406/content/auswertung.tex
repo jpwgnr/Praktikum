@@ -1,12 +1,11 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-%Formeln angeben
 
 Die folgende Auswertung wurde mit den Python Paketen numpy \cite{numpy}, scipy \cite{scipy} und matplotlib \cite{matplotlib} durchgeführt. 
 \newline
 Die Wellenlänge des Lichts des verwendeten Lasers beträgt
 \begin{equation*}
-    \lambda = \SI{532}{\nano\meter}. %stimmt die Zahl?
+    \lambda = \SI{532}{\nano\meter}.
 \end{equation*}
 % Tabelle mit Länge, Spannung 1, Zeit 1, Spannung 2 und Zeit 2 
 %Grafik mit diesen Werten, also Screenshots 
@@ -15,8 +14,7 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
 
 \input{build/taba.tex}
 
-\noindent In Tab. \ref{tab1} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen.
-%mit welcher Formel in Winkel umgerechnet?
+\noindent In Tab. \ref{tab1} werden die $x$-Koordinaten mit Gleichung \eqref{eqn:phi} in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen.
 
 \input{build/tab1.tex}
 
@@ -29,11 +27,11 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
     \label{fig:plot1}
 \end{figure}
 
-\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $a$ und $b$ bestimmen, wobei $a$ die Amplitude angibt und $b$ der Breite des Spalts entspricht. 
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $A_0$ und $b$ bestimmen, wobei $A_0$ die Amplitude angibt und $b$ der Breite des Spalts entspricht. 
 
-\noindent Für die Werte gilt %Formel
+\noindent Für die Werte gilt
 \begin{align*}
-    a &= \num{0} \\
+    A_0 &= \num{0} \\
     b &= \SI{0}{\meter}.
 \end{align*}
 
@@ -48,11 +46,9 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
 
 \input{build/tabb.tex}
 
-\noindent In Tab. \ref{tab2} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
+\noindent In Tab. \ref{tab2} werden die $x$-Koordinaten mit Gleichung \eqref{eqn:phi} in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
 
-%\input{build/tab2.tex}
-
-%es gibt kein tab2.tex
+\input{build/tab2.tex}
 
 \noindent In Plot \ref{fig:plot2} werden die Werte aus Tab. \ref{tab2} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 \begin{figure}
@@ -62,11 +58,11 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
     \label{fig:plot2}
 \end{figure}
 
-\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $a$ und $b$ bestimmen. 
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $A_0$ und $b$ bestimmen. 
 
-\noindent Für die Werte gilt %Formel
+\noindent Für die Werte gilt
 \begin{align*}
-    a &= \num{0} \\
+    A_0 &= \num{0} \\
     b &= \SI{0}{\meter}.
 \end{align*}
 
@@ -81,11 +77,9 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
 
 \input{build/tabc.tex}
 
-\noindent In Tab. \ref{tab3} werden die $x$-Koordinaten in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
+\noindent In Tab. \ref{tab3} werden die $x$-Koordinaten mit Gleichung \eqref{eqn:phi} in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
 
-%\input{build/tab3.tex}
-
-%es gibt keine tab3.tex
+\input{build/tab3.tex}
 
 \noindent In Plot \ref{fig:plot3} werden die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 
@@ -100,5 +94,3 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
 \begin{equation*}
     b_{\text{lit}} = \SI{0.1}{\milli\meter}.
 \end{equation*}
-
-%Spaltabstand
