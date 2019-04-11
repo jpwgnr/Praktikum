@@ -62,6 +62,6 @@ c_theo3 = 1410
 sA3= 0.5*c_theo3*(tA[4]-tA[3])
 
 file = open("build/solution.txt", "w")
-file.write(f"Ultraschall\nGeschwindigkeiten 1-5 = {c}\nDämpfungsfaktor= {alpha}+-{std1}\nGeschwindigkeit c2={c2*2}\nGeschwindigkeit c3={c3*2}\nAugenweite:\nStrecke 1={sA1}\nStrecke 2={sA2}\nStrecke 3={sA3}")
+file.write(f"Ultraschall\nGeschwindigkeiten 1-5 = {c}\nDämpfungsfaktor= {alpha}+-{std1}, y-Abschnitt= {y1}\nGeschwindigkeit c2={c2*2} y-Abschnitt= {y2}\nGeschwindigkeit c3={c3*2} y-Abschnitt={y3}\nAugenweite:\nStrecke 1={sA1}\nStrecke 2={sA2}\nStrecke 3={sA3}")
 file.close()
 
