@@ -12,28 +12,28 @@ dunkelstrom = 1.6*1e-9
 l1, I1 = some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$l / \si{\milli\meter}$", r"$I / \si{\nano\ampere}$"], label_text="taba", caption_text=r"Die x Koordinate gegen die Stromstärke aufgetragen." , precision=1)
 l1 = (l1-25.5)*1e-3 #Meter
 I1 = I1*1e-9 -dunkelstrom #Ampere
-phi1 = np.arcsin(l1/abstand)
+phi1 = np.arctan(l1/abstand)
 l1a, I1a= some.neueWerte(file_name="data/dataaextra.txt", finished_file="build/taba2.tex",  vars_name=[r"$l / \si{\milli\meter}$", r"$I / \si{\nano\ampere}$"], label_text="taba2", caption_text=r"Die x Koordinate gegen die Länge aufgetragen." , precision=1)
 l1a = (l1a-25.5)*1e-3 #Meter
 I1a = I1a*1e-9 - dunkelstrom #Ampere 
-phi1a = np.arcsin(l1a/abstand)
+phi1a = np.arctan(l1a/abstand)
 l2, I2 = some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$l / \si{\milli\meter}$", r"$I / \si{\nano\ampere}$"], label_text="tabb", caption_text=r"Die x Koordinate gegen die Stromstärke aufgetragen." , precision=1)
 l2= (l2-25.5)*1e-3 #Meter
 I2= I2*1e-9 -dunkelstrom #Ampere  
-phi2 = np.arcsin(l2/abstand)
+phi2 = np.arctan(l2/abstand)
 l3, I3= some.neueWerte(file_name="data/datac.txt", finished_file="build/tabc.tex",  vars_name=[r"$l / \si{\milli\meter}$", r"$I / \si{\nano\ampere}$"], label_text="tabc", caption_text=r"Die x Koordinate gegen die Länge aufgetragen." , precision=1)
 l3= (l3-25.5)*1e-3 #Meter
 I3= I3*1e-9 -dunkelstrom #Ampere
-phi3 = np.arcsin(l3/abstand)
+phi3 = np.arctan(l3/abstand)
 
 #Generate table with calculated data
 some.tabelle([phi1, I1*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi1a, I1a*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi1a, I1a*1e9], finished_file="build/tab1a.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi2, I2*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi2, I2*1e9], finished_file="build/tab2.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi3, I3*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi3, I3*1e9], finished_file="build/tab3.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
 #extra values
 welle= 532*1e-9 
