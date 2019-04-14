@@ -1,9 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [1] Config.pm:305> INFO - Logfile is 'main.blg'
-[61] biber-darwin:313> INFO - === Do Apr 11, 2019, 14:11:02
-[95] Biber.pm:371> INFO - Reading 'main.bcf'
-[230] Biber.pm:854> INFO - Using all citekeys in bib section 0
-[254] Biber.pm:3976> INFO - Processing section 0
-[272] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[273] Utils.pm:209> ERROR - Data file 'lit.bib' cannot be read in encoding 'UTF-8': 
-[273] Biber.pm:114> INFO - ERRORS: 1
+[37] biber:313> INFO - === So Apr 14, 2019, 17:23:58
+[59] Biber.pm:371> INFO - Reading 'main.bcf'
+[132] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[148] Biber.pm:3976> INFO - Processing section 0
+[159] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[159] bibtex.pm:1500> INFO - LaTeX decoding ...
+[169] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
+[212] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[212] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[212] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[212] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[224] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[227] bbl.pm:720> INFO - Output to main.bbl

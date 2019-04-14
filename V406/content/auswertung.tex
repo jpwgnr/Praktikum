@@ -12,11 +12,11 @@ Die Wellenlänge des Lichts des verwendeten Lasers beträgt
 \subsection{Beugung am ersten Einzelspalt}
 Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromstärke befinden sich in Tab. \ref{taba}. 
 
-\input{build/taba.tex}
+\input{tables/taba.tex}
 
 \noindent In Tab. \ref{tab1} werden die $x$-Koordinaten mit Gleichung \eqref{eqn:phi} in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen.
 
-\input{build/tab1.tex}
+\input{tables/tab1.tex}
 
 \noindent  In Plot \ref{fig:plot1} werden die Werte aus Tab. \ref{tab1} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 
@@ -27,28 +27,34 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
     \label{fig:plot1}
 \end{figure}
 
-\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $A_0$ und $b$ bestimmen, wobei $A_0$ die Amplitude angibt und $b$ der Breite des Spalts entspricht. 
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich die Parameter $A_0$, $b$ und $d$ bestimmen, wobei $A_0$ die Amplitude angibti, $b$ der Breite des Spalts  und $d$ dem Wert des Dunkelstroms während des Experiments entspricht. 
 
 \noindent Für die Werte gilt
 \begin{align*}
-    A_0 &= \num{0} \\
-    b &= \SI{0}{\meter}.
+    A_0 &= \num{-0.899(055)} \\
+    b &= \SI{-78.07 \pm 2.88}{\micro\meter} \\
+    d &= \SI{1.53(15)}{\nano\ampere}.
 \end{align*}
 
 \noindent Der Literaturwert für die Breite des Spalts beträgt
 \begin{equation*}
-    b_{\text{lit,1}} = \SI{0.15}{\milli\meter}.
+    b_{\text{lit,1}} = \SI{150}{\micro\meter}.
+\end{equation*}
+
+\noindent Der gemessene Wert für den Dunkelstrom beträgt 
+\begin{equation*}
+    d_\text{gemessen}= \SI{1.6}{\nano\ampere}.
 \end{equation*}
 
 
 \subsection{Messung am zweiten Einzelspalt}
 Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromstärke befinden sich in Tab. \ref{tabb}. 
 
-\input{build/tabb.tex}
+\input{tables/tabb.tex}
 
 \noindent In Tab. \ref{tab2} werden die $x$-Koordinaten mit Gleichung \eqref{eqn:phi} in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
 
-\input{build/tab2.tex}
+\input{tables/tab2.tex}
 
 \noindent In Plot \ref{fig:plot2} werden die Werte aus Tab. \ref{tab2} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 \begin{figure}
@@ -58,28 +64,29 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
     \label{fig:plot2}
 \end{figure}
 
-\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $A_0$ und $b$ bestimmen. 
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $A_0$, $b$ und $d$ bestimmen. 
 
 \noindent Für die Werte gilt
 \begin{align*}
-    A_0 &= \num{0} \\
-    b &= \SI{0}{\meter}.
+    A_0 &= \num{0.4746 (023)} \\
+    b &= \SI{96.24 \pm 2.56}{\micro\meter}
+    d &= \SI{1.62(07)}{\nano\ampere}. 
 \end{align*}
 
 \noindent Der Literaturwert für die Breite des Spalts beträgt
 \begin{equation*}
-    b_{\text{lit,2}} = \SI{0.075}{\milli\meter}.
+    b_{\text{lit,2}} = \SI{75}{\micro\meter}.
 \end{equation*}
 
 
 \subsection{Beugung am Doppelspalt}
 Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromstärke befinden sich in Tab. \ref{tabc}. 
 
-\input{build/tabc.tex}
+\input{tables/tabc.tex}
 
 \noindent In Tab. \ref{tab3} werden die $x$-Koordinaten mit Gleichung \eqref{eqn:phi} in Winkel umgerechnet und gegen die Amplitude der Stromstärke aufgetragen. 
 
-\input{build/tab3.tex}
+\input{tables/tab3.tex}
 
 \noindent In Plot \ref{fig:plot3} werden die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
 
@@ -90,7 +97,16 @@ Die $x$-Koordinaten in Einheiten der Messanzeige und die Amplituden der Stromst�
     \label{fig:plot3}
 \end{figure}
 
-\noindent Der Literaturwert für die Breite der Spalten beträgt
+\noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $A_0$, $b$ und $d$ bestimmen. Dieses mal aber nur für die einhüllende Funktion. 
+
+\noindent Für die Werte gilt
+\begin{align*}
+    A_0 &= \num{0.4808 (037)} \\
+    b &= \SI{140.88 \pm 5.195}{\micro\meter}
+    d &= \SI{3.03(20)}{\nano\ampere}. 
+\end{align*}
+
+\noindent Der Literaturwert für die Breite der beiden Spalten beträgt
 \begin{equation*}
-    b_{\text{lit}} = \SI{0.1}{\milli\meter}.
+    b_{\text{lit}} = \SI{100}{\micro\meter}.
 \end{equation*}
