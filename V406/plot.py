@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import uncertainties.unumpy as unp
 from scipy import stats
+from uncertainties import ufloat
 from scipy.optimize import curve_fit
 from something import some 
 
@@ -18,11 +19,11 @@ l1a = (l1a-25.5)*1e-3 #Meter
 I1a = I1a*1e-9 - dunkelstrom #Ampere 
 phi1a = np.arctan(l1a/abstand)
 l2, I2 = some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$l / \si{\milli\meter}$", r"$I / \si{\nano\ampere}$"], label_text="tabb", caption_text=r"Die x Koordinate gegen die Stromstärke aufgetragen." , precision=1)
-l2= (l2-25.5)*1e-3 #Meter
+l2= (l2-23.0)*1e-3 #Meter
 I2= I2*1e-9 -dunkelstrom #Ampere  
 phi2 = np.arctan(l2/abstand)
 l3, I3= some.neueWerte(file_name="data/datac.txt", finished_file="build/tabc.tex",  vars_name=[r"$l / \si{\milli\meter}$", r"$I / \si{\nano\ampere}$"], label_text="tabc", caption_text=r"Die x Koordinate gegen die Länge aufgetragen." , precision=1)
-l3= (l3-25.5)*1e-3 #Meter
+l3= (l3-24.0)*1e-3 #Meter
 I3= I3*1e-9 -dunkelstrom #Ampere
 phi3 = np.arctan(l3/abstand)
 
@@ -37,35 +38,39 @@ some.tabelle([phi3, I3*1e9], finished_file="build/tab3.tex", vars_name=[r"$\varp
 
 #extra values
 welle= 532*1e-9 
-spaltmittel= 0.0015 
-linkerspalt= 0.00075
-doppelspalt= 0.001
-spaltbreite= 0.002
+dunkelstrom = 1.6*1e-9
+spaltmittel= 0.00015 
+linkerspalt= 0.000075
+doppelspalt= 0.0001
+spaltbreite= 0.0002
 
 #functions 
 
-def func1(phi, b, a):
-    return a**2 * b**2 *(welle / (np.pi * b * np.sin(phi)))**2 * np.sin((np.pi * b * np.sin(phi))/welle)**2
+def func1(phi, b, a, d):
+    return a * b *(welle / (np.pi * b * np.sin(phi))) * np.sin((np.pi * b * np.sin(phi))/welle) +d
 
-#def func2(phi, b, a):
-    #return 2*a *(welle/(2*np.pi *np.sin(phi)))* np.exp( i* b*np.pi* np.sin(phi)/welle )
-
+d = dunkelstrom
 #Generate curve-fit-Plot 
 #Meter and Ampere
-params1, err1 = some.curvefit(x=phi1, y=I1, num=1, x_add= 0, function = func1, x_name=r"$\phi / \si{\radian}$", y_name=r"$I / \si{\ampere}$", file_name="build/plot4.pdf", p0=[spaltmittel, 0.15])
+params1, err1 = some.curvefit(x=phi1, y=np.sqrt(I1), num=1, x_add= 0, function = func1, x_name=r"$\phi / \si{\radian}$", y_name=r"$I / \si{\ampere}$", file_name="build/plot1.pdf", p0=[spaltmittel, 4*1e-3, d])
 
-params2, err2 = some.curvefit(x=phi2, y=I2, num=2, x_add=0, function= func1, x_name=r"$\varphi /\si{\radian}$", y_name=r"$I / \si{\ampere}$", file_name="build/plot5.pdf", p0=[linkerspalt, 2])
+params2, err2 = some.curvefit(x=phi2, y=np.sqrt(I2), num=2, x_add=0, function= func1, x_name=r"$\varphi /\si{\radian}$", y_name=r"$I / \si{\ampere}$", file_name="build/plot2.pdf", p0=[linkerspalt, 4*1e-3, d])
 
-params3, err3 = some.curvefit(x= phi3, y=I3, num=3, x_add=0, function= func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\ampere}", file_name="build/plot6.pdf", p0=[doppelspalt, 2])
+params3, err3 = some.curvefit(x= phi3, y=np.sqrt(I3), num=3, x_add=0, function= func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\ampere}", file_name="build/plot3.pdf", p0=[doppelspalt, 4*1e-3, d])
 
 #millimeter and nanoampere
-params1a, err1a = some.curvefit(x=phi1, y=I1*1e9, num=4, x_add= 0, function = func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot1.pdf", p0=[3, 8])
+#params1a, err1a = some.curvefit(x=phi1, y=np.sqrt(I1*1e9), num=4, x_add= 0, function = func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot4.pdf", p0=[spaltmittel*1e3, 1e-6, d*1e9])
 
-params2a, err2a = some.curvefit(x=phi2, y=I2*1e9, num=5, x_add=0, function= func1, x_name=r"$\varphi /\si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot2.pdf", p0=[doppelspalt, 2])
+#params2a, err2a = some.curvefit(x=phi2, y=np.sqrt(I2*1e9), num=5, x_add=0, function= func1, x_name=r"$\varphi /\si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot5.pdf", p0=[linkerspalt, 2, d])
 
-params3a, err3a = some.curvefit(x= phi3, y=I3*1e9, num=6, x_add=0, function= func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\nano\ampere}", file_name="build/plot3.pdf", p0=[doppelspalt, 2])
-
+#params3a, err3a = some.curvefit(x= phi3, y=np.sqrt(I3*1e9), num=6, x_add=0, function= func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\nano\ampere}", file_name="build/plot6.pdf", p0=[doppelspalt, 2, d])
+d1 = ufloat(params1[2], err1[2])
+d2 = ufloat(params2[2], err2[2])
+d3 = ufloat(params3[2], err3[2])
+d1 = d1**2
+d2 = d2**2
+d3 = d3**2
 #save solution
 file = open("build/solution.txt", "w")
-file.write(f"1.Messung\nDie Spaltbreite b_literatur= {spaltmittel}\nDie Spaltbreite b_experimentell={params1[0]} +- {err1[0]}\n\n2.Messung\nDie Spaltbreite b_literatur= {linkerspalt}\nDie Spaltbreite b_experimentell={params2[0]}+-{err2[0]}\n\n3.Messung Doppelspalt\nDie Spaltbreite b_literatur= {doppelspalt} und die Spaltbreite x= {spaltbreite} \nDie Spaltbreite b_experimentell={params3[0]}+-{err3[0]}")
+file.write(f"1.Messung\nDie Spaltbreite b_literatur= {spaltmittel}\nDie Spaltbreite b_experimentell={params1[0]} +- {err1[0]}\nParameter a(Amplitude)={params1[1]} +- {err1[1]}\nDunkelstrom d={d1}\n\n2.Messung\nDie Spaltbreite b_literatur= {linkerspalt}\nDie Spaltbreite b_experimentell={params2[0]}+-{err2[0]}\nParameter a(Amplitude)={params2[1]} +- {err2[1]}\nDunkelstrom d={d2}\n\n3.Messung Doppelspalt\nDie Spaltbreite b_literatur= {doppelspalt} und die Spaltbreite x= {spaltbreite} \nDie Spaltbreite b_experimentell={params3[0]}+-{err3[0]}\nParameter a(Amplitude)={params3[1]} +- {err3[1]}\nDunkelstrom d={d3}\n")
 file.close()

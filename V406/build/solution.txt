@@ -1,11 +1,17 @@
 1.Messung
-Die Spaltbreite b_literatur= 0.0015
-Die Spaltbreite b_experimentell=0.0015 +- inf
+Die Spaltbreite b_literatur= 0.00015
+Die Spaltbreite b_experimentell=-7.807340420890265e-05 +- 2.875005901324385e-06
+Parameter a(Amplitude)=-0.8991738977672703 +- 0.055081372320768214
+Dunkelstrom d=(1.53+/-0.15)e-09
 
 2.Messung
-Die Spaltbreite b_literatur= 0.00075
-Die Spaltbreite b_experimentell=0.00075+-inf
+Die Spaltbreite b_literatur= 7.5e-05
+Die Spaltbreite b_experimentell=9.623543936467664e-05+-2.5568154513751548e-06
+Parameter a(Amplitude)=0.474645632179012 +- 0.023061472822570733
+Dunkelstrom d=(1.62+/-0.07)e-09
 
 3.Messung Doppelspalt
-Die Spaltbreite b_literatur= 0.001 und die Spaltbreite x= 0.002 
-Die Spaltbreite b_experimentell=0.001+-inf
+Die Spaltbreite b_literatur= 0.0001 und die Spaltbreite x= 0.0002 
+Die Spaltbreite b_experimentell=0.0001408813424373627+-5.1946792301664e-06
+Parameter a(Amplitude)=0.48076631934829617 +- 0.03729620472370075
+Dunkelstrom d=(3.03+/-0.20)e-09
