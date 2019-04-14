@@ -28,13 +28,13 @@ I3= I3*1e-9 -dunkelstrom #Ampere
 phi3 = np.arctan(l3/abstand)
 
 #Generate table with calculated data
-some.tabelle([phi1, I1*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi1*1e3, I1*1e9], finished_file="build/tab1.tex", vars_name=[r"$\varphi / \si{\milli\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi1a, I1a*1e9], finished_file="build/tab1a.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi1a*1e3, I1a*1e9], finished_file="build/tab1a.tex", vars_name=[r"$\varphi / \si{\milli\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi2, I2*1e9], finished_file="build/tab2.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi2*1e3, I2*1e9], finished_file="build/tab2.tex", vars_name=[r"$\varphi / \si{\milli\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
-some.tabelle([phi3, I3*1e9], finished_file="build/tab3.tex", vars_name=[r"$\varphi / \si{\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
+some.tabelle([phi3*1e3, I3*1e9], finished_file="build/tab3.tex", vars_name=[r"$\varphi / \si{\milli\radian}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Der Winkel \varphi gegen die Stromstärke I aufgetragen.", precision=2) 
 
 #extra values
 welle= 532*1e-9 
