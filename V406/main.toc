@@ -15,5 +15,6 @@
 \contentsline {subsection}{\numberline {5.1}Beugung am ersten Einzelspalt}{14}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Beugung am zweiten Einzelspalt}{14}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Interferenz am Doppelspalt}{15}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Fazit}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.4}Allgemeine Probleme bei der Auswertung}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Fazit}{15}{subsection.5.5}
 \contentsline {section}{\nonumberline Literatur}{16}{section*.14}

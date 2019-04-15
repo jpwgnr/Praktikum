@@ -1983,6 +1983,7 @@
     <bcf:citekey order="7">numpy</bcf:citekey>
     <bcf:citekey order="8">scipy</bcf:citekey>
     <bcf:citekey order="9">matplotlib</bcf:citekey>
+    <bcf:citekey order="10">scipy</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

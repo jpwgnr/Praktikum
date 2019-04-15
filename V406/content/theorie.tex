@@ -15,7 +15,7 @@ Schirmen oder auf undurchlässige Hindernisse trifft, die klein
 gegenüber dem Strahldurchmesser sind. Die 
 Phänomene lassen sich gut beschreiben, wenn die 
 Ausbreitung des Lichts als ein Wellenvorgang betrachtet wird. 
-Somit gilt zum Beispiel das Huygenssche Prinzip. %
+Somit gilt zum Beispiel das Huygenssche Prinzip. 
 
 %Fresnel und Fraunhofer
 \noindent Es gibt zwei Versuchsanordnungen, die bei Beugungsuntersuchungen 
@@ -68,10 +68,9 @@ der Euler-Formel, ergibt sich für die Amplitude:
 wobei $b$ die Spaltbreite und $\lambda$ 
 die Wellenlänge ist. 
 Die Nullstellen der Funktion liegen bei
-\begin{equation} 
-    sin(\phi_n)= \pm n \frac{\lambda}{b}.
-    \label{eqn:nullstellen}
-\end{equation}
+\begin{equation*} 
+    sin(\phi_n)= \pm \, n \frac{\lambda}{b}.
+\end{equation*}
 Dabei ist $n$ eine natürliche Zahl.
 Die Amplitude der Lichtwelle lässt sich aufgrund der hohen 
 Lichtfrequenz nicht messen. Deshalb kann nur die zeitlich 
@@ -79,11 +78,11 @@ gemittelte Intensität bestimmt werden.
 \newline
 Diese ergibt sich zu 
 \begin{equation}
-    I(\phi) \propto B(\phi)^2 = A^{2}_0 \, b^2 \, \left(\frac{\lambda}{\pi \, b \, sin(\phi)} \right)^2 \cdot sin \left(\frac{\pi \, b \, sin(\phi)}{\lambda}\right).
+    I(\phi) \propto B(\phi)^2 = A^{2}_0 \, b^2 \, \left(\frac{\lambda}{\pi \, b \, sin(\phi)} \right)^2 \cdot sin^2 \left(\frac{\pi \, b \, sin(\phi)}{\lambda}\right).
     \label{eqn:intensität}
 \end{equation}
 Eine theoretische Intensitätsverteilung für den Einzelspalt
-ist in Abb. \ref{fig:} zu sehen.
+ist in Abb. \ref{fig:einzel} zu sehen.
 \begin{figure}
     \centering
     \includegraphics[width=5cm, height=4cm]{build/Einzelspalt.png}
@@ -96,22 +95,21 @@ Analog dazu lassen sich auch Nullstellen der Amplitude und
 die gemittelte Intensität bei der Beugung des Lichts am 
 Doppelspalt bestimmen.
 Die Nullstellen liegen bei 
-\begin{equation}
+\begin{equation*}
     \phi(k) = arcsin \left(\frac{2k+1}{2s}\cdot \lambda \right).
-    \label{eqn:doppelns}
-\end{equation}
+\end{equation*}
 Dabei ist $s$ die Breite des Spalts zusammen mit
 dem Abstand zwischen den beiden Spalten.
 \newline
 Die Intensität ergibt sich zu 
-\begin{equation}
+\begin{equation*}
     I(\phi) \propto B(\phi)^2 =4 \, cos^2 \left(\frac{\pi \, s \, sin(\phi)}{\lambda} \right)\cdot \left(\frac{\lambda}{\pi \, b \, sin(\phi)} \right)^2 \cdot sin^2 \left(\frac{\pi \, b \, sin(\phi)}{\lambda}\right).
-    \label{eqn:doppelintensität}
-\end{equation}
+\end{equation*}
 Eine theoretische Intensitätsverteilung für den Doppelspalt
 ist in Abb. \ref{fig:doppel} zu sehen.
 \begin{figure}
     \centering
     \includegraphics[width=10cm, height=5cm]{build/Doppelspalt.png}
     \caption{Die Intensitätsverteilung für den Doppelspalt. \cite{doppel}}
+    \label{fig:doppel}
 \end{figure}
