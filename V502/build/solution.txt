@@ -7,3 +7,5 @@ Mittelwert Steigung = 32.8+/-0.5 cm
 Steigung_theo = 19.38026315789474 cm
 Sinusfrequenz pro Wert: [50.04  49.95  49.995 49.99 ]
  Sinus Mittelwert= 49.994+/-0.032
+e0/m0 = 574+/-6
+Erdmagnetfeld: B = 1.1913666961379293e-05

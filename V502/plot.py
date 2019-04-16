@@ -12,7 +12,8 @@ index2, Ud2= some.neueWerte(file_name="data/dataa2.txt", finished_file="build/ta
 index3, Ud3= some.neueWerte(file_name="data/dataa3.txt", finished_file="build/taba3.tex",  vars_name=[r"Index", r"$U_\text{d} / \si{\volt}$"], label_text="taba3", caption_text=r"Die Index Werte entsprechen der Höhe die bei der jeweiligen Ablenkspannung $U_d$ und der Beschleunigungsspannung $U_\text{B} = \SI{280}{\volt}$." , precision=1)
 index4, Ud4= some.neueWerte(file_name="data/dataa4.txt", finished_file="build/taba4.tex",  vars_name=[r"Index", r"$U_\text{d} / \si{\volt}$"], label_text="taba4", caption_text=r"Die Index Werte entsprechen der Höhe die bei der jeweiligen Ablenkspannung $U_d$ und der Beschleunigungsspannung $U_\text{B} = \SI{330}{\volt}$." , precision=1)
 index5, Ud5= some.neueWerte(file_name="data/dataa5.txt", finished_file="build/taba5.tex",  vars_name=[r"Index", r"$U_\text{d} / \si{\volt}$"], label_text="taba5", caption_text=r"Die Index Werte entsprechen der Höhe die bei der jeweiligen Ablenkspannung $U_d$ und der Beschleunigungsspannung $U_\text{B} = \SI{380}{\volt}$." , precision=1)
-d= index1*0.6 -0.6 
+d= index1*0.6 -0.6 # Unterer Abstand bis oben in centimeter 
+dnew = d/100 #dnew in Metern
 # V501 Frequenzen
 index12, frequenz1 = some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"Index", r"$\nu_\text{Sä} / \si{\hertz}$"], label_text="tabb", caption_text=r"Die Frequenzen der Sägezahnspannung.", precision=2)
 #V502 Messung
@@ -23,9 +24,17 @@ I_hor = 0.19 #Ampere
 phi = 79.5 #Grad
 N = 20 #Windungen 
 R = 0.282 #Meter
-
+B1 = 4*np.pi*1e-7 * (8/np.sqrt(125)) * (N/R) * I1  * (1/np.sqrt(8*250))
+B2 = 4*np.pi*1e-7 * (8/np.sqrt(125)) * (N/R) * I2 * (1/np.sqrt(8*360))
+L= 0.143
+s = d[::-1]
+DundL= s/(L**2 +s**2) 
+B1 = np.delete(B1, (-1), 0)
+B2 = np.delete(B2, (-1), 0)
+DundL = np.delete(DundL, (-1), 0)
 #Generate table with calculated data
 some.tabelle([Ud1/180, Ud2/230, Ud3/280, Ud4/320, Ud5/380, d], finished_file="tab1.tex", vars_name=[r"$\frac{U_\text{d, 1}}{U_\text{B}}$",r"$\frac{U_\text{d, 2}}{U_\text{B}}$",r"$\frac{U_\text{d, 3}}{U_\text{B}}$",r"$\frac{U_\text{d, 4}}{U_\text{B}}$",r"$\frac{U_\text{d, 5}}{U_\text{B}}$", r"$D / \si{\meter}$"], label_text="tab1", caption_text=r"Das Verhältnis der Ablenkspannung und der Beschleunigungsspannung aufgetragen gegen die Höhe auf dem Graphen.", precision=2) 
+some.tabelle([B1, B2, DundL], finished_file="tab2.tex", vars_name=[r"$B_1 / \si{\henry}$",r"$B_2 / \si{\henry}$", r"$\frac{D}{(L^2 + D^2)} / \si{\per\meter}$"], label_text="tab2", caption_text=r"Das Verhältnis des magnetischen Feldes durch die Beschleunigungsspannung aufgetragen gegen die Höhe.", precision=2) 
 
 #extra values
 Ud5 = np.delete(Ud5, (0), 0)
@@ -36,17 +45,23 @@ def gerade(a,b,c):
 
 #Generate linReg-Plot
 
+#U gegen d 
 Steigung1, yWert1, r_value1, p_value1, err1= stats.linregress(Ud1/180, d)
 Steigung2, yWert2, r_value2, p_value2, err2= stats.linregress(Ud2/230, d)
 Steigung3, yWert3, r_value3, p_value3, err3= stats.linregress(Ud3/280, d)
 Steigung4, yWert4, r_value4, p_value4, err4= stats.linregress(Ud4/330, d)
 Steigung5, yWert5, r_value5, p_value5, err5= stats.linregress(Ud5/380, dextra)
+#B gegen D und L 
+Steigung6, yWert6, r_value6, p_value6, err6= stats.linregress(B1, DundL)
+Steigung7, yWert7, r_value7, p_value7, err7= stats.linregress(B2, DundL)
 plt.figure(1) 
 newx1= np.linspace(Ud1[0]/180,Ud1[-1]/180, num=1000)
 newx2= np.linspace(Ud2[0]/230,Ud2[-1]/230, num=1000)
 newx3= np.linspace(Ud3[0]/280,Ud3[-1]/280, num=1000)
 newx4= np.linspace(Ud4[0]/330,Ud4[-1]/330, num=1000)
 newx5= np.linspace(Ud5[0]/380,Ud5[-1]/380, num=1000)
+newx6= np.linspace(B1[0],B2[-1], num=1000)
+newx7= np.linspace(B1[0],B2[-1], num=1000)
 plt.plot(Ud1/180, d, "xr", label="Daten")
 plt.plot(Ud2/230, d, "xb", label="Daten")
 plt.plot(Ud3/280, d, "xg", label="Daten")
@@ -63,6 +78,18 @@ plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig("build/plot1.pdf") 
 
+plt.figure(2) 
+plt.plot(B1, DundL, "xr", label="Daten")
+plt.plot(B2, DundL, "xk", label="Daten")
+plt.plot(newx6, gerade(newx6, Steigung6, yWert6), "r", label="Fit", linewidth=1.0)
+plt.plot(newx7, gerade(newx7, Steigung7, yWert7), "k", label="Fit", linewidth=1.0)
+plt.xlabel(r"$B/\sqrt{U_\text{B}}$")
+plt.ylabel(r"$\frac{D}{L^2+D^2} / \si{\per\meter}$")
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig("build/plot2.pdf") 
+
+
 #Generate curve-fit-Plot 
 Steigungexp = np.array([Steigung1, Steigung2, Steigung3, Steigung4, Steigung5])
 errexp = np.array([err1, err2, err3, err4, err5])
@@ -74,8 +101,13 @@ Länge= 14.3 #centimeter
 Steigung_theo= platte/(2*dicke) *Länge
 sin1= frequenz1/np.array([0.5, 1, 2, 3])
 sinmit= ufloat(sin1.mean(), sin1.std())
+
+#e/m 
+em1= np.array([np.sqrt(Steigung6), np.sqrt(Steigung7)])
+em= ufloat(em1.mean(), em1.std())
+Erde= 4*np.pi*1e-7* (8/np.sqrt(125))*(N/R)* I_hor *np.sin(phi/180*np.pi)
 #save solution
 file = open("build/solution.txt", "w")
-file.write(f"Steigung_exp = {Steigung_exp} cm\nMittelwert Steigung = {Steigungnew} cm\nSteigung_theo = {Steigung_theo} cm\nSinusfrequenz pro Wert: {sin1}\n Sinus Mittelwert= {sinmit}")
+file.write(f"Steigung_exp = {Steigung_exp} cm\nMittelwert Steigung = {Steigungnew} cm\nSteigung_theo = {Steigung_theo} cm\nSinusfrequenz pro Wert: {sin1}\n Sinus Mittelwert= {sinmit}\ne0/m0 = {em}\nErdmagnetfeld: B = {Erde}")
 file.close()
 
