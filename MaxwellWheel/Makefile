@@ -8,29 +8,15 @@ else
   translate = $(shell echo '$1' | sed 's/:/;/g')
 endif
 
-all: build/main.pdf
+all: build/plot.pdf
 
 # hier Python-Skripte:
 build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build
-	TEXINPUTS="$(call translate,$(pwd):)" python plot.py
+	TEXINPUTS="$(call translate,$(pwd):)" python new.py
 
 # hier Python-Skripte:
 #build/example.pdf: example.py matplotlibrc header-matplotlib.tex | build
 #	TEXINPUTS="$(call translate,$(pwd):)" python example.py
-
-# hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: build/plot.pdf
-
-build/main.pdf: FORCE | build
-	  TEXINPUTS="$(call translate,build:)" \
-	  BIBINPUTS=build: \
-	  max_print_line=1048576 \
-	latexmk \
-	  --lualatex \
-	  --output-directory=build \
-	  --interaction=nonstopmode \
-	  --halt-on-error \
-	main.tex
 
 build:
 	mkdir -p build
