@@ -1,0 +1,97 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+\subsection{Theoretische Grundlage im elektrischen Feld}
+
+Für beide Versuchsteile wird eine Röhre verwendet, die sich im Vakuum befindet. Dafür wurde die so genannte Kathodenstrahlröhre bis auf einen Restdruck von ca. \SI{1e-6}{\milli\bar} evakuiert. 
+
+\subsubsection{Aufbau einer Kathodenstrahlröhre}
+
+Die Kathodenstrahlröhre besteht im wesentlichen aus drei Baugruppen. Zum einen gibt es eine Elektronenkanone, die freie Elektronen erzeugt und beschleunigt und in der diese zu einem Strahl fokussiert werden. Außerdem gibt es einen Ablenk- und einen Auftreffpunkt des Strahls. 
+
+Die Elektronen werden hierfür mit Glühemission in einem bis zur Rotglut erhitzten Draht erzeugt. 
+Die Kathode wird von einem Wehnelt-Zylinder umgeben. Mit seinem negativen Potential steuert die Kathode die Intensität des Elektronenstrahls. 
+Vor dem Zylinder befindet sich dann eine positiv geladene Elektrode, die dafür sorgt, dass sich die freien Elektronen, die die Barriere des Zylinders überwunden haben, auf eine Geschwindigkeit $v_\text{z}$ beschleunigen. 
+Mit dem Energiesatz ergibt sich dann 
+\begin{equation}
+    \frac{m_0 v_\text{Z}^2}{2} = e_\text{0} U_\text{B}.
+    \label{eqn:energie}
+\end{equation}
+
+Hinter der Elektrode befinden sich noch weitere Elektroden, die dafür da sind, den Strahl zu fokussieren. Der gebündelte Strahl fällt dann am Ende der Apparatur auf einen Leuchtschirm auf dem die auftreffenden Elektronen die Aktivatorzentren zur Emission von Lichtquanten anregen. 
+Der Leuchtschirm ist mit der Beschleunigungselektrode verbunden, sodass er sich nicht negativ laden kann.
+Das Ablenksystem besteht aus zwei Plattenpaaren, deren Normalen senkrecht aufeinander stehen. Legt man eine Spannung an diese Platten an, übt das davon erzeugte $E$-Feld eine Kraftwirkung auf den Elektronenstrahl aus. 
+
+\subsection{Praktische Grundlage einer Kathodenstrahlröhre}
+
+Ist der Plattenabstand $d$ klein gegen die Plattenlänge $p$ der Ablenkplatten, kann man annehmen, dass das elektrische Feld homogen ist und sich die Feldstärke zu 
+\begin{equation*}
+    E = \frac{U_\text{d}}{d}
+\end{equation*} 
+ergibt und auf ein Elektron wirkt dann die entsprechende Kraft, die außerhalb der Platten null wird. Diese Kraft ist konstant, wodurch sich eine Beschleunigung in Richtung $y$ ergibt, die dann anschließend zu einer Geschwindigkeit von 
+\begin{equation*}
+    v_\text{y} = \frac{e_\text{0}}{e_\text{0}} \frac{U_\text{d}}{d} \Delta t.
+\end{equation*}
+
+$\Delta t$ ergibt sich mit der Plattenlänge und der gleichförmigen Geschwindigkeit $v_\text{z}$ zu 
+\begin{equation*}
+    \Delta t = \frac{p}{v_\text{z}}.
+\end{equation*}
+
+Diesen Ausdruck kann man dann auch in die vertikale Geschwindigkeit $v_\text{y}$ einsetzen. Der Winkel der Richtungsänderung $\theta$ setzt sich aus der Division von $v_\text{y}$ durch $v_\text{z}$ zusammen. 
+
+Damit ergibt sich dann für die Verschiebung $D$ des Leuchtflecks 
+
+\begin{equation}
+    D = L \theta = \frac{e_\text{0}}{m_\text{0}} L \frac{U_\text{d}}{d} \frac{p}{v_\text{z}^2}.
+\end{equation}
+
+Mit Gleichung \eqref{eqn:energie} ergibt sich dann 
+
+\begin{equation}
+    D = \frac{p}{2d} L \frac{U_\text{d}}{U_\text{B}}.
+    \label{eqn:leuchtfleck}
+\end{equation}
+
+
+
+\subsection{Theoretische Grundlage im magnetischen Feld}
+Elektronische Felder haben auf ruhende Ladungen ein ausübendes Kraftfeld, magnetostatische Felder im Gegensatz dazu nur auf Ladungen, die sich relativ zum Feld bewegen. 
+Eine Ladung $q$, die sich mit der Geschwindigkeit $\vec{v}$ in einem homogenen Magnetfeld $\vec{B}$ erfärt die Lorentz-Kraft 
+\begin{equation}
+    \vec{F_\text{L}}= q \vec{v} \cross \vec{B}.
+    \label{eqn:Lorentz}
+\end{equation}
+
+Die Lorentz-Kraft ist nur nicht null, wenn es eine Geschwindigkeitskomponente $\vec{v}$ gibt, die senkrecht zu $\vec{B}$ ausgerichtet ist. 
+
+Das  Magnetfeld ändert allerdings nur die Richtung und ändert nicht die Geschwindigkeit. Also ist die Energie konstant innerhalb des Systems der Ladung. 
+
+Der Radius der Krümmungsbahn lässt aus dem Gleichgewicht der Lorentz- und der Zentrifugalkraft bestimmen. Es ergibt sich 
+\begin{equation}
+    r= \frac{m_\text{0}v_\text{0}}{e_\text{0} B}.
+    \label{eqn:radius}
+\end{equation}
+Die rechte Seite der Gleichung ist konstant, insofern ist die Krümmungsbahn iene Kreisbahn. 
+
+\subsection{Praktische Grundlage im magnetischen Feld}
+
+Mit Gleichung \ref{eqn:radius} lässt sich die spezifische Ladung der Elektronen $e_\text{0}/m_\text{0}$ bestimmen. 
+Mit der Beschleunigungsspannung $U_\text{B}$ ergibt sich die konstante Geschwindigkeit $v_\text{0}$ zu 
+\begin{equation}
+    v_\text{0}= \sqrt{2 U_\text{B} \frac{e_\text{0}}{m_\text{0}}}.
+    \label{eqn:v0}
+\end{equation}
+In einem feldfreien Raum bewegen sich die Elektronen eines Kathodenstrahls in Richtung Mittelpunkt des Leuchtschirms und erzeugen einen Leuchtfleck. 
+Wenn das Magnetfeld dann eingeschaltet wird, verschiebt sich der Leuchtfleck aufgrund der Krümmung auf der vertikalen Achse um das Stück $D$. Zwischen dem Wirkungsbereich L, der Weite zwischen der Quelle und dem Schirm, dem Stück $D$ und dem Radius $r$ ergibt sich über den Satz des Pythagoras die Verbindung
+
+\begin{equation}
+    r = \frac{L^2 + D^2}{2D}.
+    \label{eqn:radius2}
+\end{equation}
+
+Dies kann man in \ref{eqn:radius} einsetzen und erhält den Zusammenhang 
+\begin{equation}
+    \frac{D}{L^2 + D^2}= \frac{1}{\sqrt{8 U_\text{B}}}\sqrt{\frac{e_\text{0}}{m_\text{0}}} B.
+    \label{eqn:Ende}
+\end{equation}
