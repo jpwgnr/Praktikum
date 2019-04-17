@@ -1974,10 +1974,16 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">matplotlib</bcf:citekey>
-    <bcf:citekey order="2">numpy</bcf:citekey>
-    <bcf:citekey order="3">scipy</bcf:citekey>
-    <bcf:citekey order="4">uncertainties</bcf:citekey>
+    <bcf:citekey order="1">V501</bcf:citekey>
+    <bcf:citekey order="2">V501</bcf:citekey>
+    <bcf:citekey order="3">V501</bcf:citekey>
+    <bcf:citekey order="4">V501</bcf:citekey>
+    <bcf:citekey order="5">V501</bcf:citekey>
+    <bcf:citekey order="6">V501</bcf:citekey>
+    <bcf:citekey order="7">matplotlib</bcf:citekey>
+    <bcf:citekey order="8">scipy</bcf:citekey>
+    <bcf:citekey order="9">uncertainties</bcf:citekey>
+    <bcf:citekey order="10">numpy</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

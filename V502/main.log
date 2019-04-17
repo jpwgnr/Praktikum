@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  17 APR 2019 15:41
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  17 APR 2019 16:06
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.181 seconds
+luaotfload | main : initialization completed in 0.176 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -899,11 +899,11 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
 (polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x7fd795c05480
-(polyglossia)            righthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	table: 0x7fe147af5690
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
@@ -911,11 +911,11 @@ Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x7fd795c05640
-(polyglossia)            righthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	table: 0x7fe147af5850
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3321,38 +3321,49 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 ]
 (./content/Theorie.tex(load luc: /Users/Karina/Library/texlive/2018/texmf-var/lu
 atex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /Users/Karina/Libra
-ry/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) 
-[3]
+ry/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
+<build/roehre.png, id=90, 1284.8pt x 737.75626pt>
+File: build/roehre.png Graphic file (type png)
+<use build/roehre.png>
+Package luatex.def Info: build/roehre.png  used on input line 21.
+(luatex.def)             Requested size: 341.431pt x 199.16307pt.
+ [3<./build/roehre.png>]
+<build/roehre2.png, id=107, 1244.65pt x 516.93124pt>
+File: build/roehre2.png Graphic file (type png)
+<use build/roehre2.png>
+Package luatex.def Info: build/roehre2.png  used on input line 58.
+(luatex.def)             Requested size: 341.43468pt x 170.71404pt.
+ [4<./build/roehre2.png>]
 
 LaTeX Font Warning: Font shape `TU/LatinModernMath(1)/bx/n' undefined
-(Font)              using `TU/LatinModernMath(1)/m/n' instead on input line 109.
+(Font)              using `TU/LatinModernMath(1)/m/n' instead on input line 125.
 
 
 
 LaTeX Font Warning: Font shape `TU/LatinModernMath(2)/bx/n' undefined
-(Font)              using `TU/LatinModernMath(2)/m/n' instead on input line 109.
+(Font)              using `TU/LatinModernMath(2)/m/n' instead on input line 125.
 
 
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
-(Font)              scaled to size 7.67863pt on input line 109.
+(Font)              scaled to size 7.67863pt on input line 125.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/bx/n' will be
-(Font)              scaled to size 5.45398pt on input line 109.
+(Font)              scaled to size 5.45398pt on input line 125.
 
 LaTeX Font Warning: Font shape `TU/LatinModernMath(3)/bx/n' undefined
-(Font)              using `TU/LatinModernMath(3)/m/n' instead on input line 109.
+(Font)              using `TU/LatinModernMath(3)/m/n' instead on input line 125.
 
 
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
-(Font)              scaled to size 7.6784pt on input line 109.
+(Font)              scaled to size 7.6784pt on input line 125.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
-(Font)              scaled to size 5.45381pt on input line 109.
-[4]) (./content/durchfuehrung.tex
-<build/V501_b.png, id=96, 1284.8pt x 648.4225pt>
+(Font)              scaled to size 5.45381pt on input line 125.
+[5]) (./content/durchfuehrung.tex
+<build/V501_b.png, id=129, 1284.8pt x 648.4225pt>
 File: build/V501_b.png Graphic file (type png)
 <use build/V501_b.png>
 Package luatex.def Info: build/V501_b.png  used on input line 30.
 (luatex.def)             Requested size: 284.5193pt x 142.25761pt.
- [5]) (./content/auswertung.tex [6<./build/V501_b.png>] (./build/taba1.tex(load 
+ [6]) (./content/auswertung.tex [7<./build/V501_b.png>] (./build/taba1.tex(load 
 luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl
 /lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
@@ -3360,25 +3371,25 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 1.
 ) (./build/taba2.tex)
-(./build/taba3.tex) (./build/taba4.tex [7]) (./build/taba5.tex)
-<build/plot1.pdf, id=135, 417.7206pt x 258.00488pt>
+(./build/taba3.tex) (./build/taba4.tex [8]) (./build/taba5.tex)
+<build/plot1.pdf, id=169, 417.7206pt x 258.00488pt>
 File: build/plot1.pdf Graphic file (type pdf)
 <use build/plot1.pdf>
 Package luatex.def Info: build/plot1.pdf  used on input line 28.
-(luatex.def)             Requested size: 341.43042pt x 170.71678pt.
- [8] [9<./build/plot1.pdf>] (./build/tabb.tex) (./build/tabc1.tex) (./build/tab
-c2.tex [10])
-<build/plot2.pdf, id=189, 417.7206pt x 258.00488pt>
+(luatex.def)             Requested size: 341.43042pt x 199.17221pt.
+ [9] [10<./build/plot1.pdf>] (./build/tabb.tex) (./build/tabc1.tex) (./build/ta
+bc2.tex [11])
+<build/plot2.pdf, id=224, 417.7206pt x 258.00488pt>
 File: build/plot2.pdf Graphic file (type pdf)
 <use build/plot2.pdf>
 Package luatex.def Info: build/plot2.pdf  used on input line 115.
-(luatex.def)             Requested size: 284.52429pt x 142.2653pt.
+(luatex.def)             Requested size: 341.43042pt x 199.17221pt.
 
-[11]) (./content/diskussion.tex) [12<./build/plot2.pdf>](load luc: /Users/Karina
-/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-reg
-ular.luc)
+[12]) (./content/diskussion.tex) [13<./build/plot2.pdf>] [14](load luc: /Users/K
+arina/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps1
+0-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
- [13]
+ [15]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -3391,10 +3402,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 2B9581CCD6D75B6B8385893A5C2AD448;23842
-(rerunfilecheck)             After:  D8E206CD59A93CC9CF457D1C02E99652;23874.
+(rerunfilecheck)             Before: 18A1050CB71B6EF8D51BA1148A991C08;28752
+(rerunfilecheck)             After:  BE7FFB8AF46140A0F140636DC14D5890;28752.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 0049AE67BD9E80B98AF370785D2C402C;2803.
+(rerunfilecheck)             Checksum: 58A70A042906439C10E19EAE012E0719;3450.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3404,15 +3415,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42298 strings out of 494413
+ 42330 strings out of 494413
  100000,1648299 words of node,token memory allocated
- 793 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 44 attribute, 78 glue_spec, 44 attr
-ibute_list, 1 write, 7 pdf_action nodes
-   avail lists: 1:3,2:2375,3:251,4:25,5:260,6:51,7:2870,8:91,9:733,10:12,11:277
- 45006 multiletter control sequences out of 65536+600000
+ 803 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 45 attribute, 78 glue_spec, 45 attr
+ibute_list, 1 write, 8 pdf_action nodes
+   avail lists: 1:3,2:2373,3:292,4:25,5:260,6:62,7:2876,8:91,9:733,10:12,11:277
+ 45022 multiletter control sequences out of 65536+600000
  229 fonts using 84410191 bytes
- 61i,20n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 61i,20n,107p,9101b,3117s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-
@@ -3427,10 +3438,10 @@ e/public/lm-math/latinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/
 opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fon
 ts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/
 fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (13 pages, 176296 bytes).
+Output written on main.pdf (15 pages, 284898 bytes).
 
-PDF statistics: 422 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 131072)
- 209 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 477 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 131072)
+ 257 words of extra memory for PDF output out of 10000 (max. 100000000)
 

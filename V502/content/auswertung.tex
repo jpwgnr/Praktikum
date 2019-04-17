@@ -1,9 +1,9 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-Für die Auswertung wird Python, im Speziellen matplotlib \cite{matplotlib},
-NumPy \cite{numpy}, SciPy \cite{scipy} und Uncertainties
-\cite{uncertainties}, benutzt.
+Für die Auswertung wird Python, im Speziellen matplotlib \cite{matplotlib}, 
+SciPy \cite{scipy}, Uncertainties \cite{uncertainties}
+und NumPy \cite{numpy} benutzt.
 
 \subsection{Elektisches Feld}
 \subsubsection{Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}
@@ -25,7 +25,7 @@ für die fünf Beschleunigungsspannungen gegen die
 Ablenkspannung $U_\text{d}$ aufgetragen.
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=6cm]{build/plot1.pdf}
+    \includegraphics[width=12cm, height=7cm]{build/plot1.pdf}
     \caption{Die Leuchtfleckverschiebung $D$ ist gegen die
     Ablenkspannung $U_\text{d}$ aufgetragen. Es sind die Daten
     für die fünf verschiedenen Beschleunigungsspannungen und
@@ -35,13 +35,13 @@ Ablenkspannung $U_\text{d}$ aufgetragen.
 
 \noindent Aus der Abb. \ref{fig:plot1} lassen sich die Werte 
 $\frac{D}{U_\text{d}}$ bestimmen:
-\begin{align*}
+\begin{align*} 
     U_\text{B} = \SI{180}{\volt} &: \frac{D}{U_\text{d}} &= \SI{1}{\centi\meter\per\volt} \\
     U_\text{B} = \SI{230}{\volt} &: \frac{D}{U_\text{d}} &= \SI{2}{\centi\meter\per\volt} \\
     U_\text{B} = \SI{280}{\volt} &: \frac{D}{U_\text{d}} &= \SI{3}{\centi\meter\per\volt} \\
     U_\text{B} = \SI{330}{\volt} &: \frac{D}{U_\text{d}} &= \SI{4}{\centi\meter\per\volt} \\
     U_\text{B} = \SI{380}{\volt} &: \frac{D}{U_\text{d}} &= \SI{5}{\centi\meter\per\volt}.
-\end{align*}
+\end{align*} %das sieht hässlich aus, weiß nicht wie man das machen könnte
 Der mit Gleichung %Gleichung Mittelwert
 errechnete Mittelwert für die Steigung ist
 \begin{equation*}
@@ -112,7 +112,7 @@ wie bereits in Abschnitt \ref{sec:prop} erwähnt.
 
 \begin{figure}
     \centering
-    \includegraphics[width=10cm, height=5cm]{build/plot2.pdf}
+    \includegraphics[width=12cm, height=7cm]{build/plot2.pdf}
     \caption{$\frac{D}{L^2 + D^2}$ gegen $B$ aufgetragen.
     Es sind die Daten und die Fits für beide Beschleunigungsspannungen
     eingetragen.}

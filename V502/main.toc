@@ -5,25 +5,31 @@
 \contentsline {section}{\numberline {2}Theorie}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Theoretische Grundlage im elektrischen Feld}{3}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Aufbau einer Kathodenstrahlröhre}{3}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Berechnung der Ablenkung eines Elektronenstrahls im elektrischen Feld}{3}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Der Kathodenstrahl-Oszillograph}{4}{subsubsection.2.1.3}
-\contentsline {subsection}{\numberline {2.2}Theoretische Grundlage im magnetischen Feld}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Berechnung der Elektronenbahn im homogenen Magnetfeld}{4}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Bestimmung der spezifischen Elektronenladung}{5}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Das Helmholtz-Spulenpaar}{5}{subsubsection.2.2.3}
-\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Messung im elektrischen Feld}{5}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}{5}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Kathodenstrahl-Oszillograph}{6}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Messung im Magnetfeld}{6}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Messung der spezifischen Elektronenladung}{6}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Messung der Intensität des lokalen Erdmagnetfeldes}{6}{subsubsection.3.2.2}
-\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Elektisches Feld}{7}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}{7}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Bestimmung der Frequenz der Sinusspannung}{10}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Magnetfeld}{10}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Bestimmung der spezifischen Elektronenladung}{10}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Bestimmung der Intensität des lokal Erdmagnetfelds}{12}{subsubsection.4.2.2}
-\contentsline {section}{\numberline {5}Diskussion}{12}{section.5}
-\contentsline {section}{\nonumberline Literatur}{13}{section*.13}
+\contentsline {subsubsection}{\numberline {2.1.2}Berechnung der Ablenkung eines Elektronenstrahls im elektrischen Feld}{4}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Der Kathodenstrahl-Oszillograph}{5}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Theoretische Grundlage im magnetischen Feld}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Berechnung der Elektronenbahn im homogenen Magnetfeld}{5}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Bestimmung der spezifischen Elektronenladung}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Das Helmholtz-Spulenpaar}{6}{subsubsection.2.2.3}
+\contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Messung im elektrischen Feld}{6}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}{6}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Kathodenstrahl-Oszillograph}{7}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Messung im Magnetfeld}{7}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Messung der spezifischen Elektronenladung}{7}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Messung der Intensität des lokalen Erdmagnetfeldes}{7}{subsubsection.3.2.2}
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Elektisches Feld}{8}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}{8}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Bestimmung der Frequenz der Sinusspannung}{11}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Magnetfeld}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Bestimmung der spezifischen Elektronenladung}{11}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Bestimmung der Intensität des lokal Erdmagnetfelds}{13}{subsubsection.4.2.2}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Elektisches Feld}{14}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}{14}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Bestimmung der Frequenz der Sinusspannung}{14}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Magnetfeld}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Bestimmung der spezifischen Elektronenladung}{14}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Bestimmung der Intensität des lokal Erdmagnetfelds}{14}{subsection.5.4}
+\contentsline {section}{\nonumberline Literatur}{15}{section*.15}
