@@ -12,7 +12,7 @@ all: build/plot.pdf
 
 # hier Python-Skripte:
 build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build
-	TEXINPUTS="$(call translate,$(pwd):)" python new.py
+	TEXINPUTS="$(call translate,$(pwd):)" python plot.py
 
 # hier Python-Skripte:
 #build/example.pdf: example.py matplotlibrc header-matplotlib.tex | build

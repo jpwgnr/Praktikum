@@ -93,7 +93,7 @@ t2= np.delete(t2, 0)
 t3= np.delete(t3, 0)
 
 #Beschleunigung nach Formel
-a_theo= (1/(1+((R**2)/2*r_eff**2)))*9.81
+a_theo= (1/(1+((R**2)/(2*r_eff**2))))*9.81
 
 #Lineare Regression: x = t^2, y = höhe
 Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(t1**2, newh1)
@@ -103,7 +103,7 @@ params1, pcov1 = curve_fit(dist, t1, newh1)
 params2, pcov2 = curve_fit(dist, t2, newh2)
 params3, pcov3 = curve_fit(dist, t3, newh3)
 
-a_exp= np.array([0.5*Steigung1, 0.5*Steigung2, 0.5*Steigung3]) 
+a_exp= np.array([2*Steigung1, 2*Steigung2, 2*Steigung3]) 
 
 E_pot= m*9.81*h4 
 E_rot=1/2* I* omega**2 
