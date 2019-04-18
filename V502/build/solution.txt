@@ -6,6 +6,6 @@ Steigung_exp = [31.879345854127806+/-0.21781927203893273
 Mittelwert Steigung = 32.8+/-0.5 cm
 Steigung_theo = 19.38026315789474 cm
 Sinusfrequenz pro Wert: [50.04  49.95  49.995 49.99 ]
- Sinus Mittelwert= 49.994+/-0.032
-e0/m0 = 574+/-6
+ Hz Sinus Mittelwert= 49.994+/-0.032 Hz
+e0/m0 = (3.09+/-0.12)e+11
 Erdmagnetfeld: B = 1.1913666961379293e-05

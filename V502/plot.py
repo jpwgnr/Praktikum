@@ -27,14 +27,14 @@ R = 0.282 #Meter
 B1 = 4*np.pi*1e-7 * (8/np.sqrt(125)) * (N/R) * I1  * (1/np.sqrt(8*250))
 B2 = 4*np.pi*1e-7 * (8/np.sqrt(125)) * (N/R) * I2 * (1/np.sqrt(8*360))
 L= 0.143
-s = d[::-1]
+s = dnew
 DundL= s/(L**2 +s**2) 
 B1 = np.delete(B1, (-1), 0)
 B2 = np.delete(B2, (-1), 0)
 DundL = np.delete(DundL, (-1), 0)
 #Generate table with calculated data
-some.tabelle([Ud1/180, Ud2/230, Ud3/280, Ud4/320, Ud5/380, d], finished_file="tab1.tex", vars_name=[r"$\frac{U_\text{d, 1}}{U_\text{B}}$",r"$\frac{U_\text{d, 2}}{U_\text{B}}$",r"$\frac{U_\text{d, 3}}{U_\text{B}}$",r"$\frac{U_\text{d, 4}}{U_\text{B}}$",r"$\frac{U_\text{d, 5}}{U_\text{B}}$", r"$D / \si{\meter}$"], label_text="tab1", caption_text=r"Das Verhältnis der Ablenkspannung und der Beschleunigungsspannung aufgetragen gegen die Höhe auf dem Graphen.", precision=2) 
-some.tabelle([B1, B2, DundL], finished_file="tab2.tex", vars_name=[r"$B_1 / \si{\henry}$",r"$B_2 / \si{\henry}$", r"$\frac{D}{(L^2 + D^2)} / \si{\per\meter}$"], label_text="tab2", caption_text=r"Das Verhältnis des magnetischen Feldes durch die Beschleunigungsspannung aufgetragen gegen die Höhe.", precision=2) 
+some.tabelle([Ud1/180, Ud2/230, Ud3/280, Ud4/320, Ud5/380, d], finished_file="build/tab1.tex", vars_name=[r"$\frac{U_\text{d, 1}}{U_\text{B}}$",r"$\frac{U_\text{d, 2}}{U_\text{B}}$",r"$\frac{U_\text{d, 3}}{U_\text{B}}$",r"$\frac{U_\text{d, 4}}{U_\text{B}}$",r"$\frac{U_\text{d, 5}}{U_\text{B}}$", r"$D / \si{\meter}$"], label_text="tab1", caption_text=r"Das Verhältnis der Ablenkspannung und der Beschleunigungsspannung aufgetragen gegen die Höhe auf dem Graphen.", precision=2) 
+some.tabelle([B1, B2, DundL], finished_file="build/tab2.tex", vars_name=[r"$B_1 / \si{\henry}$",r"$B_2 / \si{\henry}$", r"$\frac{D}{(L^2 + D^2)} / \si{\per\meter}$"], label_text="tab2", caption_text=r"Das Verhältnis des magnetischen Feldes durch die Beschleunigungsspannung aufgetragen gegen die Höhe.", precision=2) 
 
 #extra values
 Ud5 = np.delete(Ud5, (0), 0)
@@ -103,11 +103,11 @@ sin1= frequenz1/np.array([0.5, 1, 2, 3])
 sinmit= ufloat(sin1.mean(), sin1.std())
 
 #e/m 
-em1= np.array([np.sqrt(Steigung6), np.sqrt(Steigung7)])
+em1= np.array([Steigung6**2, Steigung7**2])
 em= ufloat(em1.mean(), em1.std())
 Erde= 4*np.pi*1e-7* (8/np.sqrt(125))*(N/R)* I_hor *np.sin(phi/180*np.pi)
 #save solution
 file = open("build/solution.txt", "w")
-file.write(f"Steigung_exp = {Steigung_exp} cm\nMittelwert Steigung = {Steigungnew} cm\nSteigung_theo = {Steigung_theo} cm\nSinusfrequenz pro Wert: {sin1}\n Sinus Mittelwert= {sinmit}\ne0/m0 = {em}\nErdmagnetfeld: B = {Erde}")
+file.write(f"Steigung_exp = {Steigung_exp} cm\nMittelwert Steigung = {Steigungnew} cm\nSteigung_theo = {Steigung_theo} cm\nSinusfrequenz pro Wert: {sin1}\n Hz Sinus Mittelwert= {sinmit} Hz\ne0/m0 = {em}\nErdmagnetfeld: B = {Erde}")
 file.close()
 
