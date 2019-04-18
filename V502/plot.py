@@ -105,7 +105,7 @@ sinmit= ufloat(sin1.mean(), sin1.std())
 #e/m 
 em1= np.array([Steigung6**2, Steigung7**2])
 em= ufloat(em1.mean(), em1.std())
-Erde= 4*np.pi*1e-7* (8/np.sqrt(125))*(N/R)* I_hor *np.sin(phi/180*np.pi)
+Erde= 4*np.pi*1e-7* (8/np.sqrt(125))*(N/R)* I_hor/np.cos(phi/180*np.pi)
 #save solution
 file = open("build/solution.txt", "w")
 file.write(f"Steigung_exp = {Steigung_exp} cm\nMittelwert Steigung = {Steigungnew} cm\nSteigung_theo = {Steigung_theo} cm\nSinusfrequenz pro Wert: {sin1}\n Hz Sinus Mittelwert= {sinmit} Hz\ne0/m0 = {em}\nErdmagnetfeld: B = {Erde}")
