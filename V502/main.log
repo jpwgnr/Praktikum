@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  21 APR 2019 01:24
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.10)  21 APR 2019 21:30
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.112 seconds
 (./header.tex
 (/home/lewis206/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.c
 ls
@@ -929,11 +929,11 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 an.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x64b8b00
-(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x4d6aa40
 (polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
@@ -941,11 +941,11 @@ n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x64b8cd0
-(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x4d6ac10
 (polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
@@ -3376,13 +3376,13 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 ] (./content/theorie.tex(load luc: /home/lewis206/.local/texlive/2018/texmf-var/
 luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/lewis206/.l
 ocal/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
-<build/roehre.png, id=90, 1284.8pt x 737.75626pt>
+<build/roehre.png, id=92, 1284.8pt x 737.75626pt>
 File: build/roehre.png Graphic file (type png)
 <use build/roehre.png>
 Package luatex.def Info: build/roehre.png  used on input line 21.
 (luatex.def)             Requested size: 341.431pt x 199.16307pt.
  [3<./build/roehre.png>]
-<build/roehre2.png, id=107, 1244.65pt x 516.93124pt>
+<build/roehre2.png, id=109, 1244.65pt x 516.93124pt>
 File: build/roehre2.png Graphic file (type png)
 <use build/roehre2.png>
 Package luatex.def Info: build/roehre2.png  used on input line 58.
@@ -3411,251 +3411,40 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
 (Font)              scaled to size 7.6784pt on input line 125.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/bx/n' will be
 (Font)              scaled to size 5.45381pt on input line 125.
-[5]) (./content/durchfuehrung.tex
-<build/V501_b.png, id=129, 1284.8pt x 648.4225pt>
+[5]) (./content/durchfuehrung.tex [6]
+<build/V501_b.png, id=139, 1284.8pt x 648.4225pt>
 File: build/V501_b.png Graphic file (type png)
 <use build/V501_b.png>
 Package luatex.def Info: build/V501_b.png  used on input line 30.
 (luatex.def)             Requested size: 284.5193pt x 142.25761pt.
- [6]) (./content/auswertung.tex [7<./build/V501_b.png>] (./build/taba1.tex(load 
-luc: /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl
-/lmroman7-regular.luc)
+) (./content/auswertung.tex [7<./build/V501_b.png>] (./build/taba1.tex(load luc:
+ /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmr
+oman7-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 1.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 1.
 ) (./build/taba2.tex)
 (./build/taba3.tex [8]) (./build/taba4.tex) (./build/taba5.tex [9])
-(./build/tab1.tex) [10]
-<build/plot1.pdf, id=181, 417.7206pt x 258.00488pt>
+(./tables/tab1.tex) [10]
+<build/plot1.pdf, id=184, 417.7206pt x 258.00488pt>
 File: build/plot1.pdf Graphic file (type pdf)
 <use build/plot1.pdf>
 Package luatex.def Info: build/plot1.pdf  used on input line 31.
 (luatex.def)             Requested size: 341.43042pt x 199.17221pt.
  [11<./build/plot1.pdf>] (./build/tabb.tex) [12]
-(./build/tabc1.tex) (./build/tabc2.tex) [13] (./build/tab2.tex)
-<build/plot2.pdf, id=234, 417.7206pt x 258.00488pt>
+(./build/tabc1.tex) (./build/tabc2.tex) (./build/tab2.tex [13])
+<build/plot2.pdf, id=240, 417.7206pt x 258.00488pt>
 File: build/plot2.pdf Graphic file (type pdf)
 <use build/plot2.pdf>
 Package luatex.def Info: build/plot2.pdf  used on input line 117.
 (luatex.def)             Requested size: 341.43042pt x 199.17221pt.
- [14]
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.133 ...0}{m_0} = \SI{<++>}{\coulomb\per\kilo\gram}
-                                                  .
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.133 ...0}{m_0} = \SI{<++>}{\coulomb\per\kilo\gram}
-                                                  .
-? 
-) (./content/diskussion.tex
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.9 ...inen relativen Fehler von \SI{<++>}{\percent}
-                                                   und weicht von der theore...
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.9 ...inen relativen Fehler von \SI{<++>}{\percent}
-                                                   und weicht von der theore...
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.9 ...theoretischen Steigung um \SI{<++>}{\percent}
-                                                   ab.
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.9 ...theoretischen Steigung um \SI{<++>}{\percent}
-                                                   ab.
-? 
-[15<./build/plot2.pdf>]
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.13 ...nen relativen Fehler von \SI{<++>}{\percent}
-                                                  .
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.13 ...nen relativen Fehler von \SI{<++>}{\percent}
-                                                  .
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.20 ...ein relativer Fehler von \SI{<++>}{\percent}
-                                                  . Die relative Abweichung ...
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.20 ...ein relativer Fehler von \SI{<++>}{\percent}
-                                                  . Die relative Abweichung ...
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.20 ...m Literaturwert beträgt \SI{<++>}{\percent}
-                                                  .
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.20 ...m Literaturwert beträgt \SI{<++>}{\percent}
-                                                  .
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "invalid-token-in-number"
-! 
-! Invalid token '>' in numerical input.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.24 ...cht vom Literaturwert um \SI{<++>}{\percent}
-                                                   ab.
-? 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! siunitx error: "misplaced-sign-token"
-! 
-! Misplaced sign token '<++>'.
-! 
-! See the siunitx documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.24 ...cht vom Literaturwert um \SI{<++>}{\percent}
-                                                   ab.
-? 
-) [16](load luc: /home/lewis206/.local/texlive/2018/texmf-var/luatex-cache/gener
-ic/fonts/otl/lmromancaps10-regular.luc)
+ [14<./build/plot2.pdf>]) (./content/diskussion.tex) [15](load luc: /home/lewis2
+06/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-re
+gular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
- [17]
+
+[16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -3663,11 +3452,15 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 66C4DDF8EC69A39633892043CF7AAB77;30740.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F3E535E4C14926657129A5E7500734CD;3451.
 
+
+Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.aux':
+(rerunfilecheck)             Before: D5EE793BE825074773111DAAA4EF1937;31166
+(rerunfilecheck)             After:  6119C06B8FA4052C1E0C380FC6C42F24;31166.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 67947DB54911732169D3666EC2F791A3;3529.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3677,15 +3470,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43341 strings out of 494412
+ 43344 strings out of 494412
  100000,1648299 words of node,token memory allocated
- 795 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 43 attribute, 78 glue_spec, 43 attr
+ 807 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 46 attribute, 78 glue_spec, 46 attr
 ibute_list, 1 write, 8 pdf_action nodes
-   avail lists: 1:3,2:2599,3:312,4:42,5:286,6:75,7:2914,8:91,9:967,10:12,11:277
- 46006 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:2600,3:317,4:47,5:286,6:77,7:3268,8:91,9:967,10:12,11:350
+ 46008 multiletter control sequences out of 65536+600000
  231 fonts using 84546047 bytes
- 61i,22n,107p,9101b,3117s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 61i,21n,107p,9101b,3117s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10
 -regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/publi
 c/lm/lmromancaps10-regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fo
@@ -3702,10 +3495,10 @@ onts/opentype/public/lm-math/latinmodern-math.otf></home/lewis206/.local/texlive
 f></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroma
 n12-regular.otf></home/lewis206/.local/texlive/2018/texmf-dist/fonts/opentype/pu
 blic/lm/lmsans10-bold.otf>
-Output written on main.pdf (17 pages, 294250 bytes).
+Output written on main.pdf (16 pages, 295098 bytes).
 
-PDF statistics: 495 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 131072)
- 257 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 498 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 79 named destinations out of 1000 (max. 131072)
+ 265 words of extra memory for PDF output out of 10000 (max. 100000000)
 

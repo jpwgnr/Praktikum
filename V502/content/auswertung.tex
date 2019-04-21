@@ -24,7 +24,7 @@ in den folgenden Tabellen \ref{taba1} bis \ref{taba5} aufgelistet.
 für die fünf Beschleunigungsspannungen gegen das Verhältnis aus 
 Ablenkspannung $U_\text{d}$ und der Beschleunigungsspannung $U_\text{B}$ aufgetragen.
 
-\input{build/tab1.tex}
+\input{tables/tab1.tex}
 
 \begin{figure}
     \centering
@@ -39,23 +39,23 @@ Ablenkspannung $U_\text{d}$ und der Beschleunigungsspannung $U_\text{B}$ aufgetr
 \noindent Aus dem Fit in Abb. \ref{fig:plot1} lässt sich die Steigung  
 $\frac{p L}{2 d}$ experimentell bestimmen:
 \begin{align*} 
-   U_\text{B} = \SI{180}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{31.88(22)}{\centi\meter\per\volt} \\
-    U_\text{B} = \SI{230}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{32.86(18)}{\centi\meter\per\volt} \\
-    U_\text{B} = \SI{280}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.09(22)}{\centi\meter\per\volt} \\
-    U_\text{B} = \SI{330}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.05(22)}{\centi\meter\per\volt} \\
-    U_\text{B} = \SI{380}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.10(15)}{\centi\meter\per\volt}.
+   U_\text{B} = \SI{180}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{31.88(22)}{\centi\meter} \\
+    U_\text{B} = \SI{230}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{32.86(18)}{\centi\meter} \\
+    U_\text{B} = \SI{280}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.09(22)}{\centi\meter} \\
+    U_\text{B} = \SI{330}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.05(22)}{\centi\meter} \\
+    U_\text{B} = \SI{380}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.10(15)}{\centi\meter}.
 \end{align*} %das sieht hässlich aus, weiß nicht wie man das machen könnte
 Der mit Gleichung %Gleichung Mittelwert
 errechnete Mittelwert für die Steigung ist
 \begin{equation*}
-    \frac{D}{U_\text{D}} = \SI{32.8(5)}{\centi\meter\per\volt}.
+    \frac{p L}{2 d} = \SI{32.8(5)}{\centi\meter}.
 \end{equation*}
 
 %Werte p, d, L angeben
 \noindent Die angegebenen Werte für die Plattenlänge $p$,
 den Plattenabstand $d$ und den Strahlweg $L$ sind
 \begin{align*}
-    p &= \SI{1.03}{\centi\meter} \\
+    p &= \SI{1.9}{\centi\meter} \\
     d &= \SI{0.38}{\centi\meter} \\
     L &= \SI{14.3}{\centi\meter}.
 \end{align*}
@@ -64,7 +64,7 @@ den Plattenabstand $d$ und den Strahlweg $L$ sind
 Der aus diesen Werten theoretisch berechnete Wert für die
 Steigung ist
 \begin{equation*}
-    \frac{p \, L}{2 \, d} = \SI{19.38}{\centi\meter}.
+    \frac{p \, L}{2 \, d} = \SI{35.75}{\centi\meter}.
 \end{equation*}
 
 \subsubsection{Bestimmung der Frequenz der Sinusspannung}
@@ -77,10 +77,10 @@ Die gemessenen Synchronisationsfrequenzen sind in Tabelle
 %Gleichung Verhältnis
 kann jeweils die Frequenz der Sinusspannung bestimmt werden:
 \begin{align*}
-    \nu_1 &= \SI{50.04}{\hertz} \\
-    \nu_2 &= \SI{49.95}{\hertz} \\
-    \nu_3 &= \SI{49.995}{\hertz} \\
-    \nu_4 &= \SI{49.99}{\hertz}.
+    \nu_{0.5} &= \SI{50.04}{\hertz} \\
+    \nu_1 &= \SI{49.95}{\hertz} \\
+    \nu_2 &= \SI{49.995}{\hertz} \\
+    \nu_3 &= \SI{49.99}{\hertz}.
 \end{align*}
 Der daraus mit Gleichung
 %Gleichung Mittelwert
@@ -103,7 +103,7 @@ von $U_\text{B} = \SI{360}{\volt}$ befindet sich in Tabelle \ref{tabc2}.
 %D/(L^2+D^2) gegen B (plot 2) für beide U_B -> Faktor a -> e_0/m_0
 %Weg L angeben
 \noindent Der Term $\frac{D}{L^2 + D^2}$ ist für beide Beschleunigungsspannungen
-in Tab. \ref{tab2} Abb. \ref{fig:plot2} aufgetragen. Dabei ist $L$ der Strahlweg und
+in Tab. \ref{tab2} und in Abb. \ref{fig:plot2} aufgetragen. Dabei ist $L$ der Strahlweg und
 hat einen Wert von
 \begin{equation*}
     L = \SI{14.3}{\centi\meter},
@@ -128,9 +128,9 @@ Diese ergibt sich zu
     \frac{e_0}{m_0} = \SI{3.09(12)e11}{\coulomb\per\kilogram}.
 \end{equation*}
 
-Der Literaturwert liegt bei 
+\noindent Der Literaturwert liegt bei 
 \begin{equation*}
-    \frac{e_0}{m_0} = \SI{<++>}{\coulomb\per\kilo\gram}.
+    \frac{e_0}{m_0} = \SI{1.7588e11}{\coulomb\per\kilo\gram}.
 \end{equation*}
 
 \subsubsection{Bestimmung der Intensität des lokal Erdmagnetfelds}
@@ -149,5 +149,10 @@ Aus diesen beiden Werten lässt sich mittels Gleichung %Gleichung B_total
 die Totalintensität des lokalen Erdmagnetfelds bestimmen.
 Diese ergibt sich zu
 \begin{equation*}
-    B_\text{total} = \SI{6.65e-5}{\tesla}.
+    B_\text{total} = \SI{66.5}{\micro\tesla}.
 \end{equation*}
+
+\noindent Der Literaturwert für das Erdmagnetfeld in Euro liegt bei ca.
+\begin{equation*}
+    B_\text{total, lit} = \SI{49.4}{\micro\tesla}.
+\end{equation*} %\cite{https://www.ptb.de/cms/nc/ptb/fachabteilungen/abt2/fb-25/ag-251/live-daten-erdmagnetfeldmessung.html}
