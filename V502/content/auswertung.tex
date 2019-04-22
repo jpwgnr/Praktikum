@@ -30,7 +30,7 @@ Ablenkspannung $U_\text{d}$ und der Beschleunigungsspannung $U_\text{B}$ aufgetr
     \centering
     \includegraphics[width=12cm, height=7cm]{build/plot1.pdf}
     \caption{Die Leuchtfleckverschiebung $D$ ist gegen das Verhältnis aus 
-        Ablenkspannung $U_\text{d}$ und die Beschleunigungsspannung $U_\text{B}$ aufgetragen. Es sind die Daten
+        Ablenkspannung $U_\text{d}$ und Beschleunigungsspannung $U_\text{B}$ aufgetragen. Es sind die Daten
     für die fünf verschiedenen Beschleunigungsspannungen und
     jeweils einen Fit eingezeichnet.}
     \label{fig:plot1}
@@ -44,8 +44,8 @@ $\frac{p L}{2 d}$ experimentell bestimmen:
     U_\text{B} = \SI{280}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.09(22)}{\centi\meter} \\
     U_\text{B} = \SI{330}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.05(22)}{\centi\meter} \\
     U_\text{B} = \SI{380}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.10(15)}{\centi\meter}.
-\end{align*} %das sieht hässlich aus, weiß nicht wie man das machen könnte
-Der mit Gleichung %Gleichung Mittelwert
+\end{align*}
+Der mit Gleichung \eqref{eqn:mittelwert}
 errechnete Mittelwert für die Steigung ist
 \begin{equation*}
     \frac{p L}{2 d} = \SI{32.8(5)}{\centi\meter}.
@@ -61,10 +61,10 @@ den Plattenabstand $d$ und den Strahlweg $L$ sind
 \end{align*}
 
 %pL/2d mit a vergleichen
-Der aus diesen Werten theoretisch berechnete Wert für die
+\noindent Der aus diesen Werten theoretisch berechnete Wert für die
 Steigung ist
 \begin{equation*}
-    \frac{p \, L}{2 \, d} = \SI{35.75}{\centi\meter}.
+    \frac{p L}{2 d} = \SI{35.75}{\centi\meter}.
 \end{equation*}
 
 \subsubsection{Bestimmung der Frequenz der Sinusspannung}
@@ -82,8 +82,7 @@ kann jeweils die Frequenz der Sinusspannung bestimmt werden:
     \nu_2 &= \SI{49.995}{\hertz} \\
     \nu_3 &= \SI{49.99}{\hertz}.
 \end{align*}
-Der daraus mit Gleichung
-%Gleichung Mittelwert
+Der daraus mit Gleichung \eqref{eqn:mittelwert}
 berechnete Mittelwert ergibt sich zu
 \begin{equation*}
     \nu_\text{mittel} = \SI{49.994(32)}{\hertz}.
@@ -145,14 +144,14 @@ beträgt
 \begin{equation*}
     \varphi = \SI{79.5}{\degree}.
 \end{equation*}
-Aus diesen beiden Werten lässt sich mittels Gleichung %Gleichung B_total
+Aus diesen beiden Werten lässt sich mittels Gleichung \eqref{eqn:btotal}
 die Totalintensität des lokalen Erdmagnetfelds bestimmen.
 Diese ergibt sich zu
 \begin{equation*}
     B_\text{total} = \SI{66.5}{\micro\tesla}.
 \end{equation*}
 
-\noindent Der Literaturwert für das Erdmagnetfeld in Euro liegt bei ca.
+\noindent Der Literaturwert für das Erdmagnetfeld in Euro \cite{btotal} liegt bei ca.
 \begin{equation*}
     B_\text{total, lit} = \SI{49.4}{\micro\tesla}.
 \end{equation*} %\cite{https://www.ptb.de/cms/nc/ptb/fachabteilungen/abt2/fb-25/ag-251/live-daten-erdmagnetfeldmessung.html}

@@ -175,6 +175,19 @@
       \verb http://pythonhosted.org/uncertainties/
       \endverb
     \endentry
+    \entry{btotal}{article}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labeltitlesource}{title}
+      \field{title}{Messung des Erdmagnetfeldes in der PTB}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.ptb.de/cms/nc/ptb/fachabteilungen/abt2/fb-25/ag-251/live-daten-erdmagnetfeldmessung.html
+      \endverb
+      \verb{url}
+      \verb https://www.ptb.de/cms/nc/ptb/fachabteilungen/abt2/fb-25/ag-251/live-daten-erdmagnetfeldmessung.html
+      \endverb
+    \endentry
     \entry{numpy}{article}{}
       \name{author}{1}{}{%
         {{hash=00f2976ade6b1d16d78161a1f190716c}{%

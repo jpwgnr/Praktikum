@@ -1984,6 +1984,7 @@
     <bcf:citekey order="8">scipy</bcf:citekey>
     <bcf:citekey order="9">uncertainties</bcf:citekey>
     <bcf:citekey order="10">numpy</bcf:citekey>
+    <bcf:citekey order="11">btotal</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
