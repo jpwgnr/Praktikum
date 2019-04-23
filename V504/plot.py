@@ -94,15 +94,25 @@ plt.savefig("build/plot1.pdf")
 #plt.savefig("build/plot1b.pdf")
 e0=1.602*1e-19 
 k= 1.380*1e-23
+m0= 9.11e-31 
+h = 6.626e-34
 T=-1/ufloat(steigung2, err2)*e0/k
 
-L1 = 2*3 
+L1 = 2.0* 3.0  
 L2 = 2.1* 3.2 
 L3 = 2.2* 3.5 
 L4 = 2.3* 4.0 
 L5 = 2.4* 4.1
+N_w= 1
+f= 0.32e-4
+nu= 0.28 
+sigma= 5.7e-8
 L = np.array([L1,L2,L3,L4,L5])
 I_S= np.array([8e-6, 20e-6, 37e-6, 80e-6, 175e-6])
+T_var= ((L - N_w)/(f*nu*sigma))**(1/4) 
+
+e0phi = k*T_var*(np.log(4*np.pi*e0*m0* k**2 * T_var**2/h**3)-np.log(I_S))
+
 file = open("build/solution.txt", "w")
-file.write(f"a) Sättigungsstrom: \n1. 8e-6 A\n2. 20e-6 A\n3. 37e-6 A\n4. 80e-6 A\n5. 175e-6 AExponent von b) = {steigung1} Fehler: {err1}\nErwartet wird 1.5\nc) Temperatur aus Anlaufstromgebiet: T = {T}\n\d) Leistungen: 1. {L1} W\n2. {L2} W\n3. {L3} W\n4. {L4} W\n5. {L5} W\n")
+file.write(f"a) Sättigungsstrom: \n1. 8e-6 A\n2. 20e-6 A\n3. 37e-6 A\n4. 80e-6 A\n5. 175e-6 AExponent von b) = {steigung1} Fehler: {err1}\nErwartet wird 1.5\nc) Temperatur aus Anlaufstromgebiet: T = {T}\n\d) Leistungen: 1. {L1} W\n2. {L2} W\n3. {L3} W\n4. {L4} W\n5. {L5} W\n\nDie Temperaturen die sich aus den jeweiligen Leistungen ergeben: {T_var} K\n\ne0 phi = {e0phi} eV\nMittelwert: {e0phi.mean} eV\nFehler: {e0phi.std} eV")
 file.close()
