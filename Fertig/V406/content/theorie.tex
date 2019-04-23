@@ -39,13 +39,19 @@ zu erhalten und damit Interferenzerscheinungen möglich zu machen.
 \newline
 Aus einer Kombination des Huygensschen Prinzips und der 
 Definition des Interferenzprinzips nach Fresnel lässt sich die 
-Beugungserscheinung erklären. Das Fresnelsche Prinzip besagt, 
+Beugungserscheinung erklären. 
+Bei dem Fresnelschen Interferenzprinzip liegen Lichtquelle und
+Beobachtungspunkt im Endlichen. Dadurch interferieren im Aufpunkt
+Strahlen, die unter verschiedenen Winkeln gebeugt werden.
+Das Huygenssche Prinzip besagt, 
 dass jeder Punkt einer Wellenfläche zu gleicher Zeit eine 
 Elementarwelle aussendet, die die Form einer Kugelwelle hat. 
-Diese neuen Wellen interferieren miteinander. Der 
-Schwingungszustand eines beliebigen Punktes ist 
+Diese neuen Wellen interferieren miteinander und erzeugen eine
+neue Wellenfront, die die Einhüllende der Elementarwellen ist.
+Der Schwingungszustand eines beliebigen Punktes ist 
 die Superposition aller Elementarwellen, die an dieser Stelle zum 
 selben Zeitpunkt eingehen.
+%Phasenunterschied, Wellenmaxima,...?
 \newline
 Bei der Messung eines Beugungsbildes lässt sich der Winkel
 zwischen Blende und Schirm berechnen durch 
@@ -58,7 +64,9 @@ $x$ ist der Abstand des Messpunktes zum Hauptmaximum
 des Beugungsbildes. %reicht das? phi=0 erwähnen?
 
 \subsection{Beugung am Einzelspalt}
-Es wird über die gesamte Spaltbreite integriert, um die 
+Die Aperturfunktion des Objekts kann mithilfe einer Fourier-
+Transformation in die Amplitudenfunktion überführt werden. %neu
+Dabei wird über die gesamte Spaltbreite integriert, um die 
 Amplitude $B$ in Richtung $\phi$ zu bestimmen. Nach Ausführung 
 der Integration, Ausklammern eines e-Terms und der Nutzung 
 der Euler-Formel, ergibt sich für die Amplitude:
@@ -102,9 +110,10 @@ Dabei ist $s$ die Breite des Spalts zusammen mit
 dem Abstand zwischen den beiden Spalten.
 \newline
 Die Intensität ergibt sich zu 
-\begin{equation*}
+\begin{equation}
     I(\phi) \propto B(\phi)^2 =4 \, cos^2 \left(\frac{\pi \, s \, sin(\phi)}{\lambda} \right)\cdot \left(\frac{\lambda}{\pi \, b \, sin(\phi)} \right)^2 \cdot sin^2 \left(\frac{\pi \, b \, sin(\phi)}{\lambda}\right).
-\end{equation*}
+    \label{eqn:doppelspalt}
+\end{equation}
 Eine theoretische Intensitätsverteilung für den Doppelspalt
 ist in Abb. \ref{fig:doppel} zu sehen.
 \begin{figure}
