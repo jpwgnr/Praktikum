@@ -1,5 +1,11 @@
 \section{Ziel}
+Das Ziel dieses Versuchs ist es, aus einer Metalloberfläche
+(Wolfram) durch Erwärmung freie Elektronen zu erzeugen und
+daraus die Temperaturabhängigkeit dieses Vorgangs sowie die
+Austrittsarbeit für Wolfram zu bestimmen.
 
+\noindent Es soll außerdem die Hochvakuumdiode behandelt werden,
+indem die Kennlinien dieser Diode untersucht werden.
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -7,20 +13,27 @@
 \subsection{Austrittsarbeit und die Energieverteilung der Leitungselektronen}
 
 Atome sind in Metallen auf ihren Kristallgitterplätzen 
-ausnahmslos ionisiert. Es gibt dabei freie Elektronen außerhalb 
+ionisiert. Es gibt dabei freie Elektronen außerhalb 
 der periodischen Gitter. Diese werden als Leitungselektronen 
 bezeichnet. Das Gitterpotential kann in grober Näherung als 
 konstant betrachtet werden. Das Metallinnere hat ein positives 
 Potential, das vom Außenbereich um einen Betrag $\phi$ 
-verschieden ist. Man kann dies wie in Abb. \ref{abb:topf} %Abb. einfügen
+verschieden ist. Man kann dies wie in Abb. \ref{fig:topf}
 als Potentialtopf darstellen. Wenn ein Elektron diesen Topf 
 verlassen möchte, muss es gegen das Potential $\zeta$ 
 anlaufen können. Es muss also die Austrittsarbeit $e_0 \zeta$ 
 aufbringen können. 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=6cm, height=3cm]{build/potentialtopf.png}
+    \caption{Potentialtopf-Modell eines Metalls. \cite{V504}}
+    \label{fig:topf}
+\end{figure}
+
 \noindent Aus der Quantentheorie ergibt sich, dass bei Zimmertemperatur 
 die Fermische Grenzenergie $\zeta$ für alle Metalle größer ist 
-als $k T$. Wie in Abb. \ref{abb:Fermidirac} zu erkennen, muss %Abb. einfügen
+als $k T$. Wie in Abb. \ref{fig:fermidirac} zu erkennen, muss
 ein Elektron mindestens die Energie $\zeta + e_0 \Phi$ 
 erbringen, um sich von der Metalloberfläche zu lösen. 
 
@@ -31,6 +44,13 @@ erbringen, um sich von der Metalloberfläche zu lösen.
 \end{equation}
 für die Wahrscheinlichkeitsverteilung, dass ein Elektron die 
 Oberfläche  verlässt. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm, height=6cm]{build/fermidirac.png}
+    \caption{Verlauf der Fermi-Diracschen Verteilungsfunktion. \cite{V504}}
+    \label{fig:fermidirac}
+\end{figure}
 
 \subsection{Berechnung der Sättigungsstromdichte bei der 
 thermischen Elektronenemission}
@@ -55,12 +75,19 @@ Die Messung des Sättigungsstroms einer emittierneden
 Metalloberfläche muss im Hochakuum durchgeführt werden, 
 damit die freien Elektronen nicht mit Luftmolekülen in 
 Wechselwirkungen treten. Der grundsätzliche Aufbau einer 
-Hochvakuum-Diode ist in Abb. \ref{abb:diode} zu erkennen. %Abb. einfügen
+Hochvakuum-Diode ist in Abb. \ref{fig:diode} zu erkennen.
 Dabei wird eine Heizspannung an die Kathode angelegt. Dadurch 
 lösen sich Elektronen und bewegen sich in Richtung der Anode. 
 An der Anode ist eine Saugspannung angeschlossen, um das 
 Gegenfeld zu verringern. Ist dieses zu groß, kommen die 
 Elektronen nicht bei der Anode an. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm, height=4cm]{build/diode.png}
+    \caption{Schaltung einer Hochvakuumdiode. \cite{V504}}
+    \label{fig:diode}
+\end{figure}
 
 \subsection{Die Langmuir-Schottkysche Raumladungsgleichung}
 
@@ -70,7 +97,7 @@ ab. Außerdem ist die Geschwindigkeit der Elektronen nicht
 konstant. Es handelt sich stattdessen um eine beschleunigte 
 Bewegung. Auch die Raumladungsdichte $\rho$ ist eine Funktion 
 des Ortes und nimmt zur Anode hin ab. Dies gilt, da die 
-Geschwindigkeit zu nimmt und die Stromdichte $j$ konstant ist. 
+Geschwindigkeit zunimmt und die Stromdichte $j$ konstant ist. 
 Nach einigen Umformungen und einer Integration lässt sich aus 
 der Potentialgleichung herleiten, dass der Zusammenhang 
 zwischen der Stromdichte $j$ und der Anodenspannung $V$ sich 
@@ -81,8 +108,16 @@ zu
 \end{equation}
 ergibt. Diese Gleichung wird auch Langmuir-Schottkysches 
 Raumladungsgesetz genannt. Der Gültigkeitsbereich ist das 
-Raumladungsgebiet wie in Abb. \ref{abb:langmuirschottky} 
+Raumladungsgebiet wie in Abb. \ref{fig:langmuirschottky}
 dargestellt.  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=5cm]{build/raumladungsgebiet.png}
+    \caption{Potential, Feldstärke und Raumladungsdichte im Raumladungsgebiet
+        einer Hochvakuumdiode. \cite{V504}}
+    \label{fig:langmuirschottky}
+\end{figure}
 
 \subsection{Anlaufstromgebiet einer Hochvakuumdiode}
 
@@ -92,21 +127,34 @@ durch die Eigengeschwindigkeit der Elektronen. Bei $T > 0$
 gibt es viele Elektronen, deren Energie größer als die 
 Austrittsarbeit ist. Diese Differenz wird als kinetische 
 Energie umgesetzt. Damit sind sie in der Lage gegen ein 
-geringes Gegenfeld zu laufen. Daher der Name Anlaufstrom. 
-Die Energieverhältnisse sind in Abb. \ref{abb:energie} 
+geringes Gegenfeld zu laufen - daher der Name Anlaufstrom. 
+Die Energieverhältnisse sind in Abb. \ref{abb:energie}
 dargestellt. Dabei ist wichtig, dass das Anodenmaterial auch 
 eine Austrittsarbeit besitzt. Durch die leitende Verbindung 
 zwischen Anode und Kathode werden die Fermi-Oberflächen auf 
-eine Höhe gebracht, doch durch das äußere Potential $V$ 
-verschieben sie isch um $e_0 V$. 
+eine Höhe gebracht.Durch das äußere Potential $V$ 
+verschieben sie sich um $e_0 V$.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm, height=6cm]{build/energie.png}
+    \caption{Energieverhältnisse in der Hochvakuumdiode im Anlaufstromgebiet. \cite{V504}}
+    \label{fig:energie}
+\end{figure}
 
 \subsection{Kennlinie der Hochvakuumdiode}
 
 Die Kennlinie wird als der Zusammenhang zwischen Anodenstrom 
-$I_\text{A}$ unddem angelegten Potential bezeichnet. 
+$I_\text{A}$ und dem angelegten Potential bezeichnet. 
 Sie lässt sich in Anlaufstrom-, Raumladungs- und 
 Sättigungsstromgebiet gliedern. 
-Diese Abschnitte sind in Abb. \ref{abb:Gebiete} zu erkennen. 
+Diese Abschnitte sind in Abb. \ref{fig:gebiete} zu erkennen.
 Aus der Kennlinie lassen sich Kathodentemperatur und die 
-Austrittsarbeit der Kathode ermitteln. 
+Austrittsarbeit der Kathode ermitteln.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm, height=7cm]{build/gebiete.png}
+    \caption{Kennlinie einer Hochvakuumdiode. \cite{V504}}
+    \label{fig:gebiete}
+\end{figure}
