@@ -1,0 +1,13 @@
+a) Sättigungsstrom: 
+1. 8e-6 A
+2. 20e-6 A
+3. 37e-6 A
+4. 80e-6 A
+5. 175e-6 AExponent von b) = 1.1814494396680653 Fehler: 0.026271839379387825
+Erwartet wird 1.5
+c) Temperatur aus Anlaufstromgebiet: T = (2.44+/-0.12)e+03
+\d) Leistungen: 1. 6 W
+2. 6.720000000000001 W
+3. 7.700000000000001 W
+4. 9.2 W
+5. 9.839999999999998 W
