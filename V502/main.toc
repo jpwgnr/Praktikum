@@ -32,6 +32,7 @@
 \contentsline {subsubsection}{\numberline {6.1.1}Proportionalität zwischen Leuchtfleckverschiebung und Ablenkspannung}{17}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}Bestimmung der Frequenz der Sinusspannung}{17}{subsubsection.6.1.2}
 \contentsline {subsection}{\numberline {6.2}Magnetfeld}{17}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Bestimmung der spezifischen Elektronenladung}{17}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Bestimmung der Intensität des lokal Erdmagnetfelds}{17}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.2.1}Bestimmung der spezifischen Elektronenladung}{17}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Bestimmung der Intensität des lokal Erdmagnetfelds}{17}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}Fazit}{17}{subsection.6.3}
 \contentsline {section}{\nonumberline Literatur}{18}{section*.17}
