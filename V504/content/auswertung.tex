@@ -2,11 +2,95 @@
 \label{sec:Auswertung}
 
 \subsection{Kennlinien der Hochvakuumdiode}
+\label{sec:a}
+Die für die Anodenspannung und den Anodenstrom aufgenommenen Werte
+bei den Heizstömen von $I_\text{H} = \num{2}$ bis $\SI{2.4}{\ampere}$
+sind in den Tabellen \ref{taba} bis \ref{tabe} zu sehen.
+
+\input{build/taba.tex}
+\input{build/tabb.tex}
+\input{build/tabc.tex}
+\input{build/tabd.tex}
+\input{build/tabe.tex}
+
+\noindent Die Ströme sind in Abb. \ref{fig:plot1} jeweils gegen die Spannungen
+aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm, height=9cm]{build/plot1.pdf}
+    \caption{Die Anodenströme sind jeweils für die verschiedenen Heizströme/-Spannungen
+    gegen die Anodenspannungen aufgetragen.}
+    \label{fig:plot1}
+\end{figure}
+
+\noindent Aus der Abb. \ref{fig:plot1} lassen sich jeweils
+die Sättigungsströme ablesen. Diese sind für die verschiedenen
+Heizströme
+\begin{align*}
+    I_\text{H} = \SI{2.0}{\ampere} \Rightarrow I_\text{S} &= \SI{8e-6}{\ampere} \\
+    I_\text{H} = \SI{2.1}{\ampere} \Rightarrow I_\text{S} &= \SI{20e-6}{\ampere} \\
+    I_\text{H} = \SI{2.2}{\ampere} \Rightarrow I_\text{S} &= \SI{37e-6}{\ampere} \\
+    I_\text{H} = \SI{2.3}{\ampere} \Rightarrow I_\text{S} &= \SI{80e-6}{\ampere} \\
+    I_\text{H} = \SI{2.4}{\ampere} \Rightarrow I_\text{S} &= \SI{175e-6}{\ampere}.
+\end{align*}
 
 \subsection{Gültigkeitsbereich des Raumladungsgesetzes}
+Der Exponent ist
+\begin{equation*}
+    exp = \num{1.18 \pm 0.03}.
+\end{equation*}
+%Erwartet wird 1.5?
 
 \subsection{Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}
+Die Werte für die Spannungen und Ströme im Anlaufstromgebiet
+befinden sich in den Tabellen \ref{tabf} bis \ref{tabh}.
+
+\input{build/tabf.tex}
+\input{build/tabg.tex}
+\input{build/tabh.tex}
+
+\noindent Die Temperatur im Anlaufstromgebiet ist
+\begin{equation*}
+    T = \SI{2.44(12)e3}{\kelvin}.
+\end{equation*}
 
 \subsection{Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}
+Die in Teil \ref{sec:a} verwendeten Heizleistungen sind
+\begin{align*}
+    P_\text{1} &= \SI{6.00}{\watt} \\
+    P_\text{2} &= \SI{6.72}{\watt} \\
+    P_\text{3} &= \SI{7.7}{\watt} \\
+    P_\text{4} &= \SI{9.20}{\watt} \\
+    P_\text{5} &= \SI{9.84}{\watt}.
+\end{align*}
+
+\noindent Die Werte für die emittierende Kathodenoberfläche $f$ und den
+Emissionsgrad der Oberfläche $\eta$ sind
+\begin{align*}
+    f &= \SI{0.32}{\centi\meter\squared} \\
+    \eta &= \num{0.28}.
+\end{align*}
+
+\noindent Daraus ergeben sich die Temperaturen
+\begin{align*}
+    T_\text{1} &= \SI{1768.87}{\kelvin} \\
+    T_\text{2} &= \SI{1829.38}{\kelvin} \\
+    T_\text{3} &= \SI{1903.15}{\kelvin} \\
+    T_\text{4} &= \SI{2001.74}{\kelvin} \\
+    T_\text{5} &= \SI{2039.71}{\kelvin}.
+\end{align*}
 
 \subsection{Austrittsarbeit für Wolfram}
+Die berechneten Austrittsarbeiten $e_0 \phi$ sind
+\begin{align*}
+    (e_0 \phi)_\text{1} &= \SI{9.93e-19}{\electronvolt} \\
+    (e_0 \phi)_\text{2} &= \SI{1.01e-18}{\electronvolt} \\
+    (e_0 \phi)_\text{3} &= \SI{1.03e-18}{\electronvolt} \\
+    (e_0 \phi)_\text{4} &= \SI{1.07e-18}{\electronvolt} \\
+    (e_0 \phi)_\text{5} &= \SI{1.07e-18}{\electronvolt}.
+\end{align*}
+
+\noindent Der sich daraus ergebende Mittelwert ist
+\begin{equation*}
+    (e_0 \phi)_\text{mittel} = \SI{100000000}{\electronvolt}.
+\end{equation*}

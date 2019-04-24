@@ -15,14 +15,14 @@
 \contentsline {subsection}{\numberline {4.2}Anlaufstromgebiet der Diode}{8}{subsection.4.2}
 \contentsline {section}{\numberline {5}Auswertung}{9}{section.5}
 \contentsline {subsection}{\numberline {5.1}Kennlinien der Hochvakuumdiode}{9}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Gültigkeitsbereich des Raumladungsgesetzes}{9}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}{9}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}{9}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Austrittsarbeit für Wolfram}{9}{subsection.5.5}
-\contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
-\contentsline {subsection}{\numberline {6.1}Kennlinien der Hochvakuumdiode}{9}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Gültigkeitsbereich des Raumladungsgesetzes}{9}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}{9}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}{9}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Austrittsarbeit für Wolfram}{9}{subsection.6.5}
-\contentsline {section}{\nonumberline Literatur}{10}{section*.10}
+\contentsline {subsection}{\numberline {5.2}Gültigkeitsbereich des Raumladungsgesetzes}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Austrittsarbeit für Wolfram}{15}{subsection.5.5}
+\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}
+\contentsline {subsection}{\numberline {6.1}Kennlinien der Hochvakuumdiode}{15}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Gültigkeitsbereich des Raumladungsgesetzes}{15}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}{15}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}{15}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Austrittsarbeit für Wolfram}{15}{subsection.6.5}
+\contentsline {section}{\nonumberline Literatur}{16}{section*.15}
