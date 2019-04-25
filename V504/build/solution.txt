@@ -16,4 +16,5 @@ Die Temperaturen die sich aus den jeweiligen Leistungen ergeben: [1768.87353689 
 
 e0 phi = [4.7967989  4.82707677 4.93384441 5.07388901 5.039187  ] eV
 Mittelwert: [4.934159218524964] eV
-Fehler: [0.11035384846558836] eV
+Fehler: [0.11035384846558836] eV 
+Literaturwert Austrittsarbeit Wolfram (Wikipdia): 4,55 eV

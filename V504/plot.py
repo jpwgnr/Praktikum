@@ -116,5 +116,5 @@ e0phi = k*T_var*(np.log(4*np.pi*e0*m0* k**2 * T_var**2/h**3)-np.log(I_S/A))/e0
 e0phimean = e0phi.mean()
 e0phistd = e0phi.std()
 file = open("build/solution.txt", "w")
-file.write(f"a) Sättigungsstrom: \n1. 8e-6 A\n2. 20e-6 A\n3. 37e-6 A\n4. 80e-6 A\n5. 175e-6 AExponent von b) = {steigung1} Fehler: {err1}\nErwartet wird 1.5\nc) Temperatur aus Anlaufstromgebiet: T = {T}\nd) Leistungen: 1. {L1} W\n2. {L2} W\n3. {L3} W\n4. {L4} W\n5. {L5} W\n\nDie Temperaturen die sich aus den jeweiligen Leistungen ergeben: {T_var} K\n\ne0 phi = {e0phi} eV\nMittelwert: {[e0phimean]} eV\nFehler: {[e0phistd]} eV")
+file.write(f"a) Sättigungsstrom: \n1. 8e-6 A\n2. 20e-6 A\n3. 37e-6 A\n4. 80e-6 A\n5. 175e-6 AExponent von b) = {steigung1} Fehler: {err1}\nErwartet wird 1.5\nc) Temperatur aus Anlaufstromgebiet: T = {T}\nd) Leistungen: 1. {L1} W\n2. {L2} W\n3. {L3} W\n4. {L4} W\n5. {L5} W\n\nDie Temperaturen die sich aus den jeweiligen Leistungen ergeben: {T_var} K\n\ne0 phi = {e0phi} eV\nMittelwert: {[e0phimean]} eV\nFehler: {[e0phistd]} eV \nLiteraturwert Austrittsarbeit Wolfram (Wikipdia): 4,55 eV")
 file.close()

@@ -63,9 +63,9 @@ params3, err3 = some.curvefit(x= phi3, y=np.sqrt(I3), num=3, x_add=0, function= 
 
 params4, pcov = curve_fit(func2, phi3, np.sqrt(I3), p0=[spaltbreite, spaltbreite, d])
 
-plt.figure(1)
-plt.plot(phi3, I3, "xr", label=r"$\SI{2.4}{\ampere}$, $\SI{4.1}{\volt}$")
-plt.plot(phi3, func2(phi3, *params4), "k", label="Fit", linewidth=1.0)
+plt.figure(4)
+plt.plot(phi3, I3, "xr", label=r"Daten")
+plt.plot(phi3, func2(phi3, *params4)**2, "k", label="Fit", linewidth=1.0)
 plt.xlabel(r"$\varphi / \si{\radian}$")
 plt.ylabel(r"$I / \si{\ampere}$")
 plt.legend(loc="best")
