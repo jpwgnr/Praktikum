@@ -6,7 +6,7 @@ a) Sättigungsstrom:
 5. 175e-6 AExponent von b) = 1.1814494396680653 Fehler: 0.026271839379387825
 Erwartet wird 1.5
 c) Temperatur aus Anlaufstromgebiet: T = (2.44+/-0.12)e+03
-\d) Leistungen: 1. 6.0 W
+d) Leistungen: 1. 6.0 W
 2. 6.720000000000001 W
 3. 7.700000000000001 W
 4. 9.2 W
@@ -14,7 +14,6 @@ c) Temperatur aus Anlaufstromgebiet: T = (2.44+/-0.12)e+03
 
 Die Temperaturen die sich aus den jeweiligen Leistungen ergeben: [1768.87353689 1829.37732134 1903.14984684 2001.74036487 2039.70495033] K
 
-e0 phi = [9.93275781e-19 1.00581649e-18 1.03229735e-18 1.06726362e-18
- 1.06652976e-18] eV
-Mittelwert: <built-in method mean of numpy.ndarray object at 0x7fa3410bbb70> eV
-Fehler: <built-in method std of numpy.ndarray object at 0x7fa3410bbb70> eV
+e0 phi = [4.7967989  4.82707677 4.93384441 5.07388901 5.039187  ] eV
+Mittelwert: [4.934159218524964] eV
+Fehler: [0.11035384846558836] eV

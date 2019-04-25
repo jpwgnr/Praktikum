@@ -47,11 +47,11 @@ U9 = np.append(np.append(U6[:7], U7[:8]), U8[:])
 I9 = np.append(np.append(I6[:7], I7[:8]), I8[:])
 
 #functions 
-some.tabelle([np.log(U5), np.log(I5)], finished_file="tab2.tex", vars_name=[r"$ln(U/U_0)$", r"$ln(I/I_0)$"], label_text="tab2", caption_text=r"Logarithmierte Spannungen und logarithmierte Stromstärken.", precision=2) 
+some.tabelle([np.log(U5), np.log(I5)], finished_file="build/tab2.tex", vars_name=[r"$ln(U/U_0)$", r"$ln(I/I_0)$"], label_text="tab2", caption_text=r"Logarithmierte Spannungen und logarithmierte Stromstärken.", precision=2) 
 
 steigung1, yabschnitt1, err1 = some.linReg(x=np.log(U5[0:5]), y=np.log(I5[0:5]), x_name=r"$log(U/U_0)$", y_name=r"$log(I/I_0)$", num=2,  x_add=0, file_name="build/plot2.pdf")
 
-steigung2, yabschnitt2, err2 = some.linReg(x=U9, y=np.log(I9), x_name=r"$log(U/U_0)$", y_name=r"$log(I/I_0)$", num=2,  x_add=0, file_name="build/plot2.pdf")
+steigung2, yabschnitt2, err2 = some.linReg(x=U9, y=np.log(I9), x_name=r"$U$", y_name=r"$log(I/I_0)$", num=3,  x_add=0, file_name="build/plot3.pdf")
 
 #calculate 
 
@@ -110,9 +110,11 @@ sigma= 5.7e-8
 L = np.array([L1,L2,L3,L4,L5])
 I_S= np.array([8e-6, 20e-6, 37e-6, 80e-6, 175e-6])
 T_var= ((L - N_w)/(f*nu*sigma))**(1/4) 
+A= 1e-4
 
-e0phi = k*T_var*(np.log(4*np.pi*e0*m0* k**2 * T_var**2/h**3)-np.log(I_S))
-
+e0phi = k*T_var*(np.log(4*np.pi*e0*m0* k**2 * T_var**2/h**3)-np.log(I_S/A))/e0
+e0phimean = e0phi.mean()
+e0phistd = e0phi.std()
 file = open("build/solution.txt", "w")
-file.write(f"a) Sättigungsstrom: \n1. 8e-6 A\n2. 20e-6 A\n3. 37e-6 A\n4. 80e-6 A\n5. 175e-6 AExponent von b) = {steigung1} Fehler: {err1}\nErwartet wird 1.5\nc) Temperatur aus Anlaufstromgebiet: T = {T}\n\d) Leistungen: 1. {L1} W\n2. {L2} W\n3. {L3} W\n4. {L4} W\n5. {L5} W\n\nDie Temperaturen die sich aus den jeweiligen Leistungen ergeben: {T_var} K\n\ne0 phi = {e0phi} eV\nMittelwert: {e0phi.mean} eV\nFehler: {e0phi.std} eV")
+file.write(f"a) Sättigungsstrom: \n1. 8e-6 A\n2. 20e-6 A\n3. 37e-6 A\n4. 80e-6 A\n5. 175e-6 AExponent von b) = {steigung1} Fehler: {err1}\nErwartet wird 1.5\nc) Temperatur aus Anlaufstromgebiet: T = {T}\nd) Leistungen: 1. {L1} W\n2. {L2} W\n3. {L3} W\n4. {L4} W\n5. {L5} W\n\nDie Temperaturen die sich aus den jeweiligen Leistungen ergeben: {T_var} K\n\ne0 phi = {e0phi} eV\nMittelwert: {[e0phimean]} eV\nFehler: {[e0phistd]} eV")
 file.close()
