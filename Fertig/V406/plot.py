@@ -61,6 +61,17 @@ params2, err2 = some.curvefit(x=phi2, y=np.sqrt(I2), num=2, x_add=0, function= f
 
 params3, err3 = some.curvefit(x= phi3, y=np.sqrt(I3), num=3, x_add=0, function= func2, x_name=r"$\varphi / \si{\radian}$", y_name=r"I / \si{\ampere}", file_name="build/plot3.pdf", p0=[spaltbreite, spaltbreite, d])
 
+params4, pcov = curve_fit(func2, phi3, np.sqrt(I3), p0=[spaltbreite, spaltbreite, d])
+
+plt.figure(1)
+plt.plot(phi3, I3, "xr", label=r"$\SI{2.4}{\ampere}$, $\SI{4.1}{\volt}$")
+plt.plot(phi3, func2(phi3, *params4), "k", label="Fit", linewidth=1.0)
+plt.xlabel(r"$\varphi / \si{\radian}$")
+plt.ylabel(r"$I / \si{\ampere}$")
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig("build/plot4.pdf")
+
 #millimeter and nanoampere
 #params1a, err1a = some.curvefit(x=phi1, y=np.sqrt(I1*1e9), num=4, x_add= 0, function = func1, x_name=r"$\varphi / \si{\radian}$", y_name=r"$I / \si{\nano\ampere}$", file_name="build/plot4.pdf", p0=[spaltmittel*1e3, 1e-6, d*1e9])
 
