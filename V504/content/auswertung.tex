@@ -34,13 +34,24 @@ Heizströme
     I_\text{H} = \SI{2.4}{\ampere} \Rightarrow I_\text{S} &= \SI{175e-6}{\ampere}.
 \end{align*}
 
+
 \subsection{Gültigkeitsbereich des Raumladungsgesetzes}
-Der Exponent, der mittels einer linearen Regression
-bestimmt wurde, ist
+Die logarithmierte Stromstärke ist gegen die logarithmierte
+Spannung in Abb. \ref{fig:plot2} aufgetragen.
+Daraus ergibt sich mit einer linearen Regression der
+Exponent $x$. Dieser ist die Steigung der Geraden.
 \begin{equation*}
     x = \num{1.18 \pm 0.03}.
 \end{equation*}
 %erwartet wird 1.5
+
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm, height=9cm]{build/plot2.pdf}
+    \caption{}
+    \label{fig:plot2}
+\end{figure}
+
 
 \subsection{Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}
 Die Werte für die Spannungen und Ströme im Anlaufstromgebiet
@@ -50,23 +61,35 @@ befinden sich in den Tabellen \ref{tabf} bis \ref{tabh}.
 \input{build/tabg.tex}
 \input{build/tabh.tex}
 
-\noindent Die Temperatur im Anlaufstromgebiet ist %Gleichung?
+\noindent Die logarithmierte Stromstärke ist in Abb. \ref{fig:plot3}
+gegen die Spannung aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm, height=9cm]{build/plot3.pdf}
+    \caption{}
+    \label{fig:plot3}
+\end{figure}
+
+\noindent Durch Ermittlung der Steigung lässt sich
+die Temperatur bestimmen, indem Gleichung \eqref{eqn:anlauf}
+nach $T$ umgestellt wird. 
+Die Temperatur im Anlaufstromgebiet ist
 \begin{equation*}
     T = \SI{2.44(12)e3}{\kelvin}.
 \end{equation*}
-%plot 
-%Formel am ende von 6
-%
+
 
 \subsection{Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}
-Die in Teil \ref{sec:a} verwendeten Heizleistungen sind
+Die in Teil \ref{sec:a} verwendeten Heizleistungen, die sich 
+aus Multiplikation der Heizströme mit den Heizspannungen
+ergeben, sind
 \begin{align*}
     P_\text{1} &= \SI{6.00}{\watt} \\
     P_\text{2} &= \SI{6.72}{\watt} \\
     P_\text{3} &= \SI{7.7}{\watt} \\
     P_\text{4} &= \SI{9.20}{\watt} \\
     P_\text{5} &= \SI{9.84}{\watt}.
-\end{align*}
+\end{align*}  %P oder L?
 
 \noindent Die Werte für die emittierende Kathodenoberfläche $f$ und den
 Emissionsgrad der Oberfläche $\eta$ sind
@@ -75,7 +98,7 @@ Emissionsgrad der Oberfläche $\eta$ sind
     \eta &= \num{0.28}.
 \end{align*}
 
-\noindent Daraus ergeben sich mit der Gleichung \eqref{eqn:} 
+\noindent Daraus ergeben sich mit der Gleichung \eqref{eqn:Temp} 
 die Temperaturen
 \begin{align*}
     T_\text{1} &= \SI{1768.87}{\kelvin} \\
@@ -84,7 +107,7 @@ die Temperaturen
     T_\text{4} &= \SI{2001.74}{\kelvin} \\
     T_\text{5} &= \SI{2039.71}{\kelvin}.
 \end{align*}
-%Gleichung anleitung d
+
 
 \subsection{Austrittsarbeit für Wolfram}
 Die berechneten Austrittsarbeiten $e_0 \phi$ sind

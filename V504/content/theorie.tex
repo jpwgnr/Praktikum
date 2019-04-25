@@ -142,6 +142,13 @@ verschieben sie sich um $e_0 V$.
     \label{fig:energie}
 \end{figure}
 
+\noindent Die Abhängigkeit der Anlaufstromstärke vom äußeren
+Potential ist durch folgende Gleichung darstellbar
+\begin{equation}
+    j(V) = const \, e^(-\frac{e_0 \, V}{k \, T}).
+    \label{eqn:anlauf}
+\end{equation}
+
 \subsection{Kennlinie der Hochvakuumdiode}
 
 Die Kennlinie wird als der Zusammenhang zwischen Anodenstrom 
@@ -161,10 +168,10 @@ Austrittsarbeit der Kathode ermitteln.
 
 %Lineare Regression erklären?
 
-%Temperatur
-\noindent Das Stefan-Boltzmannsche Gesetz lautet
+\subsection{WIE SOLLEN WIR DAS NENNEN} %umbenennen lol
+Das Stefan-Boltzmannsche Gesetz lautet
 \begin{equation*}
-    N = f \, \eta \, sigma \, T^4.
+    N = f \, \eta \, \sigma \, T^4.
 \end{equation*}
 Dabei ist $\sigma$ die Stefan-Boltzmannsche Strahlungskonstante,
 welche einen Wert von
@@ -173,3 +180,16 @@ welche einen Wert von
 \end{equation*}
 hat, $f$ die emittierende Kathodenoberfläche, $\eta$ der
 Emissionsgrad der Oberfläche und $T$ die Temperatur.
+
+\noindent Aus dem Energiesatz folgt
+\begin{equation*}
+    I_\text{H} \, U_\text{H} = f \, \eta \, \sigma \, T^4 \, + \, N_\text{WL}.
+\end{equation*}
+Dabei ist $N_\text{WL}$ die Wärmeleitung, für die ein Wert von
+$N_\text{WL} = \SI{1}{\watt}$ angenommen wird.
+Also lässt sich daraus die Temperatur durch
+\begin{equation}
+    T = \sqrt[4]{\frac{I_\text{H} \, U_\text{H} - 1}{f \, \eta \, \sigma}}
+    \label{eqn:Temp}
+\end{equation}
+berechnen.
