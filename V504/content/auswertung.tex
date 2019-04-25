@@ -35,11 +35,12 @@ Heizströme
 \end{align*}
 
 \subsection{Gültigkeitsbereich des Raumladungsgesetzes}
-Der Exponent ist
+Der Exponent, der mittels einer linearen Regression
+bestimmt wurde, ist
 \begin{equation*}
-    exp = \num{1.18 \pm 0.03}.
+    x = \num{1.18 \pm 0.03}.
 \end{equation*}
-%Erwartet wird 1.5?
+%erwartet wird 1.5
 
 \subsection{Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}
 Die Werte für die Spannungen und Ströme im Anlaufstromgebiet
@@ -49,10 +50,13 @@ befinden sich in den Tabellen \ref{tabf} bis \ref{tabh}.
 \input{build/tabg.tex}
 \input{build/tabh.tex}
 
-\noindent Die Temperatur im Anlaufstromgebiet ist
+\noindent Die Temperatur im Anlaufstromgebiet ist %Gleichung?
 \begin{equation*}
     T = \SI{2.44(12)e3}{\kelvin}.
 \end{equation*}
+%plot 
+%Formel am ende von 6
+%
 
 \subsection{Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}
 Die in Teil \ref{sec:a} verwendeten Heizleistungen sind
@@ -71,7 +75,8 @@ Emissionsgrad der Oberfläche $\eta$ sind
     \eta &= \num{0.28}.
 \end{align*}
 
-\noindent Daraus ergeben sich die Temperaturen
+\noindent Daraus ergeben sich mit der Gleichung \eqref{eqn:} 
+die Temperaturen
 \begin{align*}
     T_\text{1} &= \SI{1768.87}{\kelvin} \\
     T_\text{2} &= \SI{1829.38}{\kelvin} \\
@@ -79,6 +84,7 @@ Emissionsgrad der Oberfläche $\eta$ sind
     T_\text{4} &= \SI{2001.74}{\kelvin} \\
     T_\text{5} &= \SI{2039.71}{\kelvin}.
 \end{align*}
+%Gleichung anleitung d
 
 \subsection{Austrittsarbeit für Wolfram}
 Die berechneten Austrittsarbeiten $e_0 \phi$ sind
