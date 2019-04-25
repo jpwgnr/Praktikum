@@ -11,7 +11,7 @@ Parameter a(Amplitude)=0.474645632179012 +- 0.023061472822570733
 Dunkelstrom d=(1.62+/-0.07)e-09
 
 3.Messung Doppelspalt
-Die Spaltbreite b_literatur= 0.0001 und die Spaltbreite x= 0.0002 
-Die Spaltbreite b_experimentell=0.00014088171505249842+-5.194703353422237e-06
-Parameter a(Amplitude)=0.00019923399426518136 +- 4.3025099830364127e-13
-Dunkelstrom d=(3.03+/-0.20)e-09
+Die Spaltbreite b_literatur= 1e-05 und die Spaltbreite x= 2e-05 
+Die Spaltbreite b_experimentell=6.678621528623795e-05+-2.7033421970177963e-06
+Parameter a(Amplitude)=1.9950004909941174e-05 +- 2.3297652226820624e-13
+Dunkelstrom d=(2.31+/-0.16)e-09
