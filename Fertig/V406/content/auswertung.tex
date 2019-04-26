@@ -90,15 +90,16 @@ In Tab. \ref{tabc} befinden sich  die $x$-Koordinaten in Einheiten der Messanzei
 
 \input{tables/tab3.tex}
 
-\noindent In Abb. \ref{fig:plot3} werden die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen und es wird ein Fit in die Werte gelegt. 
+\noindent In Abb. \ref{fig:plot4} werden die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen, es wird ein Fit in die Werte gelegt
+und eine Theoriekurve eingetragen. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm, height=9cm]{build/plot3.pdf}
+    \includegraphics[width=15cm, height=9cm]{build/plot4.pdf}
     \caption{Die Werte aus Tab. \ref{tab3} gegeneinander aufgetragen.
-    Zu sehen ist das Beugungsbild eines Doppelspalts mit dem Fit eines
-    Einzelspalts als Einhüllende.}
-    \label{fig:plot3}
+    Zu sehen ist das Beugungsbild eines Doppelspalts mit dem Fit
+    als Einhüllende und einer Theoriekurve.}
+    \label{fig:plot4}
 \end{figure}
 
 \noindent Mit Hilfe einer Ausgleichsrechnung lassen sich wieder die Parameter $b$, $s$ und $d$ mit Gleichung \eqref{eqn:doppelspalt} bestimmen. Dieses mal aber für den Doppelspalt. 
@@ -109,6 +110,17 @@ In Tab. \ref{tabc} befinden sich  die $x$-Koordinaten in Einheiten der Messanzei
     s &= \SI{199\pm 4.302e-10}{\micro\meter} \\
     d &= \SI{3.03(20)}{\nano\ampere}. 
 \end{align*}
+
+\noindent Aus der Theoriekurve ergeben sich folgende Werte
+\begin{align*}
+    b &= \SI{55}{\micro\meter} \\
+    s &= \SI{480}{\micro\meter} \\
+    d &= \SI{1.6}{\nano\ampere}.
+\end{align*}
+Die Amplitude ergibt sich zu 
+\begin{equation*}
+    A = \SI{7e-5}{\ampere}. %Einheit richtig?
+\end{equation*}
 
 \noindent Der Literaturwert für die Breite der beiden Spalten beträgt
 \begin{equation*}
