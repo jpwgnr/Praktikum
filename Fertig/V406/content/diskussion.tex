@@ -13,11 +13,13 @@ Die Ausgleichsrechnung ergibt für die Amplitude einen Wert, dessen relativer Fe
 Der gefittete Wert für den Off-Strom hat einen relativen Fehler von \SI{4.32}{\percent} und eine relative Abweichung zum gemessenen Wert von \SI{1.25}{\percent}.
 
 \subsection{Interferenz am Doppelspalt}
-Die Spaltbreite besitzt einen relativen Fehler von \SI{3.7}{\percent}. Die Abweichung zum Literaturwert beträgt \SI{41}{\percent}.  
-Die Breite zwischen den Spalten hat einen relativen Fehler von \SI{2.16e-9}{\percent}. Der Off-Strom liegt \SI{89.38}{\percent} über dem gemessenen Wert. Der relative Fehler liegt bei \SI{6.6}{\percent}. Der Fit des Doppelspalts passt vom Bild her nicht sonderlich zu den richtigen Werten. Die ermittelten Werte passen aber, bis auf den Off-Strom, einigermaßen.
+Die gefittete Spaltbreite besitzt einen relativen Fehler von \SI{5.2}{\percent}. Die Abweichung zum Literaturwert beträgt \SI{1.82}{\percent}.  
+Die Breite zwischen den Spalten hat einen relativen Fehler von \SI{9.83}{\percent}. Der Off-Strom liegt \SI{52.5}{\percent} über dem gemessenen Wert. Der relative Fehler liegt bei \SI{8.6}{\percent}. Der Fit des Doppelspalts passt vom Bild her nicht sonderlich zu den richtigen Werten. Die ermittelten Werte passen aber, bis auf den Off-Strom, einigermaßen.
 \newline
+Da die Natur des Doppelspalts durch den Fit nicht ordentlich beschrieben werden kann, wurde eine Theoriekurve erzeugt, die die Datenwerte besser beschreibt. 
+Diese Werte werden im folgenden diskutiert.
 Die durch die Theoriekurve ermittelte Breite hat eine Abweichung von \SI{45}{\percent} zum Literaturwert.
-Der Spaltabstand weicht um \SI{140}{\percent} ab. Die Abweichung des Off-Stroms zum gemessenen Wert beträgt \SI{0}{\percent}. 
+Der Spaltabstand weicht um \SI{140}{\percent} ab. Für den Off-Strom wurde der gemessene Wert verwendet. Die Werte weichen zwar weiter ab als die Werte des Fits, nichts desto trotz, ist die Beschreibung visuell deutlich deutlich passender.  
 
 \subsection{Allgemeine Probleme bei der Auswertung}
 Die Daten wurden mittels Python ausgewertet. Zur Erstellung der Fits wurde das Package scipy \cite{scipy} genutzt. Es scheint aber so, als habe die "curve fit"-Funktion Schwierigkeiten dabei quadratische trigonometrische Funktionen auszuwerten. Aus dem Grund wurde die Wurzel aus der Funktion und den y-Werten gezogen, anschließend wurde gefittet und am Ende wurden alle Werte wieder quadriert. Das Ergebnis ist damit deutlich besser, als alle vorherigen Versuche. Trotzdem ist die Abweichung speziell beim ersten und dritten Graphen noch relativ groß, was dann auch die Abweichung zum Literaturwert um fast \SI{50}{\percent} erklärt. 
