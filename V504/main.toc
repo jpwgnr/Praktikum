@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.4}Die Langmuir-Schottkysche Raumladungsgleichung}{5}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Anlaufstromgebiet einer Hochvakuumdiode}{5}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Kennlinie der Hochvakuumdiode}{6}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}WIE SOLLEN WIR DAS NENNEN}{7}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.7}Temperaturberechnung}{7}{subsection.2.7}
 \contentsline {section}{\numberline {3}Fehlerrechnung}{7}{section.3}
 \contentsline {section}{\numberline {4}Durchführung}{8}{section.4}
 \contentsline {subsection}{\numberline {4.1}Kennlinienschar der Hochvakuumdiode}{8}{subsection.4.1}

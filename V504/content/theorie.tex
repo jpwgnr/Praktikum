@@ -21,7 +21,7 @@ Potential, das vom Außenbereich um einen Betrag $\phi$
 verschieden ist. Man kann dies wie in Abb. \ref{fig:topf}
 als Potentialtopf darstellen. Wenn ein Elektron diesen Topf 
 verlassen möchte, muss es gegen das Potential $\zeta$ 
-anlaufen können. Es muss also die Austrittsarbeit $e_0 \zeta$ 
+anlaufen können. Es muss also die Austrittsarbeit $e_0 \zeta$ %wirklich zeta?
 aufbringen können. 
 
 \begin{figure}
@@ -39,7 +39,7 @@ erbringen, um sich von der Metalloberfläche zu lösen.
 
 \noindent Als Näherung gilt 
 \begin{equation}
-    f(E) = e^{\frac{\zeta - E}{k T}}
+    f(E) = exp{\frac{\zeta - E}{k T}}
     \label{eqn:fermidirac}
 \end{equation}
 für die Wahrscheinlichkeitsverteilung, dass ein Elektron die 
@@ -60,9 +60,9 @@ Elektronen, die pro Zeit- und Flächeneinheit aus der
 Metalloberfläche austreten. Diese ist abhängig von der 
 Temperatur. Mittels einiger Umformungen und 
 Zusammenhänge aus der Quantenmechanik ergibt sich die 
-Richardson-Gleichung für die gesuchte Stromdichte $j_\text{S}(T)$ 
+Richardson-Gleichung für die gesuchte Stromdichte $j_\text{S}(T)$:
 \begin{equation}
-    j_\text{S}(T)= 4 \pi \frac{e_0 \, m_0 \, k^2}{h^3} \, T^2 \, e^{\frac{-e_0 \, \Phi}{k \, T}}.
+    j_\text{S}(T)= 4 \pi \frac{e_0 \, m_0 \, k^2}{h^3} \, T^2 \, exp{\frac{-e_0 \, \Phi}{k \, T}}.
     \label{eqn:richardson}
 \end{equation} 
 Dabei ist $e_0$ die Ladung des Elektrons und $m_0$ seine Masse. 
@@ -71,12 +71,12 @@ die Boltzmann-Konstante und $\Phi$ ein Potential. %Keine Ahnung ob das so ist ha
 
 \subsection{Hochvakuum-Diode}
 
-Die Messung des Sättigungsstroms einer emittierneden 
+Die Messung des Sättigungsstroms einer emittierenden 
 Metalloberfläche muss im Hochakuum durchgeführt werden, 
 damit die freien Elektronen nicht mit Luftmolekülen in 
 Wechselwirkungen treten. Der grundsätzliche Aufbau einer 
 Hochvakuum-Diode ist in Abb. \ref{fig:diode} zu erkennen.
-Dabei wird eine Heizspannung an die Kathode angelegt. Dadurch 
+Es wird eine Heizspannung an die Kathode angelegt. Dadurch 
 lösen sich Elektronen und bewegen sich in Richtung der Anode. 
 An der Anode ist eine Saugspannung angeschlossen, um das 
 Gegenfeld zu verringern. Ist dieses zu groß, kommen die 
@@ -99,8 +99,8 @@ Bewegung. Auch die Raumladungsdichte $\rho$ ist eine Funktion
 des Ortes und nimmt zur Anode hin ab. Dies gilt, da die 
 Geschwindigkeit zunimmt und die Stromdichte $j$ konstant ist. 
 Nach einigen Umformungen und einer Integration lässt sich aus 
-der Potentialgleichung herleiten, dass der Zusammenhang 
-zwischen der Stromdichte $j$ und der Anodenspannung $V$ sich 
+der Potentialgleichung herleiten, dass sich der Zusammenhang 
+zwischen der Stromdichte $j$ und der Anodenspannung $V$ 
 zu 
 \begin{equation}
     j = \frac{4}{9} \epsilon_0 \sqrt{2 \frac{e_0}{m_0}} \frac{V^{\frac{3}{2}}}{a^2}
@@ -108,12 +108,12 @@ zu
 \end{equation}
 ergibt. Diese Gleichung wird auch Langmuir-Schottkysches 
 Raumladungsgesetz genannt. Der Gültigkeitsbereich ist das 
-Raumladungsgebiet wie in Abb. \ref{fig:langmuirschottky}
+Raumladungsgebiet - wie in Abb. \ref{fig:langmuirschottky}
 dargestellt.  
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=5cm]{build/raumladungsgebiet.png}
+    \includegraphics[width=13cm, height=5cm]{build/raumladungsgebiet.png}
     \caption{Potential, Feldstärke und Raumladungsdichte im Raumladungsgebiet
         einer Hochvakuumdiode. \cite{V504}}
     \label{fig:langmuirschottky}
@@ -145,7 +145,7 @@ verschieben sie sich um $e_0 V$.
 \noindent Die Abhängigkeit der Anlaufstromstärke vom äußeren
 Potential ist durch folgende Gleichung darstellbar
 \begin{equation}
-    j(V) = const \, e^(-\frac{e_0 \, V}{k \, T}).
+    j(V) = const \, exp{-\frac{e_0 \, V}{k \, T}}.
     \label{eqn:anlauf}
 \end{equation}
 
@@ -166,9 +166,8 @@ Austrittsarbeit der Kathode ermitteln.
     \label{fig:gebiete}
 \end{figure}
 
-%Lineare Regression erklären?
 
-\subsection{WIE SOLLEN WIR DAS NENNEN} %umbenennen lol
+\subsection{Temperaturberechnung} %umbenennen?
 Das Stefan-Boltzmannsche Gesetz lautet
 \begin{equation*}
     N = f \, \eta \, \sigma \, T^4.
@@ -193,3 +192,5 @@ Also lässt sich daraus die Temperatur durch
     \label{eqn:Temp}
 \end{equation}
 berechnen.
+
+%Lineare Regression erklären?

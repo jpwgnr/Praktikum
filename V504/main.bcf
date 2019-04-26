@@ -1990,6 +1990,11 @@
     <bcf:citekey order="14">V504</bcf:citekey>
     <bcf:citekey order="15">V504</bcf:citekey>
     <bcf:citekey order="16">V504</bcf:citekey>
+    <bcf:citekey order="17">matplotlib</bcf:citekey>
+    <bcf:citekey order="18">scipy</bcf:citekey>
+    <bcf:citekey order="19">uncertainties</bcf:citekey>
+    <bcf:citekey order="20">numpy</bcf:citekey>
+    <bcf:citekey order="21">wiki</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

@@ -19,6 +19,19 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{wiki}{article}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labeltitlesource}{title}
+      \field{title}{Austrittsarbeit}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Austrittsarbeit
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Austrittsarbeit
+      \endverb
+    \endentry
     \entry{V504}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
