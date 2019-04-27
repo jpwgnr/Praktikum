@@ -1,0 +1,1 @@
+Steigung = [1 2 3] Fehler: 2
