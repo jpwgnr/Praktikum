@@ -23,7 +23,8 @@
 \contentsline {section}{\numberline {6}Diskussion}{19}{section.6}
 \contentsline {subsection}{\numberline {6.1}Kennlinien der Hochvakuumdiode}{19}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Gültigkeitsbereich des Raumladungsgesetzes}{19}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}{19}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}{19}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Austrittsarbeit für Wolfram}{19}{subsection.6.5}
-\contentsline {section}{\nonumberline Literatur}{20}{section*.21}
+\contentsline {subsection}{\numberline {6.3}Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}{20}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Leistungsbilanz des Heizstromkreises und Abschätzung der Kathodentemperatur}{20}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Austrittsarbeit für Wolfram}{20}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Fazit}{20}{subsection.6.6}
+\contentsline {section}{\nonumberline Literatur}{21}{section*.21}

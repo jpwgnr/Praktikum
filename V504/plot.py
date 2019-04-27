@@ -49,18 +49,18 @@ I9 = np.append(np.append(I6[:7], I7[:8]), I8[:])
 #functions 
 some.tabelle([np.log(U5), np.log(I5)], finished_file="build/tab2.tex", vars_name=[r"$ln(U/U_0)$", r"$ln(I/I_0)$"], label_text="tab2", caption_text=r"Logarithmierte Spannungen und logarithmierte Stromstärken.", precision=2) 
 
-steigung1, yabschnitt1, err1 = some.linReg(x=np.log(U5[0:5]), y=np.log(I5[0:5]), x_name=r"$log(U/U_0)$", y_name=r"$log(I/I_0)$", num=2,  x_add=0, file_name="build/plot2.pdf")
+steigung1, yabschnitt1, err1 = some.linReg(x=np.log(U5[0:3]), y=np.log(I5[0:3]), x_name=r"$log(U/U_0)$", y_name=r"$log(I/I_0)$", num=2,  x_add=0.3, file_name="build/plot2.pdf")
 
-steigung2, yabschnitt2, err2 = some.linReg(x=U9, y=np.log(I9), x_name=r"$U$", y_name=r"$log(I/I_0)$", num=3,  x_add=0, file_name="build/plot3.pdf")
+steigung2, yabschnitt2, err2 = some.linReg(x=U9, y=np.log(I9), x_name=r"$U$", y_name=r"$log(I/I_0)$", num=3,  x_add=0.1, file_name="build/plot3.pdf")
 
 #calculate 
 
 #save solution 
-newU1 = U1[7:]
-newU2 = U2[7:]
-newU3 = U3[10:]
-newU4 = U4[11:]
-newU5 = U5[19:]
+newU1 = np.linspace(U1[7], 260, 1000)
+newU2 = np.linspace(U2[7], 260, 1000)
+newU3 = np.linspace(U3[10], 260, 1000)
+newU4 = np.linspace(U4[11], 260, 1000)
+newU5 = np.linspace(U5[19], 260, 1000)
 
 #Make plots for data
 plt.figure(1)
@@ -69,11 +69,11 @@ plt.plot(U2, I2, "xb", label=r"$\SI{2.1}{\ampere}$, $\SI{3.2}{\volt}$")
 plt.plot(U3, I3, "xg", label=r"$\SI{2.2}{\ampere}$, $\SI{3.5}{\volt}$")
 plt.plot(U4, I4, "xy", label=r"$\SI{2.3}{\ampere}$, $\SI{4.0}{\volt}$")
 plt.plot(U5, I5, "xk", label=r"$\SI{2.4}{\ampere}$, $\SI{4.1}{\volt}$")
-plt.plot(newU1, const(newU1, 8e-6), "r", label="Fit", linewidth=1.0)
-plt.plot(newU2, const(newU2, 20e-6), "b", label="Fit", linewidth=1.0)
-plt.plot(newU3, const(newU3, 37e-6), "g", label="Fit", linewidth=1.0)
-plt.plot(newU4, const(newU4, 80e-6), "y", label="Fit", linewidth=1.0)
-plt.plot(newU5, const(newU5, 175e-6), "k", label="Fit", linewidth=1.0)
+plt.plot(newU1, const(newU1, 8e-6), "r",  linewidth=1.0)
+plt.plot(newU2, const(newU2, 20e-6), "b", linewidth=1.0)
+plt.plot(newU3, const(newU3, 40e-6), "g", linewidth=1.0)
+plt.plot(newU4, const(newU4, 82e-6), "y", linewidth=1.0)
+plt.plot(newU5, const(newU5, 178e-6), "k", linewidth=1.0)
 plt.xlabel(r"$U / \si{\volt}$")
 plt.ylabel(r"$I / \si{\ampere}$")
 plt.legend(loc="best")
