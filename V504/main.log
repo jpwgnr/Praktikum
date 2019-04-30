@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  28 APR 2019 11:12
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  29 APR 2019 13:10
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.183 seconds
+luaotfload | main : initialization completed in 0.200 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x7faa3e512850
-(polyglossia)            hyphenation	
+(polyglossia)            synonyms	table: 0x7fb164705260
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x7faa3e512a10
-(polyglossia)            hyphenation	
+(polyglossia)            synonyms	table: 0x7fb164705420
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3329,15 +3329,15 @@ File: build/potentialtopf.png Graphic file (type png)
 <use build/potentialtopf.png>
 Package luatex.def Info: build/potentialtopf.png  used on input line 29.
 (luatex.def)             Requested size: 170.70322pt x 85.35054pt.
+(load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
+ts/otl/lmroman8-regular.luc)(load luc: /Users/Karina/Library/texlive/2018/texmf-
+var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
 <build/fermidirac.png, id=83, 1252.68pt x 762.85pt>
 File: build/fermidirac.png Graphic file (type png)
 <use build/fermidirac.png>
 Package luatex.def Info: build/fermidirac.png  used on input line 50.
 (luatex.def)             Requested size: 284.51685pt x 170.71426pt.
- [3<./build/potentialtopf.png>](load luc: /Users/Karina/Library/texlive/2018/tex
-mf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /Users/Kar
-ina/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regul
-ar.luc)
+ [3<./build/potentialtopf.png>]
 <build/diode.png, id=100, 1220.56pt x 693.59125pt>
 File: build/diode.png Graphic file (type png)
 <use build/diode.png>
@@ -3471,7 +3471,7 @@ c/lm-math/latinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentyp
 e/public/lm/lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/open
 type/public/lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/o
 pentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (21 pages, 515038 bytes).
+Output written on main.pdf (21 pages, 515285 bytes).
 
 PDF statistics: 516 PDF objects out of 1000 (max. 8388607)
  401 compressed objects within 5 object streams
