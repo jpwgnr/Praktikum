@@ -21,34 +21,35 @@ in den folgenden Tabellen \ref{taba1} bis \ref{taba5} aufgelistet.
 
 %D gegen U_d (plot1) -> D/U_d für verschiedene U_B
 \noindent Die Leuchtfleckverschiebung $D$ ist in Tab. \ref{tab1} und in Abb. \ref{fig:plot1}
-für die fünf Beschleunigungsspannungen gegen das Verhältnis aus 
-Ablenkspannung $U_\text{d}$ und der Beschleunigungsspannung $U_\text{B}$ aufgetragen.
+für die fünf Beschleunigungsspannungen gegen die Ablenkspannung $U_\text{d}$ aufgetragen.
 
 \input{tables/tab1.tex}
 
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=7cm]{build/plot1.pdf}
-    \caption{Die Leuchtfleckverschiebung $D$ ist gegen das Verhältnis aus 
-        Ablenkspannung $U_\text{d}$ und Beschleunigungsspannung $U_\text{B}$ aufgetragen. Es sind die Daten
+    \caption{Die Leuchtfleckverschiebung $D$ ist gegen die Ablenkspannung $U_\text{d}$ aufgetragen. Es sind die Daten
     für die fünf verschiedenen Beschleunigungsspannungen und
     jeweils einen Fit eingezeichnet.}
     \label{fig:plot1}
 \end{figure}
 
 \noindent Aus dem Fit in Abb. \ref{fig:plot1} lässt sich die Steigung  
-$\frac{p L}{2 d}$ experimentell bestimmen:
-\begin{align*} 
-   U_\text{B} = \SI{180}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{31.88(22)}{\centi\meter} \\
-    U_\text{B} = \SI{230}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{32.86(18)}{\centi\meter} \\
-    U_\text{B} = \SI{280}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.09(22)}{\centi\meter} \\
-    U_\text{B} = \SI{330}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.05(22)}{\centi\meter} \\
-    U_\text{B} = \SI{380}{\volt} \Rightarrow \frac{p L}{2 d} &= \SI{33.10(15)}{\centi\meter}.
-\end{align*}
-Der mit Gleichung \eqref{eqn:mittelwert}
-errechnete Mittelwert für die Steigung ist
+$\frac{p L}{2 d \sqrt{U_\text{B}}}$ experimentell bestimmen.
+Die Werte sind in Tab. \ref{tabb} und Abb. \ref{fig:plot5} gegen die Inverse der Beschleunigungsspannung aufgetragen.
+
+\input{build/tab1b.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=7cm]{build/plot5.pdf}
+    \caption{Die Empfindlichkeit $D/U_\text{d}$ ist gegen die Beschleunigungsspannung $U_\text{B}$ aufgetragen. Es sind die Daten und einen Fit eingezeichnet.}
+    \label{fig:plot5}
+\end{figure}
+
+\noindent Der aus der Steigung dieses Fits errechnete Wert ergibt sich zu
 \begin{equation*}
-    \frac{p L}{2 d} = \SI{32.8(5)}{\centi\meter}.
+    \frac{p L}{2 d} = \SI{30.84 \pm 0.66}{\centi\meter}.
 \end{equation*}
 
 %Werte p, d, L angeben
@@ -105,7 +106,7 @@ von $U_\text{B} = \SI{360}{\volt}$ befindet sich in Tabelle \ref{tabc2}.
 in Tab. \ref{tab2} und in Abb. \ref{fig:plot2} aufgetragen. Dabei ist $L$ der Strahlweg und
 hat einen Wert von
 \begin{equation*}
-    L = \SI{14.3}{\centi\meter},
+    L = \SI{17.5}{\centi\meter},
 \end{equation*}
 wie bereits in Abschnitt \ref{sec:prop} erwähnt.
 
@@ -114,17 +115,23 @@ wie bereits in Abschnitt \ref{sec:prop} erwähnt.
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=7cm]{build/plot2.pdf}
-    \caption{$\frac{D}{L^2 + D^2}$ gegen $\frac{B}{\sqrt{8 U_\text{B}}}$ aufgetragen.
+    \caption{$\frac{D}{L^2 + D^2}$ gegen $B$ aufgetragen.
     Es sind die Daten und die Fits für beide Beschleunigungsspannungen
     eingetragen.}
     \label{fig:plot2}
 \end{figure}
 
-\noindent Durch die quadrierte Steigung der beiden Fits
+\noindent Durch die quadrierte Steigung multipliziert mit der achtfachen Beschleunigungsspannung der beiden Fits
 lässt sich die spezifische Elektronenladung experimentell bestimmen.
 Diese ergibt sich zu
+\begin{align*}
+    \frac{e_0}{m_0}(1) &= \SI{1.39e11}{\coulomb\per\kilogram}\\
+    \frac{e_0}{m_0}(2) &= \SI{1.51e11}{\coulomb\per\kilogram}.
+\end{align*}
+
+\noindent Der Mittelwert ergibt sich zu 
 \begin{equation*}
-    \frac{e_0}{m_0} = \SI{3.09(12)e11}{\coulomb\per\kilogram}.
+    \frac{e_0}{m_0} = \SI{1.45(06)e11}{\coulomb\per\kilo\gram}.
 \end{equation*}
 
 \noindent Der Literaturwert liegt bei 
