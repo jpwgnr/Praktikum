@@ -19,11 +19,12 @@ evakuiert.
 %irgendwas hinschreiben
 
 \subsubsection{Aufbau einer Kathodenstrahlröhre}
-Die Kathodenstrahlröhre besteht im Wesentlichen aus drei 
-Bauteilen (siehe Abb. \ref{fig:roehre}). Zum einen gibt es eine Elektronenkanone, die freie 
-Elektronen erzeugt und beschleunigt und in der diese zu einem 
-Strahl fokussiert werden. Außerdem gibt es ein Ablenk- und 
-ein Nachweissystem.
+Die Kathodenstrahlröhre besteht aus drei 
+Teilen (siehe Abb. \ref{fig:roehre}). Ein Teil ist die Elektronenkanone.
+Diese erzeugt freie Elektronen und beschleunigt sie.
+Die Elektronen werden dort zu einem Strahl fokussiert. 
+Außerdem gibt es ein aus Platten bestehendes Ablenksystem
+sowie eine Vorrichtung, um die Elektronen nachzuweisen.
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=7cm]{build/roehre.png}
@@ -31,11 +32,11 @@ ein Nachweissystem.
     \label{fig:roehre}
 \end{figure}
 
-\noindent Die Elektronen werden hierfür durch Glühemission in einem bis zur 
-Rotglut erhitzten Draht erzeugt. 
-Die Kathode ist von einem Wehnelt-Zylinder umgeben. Mit 
-seinem negativen Potential kann die Intensität 
-des Elektronenstrahls gesteuert weden. 
+\noindent Die Elektronen werden hierfür durch Erhitzen der Kathode,
+welche durch einen Draht erhitzt wird, erzeugt.
+Die Kathode befindet sich in einem sogenannten Wehnelt-Zylinder.
+%Durch das negativen Potential des Zylinders kann die Intensität 
+%des Elektronenstrahls gesteuert werden. 
 Vor dem Zylinder befindet sich eine positiv geladene 
 Elektrode, die dafür sorgt, dass sich die freien Elektronen, 
 die die Barriere des Zylinders überwinden, auf eine 
@@ -69,13 +70,15 @@ grafisch nachvollzogen werden.
     \label{fig:roehre2}
 \end{figure}
 
-\noindent Ist der Plattenabstand $d$ klein gegen die Plattenlänge $p$ 
-der Ablenkplatten, kann man annehmen, dass das elektrische 
-Feld homogen ist und sich die Feldstärke zu
+\noindent 
+Das elektrische Feld kann als homogen angenommen werden,
+wenn der Abstand $d$ der Platten kleiner als die Länge $p$
+der Platten ist.
+Die Feldstärke ist dann
 \begin{equation*}
-    E = \frac{U_\text{d}}{d}
-\end{equation*} 
-ergibt. Auf ein Elektron wirkt dann die entsprechende Kraft, 
+    E = \frac{U_\text{d}}{d}.
+\end{equation*}
+Auf ein Elektron wirkt die entsprechende Coulombkraft, 
 die außerhalb der Platten null wird. Diese Kraft ist konstant, 
 wodurch sich eine Beschleunigung in $y$-Richtung  
 %---> wir haben vorher keine Richtungen erwähnt
@@ -127,18 +130,18 @@ eine Kraft aus. Magnetostatische Felder dagegen üben nur auf
 Ladungen, die sich relativ zum Feld bewegen, eine Kraft aus.
 
 \subsubsection{Berechnung der Elektronenbahn im homogenen Magnetfeld}
-Eine Ladung $q$, die sich mit der Geschwindigkeit $\vec{v}$ in 
-einem homogenen Magnetfeld $\vec{B}$ bewegt, erfährt die Lorentz-Kraft 
+Auf eine Ladung $q$, die sich mit der Geschwindigkeit $\vec{v}$ in 
+einem homogenen Magnetfeld $\vec{B}$ bewegt, wirkt die Lorentz-Kraft 
 \begin{equation}
     \vec{F_\text{L}}= q \, \vec{v} \cross \vec{B}.
     \label{eqn:Lorentz}
 \end{equation}
 
-\noindent Die Lorentz-Kraft ist nur nicht null, wenn es eine 
-Geschwindigkeitskomponente $\vec{v}$ gibt, die senkrecht zu 
-$\vec{B}$ ausgerichtet ist. 
+\noindent Die Lorentz-Kraft verschwindet nur nicht, wenn es eine
+Komponente von $\vec{v}$ gibt, die senkrecht zu
+$\vec{B}$ ausgerichtet ist.
 
-\noindent Das  Magnetfeld ändert allerdings nur die Richtung und ändert 
+\noindent Das Magnetfeld ändert allerdings nur die Richtung und ändert 
 nicht die Geschwindigkeit. Also ist die Energie konstant 
 innerhalb des Systems der Ladung.
 %-> E_pot ändert sich nicht -> E_kin konstant -> |vec(v)|=v_0 konstant
@@ -149,30 +152,32 @@ Lorentz- und der Zentrifugalkraft bestimmen. Es ergibt sich
     r= \frac{m_\text{0} \, v_\text{0}}{e_\text{0} \, B}.
     \label{eqn:radius}
 \end{equation}
-Die rechte Seite der Gleichung ist konstant, insofern ist die 
-Krümmungsbahn eine Kreisbahn. 
+Die Krümmungsbahn ist eine Kreisbahn, weil der Radius
+konstant ist.
 
 \subsubsection{Bestimmung der spezifischen Elektronenladung}
-Mit Gleichung \ref{eqn:radius} lässt sich die spezifische 
-Ladung der Elektronen $e_\text{0}/m_\text{0}$ bestimmen. 
-Mit der Beschleunigungsspannung $U_\text{B}$ ergibt sich die 
+Die spezifische 
+Ladung von Elektronen $e_\text{0}/m_\text{0}$ lässt sich
+mit Gleichung \eqref{eqn:radius} bestimmen. 
+Mit der Beschleunigungsspannung $\U_\text{B}$ ergibt sich die 
 konstante Geschwindigkeit $v_\text{0}$ zu 
 \begin{equation*}
     v_\text{0}= \sqrt{2 \, U_\text{B} \frac{e_\text{0}}{m_\text{0}}}.
 \end{equation*}
-In einem feldfreien Raum bewegen sich die Elektronen eines 
-Kathodenstrahls in Richtung Mittelpunkt des Leuchtschirms und 
-erzeugen einen Leuchtfleck. 
-Wenn das Magnetfeld eingeschaltet wird, verschiebt sich 
-der Leuchtfleck aufgrund der Krümmung auf der vertikalen Achse 
-um das Stück $D$. Zwischen dem Wirkungsbereich $L$ (das ist die Weite 
+Die Elektronen eines Kathodenstrahls 
+in einem feldfreien Raum bewegen sich
+in Richtung Mittelpunkt des Leuchtschirms.
+Sie erzeugen einen Leuchtfleck. 
+Wenn ein Magnetfeld eingeschaltet wird, verschiebt sich 
+der Leuchtfleck aufgrund der Krümmung auf einer der Achsen 
+um den Abstand $D$. Zwischen dem Wirkungsbereich $L$ (das ist die Weite 
 zwischen der Quelle und dem Schirm), dem Stück $D$ und dem 
 Radius $r$ ergibt sich über den Satz des Pythagoras die 
 Verbindung
 \begin{equation*}
     r = \frac{L^2 + D^2}{2D}.
 \end{equation*}
-Dies kann in \ref{eqn:radius} eingesetzt werden.
+Dies kann in \eqref{eqn:radius} eingesetzt werden.
 Damit ergibt sich der Zusammenhang
 \begin{equation}
     \frac{D}{L^2 + D^2}= \frac{1}{\sqrt{8 \, U_\text{B}}}\sqrt{\frac{e_\text{0}}{m_\text{0}}} B.
