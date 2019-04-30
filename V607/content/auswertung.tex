@@ -5,7 +5,13 @@ Für die Auswertung wird Python und im Speziellen
 Matplotlib \cite{matplotlib}, SciPy \cite{scipy},
 Uncertainties \cite{uncertainties} und NumPy \cite{numpy} verwendet.
 
-\noindent Die mit Gleichung \eqref{eqn:V} ermittelten Luftvolumina
+\noindent Die Werte für die Abstände in Abb. \ref{fig:Strahlgeometrie} sind
+\begin{align*}
+    x_0 &= \SI{83}{\milli\meter} \\
+    x_1 &= \SI{67}{\milli\meter} \\
+    x_2 &= \SI{100}{\milli\meter}.
+\end{align*}
+Die mit Gleichung \eqref{eqn:V} ermittelten Luftvolumina
 für die Blendendurchmesser $d_1 = \SI{2}{\milli\meter}$ und
 $d_2 = \SI{5}{\milli\meter}$ sind
 \begin{align*}
@@ -14,10 +20,15 @@ $d_2 = \SI{5}{\milli\meter}$ sind
 \end{align*}
 
 
-\subsection{Bestimmung des Ionenstroms und der Energiedosisrate}
+\subsection{Bestimmung der Ionendosis und der Energiedosisrate}
 
 \subsubsection{Kleinere Blende}
 %Ionendosis J aus V und I_S bestimmen
+Der Kondensatorstrom $I_\text{K}$ in Abhängigkeit von der
+Kondensatorspannung $U_\text{K}$ bei der Blende mit
+$d_1 = \SI{2}{\milli\meter}$ ist in Tab. \ref{taba}
+dargestellt. Die Werte für die Blende mit 
+$d_2 = \SI{5}{\milli\meter}$ befinden sich in Tab. \ref{tabb}.
 
 %Anzahl der erzeugten Ionen aus J bestimmen
 
@@ -33,6 +44,11 @@ $d_2 = \SI{5}{\milli\meter}$ sind
 
 \subsection{Ionenstrom als Funktion des Anodenstroms}
 
+Die Kondensatorströme $I_\text{K}$ in Abhängigkeit vom
+Anodenstrom $I_\text{A}$ für die beiden Kondensatorspannungen
+$U_\text{K} = \SI{500}{\volt}$ und $U_\text{K} = \SI{300}{\volt}$
+sind in \ref{tabc} eingetragen.
+
 \subsubsection{Erste Kondensatorspannung}
 %I_K gegen I_A plotten
 
@@ -41,6 +57,10 @@ $d_2 = \SI{5}{\milli\meter}$ sind
 
 
 \subsection{Ionenstrom als Funktion der Beschleunigungsspannung}
+
+
+
+Die Kondensatorspannungen $I_\text{K}$
 
 \subsubsection{Erste Kondensatorspannung}
 %I_K gegen U_B plotten
