@@ -1,1 +1,4 @@
-Steigung = [1 2 3] Fehler: 2
+Ergebnisse
+a) Sättigungsstrom 1: 4.5000000000000005e-10 A, Sättigungsstrom 2: 2.6e-09 A
+Ionendosis J: 1
+Anzahl erzeugter Ionen: 1 Ionisationsenergie(Literatur): 1, Energiedosis D: 1, Energiedosisrate: 1
