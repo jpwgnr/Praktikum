@@ -11,17 +11,8 @@ der von einem System aufgenommenen Dosis bzw. Dosisleistung.
 Es wird die mit der ionisierenden Strahlung
 verbundene Strahlenwirkung gemessen.
 
-\subsection{Energiedosis D}
-Die Energiedosis ist das Verhältnis von absorbierter
-Energie $dE$ zu der Masse $dm$ des Absorbers.
-Sie wird beschrieben durch
-\begin{equation*}
-    D = \frac{dE}{dm} = \frac{1}{\rho} * \frac{dE}{dV}.
-    \label{eqn:Energiedosis}
-\end{equation*}
-Dabei ist $\rho$ die Dichte des Absorbers.
 
-\subsection{Ionendosis J}
+\subsection{Ionendosis J und Ionendosisrate j}
 Mit der Ionisation des bestrahlten Materials geht zumeist
 eine Absorption von Röntgenstrahlung einher. %gleiche Formulierung wie in der Anleitung
 Die Ionendosis ist durch die in Luft erzeugte Ladung $dQ$
@@ -30,6 +21,34 @@ relativ zur Masse $dm_\text{L}$ der bestrahlten Luft definiert:
     J = \frac{dQ}{dm_\text{L}}.
     \label{eqn:Ionendosis}
 \end{equation*}
+
+Die Ionendosisrate $\dot{J}$ entspricht dem zeitlichen Differential der Ionendosis $J$, also gilt 
+\begin{equation}
+    j = \dot{J} =\frac{dQ}{dt} \frac{1}{dm_\text{L}} =\frac{I}{dm_\text{L}} .
+    \label{eqn:Ionendosis}
+\end{equation}
+
+\subsection{Energiedosis D und die mittlere Energiedosisrate d}
+Die Energiedosis ist das Verhältnis von absorbierter
+Energie $dE$ zu der Masse $dm$ des Absorbers.
+Sie wird beschrieben durch
+\begin{equation*}
+    D = \frac{dE}{dm} = \frac{1}{\rho} * \frac{dE}{dV}.
+    \label{eqn:Energiedosis}
+\end{equation*}
+Dabei ist $\rho$ die Dichte des Absorbers.
+Die Energiedosisrate $\dot{D}$ ergibt sich im Mittel zu 
+\begin{equation}
+    d = \dot{D}_\text{m} = \frac{D}{t} =\frac{E}{m \cdot t} = n \cdot \Phi = \frac{j \cdot \Phi}{e}.
+    \label{eqn:Energiedosisrate}
+\end{equation}
+Dabei ist $\Phi$ die Ionisationsenergie, $n$ die Anzahl der Ionen pro Kilogramm und pro Sekunde. 
+Diese ergibt sich zu
+\begin{equation*}
+    n = \frac{j}{e},
+    \label{eqn:Ionenanzahl}
+\end{equation*}
+wobei $e$ der Elementarladung entspricht. 
 
 \subsection{Äquivalenzdosis H}
 Die Wirkung ionisierender Strahlung auf biologische Materie

@@ -1,4 +1,20 @@
 Ergebnisse
-a) Sättigungsstrom 1: 4.5000000000000005e-10 A, Sättigungsstrom 2: 2.6e-09 A
-Ionendosis J: 1
-Anzahl erzeugter Ionen: 1 Ionisationsenergie(Literatur): 1, Energiedosis D: 1, Energiedosisrate: 1
+Sättigungsstrom 1: 4.5000000000000005e-10 A
+Sättigungsstrom 2: 2.6e-09 A
+Ionendosisrate Jpunkt1: 1.3443277435189962e-05 A/kg
+Ionendosisrate Jpunkt2: 1.2445470291585404e-05 A/kg
+Ionendosisrate Jpunkt_Mittel= (1.29+/-0.05)e-05 A/kg
+Anzahl erzeugter Ionen pro kg und Sekunde: (8.09+/-0.31)e+13 kg^-1 s^-1
+Ionisationsenergie(Literatur): 5.28e-18 J
+P_m: 0.000427+/-0.000016 J kg^-1 s^-1
+
+c)Parameter: 
+Steigung1 = 0.002748872180451128+-4.3893291787448534e-05
+yAbschnitt1= -4.3157894736841706e-11
+Steigung2 = 0.0024736842105263163+-3.2941904362199435e-05
+yAbschnitt2= 1.6315789473684274e-11
+d) Parameter:
+Amplitude3= 4.314285719770979e-18+-1.1244791276101054e-19
+yAbschnitt3 = -1.8000000486481666e-10+-7.265736444644749e-11
+Amplitude4= 3.824733479554566e-18+-1.3016347863194585e-19
+yAbschnitt4 = -1.3522388344444143e-10+-8.410414109840411e-11

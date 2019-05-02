@@ -32,32 +32,31 @@ Ik42 = Ik42 * 1e-9
 #extra values
 Sat1 = 0.45*1e-9
 Sat2 = 2.6*1e-9
-V1 = 0.278*1e-4
-V2 = 1.735*1e-4
+V1 = 27.8*1e-6
+V2 = 173.5*1e-6
 #functions 
 def quad(x, a, b):
     return a*x**2+b
 
 #Generate linReg-Plot
-some.linReg(x=Ia3, y=Ik31, x_name=r"I_\text{A} / \si{\ampere}", y_name=r"I_\text{K,1}", num=1,  x_add=0, file_name="build/plot1.pdf")
-some.linReg(x=Ia3, y=Ik32, x_name=r"I_\text{A} / \si{\ampere}", y_name=r"I_\text{K,2}", num=2,  x_add=0, file_name="build/plot2.pdf")
-some.linReg(x=Ub4, y=Ik41, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,1}", num=3,  x_add=0, file_name="build/plot3.pdf")
-some.linReg(x=Ub4, y=Ik42, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", num=4,  x_add=0, file_name="build/plot4.pdf")
+steigung1, yabschnitt1, err1 = some.linReg(x=Ia3, y=Ik31, x_name=r"I_\text{A} / \si{\ampere}", y_name=r"I_\text{K,1}", num=1,  x_add=0, file_name="build/plot1.pdf")
+steigung2, yabschnitt2, err2 = some.linReg(x=Ia3, y=Ik32, x_name=r"I_\text{A} / \si{\ampere}", y_name=r"I_\text{K,2}", num=2,  x_add=0, file_name="build/plot2.pdf")
 #Generate curve-fit-Plot 
-some.curvefit(x=Ub4, y=Ik41, num=5, x_add=0, function=quad, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", file_name="build/plot5.pdf")
-some.curvefit(x=Ub4, y=Ik41, num=6, x_add=0, function=quad, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", file_name="build/plot6.pdf")
+params3, err3 = some.curvefit(x=Ub4, y=Ik41, num=3, x_add=0, function=quad, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", file_name="build/plot3.pdf")
+params4, err4 = some.curvefit(x=Ub4, y=Ik42, num=4, x_add=0, function=quad, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", file_name="build/plot4.pdf")
 
 #Rechnung 
 dichteluft= 1.2041 #kg/m^3
 J1punkt = Sat1* 1/(V1*dichteluft) #A/kg
 J2punkt = Sat2* 1/(V2*dichteluft) #A/kg
-n = 1
-ionenergie = 35 
-D = 1 
-Dpunkt = 1 
+J = np.array([J1punkt, J2punkt])
+mittelJ = ufloat(J.mean(), J.std())
+n = mittelJ/1.6e-19
+phi= 52.8e-19
+P = n*phi 
 
 #save solution
 file = open("build/solution.txt", "w")
-file.write(f"Ergebnisse\na) Sättigungsstrom 1: {Sat1} A, Sättigungsstrom 2: {Sat2} A\nIonendosisrate Jpunkt1: {J1punkt} A/kg\n Ionendosisrate Jpunkt2: {J2punkt} A/kg\nAnzahl erzeugter Ionen: {n} Ionisationsenergie(Literatur): {ionenergie} Gy/(C/kg), Energiedosis D: {D}, Energiedosisrate: {Dpunkt}\n")
+file.write(f"Ergebnisse\nSättigungsstrom 1: {Sat1} A\nSättigungsstrom 2: {Sat2} A\nIonendosisrate Jpunkt1: {J1punkt} A/kg\nIonendosisrate Jpunkt2: {J2punkt} A/kg\nIonendosisrate Jpunkt_Mittel= {mittelJ} A/kg\nAnzahl erzeugter Ionen pro kg und Sekunde: {n} kg^-1 s^-1\nIonisationsenergie(Literatur): {phi} J\nP_m: {P} J kg^-1 s^-1\n\nc)Parameter: \nSteigung1 = {steigung1}+-{err1}\nyAbschnitt1= {yabschnitt1}\nSteigung2 = {steigung2}+-{err2}\nyAbschnitt2= {yabschnitt2}\nd) Parameter:\nAmplitude3= {params3[0]}+-{err3[0]}\nyAbschnitt3 = {params3[1]}+-{err3[1]}\nAmplitude4= {params4[0]}+-{err4[0]}\nyAbschnitt4 = {params4[1]}+-{err4[1]}")
 file.close()
 

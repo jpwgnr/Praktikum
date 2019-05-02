@@ -15,12 +15,12 @@ Die mit Gleichung \eqref{eqn:V} ermittelten Luftvolumina
 für die Blendendurchmesser $d_1 = \SI{2}{\milli\meter}$ und
 $d_2 = \SI{5}{\milli\meter}$ sind
 \begin{align*}
-    V_1 &= \SI{193}{\nano\meter\cubed} \\ %habe 27.77 cm^3 raus
-    V_2 &= \SI{1207}{\nano\meter\cubed}.  %habe 173.5 cm^3 raus
+    V_1 &= \SI{27.77}{\centi\meter\cubed} \\ 
+    V_2 &= \SI{173.5}{\centi\meter\cubed}.  
 \end{align*}
 
 
-\subsection{Bestimmung der Ionendosis und der Energiedosisrate}
+\subsection{Bestimmung der Ionendosisrate und der Energiedosisrate}
 
 %Ionendosis J aus V und I_S bestimmen
 Der Kondensatorstrom $I_\text{K}$ in Abhängigkeit von der
@@ -29,47 +29,45 @@ $d_1 = \SI{2}{\milli\meter}$ ist in Tab. \ref{taba}
 dargestellt. Die Werte für die Blende mit 
 $d_2 = \SI{5}{\milli\meter}$ befinden sich in Tab. \ref{tabb}.
 
-Aus den Sättigungswerten des Kondensatorstroms ergibt sich die Ionendosis und die Energiedosisrate. 
+\input{build/taba.tex}
+\input{build/tabb.tex}
+
+Aus den Sättigungswerten des Kondensatorstroms ergibt sich die Ionendosisrate $\dot{J}$ und die Energiedosisrate $\dot{D}$. 
 Der Sättigungswert für die kleine Blende ergibt sich zu 
 \begin{equation*}
-    I_\text{Sättigung, 1} = \SI{<++>}{\<++>}.
+    I_\text{Sättigung, 1} = \SI{0.45}{\nano\ampere}.
 \end{equation*}
 Für die große Blende ergibt sich ein Wert von 
 \begin{equation*}
-    I_\text{Sättigung, 2} = \SI{<++>}{\<++>}.
+    I_\text{Sättigung, 2} = \SI{2.6}{\nano\ampere}.
 \end{equation*}
 
-Somit lässt sich dann die Ionendosis als die Werte  
+Somit lässt sich dann die Ionendosisrate mit Gleichung \eqref{eqn:Ionendosisrate} als die Werte  
 \begin{align*}
-    J_\text{1} &= \SI{<++>}{\<++>}\\
-    J_\text{2} &= \SI{<++>}{\<++>} 
+    \dot{J}_\text{1} &= \SI{1.344e-5}{\ampere\per\kilo\gram}\\
+    \dot{J}_\text{2} &= \SI{1.245e-5}{\ampere\per\kilo\gram} 
 \end{align*}
 bestimmen. 
 
-%Anzahl der erzeugten Ionen aus J bestimmen
-Daraus ergibt sich dann eine Anzahl von 
-\begin{align*}
-    n_\text{1} &= \SI{<++>}{\<++>}\\
-    n_\text{2} &= \SI{<++>}{\<++>} 
-\end{align*}
-erzeugten Ionen. 
+Der Mittelwert ergibt sich damit zu 
+\begin{equation*}
+    \dot{J}_\text{mittel} = \SI{1.29(05)e-5}{\ampere\per\kilo\gram}.
+\end{equation*}
 
+Die Anzahl der erzeugten Ionen ergibt sich mit Gleichung \eqref{eqn:Ionenanzahl} zu 
+\begin{equation*}
+    n = \SI{8.09(31)e13}{\per\kilo\gram\per\second}.
+\end{equation*}
 
 %mit Ionisationsenergie eines Luftmoleküls (Wert R aus Anleitung?) Energiedosis D und Energiedosisrate D° berechnen
 Mit dem Wert von 
 \begin{equation*}
-    f_\text{Luft} = \SI{35}{\gray\kilo\gram\per\coulomb}
+    \Phi_\text{Luft} = \SI{33}{\electronvolt} = \SI{52.8e-19}{\joule}
 \end{equation*}
-ergeben  sich dann Energiedosen von 
-\begin{align*}
-    D_\text{1} &= \SI{<++>}{\<++>}\\
-    D_\text{2} &= \SI{<++>}{\<++>} 
-\end{align*}
-und für die Energiedosisraten 
-\begin{align*}
-    Dpunkt_\text{1} &= \SI{<++>}{\<++>}\\
-    Dpunkt_\text{2} &= \SI{<++>}{\<++>}. 
-\end{align*}
+ergibt sich dann die mittlere Energiedosisrate von 
+\begin{equation*}
+    \dot{D}_\text{m} = \SI{4.27(16)e-4}{\joule\per\kilo\gram\per\second}.
+\end{equation*}
 
 
 \subsection{Ionenstrom als Funktion des Anodenstroms}
@@ -79,21 +77,85 @@ Anodenstrom $I_\text{A}$ für die beiden Kondensatorspannungen
 $U_\text{K} = \SI{500}{\volt}$ und $U_\text{K} = \SI{300}{\volt}$
 sind in \ref{tabc} eingetragen.
 
-\subsubsection{Erste Kondensatorspannung}
+\subsubsection{Erste Stromstärke}
 %I_K gegen I_A plotten
+Die $I_\text{K}$- und $I_\text{A}$ stehen in Tab. \ref{tabc} und sind in Abb. \ref{fig:plot1} aufgetragen. 
 
-\subsubsection{Zweite Kondensatorspannung}
+\input{build/tabc.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=7cm]{build/plot1.pdf}
+    \caption{$I_\text{K}$- und $I_\text{A}$ gegeneinander aufgetragen.
+    }
+    \label{fig:plot1}
+\end{figure}
+
+
+Die Parameter die sich aus der linearen Regression ergeben betragen
+\begin{align*}
+    a &= \num{27.48(04)e-4}\\
+    b &= \SI{-4.32e-11}{\ampere} 
+\end{align*}, wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist. 
+
+\subsubsection{Zweite Stromstärke}
 %I_K gegen I_A plotten
+Die $I_\text{K}$- und $I_\text{A}$ stehen in Tab. \ref{tabc} und sind in Abb. \ref{fig:plot2} aufgetragen. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=7cm]{build/plot2.pdf}
+    \caption{$I_\text{K}$- und $I_\text{A}$ gegeneinander aufgetragen.
+    }
+    \label{fig:plot2}
+\end{figure}
+
+
+Die Parameter die sich aus der linearen Regression ergeben betragen
+\begin{align*}
+    a &= \num{24.74(03)e-4}\\
+    b &= \SI{-1.63e-11}{\ampere} 
+\end{align*}, wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist. 
 
 
 \subsection{Ionenstrom als Funktion der Beschleunigungsspannung}
 
-
-
-Die Kondensatorspannungen $I_\text{K}$
-
-\subsubsection{Erste Kondensatorspannung}
+\subsubsection{Erste Beschleunigungsspannung}
 %I_K gegen U_B plotten
+Die $I_\text{K}$- und $U_\text{B}$ stehen in Tab. \ref{tabd} und sind in Abb. \ref{fig:plot3} aufgetragen. 
+
+\input{build/tabd.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=7cm]{build/plot3.pdf}
+    \caption{$I_\text{K}$- und $U_\text{B}$ gegeneinander aufgetragen.
+    }
+    \label{fig:plot3}
+\end{figure}
+
+
+Die Parameter die sich aus der Ausgleichsrechnung ergeben betragen
+\begin{align*}
+    a &= \SI{4.314(112)e-18}{\ampere\per\volt}\\
+    b &= \SI{-1.8(7)e-10}{\ampere} 
+\end{align*}, wobei $a$ die Amplitude und $b$ der $y$-Achsenabschnitt ist. 
 
 \subsubsection{Zweite Kondensatorspannung}
 %I_K gegen U_B plotten
+Die $I_\text{K}$- und $U_\text{B}$ stehen in Tab. \ref{tabd} und sind in Abb. \ref{fig:plot4} aufgetragen. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=7cm]{build/plot4.pdf}
+    \caption{$I_\text{K}$- und $U_\text{B}$ gegeneinander aufgetragen.
+    }
+    \label{fig:plot4}
+\end{figure}
+
+
+Die Parameter die sich aus der Ausgleichsrechnung ergeben betragen
+\begin{align*}
+    a &= \SI{3.825(130)e-18}{\ampere\per\volt}\\
+    b &= \SI{-1.35(8)e-10}{\ampere} 
+\end{align*}, wobei $a$ die Amplitude und $b$ der $y$-Achsenabschnitt ist. 
