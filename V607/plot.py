@@ -58,6 +58,6 @@ Dpunkt = 1
 
 #save solution
 file = open("build/solution.txt", "w")
-file.write(f"Ergebnisse\na) Sättigungsstrom 1: {Sat1} A, Sättigungsstrom 2: {Sat2} A\nIonendosis J: {J}\nAnzahl erzeugter Ionen: {n} Ionisationsenergie(Literatur): {ionenergie} Gy/(C/kg), Energiedosis D: {D}, Energiedosisrate: {Dpunkt}\n")
+file.write(f"Ergebnisse\na) Sättigungsstrom 1: {Sat1} A, Sättigungsstrom 2: {Sat2} A\nIonendosisrate Jpunkt1: {J1punkt} A/kg\n Ionendosisrate Jpunkt2: {J2punkt} A/kg\nAnzahl erzeugter Ionen: {n} Ionisationsenergie(Literatur): {ionenergie} Gy/(C/kg), Energiedosis D: {D}, Energiedosisrate: {Dpunkt}\n")
 file.close()
 
