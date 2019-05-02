@@ -33,7 +33,7 @@ B1 = np.delete(B1, (-1), 0)
 B2 = np.delete(B2, (-1), 0)
 DundL = np.delete(DundL, (-1), 0)
 #Generate table with calculated data
-some.tabelle([Ud1, Ud2, Ud3, Ud4, Ud5, d], finished_file="build/tab1.tex", vars_name=[r"$\frac{U_\text{d, 1}}{U_\text{B, 1}}$",r"$\frac{U_\text{d, 2}}{U_\text{B, 2}}$",r"$\frac{U_\text{d, 3}}{U_\text{B, 3}}$",r"$\frac{U_\text{d, 4}}{U_\text{B, 4}}$",r"$\frac{U_\text{d, 5}}{U_\text{B, 5}}$", r"$D / \si{\meter}$"], label_text="tab1", caption_text=r"Das Verhältnis der Ablenkspannung und der Beschleunigungsspannung aufgetragen gegen die Höhe auf dem Graphen.", precision=2) 
+some.tabelle([Ud1, Ud2, Ud3, Ud4, Ud5, d], finished_file="build/tab1.tex", vars_name=[r"$U_\text{d, 1}$",r"$U_\text{d, 2}$",r"$U_\text{d, 3}$",r"$U_\text{d, 4}$",r"$U_\text{d, 5}$", r"$D / \si{\meter}$"], label_text="tab1", caption_text=r"Die Ablenkspannung und die Höhe auf dem Graphen.", precision=2) 
 some.tabelle([B1*1e6, B2*1e6, DundL], finished_file="build/tab2.tex", vars_name=[r"$B_1 / \si{\milli\henry}$",r"$B_2 / \si{\milli\henry}$", r"$\frac{D}{(L^2 + D^2)} / \si[per-mode=fraction]{\per\meter}$"], label_text="tab2", caption_text=r"Das magnetische Feld aufgetragen gegen die Verschiebung $D$ durch die Summe des Wirkungsbereichs $L$ zum Quadrat und der Verschiebung $D$ zum Quadrat.", precision=2) 
 
 #extra values

@@ -1,0 +1,20 @@
+a) Sättigungsstrom: 
+1. 8e-6 A
+2. 20e-6 A
+3. 37e-6 A
+4. 80e-6 A
+5. 175e-6 AExponent von b) = 1.234450408945389 Fehler: 0.022815965925647896
+Erwartet wird 1.5
+c) Temperatur aus Anlaufstromgebiet: T = (2.31+/-0.07)e+03
+d) Leistungen: 1. 6.0 W
+2. 6.720000000000001 W
+3. 7.700000000000001 W
+4. 9.2 W
+5. 9.839999999999998 W
+
+Die Temperaturen die sich aus den jeweiligen Leistungen ergeben: [1768.87353689 1829.37732134 1903.14984684 2001.74036487 2039.70495033] K
+
+e0 phi = [4.7967989  4.82707677 4.93384441 5.07388901 5.039187  ] eV
+Mittelwert: [4.934159218524964] eV
+Fehler: [0.11035384846558836] eV 
+Literaturwert Austrittsarbeit Wolfram (Wikipdia): 4,55 eV
