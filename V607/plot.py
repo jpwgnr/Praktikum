@@ -11,7 +11,7 @@ Uk1, Ik1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.t
 
 Ik1= Ik1*1e-9
 
-Uk2, Ik2= some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$U_\text{K} / \si{\volt}$", r"$I_\text{K} / \si{\nano\ampere}$"], label_text="taba", caption_text=r"Die Kathodenspannung und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einem Anodenstrom von $I_\text{A} = \SI{1}{\milli\ampere}$ bei einem Blendenradius von $r_\text{B} = \SI{5}{\milli\meter}$." , precision=2)
+Uk2, Ik2= some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$U_\text{K} / \si{\volt}$", r"$I_\text{K} / \si{\nano\ampere}$"], label_text="tabb", caption_text=r"Die Kathodenspannung und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einem Anodenstrom von $I_\text{A} = \SI{1}{\milli\ampere}$ bei einem Blendenradius von $r_\text{B} = \SI{5}{\milli\meter}$." , precision=2)
 
 Ik2= Ik2*1e-9
 
@@ -21,7 +21,7 @@ Ia3 = Ia3 * 1e-6
 Ik31 = Ik31 * 1e-9
 Ik32 = Ik32 * 1e-9
 
-Ub4, Ik41, Ik42 = some.neueWerte(file_name="data/datad.txt", finished_file="build/tabd.tex",  vars_name=[r"$U_\text{B} / \si{\milli\ampere}$", r"$I_\text{K,1} / \si{\nano\ampere}$", r"$I_\text{K,2} / \si{\nano\ampere}$"], label_text="tabc", caption_text=r"Die Beschleunigungsspannung und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einer Kathodenspannung $U_\text{K,1} = \SI{500}{\volt}$ und einer Kathodenspannung $U_\text{K,1} = \SI{300}{\volt}$ bei einem Blendenradius von $r_\text{B} = \SI{5}{\milli\meter}$." , precision=2)
+Ub4, Ik41, Ik42 = some.neueWerte(file_name="data/datad.txt", finished_file="build/tabd.tex",  vars_name=[r"$U_\text{B} / \si{\milli\ampere}$", r"$I_\text{K,1} / \si{\nano\ampere}$", r"$I_\text{K,2} / \si{\nano\ampere}$"], label_text="tabd", caption_text=r"Die Beschleunigungsspannung und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einer Kathodenspannung $U_\text{K,1} = \SI{500}{\volt}$ und einer Kathodenspannung $U_\text{K,1} = \SI{300}{\volt}$ bei einem Blendenradius von $r_\text{B} = \SI{5}{\milli\meter}$." , precision=2)
 
 Ub4 = Ub4 * 1e3
 Ik41 = Ik41 * 1e-9
@@ -39,11 +39,11 @@ def quad(x, a, b):
     return a*x**2+b
 
 #Generate linReg-Plot
-steigung1, yabschnitt1, err1 = some.linReg(x=Ia3, y=Ik31, x_name=r"I_\text{A} / \si{\ampere}", y_name=r"I_\text{K,1}", num=1,  x_add=0, file_name="build/plot1.pdf")
-steigung2, yabschnitt2, err2 = some.linReg(x=Ia3, y=Ik32, x_name=r"I_\text{A} / \si{\ampere}", y_name=r"I_\text{K,2}", num=2,  x_add=0, file_name="build/plot2.pdf")
+steigung1, yabschnitt1, err1 = some.linReg(x=Ia3, y=Ik31, x_name=r"$I_\text{A} / \si{\ampere}$", y_name=r"$I_\text{K,1}$", num=1,  x_add=-1e-7, file_name="build/plot1.pdf")
+steigung2, yabschnitt2, err2 = some.linReg(x=Ia3, y=Ik32, x_name=r"$I_\text{A} / \si{\ampere}$", y_name=r"$I_\text{K,2}$", num=2,  x_add=-1e-7, file_name="build/plot2.pdf")
 #Generate curve-fit-Plot 
-params3, err3 = some.curvefit(x=Ub4, y=Ik41, num=3, x_add=0, function=quad, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", file_name="build/plot3.pdf")
-params4, err4 = some.curvefit(x=Ub4, y=Ik42, num=4, x_add=0, function=quad, x_name=r"U_\text{B} / \si{\volt}", y_name=r"I_\text{K,2}", file_name="build/plot4.pdf")
+params3, err3 = some.curvefit(x=Ub4, y=Ik41, num=3, x_add=-2000, function=quad, x_name=r"$U_\text{B} / \si{\volt}$", y_name=r"$I_\text{K,2}$", file_name="build/plot3.pdf")
+params4, err4 = some.curvefit(x=Ub4, y=Ik42, num=4, x_add=-2000, function=quad, x_name=r"$U_\text{B} / \si{\volt}$", y_name=r"$I_\text{K,2}$", file_name="build/plot4.pdf")
 
 #Rechnung 
 dichteluft= 1.2041 #kg/m^3
