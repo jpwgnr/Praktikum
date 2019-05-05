@@ -32,7 +32,7 @@ $d_2 = \SI{5}{\milli\meter}$ befinden sich in Tab. \ref{tabb}.
 \input{build/taba.tex}
 \input{build/tabb.tex}
 
-Aus den Sättigungswerten des Kondensatorstroms ergibt sich die Ionendosisrate $\dot{J}$ und die Energiedosisrate $\dot{D}$. 
+\noindent Aus den Sättigungswerten des Kondensatorstroms ergibt sich die Ionendosisrate $\dot{J}$ und die Energiedosisrate $\dot{D}$. 
 Der Sättigungswert für die kleine Blende ergibt sich zu 
 \begin{equation*}
     I_\text{Sättigung, 1} = \SI{0.45}{\nano\ampere}.
@@ -42,120 +42,123 @@ Für die große Blende ergibt sich ein Wert von
     I_\text{Sättigung, 2} = \SI{2.6}{\nano\ampere}.
 \end{equation*}
 
-Somit lässt sich dann die Ionendosisrate mit Gleichung \eqref{eqn:Ionendosisrate} als die Werte  
+\noindent Somit lässt sich die Ionendosisrate mit Gleichung \eqref{eqn:Ionendosisrate} als die Werte  
 \begin{align*}
     \dot{J}_\text{1} &= \SI{1.344e-5}{\ampere\per\kilo\gram}\\
     \dot{J}_\text{2} &= \SI{1.245e-5}{\ampere\per\kilo\gram} 
 \end{align*}
-bestimmen. 
+bestimmen.
 
-Der Mittelwert ergibt sich damit zu 
+\noindent Der Mittelwert ergibt sich damit zu 
 \begin{equation*}
     \dot{J}_\text{mittel} = \SI{1.29(05)e-5}{\ampere\per\kilo\gram}.
 \end{equation*}
 
-Die Anzahl der erzeugten Ionen ergibt sich mit Gleichung \eqref{eqn:Ionenanzahl} zu 
+\noindent Die Anzahl der erzeugten Ionen ergibt sich mit Gleichung \eqref{eqn:Ionenanzahl} zu 
 \begin{equation*}
     n = \SI{8.09(31)e13}{\per\kilo\gram\per\second}.
 \end{equation*}
 
 %mit Ionisationsenergie eines Luftmoleküls (Wert R aus Anleitung?) Energiedosis D und Energiedosisrate D° berechnen
-Mit dem Wert von 
+\noindent Mit dem Wert von 
 \begin{equation*}
     \Phi_\text{Luft} = \SI{33}{\electronvolt} = \SI{52.8e-19}{\joule}
 \end{equation*}
-ergibt sich dann die mittlere Energiedosisrate von 
+ergibt sich die mittlere Energiedosisrate von 
 \begin{equation*}
     \dot{D}_\text{m} = \SI{4.27(16)e-4}{\joule\per\kilo\gram\per\second}.
 \end{equation*}
+
 
 
 \subsection{Ionenstrom als Funktion des Anodenstroms}
 
 Die Kondensatorströme $I_\text{K}$ in Abhängigkeit vom
 Anodenstrom $I_\text{A}$ für die beiden Kondensatorspannungen
-$U_\text{K} = \SI{500}{\volt}$ und $U_\text{K} = \SI{300}{\volt}$
+$U_\text{K, 1} = \SI{500}{\volt}$ und $U_\text{K, 2} = \SI{300}{\volt}$
 sind in \ref{tabc} eingetragen.
 
-\subsubsection{Erste Stromstärke}
+\subsubsection{Erste Kondensatorspannung}
 %I_K gegen I_A plotten
-Die $I_\text{K}$- und $I_\text{A}$ stehen in Tab. \ref{tabc} und sind in Abb. \ref{fig:plot1} aufgetragen. 
+Die $I_\text{K}$- und $I_\text{A}$-Werte stehen in Tab. \ref{tabc} und sind in Abb. \ref{fig:plot1} aufgetragen. 
 
 \input{build/tabc.tex}
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=7cm]{build/plot1.pdf}
-    \caption{$I_\text{K}$- und $I_\text{A}$ gegeneinander aufgetragen.
-    }
+    \includegraphics[width=15cm, height=8cm]{build/plot1.pdf}
+    \caption{$I_\text{K}$- und $I_\text{A}$-Werte gegeneinander aufgetragen.}
     \label{fig:plot1}
 \end{figure}
 
-
-Die Parameter die sich aus der linearen Regression ergeben betragen
+\noindent Die Parameter, die sich aus der linearen Regression ergeben, betragen
 \begin{align*}
     a &= \num{27.48(04)e-4}\\
-    b &= \SI{-4.32e-11}{\ampere} 
-\end{align*}, wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist. 
+    b &= \SI{-4.32e-11}{\ampere},
+\end{align*}
+wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist. 
 
-\subsubsection{Zweite Stromstärke}
+\subsubsection{Zweite Kondensatorspannung}
 %I_K gegen I_A plotten
-Die $I_\text{K}$- und $I_\text{A}$ stehen in Tab. \ref{tabc} und sind in Abb. \ref{fig:plot2} aufgetragen. 
+Die $I_\text{K}$- und $I_\text{A}$-Werte stehen in Tab. \ref{tabc} und sind in Abb. \ref{fig:plot2} aufgetragen. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=7cm]{build/plot2.pdf}
-    \caption{$I_\text{K}$- und $I_\text{A}$ gegeneinander aufgetragen.
-    }
+    \includegraphics[width=15cm, height=8cm]{build/plot2.pdf}
+    \caption{$I_\text{K}$- und $I_\text{A}$-Werte gegeneinander aufgetragen.}
     \label{fig:plot2}
 \end{figure}
 
-
-Die Parameter die sich aus der linearen Regression ergeben betragen
+\noindent Die Parameter, die sich aus der linearen Regression ergeben, betragen
 \begin{align*}
     a &= \num{24.74(03)e-4}\\
-    b &= \SI{-1.63e-11}{\ampere} 
-\end{align*}, wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist. 
+    b &= \SI{-1.63e-11}{\ampere},
+\end{align*}
+wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist. 
+
 
 
 \subsection{Ionenstrom als Funktion der Beschleunigungsspannung}
 
-\subsubsection{Erste Beschleunigungsspannung}
+Die Kondensatorströme $I_\text{K}$ in Abhängigkeit von der
+Beschleunigungsspannung $U_\text{B}$ für die beiden Kondensatorspannungen
+$U_\text{K, 1} = \SI{500}{\volt}$ und $U_\text{K, 2} = \SI{300}{\volt}$
+sind in \ref{tabd} eingetragen.
+
+\subsubsection{Erste Kondensatorspannung}
 %I_K gegen U_B plotten
-Die $I_\text{K}$- und $U_\text{B}$ stehen in Tab. \ref{tabd} und sind in Abb. \ref{fig:plot3} aufgetragen. 
+Die $I_\text{K}$- und $U_\text{B}$-Werte stehen in Tab. \ref{tabd} und sind in Abb. \ref{fig:plot3} aufgetragen. 
 
 \input{build/tabd.tex}
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=7cm]{build/plot3.pdf}
-    \caption{$I_\text{K}$- und $U_\text{B}$ gegeneinander aufgetragen.
-    }
+    \includegraphics[width=15cm, height=8cm]{build/plot3.pdf}
+    \caption{$I_\text{K}$- und $U_\text{B}$-Werte gegeneinander aufgetragen.}
     \label{fig:plot3}
 \end{figure}
 
-
-Die Parameter die sich aus der Ausgleichsrechnung ergeben betragen
+\noindent Die Parameter, die sich aus der Ausgleichsrechnung ergeben, betragen
 \begin{align*}
     a &= \SI{4.314(112)e-18}{\ampere\per\volt}\\
-    b &= \SI{-1.8(7)e-10}{\ampere} 
-\end{align*}, wobei $a$ die Amplitude und $b$ der $y$-Achsenabschnitt ist. 
+    b &= \SI{-1.8(7)e-10}{\ampere},
+\end{align*}
+wobei $a$ die Amplitude und $b$ der $y$-Achsenabschnitt ist. 
 
 \subsubsection{Zweite Kondensatorspannung}
 %I_K gegen U_B plotten
-Die $I_\text{K}$- und $U_\text{B}$ stehen in Tab. \ref{tabd} und sind in Abb. \ref{fig:plot4} aufgetragen. 
+Die $I_\text{K}$- und $U_\text{B}$-Werte stehen in Tab. \ref{tabd} und sind in Abb. \ref{fig:plot4} aufgetragen. 
 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=7cm]{build/plot4.pdf}
-    \caption{$I_\text{K}$- und $U_\text{B}$ gegeneinander aufgetragen.
-    }
+    \includegraphics[width=15cm, height=8cm]{build/plot4.pdf}
+    \caption{$I_\text{K}$- und $U_\text{B}$-Werte gegeneinander aufgetragen.}
     \label{fig:plot4}
 \end{figure}
 
-
-Die Parameter die sich aus der Ausgleichsrechnung ergeben betragen
+\noindent Die Parameter, die sich aus der Ausgleichsrechnung ergeben, betragen
 \begin{align*}
     a &= \SI{3.825(130)e-18}{\ampere\per\volt}\\
-    b &= \SI{-1.35(8)e-10}{\ampere} 
-\end{align*}, wobei $a$ die Amplitude und $b$ der $y$-Achsenabschnitt ist. 
+    b &= \SI{-1.35(8)e-10}{\ampere},
+\end{align*}
+wobei $a$ die Amplitude und $b$ der $y$-Achsenabschnitt ist.
