@@ -19,12 +19,9 @@ evakuiert.
 %irgendwas hinschreiben
 
 \subsubsection{Aufbau einer Kathodenstrahlröhre}
-Die Kathodenstrahlröhre besteht aus drei 
-Teilen (siehe Abb. \ref{fig:roehre}). Ein Teil ist die Elektronenkanone.
-Diese erzeugt freie Elektronen und beschleunigt sie.
-Die Elektronen werden dort zu einem Strahl fokussiert. 
-Außerdem gibt es ein aus Platten bestehendes Ablenksystem
-sowie eine Vorrichtung, um die Elektronen nachzuweisen.
+Eine Kathodenstrahlröhre besteht aus drei 
+Teilen (siehe Abb. \ref{fig:roehre}). Im vorderen Teil der Kathodenstrahlröhre  werden in der sogenannten Elektronenkanone Elektronen erzeugt, beschleunigt und zu einem Strahl fokussiert. 
+Anschließend werden sie von einem Ablenksystem, das aus elektrisch geladenen Platten besteht, in verschiedene Richtungen gelenkt, und im dritten Bereich von einer Vorrichtung auf einem Schirm visuell nachgewiesen. 
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=7cm]{build/roehre.png}
@@ -32,16 +29,12 @@ sowie eine Vorrichtung, um die Elektronen nachzuweisen.
     \label{fig:roehre}
 \end{figure}
 
-\noindent Die Elektronen werden hierfür durch Erhitzen der Kathode,
-welche durch einen Draht erhitzt wird, erzeugt.
-Die Kathode befindet sich in einem sogenannten Wehnelt-Zylinder.
+\noindent An einer Glühkathode werden die Elektronen durch eine Heizspannung, die an einem Draht anliegt, erzeugt.  
+Diese ganze Apparatur befindet sich in einem Wehneltzylinder, der dafür da ist, dass der Nutzer über einen Drehknopf von außen die Intensität beeinflussen kann. Der Zylinder ist nämlich elektrisch negativ geladen und kann so genutzt werden um die Elektronen zusätzlich zu beschleunigen und somit die Intensität zu steuern. 
 %Durch das negativen Potential des Zylinders kann die Intensität 
 %des Elektronenstrahls gesteuert werden. 
-Vor dem Zylinder befindet sich eine positiv geladene 
-Elektrode, die dafür sorgt, dass sich die freien Elektronen, 
-die die Barriere des Zylinders überwinden, auf eine 
-Geschwindigkeit $v_\text{z}$ beschleunigen. 
-Mit dem Energiesatz ergibt sich dann 
+Als Gegenpol zu dem Wehneltzylinder gibt es ein Elektrode, die positiv geladen ist. Somit werden die Elektronen, die sich zwischen dem Zylinder und der dieser Elektrode befinden zur dieser hin beschleunigt. Die Geschwindigkeit, die sie dann haben, nachdem sie den Zylinder verlassen konnten, beträgt $v_\text{z}$.  
+Daraus ergibt sich dann mit dem Energiesatz  
 \begin{equation}
     \frac{m_0 \, v_\text{Z}^2}{2} = e_\text{0} \, U_\text{B}.
     \label{eqn:energie}
@@ -71,15 +64,16 @@ grafisch nachvollzogen werden.
 \end{figure}
 
 \noindent 
-Das elektrische Feld kann als homogen angenommen werden,
-wenn der Abstand $d$ der Platten kleiner als die Länge $p$
-der Platten ist.
-Die Feldstärke ist dann
+Ein elektrisches Feld zwischen zwei Platten kann als homogen angenommen werden,
+wenn der Abstand $d$ zwischen den Platten klein gegen die Länge $p$
+der beiden Platten ist.
+Aus dieser Näherung ergibt sich dann, dass die Feldstärke 
 \begin{equation*}
-    E = \frac{U_\text{d}}{d}.
+    E = \frac{U_\text{d}}{d}
 \end{equation*}
-Auf ein Elektron wirkt die entsprechende Coulombkraft, 
-die außerhalb der Platten null wird. Diese Kraft ist konstant, 
+ist.
+Auf ein Elektron wirkt dann die Coulombkraft, 
+die außerhalb der Platten null wird im Rahmen dieser Näherung. Diese Kraft ist konstant, 
 wodurch sich eine Beschleunigung in $y$-Richtung  
 %---> wir haben vorher keine Richtungen erwähnt
 ergibt. 
@@ -130,59 +124,54 @@ eine Kraft aus. Magnetostatische Felder dagegen üben nur auf
 Ladungen, die sich relativ zum Feld bewegen, eine Kraft aus.
 
 \subsubsection{Berechnung der Elektronenbahn im homogenen Magnetfeld}
-Auf eine Ladung $q$, die sich mit der Geschwindigkeit $\vec{v}$ in 
-einem homogenen Magnetfeld $\vec{B}$ bewegt, wirkt die Lorentz-Kraft 
+Die Lorentzkraft ist so definiert, dass sie auf eine bewegte Ladung $q$, die sich mit einer Geschwindigkeit $v$ in einem homogenen B-Feld $B$ bewegt, wirkt. Es gilt dann 
 \begin{equation}
     \vec{F_\text{L}}= q \, \vec{v} \cross \vec{B}.
     \label{eqn:Lorentz}
 \end{equation}
 
-\noindent Die Lorentz-Kraft verschwindet nur nicht, wenn es eine
-Komponente von $\vec{v}$ gibt, die senkrecht zu
-$\vec{B}$ ausgerichtet ist.
+\noindent Durch das Kreuzprodukt ergibt sich, dass die senkrecht zum B-Feld bewegte Ladung eine maximale Kraft spürt, während eine parallel zum B-Feld bewegte Ladung gar keine Kraft erfährt.
 
-\noindent Das Magnetfeld ändert allerdings nur die Richtung und ändert 
-nicht die Geschwindigkeit. Also ist die Energie konstant 
+\noindent Durch die Kraft des Magnetfelds ändert sich allerdings nur die Richtung der Ladung und sie ändert 
+in der Theorie nicht die Geschwindigkeit. Also ist die Energie konstant 
 innerhalb des Systems der Ladung.
 %-> E_pot ändert sich nicht -> E_kin konstant -> |vec(v)|=v_0 konstant
 
-\noindent Der Krümmungsradius $r$ der Bahn lässt sich aus dem Gleichgewicht der 
-Lorentz- und der Zentrifugalkraft bestimmen. Es ergibt sich 
+\noindent Der Krümmungsradius $r$ lässt sich bestimmen in dem Lorentz- und der Zentrifugalkraft gleichgesetzt werden. Daraus folgt
 \begin{equation}
     r= \frac{m_\text{0} \, v_\text{0}}{e_\text{0} \, B}.
     \label{eqn:radius}
 \end{equation}
 Die Krümmungsbahn ist eine Kreisbahn, weil der Radius
-konstant ist.
+konstant ist bei einer gegebenen Einstellung von $B$ und wenn die Geschwindigkeit $v_0$ der Elektronen bekannt ist. 
 
 \subsubsection{Bestimmung der spezifischen Elektronenladung}
+
 Die spezifische 
 Ladung von Elektronen $e_\text{0}/m_\text{0}$ lässt sich
 mit Gleichung \eqref{eqn:radius} bestimmen. 
-Mit der Beschleunigungsspannung $U_\text{B}$ ergibt sich die 
-konstante Geschwindigkeit $v_\text{0}$ zu 
+Die konstante Geschwindigkeit $v_\text{0}$ ergibt sich zu 
 \begin{equation*}
     v_\text{0}= \sqrt{2 \, U_\text{B} \frac{e_\text{0}}{m_\text{0}}}.
 \end{equation*}
-Die Elektronen eines Kathodenstrahls 
-in einem feldfreien Raum bewegen sich
-in Richtung Mittelpunkt des Leuchtschirms.
-Sie erzeugen einen Leuchtfleck. 
-Wenn ein Magnetfeld eingeschaltet wird, verschiebt sich 
-der Leuchtfleck aufgrund der Krümmung auf einer der Achsen 
-um den Abstand $D$. Zwischen dem Wirkungsbereich $L$ (das ist die Weite 
-zwischen der Quelle und dem Schirm), dem Stück $D$ und dem 
-Radius $r$ ergibt sich über den Satz des Pythagoras die 
-Verbindung
+Dabei ist $U_\text{B}$ die Beschleunigungsspannung, die an dem Draht angelegt ist.
+
+Sind alle Felder innerhalb der Kathodenstrahlröhre ausgeschaltet, wird ein Leuchtfleck in der Mitte des Schirms erzeugt werden.  
+Wenn ein Magnetfeld in x-Richtung eingeschaltet wird, verschiebt sich 
+der Leuchtfleck aufgrund der Krümmung auf der y-Achse 
+um den Abstand $D$ nach oben oder nach unten. Zwischen dem Wirkungsbereich $L$ (das ist die Weite 
+zwischen der Quelle und dem Schirm), der y-Verschiebung  $D$ und dem 
+Radius $r$ ergibt sich über den Satz des Pythagoras der Zusammenhang 
 \begin{equation*}
     r = \frac{L^2 + D^2}{2D}.
 \end{equation*}
-Dies kann in \eqref{eqn:radius} eingesetzt werden.
-Damit ergibt sich der Zusammenhang
+Dieser kann in \eqref{eqn:radius} eingesetzt werden.
+Damit ergibt sich  
 \begin{equation}
-    \frac{D}{L^2 + D^2}= \frac{1}{\sqrt{8 \, U_\text{B}}}\sqrt{\frac{e_\text{0}}{m_\text{0}}} B.
+    \frac{D}{L^2 + D^2}= \frac{1}{\sqrt{8 \, U_\text{B}}}\sqrt{\frac{e_\text{0}}{m_\text{0}}} B
     \label{eqn:Ende}
-\end{equation}
+\end{equation}, 
+womit die spezifische Ladungen durch eine Auftragung der linken und rechten Seite der Gleichung gegeneinander bestimmt werden kann. 
 
 \subsubsection{Das Helmholtz-Spulenpaar}
 Ein Helmholtz-Spulenpaar kann ein homogenes Magnetfeld erzeugen.

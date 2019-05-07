@@ -29,14 +29,14 @@ U5, I5= some.neueWerte(file_name="data/datae.txt", finished_file="build/tabe.tex
 
 I5 =I5*1e-6
 
-U6, I6= some.neueWerte(file_name="data/dataf.txt", finished_file="build/tabf.tex",  vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tabf", caption_text=r"Die Gegenspannung und die dazu gehörende Stromstärke." , precision=1)
+U6, I6= some.neueWerte(file_name="data/dataf.txt", finished_file="build/tabf.tex",  vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tabf", caption_text=r"Die gemessene Gegenspannung und die dazu gehörende Stromstärke." , precision=1)
 U6= U6*1e-3
 I6= I6*1e-9
-U7, I7= some.neueWerte(file_name="data/datag.txt", finished_file="build/tabg.tex",  vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tabg", caption_text=r"Die Gegenspannung und die dazu gehörende Stromstärke." , precision=1)
+U7, I7= some.neueWerte(file_name="data/datag.txt", finished_file="build/tabg.tex",  vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tabg", caption_text=r"Die gemessene Gegenspannung und die dazu gehörende Stromstärke." , precision=1)
 U7= U7*1e-3
 I7= I7*1e-9
 
-U8, I8= some.neueWerte(file_name="data/datah.txt", finished_file="build/tabh.tex",  vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tabh", caption_text=r"Die Gegenspannung und die dazu gehörende Stromstärke." , precision=1)
+U8, I8= some.neueWerte(file_name="data/datah.txt", finished_file="build/tabh.tex",  vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tabh", caption_text=r"Die gemessene Gegenspannung und die dazu gehörende Stromstärke." , precision=1)
 U8= U8*1e-3
 I8= I8*1e-9
 #extra values 
@@ -45,6 +45,10 @@ def const(U1, const):
 
 U9 = np.append(np.append(U6[:7], U7[:8]), U8[:])
 I9 = np.append(np.append(I6[:7], I7[:8]), I8[:])
+
+U9 = U9 + 1e6*I9
+
+some.tabelle([U9*1e3, I9*1e9], finished_file="build/tabi.tex", vars_name=[r"$U / \si{\milli\volt}$", r"$I / \si{\nano\ampere}$"], label_text="tab1", caption_text=r"Die korrigierte Gegenspannung und die dazu gehörende Stromstärke. Es wurde aus Tab. \ref{tabf} die Werte 1 bis 6, aus Tab. \ref{tabg} die Werte 1 bis 7 und aus Tab. \ref{tabh} alle Werte verwendet und die Spannungen wurden alle mit dem Produkt aus Strom und Innenwiderstand addiert.", precision=2) 
 
 #functions 
 some.tabelle([np.log(U5), np.log(I5)], finished_file="build/tab2.tex", vars_name=[r"$ln(U/U_0)$", r"$ln(I/I_0)$"], label_text="tab2", caption_text=r"Logarithmierte Spannungen und logarithmierte Stromstärken.", precision=2) 
@@ -112,7 +116,7 @@ I_S= np.array([8e-6, 20e-6, 37e-6, 80e-6, 175e-6])
 T_var= ((L - N_w)/(f*nu*sigma))**(1/4) 
 A= 1e-4
 
-e0phi = k*T_var*(np.log(4*np.pi*e0*m0* k**2 * T_var**2/h**3)-np.log(I_S/A))/e0
+e0phi = k*T_var*(np.log(4*np.pi*e0*m0* k**2 * T_var**2/h**3)-np.log(I_S/f))/e0
 e0phimean = e0phi.mean()
 e0phistd = e0phi.std()
 file = open("build/solution.txt", "w")

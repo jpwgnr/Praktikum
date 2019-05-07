@@ -67,12 +67,17 @@ Zur Berechnung des Exponenten wird der Bereich von $\SI{5}{\volt}$ bis $\SI{15}{
 
 
 \subsection{Anlaufstromgebiet der Diode und Bestimmung der Kathodentemperatur}
-Die Werte für die Spannungen und Ströme im Anlaufstromgebiet
+Die gemessenen Werte für die Spannungen und Ströme im Anlaufstromgebiet
 befinden sich in den Tabellen \ref{tabf} bis \ref{tabh}.
 
 \input{build/tabf.tex}
 \input{build/tabg.tex}
 \input{build/tabh.tex}
+
+In Tab. \ref{tab1} sind die verwendeten und korrigierten Spannungen und die Stromstärken aufgetragen, die in Abb. \ref{fig:plot3}
+dargestellt wurden. Dabei sind die Stromstärken aber noch nicht logarithmiert. 
+
+\input{build/tabi.tex}
 
 \noindent Die logarithmierte Stromstärke ist in Abb. \ref{fig:plot3}
 gegen die Spannung aufgetragen.
@@ -89,7 +94,7 @@ die Temperatur bestimmen, indem Gleichung \eqref{eqn:anlauf}
 nach $T$ umgestellt wird. 
 Die Temperatur im Anlaufstromgebiet ist
 \begin{equation*}
-    T = \SI{2.44(12)e3}{\kelvin}.
+    T = \SI{2.23(06)e3}{\kelvin}.
 \end{equation*}
 
 
@@ -124,19 +129,19 @@ die Temperaturen
 
 
 \subsection{Austrittsarbeit für Wolfram}
-Für die Berechnung der Austrittsarbeit wurde eine Fläche des Kabels von $\SI{1}{\centi\meter\squared}$ angenommen.
+Für die Berechnung der Austrittsarbeit wurde eine Fläche des Kabels von $\SI{0.32}{\centi\meter\squared}$ angenommen.
 Die somit erechneten Austrittsarbeiten $e_0 \phi$ sind
 \begin{align*}
-    (e_0 \phi)_\text{1} &= \SI{4.80}{\electronvolt} \\
-    (e_0 \phi)_\text{2} &= \SI{4.83}{\electronvolt} \\
-    (e_0 \phi)_\text{3} &= \SI{4.93}{\electronvolt} \\
-    (e_0 \phi)_\text{4} &= \SI{5.07}{\electronvolt} \\
-    (e_0 \phi)_\text{5} &= \SI{5.04}{\electronvolt}.
+    (e_0 \phi)_\text{1} &= \SI{4.62}{\electronvolt} \\
+    (e_0 \phi)_\text{2} &= \SI{4.65}{\electronvolt} \\
+    (e_0 \phi)_\text{3} &= \SI{4.75}{\electronvolt} \\
+    (e_0 \phi)_\text{4} &= \SI{4.88}{\electronvolt} \\
+    (e_0 \phi)_\text{5} &= \SI{4.84}{\electronvolt}.
 \end{align*}
 
 \noindent Der sich daraus ergebende Mittelwert ist
 \begin{equation*}
-    (e_0 \phi)_\text{mittel} = \SI{4.93 \pm 0.11}{\electronvolt}.
+    (e_0 \phi)_\text{mittel} = \SI{4.75 \pm 0.10}{\electronvolt}.
 \end{equation*}
 
 \noindent Der Literaturwert für die Austrittsarbeit für
