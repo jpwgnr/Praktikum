@@ -184,6 +184,19 @@
       \verb http://www.numpy.org/
       \endverb
     \endentry
+    \entry{Luft}{article}{}
+      \field{sortinit}{X}
+      \field{sortinithash}{b0b62a29ee4a21a0e618fed53a0313cc}
+      \field{labeltitlesource}{title}
+      \field{title}{X-ray dosimetry}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://www.phywe-es.com/index.php/fuseaction/download/lrn_file/versuchsanleitungen/P2541801/e/P2541801E.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.phywe-es.com/index.php/fuseaction/download/lrn_file/versuchsanleitungen/P2541801/e/P2541801E.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
