@@ -2,70 +2,78 @@
 \label{sec:Auswertung}
 
 \subsection{Einstellung des Selektivverstärkers}
-
-In Tabelle Tab. \ref{taba} sind die Frequenzen $f$ gegen die gemessene Spannung $U_E$ aufgetragen. Der Plot befindet sich in Abb. \ref{plota}. 
+In Tabelle \ref{taba} sind die Frequenzen $\nu$ und die jeweils gemessenen Ausgangspannungen $U_\text{A}$ 
+bei einer Eingangsspannung von $U_\text{E} = \SI{100}{\milli\volt}$ eingetragen. 
+In Abb. \ref{plota} sind diese Werte gegeneinander aufgetragen.
 
 \input{build/taba.txt}
 
 % Plot einfügen 
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm, height=8cm]{build/plota.pdf} %
+    \caption{Die Filterkurve des Selektivverstärkers. Das Verhältnis der Ein- und Ausgangspannung
+    ist gegen die Frequenz aufgetragen.}
+    \label{plota}
+\end{figure}
 
-Aus der Tabelle lassen sich der Wert $\nu_0$ und die beiden Werte $\nu_{-}$ und $\nu_{+}$ ablesen. 
-
+\noindent Aus der Tabelle lassen sich der Wert $\nu_0$ und die beiden Werte $\nu_\text{-}$ und $\nu_\text{+}$ ablesen. 
 Diese ergeben sich zu 
-
 \begin{align*} 
- \nu_0 &= \SI{<++>}{\<++>} \\
- \nu_{-} &= \SI{<++>}{\<++>} \\
- \nu_{+} &= \SI{<++>}{\<++>}. 
+ \nu_0 &= \SI{<++>}{\kilo\hertz} \\
+ \nu_{-} &= \SI{<++>}{\kilo\hertz} \\
+ \nu_{+} &= \SI{<++>}{\kilo\hertz}. 
 \end{align*}
 
-Daraus lässt sich mit Gl. \eqref{güte} erkennen, dass die Güte $Q$ den Wert 
-
+\noindent Daraus lässt sich mit Gleichung \eqref{guete} erkennen, dass die Güte den Wert 
 \begin{align*} 
-    Q = \num{<++>}
+    G_\text{exp} = \num{<++>}
 \end{align*}
-beträgt. 
+hat. 
 
-Der gegebene Wert für Q liegt bei 
+\noindent Der gegebene Wert für $G$ liegt bei 
 \begin{align*} 
-    Q = \num{100}.
+    G = \num{100}.
 \end{align*}
 
 
 \subsection{Theoriewerte für Suszeptibilität} 
-
-Für die verschiedenen Stoffe haben sich aufgrund der verschiedenen Elemente und Zusammensetzungen auch verschiedene Werte für die Suszeptibilität ergeben. 
-Die Werte die zur Berechnung nötig waren sind ...
+Für die verschiedenen Stoffe haben sich aufgrund der verschiedenen Elemente und Zusammensetzungen auch verschiedene 
+Werte für die Suszeptibilität ergeben. 
+Die Werte, die zur Berechnung nötig waren, sind ...
 Für den Stoff $<++>$ ergibt sich die Rechnung folgendermaßen: 
 
 \begin{equation*}
     <++>.
 \end{equation*} 
 
-Die anderen drei Werte lassen sich analog ermitteln. 
-In Tab. \ref{tab1} sind die Werte für L, S und J gegeneinander aufgetragen. Daneben stehen dann jeweils die Werte die sich für Suszeptibilität $\chi$ ergeben haben. 
+\noindent Die anderen drei Werte lassen sich analog ermitteln. 
+In Tab. \ref{tab1} befinden sich die Werte für $L$, $S$ und $J$. Daneben stehen jeweils die Werte, die sich für 
+die Suszeptibilität $\chi$ ergeben. 
 
-\input{build/tab1.tex}
+\input{build/tab1.tex} %falsche Tabelle
+
 
 \subsection{Suszeptibilität mittels Spannungsverhältnis}
-
-Die Werte für die Suszeptibilität ergeben sich für die jeweiligen Stoffe zu folgenden Werten 
+Die Werte für die Suszeptibilität, die mittels Gleichung \eqref{eqn:chiexp1} ergeben sich für die jeweiligen Stoffe 
+zu folgenden Werten 
 
 \begin{align*} 
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}\\
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}\\
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}\\
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}.
+   \chi_\text{C_6 O_{12} Pr_2} &= \num{<++>}\\
+   \chi_\text{Nd_2 O_3} &= \num{<++>}\\
+   \chi_\text{Gd_2 O_3} &= \num{<++>}\\
+   \chi_\text{Dy_2 O_3} &= \num{<++>}.
 \end{align*}
 
-\subsection{Suszeptibilität mittels Widerstandsverhältnis}
 
-Die Werte für die Suszeptibilität ergeben sich für die jeweiligen Stoffe zu folgenden Werten 
+\subsection{Suszeptibilität mittels Widerstandsverhältnis}
+Mit Gleichung \eqref{eqn:chiexp2} wird die Suszeptibilität der Proben bestimmt.
+Es ergeben sich die Werte
 
 \begin{align*} 
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}\\
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}\\
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}\\
-   \chi_\text{<++>} &= \SI{<++>}{\<++>}.
+   \chi_\text{C_6 O_{12} Pr_2} &= \num{<++>}\\
+   \chi_\text{Nd_2 O_3} &= \num{<++>}\\
+   \chi_\text{Gd_2 O_3} &= \num{<++>}\\
+   \chi_\text{Dy_2 O_3} &= \num{<++>}.
 \end{align*}
 

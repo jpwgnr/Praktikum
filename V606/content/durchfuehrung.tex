@@ -1,39 +1,54 @@
 \section{Durchführung}
 \label{sec:Durchführung}
 
-Es wird die Filterkurve des Selektiv-Verstärkers bei der Güte 
-$G=\num{100}$ bestimmt. 
-Anschließend bestimmt man mit der Apparatur in Abb. \ref{<++>} die 
-Suszeptibilität von Oxiden einiger Seltener-Erd-Elemente. 
+\subsection{Unterdrückung von Störspannung mittels Selektivverstärker}
+Um die Brückenspannung zu messen muss die Störspannung herausgefiltert werden. 
+Dazu wird ein Selektivverstärker verwendet, weil
+die Brückenspannung eine monofrequente Spannung ist. Die Druchlassfrequenz $\nu_0$ des 
+Selektivverstärkers wird auf die Signalfrequenz gestellt. 
+Frequenzen, die nah an der Frequenz $\nu_0$ liegen, werden nicht herausgefiltert.
+Eine Filterkurve eines Selektivverstärkers ist in Abb. \ref{abb:filterkurve} zu sehen.
 
 
-\subsection{Verfahren zur Unterdrückung der Störspannung}
-Die Störspannung ist problematisch bei der Messung der Brückenspannung $U_\text{Br}$. 
-Die Brückenspannung wird von der Störspannung komplett überdeckt, aber da die Signalspannung 
-eine monofrequente Spannung ist, lässt sich dieses Problem mittels eines 
-Selektivverstärkers beseitigen. Dessen Filterkurve hat die Gestalt einer Glockenkurve. 
-Interessant ist dabei die Güte $G$ des Verstärkers. 
-Frequenzen, die nah an der Frequenz $\nu_0$ liegen, werden nicht rausgefiltert, aber um 
-Messungen zur Suszeptibilität an paramagnetischen Proben durchzuführen reicht der Filter. 
+\subsection{Untersuchung der Filterkurve des Selektivverstärkers}
+Bei einer Güte von $G = \num{100}$ wird die Filterkurve des Selektivverstärkers
+untersucht. Bei einer konstanten Eingangsspannung $U_\text{E} = \SI{100}{\milli\volt}$
+wird die Ausgangsspannung $U_\text{A}$ bei variierender Frequenz gemessen.
+Die Frequenz wird auf $\nu = \SI{20}{\kilo\hertz}$ gestellt und in $\SI{1}{\kilo\hertz}$
+Schritten auf $\SI{40}{\kilo\hertz}$ erhöht. In einem Bereich von plus und minus 
+$\SI{1}{\kilo\hertz}$ vom Spannungsmaximum wird noch einmal genauer in $\SI{0.1}{\kilo\hertz}$
+Schritten gemessen.
 
-Es wird eine Schaltung wie in Abb. \ref{abb:schaltbild} benutzt, um die 
-entsprechenden Spannungen herauszufiltern. 
-Es wird also die Druchlassfrequenz des Selektivverstärkers auf die Signalfrequenz 
-eingestellt. Anschließend wird die Brückenschaltung konfiguriert. Anschließend wird eine 
-Probe in die Zylinderspule eingeführt. Die neue Brückenspannung wird genutzt um die 
-Suszeptibilität zu berechnen. Das einzige was dann noch fehlt ist die Gesamtverstärkung 
-der Apparatur, die abgelesen werden muss. 
+\noindent Eine theoretische Filterkurve eines Selektivverstärkers ist in Abb. 
+\ref{abb:filterkurve} dargestellt.
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm, height=7cm]{build/schaltbild.png}
+    \includegraphics[width=10cm, height=8cm]{build/filterkurve.png}
+    \caption{Filterkurve eines Selektivverstärkers. Die Frequenz ist gegen das
+    Verhältnis von Ausggangs- und Eingangsspannung aufgetragen. Es sind die
+    Druchlassfrequenz $\nu_0$ sowie die Frequenzen, bei denen das Verhältnis der
+    Spannungen $\frac{1}{\sqrt{2}}$ beträgt, eingetragen. \cite{V606}}
+    \label{abb:filterkurve}
+\end{figure}
+
+
+\subsection{Suszeptibilität mittels Spannungsverhältnis bzw. Widerstandsverhältnis}
+Es wird die Schaltung aus Abb. \ref{abb:schaltbild} nachgebaut.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=6cm]{build/schaltbild.png}
     \caption{Schaltung zur Bestimmung der Suszeptibilität. \cite{V606}}
     \label{abb:schaltbild}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=10cm, height=12cm]{build/brueckenschaltung.png}
-    \caption{Brückenschaltung zur Bestimmung der Suszeptibilität. \cite{V606}}
-    \label{abb:brueckenschaltung}
-\end{figure}
+\noindent Die Brückenspannung wird mittels der Widerstände auf ihr Minimum abgeglichen.
+Die Probe wird in die Brückenschaltung geschoben. Die jetzt angezeigte Brückenspannung
+wird aufgenommen. Anschließend wird die Brückenspannung mit dem Widerstand wieder auf
+ihr Minimum abgeglichen. Der Wert des Widerstandes wird ebenfalls aufgenommen.
+Das Ganze wird für alle vier Proben drei mal durchgeführt.
+
+\noindent Aus der Änderung der Brückenspannung $\Delta U_\text{Br}$ bzw. aus der 
+Änderung des Widerstandes $\Delta R$ kann die Suszeptibilität $\chi$ von Oxiden 
+Seltener-Erd-Verbindungen bestimmt werden.
