@@ -74,6 +74,13 @@ Die Suszeptibilität kann durch
 bestimmt werden.
 Dabei ist $k_\text{B}$ die Boltzmann-Konstante, $T$ die Temperatur und $N$ die Anzahl der 
 Momente pro Volumeneinheit.
+$N$ berechnet sich mit 
+\begin{equation}
+    N = 2 n_A \frac{\rho}{M},
+    \label{N}
+\end{equation}
+wobei $n_A$ die Avogadrokonstante, $\rho$ die Dichte des Stoffs und $M$ die Molmasse des Stoffs ist. 
+
 Außerden ist
 \begin{equation*}
     \mu_\text{B} = \frac{1}{2} \frac{e_0}{m_0} \hbar 
@@ -138,7 +145,13 @@ bestimmen:
 %irgendwo einfügen:
 Die Güte ist durch
 \begin{equation}
-    G = \frac{\nu_0}{\nu_\text{+} - \nu_\text{-}}
+    Q = \frac{\nu_0}{\nu_\text{+} - \nu_\text{-}}
     \label{eqn:guete}
 \end{equation}
 definiert.
+
+Die Fitkurve des Selektivverstärkers lässt sich als Cauchy-Verteilung betrachten. Damit hat die Kurve die Form 
+\begin{equation}
+    f(x) = a \frac{1}{\pi} \frac{s}{s^2 + (x-t)^2}.
+    \label{cauchyverteilung}
+\end{equation}

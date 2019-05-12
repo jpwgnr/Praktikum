@@ -10,9 +10,15 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Seltene-Erd-Verbindungen}{4}{subsubsection.2.1.4}
 \contentsline {subsubsection}{\numberline {2.1.5}Hundsche Regeln}{4}{subsubsection.2.1.5}
 \contentsline {subsection}{\numberline {2.2}Berechnung der theoretischen Suszeptibilität}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Berechnung der Suszeptibilität mittels Brückenspannung}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Berechnung der Suszeptibilität mittels Brückenspannung}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Berechnung der Suszeptibilität mittels Abgleichbedingung}{5}{subsection.2.4}
-\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Unterdrückung von Störspannung mittels Selektivverstärker}{5}{subsection.3.1}
+\contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Unterdrückung von Störspannung mittels Selektivverstärker}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Untersuchung der Filterkurve des Selektivverstärkers}{6}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Suszeptibilität mittels Spannungsverhältnis bzw. Widerstandsverhältnis}{6}{subsection.3.3}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Einstellung des Selektivverstärkers}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Theoriewerte für Suszeptibilität}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Suszeptibilität mittels Spannungsverhältnis}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Suszeptibilität mittels Widerstandsverhältnis}{12}{subsection.4.4}
+\contentsline {section}{\nonumberline Literatur}{13}{section*.9}

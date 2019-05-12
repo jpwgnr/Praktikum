@@ -7,12 +7,12 @@ import scipy.constants as const
 from scipy.optimize import curve_fit
 from something import some 
 #Generate data 
-f1, U1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"f / \si{\kilo\hertz}", r"U_A / \si{\milli\volt}"], label_text="taba", caption_text=r"Die Frequenz und die Ausgangsspannung bei einer Eingangsspannung $U_\text{E}= \SI{100}{\milli\volt}$." , precision=2)
+f1, U1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$f / \si{\kilo\hertz}$", r"$U_A / \si{\milli\volt}$"], label_text="taba", caption_text=r"Die Frequenz und die Ausgangsspannung bei einer Eingangsspannung $U_\text{E}= \SI{100}{\milli\volt}$." , precision=2)
 
 def func(x, a, s, t):
     return a/np.pi * (s/(s**2 + (x- t)**2))
 
-params, err = some.curvefit(f1, U1, function= func, x_name=r"f / \si{\kilo\hertz}", y_name=r"U_A / \si{\milli\volt}", num=1, file_name="build/plota2.pdf")
+params, err = some.curvefit(f1, U1, function= func, x_name=r"$f / \si{\kilo\hertz}$", y_name=r"$U_A / \si{\milli\volt}$", num=1, file_name="build/plota2.pdf")
 
 Q = 35.1/(35.3-34.95) 
 
@@ -71,11 +71,12 @@ chi1 = getchi1(dU, F, Qreal)
 chi2 = getchi2(dR, F, Qreal)
 
 
-some.tabelle([L, S, J, G], finished_file="build/tab1.tex", vars_name=[r"Maximaler Drehimpuls $L$", r"Gesamtspin $S$", r"Gesamtdrehimpuls $J$", r"Landé-Faktor $g_\text{J}$"], label_text="tab1", caption_text=r"Der maximale Drehimpuls, der Gesamtspin und der Drehimpuls ergeben sich zum Landé-Faktor für die vier verschiedenen Elemente.", precision=2) 
-some.tabelle([M*1e3, rho, m*1e3], finished_file="build/tab2.tex", vars_name=[r"Masse $m$ \si{\gram}", r"Dichte $\rho_\text{W}$ / \si{\kilo\gram\per\cubic\meter}",r"Masse $m$ \si{\gram\per\mol}" ], label_text="tab2", caption_text=r"Die Masse der Probe und die Dichte des Probenmaterials. Für den ersten Stoff wurde dabei angenommen, dass die Dichte näherungsweise dieselbe ist, wie die Dichte der Probe. Die Dichte wurde hierbei mit dem Volumen und der angegebenen Probenmasse bestimmt. Für die anderen Stoffe war die Dichte in der Anleitung gegeben.", precision=2) 
+some.tabelle([L, S, J, G], finished_file="build/tab1.tex", vars_name=[r"$L$", r"$S$", r"$J$", r"$g_\text{J}$"], label_text="tab1", caption_text=r"Der maximale Drehimpuls $L$, der Gesamtspin $S$ und der Gesamtdrehimpuls $J$ ergeben sich zum Landé-Faktor $g_\text{j}$ für die vier verschiedenen Elemente.", precision=2) 
+some.tabelle([M*1e3, rho, m*1e3], finished_file="build/tab2.tex", vars_name=[r"$m$ \si{\gram}", r"$\rho_\text{W}$ / \si{\kilo\gram\per\cubic\meter}",r"$M$ \si{\gram\per\mol}" ], label_text="tab2", caption_text=r"Die Masse der Probe, die Dichte des Probenmaterials und die Molmasse. Für den ersten Stoff wurde dabei angenommen, dass die Dichte näherungsweise dieselbe ist, wie die Dichte der Probe. Die Dichte wurde hierbei mit dem Volumen und der angegebenen Probenmasse bestimmt. Für die anderen Stoffe war die Dichte in der Anleitung gegeben.", precision=2) 
+some.tabelle([dU, dR], finished_file="build/tab3.tex", vars_name=[r"U / \si{\volt}", r"R / \si{\ohm}"], label_text="tab3", caption_text=r"Die Differenz der Spannungen vor und nach einfügen des Stoffs und die Differenz zwischen den Widerständen.", precision=2) 
 
 #Generate linReg-Plot
-#some.linReg(x=<++>, y=<++>, x_name=r"<++>", y_name=r"<++>", num=<++>,  x_add=<++>, file_name="build/plot<++>.pdf")
+#some.linReg(x=, y=<++>, x_name=r"<++>", y_name=r"<++>", num=<++>,  x_add=<++>, file_name="build/plot<++>.pdf")
 #Generate curve-fit-Plot 
 #some.curvefit(x=<++>, y=<++>, num=<++>, x_add=<++>, function=<++>, x_name=r"<++>", y_name=r"<++>", file_name="build/plot<++>.pdf")
 
