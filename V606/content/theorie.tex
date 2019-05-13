@@ -64,6 +64,37 @@ muss mit dem Pauli-Prinzip und der ersten Regel verträglich sein.
 $\vec{J}= \vec{L} + \vec{S}$, wenn die Schale mehr als halb voll ist.
 \end{itemize}
 
+\subsubsection{Unterdrückung von Störspannungen mittels Selektivverstärker}
+Um die Brückenspannung zu messen muss die Störspannung herausgefiltert werden. 
+Dazu wird ein Selektivverstärker verwendet, weil
+die Brückenspannung eine monofrequente Spannung ist. Die Druchlassfrequenz $\nu_0$ des 
+Selektivverstärkers wird auf die Signalfrequenz gestellt. 
+Frequenzen, die nah an der Frequenz $\nu_0$ liegen, werden nicht herausgefiltert.
+Eine Filterkurve eines Selektivverstärkers ist in Abb. \ref{abb:filterkurve} zu sehen.
+
+\noindent Die Fitkurve des Selektivverstärkers lässt sich als Cauchy-Verteilung betrachten. Damit hat die Kurve die Form 
+\begin{equation}
+    f(x) = a \frac{1}{\pi} \frac{s}{s^2 + (x-t)^2}.
+    \label{cauchyverteilung}
+\end{equation}
+
+\noindent Die Güte $Q$ des Selektivverstärkers ist durch
+\begin{equation}
+    Q = \frac{\nu_0}{\nu_\text{+} - \nu_\text{-}}
+    \label{eqn:guete}
+\end{equation}
+definiert.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm, height=8cm]{build/filterkurve.png}
+    \caption{Filterkurve eines Selektivverstärkers. Die Frequenz ist gegen das
+    Verhältnis von Ausggangs- und Eingangsspannung aufgetragen. Es sind die
+    Druchlassfrequenz $\nu_0$ sowie die Frequenzen, bei denen das Verhältnis der
+    Spannungen $\frac{1}{\sqrt{2}}$ beträgt, eingetragen. \cite{V606}}
+    \label{abb:filterkurve}
+\end{figure}
+
 
 \subsection{Berechnung der theoretischen Suszeptibilität}
 Die Suszeptibilität kann durch 
@@ -76,7 +107,7 @@ Dabei ist $k_\text{B}$ die Boltzmann-Konstante, $T$ die Temperatur und $N$ die A
 Momente pro Volumeneinheit.
 $N$ berechnet sich mit 
 \begin{equation}
-    N = 2 n_A \frac{\rho}{M},
+    N = 2 \, n_A \, \frac{\rho}{M},
     \label{N}
 \end{equation}
 wobei $n_A$ die Avogadrokonstante, $\rho$ die Dichte des Stoffs und $M$ die Molmasse des Stoffs ist. 
@@ -110,7 +141,7 @@ Der Querschnitt $Q$ einer Probe im Inneren der Spule ist kleiner als der Quersch
 der Spule.
 Damit ändert sich die Induktivität insgesamt zu 
 \begin{equation*}
-    L_\text{M}= \mu_0 \frac{n^2 \, F}{l} + \chi \mu_0 \frac{n^2 Q}{l}.
+    L_\text{M}= \mu_0 \, \frac{n^2 \, F}{l} + \chi \, \mu_0 \, \frac{n^2 \, Q}{l}.
     \label{eqn:induktivität}
 \end{equation*}
 Die Änderung der Induktivität ist also %Ist das darüber wichtig?
@@ -131,7 +162,7 @@ Dabei wird der Querschnitt der Probe folgendermaßen definiert
 wobei $M$ die Masse, $d$ die Länge und $\rho$ die Dichte der Probe ist.
 
 
-\subsection{Berechnung der Suszeptibilität mittels Abgleichbedingung}
+\subsection{Berechnung der Suszeptibilität mittels Abgleichbedingung} %Widerstandsverhältnis statt Abgleichbedingung?
 %Die Abgleichbedingung, die dabei zu erfüllen ist, führt dazu, dass der Widerstand $R_3$ und der Widerstand $R_4$ annähernd gleich sein müssen. 
 Nach dem Einführen einer Probe in eine Spule erhöht sich die Brückenspannung.
 Das Verhältnis aus dem Wert $\Delta R$, um den der Widerstand $R_3$ korrigiert werden
@@ -140,18 +171,4 @@ bestimmen:
 \begin{equation}
     \chi = 2 \, \frac{\Delta R}{R_3} \, \frac{F}{Q}.
     \label{eqn:chiexp2}
-\end{equation}
-
-%irgendwo einfügen:
-Die Güte ist durch
-\begin{equation}
-    Q = \frac{\nu_0}{\nu_\text{+} - \nu_\text{-}}
-    \label{eqn:guete}
-\end{equation}
-definiert.
-
-Die Fitkurve des Selektivverstärkers lässt sich als Cauchy-Verteilung betrachten. Damit hat die Kurve die Form 
-\begin{equation}
-    f(x) = a \frac{1}{\pi} \frac{s}{s^2 + (x-t)^2}.
-    \label{cauchyverteilung}
 \end{equation}

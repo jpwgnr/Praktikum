@@ -71,7 +71,7 @@ chi1 = getchi1(dU, F, Qreal)
 chi2 = getchi2(dR, F, Qreal)
 
 
-some.tabelle([L, S, J, G], finished_file="build/tab1.tex", vars_name=[r"$L$", r"$S$", r"$J$", r"$g_\text{J}$"], label_text="tab1", caption_text=r"Der maximale Drehimpuls $L$, der Gesamtspin $S$ und der Gesamtdrehimpuls $J$ ergeben sich zum Landé-Faktor $g_\text{j}$ für die vier verschiedenen Elemente.", precision=2) 
+some.tabelle([L, S, J, G], finished_file="build/tab1.tex", vars_name=[r"$L$", r"$S$", r"$J$", r"$g_\text{J}$"], label_text="tab1", caption_text=r"Der maximale Drehimpuls $L$, der Gesamtspin $S$ und der Gesamtdrehimpuls $J$ ergeben sich zum Landé-Faktor $g_\text{J}$ für die vier verschiedenen Elemente.", precision=2) 
 some.tabelle([M*1e3, rho, m*1e3], finished_file="build/tab2.tex", vars_name=[r"$m$ \si{\gram}", r"$\rho_\text{W}$ / \si{\kilo\gram\per\cubic\meter}",r"$M$ \si{\gram\per\mol}" ], label_text="tab2", caption_text=r"Die Masse der Probe, die Dichte des Probenmaterials und die Molmasse. Für den ersten Stoff wurde dabei angenommen, dass die Dichte näherungsweise dieselbe ist, wie die Dichte der Probe. Die Dichte wurde hierbei mit dem Volumen und der angegebenen Probenmasse bestimmt. Für die anderen Stoffe war die Dichte in der Anleitung gegeben.", precision=2) 
 some.tabelle([dU, dR], finished_file="build/tab3.tex", vars_name=[r"U / \si{\volt}", r"R / \si{\ohm}"], label_text="tab3", caption_text=r"Die Differenz der Spannungen vor und nach einfügen des Stoffs und die Differenz zwischen den Widerständen.", precision=2) 
 

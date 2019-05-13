@@ -12,12 +12,12 @@ In Abb. \ref{plota} sind diese Werte gegeneinander aufgetragen.
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=8cm]{build/plota2.pdf} %
-    \caption{Die Filterkurve des Selektivverstärkers. Die Ausgangspannung
-    ist gegen die Frequenz aufgetragen.}
+    \caption{Die Filterkurve des Selektivverstärkers. Die Ausgangspannung $U_\text{A}$
+    ist gegen die Frequenz $\nu$ aufgetragen. Es sind die Daten und ein Fit eingetragen.}
     \label{plota}
 \end{figure}
 
-Der Fit wurde mit Gleichung \eqref{cauchyverteilung} gefittet. Die Werte die sich daraus ergeben sind
+\noindent Der Fit wurde mit Gleichung \eqref{cauchyverteilung} gefittet. Die Werte, die sich daraus ergeben, sind
 \begin{align*} 
   a &= \SI{106.38(289)}{\milli\volt\kilo\hertz} \\
   s &= \SI{0.37(2)}{\kilo\hertz} \\
@@ -49,16 +49,16 @@ hat.
 \subsection{Theoriewerte für Suszeptibilität} 
 Für die verschiedenen Stoffe haben sich aufgrund der verschiedenen Elemente und Zusammensetzungen auch verschiedene 
 Werte für die Suszeptibilität ergeben. 
-Die Werte, die zur Berechnung nötig waren, sind die Temperatur $T$, die als Raumtemperatur von $\SI{20}{\degree\celsius}$ angenommen wurde, was einem Wert von \SI{293.15}{\kelvin} entspricht. 
+Die Werte, die zur Berechnung nötig waren, sind die Temperatur $T$, die als Raumtemperatur von $\SI{20}{\celsius}$ angenommen wurde, was einem Wert von \SI{293.15}{\kelvin} entspricht. 
 
-\noindent Die Anzahl der Momente N wurde mit der Formel \eqref{N} berechnet. Dafür benötigte man die Dichte $\rho$ und die Molmasse $M$. Um $Q_{real}$ zu bestimmen, benötigt man auch noch die tatsächliche Masse der jeweiligen Stoffe. Alle drei Werte sind in Tab. \ref{tab2} aufgetragen. 
+\noindent Die Anzahl der Momente N wurde mit der Formel \eqref{N} berechnet. Dafür benötigte man die Dichte $\rho$ und die Molmasse $M$. Um $Q_{real}$ zu bestimmen, benötigt man auch noch die tatsächliche Masse der jeweiligen Stoffe. Alle drei Werte sind in Tab. \ref{tab2} eingetragen. 
 
 \input{tables/tab2.tex}
 
-\noindent Für den Stoff $Nd_2$ ergibt sich die konkrete Rechnung des Landé-Faktors $g_j$ folgendermaßen: 
+\noindent Für den Stoff $Nd_2 O_3$ ergibt sich die konkrete Rechnung des Landé-Faktors $g_J$ folgendermaßen: 
 
 \begin{align*}
-    g_j &= \frac{3 J (J+1) + S (S+1) - L (L+1)}{2 J (J+1)} \\
+    g_J &= \frac{3 J (J+1) + S (S+1) - L (L+1)}{2 J (J+1)} \\
         &= \frac{3 \cdot 4,5 \cdot(4,5 + 1) + 1,5 \cdot (1,5 +1) - 6 \cdot (6+1)}{2 \cdot 4,5 \cdot (4,5 + 1)} \\
         &= 0,73.
 \end{align*} 
@@ -67,7 +67,7 @@ Die Werte, die zur Berechnung nötig waren, sind die Temperatur $T$, die als Rau
 
 \noindent Die anderen drei Werte lassen sich analog ermitteln. 
 In Tab. \ref{tab1} befinden sich die Werte für $L$, $S$ und $J$. Daneben stehen jeweils die Werte, die sich für 
-die $g_j$ ergeben. 
+$g_J$ ergeben. 
 
 \input{tables/tab1.tex} %falsche Tabelle
 
@@ -82,7 +82,7 @@ zu folgenden Werten
 \end{align*}
 
 \subsection{Suszeptibilität mittels Spannungsverhältnis}
-In Tab. \ref{tab3} sind die Spannungsdifferenzen vor und nach dem einlegen der Probe und daneben die Widerstandsdifferenzen beim gleichen Vorgang für die verschiedenen Elemente aufgelistet.
+In Tab. \ref{tab3} sind die Spannungsdifferenzen vor und nach dem Einlegen der Probe und daneben die Widerstandsdifferenzen beim gleichen Vorgang für die verschiedenen Elemente aufgelistet.
 
 \input{tables/tab3.tex}
 \noindent Die Werte für die Suszeptibilität, die mittels Gleichung \eqref{eqn:chiexp1} berechnet werden können, ergeben sich für die jeweiligen Stoffe 
@@ -97,7 +97,8 @@ zu folgenden Werten
 
 
 \subsection{Suszeptibilität mittels Widerstandsverhältnis}
-Mit Gleichung \eqref{eqn:chiexp2} wird die Suszeptibilität der Proben bestimmt.
+Mit Gleichung \eqref{eqn:chiexp2} und den Werten aus Tab. \ref{tab3}
+wird die Suszeptibilität der Proben bestimmt.
 Es ergeben sich die Werte
 
 \begin{align*} 
