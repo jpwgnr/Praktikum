@@ -1,12 +1,13 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\noindent Es soll mit Hilfe eines Michelson-Interferometers die Wellenlänge eines Dioden-Lasers bestimmt werden. 
+\subsection{Bestimmung der Wellenlänge}
+Es soll mithilfe eines Michelson-Interferometers die Wellenlänge eines Dioden-Lasers bestimmt werden. 
 Dafür werden die Anzahl der ausgelösten Impulse der Photodiode und die Start- und Endwerte auf der Mikrometerschraube in Tab. \ref{taba} dargestellt.  
 
 \input{build/taba.tex}
 
-\noindent Aus dem Betrag der Differenz der Start- und Endwerte auf der Mikrometerschraube ergibt sich ein $\Delta d$. Dieses muss dann noch mit der Hebelübersetzung $1:5,017$  multipliziert werden. 
+\noindent Aus dem Betrag der Differenz der Start- und Endwerte auf der Mikrometerschraube ergibt sich ein $\Delta d$. Dieses muss noch mit der Hebelübersetzung $1:5,017$  multipliziert werden. 
 
 \noindent Als Mittelwert der Anzahl der Impulse $\z_1$ und der korrekt berechneten $\Delta d$ ergeben sich die Werte 
 
@@ -15,46 +16,46 @@ Dafür werden die Anzahl der ausgelösten Impulse der Photodiode und die Start- 
    \Delta d &= \SI{940(8)}{\micro\meter}.
 \end{align*}
 
-\noindent Daraus ergibt sich dann mit Gleichung \eqref{eqn:lambda} und der Fehlerformel \eqref{eqn:errlambda} die Wellengleichung des Lasers mit einem Wert von 
+\noindent Daraus ergibt sich mit Gleichung \eqref{eqn:lambda} und der Fehlerformel \eqref{eqn:errlambda} die Wellenlänge des Lasers zu einem Wert von 
 
 \begin{equation*}
-    \lambda = \SI{626(5)}{\nano\meter}.
+    \lambda_\text{exp} = \SI{626(5)}{\nano\meter}.
 \end{equation*}
 
 \noindent Der angegebene Literaturwert der Wellenlänge liegt bei 
 
 \begin{equation*}
-    \lambda = \SI{635}{\nano\meter}.
+    \lambda_\text{lit} = \SI{635}{\nano\meter}.
 \end{equation*}
 
-
-\noindent Im zweiten Teil wird aus der Anzahl der Impulse, die durch eine Druckveränderung auf der Strecke $b = \SI{5}{\milli\meter}$ des Lichtstrahls ausgelöst werden, der Brechungsindex von Luft bestimmt. 
-Die Werte der Anzahl sind in \ref{tabb} dargestellt mit der jeweiligen Druckdifferenz. 
+\subsection{Bestimmung des Brechungsindex}
+Im zweiten Teil wird aus der Anzahl der Impulse, die durch eine Druckveränderung auf der Strecke $b = \SI{5}{\centi\meter}$ des Lichtstrahls ausgelöst werden, der Brechungsindex von Luft bestimmt. 
+Die Werte der Anzahl sind in \ref{tabb} mit der jeweiligen Druckdifferenz dargestellt.
 
 \input{tables/tabb.tex}
 
-\noindent Die Anzahl $z_2$ ergibt sich zu 
+\noindent Der Mittelwert der Anzahl $z_2$ ergibt sich zu 
 
 \begin{equation*}
     z_2 = \num{24.0(6)}.
 \end{equation*}
 
-\noindent Daraus ergibt sich eine Abweichung $\Delta n$ mit den fehlerbehafteten Größen $z_2$ und $\lambda$ und der Gleichung \eqref{eqn:deltan} und der Fehlerformel \eqref{eqn:errdeltan} zu 
+\noindent Daraus ergibt sich eine Abweichung $\Delta n$ mit den fehlerbehafteten Größen $z_2$ und $\lambda$, mit der Gleichung \eqref{eqn:deltan} und der Fehlerformel \eqref{eqn:errdeltan} zu 
 \begin{equation*}
     \Delta n = \num{150(4)}.
 \end{equation*}
 
-\noindent Unter Normalbedingungen ist Temperatur $T_0 = \SI{273.15}{\kelvin}$ und der Druck $ p_0 = \SI{1.0132}{\bar}.$ Die Druckdifferenz wurde auf dem Messgerät abgelesen und ist $\Delta p= \SI{0.6}{\bar}$.
+\noindent Unter Normalbedingungen ist die Temperatur $T_0 = \SI{273.15}{\kelvin}$ und der Druck $ p_0 = \SI{1.0132}{\bar}.$ Die Druckdifferenz wurde auf dem Messgerät abgelesen und ist $\Delta p= \SI{0.6}{\bar}$.
 
-\noindent Mit Gleichung \eqref{eqn:n} und der Fehlerformel \eqref{eqn:errn} ergibt sich dann als Brechungsindex
+\noindent Mit Gleichung \eqref{eqn:n} und der Fehlerformel \eqref{eqn:errn} ergibt sich als Brechungsindex
 
 \begin{equation*}
-    n = \num{1.000272(8)}.
+    n_\text{exp} = \num{1.000272(8)}.
 \end{equation*}
 
-Der Literaturwert liegt \cite{luft}
+\noindent Der Literaturwert \cite{luft} liegt bei
 
 \begin{equation*}
-    n = \num{1.00029}.
+    n_\text{lit} = \num{1.00029}.
 \end{equation*}
 

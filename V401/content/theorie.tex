@@ -1,16 +1,21 @@
 \section{Ziel}
+Das Ziel dieses Versuchs ist es, mithilfe eines Michelson-Interferometers die Wellenlänge des von einem Laser emittierten Lichtes und durch Druckänderung den Brechungsindex von Luft zu bestimmen.
 
 \section{Theorie}
 \label{sec:Theorie}
 
-\subsection{Interferenz} %lieber was ganz anderes schreiben
-Licht kann als ebene, elektromagnetische Welle beschrieben werden
-\begin{equation*}
-    \var{E}= \var{E}_0 cos(kx - \omega t - \delta).
-    \label{eqn:efeld}
-\end{equation*}
-Dabei ist $x$ die Ortskoordinate, $k$ die Wellenzahl, $\omega$ die Kreisfrequenz und $\delta$ 
-die Phasenverschiebung. 
+\subsection{Interferenz}
+Licht kann als ebene, elektromagnetische Welle beschrieben werden.
+Interferenz ist die Überlagerung bei Zusammentreffen mehrerer Wellenzüge.
+Aus der Interferenz kann beispielsweise die Wellenlänge des Lichtes berechnet werden.
+
+% Licht kann als ebene, elektromagnetische Welle beschrieben werden
+% \begin{equation*}
+%     \var{E}= \var{E}_0 cos(kx - \omega t - \delta).
+%     \label{eqn:efeld}
+% \end{equation*}
+% Dabei ist $x$ die Ortskoordinate, $k$ die Wellenzahl, $\omega$ die Kreisfrequenz und $\delta$ 
+% die Phasenverschiebung. 
 
 %\noindent Da sich Licht als Maxwellgleichung beschreiben lässt, gilt das Superpositionsprinzip. 
 %Daher ist das elektrische Feld eines Lichtstrahls meist die Summe der Felder mehrerer 
@@ -18,8 +23,7 @@ die Phasenverschiebung.
 %Dies lässt sich aber nicht unmittelbar nachprüfen. 
 %Doch man kann die Intensität $I$ bestimmen. 
 
-\noindent Die Lichtintensität, also der zeitliche Mittelwert der auf eine Flächeneinheit 
-treffenden Lichtleistung, lässt sich aus den Maxwellgleichungen als
+\noindent Die Lichtintensität lässt sich als
 \begin{equation}
     I = const \, \abs{\vec{E}}^{2}
     \label{eqn:intensität}
@@ -77,9 +81,9 @@ Durch Spiegel können die Bündel wieder zusammengeführt werden.
 Die Kohärenzlänge ist der Wegunterschied, bei dem die Interferenzerscheinungen
 gerade verschwinden:
 \begin{equation*}
-    l = N \lambda.
+    l = z \lambda.
 \end{equation*}
-Dabei entspricht $N$ der Anzahl der am Schnittpunkt der Strahlen entstehenden Intensitätsmaxima 
+Dabei entspricht $z$ der Anzahl der am Schnittpunkt der Strahlen entstehenden Intensitätsmaxima 
 und $\lambda$ der Wellenlänge des Lichts. 
 Der Gangunterschied darf also nicht größer als $l$ sein.
 \newline
@@ -98,10 +102,10 @@ gegeben, wobei $c$ der Lichtgeschwindigkeit entspricht.
 
 \subsubsection{Kohärenzbedingung}
 Eine Bedingung für Interferenzerscheinungen ist, dass bei ausgedehnten 
-Lichtquellen die Richtungsänderung $\zeta$ wie in Abb. \ref{ausgedehnt} dargestellt, 
+Lichtquellen die Richtungsänderung $\zeta$ 
 klein gegenüber $\pi$ sein muss. Es gilt also die Bedingung 
 \begin{equation*}
-    a sin(\zeta) << \frac{\lambda}{2}.
+    a \, sin(\zeta) << \frac{\lambda}{2}.
 \end{equation*}
 
 % \subsubsection{Polarisation}
@@ -111,31 +115,33 @@ klein gegenüber $\pi$ sein muss. Es gilt also die Bedingung
 \subsection{Das Michelson-Interferometer}
 Ein Interferometer ist ein Gerät, das unter Ausnutzung von Interferenzeffekten die 
 Messung optischer Größen erlaubt. 
-Es wird mithilfe einer semipermeable Platte $P$ ein Lichtstrahl in zwei Teilbündel 
-gespalten. Anschließend wird eines der Bündel verändert, also es wird ein Gangunterschied
-hinzugefügt. Durch Spiegel werden die Bündel wieder zusammengeführt. Diese treffen
-auf den Detektor $D$.
+Es wird mithilfe einer semipermeablen Platte $P$ ein Lichtstrahl in zwei Teilbündel 
+gespalten. Anschließend wird eines der Bündel verändert, also es wird ein Gangunterschiedmhinzugefügt. Durch Spiegel werden die Bündel wieder zusammengeführt. Diese treffen auf den Detektor $D$.
 Es ist nötig, eine Kompensationsplatte einzufügen, damit die Bündel die gleiche Strecke
 durchlaufen.
 Mit der in Abb. \ref{abb:michelson} dargestellten Apparatur kann die Intensität am 
-Detektor $D$ gemessen werden. Dadurch lässt sich durch Variation des Abstandes $d$ eines Spiegels 
-feststellen, an welchen Stellen die Maxima liegen. Dadurch widerum lässt sich die 
+Detektor $D$ gemessen werden. Dadurch lässt sich durch Variation des Abstandes $d$ eines Spiegels feststellen, an welchen Stellen die Maxima liegen. Dadurch widerum lässt sich die 
 Wellenlänge $\lambda$ mit 
 \begin{equation}
     \Delta d = z \cdot \frac{\lambda}{2}
     \label{eqn:lambda}
 \end{equation}
-berechnen. Dabei ist $z$ die Anzahl der Maxima.
+berechnen. Dabei ist $z$ die Anzahl der Intensitätsmaxima.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=6cm]{build/michelson.png}
+    \caption{}
+    \label{fig:michelson}
+\end{figure}
 
 \noindent Alternativ wird ein Medium mit geändertem Brechungsindex mit einer Breite $b$ eingesetzt. 
-Es kann der Gasdruck geändert werden, um verschiedene Maxima 
-festzustellen. 
-Dann gilt 
+Bei Änderung des Gasdrucks gilt
 \begin{equation}
     b \cdot \Delta n = z \cdot \frac{\lambda}{2}.
     \label{eqn:deltan}
 \end{equation}
-Da $\lambda$ im allgemeinen deutlich kleiner als $b$ ist, lässt sich damit ein 
+Da $\lambda$ im Allgemeinen deutlich kleiner als $b$ ist, lässt sich damit ein 
 Unterschied des Brechungsindex in der Größenordnung von $\num{10e-5}$ bestimmen.
 
 \noindent Der Brechungsindex unter Normalbedingungen ist durch
@@ -149,13 +155,6 @@ Die Normalbedingungen sind
     p_0 &= \SI{1013.2}{\milli\bar} \\
     T_0 &= \SI{273.15}{\kelvin}.
 \end{align*}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=12cm, height=6cm]{build/michelson.png}
-    \caption{}
-    \label{fig:michelson}
-\end{figure}
 
 \begin{figure}
     \centering
