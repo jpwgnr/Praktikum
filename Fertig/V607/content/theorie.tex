@@ -15,16 +15,16 @@ verbundene Strahlenwirkung gemessen.
 \subsection{Ionendosis J und Ionendosisrate j}
 Mit der Ionisation des bestrahlten Materials geht zumeist
 eine Absorption von Röntgenstrahlung einher. %gleiche Formulierung wie in der Anleitung
-Die Ionendosis ist durch die in Luft erzeugte Ladung $dQ$
-relativ zur Masse $dm_\text{L}$ der bestrahlten Luft definiert:
+Die Ionendosis ist durch die in Luft erzeugte Ladung $\text{d}Q$
+relativ zur Masse $\text{d}m_\text{L}$ der bestrahlten Luft definiert:
 \begin{equation*}
-    J = \frac{dQ}{dm_\text{L}}.
+    J = \frac{\text{d}Q}{\text{d}m_\text{L}}.
     \label{eqn:Ionendosis}
 \end{equation*}
 
 \noindent Die Ionendosisrate $\dot{J}$ entspricht dem zeitlichen Differential der Ionendosis $J$, also gilt 
 \begin{equation}
-    j = \dot{J} =\frac{dQ}{dt} \frac{1}{dm_\text{L}} =\frac{I}{dm_\text{L}}.
+    j = \dot{J} =\frac{\text{d}Q}{dt} \frac{1}{\text{d}m_\text{L}} =\frac{I}{\text{d}m_\text{L}}.
     \label{eqn:Ionendosisrate}
 \end{equation}
 
@@ -33,7 +33,7 @@ Die Energiedosis ist das Verhältnis von absorbierter
 Energie $dE$ zu der Masse $dm$ des Absorbers.
 Sie wird beschrieben durch
 \begin{equation*}
-    D = \frac{dE}{dm} = \frac{1}{\rho} \cdot \frac{dE}{dV}.
+    D = \frac{\text{d}E}{\text{d}m} = \frac{1}{\rho} \cdot \frac{\text{d}E}{\text{d}V}.
     \label{eqn:Energiedosis}
 \end{equation*}
 Dabei ist $\rho$ die Dichte des Absorbers.
@@ -61,7 +61,7 @@ beschrieben.
 Die Äquivalenzdosis $H$ kann durch diesen Qualitätsfaktor
 berechnet werden:
 \begin{equation*}
-    H = Q \cdot \frac{dE}{dm} = Q \cdot D.
+    H = Q \cdot \frac{\text{d}E}{\text{d}m} = Q \cdot D.
     \label{eqn:Aequivalenzdosis}
 \end{equation*}
 
@@ -85,8 +85,8 @@ Das ionisierte Luftvolumen kann folgendermaßen bestimmt werden:
 \end{equation*}
 Dabei sind die Radien
 \begin{align*}
-    R &= \frac{d \, x_2}{2 \, x_0} \\
-    r &= \frac{d \, x_1}{2 \, x_0}. 
+    R &= \frac{\text{d} \, x_2}{2 \, x_0} \\
+    r &= \frac{\text{d} \, x_1}{2 \, x_0}. 
 \end{align*}
 Das Volumen ist also 
 \begin{equation}
@@ -97,6 +97,25 @@ Das Volumen ist also
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=4cm]{build/strahl.png}
-    \caption{Skizze der Apparatur und des Strahlengangs. \cite{V607}}
+    \caption{Es wird die Skizze der Apparatur und ein Strahlengang dargestellt.Links ist eine $Cu$-Anode, in der Mitte eine Blende und rechts ein Plattenkondensator zu sehen. Außerdem ist das bestrahlte Luftvolumen zwischen den Platten des Kondensators blau gekennzeichnet. Die Abstände zwischen den drei Objekten sind unter der Skizze eingezeichnet.\cite{V607}}
     \label{fig:Strahlgeometrie}
 \end{figure}
+
+\subsection{Ausgleichsrechnung}
+
+Die Formel für die lineare Regression ergibt sich zu 
+
+\begin{equation}
+    y = a \cdot x + b.
+    \label{eqn:linreg}
+\end{equation}
+
+\noindent Dabei ist $a$ die Steigung und $b$ der $y$-Achsenabschnitt.
+
+\noindent Für die Ausgleichsrechnung einer quadratischen Funktion wird die Formel 
+\begin{equation}
+    y = a \cdot x^2 + b
+    \label{eqn:quadreg}
+\end{equation}
+benutzt.
+Dabei ist $a$ die Amplitude bzw. Stauchung/Streckung und $b$ der $y$-Achsenabschnitt.

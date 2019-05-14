@@ -25,12 +25,27 @@ $d_2 = \SI{5}{\milli\meter}$ sind
 %Ionendosis J aus V und I_S bestimmen
 Der Kondensatorstrom $I_\text{K}$ in Abhängigkeit von der
 Kondensatorspannung $U_\text{K}$ bei der Blende mit
-$d_1 = \SI{2}{\milli\meter}$ ist in Tab. \ref{taba}
+$d_1 = \SI{2}{\milli\meter}$ ist in Tab. \ref{taba} und in Fig. \ref{plota}
 dargestellt. Die Werte für die Blende mit 
-$d_2 = \SI{5}{\milli\meter}$ befinden sich in Tab. \ref{tabb}.
+$d_2 = \SI{5}{\milli\meter}$ befinden sich in Tab. \ref{tabb} und sind in 
+Fig. \ref{plotb} dargestellt worden.
 
 \input{build/taba.tex}
 \input{build/tabb.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm, height=9cm]{build/plota.pdf}
+    \caption{Die Kathodenspannung $U_\text{K}$ und der Kathodenstrom $I_\text{K}$ sind in diesem Plot gegeneinander aufgetragen. Die Beschleunigungsspannung $U_\text{B}$ beträgt $\SI{25}{\kilo\volt}$, der Anodenstrom $I_\text{A}$ beträgt $\SI{1}{\milli\ampere}$. Der Blendendurchmesser beträgt $\SI{2}{\milli\meter}$.}
+    \label{plota}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm, height=9cm]{build/plotb.pdf}
+    \caption{Die Kathodenspannung $U_\text{K}$ und der Kathodenstrom $I_\text{K}$ sind in diesem Plot gegeneinander aufgetragen. Die Beschleunigungsspannung $U_\text{B}$ beträgt $\SI{25}{\kilo\volt}$, der Anodenstrom $I_\text{A}$ beträgt $\SI{1}{\milli\ampere}$. Der Blendendurchmesser beträgt $\SI{5}{\milli\meter}$.}
+    \label{plotb}
+\end{figure}
 
 \noindent Aus den Sättigungswerten des Kondensatorstroms ergibt sich die Ionendosisrate $\dot{J}$ und die Energiedosisrate $\dot{D}$. 
 Der Sättigungswert für die kleine Blende ergibt sich zu 
@@ -76,7 +91,7 @@ ergibt sich die mittlere Energiedosisrate von
 Die Kondensatorströme $I_\text{K}$ in Abhängigkeit vom
 Anodenstrom $I_\text{A}$ für die beiden Kondensatorspannungen
 $U_\text{K, 1} = \SI{500}{\volt}$ und $U_\text{K, 2} = \SI{300}{\volt}$
-sind in \ref{tabc} eingetragen.
+sind in Tab. \ref{tabc} eingetragen.
 
 \subsubsection{Erste Kondensatorspannung}
 %I_K gegen I_A plotten
@@ -87,11 +102,11 @@ Die $I_\text{K}$- und $I_\text{A}$-Werte stehen in Tab. \ref{tabc} und sind in A
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=9cm]{build/plot1.pdf}
-    \caption{$I_\text{K}$- und $I_\text{A}$-Werte gegeneinander aufgetragen.}
+    \caption{Der Kathodenstrom $I_\text{K}$ und der Anodenstrom $I_\text{A}$ sind gegeneinander aufgetragen. Die Beschleunigungsspannung $U_\text{B}$ beträgt $\SI{25}{\kilo\volt}$. Die Kathodenspannung $U_\text{K}$ beträgt ,$\SI{500}{\volt}$. Der Blendendurchmesser ist $\SI{5}{\milli\meter}.$}
     \label{fig:plot1}
 \end{figure}
 
-\noindent Die Parameter, die sich aus der linearen Regression ergeben, betragen
+\noindent Die Parameter, die sich aus der linearen Regression nach Gleichung \eqref{eqn:linreg} ergeben, betragen
 \begin{align*}
     a &= \num{27.48(04)e-4}\\
     b &= \SI{-4.32e-11}{\ampere},
@@ -105,11 +120,11 @@ Die $I_\text{K}$- und $I_\text{A}$-Werte stehen in Tab. \ref{tabc} und sind in A
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=9cm]{build/plot2.pdf}
-    \caption{$I_\text{K}$- und $I_\text{A}$-Werte gegeneinander aufgetragen.}
+    \caption{Der Kathodenstrom $I_\text{K}$ und der Anodenstrom $I_\text{A}$ sind gegeneinander aufgetragen. Die Beschleunigungsspannung $U_\text{B}$ beträgt $\SI{25}{\kilo\volt}$. Die Kathodenspannung $U_\text{K}$ beträgt ,$\SI{300}{\volt}$. Der Blendendurchmesser ist $\SI{5}{\milli\meter}.$}
     \label{fig:plot2}
 \end{figure}
 
-\noindent Die Parameter, die sich aus der linearen Regression ergeben, betragen
+\noindent Die Parameter, die sich aus der linearen Regression nach Gleichung \eqref{eqn:linreg} ergeben, betragen
 \begin{align*}
     a &= \num{24.74(03)e-4}\\
     b &= \SI{-1.63e-11}{\ampere},
@@ -123,7 +138,7 @@ wobei $a$ die Steigung und $b$ der $y$-Achsenabschnitt ist.
 Die Kondensatorströme $I_\text{K}$ in Abhängigkeit von der
 Beschleunigungsspannung $U_\text{B}$ für die beiden Kondensatorspannungen
 $U_\text{K, 1} = \SI{500}{\volt}$ und $U_\text{K, 2} = \SI{300}{\volt}$
-sind in \ref{tabd} eingetragen.
+sind in Tab. \ref{tabd} eingetragen.
 
 \subsubsection{Erste Kondensatorspannung}
 %I_K gegen U_B plotten
@@ -134,11 +149,11 @@ Die $I_\text{K}$- und $U_\text{B}$-Werte stehen in Tab. \ref{tabd} und sind in A
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=9cm]{build/plot3.pdf}
-    \caption{$I_\text{K}$- und $U_\text{B}$-Werte gegeneinander aufgetragen.}
+    \caption{Der Kathodenstrom $I_\text{K}$ und die Beschleunigungsspannung $U_\text{B}$ sind gegeneinander aufgetragen. Der Anodenstrom $I_\text{A}$ beträgt $\SI{1}{\milli\ampere}$. Die Kathodenspannung $U_\text{K}$ beträgt ,$\SI{500}{\volt}$. Der Blendendurchmesser ist $\SI{5}{\milli\meter}.$}
     \label{fig:plot3}
 \end{figure}
 
-\noindent Die Parameter, die sich aus der Ausgleichsrechnung ergeben, betragen
+\noindent Die Parameter, die sich aus der Ausgleichsrechnung nach Gleichung \eqref{eqn:quadreg} ergeben, betragen
 \begin{align*}
     a &= \SI{4.314(112)e-18}{\ampere\per\volt}\\
     b &= \SI{-1.8(7)e-10}{\ampere},
@@ -152,11 +167,11 @@ Die $I_\text{K}$- und $U_\text{B}$-Werte stehen in Tab. \ref{tabd} und sind in A
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=9cm]{build/plot4.pdf}
-    \caption{$I_\text{K}$- und $U_\text{B}$-Werte gegeneinander aufgetragen.}
+    \caption{Der Kathodenstrom $I_\text{K}$ und die Beschleunigungsspannung $U_\text{B}$ sind gegeneinander aufgetragen. Der Anodenstrom $I_\text{A}$ beträgt $\SI{1}{\milli\ampere}$. Die Kathodenspannung $U_\text{K}$ beträgt ,$\SI{300}{\volt}$. Der Blendendurchmesser ist $\SI{5}{\milli\meter}.$}
     \label{fig:plot4}
 \end{figure}
 
-\noindent Die Parameter, die sich aus der Ausgleichsrechnung ergeben, betragen
+\noindent Die Parameter, die sich aus der Ausgleichsrechnung nach Gleichung \eqref{eqn:quadreg} ergeben, betragen
 \begin{align*}
     a &= \SI{3.825(130)e-18}{\ampere\per\volt}\\
     b &= \SI{-1.35(8)e-10}{\ampere},
