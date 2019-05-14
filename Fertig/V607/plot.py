@@ -10,12 +10,12 @@ from something import some
 Uk1, Ik1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$U_\text{K} / \si{\volt}$", r"$I_\text{K} / \si{\nano\ampere}$"], label_text="taba", caption_text=r"Die Kathodenspannung und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einem Anodenstrom von $I_\text{A} = \SI{1}{\milli\ampere}$ bei einem Blendenradius von $r_\text{B} = \SI{2}{\milli\meter}$." , precision=2)
 
 
-some.plot(Uk1, Ik1, x_name=r"U_\text{k}/\si{\volt}", y_name=r"I_\text{k}/\si{\nano\ampere}", num=41, file_name="build/plota.pdf")
+some.plot(Uk1, Ik1, x_name=r"$U_\text{k}/\si{\volt}$", y_name=r"$I_\text{k}/\si{\nano\ampere}$", num=41, file_name="build/plota.pdf")
 Ik1= Ik1*1e-9
 
 Uk2, Ik2= some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$U_\text{K} / \si{\volt}$", r"$I_\text{K} / \si{\nano\ampere}$"], label_text="tabb", caption_text=r"Die Kathodenspannung und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einem Anodenstrom von $I_\text{A} = \SI{1}{\milli\ampere}$ bei einem Blendenradius von $r_\text{B} = \SI{5}{\milli\meter}$." , precision=2)
 
-some.plot(Uk2, Ik2, x_name=r"U_\text{k}/\si{\volt}", y_name=r"I_\text{k}/\si{\nano\ampere}", num=31, file_name="build/plotb.pdf")
+some.plot(Uk2, Ik2, x_name=r"$U_\text{k}/\si{\volt}$", y_name=r"$I_\text{k}/\si{\nano\ampere}$", num=31, file_name="build/plotb.pdf")
 Ik2= Ik2*1e-9
 
 Ia3, Ik31, Ik32 = some.neueWerte(file_name="data/datac.txt", finished_file="build/tabc.tex",  vars_name=[r"$I_\text{K} / \si{\milli\ampere}$", r"$I_\text{K,1} / \si{\nano\ampere}$", r"$I_\text{K,2} / \si{\nano\ampere}$"], label_text="tabc", caption_text=r"Der Anodenstrom und der Kathodenstrom bei einer Beschleunigungsspannung von $U_\text{B} = \SI{25}{\kilo\volt}$ und einer Kathodenspannung $U_\text{K,1} = \SI{500}{\volt}$ und einer Kathodenspannung $U_\text{K,2} = \SI{300}{\volt}$ bei einem Blendenradius von $r_\text{B} = \SI{5}{\milli\meter}$." , precision=2)
