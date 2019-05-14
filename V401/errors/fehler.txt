@@ -1,0 +1,3 @@
+Formel: \lambda*z/2
+
+Fehlerfortpflanzung: \sqrt{\frac{\lambda^{2} \sigma_{z}^{2}}{4} + \frac{\sigma_{\lambda}^{2} z^{2}}{4}}
