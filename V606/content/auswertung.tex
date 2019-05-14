@@ -1,6 +1,9 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+Für die Auswertung wurde Python und im Speziellen Matplotlib \cite{matplotlib}, SciPy \cite{scipy},
+Uncertainties \cite{uncertainties} und NumPy \cite{numpy} verwendet.
+
 \subsection{Einstellung des Selektivverstärkers}
 In Tabelle \ref{taba} sind die Frequenzen $\nu$ und die jeweils gemessenen Ausgangspannungen $U_\text{A}$ 
 bei einer Eingangsspannung von $U_\text{E} = \SI{100}{\milli\volt}$ eingetragen. 
@@ -46,12 +49,14 @@ hat.
 \end{align*}
 
 
-\subsection{Theoriewerte für Suszeptibilität} 
+\subsection{Theoretische Suszeptibilität} 
 Für die verschiedenen Stoffe haben sich aufgrund der verschiedenen Elemente und Zusammensetzungen auch verschiedene 
 Werte für die Suszeptibilität ergeben. 
 Die Werte, die zur Berechnung nötig waren, sind die Temperatur $T$, die als Raumtemperatur von $\SI{20}{\celsius}$ angenommen wurde, was einem Wert von \SI{293.15}{\kelvin} entspricht. 
 
-\noindent Die Anzahl der Momente N wurde mit der Formel \eqref{N} berechnet. Dafür benötigte man die Dichte $\rho$ und die Molmasse $M$. Um $Q_{real}$ zu bestimmen, benötigt man auch noch die tatsächliche Masse der jeweiligen Stoffe. Alle drei Werte sind in Tab. \ref{tab2} eingetragen. 
+\noindent Die Anzahl der Momente N wurde mit der Formel \eqref{N} berechnet. Dafür wurde die Dichte $\rho$ und die Molmasse $M$ benötigt. Um $Q_{real}$ zu bestimmen, wird auch noch die tatsächliche Masse der jeweiligen Stoffe benötigt. Alle drei Werte sind in Tab. \ref{tab2} eingetragen.
+Die Dichten und Massen der unteren drei Elemente sind der Anleitung \cite{V606} sowie der Beschriftung auf den Proben entnommen.
+Die Molmasse des ersten Elements stammt von einem Rechner für Molare Masse \cite{C6}.
 
 \input{tables/tab2.tex}
 

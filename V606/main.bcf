@@ -1978,6 +1978,12 @@
     <bcf:citekey order="2">V606</bcf:citekey>
     <bcf:citekey order="3">V606</bcf:citekey>
     <bcf:citekey order="4">V606</bcf:citekey>
+    <bcf:citekey order="5">matplotlib</bcf:citekey>
+    <bcf:citekey order="6">scipy</bcf:citekey>
+    <bcf:citekey order="7">uncertainties</bcf:citekey>
+    <bcf:citekey order="8">numpy</bcf:citekey>
+    <bcf:citekey order="9">V606</bcf:citekey>
+    <bcf:citekey order="10">C6</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

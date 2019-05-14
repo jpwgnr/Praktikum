@@ -7,12 +7,12 @@ import scipy.constants as const
 from scipy.optimize import curve_fit
 from something import some 
 #Generate data 
-f1, U1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$f / \si{\kilo\hertz}$", r"$U_A / \si{\milli\volt}$"], label_text="taba", caption_text=r"Die Frequenz und die Ausgangsspannung bei einer Eingangsspannung $U_\text{E}= \SI{100}{\milli\volt}$." , precision=2)
+f1, U1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$\nu / \si{\kilo\hertz}$", r"$U_A / \si{\milli\volt}$"], label_text="taba", caption_text=r"Die Frequenz und die Ausgangsspannung bei einer Eingangsspannung $U_\text{E}= \SI{100}{\milli\volt}$." , precision=2)
 
 def func(x, a, s, t):
     return a/np.pi * (s/(s**2 + (x- t)**2))
 
-params, err = some.curvefit(f1, U1, function= func, x_name=r"$f / \si{\kilo\hertz}$", y_name=r"$U_A / \si{\milli\volt}$", num=1, file_name="build/plota2.pdf")
+params, err = some.curvefit(f1, U1, function= func, x_name=r"$\nu / \si{\kilo\hertz}$", y_name=r"$U_A / \si{\milli\volt}$", num=1, file_name="build/plota2.pdf")
 
 Q = 35.1/(35.3-34.95) 
 

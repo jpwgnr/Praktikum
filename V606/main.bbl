@@ -39,6 +39,12 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuch 606 - Messung der Suszeptibilität paramagnetischer Substanzen}
       \field{year}{2019}
+      \verb{urlraw}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V606.pdf
+      \endverb
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V606.pdf
+      \endverb
     \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
@@ -185,10 +191,10 @@
       \field{title}{Rechner für Molare Masse, Molekulargewicht und Elementare Zusammensetzung}
       \field{year}{2019}
       \verb{urlraw}
-      \verb https://de.webqc.org/molecular-weight-of-C6012pr2.html
+      \verb https://de.webqc.org/mmcalc.php
       \endverb
       \verb{url}
-      \verb https://de.webqc.org/molecular-weight-of-C6012pr2.html
+      \verb https://de.webqc.org/mmcalc.php
       \endverb
     \endentry
   \enddatalist
