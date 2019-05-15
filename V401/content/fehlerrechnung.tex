@@ -20,20 +20,20 @@ Die realtive Abweichung zwischen zwei Werten kann durch
 bestimmt werden.
 \newline
 
-Die Fehlerfortpflanzung für Gleichung \eqref{eqn:lambda} ergibt sich zu 
+\noindent Die Fehlerfortpflanzung für die Wellenlänge \eqref{eqn:lambda} ergibt sich zu 
 \begin{equation}
-    \sigma_{\Delta d} = \sqrt{\frac{\lambda^{2} \sigma_{z}^{2}}{4} + \frac{z^{2} \sigma_{\lambda}^{2}}{4}}.
+    \sigma_{\Delta d} = \sqrt{\frac{\lambda^{2} \, \sigma_{z}^{2}}{4} + \frac{z^{2} \, \sigma_{\lambda}^{2}}{4}}.
     \label{eqn:errlambda}
 \end{equation}
 
-Für die Gleichung \eqref{eqn:deltan} ergibt sich die Fehlerfortpflanzung als 
+\noindent Für die Brechungsindexänderung \eqref{eqn:deltan} ergibt sich die Fehlerfortpflanzung als 
 \begin{equation}
-    \sigma_{\Delta n} =\sqrt{\frac{\lambda^{2} \sigma_{z}^{2}}{4 b^{2}} + \frac{z^{2} \sigma_{\lambda}^{2}}{4 b^{2}}}
+    \sigma_{\Delta n} =\sqrt{\frac{\lambda^{2} \, \sigma_{z}^{2}}{4 \, b^{2}} + \frac{z^{2} \, \sigma_{\lambda}^{2}}{4 \, b^{2}}}
     \label{eqn:errdeltan}
 \end{equation}
 
-Für die Gleichung \eqref{eqn:n} ergibt sich die Fehlerfortpflanzung als 
+\noindent Der Brechungsindex \eqref{eqn:n} hat die Fehlerfortpflanzung 
 \begin{equation}
-    \sigma_{n} =  \sqrt{\frac{T^{2} \Delta n^{2} \sigma_{\Delta p}^{2} p_{0}^{2}}{T_{0}^{2} \Delta p^{4}} + \frac{T^{2} \sigma_{\Delta n}^{2} p_{0}^{2}}{T_{0}^{2} \Delta p^{2}} + \frac{\Delta n^{2} \sigma_{T}^{2} p_{0}^{2}}{T_{0}^{2} \Delta p^{2}}}.
+    \sigma_{n} =  \sqrt{\frac{T^{2} \, \Delta n^{2} \, p_{0}^{2} \, \sigma_{\Delta p}^{2}}{T_{0}^{2} \, \Delta p^{4}} + \frac{T^{2} \, p_{0}^{2} \, \sigma_{\Delta n}^{2}}{T_{0}^{2} \, \Delta p^{2}} + \frac{\Delta n^{2} \, p_{0}^{2} \, \sigma_{T}^{2}}{T_{0}^{2} \, \Delta p^{2}}}.
 \label{eqn:errn}
 \end{equation}
