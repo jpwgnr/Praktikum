@@ -13,9 +13,10 @@
 \contentsline {section}{\numberline {4}Durchführung}{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}Messung der Wellenlänge}{7}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Messung des Brechungsindex}{7}{subsection.4.2}
-\contentsline {section}{\numberline {5}Auswertung}{8}{section.5}
+\contentsline {section}{\numberline {5}Auswertung}{7}{section.5}
 \contentsline {subsection}{\numberline {5.1}Bestimmung der Wellenlänge}{8}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Bestimmung des Brechungsindex}{8}{subsection.5.2}
 \contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
 \contentsline {subsection}{\numberline {6.1}Bestimmung der Wellenlänge}{9}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Bestimmung des Brechungsindex}{10}{subsection.6.2}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.7}
