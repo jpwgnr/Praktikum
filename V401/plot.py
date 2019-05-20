@@ -6,7 +6,7 @@ from uncertainties import ufloat
 from scipy.optimize import curve_fit
 from something import some 
 #Generate data 
-anz1, ds1, de1 = some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"Anzahl", r"$d_\text{Start} / \si{\milli\meter}$", r"$d_\text{Start} / \si{\milli\meter}$"], label_text="taba", caption_text=r"Die Anzahl der Impulse, der Startwert auf der Millimeterschraube und der Endwert auf der Millimeterschraube." , precision=2)
+anz1, ds1, de1 = some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"Anzahl", r"$d_\text{Start} / \si{\milli\meter}$", r"$d_\text{Start} / \si{\milli\meter}$"], label_text="taba", caption_text=r"Die Anzahl der Impulse, der Startwert auf der Mikrometerschraube und der Endwert auf der Mikrometerschraube." , precision=2)
 anz2, deltap = some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"Anzahl", r"$\Delta p$"], label_text="tabb", caption_text=r"Die Anzahl der Impulse und der dazu gehörende $\Delta p= \SI{0.6}{\bar}$." , precision=2)
 
 ds1, de1 = ds1/1e3, de1/1e3 

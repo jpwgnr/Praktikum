@@ -1976,6 +1976,7 @@
   <bcf:section number="0">
     <bcf:citekey order="1">V401</bcf:citekey>
     <bcf:citekey order="2">V401</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="3">V401</bcf:citekey>
     <bcf:citekey order="4">V401</bcf:citekey>
     <bcf:citekey order="5">V401</bcf:citekey>
@@ -1985,6 +1986,15 @@
     <bcf:citekey order="9">uncertainties</bcf:citekey>
     <bcf:citekey order="10">numpy</bcf:citekey>
     <bcf:citekey order="11">Luft</bcf:citekey>
+||||||| merged common ancestors
+    <bcf:citekey order="3">Luft</bcf:citekey>
+=======
+    <bcf:citekey order="3">V401</bcf:citekey>
+    <bcf:citekey order="4">V401</bcf:citekey>
+    <bcf:citekey order="5">V401</bcf:citekey>
+    <bcf:citekey order="6">V401</bcf:citekey>
+    <bcf:citekey order="7">Luft</bcf:citekey>
+>>>>>>> update
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
