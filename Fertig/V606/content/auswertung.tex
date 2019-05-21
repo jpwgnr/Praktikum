@@ -22,7 +22,7 @@ In Abb. \ref{plota} sind diese Werte gegeneinander aufgetragen.
 
 \noindent Der Fit wurde mit Gleichung \eqref{cauchyverteilung} gefittet. Die Werte, die sich daraus ergeben, sind
 \begin{align*} 
-  a &= \SI{106.38(289)}{\milli\volt\kilo\hertz} \\
+  a &= \SI{106.38 \pm 3}{\milli\volt\kilo\hertz} \\
   s &= \SI{0.37(2)}{\kilo\hertz} \\
   t &= \SI{35.13(1)}{\kilo\hertz}. 
 \end{align*}
@@ -33,13 +33,13 @@ Da das Maximum bei $\SI{99}{\milli\volt}$ liegt, liegen die anderen beiden Frequ
 Die Werte ergeben sich zu 
 \begin{align*} 
  \nu_0 &= \SI{35.1}{\kilo\hertz} \\
- \nu_{-} &= \SI{34.95}{\kilo\hertz} \\
+ \nu_{-} &= \SI{35.0}{\kilo\hertz} \\
  \nu_{+} &= \SI{35.3}{\kilo\hertz}. 
 \end{align*}
 
 \noindent Daraus lässt sich mit Gleichung \eqref{eqn:guete} erkennen, dass die Güte den Wert 
 \begin{align*} 
-    Q_\text{exp} = \num{100.286}
+    Q_\text{exp} = \num{100}
 \end{align*}
 hat. 
 
@@ -50,21 +50,20 @@ hat.
 
 
 \subsection{Theoretische Suszeptibilität} 
-Für die verschiedenen Stoffe haben sich aufgrund der verschiedenen Elemente und Zusammensetzungen auch verschiedene 
-Werte für die Suszeptibilität ergeben. 
-Die Werte, die zur Berechnung nötig waren, sind die Temperatur $T$, die als Raumtemperatur von $\SI{20}{\celsius}$ angenommen wurde, was einem Wert von \SI{293.15}{\kelvin} entspricht. 
+Für die verschiedenen Stoffe ergeben sich aufgrund der verschiedenen Elemente und Zusammensetzungen auch verschiedene 
+Werte für die Suszeptibilität. 
+Die Werte, die zur Berechnung nötig sind, sind die Temperatur $T$, die als Raumtemperatur von $\SI{20}{\celsius}$ angenommen wird, was einem Wert von \SI{293.15}{\kelvin} entspricht. 
 
-\noindent Die Anzahl der Momente N wurde mit der Formel \eqref{N} berechnet. Dafür wurde die Dichte $\rho$ und die Molmasse $M$ benötigt. Um $Q_{real}$ zu bestimmen, wird auch noch die tatsächliche Masse der jeweiligen Stoffe benötigt. Alle drei Werte sind in Tab. \ref{tab2} eingetragen.
+\noindent Die Anzahl der Momente N wird mit der Formel \eqref{N} berechnet. Dafür wird die Dichte $\rho$ und die Molmasse $M$ benötigt. Um $Q_{real}$ zu bestimmen, wird auch noch die tatsächliche Masse der jeweiligen Stoffe benötigt. Alle drei Werte sind in Tab. \ref{tab2} eingetragen.
 Die Dichten und Massen der unteren drei Elemente sind der Anleitung \cite{V606} sowie der Beschriftung auf den Proben entnommen.
-Die Molmasse des ersten Elements stammt von einem Rechner für Molare Masse \cite{C6}.
+Die Molmasse des ersten Elements stammt von einem Rechner für Molare Masse \cite{C6}. %brauchen wir das noch wenn wir die Dichte ändern?
 
-\input{tables/tab2.tex}
+\input{tables/tab2.tex} %Dichte einfügen, \cite{Dichte}
 
 \noindent Für den Stoff $Nd_2 O_3$ ergibt sich die konkrete Rechnung des Landé-Faktors $g_J$ folgendermaßen: 
 
 \begin{align*}
     g_J &= \frac{3 J (J+1) + S (S+1) - L (L+1)}{2 J (J+1)} \\
-        &= \frac{3 \cdot 4,5 \cdot(4,5 + 1) + 1,5 \cdot (1,5 +1) - 6 \cdot (6+1)}{2 \cdot 4,5 \cdot (4,5 + 1)} \\
         &= 0,73.
 \end{align*} 
 
@@ -79,11 +78,11 @@ $g_J$ ergeben.
 \noindent Die Werte für die Suszeptibilität, die mittels Gleichung \eqref{eqn:chitheo} berechnet werden können, ergeben sich für die jeweiligen Stoffe 
 zu folgenden Werten 
 
-\begin{align*} 
-   \chi_{C_6 O_{12} Pr_2} &= \num{24.6e-5}\\
-   \chi_{Gd_2 O_3} &= \num{1158.9e-5}\\
-   \chi_{Nd_2 O_3} &= \num{280.3e-5}\\
-   \chi_{Dy_2 O_3} &= \num{2816.6e-5}.
+\begin{align*}
+   \chi_{\text{C}_6 \text{O}_{12} \text{Pr}_2} &= \num{24.6e-5}\\ %ändert sich noch
+   \chi_{\text{Gd}_2 \text{O}_3} &= \num{1158.9e-5}\\
+   \chi_{\text{Nd}_2 \text{O}_3} &= \num{280.3e-5}\\
+   \chi_{\text{Dy}_2 \text{O}_3} &= \num{2816.6e-5}.
 \end{align*}
 
 \subsection{Suszeptibilität mittels Spannungsverhältnis}
@@ -94,10 +93,10 @@ In Tab. \ref{tab3} sind die Spannungsdifferenzen vor und nach dem Einlegen der P
 zu folgenden Werten 
 
 \begin{align*} 
-   \chi_{C_6 O_{12} Pr_2} &= \num{1.2(6)e-5}\\
-   \chi_{Gd_2 O_3} &= \num{268.0(17)e-5}\\
-   \chi_{Nd_2 O_3} &= \num{15(4)e-5}\\
-   \chi_{Dy_2 O_3} &= \num{703(9)e-5}.
+   \chi_{\text{C}_6 \text{O}_{12} \text{Pr}_2} &= \num{1.2(6)e-5}\\ %ändert sich noch
+   \chi_{\text{Gd}_2 \text{O}_3} &= \num{268(2)e-5}\\
+   \chi_{\text{Nd}_2 \text{O}_3} &= \num{15(4)e-5}\\
+   \chi_{\text{Dy}_2 \text{O}_3} &= \num{703(9)e-5}.
 \end{align*}
 
 
@@ -107,8 +106,8 @@ wird die Suszeptibilität der Proben bestimmt.
 Es ergeben sich die Werte
 
 \begin{align*} 
-   \chi_{C_6 O_{12} Pr_2} &= \num{18(8)e-5}\\
-   \chi_{Gd_2 O_3} &= \num{980(17)e-5}\\
-   \chi_{Nd_2 O_3} &= \num{190(18)e-5}\\
-   \chi_{Dy_2 O_3} &= \num{2302(20)e-2}.
+   \chi_{\text{C}_6 \text{O}_{12} \text{Pr}_2} &= \num{18(8)e-5}\\
+   \chi_{\text{Gd}_2 \text{O}_3} &= \num{980(17)e-5}\\
+   \chi_{\text{Nd}_2 \text{O}_3} &= \num{190(18)e-5}\\
+   \chi_{\text{Dy}_2 \text{O}_3} &= \num{2302(20)e-5}.
 \end{align*}
