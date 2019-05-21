@@ -5,18 +5,105 @@ Für die Auswertung wird Python und im Speziellen Matplotlib \cite{matplotlib}, 
 
 \subsection{Bestimmung des Energieverlustes von Alphastrahlung in Luft}
 
-%Zählrate als Funktion der effektiven Länge, Plot -> R_m und E(R_m)
+\subsubsection{Erster Abstand}
+Die gemessenen Pulse und Positionen der Energiemaxima bei den verschiedenen Drücken sind für den Abstand $d_1 = \SI{2.7}{\centi\meter}$ in Tab. \ref{taba} zu sehen. Die Pulse, Positionen und zugehörigen Reichweiten befinden sich in Tab. \ref{tab1}. 
 
-%Energie als Funktion der effektiven Länge, Plot -> Energieverlust
+\input{build/taba.tex}
+\input{build/tab1.tex}
 
-%Zählrate als Funktion des Drucks -> R_m und E(R_m)
+%Zählrate als Funktion der effektiven Länge für den ersten Abstand
+\noindent Die Zählrate ist in Abb. \ref{zaehlrate1} gegen die mit Gleichung \eqref{eqn:abstand} bestimmte effektive Länge aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=9cm]{build/plot.pdf}
+    \caption{}
+    \label{fig:zaehlrate1}
+\end{figure}
+
+\noindent Dadurch lässt sich die mittlere Reichweite der $\alpha$-Teilchen zu dem Wert %wie genau?
+\begin{equation*}
+    R_\text{m,1} = \SI{}{\milli\meter}
+\end{equation*}
+bestimmen.
+
+\noindent Das entspricht einer Energie von %wie genau?
+\begin{equation*}
+    E_1 = \SI{}{}.
+\end{equation*}
+
+%Energie als Funktion der effektiven Länge für den ersten Abstand
+Die Energie ist in Abb. \ref{fig:energie1} gegen die effektive Länge aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=9cm]{build/plot.pdf}
+    \caption{}
+    \label{fig:energie1}
+\end{figure}
+
+\noindent Daraus lässt sich anhand der Steigung der Energieverlust der Strahlung bestimmen. Dieser entspricht %wie genau?
+\begin{equation*}
+    - \left( \frac{dE}{dx} \right)_1 = \SI{}{}.
+\end{equation*}
+
+
+\subsubsection{Zweiter Abstand}
+Die gemessenen Pulse und Positionen der Energiemaxima bei den verschiedenen Drücken sind für den Abstand $d_2 = \SI{2}{\centi\meter}$ in Tab. \ref{tabb} zu sehen. Die Pulse, Positionen und die zugehörigen Reichweiten befinden sich in Tab. \ref{tab2}.
+
+\input{build/tabb.tex}
+\input{build/tab2.tex}
+
+%Zählrate als Funktion der effektiven Länge für den zweiten Abstand
+\noindent Die Zählrate ist in Abb. \ref{zaehlrate2} gegen die mit Gleichung \eqref{eqn:abstand} bestimmte effektive Länge aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=9cm]{build/plot.pdf}
+    \caption{}
+    \label{fig:zaehlrate2}
+\end{figure}
+
+\noindent Dadurch lässt sich die mittlere Reichweite der $\alpha$-Teilchen zu dem Wert %wie genau?
+\begin{equation*}
+    R_\text{m,2} = \SI{}{\milli\meter}
+\end{equation*}
+bestimmen.
+
+\noindent Das entspricht einer Energie von %wie genau?
+\begin{equation*}
+    E_2 = \SI{}{}.
+\end{equation*}
+
+%Energie als Funktion der effektiven Länge für den zweiten Abstand
+Die Energie ist in Abb. \ref{fig:energie2} gegen die effektive Länge aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=9cm]{build/plot.pdf}
+    \caption{}
+    \label{fig:energie2}
+\end{figure}
+
+\noindent Daraus lässt sich anhand der Steigung der Energieverlust der Strahlung bestimmen. Dieser entspricht %wie genau?
+\begin{equation*}
+    - \left( \frac{dE}{dx} \right)_2 = \SI{}{}.
+\end{equation*}
 
 \subsection{Untersuchung der Statistik des radioaktiven Zerfalls}
 
+Die Anzahl der Pulse, die jeweils in $\SI{10}{\second}$ gemessen wurde, sind in Tab. \ref{tabc} eingetragen.
+
+\input{build/tabc.tex}
+
 %Zerfallsraten in Histogramm
+Die Zerfallsraten sind in Abb. \ref{fig:histogramm} in einem Histogramm aufgetragen. Außerdem ist eine Gauß- und eine Poissonverteilung eingetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm, height=9cm]{build/plot.pdf}
+    \caption{}
+    \label{fig:histogramm}
+\end{figure}
 
 %Mittelwert und Varianz
-
-%Poisson-Verteilung
-
-%Gauß-Verteilung
+\noindent Aus den gemessenen Zählraten lassen sich der  Mittelwert und die Varianz bestimmen: %Gleichungen erwähnen, Varianz ergänzen?
+\begin{align*}
+    \bar{x} &= \num{} \\
+    var &= \num{}.
+\end{align*}
