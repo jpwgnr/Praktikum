@@ -15,7 +15,7 @@ In Abb. \ref{plota} sind diese Werte gegeneinander aufgetragen.
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=8cm]{build/plota2.pdf} %
-    \caption{Die Filterkurve des Selektivverstärkers. Die Ausgangspannung $U_\text{A}$
+    \caption{Die Filterkurve des Selektivverstärkers. Das Spannungsverhältnis $\frac{U_\text{A}}{U_\text{E}}$
     ist gegen die Frequenz $\nu$ aufgetragen. Es sind die Daten und ein Fit eingetragen.}
     \label{plota}
 \end{figure}
@@ -47,7 +47,7 @@ hat.
 \noindent Aus der Werten des Fits und der Gleichung \eqref{cauchyverteilung} lassen sich der Wert $\nu_0$ und die beiden Werte $\nu_\text{-}$ und $\nu_\text{+}$ rechnerisch ermitteln.
 Die Werte ergeben sich zu 
 \begin{align*} 
- \nu_0 &= \SI{35.13}{\kilo\hertz} \\
+ \nu_0 &= \SI{35.1}{\kilo\hertz} \\
  \nu_{-} &= \SI{34.9}{\kilo\hertz} \\
  \nu_{+} &= \SI{35.3}{\kilo\hertz}. 
 \end{align*}
@@ -71,11 +71,11 @@ Die Werte, die zur Berechnung nötig sind, sind die Temperatur $T$, die als Raum
 
 \noindent Die Anzahl der Momente N wird mit der Formel \eqref{N} berechnet. Dafür wird die Dichte $\rho$ und die Molmasse $M$ benötigt. Um $Q_{real}$ zu bestimmen, wird auch noch die tatsächliche Masse der jeweiligen Stoffe benötigt. Alle drei Werte sind in Tab. \ref{tab2} eingetragen.
 Die Dichten und Massen der unteren drei Elemente sind der Anleitung \cite{V606} sowie der Beschriftung auf den Proben entnommen.
-Die Molmasse des ersten Elements stammt von einem Rechner für Molare Masse \cite{C6}. In der Tabelle wird nur der Stoff $\text{Pr}_2$ betrachtet und nicht $\text{C}_6 \text{O}_{12} \text{Pr}_2$. Somit wird auch im Anschluss immer mit den Dichte Werten von $\text{Pr}_2$ und nicht $\text{C}_6 \text{O}_{12} \text{Pr}_2$ gerechnet, da diese nicht gegeben waren. %brauchen wir das noch wenn wir die Dichte ändern?
+Die Masse des ersten Elements ist ebenfalls der Probe entnommen. Als Dichte wird die Dichte von Praseodym \cite{Dichte} angenommen. In der Tabelle wird also nur der Stoff $\text{Pr}_2$ betrachtet und nicht $\text{C}_6 \text{O}_{12} \text{Pr}_2$. Somit wird auch im Anschluss immer mit dem Dichtewert von $\text{Pr}_2$ und nicht $\text{C}_6 \text{O}_{12} \text{Pr}_2$ gerechnet, da dieser nicht gegeben ist.
 
-\input{tables/tab2.tex} %Dichte einfügen, \cite{Dichte}
+\input{tables/tab2.tex}
 
-\noindent Für den Stoff $Nd_2 O_3$ ergibt sich die konkrete Rechnung des Landé-Faktors $g_J$ folgendermaßen: 
+\noindent Für den Stoff $\text{Nd}_2 \text{O}_3$ ergibt sich die konkrete Rechnung des Landé-Faktors $g_J$ folgendermaßen: 
 
 \begin{align*}
     g_J &= \frac{3 J (J+1) + S (S+1) - L (L+1)}{2 J (J+1)} \\
@@ -88,16 +88,16 @@ Die Molmasse des ersten Elements stammt von einem Rechner für Molare Masse \cit
 In Tab. \ref{tab1} befinden sich die Werte für $L$, $S$ und $J$. Daneben stehen jeweils die Werte, die sich für 
 $g_J$ ergeben. 
 
-\input{tables/tab1.tex} %falsche Tabelle
+\input{tables/tab1.tex}
 
 \noindent Die Werte für die Suszeptibilität, die mittels Gleichung \eqref{eqn:chitheo} berechnet werden können, ergeben sich für die jeweiligen Stoffe 
 zu folgenden Werten 
 
 \begin{align*}
-   \chi_{\text{C}_6 \text{O}_{12} \text{Pr}_2} &= \num{163e-5}\\ %ändert sich noch
-   \chi_{\text{Gd}_2 \text{O}_3} &= \num{1158.9e-5}\\
-   \chi_{\text{Nd}_2 \text{O}_3} &= \num{280.3e-5}\\
-   \chi_{\text{Dy}_2 \text{O}_3} &= \num{2816.6e-5}.
+   \chi_{\text{C}_6 \text{O}_{12} \text{Pr}_2} &= \num{1.6e-3}\\
+   \chi_{\text{Gd}_2 \text{O}_3} &= \num{1.2e-2}\\
+   \chi_{\text{Nd}_2 \text{O}_3} &= \num{2.8e-3}\\
+   \chi_{\text{Dy}_2 \text{O}_3} &= \num{2.8e-2}.
 \end{align*}
 
 \subsection{Suszeptibilität mittels Spannungsverhältnis}
