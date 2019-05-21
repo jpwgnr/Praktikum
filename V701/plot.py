@@ -6,8 +6,8 @@ from uncertainties import ufloat
 from scipy.optimize import curve_fit
 from something import some 
 #Generate data 
-p1, pulse1, max1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$p / \si{\milli\bar}$", r"$# \text{Pulse}$", r"$\text{Maximum Position}$"], label_text="taba", caption_text=r"Die Werte für den Druck in dem Glaszylinder, die Anzahl der Pulse und die Position des Maximums." , precision=1)
-p2, pulse2, max2= some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$p / \si{\milli\bar}$", r"$# \text{Pulse}$", r"$\text{Maximum Position}$"], label_text="tabb", caption_text=r"Die Werte für den Druck in dem Glaszylinder, die Anzahl der Pulse und die Position des Maximums." , precision=1)
+p1, pulse1, max1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$p / \si{\milli\bar}$", r"$# \text{Pulse}$", r"$\text{Maximum Position}$"], label_text="taba", caption_text=r"Die Werte für den Druck in dem Glaszylinder, die Anzahl der Pulse und die Position des Maximums bei einem Abstand von $d_1 = \SI{2.7}{\centi\meter}." , precision=1)
+p2, pulse2, max2= some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$p / \si{\milli\bar}$", r"$# \text{Pulse}$", r"$\text{Maximum Position}$"], label_text="tabb", caption_text=r"Die Werte für den Druck in dem Glaszylinder, die Anzahl der Pulse und die Position des Maximums bei einem Abstand $d = \SI{2}{\centi\meter}." , precision=1)
 twelve, pulse3 = some.neueWerte(file_name="data/datac.txt", finished_file="build/tab100.tex",  vars_name=[r"$\text{Anzahl}$"], label_text="tab100", caption_text=r"Die Werte für den Druck in dem Glaszylinder, die Anzahl der Pulse und die Position des Maximums." , precision=1)
 #Generate table with calculated data
 some.tabelle([pulse3[0:19],pulse3[20:39],pulse3[40:59],pulse3[60:79],pulse3[80:99]], finished_file="build/tabc.tex", vars_name=[r"Pulse", r"Pulse", r"Pulse", r"Pulse", r"Pulse"], label_text="tabc", caption_text=r"Die Pulse wurden zur Analyse der Statistik des Radioaktiven Zerfalls bestimmt.", precision=1) 
