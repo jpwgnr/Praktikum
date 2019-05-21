@@ -41,10 +41,10 @@ def plot(x, y, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}", num=1, file_na
     plt.tight_layout()
     plt.savefig(file_name) 
 
-def curvefit(x, y, num=1, x_add=5, function=gerade, x_name=r"t/\si{\second}", y_name=r"s/\si{\meter}", file_name="build/plota.pdf"):
-    params, pcov = curve_fit(function, x, y)
+def curvefit(x, y, p, q, num=1, x_add=5, function=gerade, x_name=r"t/\si{\second}", y_name=r"s/\si{\meter}", file_name="build/plota.pdf"):
+    params, pcov = curve_fit(function, p, q)
     plt.figure(num) 
-    newx= np.linspace(x[0]-x_add,x[-1]+x_add, num=1000)
+    newx= np.linspace(p[0]-x_add,p[-1]+x_add, num=1000)
     plt.plot(x, y, "xr", label="Daten")
     plt.plot(newx, function(newx, *params), "r", label="Fit", linewidth=1.0)
     plt.xlabel(x_name)

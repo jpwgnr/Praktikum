@@ -10,9 +10,9 @@ from something import some
 f1, U1= some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$\nu / \si{\kilo\hertz}$", r"$U_A / \si{\milli\volt}$"], label_text="taba", caption_text=r"Die Frequenz und die Ausgangsspannung bei einer Eingangsspannung $U_\text{E}= \SI{100}{\milli\volt}$." , precision=2)
 
 def func(x, a, s, t):
-    return a/np.pi * (s/(s**2 + (x- t)**2))
+    return a/np.pi * (s/(s**2 + (x- t)**2)) 
 
-params, err = some.curvefit(f1, U1, function= func, x_name=r"$\nu / \si{\kilo\hertz}$", y_name=r"$U_A / \si{\milli\volt}$", num=1, file_name="build/plota2.pdf")
+params, err = some.curvefit(f1, U1/100, f1[14:-4], U1[14:-4]/100, x_add=0, function= func, x_name=r"$\nu / \si{\kilo\hertz}$", y_name=r"$\frac{U_\text{A}}{U_\text{E}}$", num=1, file_name="build/plota2.pdf")
 
 Q = 35.1/(35.3-34.95) 
 
@@ -54,7 +54,7 @@ laenge = 16e-2
 M = np.array([7.87e-3, 14.08e-3, 9.0e-3, 14.38e-3])
 m = np.array([545.87e-3, 373e-3, 362.5e-3, 336.48e-3 ])
 rhoanders= 7.87e-3/(np.pi*(4e-3)**2 *laenge) # Masse ist die angeblich die gleiche wie auf Behälter
-rho= np.array([rhoanders, 6.4e3, 7.24e3, 7.8e3]) 
+rho= np.array([6.475e3, 6.4e3, 7.24e3, 7.8e3]) 
 mu_b = 0.5* const.e/const.electron_mass *const.hbar
 N = 2* const.Avogadro * rho / m   
 T = 273.15+20
@@ -72,7 +72,7 @@ chi2 = getchi2(dR, F, Qreal)
 
 
 some.tabelle([L, S, J, G], finished_file="build/tab1.tex", vars_name=[r"$L$", r"$S$", r"$J$", r"$g_\text{J}$"], label_text="tab1", caption_text=r"Der maximale Drehimpuls $L$, der Gesamtspin $S$ und der Gesamtdrehimpuls $J$ ergeben sich zum Landé-Faktor $g_\text{J}$ für die vier verschiedenen Elemente.", precision=2) 
-some.tabelle([M*1e3, rho, m*1e3], finished_file="build/tab2.tex", vars_name=[r"$m$ \si{\gram}", r"$\rho_\text{W}$ / \si{\kilo\gram\per\cubic\meter}",r"$M$ \si{\gram\per\mol}" ], label_text="tab2", caption_text=r"Die Masse der Probe, die Dichte des Probenmaterials und die Molmasse. Für den ersten Stoff wurde dabei angenommen, dass die Dichte näherungsweise dieselbe ist, wie die Dichte der Probe. Die Dichte wurde hierbei mit dem Volumen und der angegebenen Probenmasse bestimmt. Für die anderen Stoffe war die Dichte in der Anleitung gegeben.", precision=2) 
+some.tabelle([M*1e3, rho, m*1e3, Qreal*1e6], finished_file="build/tab2.tex", vars_name=[r"$m$ \si{\gram}", r"$\rho_\text{W}$ / \si{\kilo\gram\per\cubic\meter}",r"$M$ \si{\gram\per\mol}", r"$Q_\text{real} / \si{\milli\meter\squared}$" ], label_text="tab2", caption_text=r"Die Masse der Probe, die Dichte des Probenmaterials und die Molmasse. Für den ersten Stoff wurde dabei angenommen, dass die Dichte näherungsweise dieselbe ist, wie die Dichte der Probe. Die Dichte wurde hierbei mit dem Volumen und der angegebenen Probenmasse bestimmt. Für die anderen Stoffe war die Dichte in der Anleitung gegeben. Außerdem ist der Querschnitt $Q_\text{real}$ gegeben und die Querschnittsfläche beträgt bei allen Stoffen $F = \SI{86.6}{\milli\meter\squared}$.", precision=2) 
 some.tabelle([dU, dR], finished_file="build/tab3.tex", vars_name=[r"U / \si{\volt}", r"R / \si{\ohm}"], label_text="tab3", caption_text=r"Die Differenz der Spannungen vor und nach einfügen des Stoffs und die Differenz zwischen den Widerständen.", precision=2) 
 
 #Generate linReg-Plot
