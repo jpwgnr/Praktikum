@@ -21,15 +21,22 @@ x02 = 0.02
 x1 =  x01* p1/p0
 x2 =  x02* p2/p0
 
-max1 = 1120/max1 * 4e6
-max2 = 1099/max2 * 4e6
+max1 = max1/1120 * 4e6
+max2 = max2/1099 * 4e6
 
 Steigung1, yAbschnitt1, err1 = some.linReg(x=x1, y=pulse1, p=x1[16:19], q=pulse1[16:19], x_name=r"$x_1 / \si{\meter}$", y_name=r"$\frac{N}{\SI{120}{\second}}$", num=1,  x_add=0.001, file_name="build/plota.pdf")
-Steigung2, yAbschnitt2, err2 = some.linReg(x=x1, y=max1, p=x1[10:15], q=max1[10:15], x_name=r"$x_1 / \si{\meter}$", y_name=r"$E / \si{\electronvolt}$", num=2,  x_add=0, file_name="build/plotb.pdf")
+Steigung1b, yAbschnitt1b, err1b = some.linReg(x=x1, y=max1, p=x1[:17], q=max1[:17], x_name=r"$x_1 / \si{\meter}$", y_name=r"$E / \si{\electronvolt}$", num=2,  x_add=0.001, file_name="build/plotb.pdf")
 
-mitReichw1 = (1/2 * pulse1[0] - yAbschnitt1)/Steigung1
+steigungerr1 = ufloat(Steigung1, err1)
+mitReichw1 = (1/2 * pulse1[0] - yAbschnitt1)/steigungerr1
 EnergiemitReichw1 = 1234
 
+Steigung2, yAbschnitt2, err2 = some.linReg(x=x2, y=pulse2, p=x2[16:19], q=pulse2[16:19], x_name=r"$x_2 / \si{\meter}$", y_name=r"$\frac{N}{\SI{120}{\second}}$", num=3,  x_add=0.001, file_name="build/plotc.pdf")
+Steigung2b, yAbschnitt2b, err2b = some.linReg(x=x2, y=max2, p=x2[:], q=max2[:], x_name=r"$x_2 / \si{\meter}$", y_name=r"$E / \si{\electronvolt}$", num=4,  x_add=0.001, file_name="build/plotd.pdf")
+
+steigungerr2 = ufloat(Steigung2, err2)
+mitReichw2 = (1/2 * pulse2[0] - yAbschnitt2)/steigungerr2
+EnergiemitReichw2 = 1234
 
 some.tabelle([x1, pulse1, max1], finished_file="tab1.tex", vars_name=[r"$x_1 / \si{\meter}$", r"$# \text{Pulse}$", r"\text{Maximum Position}"], label_text="tab1", caption_text=r"Die Reichweite $x_1$, die Anzahl der Impulse und die Position des Maximums.", precision=2) 
 some.tabelle([x2, pulse2, max2], finished_file="tab2.tex", vars_name=[r"$x_2 / \si{\meter}$", r"$# \text{Pulse}$", r"\text{Maximum Position}"], label_text="tab2", caption_text=r"Die Reichweite $x_2$, die Anzahl der Impulse und die Position des Maximums.", precision=2) 
@@ -48,7 +55,7 @@ np.random.seed(42)
 gauß = np.random.normal(mean, std, 10000)
 poisson = np.random.poisson(mean, 10000)
 
-plt.figure(3) 
+plt.figure(5) 
 plt.hist(pulse3, bins=20, label="Daten", density=True)
 plt.hist(gauß, bins=20, label="Gauß", density= True, histtype='step')
 plt.hist(poisson, bins=20, label="Poisson", density = True, histtype='step')
@@ -56,12 +63,12 @@ plt.ylabel("Anzahl")
 plt.xlabel("Pulse")
 plt.legend(loc="best")
 plt.tight_layout()
-plt.savefig("build/plotc.pdf") 
+plt.savefig("build/plote.pdf") 
 
 
 
 #save solution
-#file = open("build/solution.txt", "w")
-#file.write(f"Steigung = {Steigung1} Fehler: {Fehler}")
-#file.close()
+file = open("build/solution.txt", "w")
+file.write(f"V701\n\nWerte aus Fit 1\nSteigung 1 = {Steigung1}+-{err1}\nyAbschnitt1 = {yAbschnitt1}\nmittlere Reichweite 1= {mitReichw1}\nEnergie bei mittlerer Reichweite = {EnergiemitReichw1}\ndE/dx = {Steigung1b}+-{err1b}\nyAbschnitt1b = {yAbschnitt1b}\n\nWerte aus Fit 2\nSteigung 2 = {Steigung2}+-{err2}\nyAbschnitt2 = {yAbschnitt2}\nmittlere Reichweite 2= {mitReichw2}\nEnergie bei mittlerer Reichweite = {EnergiemitReichw2}\ndE/dx = {Steigung2b}+-{err2b}\nyAbschnitt2b = {yAbschnitt2b}\n\nZählrate:\nMittelwert = {mean}\nStandardabweichung={std}\nVarianz=Std^2={std**2}\nSeeed = 42\n")
+file.close()
 

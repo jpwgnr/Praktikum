@@ -1,0 +1,23 @@
+V701
+
+Werte aus Fit 1
+Steigung 1 = -11300952.962962963+-3249.199020143364
+yAbschnitt1 = 289663.5
+mittlere Reichweite 1= 0.022713+/-0.000007
+Energie bei mittlerer Reichweite = 1234
+dE/dx = -114512929.24577238+-4267622.632715947
+yAbschnitt1b = 4069817.927170868
+
+Werte aus Fit 2
+Steigung 2 = -2120208.999999999+-240960.59894791263
+yAbschnitt2 = 128879.33333333331
+mittlere Reichweite 2= 0.036+/-0.004
+Energie bei mittlerer Reichweite = 1234
+dE/dx = -111672646.91632296+-2614237.16226048
+yAbschnitt2b = 4132682.604020183
+
+Zählrate:
+Mittelwert = 4541.6
+Standardabweichung=158.32043456231415
+Varianz=Std^2=25065.359999999997
+Seeed = 42
