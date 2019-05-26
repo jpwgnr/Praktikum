@@ -6,114 +6,118 @@ Für die Auswertung wird Python und im Speziellen Matplotlib \cite{matplotlib}, 
 \subsection{Bestimmung des Energieverlustes von Alphastrahlung in Luft}
 
 \subsubsection{Erster Abstand}
-Die gemessenen Pulse und Positionen der Energiemaxima bei den verschiedenen Drücken sind für den Abstand $d_1 = \SI{2.7}{\centi\meter}$ in Tab. \ref{taba} zu sehen. Die Drücke, die Anzahl der Pulse und die Position des jeweiligen Maximums befinden sich in Tab. \ref{taba}. 
-
-\input{build/taba.tex}
+Die Drücke, die Anzahl der Pulse und die Position des jeweiligen Maximums für den Abstand $d_1 = \SI{2.7}{\centi\meter}$ in Tab. \ref{taba} zu sehen.
+ 
+ \input{build/taba.tex}
 
 %Zählrate als Funktion der effektiven Länge für den ersten Abstand
 Die mit Gleichung \eqref{eqn:x} ermittelten Abstände, die Anzahl der Pulse (Zählrate) und die mit Gleichung \eqref{eqn:energie} ermittelten Energien befinden sich in Tab. \ref{tab1}. 
 
-\noindent Die Zählrate ist in Abb. \ref{zaehlrate1} gegen die mit Gleichung \eqref{eqn:abstand} bestimmte effektive Länge aufgetragen.
+ \input{build/tab1.tex}
+
+\noindent Die Zählrate ist in Abb. \ref{zaehlrate1} gegen die mit Gleichung \eqref{eqn:x} bestimmte effektive Länge aufgetragen.
+
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=9cm]{build/plota.pdf}
-    \caption{}
-    \label{fig:zaehlrate1}
+    \caption{Anzahl der Hits pro zwei Minuten Messzeit ist hier gegen den Abstand aufgetragen. Dabei wurde dieses Ergebnis durch die Abhängigkeit jeweiligen Druck ermittelt.}
+    \label{zaehlrate1}
 \end{figure}
 
 \noindent Die Fitparameter der linearen Regression ergeben sich dadurch zu 
 \begin{align*}
-    m &= \num{-11300952.96(324920)} \frac{N}{\SI{120}{\second} \si{\meter}} \\
+    m &= - \num{11300.95(325)} \frac{N}{\SI{120}{\second} \si{\milli\meter}} \\
     n &= \num{289663.5} \frac{N}{\SI{120}{\second}} .
 \end{align*}
 
 
 \noindent Mit dem Umformen dieser linearen Gleichung ergibt sich bei $y = \frac{1}{2} max$ die mittlere Reichweite der $\alpha$-Teilchen zu dem Wert %wie genau?
 \begin{equation*}
-    R_\text{m,1} = \SI{22.7}{\milli\meter}
+    R_\text{m,1} = \SI{22.71(1)}{\milli\meter}
 \end{equation*}
 bestimmen.
 
-\noindent Das entspricht  nach Ablesen in Tab. \ref{tab1} einer Energie von %wie genau?
+\noindent Das entspricht nach Formel \eqref{eqn:Rm} einer Energie von %wie genau?
 \begin{equation*}
-    E_1 = \SI{12.7}{\mega\electronvolt}.
+    E_1 = \SI{3.772(1)}{\mega\electronvolt}.
 \end{equation*}
 
 %Energie als Funktion der effektiven Länge für den ersten Abstand
-Die Energie ist in Abb. \ref{fig:energie1} gegen die effektive Länge aufgetragen.
+Die Energie aus Tab. \ref{tab1} ist in Abb. \ref{fig:energie1} gegen die effektive Länge aufgetragen.
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=9cm]{build/plotb.pdf}
-    \caption{}
+    \caption{Hier ist die Länge gegen die jeweilige Energie aufgetragen.}
     \label{fig:energie1}
 \end{figure}
 
-\noindent Die Fitparameter der linearen Regression ergeben sich dadurch zu 
+\noindent Die Fitparameter der linearen Regression mit einer allgemeine Gleichung \eqref{linReg} ergeben sich dadurch zu 
 \begin{align*}
-    m &= \SI{-114512929.24(426762263)}{\mega\electronvolt\per\meter} \\
-    n &= \SI{4132682.60}{\electronvolt} .
+    m &= - \SI{0.1145(42)}{\mega\electronvolt\per\milli\per\meter} \\
+    n &= \SI{4.070}{\mega\electronvolt} .
 \end{align*}
 
 \noindent Daraus lässt sich anhand der Steigung der Energieverlust der Strahlung bestimmen %wie genau?
 \begin{equation*}
-    - \left( \frac{dE}{dx} \right)_1 = - \SI{11.45}{\mega\electronvolt}.
+    - \left( \frac{dE}{dx} \right)_1 = - \SI{0.1145(45)}{\mega\electronvolt\per\milli\per\meter}.
 \end{equation*}
 
-
 \subsubsection{Zweiter Abstand}
-Die gemessenen Pulse und Positionen der Energiemaxima bei den verschiedenen Drücken sind für den Abstand $d_2 = \SI{2}{\centi\meter}$ in Tab. \ref{tabb} zu sehen. Die Drücke, die Anzahl der Pulse und die Position des jeweiligen Maximums befinden sich in Tab. \ref{tabb}. 
-
-\input{build/tabb.tex}
+Die Drücke, die Anzahl der Pulse und die Position des jeweiligen Maximums für den Abstand $d_2 = \SI{2}{\centi\meter}$ in Tab. \ref{tabb} zu sehen.
+ 
+ \input{build/tabb.tex}
 
 %Zählrate als Funktion der effektiven Länge für den ersten Abstand
 Die mit Gleichung \eqref{eqn:x} ermittelten Abstände, die Anzahl der Pulse (Zählrate) und die mit Gleichung \eqref{eqn:energie} ermittelten Energien befinden sich in Tab. \ref{tab2}. 
 
-\noindent Die Zählrate ist in Abb. \ref{fig:zaehlrate2} gegen die mit Gleichung \eqref{eqn:abstand} bestimmte effektive Länge aufgetragen.
+ \input{build/tab2.tex}
+
+\noindent Die Zählrate ist in Abb. \ref{zaehlrate2} gegen die mit Gleichung \eqref{eqn:x} bestimmte effektive Länge aufgetragen.
+
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=9cm]{build/plotc.pdf}
-    \caption{}
-    \label{fig:zaehlrate2}
+    \caption{Anzahl der Hits pro zwei Minuten Messzeit ist hier gegen den Abstand aufgetragen. Dabei wurde dieses Ergebnis durch die Abhängigkeit jeweiligen Druck ermittelt.}
+    \label{zaehlrate2}
 \end{figure}
 
-\noindent Die Fitparameter der linearen Regression ergeben sich dadurch zu 
+\noindent Die Fitparameter der linearen Regression ergeben sich dadurch mit einer allgemeine Gleichung \eqref{linReg} zu 
 \begin{align*}
-    m &= \num{-11300952.96(324920)} \frac{N}{\SI{120}{\second} \si{\meter}} \\
-    n &= \num{289663.5} \frac{N}{\SI{120}{\second}} .
+    m &= -\num{839.54(3085)} \frac{N}{\SI{120}{\second} \si{\milli\meter}} \\
+    n &= \num{108514.077} \frac{N}{\SI{120}{\second}} .
 \end{align*}
 
 
 \noindent Mit dem Umformen dieser linearen Gleichung ergibt sich bei $y = \frac{1}{2} max$ die mittlere Reichweite der $\alpha$-Teilchen zu dem Wert %wie genau?
 \begin{equation*}
-    R_\text{m,2} = \SI{<++>}{\milli\meter}
+    R_\text{m,1} = \SI{65.8(24)}{\milli\meter}
 \end{equation*}
 bestimmen.
 
-\noindent Das entspricht  nach Ablesen in Tab. \ref{tab2} einer Energie von %wie genau?
+\noindent Das entspricht nach Formel \eqref{eqn:Rm} einer Energie von %wie genau?
 \begin{equation*}
-    E_2 = \SI{<++>}{\mega\electronvolt}.
+    E_1 = \SI{7.67(19)}{\mega\electronvolt}.
 \end{equation*}
 
 %Energie als Funktion der effektiven Länge für den ersten Abstand
-Die Energie ist in Abb. \ref{fig:energie2} gegen die effektive Länge aufgetragen.
+Die Energie aus Tab. \ref{tab2} ist in Abb. \ref{fig:energie2} gegen die effektive Länge aufgetragen.
 \begin{figure}
     \centering
     \includegraphics[width=12cm, height=9cm]{build/plotd.pdf}
-    \caption{}
+    \caption{Hier ist die Länge gegen die jeweilige Energie aufgetragen.}
     \label{fig:energie2}
 \end{figure}
 
 \noindent Die Fitparameter der linearen Regression ergeben sich dadurch zu 
 \begin{align*}
-    m &= \SI{<++>}{\<++>} \\
-    n &= \SI{<++>}{\<++>} .
+    m &= -\SI{0.1117(26)}{\mega\electronvolt\per\milli\per\meter} \\
+    n &= \SI{4.1327}{\mega\electronvolt} .
 \end{align*}
 
 \noindent Daraus lässt sich anhand der Steigung der Energieverlust der Strahlung bestimmen %wie genau?
 \begin{equation*}
-    - \left( \frac{dE}{dx} \right)_1 = \SI{}{}.
+    - \left( \frac{dE}{dx} \right)_1 = - \SI{0.1117(26)}{\mega\electronvolt\per\milli\per\meter}.
 \end{equation*}
-
 
 \subsection{Untersuchung der Statistik des radioaktiven Zerfalls}
 
@@ -122,11 +126,11 @@ Die Anzahl der Pulse, die jeweils in $\SI{10}{\second}$ gemessen wurde, sind in 
 \input{build/tabc.tex}
 
 %Zerfallsraten in Histogramm
-Die Zerfallsraten sind in Abb. \ref{fig:histogramm} in einem Histogramm aufgetragen. Außerdem ist eine Gauß- und eine Poissonverteilung eingetragen. Bei der Erzeugung der beiden Verteilungen wurde ein Seed von 42 benutzt, um die Auswertung deterministisch zu machen. 
+Die Zerfallsraten sind in Abb. \ref{fig:histogramm} in einem Histogramm aufgetragen. Außerdem ist eine Gauß- und eine Poissonverteilung nach Gleichung \eqref{eqn:gauss} und \eqref{eqn:poisson} aufgetragen. Bei der Erzeugung der beiden Verteilungen wurde ein Seed von 42 benutzt, um die Auswertung deterministisch zu machen. 
 \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=9cm]{build/plot.pdf}
-    \caption{}
+    \includegraphics[width=12cm, height=9cm]{build/plote.pdf}
+    \caption{Hier sind eine Gaussverteilung, eine Poissonverteilung und die tatsächlichen Messwerte gegeneinander aufgetragen.}
     \label{fig:histogramm}
 \end{figure}
 
@@ -134,5 +138,5 @@ Die Zerfallsraten sind in Abb. \ref{fig:histogramm} in einem Histogramm aufgetra
 \noindent Aus den gemessenen Zählraten lassen sich der  Mittelwert und die Varianz bestimmen: %Gleichungen erwähnen, Varianz ergänzen?
 \begin{align*}
     \bar{x} &= \num{4541.6} \\
-    var &= \num{25065}.
+    var &= \num{25065.36}.
 \end{align*}

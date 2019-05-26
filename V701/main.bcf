@@ -1977,8 +1977,8 @@
     <bcf:citekey order="1">V701</bcf:citekey>
     <bcf:citekey order="2">V701</bcf:citekey>
     <bcf:citekey order="3">matplotlib</bcf:citekey>
-    <bcf:citekey order="4">uncertainties</bcf:citekey>
-    <bcf:citekey order="5">scipy</bcf:citekey>
+    <bcf:citekey order="4">scipy</bcf:citekey>
+    <bcf:citekey order="5">uncertainties</bcf:citekey>
     <bcf:citekey order="6">numpy</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
