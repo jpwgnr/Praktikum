@@ -1,5 +1,5 @@
 \section{Ziel}
-Das Ziel dieses Versuchs ist es die Reichweite von $\symup{\alpha}$-Strahlung in Luft durch den Energieverlust der Strahlung zu bestimmen. Desweiteren soll Statistik des radioaktiven Zerfalls überprüft werden. 
+Das Ziel dieses Versuchs ist es die Reichweite von $\symup{\alpha}$-Strahlung in Luft durch den Energieverlust der Strahlung zu bestimmen. Desweiteren soll die Statistik des radioaktiven Zerfalls überprüft werden. 
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -15,9 +15,9 @@ Die Bethe-Bloch-Gleichung beschreibt diesen Energieverlust für große Energien 
 \end{equation}
 Dabei ist $z$ die Ladung und $v$ die Geschwindigkeit der $\alpha$-Stahlung, $Z$ die Ordnungszahl, $n$ die Teilchendichte und $I$ die Ionisierungsenergie des Gases. Bei kleinen Energien finden mehr Ladungsaustauschprozesse statt, wodurch Gleichung \eqref{eqn:bethebloch} nicht mehr gültig ist. 
 
-\noindent Hier lässt sich die Energie $E_{Max}$ der jeweiligen Maxima aus den gemessenen Werten folgendermaßen bestimmen. Das Maximum  $C_0$ bei einem Druck $p_0$ entspricht einem Energiewert von $E_0 = \SI{4}{\mega\electronvolt}$. Somit gilt für die restlichen Werte $C$
+\noindent Hier lässt sich die Energie $E_{max}$ der jeweiligen Maxima aus den gemessenen Werten folgendermaßen bestimmen. Das Maximum  $C_0$ bei einem Druck $p_0$ entspricht einem Energiewert von $E_0 = \SI{4}{\mega\electronvolt}$. Somit gilt für die restlichen Werte $C$
 \begin{equation}
-    E_{max} = \frac{C}{C_0} \cdot E_0
+    E_{max} = \frac{C}{C_0} \cdot E_0.
     \label{eqn:energie}
 \end{equation}
 
@@ -32,7 +32,8 @@ gebildet.
 
 \noindent Um die mittlere Reichweite von $\alpha$-Strahlung in Luft zu bestimmen, werden empirisch gewonnene Kurven benutzt. Bei Energien $E_\text{\alpha} \leq \SI{2.5}{\mega\eV}$ gilt für die mittlere Reichweite
 \begin{equation}
-    R_\text{m} = 3.1 \cdot E_\text{\alpha}^{\frac{3}{2}} %das mit dem alpha funktioniert nicht
+    R_\text{m} = 3.1 \cdot E_\text{\alpha}^{\frac{3}{2}}.
+    %das mit dem alpha funktioniert nicht
     \label{eqn:Rm}
 \end{equation}
 Dabei ist die Reichweite $R_\text{m}$ in $\si{\milli\meter}$ angegeben und $E_\text{\alpha}$ in $\si{\mega\eV}$. 
@@ -49,21 +50,21 @@ Dabei ist $p_\text{0}= \SI{1013}{\milli\bar}$ der Normaldruck.
 
 \subsection{Verteilungsfunktionen}
 
-Die Gauß-Verteilung, auch oft als Normal-Verteilung bezeichnet, ergibt sich zu einer Dichtefunktion der Form 
+Die Gauß-Verteilung, oft auch als Normal-Verteilung bezeichnet, ergibt sich zu einer Dichtefunktion der Form 
 \begin{equation}
     f(x) = \frac{1}{\sqrt(2\, \pi\,\sigma^2)} \exp\left(- \frac{\left( x - \mu \right)^2}{2 \sigma^2} \right).
     \label{eqn:gauss}
 \end{equation}
 
-\noindent Mit dem Mittelwert $\mu$ und der Varianz $\sigma^2$, wobei $\sigma$ der Standardabweichung entspricht, lässt sich dann eine Verteilung bestimmen. 
+\noindent Mit dem Mittelwert $\mu$ und der Varianz $\sigma^2$, wobei $\sigma$ der Standardabweichung entspricht, lässt sich eine Verteilung bestimmen. 
 
-Die Poisson-Verteilung ist diskret. Sie wird mit der Funktion  
+\noindent Die Poisson-Verteilung ist diskret. Sie wird mit der Funktion  
 \begin{equation}
-    P_{\lambda}(k)= \frac{\lambda^k}{k !} \exp{-\lambda}
+    P_{\lambda}(k)= \frac{\lambda^k}{k !} \exp(-\lambda)
     \label{eqn:poisson}
 \end{equation}
-definiert. Dabei ist $\lambda$ ein positiver reeller Wert, der sowohl dem Erwartungswert als der Varianz entspricht, da diese in einer Poisson-Verteilung gleich sind. Die Werte $k$ sind die natürlichen Zahlen mit Null.
+definiert. Dabei ist $\lambda$ ein positiver reeller Wert, der sowohl dem Erwartungswert als auch der Varianz entspricht, da diese in einer Poisson-Verteilung gleich sind. Die Werte $k$ sind die natürlichen Zahlen mit Null.
 
-\noindent Mit dem errechneten Mittelwert $\mu$ lässt sich dann eine Verteilung bestimmen. 
+\noindent Mit dem errechneten Mittelwert $\mu$ lässt sich eine Verteilung bestimmen. 
 
 
