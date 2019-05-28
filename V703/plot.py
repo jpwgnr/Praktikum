@@ -5,23 +5,54 @@ from scipy import stats
 from uncertainties import ufloat
 from scipy.optimize import curve_fit
 from something import some 
+import scipy.constants as const
 #Generate data 
-U, N = some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"U / \si{\volt}", r"N"], label_text="taba", caption_text=r"Die angelegte Spannung des  Geiger-Müller-Zählrohrs ." , precision=<++>)
+U1, N1 = some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"U / \si{\volt}", r"N"], label_text="taba", caption_text=r"Die angelegte Spannung des elektrischen Feldes innerhalb des Geiger-Müller-Zählrohrs  und die Anzahl der jeweils gemessenen Impulse." , precision=1)
+U2 ,N2, I2 = some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"U / \si{\volt}", r"N", r"I / \si{\ampere}"], label_text="tabb", caption_text=r"Die angelegte Spannung des elektrischen Feldes innerhalb des Geiger-Müller-Zählrohrs, die Anzahl der jeweils gemessenen Impulse und der Strom innerhalb des Geiger-Müller-Zählrohrs." , precision=2)
 #Generate table with calculated data
-some.tabelle(vars, finished_file="tab<++>.tex", vars_name=[r"<++>", r"<++>"], label_text="tab<++>", caption_text=r"<++>", precision=2) 
+
+t = 130 
+
+N = N1/t 
+
+errN = np.sqrt(N1)/t
+
+def gerade(x, m, n):
+    return m*x+n
+
+steigung1, yabschnitt1, err1 = some.linReg(x=U1, y=N, yerr=errN, p=U1[3:15], q=N[3:15], x_name=r"$U / \si{\volt}$", y_name=r"$\frac{N}{\si{\second}}$", num=1,  x_add=30, file_name="build/plot1.pdf")
+
+y450 = gerade(450, steigung1, yabschnitt1)
+y500 = gerade(500, steigung1, yabschnitt1)
+y550 = gerade(550, steigung1, yabschnitt1)
+
+SteigPlat = (y550 - y450)/y500 *100
+
+#some.tabelle(vars, finished_file="tab<++>.tex", vars_name=[r"<++>", r"<++>"], label_text="tab<++>", caption_text=r"<++>", precision=2) 
 #extra values
 
+tot1 = 20e-6*2.7
+
+N1a = 9730/60 
+N2a = 11918/60
+N12a = 21187/60
+tot2 = (N1a+N2a - N12a)/(2*N1a*N2a)
+
 #functions 
+deltaQ2 = I2 * 60/(N2/130)
+
+deltaQ2e = deltaQ2/const.elementary_charge
+
+some.tabelle([U2, I2, N2, deltaQ2, deltaQ2e], finished_file="tab1.tex", vars_name=[r"U / \si{\volt}", r"I / \si{\ampere}", r"N/second", r"$\Delta Q$", r"$\frac{\Delta Q}{\si{electroncharge}}$"], label_text="tab1", caption_text=r"Die Spannung, die Stromstärke, die Anzahl der Impulse, die transportierte Ladungsmenge und die transporte Ladungsmenge in Einheiten der Elementarladung.", precision=2) 
+some.plot(U2, I2, x_name=r"$U / \si{\volt}$", y_name=r"$I / \si{\ampere}$", num=2, file_name="build/plot2.pdf")
 
 #Generate linReg-Plot
-some.linReg(x=<++>, y=<++>, x_name=r"<++>", y_name=r"<++>", num=<++>,  x_add=<++>, file_name="build/plot<++>.pdf")
+#some.linReg(x=<++>, y=<++>, x_name=r"<++>", y_name=r"<++>", num=<++>,  x_add=<++>, file_name="build/plot<++>.pdf")
 #Generate curve-fit-Plot 
-some.curvefit(x=<++>, y=<++>, num=<++>, x_add=<++>, function=<++>, x_name=r"<++>", y_name=r"<++>", file_name="build/plot<++>.pdf")
+#some.curvefit(x=<++>, y=<++>, num=<++>, x_add=<++>, function=<++>, x_name=r"<++>", y_name=r"<++>", file_name="build/plot<++>.pdf")
 
 #save solution
-Steigung1 = <++> 
-Fehler = <++>
 file = open("build/solution.txt", "w")
-file.write(f"Steigung = {Steigung1} Fehler: {Fehler}")
+file.write(f"V703\nSteigung = {steigung1} \nyabschnitt1: {yabschnitt1}\nSteigung Plateau = {SteigPlat} %/100V Totzeit aus Plot = {tot1} s\nTotzeit aus Messung = {tot2}\n")
 file.close()
 
