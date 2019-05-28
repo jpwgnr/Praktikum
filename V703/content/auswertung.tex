@@ -1,11 +1,76 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
- \centering
- \includegraphics{<++>}
- \caption{<++>}
- \label{fig:<++>}
-\end{figure}
+
+\subsection{Zählrohr-Charakteristik}
+
+Im folgenden wird die Zählrohr-Charakteristik eines Halogenzählrohrs bestimmt. Die Werte für die angelegte Spannung $U$ und die Anzahl der gemessenen Impulse sind in Tab. \ref{taba} dargestellt. 
+
+\input{build/taba.tex}
+
+Die Anzahl der Impulse wurde innerhalb von $\SI{130}{\second}$ gemessen. 
+Die normierten und fehlerbehafteten Werte für die Anzahl der Impulse befinden sich in Tab. \ref{tab1}. 
+
+\input{build/tab1.tex}
+
+In Abb. \ref{fig1} sind diese Werte gegeneinander aufgetragen und es wird eine Ausgleichsgerade im Bereich von \num{360} bis \num{620} mit der allgemeinen Gleichung \eqref{linReg} für lineare Regressionen bestimmt. 
+
+<++> % plot
+
+Die lineare Regression ergibt als Parameter
+
+\begin{align*} 
+   m &= 0.012 \\
+   n &= 86.88.
+\end{align*}
+
+Mit diesen Parametern lässt sich dann aus den Werten für die Anzahl bei \num{450} und \num{550} die Steigung des Plateaus mit Gleichung \eqref{steigung}.
+Die Steigung des Plateaus beträgt 
+
+\begin{align*} 
+    m_{Plateau} = 1.33 \frac{\si{\percent}}{\SI{100}{\volt}}.
+\end{align*}
+
+\subsection{Totzeitbestimmung}
+
+Bei einer Spannung von $\SI{500}{\volt}$ ergibt sich durch das Ablesen im Oszilloskop eine Totzeit von 
+
+\begin{equation*}
+    t_\text{Tot,1} = \SI{54(10)e-6}{\second}.
+\end{equation*}
+
+% Einfügen des Fotos
+
+Die Totzeit lässt sich auch durch die 2-Quellen-Methode berechnen. 
+Bei der Messung haben sich für die erste und zweite Quelle, sowie für die Kombination aus beiden folgende Werte ergeben
+\begin{align*} 
+   N_1 &= 9730 \frac{N}{\SI{60}{\second}}\\
+   N_2 &= 11918 \frac{N}{\SI{60}{\second}} \\
+   N_{1,2} &= \frac{N}{\SI{60}{\second}} 21187.
+\end{align*}
+
+Diese Werte werden durch die Messdauer von $\SI{60}{\second}$ geteilt und ein Fehler entsteht ebenfalls dadurch. 
+
+\begin{align*} 
+   N_1 &= \num{162.17(10)} \frac{N}{\SI{60}{\second}}\\
+   N_2 &= \num{198.63(11)} \frac{N}{\SI{60}{\second}} \\
+   N_{1,2} &=\num{353.12(14)} \frac{N}{\SI{60}{\second}}.
+\end{align*}
+
+Daraus ergibt sich dann für die Totzeit mit Gleichung \eqref{totzeit}
+ein Wert von 
+\begin{equation*} 
+    t_\text{Tot,2} = \SI{119.3(31)}{\second}.
+\end{equation*} 
+
+\subsection{Transportierte Ladungsmenge}
+In Tab. \ref{tabb} stehen die Spannung, die Anzahl der gemessenen Impulse und die Stromstärke bei verschiedenen angelegten Spannungen.
+In Abb. \ref{fig2} sind die Spannung und die Stromstärke gegeneinander aufgetragen. 
+
+# plot
+
+Aus den Werten für die Stromspannung und der Anzahl der Impulse ergibt sich mit Gleichung \eqref{eqn:ladung} die transportierte Ladungsmenge $\Delta Q$ und daraus wiederum die transportierte Ladungsmenge in Abhängigkeit von der Elementarladung $e$. Die Ergebnisse sind in Tab. \ref{tab2} aufgetragen. 
+
+\input{build/tab2.tex}
 
 
