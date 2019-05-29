@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  28 MAY 2019 18:48
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.23)  29 MAY 2019 13:24
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.153 seconds
+luaotfload | main : initialization completed in 0.157 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x7ff8044984c0
+(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x7f9b1cd08f00
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x7ff804498680
+(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x7f9b1cd090c0
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -3132,6 +3132,10 @@ luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 26
+
+
+LaTeX Warning: Label `tab1' multiply defined.
+
 )
 \openout1 = main.aux
 
@@ -3322,19 +3326,19 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 (./content/Theorie.tex(load luc: /Users/Karina/Library/texlive/2018/texmf-var/lu
 atex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /Users/Karina/Libra
 ry/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
-<build/zaehlrohr.png, id=54, 1259.70625pt x 473.77pt>
+<build/zaehlrohr.png, id=66, 1259.70625pt x 473.77pt>
 File: build/zaehlrohr.png Graphic file (type png)
 <use build/zaehlrohr.png>
 Package luatex.def Info: build/zaehlrohr.png  used on input line 20.
 (luatex.def)             Requested size: 341.4323pt x 142.26222pt.
  [3<./build/zaehlrohr.png>]
-<build/totzeit.png, id=71, 1243.64626pt x 460.72125pt>
+<build/totzeit.png, id=83, 1243.64626pt x 460.72125pt>
 File: build/totzeit.png Graphic file (type png)
 <use build/totzeit.png>
 Package luatex.def Info: build/totzeit.png  used on input line 59.
 (luatex.def)             Requested size: 341.42499pt x 170.71024pt.
  [4]
-<build/charakteristik.png, id=82, 1274.7625pt x 756.8275pt>
+<build/charakteristik.png, id=94, 1274.7625pt x 756.8275pt>
 File: build/charakteristik.png Graphic file (type png)
 <use build/charakteristik.png>
 Package luatex.def Info: build/charakteristik.png  used on input line 71.
@@ -3346,32 +3350,55 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
  [5<./build/totzeit.png>])
 (./content/fehlerrechnung.tex [6<./build/charakteristik.png>])
 (./content/durchfuehrung.tex
-<build/aufbau.png, id=100, 1265.72874pt x 583.17876pt>
+<build/aufbau.png, id=113, 1265.72874pt x 583.17876pt>
 File: build/aufbau.png Graphic file (type png)
 <use build/aufbau.png>
 Package luatex.def Info: build/aufbau.png  used on input line 11.
 (luatex.def)             Requested size: 341.423pt x 170.71036pt.
- [7
+ [7]) (./content/auswertung.tex [8
 Missing character: There is no 𝛽 (U+1D6FD) in font [lmroman10-regular]:+tlig;
 !
-<./build/aufbau.png>]) (./content/auswertung.tex
+<./build/aufbau.png>] (./tables/taba.tex) (./tables/tab1.tex(load luc: /Users/Ka
+rina/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regu
+lar.luc))
+[9]
+<build/plot1.pdf, id=141, 417.7206pt x 258.00488pt>
+File: build/plot1.pdf Graphic file (type pdf)
+<use build/plot1.pdf>
+Package luatex.def Info: build/plot1.pdf  used on input line 24.
+(luatex.def)             Requested size: 426.78961pt x 256.07518pt.
 
-! LaTeX Error: File `<++>' not found.
+Overfull \hbox (8.53406pt too wide) in paragraph at lines 24--25
+ [][] 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6  \includegraphics{<++>}
-                         
-? 
-) (./content/diskussion.tex) [8](load luc: /Users/Karina/Library/texlive/2018/te
-xmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
+[10]
+<build/foto.jpg, id=152, 703.62875pt x 434.62375pt>
+File: build/foto.jpg Graphic file (type jpg)
+<use build/foto.jpg>
+Package luatex.def Info: build/foto.jpg  used on input line 52.
+(luatex.def)             Requested size: 341.43132pt x 227.62381pt.
+ [11<./build/plot1.pdf>] [12<./build/foto.jpg>] (./tables/tabb.tex)
+<build/plot2.pdf, id=187, 417.7206pt x 258.00488pt>
+File: build/plot2.pdf Graphic file (type pdf)
+<use build/plot2.pdf>
+Package luatex.def Info: build/plot2.pdf  used on input line 91.
+(luatex.def)             Requested size: 426.78961pt x 256.07518pt.
+
+Overfull \hbox (8.53406pt too wide) in paragraph at lines 91--92
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `tab2' on page 13 undefined on input line 96.
+
+[13<./build/plot2.pdf>] (./tables/tab2.tex)) (./content/diskussion.tex)
+[14](load luc: /Users/Karina/Library/texlive/2018/texmf-var/luatex-cache/generic
+/fonts/otl/lmromancaps10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
- [9]
+ [15]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
-
-(./main.aux
+ (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 26
 )
@@ -3382,16 +3409,15 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 6B0B794CD363B939434B384B6BDB567C;12968
-(rerunfilecheck)             After:  A3329FA7B68641111CF72B2184FBBC98;13000.
+(rerunfilecheck)             Before: 9B4FF59BF8D777A632A8BEA6CC9604AC;18714
+(rerunfilecheck)             After:  00853FF1334AC4DAC9C2DD3507F30208;18908.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 68A1AA1D7344EDA3A01157F5041A8C4E;2033.
 
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: 229C7A140EB78D161B52BD5B4A463AA6;1499
-(rerunfilecheck)             After:  61CD15B9E97E579D6AED29E0E660B354;1499.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
@@ -3399,15 +3425,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41918 strings out of 494413
+ 42222 strings out of 494413
  100000,1648299 words of node,token memory allocated
- 660 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 19 attribute, 78 glue_spec, 19 attr
+ 697 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 26 attribute, 78 glue_spec, 26 attr
 ibute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:3,2:481,3:119,4:25,5:186,6:34,7:2619,8:70,9:124,10:14,11:300
- 44807 multiletter control sequences out of 65536+600000
- 152 fonts using 55534887 bytes
- 61i,8n,107p,9101b,3103s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:3,2:2657,3:300,4:42,5:255,6:81,7:2822,8:72,9:935,10:14,11:300
+ 44979 multiletter control sequences out of 65536+600000
+ 220 fonts using 81732767 bytes
+ 61i,18n,107p,9101b,3103s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.ot
 f></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.
 otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-r
@@ -3420,10 +3446,10 @@ lm-math/latinmodern-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/
 public/lm/lmroman10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/openty
 pe/public/lm/lmroman12-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
 ntype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (9 pages, 256200 bytes).
+Output written on main.pdf (15 pages, 344520 bytes).
 
-PDF statistics: 261 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 131072)
- 129 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 382 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 59 named destinations out of 1000 (max. 131072)
+ 177 words of extra memory for PDF output out of 10000 (max. 100000000)
 
