@@ -9,13 +9,12 @@
 \contentsline {subsection}{\numberline {2.4}Ansprechvermögen des Zählrohrs}{6}{subsection.2.4}
 \contentsline {section}{\numberline {3}Fehlerrechnung}{7}{section.3}
 \contentsline {section}{\numberline {4}Durchführung}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Untersuchungen am Zählrohr}{7}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Messung der Charakteristik}{8}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Messung der Totzeit}{8}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Messung mit dem Oszillographen}{8}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Messung mit der Zwei-Quellen-Methode}{8}{subsubsection.4.3.2}
-\contentsline {section}{\numberline {5}Auswertung}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}Zählrohr-Charakteristik}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {4.1}Messung der Charakteristik}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Messung der Totzeit}{8}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Messung mit dem Oszillographen}{8}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Messung mit der Zwei-Quellen-Methode}{8}{subsubsection.4.2.2}
+\contentsline {section}{\numberline {5}Auswertung}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Zählrohr-Charakteristik}{8}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Totzeitbestimmung}{11}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Transportierte Ladungsmenge}{13}{subsection.5.3}
 \contentsline {section}{\numberline {6}Diskussion}{14}{section.6}
