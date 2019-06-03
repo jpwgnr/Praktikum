@@ -36,12 +36,27 @@
       \field{sortinit}{D}
       \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuch Nr. 703 - Das Geiger-Müller-Zählrohr}
       \field{year}{2019}
       \verb{urlraw}
       \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V703.pdf
       \endverb
       \verb{url}
       \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V703.pdf
+      \endverb
+    \endentry
+    \entry{vergleich}{article}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labeltitlesource}{title}
+      \field{title}{Geiger-Müller-Zählrohr}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.lehrmittel-xxl.de/refID/99/shop/Geiger-Mueller-Zaehlrohr_p17031.html?gclid=EAIaIQobChMIzP-i2dHA4gIViaiaCh1eOgrAEAkYASABEgLgy_D_BwE
+      \endverb
+      \verb{url}
+      \verb https://www.lehrmittel-xxl.de/refID/99/shop/Geiger-Mueller-Zaehlrohr_p17031.html?gclid=EAIaIQobChMIzP-i2dHA4gIViaiaCh1eOgrAEAkYASABEgLgy_D_BwE
       \endverb
     \endentry
     \entry{matplotlib}{article}{}

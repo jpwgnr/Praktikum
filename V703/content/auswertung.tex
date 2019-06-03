@@ -33,7 +33,7 @@ Die normierten und fehlerbehafteten Werte für die Anzahl der Impulse befinden s
    n &= 86.88.
 \end{align*}
 
-\noindent Mit diesen Parametern lässt sich aus den Werten für die Anzahl bei \num{450} und \num{550} die Steigung des Plateaus mit Gleichung \eqref{steigung} bestimmen.
+\noindent Mit diesen Parametern lässt sich aus den Werten für die Anzahl bei \num{450} und \SI{550}{\volt} die Steigung des Plateaus mit Gleichung \eqref{steigung} bestimmen.
 Die Steigung des Plateaus beträgt 
 
 \begin{align*} 
@@ -42,7 +42,7 @@ Die Steigung des Plateaus beträgt
 
 \subsection{Totzeitbestimmung}
 
-Bei einer Spannung von $\SI{500}{\volt}$ ergibt sich durch das Ablesen aus Abb. \ref{foto} im Oszilloskop eine Totzeit von 
+Bei einer Spannung von $\SI{500}{\volt}$ ergibt sich durch das Ablesen vom Oszilloskop (Abb. \ref{foto}) eine Totzeit von 
 \begin{equation*}
     T_\text{Tot,1} = \SI{54(10)e-6}{\second}.
 \end{equation*}
@@ -57,9 +57,9 @@ Bei einer Spannung von $\SI{500}{\volt}$ ergibt sich durch das Ablesen aus Abb. 
 \noindent Die Totzeit lässt sich auch durch die Zwei-Quellen-Methode berechnen. 
 Bei der Messung haben sich für die erste und zweite Quelle, sowie für die Kombination aus beiden folgende Werte ergeben
 \begin{align*} 
-   N_1 &= 9730 \frac{N}{\SI{60}{\second}}\\
-   N_2 &= 11918 \frac{N}{\SI{60}{\second}} \\
-   N_{1+2} &= 21187 \frac{N}{\SI{60}{\second}}.
+   N_1 &= 9730 \frac{1}{\SI{60}{\second}}\\
+   N_2 &= 11918 \frac{1}{\SI{60}{\second}} \\
+   N_{1+2} &= 21187 \frac{1}{\SI{60}{\second}}.
 \end{align*}
 
 \noindent Diese Werte werden durch die Messdauer von
@@ -69,9 +69,9 @@ Bei der Messung haben sich für die erste und zweite Quelle, sowie für die Komb
 geteilt und ein Fehler entsteht ebenfalls dadurch %?
 
 \begin{align*} 
-   N_1 &= \num{162.17(10)} \frac{N}{\SI{60}{\second}}\\
-   N_2 &= \num{198.63(11)} \frac{N}{\SI{60}{\second}} \\
-   N_{1+2} &=\num{353.12(14)} \frac{N}{\SI{60}{\second}}.
+   N_1 &= \num{162.17(10)} \si{\per\second}\\
+   N_2 &= \num{198.63(11)} \si{\per\second} \\
+   N_{1+2} &=\num{353.12(14)} \si{\per\second}.
 \end{align*}
 
 \noindent Daraus ergibt sich für die Totzeit mit Gleichung \eqref{totzeit}
@@ -81,7 +81,7 @@ ein Wert von
 \end{equation*} 
 
 \subsection{Transportierte Ladungsmenge}
-In Tab. \ref{tabb} stehen die Spannung, die Anzahl der gemessenen Impulse und die Stromstärke bei verschiedenen angelegten Spannungen.
+In Tab. \ref{tabb} stehen die Anzahl der gemessenen Impulse und die Stromstärke bei verschiedenen angelegten Spannungen.
 In Abb. \ref{fig2} sind die Spannung und die Stromstärke gegeneinander aufgetragen. 
 
 \input{tables/tabb.tex}
@@ -93,7 +93,7 @@ In Abb. \ref{fig2} sind die Spannung und die Stromstärke gegeneinander aufgetra
     \label{fig2}
 \end{figure}
 
-\noindent Aus den Werten für die Stromspannung und der Anzahl der Impulse ergibt sich mit Gleichung \eqref{ladung} die transportierte Ladungsmenge $\Delta Q$ und daraus wiederum die transportierte Ladungsmenge in Abhängigkeit von der Elementarladung $e$. Die Ergebnisse sind in Tab. \ref{tab2} eingetragen. 
+\noindent Aus den Werten für die Stromstärke und der Anzahl der Impulse ergibt sich mit Gleichung \eqref{ladung} die transportierte Ladungsmenge $\Delta Q$ und daraus wiederum die transportierte Ladungsmenge in Abhängigkeit von der Elementarladung $e$. Die Ergebnisse sind in Tab. \ref{tab2} eingetragen. 
 %Muss N hier nicht die Anzahl der Impulse in 130s sein?
 
 \input{tables/tab2.tex}
