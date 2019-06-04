@@ -10,14 +10,15 @@ Das Ziel dieses Versuchs ist es die Reichweite von $\symup{\alpha}$-Strahlung in
 In Materie verliert $\symup{\alpha}$-Strahlung Energie. Das passiert durch elastische Stöße mit dem Material, Ionisationsprozesse und durch Anregung oder Dissoziation (Zerfall) von Molekülen. Der Energieverlust hängt von der Ausgangsenergie der Strahlung und von der Dichte des Materials ab.
 Die Bethe-Bloch-Gleichung beschreibt diesen Energieverlust für große Energien mittels
 \begin{equation}
-    - \frac{dE_\text{\alpha}}{dx} = \frac{z^2 \, e^4}{4 \, \pi \,  \epsilon_\text{0} \, m_\text{e}} \frac{n \, Z}{v^2} \, ln \left(\frac{2 \, m_\text{e} \, v^2}{I} \right).
+    - \frac{dE_\text{\alpha}}{dx} = \frac{z^2 \, e^4}{4 \, \pi \,  \epsilon_\text{0}^2 \, m_\text{e}} \frac{n \, Z}{v^2} \, ln \left(\frac{2 \, m_\text{e} \, v^2}{I} \right).
     \label{eqn:bethebloch}
 \end{equation}
 Dabei ist $z$ die Ladung und $v$ die Geschwindigkeit der $\alpha$-Stahlung, $Z$ die Ordnungszahl, $n$ die Teilchendichte und $I$ die Ionisierungsenergie des Gases. Bei kleinen Energien finden mehr Ladungsaustauschprozesse statt, wodurch Gleichung \eqref{eqn:bethebloch} nicht mehr gültig ist. 
 
-\noindent Hier lässt sich die Energie $E_{max}$ der jeweiligen Maxima aus den gemessenen Werten folgendermaßen bestimmen. Das Maximum  $C_0$ bei einem Druck $p_0$ entspricht einem Energiewert von $E_0 = \SI{4}{\mega\electronvolt}$. Somit gilt für die restlichen Werte $C$
+\subsection{Berechnung der Energie}
+\noindent Hier lässt sich die Energie $E_\text{max}$ der jeweiligen Maxima aus den gemessenen Werten folgendermaßen bestimmen. Das Maximum  $C_0$ bei einem Druck $p_0$ entspricht einem Energiewert von $E_0 = \SI{4}{\mega\electronvolt}$. Somit gilt für die restlichen Werte $C$
 \begin{equation}
-    E_{max} = \frac{C}{C_0} \cdot E_0.
+    E_\text{max} = \frac{C}{C_0} \cdot E_0.
     \label{eqn:energie}
 \end{equation}
 
@@ -52,7 +53,7 @@ Dabei ist $p_\text{0}= \SI{1013}{\milli\bar}$ der Normaldruck.
 
 Die Gauß-Verteilung, oft auch als Normal-Verteilung bezeichnet, ergibt sich zu einer Dichtefunktion der Form 
 \begin{equation}
-    f(x) = \frac{1}{\sqrt(2\, \pi\,\sigma^2)} \exp\left(- \frac{\left( x - \mu \right)^2}{2 \sigma^2} \right).
+    f(x) = \frac{1}{\sqrt{(2\, \pi\,\sigma^2)}} \exp\left(- \frac{\left( x - \mu \right)^2}{2 \sigma^2} \right).
     \label{eqn:gauss}
 \end{equation}
 
