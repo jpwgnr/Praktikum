@@ -1,11 +1,79 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
- \centering
- \includegraphics{<++>}
- \caption{<++>}
- \label{fig:<++>}
-\end{figure}
+In Tab. \ref{tab1}  sind die Gegenstandsweite $g$, die Brennweite $b$ und die Bildhöhe $B$ bei verschiedenen Entfernungen des Schirms von der Lampe aufgelistet. Dabei ist die Gegenstandshöhe $G = \SI{3}{\centi\meter}$.
+
+\input{build/tab1.tex}
+
+Um die Messgenauigkeit visuell erkennen zu können, werden die zueinander gehörenden Werte $b$ und $g$ als Schnittpunkte mit der x- und y-Achse betrachtet und es wird geschaut, in welchem Punkt sich die Geraden schneiden. Dieser Schnittpunkt ergibt die Brennweite der Linse. 
+
+% figure b-g
+
+Aus den Werten für die Bildweite $b$ und die Gegenstandsweite $g$ ergibt sich mit Gleichung \eqref{abbildungsgesetz} der Mittelwert des Abbildungsmaßstab $V$ zu \begin{equation}
+    V = \SI{<++>}{\<++>}.
+\end{equation}
+
+Aus den Werten für die Bildhöhe $B$ und die Gegenstandshöhe $G$ ergibt sich mit Gleichung \eqref{abbildungsgesetz} der Mittelwert des Abbildungsmaßstab $V$ zu \begin{equation}
+    V = \SI{<++>}{\<++>}.
+\end{equation}
+
+Nach Gleichung \eqref{linsengleichung} ergibt sich für die Brennweite $f$ ein Wert von 
+\begin{equation}
+    f = \SI{<++>}{\<++>}.
+\end{equation}
+
+Die Herstellerangabe gibt für die Brennweite einen Wert von 
+\begin{equation}
+    f = \SI{10}{\centi\meter}
+\end{equation}
+an.
+
+\subsection{Methode von Bessel}
+
+In Tab. \ref{tab2} sind die Werte bei verschiedenen Abständen zwischen Schirm und Lampe gemeinsam mit den Gegenstandsweiten und den Bildweiten aufgelistet. 
+
+\input{build/tab2.tex}
+
+Mit Gleichung \eqref{e}, Gleichung \eqref{d} und der Gleichung \eqref{fbessel} ergibt sich für die Brennweite der Linse ein Wert von 
+
+\begin{equation}
+    f = \SI{<++>}{\<++>}.
+\end{equation}
+
+In Tab. \ref{tab3} sind die gleichen Werte für einen roten Filter und in Tab. \ref{tab4} sind die Werte für einen blauen Filter aufgelistet.
+
+Daraus ergibt sich, dass die Brennweite für rote Strahlen bei 
+
+\begin{equation}
+    f_\text{rot} = \SI{<++>}{\<++>}
+\end{equation}
+
+und für blaue Strahlen bei 
+\begin{equation}
+    f_\text{blau} = \SI{<++>}{\<++>}
+\end{equation}
+liegt.
 
 
+\subsection{Methode von Abbe}
+
+In Tab. \ref{tab5} sind die Werte Entfernung des Schirms, die dazugehörigen Refernzwerte $A$ und die jeweilige Bildhöhe aufgetragen. 
+
+Die Werte $g'$ sind in Abb. \ref{fig:gstrich} gegen $(1+1/V)$ aufgetragen. In Abb. \ref{fig:bstrich} sind die Werte $b'$ gegen $(1+V)$ aufgetragen.
+
+%Figure gstrich 
+%Figure hstrich 
+
+Die Steigung ergibt dann nach Gleichung \eqref{gstrich} die Brennweite. 
+Für Abb. \ref{fig:gstrich} ergibt sich die Brennweite zu 
+\begin{equation}
+    f = \SI{<++>}{\<++>}
+\end{equation}
+und die Hauptebene des Linsensystems. 
+
+Analog ergibt die Steigung dann nach Gleichung \eqref{hstrich} die Brennweite. 
+Für Abb. \ref{fig:gstrich} ergibt sich die Brennweite zu 
+\begin{equation}
+    f = \SI{<++>}{\<++>}
+\end{equation}
+und die Hauptebene des Linsensystems. 

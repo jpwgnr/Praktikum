@@ -1,45 +1,77 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-Die meisten Linsen bestehen aus Material, dass dichter ist als Das Umgebungsmaterial "Luft". Wenn ein Lichtstrahl auf eine Linse trifft, dann wird er nach dem Brechungsgesetz beim Ein- und Austritt aus dem Medium der Linse gebrochen. 
+Linsen bestehen im Allgemeinen aus einem Material, das dichter als Luft ist.
+Nach Fresnells Brechungsgesetzen wird das Licht beim Ein- und Austritt gebrochen.
 
-Es gibt verschiedene Arten von Linsen. So gibt es zum Beispiel Sammellinsen und Zerstreuungslinsen. Sammellinsen sind dicker in der Mitte als am Rand und bündeln parallel eingehendes Licht in einem Punkt, dem Brennpunkt. Die Brennweite $f$, also die Entfernung von Linse und Brennpunkt, und die die Bildweite $b$, die Entfernung von Linse und Bild, sind beide positiv und es entsteht ein reeles Bild, das auf einen Schirm abgebildet werden kann. Bei einer Zerstreungslinse ist das sind Brennweite $f$ und Bildweite $b$ negativ und es entsteht ien virtuelles Bild. 
+In diesem Versuch werden Sammellinsen und Zerstreuungslinsen verwendet. Sammellinsen sind in der Mitte dicker als am Rand und bündeln das einstrahlende Licht.Die Brennweite $f$ einer Sammellinse, also die Entfernung von der Linse und dem Brennpunkt $F$, und die Bildweite $b$ sind, wie in Abb. \ref{sammellinse} zu erkennen, positiv und es entsteht ein reales Bild auf einem Schirm, während bei Zerstreuungslinsen (Abb. \ref{streulinse}) die Brennweite $f$ und die Bildweite $b$ negativ sind und ein virtuelles Bild erzeugen.  
 %Skizze dünne Sammellinse 
 %Skizze dünne Streulinse
 %Skizze breite Sammellinse
 
-Für die geometrische Bildkonstruktion verwendet man drei ausgezeichnete Strahlen. Den Parallelstrahl P, den Mittelpunktsstrahl M und den Brennpunktsstrahl B. 
-Der Parallelstrahl verläuft vom Gegenstand parallel zur optischen Achse und wird dort zum Brennpunktstrahl. 
-Der Mittelpunkstrahl geht durch die Mitte der Linse. 
-Der Brennpunktstrahlt geht durch den Brennpunkt der Linse und wird an der optischen Achse gebrochen, sodass er zum Parallelstrahl wird. 
+Für die Bildkonstruktion in den Skizzen werden jeweils drei ausgezeichnete Strahlen eingezeichnet. Dabei gibt es den Parallelstrahl $P$, den Mittelpunktsstrahl $M$ und den Brennpunktsstrahl $B$. Die Wortbedeutung ist selbsterklärend.
 
-Aus den Strahlensätzen und der Bildkonstruktion folgt das Abbildungsgesetz 
+Aus den Brechungsgesetzen und einigen geometrischen Überlegungen folgt dann das sogenannte Abbildungsgesetz
 
 \begin{equation}
     V = \frac{B}{G} = \frac{b}{g}.
     \label{eqn:abbildungsgesetz}
 \end{equation}
 
-Dabei ist $V$ der Abbildungsmaßstab, also das Verhältnis zwischen Bild- und Gegenstandsgröße, $B$ die Bildgröße und $G$ die Gegenstandsgröße.
+Dabei ist $V$ der Abbildungsmaßstab, also das Verhältnis zwischen Bild- und Gegenstandsgröße, $B$ die Bildgröße und $G$ die Gegenstandsgröße. Im selben Verhältnis stehen $b$, die Bildweite, und $g$, die Gegenstandsweite, zueinander. 
 
-Für dünne Linsen folgt die Linsengleichung 
+Für dünne Linsen folgt aus denselben Überlegungen die Linsengleichung 
 
 \begin{equation}
     \frac{1}{f}= \frac{1}{b} + \frac{1}{g}.
     \label{eqn:linsengleichung}
 \end{equation}
 
-Bei dicken Linsen und Linensystemen gilt die Brechung des Lichtstrahts an der Linsenoberfläche nicht mehr, also keine Brechung mehr an der Mittelebene. Die Mittelebene muss in diesem Fall durch zwei Hauptebenen ersetzt werden. Brennweite, Gegenstandsweite und Bildweite werden im Verhältnis zu der jeweiligen Hauptebene bestimmt, sodass die Linsengleichung noch immer gilt. 
+Bei Systemen aus mehreren Linsen muss die Rechnung anders gemacht werden. 
+Die Mittelebene muss dann durch zwei Hauptebenen $H$ und $H'$ ersetzt werden.
+Brennweite, Gegenstandsweite und die Bildweite werden dann in Bezug zu der jeweiligen Hauptebene bestimmt, die man stellvertretend für das ganze Linsensystem betrachtet. 
 
-Exakt bemessen gilt die Reduktion auf die Mittel- bzw. Hauptebene nur für achsenferne Strahlen. Achsenferne Strahlen werden eigentlich stärker gebrochen und es treten Abbildungsfehler auf. Das Bild eines Gegenstandes wird dann nicht mehr scharf abgebildet. 
+Es gibt Abbildungsfehler, die die Messung und vor allem die Exaktheit der Messungen beeinflussen können. So liegt zum Beispiel bei der so genannten spährischen Abberration der Brennpunkt achsenferner Strahlen näher an der Linse als von achsennahen Strahlen. Bei der chromatischen Abberation liegt der Brennpunkt von blauem Licht näher an der Linse als der von rotem Licht, da blaues Licht aufgrund der Dispersionsrelation stärker gebrochen wird.  
 
-Bei der sphärischen Aberration liegt der Brennpunkt der achsenfernen Strahlen näher an der Linse als der von den achsennahen Strahlen. Für ein scharfes Bild müssen dann die achsenfernen Strahlen zum Beispiel mit einer Irisblende herausgefiltert werden. Bei der chromatischen Abberration liegt der Brennpunkt von blauem Licht näher an der Linse als der von rotem Licht auf Grund der Dispersion. 
-
-Die reziproke Brennweite definiert die Brechkraft als $D= 1/f$ mit der Einheit Dioptrie. Setzt man ein Linsensystem aus mehreren dünnen Linsen zusammen, summieren sich die Brechkräfte $D_i$, also es gilt 
+Die sogenannte reziproke Brennweite definiert die Brechkraft als $D= 1/f$ mit der Einheit Dioptrie. Bei einem Linsensystem aus verschiedenen gekrümmten Linsen summieren sich die Brechkräfte $D_i$, der einzelnen Linsen, sodass gilt 
 
 \begin{equation}
     D= \sum{i}^N D_i.
     \label{eqn:brechungskraft}
 \end{equation}
 
+\subsection{Mathematische Hintergründe bei der Methode von Bessel}
 
+Die Brennweite wird mit einer Linse bestimmt, indem der Abstand zwischen Gegenstand und Bild konstant bleibt und zwei Linsenpositionen gesucht werden, bei denen das Bild scharf ist. aus der Summe 
+\begin{equation}
+    e = g_1 + b_1 = g_2 + b_2
+    \label{eqn:e}
+\end{equation}
+und der Differenz 
+\begin{equation}
+    d = g1- b1 = g2 - b2
+    \label{eqn:d}
+\end{equation}
+
+ergibt sich dann die Brennweite zu
+\begin{equation}
+    f = \frac{e^2 - d^2}{4 e}.
+    \label{eqn:fBessel}
+\end{equation} 
+
+\subsection{Mathematische Hintergründe bei der Methode von Abbe}
+Ein Linsensystem wird zwischen Schirm und Lampe hin und her bewegt und es wird nach einem scharfen Bild gesucht wie in Abb. \ref{abbe} zu erkennen ist.
+Die Gegenstandsweite $g'$ und die Bildweite $b'$ lassen sich bei einem System aus Linsen von einem Referenzpunkt gut messen. 
+Wenn der Abbildungsmaßstab bekannt ist, lässt sich daraus dann die Brennweite und der Abstand zur Hauptebene bestimmen. 
+Dafür kann der lineare Zusammenhang 
+\begin{equation}
+    g' = f \cdot \left(1 + \frac{1}{V} \right) + h
+    \label{eqn:gstrich}
+\end{equation}
+
+beziehungsweise der Zusammenhang 
+\begin{equation}
+    b' = f \cdot \left(1 + V \right) + h'
+    \label{eqn:gstrich}
+\end{equation}
+mit einer linearen Regression gelöst werden. 
