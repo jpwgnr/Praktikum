@@ -7,7 +7,7 @@ from scipy.optimize import curve_fit
 from something import some 
 import scipy.constants as const
 #Generate data 
-U1, N1 = some.neueWerte(file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$U / \si{\volt}$", r"$\frac{N}{\SI{130}{\second}}$"], label_text="taba", caption_text=r"Die angelegte Spannung des elektrischen Feldes innerhalb des Geiger-Müller-Zählrohrs  und die Anzahl der jeweils gemessenen Impulse." , precision=1)
+U1, N1 = some.neueWerte( file_name="data/dataa.txt", finished_file="build/taba.tex",  vars_name=[r"$U / \si{\volt}$", r"$\frac{N}{\SI{130}{\second}}$"], label_text="taba", caption_text=r"Die angelegte Spannung des elektrischen Feldes innerhalb des Geiger-Müller-Zählrohrs  und die Anzahl der jeweils gemessenen Impulse." , precision=1)
 U2 ,N2, I2 = some.neueWerte(file_name="data/datab.txt", finished_file="build/tabb.tex",  vars_name=[r"$U / \si{\volt}$", r"$\frac{N}{\SI{130}{\second}}$", r"$I / \si{\ampere}$"], label_text="tabb", caption_text=r"Die angelegte Spannung des elektrischen Feldes innerhalb des Geiger-Müller-Zählrohrs, die Anzahl der jeweils gemessenen Impulse und der Strom innerhalb des Geiger-Müller-Zählrohrs." , precision=2)
 #Generate table with calculated data
 

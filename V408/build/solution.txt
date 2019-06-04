@@ -1,0 +1,4 @@
+V408
+Brennweite_1 = 9.62+/-0.05 
+Abbildungsmaßstab(mitbundg): 1.5+/-0.7
+Abbildungsmaßstab(mitBundG) = 1.4+/-0.6

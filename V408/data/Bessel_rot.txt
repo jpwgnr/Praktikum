@@ -1,0 +1,7 @@
+# rot: Position des Schirms, erste Position der Linse, zweite Position der Linse
+
+60 97.4 73.8
+58 97.8 71.3
+56 98.2 68.8
+54 98.4 66.8
+52 98.5 64.6
