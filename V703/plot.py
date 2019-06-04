@@ -28,7 +28,7 @@ some.tabelle([U1, N, errN], finished_file="build/tab1.tex", vars_name=[r"$U / \s
 def gerade(x, m, n):
     return m*x+n
 
-steigung1, yabschnitt1, err1 = some.linReg(x=U1, y=N, yerr=errN, p=U1[3:15], q=N[3:15], x_name=r"$U / \si{\volt}$", y_name=r"$\frac{N}{\si{\second}}$", num=1,  x_add=30, file_name="build/plot1.pdf")
+steigung1, yabschnitt1, err1 = some.linReg(x=U1, y=N, yerr=errN, p=U1[3:15], q=N[3:15], x_name=r"$U / \si{\volt}$", y_name=r"$N / \frac{1}{\si{\second}}$", num=1,  x_add=30, file_name="build/plot1.pdf")
 
 y450 = gerade(450, steigung1, yabschnitt1)
 y500 = gerade(500, steigung1, yabschnitt1)
