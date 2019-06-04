@@ -17,7 +17,11 @@ dE/dx = -0.11167264691632298+-0.0026142371622604526
 yAbschnitt2b = 4.132682604020184
 
 Zählrate:
-Mittelwert = 4541.6
-Standardabweichung=158.32043456231415
-Varianz=Std^2=25065.359999999997
+Mittelwert = 3.556
+Standardabweichung=1.5832043456231415
+Varianz=Std^2=2.5065359999999997
 Seeed = 42
+
+
+Energie1: (3.298+/-0.007)e+04MeV
+Energie2: (5.33+/-0.20)e+04 MeV
