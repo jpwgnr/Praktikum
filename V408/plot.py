@@ -79,18 +79,98 @@ V1 = ufloat(V1.mean(), V1.std())
 V2 = abbildungsgesetz2(B1)
 V2 = ufloat(V2.mean(), V2.std())
 
-#Plot
-plt.figure(1)
-plt.plot(b1, g1, "g-")
-plt.xlim(0, b1[-1])
-plt.ylim(0, g1[-1])
-plt.xlabel(r"$b / \si{\centi\meter}$")
-plt.ylabel(r"$g / \si{\centi\meter}$")
+#Plot, geht nicht
+#plt.figure(1)
+#plt.scatter(b1, g1)
+#plt.xlim(15, 40)
+#plt.ylim(10, 24)
+#plt.xlabel(r"$b / \si{\centi\meter}$")
+#plt.ylabel(r"$g / \si{\centi\meter}$")
+#plt.legend(loc="best")
+#plt.tight_layout()
+#plt.savefig("build/plot1.pdf")
+
+
+#Methode von Bessel
+def bessel(d, e):
+    return (e**2 - d**2) / (4*e)
+
+e1_weiss = g21 + b21 
+e2_weiss = g22 + b22
+d1_weiss = g21 - b21
+d2_weiss = g22 - b22
+
+e1_blau = g31 + b31 
+e2_blau = g32 + b32
+d1_blau = g31 - b31
+d2_blau = g32 - b32
+
+e1_rot = g41 + b41 
+e2_rot = g42 + b42
+d1_rot = g41 - b41
+d2_rot = g42 - b42
+
+f1_weiss = bessel(d1_weiss, e1_weiss)
+f1_weiss = ufloat(f1_weiss.mean(), f1_weiss.std())
+f2_weiss = bessel(d2_weiss, e2_weiss)
+f2_weiss = ufloat(f2_weiss.mean(), f2_weiss.std())
+
+f1_blau = bessel(d1_blau, e1_blau)
+f1_blau = ufloat(f1_blau.mean(), f1_blau.std())
+f2_blau = bessel(d2_blau, e2_blau)
+f2_blau = ufloat(f2_blau.mean(), f2_blau.std())
+
+f1_rot = bessel(d1_rot, e1_rot)
+f1_rot = ufloat(f1_rot.mean(), f1_rot.std())
+f2_rot = bessel(d2_rot, e2_rot)
+f2_rot = ufloat(f2_rot.mean(), f2_rot.std())
+
+
+#Methode von Abbe
+V_abbe2 = abbildungsgesetz2(B5)
+V_abbe1 = abbildungsgesetz1(b5, g5) #braucht man glaube ich gar nicht
+
+#Plot mit g'
+x1 = 1 + 1/V_abbe2 
+x1_plot = np.linspace(x1[0]-3, x1[-1]+3)
+
+
+#Plot mit b'
+x2 = 1+ V_abbe2
+
+#steigung, abschnitt = stats.linregress(m, n)
+
+
+#Gerade
+def gerade(x, m, n):
+    return m*x+n
+
+params, covariance = curve_fit(gerade, x1, g5)
+
+
+plt.figure(2)
+plt.plot(x1, g5, "xb", label="Daten")
+plt.plot(x1_plot, gerade(x1_plot, *params, "--k", label="Fit") #?
+plt.xlabel(r"$1 + \frac{1}{V}$")
+plt.ylabel(r"$g' / \si{\centi\meter}$")
+plt.grid()
 plt.legend(loc="best")
 plt.tight_layout()
-plt.savefig("build/plot1.pdf")
+plt.savefig("build/abbe_g.pdf")
+
+plt.figure(3)
+plt.plot(x2, b5, "xb", label="Daten")
+plt.xlabel(r"$1 + V$")
+plt.ylabel(r"$b' / \si{\centi\meter}$")
+plt.grid()
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig("build/abbe_b.pdf")
+
+#aus den Plots f(Steigung) und h bzw. h' (y-Achsenabschnitt) bestimmen
+
 
 #in der solution.txt saven
 file = open("build/solution.txt", "w")
-file.write(f"V408\nBrennweite_1 = {f1} \nAbbildungsmaßstab(mitbundg): {V1}\nAbbildungsmaßstab(mitBundG) = {V2}")
+file.write(f"V408 \nerste Messung: \nBrennweite = {f1} \nAbbildungsmaßstab(mit b und g): {V1} \nAbbildungsmaßstab(mit B und G) = {V2} \n \nMethode von Bessel: \n1 ist jeweils mit b_1 und g_1 berechnet, 2 mit b_2 und g_2 \nBrennweite_weiss,1 = {f1_weiss} \nBrennweite_weiss,2 = {f2_weiss} \nBrennweite_blau,1 = {f1_blau} \nBrennweite_blau,2 = {f2_blau} \nBrennweite_rot,1 = {f1_rot} \nBrennweite_rot,2 = {f2_rot}")
 file.close()
