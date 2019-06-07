@@ -11,4 +11,12 @@ Brennweite_weiss,2 = 9.89+/-0.06
 Brennweite_blau,1 = 9.670+/-0.023 
 Brennweite_blau,2 = 9.87+/-0.05 
 Brennweite_rot,1 = 9.70+/-0.07 
-Brennweite_rot,2 = 9.92+/-0.08
+Brennweite_rot,2 = 9.92+/-0.08 
+ 
+Methode von Abbe: 
+Plot mit g': 
+Steigung (Brennweite) = 16.687911903682835 +/- 0.4610149615210025 
+y-Achsenabschnitt (h) = -7.8150748638753464 +/- 1.3603973371598506 
+Plot mit b': 
+Steigung (Brennweite) = 16.374377543901208 +/- 0.8948633392211205 
+y-Achsenabschnitt (h') = 15.371389772415778 +/- 1.4059768405992878
