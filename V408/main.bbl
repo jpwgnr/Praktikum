@@ -46,27 +46,6 @@
       \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V408.pdf
       \endverb
     \endentry
-    \entry{V<++>}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=2821a70f99517ac7757c95300d43e95c}{%
-           family={Dortmund},
-           familyi={D\bibinitperiod},
-           given={TU},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
-      \field{sortinit}{D}
-      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Versuch <++> zum Literaturverzeichnis}
-      \field{year}{2018}
-    \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{%

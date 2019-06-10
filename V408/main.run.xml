@@ -80,7 +80,6 @@
       <file>main.bcf</file>
     </requires>
     <requires type="editable">
-      <file>lit.bib</file>
       <file>programme.bib</file>
     </requires>
   </external>
