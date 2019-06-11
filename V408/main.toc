@@ -3,9 +3,10 @@
 \select@language {german}
 \contentsline {section}{\numberline {1}Ziel}{3}{section.1}
 \contentsline {section}{\numberline {2}Theorie}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Abbildungsfehler}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Methode von Bessel}{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Methode von Abbe}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.1}Linsen}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Abbildungsfehler}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Methode von Bessel}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Methode von Abbe}{5}{subsection.2.4}
 \contentsline {section}{\numberline {3}Fehlerrechnung}{6}{section.3}
 \contentsline {section}{\numberline {4}Durchführung}{7}{section.4}
 \contentsline {subsection}{\numberline {4.1}Brennweitenbestimmung}{7}{subsection.4.1}

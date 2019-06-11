@@ -26,7 +26,7 @@ b21 = L21 - S2
 b22 = L22 - S2
 
 tab2 = TexTable([g21, b21, g22, b22], [r"$g_1 / \si{\centi\meter}$", r"$b_1 / \si{\centi\meter}$", r"$g_2 / \si{\centi\meter}$", r"$b_2 / \si{\centi\meter}$"], label="bessel_weiß", caption="Die ersten Gegenstands- und Bildweiten und die zweiten Gegenstands- und Bildweiten, die mit der Methode von Bessel gemessen wurden, für weißes Licht.", roundPrecision=1)
-tab2.writeFile("build/Bessel_weiß.tex")
+tab2.writeFile("build/Bessel_weiss.tex")
 
 #Methode von Bessel (blau), neue Tabelle
 S3, L31, L32 = np.genfromtxt("data/Bessel_blau.txt", unpack=True)
@@ -152,7 +152,7 @@ x1_plot = np.linspace(x1[0]-0.5, x1[-1]+0.5)
 
 #Plot mit b'
 x2 = 1+ V_abbe2
-x2_plot = np.linspace(x2[0]-0.5, x2[-1]+0.5)
+x2_plot = np.linspace(x2[0]+0.05, x2[-1]-0.05)
 
 #steigung, abschnitt = stats.linregress(m, n)
 
@@ -168,7 +168,7 @@ err2 = np.sqrt(np.diag(covariance2))
 
 plt.figure(2)
 plt.plot(x1, g5, "xb", label="Daten")
-plt.plot(x1_plot, gerade(x1_plot, *params), "k", linewidth=1.0, label="Fit")
+plt.plot(x1_plot, gerade(x1_plot, *params), "b", linewidth=1.0, label="Fit")
 plt.xlabel(r"$1 + \frac{1}{V}$")
 plt.ylabel(r"$g' / \si{\centi\meter}$")
 plt.grid()
@@ -178,7 +178,7 @@ plt.savefig("build/abbe_g.pdf")
 
 plt.figure(3)
 plt.plot(x2, b5, "xb", label="Daten")
-plt.plot(x2_plot, gerade(x2_plot, *params2), "k", linewidth=1.0, label="Fit")
+plt.plot(x2_plot, gerade(x2_plot, *params2), "b", linewidth=1.0, label="Fit")
 plt.xlabel(r"$1 + V$")
 plt.ylabel(r"$b' / \si{\centi\meter}$")
 plt.grid()

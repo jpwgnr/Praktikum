@@ -4,6 +4,7 @@ Das Ziel dieses Versuchs ist es die Brennweite einer Linse mit verschiedenen Met
 \section{Theorie}
 \label{sec:Theorie}
 
+\subsection{Linsen}
 Linsen bestehen im Allgemeinen aus einem Material, das dichter als Luft ist.
 Nach Fresnels Brechungsgesetzen wird das Licht beim Ein- und Austritt gebrochen.
 
@@ -15,7 +16,7 @@ Nach Fresnels Brechungsgesetzen wird das Licht beim Ein- und Austritt gebrochen.
 \begin{figure}
     \centering
     \includegraphics[width=8cm, height=5cm]{build/sammellinse.png}
-    \caption{Skizze einer Sammellinse. Es sind die Gegenstandsgröße $G$, Gegenstandsweite $g$, Bildgröße $B$, Bildweite $b$, Brennpunkte $F$, Brennweiten $f$, Parallelstral $P$, Mittelpunktsstrahl $M$ und Brennpunktsstrahl $B$ eingezeichnet. \cite{V408}}
+    \caption{Skizze einer Sammellinse. Es sind die Gegenstandsgröße $G$, die Gegenstandsweite $g$, die Bildgröße $B$, die Bildweite $b$, die Brennpunkte $F$, die Brennweiten $f$, der Parallelstral $P$, der Mittelpunktsstrahl $M$ und der Brennpunktsstrahl $B$ eingezeichnet. \cite{V408}}
     \label{sammellinse}
 \end{figure}
 
@@ -23,7 +24,7 @@ Nach Fresnels Brechungsgesetzen wird das Licht beim Ein- und Austritt gebrochen.
 \begin{figure}
     \centering
     \includegraphics[width=8cm, height=5cm]{build/streulinse.png}
-    \caption{Skizze einer Zerstreuungslinse. Es sind die Gegenstandsgröße $G$, Gegenstandsweite $g$, Bildgröße $B$, Bildweite $b$, Brennpunkte $F$, Brennweiten $f$, Parallelstral $P$ und Mittelpunktsstrahl $M$ eingezeichnet. \cite{V408}}
+    \caption{Skizze einer Zerstreuungslinse. Es sind die Gegenstandsgröße $G$, die Gegenstandsweite $g$, die Bildgröße $B$, die Bildweite $b$, die Brennpunkte $F$, die Brennweiten $f$, der Parallelstral $P$ und der Mittelpunktsstrahl $M$ eingezeichnet. \cite{V408}}
     \label{streulinse}
 \end{figure}
 
@@ -44,22 +45,29 @@ Nach Fresnels Brechungsgesetzen wird das Licht beim Ein- und Austritt gebrochen.
 
 \noindent Bei Systemen aus mehreren Linsen muss die Rechnung anders gemacht werden. 
 Die Mittelebene muss dann durch zwei Hauptebenen $H$ und $H'$ ersetzt werden.
-Brennweite, Gegenstandsweite und die Bildweite werden in Bezug zu der jeweiligen Hauptebene bestimmt, die man stellvertretend für das ganze Linsensystem betrachtet. 
+Brennweite, Gegenstandsweite und die Bildweite werden in Bezug zu der jeweiligen Hauptebene bestimmt, die stellvertretend für das ganze Linsensystem betrachtet wird. 
 
-\noindent Die sogenannte reziproke Brennweite definiert die Brechkraft als $D= 1/f$ mit der Einheit Dioptrie. Bei einem Linsensystem aus verschiedenen gekrümmten Linsen summieren sich die Brechkräfte $D_i$, der einzelnen Linsen, sodass gilt 
+\noindent Die sogenannte reziproke Brennweite definiert die Brechkraft als $D= 1/f$ mit der Einheit Dioptrie. Bei einem Linsensystem aus verschiedenen gekrümmten Linsen summieren sich die Brechkräfte $D_i$ der einzelnen Linsen, sodass gilt 
 
 \begin{equation*}
-    D= \sum{i}^N D_i.
+    D = \sum_{i}^N D_\text{i}.
     \label{eqn:brechungskraft}
 \end{equation*}
 
 
 \subsection{Abbildungsfehler}
-Es gibt Abbildungsfehler, die die Messung und vor allem die Exaktheit der Messung beeinflussen können. So liegt zum Beispiel bei der sogenannten spährischen Abberration der Brennpunkt achsenferner Strahlen näher an der Linse als der von achsennahen Strahlen. 
+Es gibt Abbildungsfehler, die die Messung und vor allem die Exaktheit der Messung beeinflussen können. 
+
+\noindent So liegt zum Beispiel bei der sogenannten spährischen Abberration der Brennpunkt achsenferner Strahlen näher an der Linse als der von achsennahen Strahlen. 
 
 \noindent Bei der chromatischen Abberation liegt der Brennpunkt von blauem Licht näher an der Linse als der von rotem Licht, da blaues Licht aufgrund der Dispersionsrelation stärker gebrochen wird.  
-%Anderen beiden Abbildungsfehler auch beschreiben
 
+%Anderen beiden Abbildungsfehler auch beschreiben
+\noindent Bei der Bildfeldwölbung liegt das Bild von einem ebenen Gegenstand nicht in einer Ebene, sondern auf einer gewölbten Fläche. (\cite{fehler})
+
+\noindent Bei der Koma ist die Linse geneigt. Durch achsenferne Strahlen werden Striche als geschwungene Linien abgebildet. (\cite{fehler})
+
+%Antistigmatismus
 
 \subsection{Methode von Bessel}
 Die Brennweite wird mit einer Linse bestimmt, indem der Abstand zwischen Gegenstand und Bild konstant bleibt und zwei Linsenpositionen gesucht werden, bei denen das Bild scharf ist. Aus der Summe 
@@ -81,7 +89,7 @@ ergibt sich die Brennweite zu
 \begin{figure}
     \centering
     \includegraphics[width=8cm, height=5cm]{build/bessel.png}
-    \caption{Skizze der Methode von Bessel. Es sind zwei Linsen zu sehen, die die zwei Linsenpositionen darstellen sollen. Es sind außerdem die Gegenstandsgröße $G$, Gegenstandsweiten $g_\text{i}$, Bildgröße $B$, Bildweiten $b_\text{i}$, Abstand zwischen Gegenstand und Bild $e$, Abstand der Linsenpositionen $d$, Parallelstral $P$, Mittelpunktsstrahl $M$ und Brennpunktsstrahl $B$ eingezeichnet. \cite{V408}}
+    \caption{Skizze der Methode von Bessel. Es sind zwei Linsen zu sehen, die die zwei Linsenpositionen darstellen sollen. Es sind außerdem die Gegenstandsgröße $G$, die Gegenstandsweiten $g_\text{i}$, die Bildgröße $B$, die Bildweiten $b_\text{i}$, der Abstand zwischen Gegenstand und Bild $e$, der Abstand der Linsenpositionen $d$, der Parallelstral $P$, der Mittelpunktsstrahl $M$ und der Brennpunktsstrahl $B$ eingezeichnet. \cite{V408}}
     \label{fig:bessel}
 \end{figure}
 
@@ -105,6 +113,6 @@ Dabei sind $h$ der Abstand von Referenzpunkt und Hauptebene $H$ und $h'$ der Abs
 \begin{figure}
     \centering
     \includegraphics[width=8cm, height=5cm]{build/abbe.png}
-    \caption{Skizze der Methode von Abbe. Es sind eine Sammel- und eine Zerstreuungslinse zu sehen. Außerdem sind die Gegenstandsgröße $G$, Gegenstandsweite $g$, Bildgröße $B$, Bildweite $b$, der Referenzpunkt $A$, die Gegenstandsweite $g'$ bezüglich des Referenzpunktes, die Bildweite $b'$ bezüglich des Referenzpunktes, Brennpunkte $F$, Brennweite $f$, die Hauptebenen $H$ und $H'$ sowie die Abstand $h$ und $h'$ von Referenzpunkt zu den Hauptebenen eingezeichnet. \cite{V408}}
+    \caption{Skizze der Methode von Abbe. Es sind eine Sammel- und eine Zerstreuungslinse zu sehen. Außerdem sind die Gegenstandsgröße $G$, die Gegenstandsweite $g$, die Bildgröße $B$, die Bildweite $b$, der Referenzpunkt $A$, die Gegenstandsweite $g'$ bezüglich des Referenzpunktes, die Bildweite $b'$ bezüglich des Referenzpunktes, die Brennpunkte $F$, die Brennweite $f$, die Hauptebenen $H$ und $H'$ sowie die Abstände $h$ und $h'$ von Referenzpunkt zu den Hauptebenen eingezeichnet. \cite{V408}}
     \label{fig:abbe}
 \end{figure}
