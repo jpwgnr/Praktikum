@@ -20,7 +20,10 @@ def gerade(x, m, n):
     return m*x + n
 
 def linReg(x, y, yerr,  p, q, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}", num=1,  x_add=5, file_name="build/plota.pdf"):
-    Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(p,q)
+    params, pcov = curve_fit(gerade, p, q)
+    Steigung1= params[0]
+    yAbschnitt1 = params[1]
+    err1 = np.sqrt(np.diag(pcov))
     plt.figure(num) 
     newx= np.linspace(p[0]-x_add,p[-1]+x_add, num=1000)
     plt.errorbar(x, y, yerr=yerr,fmt=".r",ecolor="blue", label="Daten")
@@ -30,7 +33,7 @@ def linReg(x, y, yerr,  p, q, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}",
     plt.legend(loc="best")
     plt.tight_layout()
     plt.savefig(file_name) 
-    return Steigung1, yAbschnitt1, std_err1
+    return Steigung1, yAbschnitt1, err1
 
 def plot(x, y, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}", num=1, file_name="build/plota.pdf"):
     plt.figure(num) 
