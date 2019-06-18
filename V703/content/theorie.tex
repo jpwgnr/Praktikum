@@ -7,9 +7,9 @@ Außerdem werden die pro einfallendem Teilchen freigesetzte Ladung sowie die Tot
 
 \subsection{Aufbau und Wirkungsweise eines Geiger-Müller-Zählrohrs}
 
-Das Zählrohr besteht wie in Abb. \ref{fig:zaehlrohr} zu erkennen aus einem Kathodenzylinder mit Radius $r_\text{k}$ und einem Anodendraht mit Radius $r_\text{a}$. Im Inneren befindet sich ein Gasgemisch. Indem an das Äußere des Rohrs und den Draht eine äußere Spannung angelegt wird, entsteht ein radiales E-Feld. Die Feldstärke beträgt 
+Das Zählrohr besteht wie in Abb. \ref{fig:zaehlrohr} zu erkennen aus einem Kathodenzylinder mit Radius $r_\text{k}$ und einem Anodendraht mit Radius $r_\text{a}$. Im Inneren befindet sich ein Gasgemisch. Indem an das Äußere des Rohrs und den Draht eine äußere Spannung angelegt wird, entsteht ein radiales elektrisches Feld. Die Feldstärke beträgt 
 \begin{equation*}
-    E(r) = \frac{U}{r \, ln \left(\frac{r_\text{k}}{r_\text{a}} \right)}.
+    E(r) = \frac{U}{r \, \, ln \left(\frac{r_\text{k}}{r_\text{a}} \right)}.
     \label{eqn:feldstärke}
 \end{equation*}
 
@@ -28,10 +28,20 @@ Das Zählrohr besteht wie in Abb. \ref{fig:zaehlrohr} zu erkennen aus einem Kath
 %Bereich III
 \noindent Wenn die Energie der Elektronen groß genug ist, um ihrerseits Atome zu ionisieren, wird dieser Vorgang Stoßionisierung genannt. Wenn lawinenartig die Zahl der freien Elektronen zunimmt, wird dies eine Townsend-Lawine genannt. 
 Die Ladung ist dann so groß, dass sie als Ladungsimpuls gemessen werden kann.
-Eine Proportionalität zwischen der Ladung $Q$ und der Primärteilchenenergie definiert das Zahlrohr als Proportionalitätzählrohr. 
+Eine Proportionalität zwischen der Ladung $Q$ und der Primärteilchenenergie definiert das Zählrohr als Proportionalitätzählrohr. 
 
 %Bereich IV
 \noindent Sobald der Proportionalitätsbereich überschritten ist, wird der Auslösebereich, der eigentliche Arbeitsbereich des Geiger-Müller-Zählrohrs, erreicht. Die dabei entstehenden UV-Photonen können sich senkrecht zu den Feldlinien bewegen und so auch an anderen Stellen noch zusätzliche Elektronen loslösen. So entstehen im gesamten Zählrohr weitere Lawinen. 
+
+%Bereich V - Dauerentladung
+\noindent Im Bereich der Dauerentladung finden selbstständige Gasentladungen, die durch ein einzelnes ionisiertes Teilchen ausgelöst werden können, statt.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm, height=12cm]{build/anzahl_spannung.png}
+    \caption{Die Anzahl der erzeugten Elektron-Ionen-Paare ist gegen die Spannung aufgetragen. Es sind die einzelnen zuvor beschriebenen Bereiche eingezeichnet.}
+    \label{fig:anzahl_spannung}
+\end{figure}
 
 \subsection{Totzeit, Nachentladung}
 %Totzeit
@@ -64,7 +74,7 @@ Um diese Impulse zu verhindern, sind Gase im Inneren des Rohres vorhanden. Die E
 
 \subsection{Charakteristik des Zählrohrs}
 
-Wenn die Teilchenzahl $N$ bei konstanter Strahlungsintensität gegen die angelegte Spannung $U$ aufgetragen wird, entsteht eine Charakteristik wie in Abb. \ref{fig:charakteristik}. Bei der Spannung $U_\text{E}$ setzt der Auslösebereich ein. Der darauf folgende lineare Teil wird Plateau genannt. Die Steigung des Plateaus sollte am besten null sein. Am Ende des Plateaus nimmt die Anzahl der Nachentladungen extrem zu. Sie geht über in den Bereich der selbstständigen Gasentladung, der sehr schädlich für ein Strahlrohr ist.
+Wenn die Teilchenzahl $N$ bei konstanter Strahlungsintensität gegen die angelegte Spannung $U$ aufgetragen wird, entsteht eine Charakteristik wie in Abb. \ref{fig:charakteristik}. Bei der Spannung $U_\text{E}$ setzt der Auslösebereich ein. Der darauf folgende lineare Teil wird Plateau genannt. Die Steigung des Plateaus sollte am besten null sein. Am Ende des Plateaus nimmt die Anzahl der Nachentladungen extrem zu. Sie geht über in den Bereich der selbstständigen Gasentladung, der sehr schädlich für ein Zählrohr ist.
 
 \begin{figure}
     \centering
