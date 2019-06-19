@@ -4,7 +4,7 @@
 
 \subsection{Zählrohr-Charakteristik}
 
-Im Folgenden wird die Zählrohr-Charakteristik eines Halogenzählrohrs bestimmt. Die Werte für die angelegte Spannung $U$ und die Anzahl der gemessenen Impulse sind in Tab. \ref{taba} dargestellt. 
+Im Folgenden wird die Zählrohr-Charakteristik eines Halogenzählrohrs bestimmt. Die Werte für die angelegte Spannung $U$ und die Anzahl der gemessenen Impulse sind in Tab. \ref{taba} dargestellt und die normierten und fehlerbehafteten Werte für die Anzahl der Impulse befinden sich daneben. 
 
 \input{tables/taba.tex}
 
@@ -13,9 +13,6 @@ Im Folgenden wird die Zählrohr-Charakteristik eines Halogenzählrohrs bestimmt.
     \Delta t = \SI{130}{\second}
 \end{equation*}
 gemessen. 
-Die normierten und fehlerbehafteten Werte für die Anzahl der Impulse befinden sich in Tab. \ref{tab1}. 
-
-\input{tables/tab1.tex}
 
 \noindent In Abb. \ref{fig1} sind diese Werte gegeneinander aufgetragen und es wird eine Ausgleichsgerade im Bereich von $\num{360}$ bis $\SI{620}{\volt}$ mit der allgemeinen Gleichung \eqref{linReg} für die lineare Regressionen bestimmt. 
 
@@ -57,8 +54,8 @@ Bei einer Spannung von $\SI{500}{\volt}$ ergibt sich durch das Ablesen vom Oszil
 \noindent Die Totzeit lässt sich auch durch die Zwei-Quellen-Methode berechnen. 
 Bei der Messung haben sich für die erste und zweite Quelle, sowie für die Kombination aus beiden folgende Werte ergeben
 \begin{align*} 
-   N_1 &= 9730 \frac{1}{\SI{60}{\second}}\\
-   N_2 &= 11918 \frac{1}{\SI{60}{\second}} \\
+   N_1 &= 9730 \frac{1}{\SI{60}{\second}},\\
+   N_2 &= 11918 \frac{1}{\SI{60}{\second}}, \\
    N_{1+2} &= 21187 \frac{1}{\SI{60}{\second}}.
 \end{align*}
 
@@ -69,9 +66,9 @@ Bei der Messung haben sich für die erste und zweite Quelle, sowie für die Komb
 geteilt und ein Fehler entsteht ebenfalls dadurch %?
 
 \begin{align*} 
-   N_1 &= \num{162.17(10)} \si{\per\second}\\
-   N_2 &= \num{198.63(11)} \si{\per\second} \\
-   N_{1+2} &=\num{353.12(14)} \si{\per\second}.
+   N_1 &= \SI{162.17(10)}{\per\second},\\
+   N_2 &= \SI{198.63(11)}{\per\second}, \\
+   N_{1+2} &=\SI{353.12(14)}{\per\second}.
 \end{align*}
 
 \noindent Daraus ergibt sich für die Totzeit mit Gleichung \eqref{totzeit}
@@ -81,7 +78,7 @@ ein Wert von
 \end{equation*} 
 
 \subsection{Transportierte Ladungsmenge}
-In Tab. \ref{tabb} stehen die Anzahl der gemessenen Impulse und die Stromstärke bei verschiedenen angelegten Spannungen.
+In Tab. \ref{tabb} stehen die Anzahl der gemessenen Impulse und die Stromstärke $I$ bei verschiedenen angelegten Spannungen $U$.
 In Abb. \ref{fig2} sind die Spannung und die Stromstärke gegeneinander aufgetragen. 
 
 \input{tables/tabb.tex}
@@ -89,7 +86,7 @@ In Abb. \ref{fig2} sind die Spannung und die Stromstärke gegeneinander aufgetra
 \begin{figure}
     \centering
     \includegraphics[width=15cm, height=9cm]{build/plot2.pdf}
-    \caption{Die Stromstärke ist gegen die angelegte Spannung aufgetragen. Es sind nur die Daten eingetragen.}
+    \caption{Die Stromstärke $I$ ist gegen die angelegte Spannung $U$ aufgetragen. Es sind nur die Daten eingetragen.}
     \label{fig2}
 \end{figure}
 
