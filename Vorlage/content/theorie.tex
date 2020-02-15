@@ -1,4 +1,73 @@
+\section{Ziel}
+Das Ziel dieses Versuchs ist es die Reichweite von $\symup{\alpha}$-Strahlung in Luft durch den Energieverlust der Strahlung zu bestimmen. Desweiteren soll die Statistik des radioaktiven Zerfalls überprüft werden. 
+
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{V<++>}
+\subsection{Energieverlust von Alphastrahlung}
+%Die Energie von $\alpha$-Strahlung kann durch Messung der Reichweite bestimmt werden. 
+% Während sich die Strahlung durch Materie bewegt, kann durch elastische Stöße mit dem Material Energie abgegeben werden. Die elastischen Stöße können als Rutherfordsche Streuung beschrieben werden. Die Energie kann auch durch Anregung oder Dissoziation von Molekülen abgegeben werden. Dieser Energieverlust hängt von der Ausgangsenergie der Strahlung und der Dichte des Material ab, wobei für kleine Geschwindigkeiten die Wahrscheinlichkeit zunimmt, dass es zu Wechselwirkungen kommt. 
+In Materie verliert $\symup{\alpha}$-Strahlung Energie. Das passiert durch elastische Stöße mit dem Material, Ionisationsprozesse und durch Anregung oder Dissoziation (Zerfall) von Molekülen. Der Energieverlust hängt von der Ausgangsenergie der Strahlung und von der Dichte des Materials ab.
+Die Bethe-Bloch-Gleichung beschreibt diesen Energieverlust für große Energien mittels
+\begin{equation}
+    - \frac{dE_\text{\alpha}}{dx} = \frac{z^2 \, e^4}{4 \, \pi \,  \epsilon_\text{0}^2 \, m_\text{e}} \frac{n \, Z}{v^2} \, ln \left(\frac{2 \, m_\text{e} \, v^2}{I} \right).
+    \label{eqn:bethebloch}
+\end{equation}
+Dabei ist $z$ die Ladung und $v$ die Geschwindigkeit der $\alpha$-Stahlung, $Z$ die Ordnungszahl, $n$ die Teilchendichte und $I$ die Ionisierungsenergie des Gases. Bei kleinen Energien finden mehr Ladungsaustauschprozesse statt, wodurch Gleichung \eqref{eqn:bethebloch} nicht mehr gültig ist. 
+
+
+\subsection{Berechnung der Energie}
+Bei einer Messung der Energieverteilung von Alphastrahlung kann die maximale Energie $E_\text{max}$ aus den Positionen des Energiemaximums folgendermaßen bestimmt werden. Die Position des Maximums $C_0$ bei einem Druck von ca. $\SI{0}{\bar}$ entspricht einem Energiewert von $E_0 = \SI{4}{\mega\electronvolt}$. Somit gilt für die restlichen Positionen der Maxima $C$
+\begin{equation}
+    E_\text{max} = \frac{C}{C_0} \cdot E_0.
+    \label{eqn:energie}
+\end{equation}
+
+
+\subsection{Reichweite von Alphastrahlung}
+Um die Reichweite $R$ eines $\symup{\alpha}$-Teilchens, also die Wegstrecke bis zur kompletten Abbremsung, zu berechnen, wird das Integral 
+\begin{equation*}
+    R = \int_{0}^{E_\alpha} \frac{dE_\text{\alpha}}{-dE_\text{\alpha}/dx}
+    \label{eqn:reichweite}
+\end{equation*}
+gebildet.
+
+\noindent Um die mittlere Reichweite von $\alpha$-Strahlung in Luft zu bestimmen, werden empirisch gewonnene Kurven benutzt. Bei Energien $E_\text{\alpha} \leq \SI{2.5}{\mega\eV}$ gilt für die mittlere Reichweite
+\begin{equation}
+    R_\text{m} = 3.1 \cdot E_\text{\alpha}^{\frac{3}{2}}.
+    %das mit dem alpha funktioniert nicht
+    \label{eqn:Rm}
+\end{equation}
+Dabei ist die Reichweite $R_\text{m}$ in $\si{\milli\meter}$ angegeben und $E_\text{\alpha}$ in $\si{\mega\eV}$. 
+
+\noindent Die Reichweite von $\alpha$-Teilchen ist proportional zum Druck $p$, wenn Temperatur und Volumen konstant sind. Damit kann eine Absorptionsmessung durchgeführt werden, indem der Druck $p$ variiert wird.
+
+\noindent Die effektive Länge wird mit dem festen Abstand $x_\text{0}$ zwischen Detektor und $\alpha$-Strahler durch 
+\begin{equation}
+    x_\text{eff} = x_\text{0} \frac{p}{p_\text{0}}
+    \label{eqn:x}
+\end{equation}
+beschrieben.
+Dabei ist $p_\text{0}= \SI{1013}{\milli\bar}$ der Normaldruck.
+
+
+\subsection{Verteilungsfunktionen}
+
+Die Gauß-Verteilung, oft auch als Normal-Verteilung bezeichnet, ergibt sich zu einer Dichtefunktion der Form 
+\begin{equation}
+    f(x) = \frac{1}{\sqrt{2\, \pi\,\sigma^2}} \exp\left(- \frac{\left( x - \mu \right)^2}{2 \sigma^2} \right).
+    \label{eqn:gauss}
+\end{equation}
+
+\noindent Mit dem Mittelwert $\mu$ und der Varianz $\sigma^2$, wobei $\sigma$ der Standardabweichung entspricht, lässt sich eine Verteilung bestimmen. 
+
+\noindent Die Poisson-Verteilung ist diskret. Sie wird mit der Funktion  
+\begin{equation}
+    P_{\lambda}(k)= \frac{\lambda^k}{k !} \exp(-\lambda)
+    \label{eqn:poisson}
+\end{equation}
+definiert. Dabei ist $\lambda$ ein positiver reeller Wert, der sowohl dem Erwartungswert als auch der Varianz entspricht, da diese in einer Poisson-Verteilung gleich sind. Die Werte $k$ sind die natürlichen Zahlen mit Null.
+
+\noindent Mit dem errechneten Mittelwert $\mu$ lässt sich eine Verteilung bestimmen. 
+
+

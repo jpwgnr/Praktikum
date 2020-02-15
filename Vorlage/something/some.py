@@ -19,10 +19,10 @@ def tabelle(vars, finished_file="taba.tex", vars_name=[r"t/\si{\second}", r"s/\s
 def gerade(x, m, n):
     return m*x + n
 
-def linReg(x, y, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}", num=1,  x_add=5, file_name="build/plota.pdf"):
-    Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(x,y)
+def linReg(x, y, p, q, x_name=r"t/\si{\second}", y_name=r"x/\si{\meter}", num=1,  x_add=5, file_name="build/plota.pdf"):
+    Steigung1, yAbschnitt1, r_value1, p_value1, std_err1= stats.linregress(p,q)
     plt.figure(num) 
-    newx= np.linspace(x[0]-x_add,x[-1]+x_add, num=1000)
+    newx= np.linspace(p[0]-x_add,p[-1]+x_add, num=1000)
     plt.plot(x, y, "xr", label="Daten")
     plt.plot(newx, gerade(newx, Steigung1, yAbschnitt1), "r", label="Fit", linewidth=1.0)
     plt.xlabel(x_name)
