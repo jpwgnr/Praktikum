@@ -1,3 +1,0 @@
-Formel: T_2*(c_k*m_k + c_w*m_2)/(L*t)
-
-Fehlerfortpflanzung: \sqrt{\frac{T_{2}^{2} c_{w}^{2} \sigma_{m_{2}}^{2}}{L^{2} t^{2}} + \frac{T_{2}^{2} \sigma_{t}^{2}}{L^{2} t^{4}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} + \frac{\sigma_{T_{2}}^{2}}{L^{2} t^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2} + \frac{T_{2}^{2} \sigma_{L}^{2}}{L^{4} t^{2}} \left(c_{k} m_{k} + c_{w} m_{2}\right)^{2}}

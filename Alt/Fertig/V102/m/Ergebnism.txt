@@ -1,3 +1,0 @@
-Steigung der Funktion: 607.8852698211373
-y-Abschnitt: 0.0026907565893804653
-Ergebnis m: 3.2211+/-0.0015

@@ -1,3 +1,0 @@
-Formel: d*rho*x/(eta*t)
-
-Fehlerfortpflanzung: \sqrt{\frac{d^{2} \sigma_{t}^{2} \rho^{2} x^{2}}{\eta^{2} t^{4}} + \frac{d^{2} \sigma_{\eta}^{2} \rho^{2} x^{2}}{\eta^{4} t^{2}}}

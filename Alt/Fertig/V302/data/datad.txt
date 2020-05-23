@@ -1,8 +1,0 @@
-# Wert 19, R2= 1kOhm, Ck= 992nF 
-#R3 in Ohm, R4 in Ohm
-
-26 263  
-27 267  
-26 269  
-
-

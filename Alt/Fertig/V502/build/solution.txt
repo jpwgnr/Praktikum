@@ -1,8 +1,0 @@
-Steigung_exp = 30.846012139732686 +- 0.6578055583764117 cm
-Steigung_theo = 35.75 cm
-Sinusfrequenz pro Wert: [50.04  49.95  49.995 49.99 ]
- Hz Sinus Mittelwert= 49.994+/-0.032 Hz
-Fitparameter: Steigung1 und Steigung2: [8199.20040687 7062.34461149] 
-e0 Werte aus Steigung1 und Steigung2 = [1.34453775e+11 1.43644929e+11] 
-e0/m0 = (1.39+/-0.05)e+11
-Erdmagnetfeld: B = 6.648846235549481e-05

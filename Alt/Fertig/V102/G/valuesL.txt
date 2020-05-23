@@ -1,6 +1,0 @@
-# length of the wire, in cm
-
-68.6
-68.7
-68.5
-

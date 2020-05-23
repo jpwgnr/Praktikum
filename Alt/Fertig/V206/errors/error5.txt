@@ -1,3 +1,0 @@
-Formel: T_0*p_a*rho_0/(T_a*p_0)
-
-Fehlerfortpflanzung: \sqrt{\frac{T_{0}^{2} \sigma_{p_{a}}^{2} \rho_{0}^{2}}{T_{a}^{2} p_{0}^{2}} + \frac{T_{0}^{2} \sigma_{T_{a}}^{2} p_{a}^{2} \rho_{0}^{2}}{T_{a}^{4} p_{0}^{2}}}

@@ -1,3 +1,0 @@
-Formel: T*\Delta_n*p_0/(T_0*\Delta_p) + 1
-
-Fehlerfortpflanzung: \sqrt{\frac{T^{2} \Delta_n^{2} \sigma_{\Delta_p}^{2} p_{0}^{2}}{T_{0}^{2} \Delta_p^{4}} + \frac{T^{2} \sigma_{\Delta_n}^{2} p_{0}^{2}}{T_{0}^{2} \Delta_p^{2}} + \frac{\Delta_n^{2} \sigma_{T}^{2} p_{0}^{2}}{T_{0}^{2} \Delta_p^{2}}}

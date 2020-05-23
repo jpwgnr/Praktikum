@@ -1,3 +1,0 @@
-Formel: K*t*(-rho_F + rho_K)
-
-Fehlerfortpflanzung: \sqrt{K^{2} \sigma_{t}^{2} \left(- \rho_{F} + \rho_{K}\right)^{2}}

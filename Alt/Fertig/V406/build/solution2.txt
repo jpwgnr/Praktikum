@@ -1,5 +1,0 @@
-
-Die Spaltbreite b_experimentell= 5.5e-5 m
-Die Dicke zwischen den Spalten  s_experimentell= 48e-5 m Parameter a(Amplitude)=7.0e-5
-Dunkelstrom d=
-1.6e-9

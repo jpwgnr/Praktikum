@@ -1,5 +1,0 @@
-#Puppe schwierig, halbe Zylinder, h in mm, d in mm
-
-21.5 7.4 #7  0
-40.4 14 #17  1
-

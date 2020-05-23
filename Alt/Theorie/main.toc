@@ -1,8 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {german}
-\contentsline {section}{\numberline {1}Prüfer}{3}{section.1}% 
-\contentsline {section}{\numberline {2}Durchführung und Fragen}{3}{section.2}% 
-\contentsline {section}{\numberline {3}Note und Fazit}{4}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Note}{4}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Fazit}{4}{subsection.3.2}% 

@@ -1,6 +1,0 @@
-#Stäbe Messing, Messing, Alu, Edelstahl Abmessung x*x*x in m, rho in kg/m^3, c in J/kg*K 
-
-0.09 0.012 0.004 8520 385 
-0.09 0.007 0.004 8520 385 
-0.09 0.012 0.004 2800 830 
-0.09 0.012 0.004 8000 400 
