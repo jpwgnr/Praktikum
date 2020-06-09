@@ -92,13 +92,21 @@ print(params2, errs2)
 
 phi, polar = np.genfromtxt("data/polarisation.txt", unpack=True)
 
+def pol(phi, amp, delta):
+    return amp* np.cos(np.deg2rad(phi+delta))**2
+
+params_pol, pcov_phi = curve_fit(pol, phi, polar, p0=[2, 100])
+phi_new = np.linspace(min(phi)-10, max(phi)+10, 1000)
+
 plt.figure(figsize=(15,8))
-plt.xlabel(r"$\phi /$ °")
-plt.ylabel(r"$P/$ mW")
+plt.xlabel(r"$\phi$ / °")
+plt.ylabel(r"$P$ / mW")
 plt.grid()
+plt.plot(phi_new, pol(phi_new,*params_pol), label="Ausgleichskurve")
 plt.plot(phi, polar, "x", label="Datenpunkte")
 plt.savefig("plots/polarisation.pdf")
 
+errs_phi = np.sqrt(np.diag(pcov_phi))
 
 # Wellenlänge
 
