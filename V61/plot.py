@@ -31,7 +31,7 @@ plt.savefig("plots/stability_flat.pdf")
 x0, mode0 = np.genfromtxt("data/mode0.txt", unpack=True)
 
 def model0(x, mu, w, I0):
-    return I0*np.exp(-((x - mu)/w)**2)
+    return I0* (2**0.5/w)**2 * np.exp(-((x - mu)/w)**2)
 
 params0, pcov0 = curve_fit(model0, x0, mode0, p0=[6, 2, 300])
 errs0 = np.sqrt(np.diag(pcov0))
@@ -54,7 +54,7 @@ plt.savefig("plots/mode0.pdf")
 x1, mode1 = np.genfromtxt("data/mode1.txt", unpack=True)
 
 def model1(x, mu, w, I0):
-    return I0* (2**0.5 *(x - mu)/w)**2 *np.exp(-((x - mu)/w)**2)
+    return I0* (2**0.5 *2 *(x - mu)/w)**2 * (2**0.5/w)**2 *np.exp(-((x - mu)/w)**2)
 
 params1, pcov1 = curve_fit(model1, x1, mode1, p0=[6, 4, 10])
 errs1 = np.sqrt(np.diag(pcov1))
@@ -77,9 +77,9 @@ plt.savefig("plots/mode1.pdf")
 x2, mode2 = np.genfromtxt("data/mode2.txt", unpack=True)
 
 def model2(x, mu, w, I0):
-    return I0* ((2**0.5 *(x - mu)/w)**2 -1)**2 *np.exp(-((x - mu)/w)**2)
+    return I0* ( 4*(2**0.5 * (x - mu)/w)**2 -2)**2 *(2**0.5/w)**2 *np.exp(-((x - mu)/w)**2)
 
-params2, pcov2 = curve_fit(model2, x2, mode2, p0=[6.5, 4, 1])
+params2, pcov2 = curve_fit(model2, x2, mode2, p0=[6, 3, 1])
 errs2 = np.sqrt(np.diag(pcov2))
 ufloats2 = [ufloat(i,j) for i,j in zip(params2,errs2)]
 x2_new = np.linspace(min(x2), max(x2), 1000)
