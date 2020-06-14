@@ -3,17 +3,21 @@
 
 \subsection{Überprüfung der Stabilitätsbedingung}
 
-\subsubsection{Erster Resonator}
+Im ersten Teil des Versuchs wird die Stabilität überprüft. Nach Voraussage gilt, dass für die zwei konkaven Spiegel mit einem Radius von $\SI{140}{\centi\meter}$ eine Instabilität bei einem Abstand derselben Länge zu bemerken sein sollte. 
+In Tabelle \ref{tab:stab1} sind die zu Abb. \ref{fig_stability140} gehörenden Werte eingetragen.
+Tatsächlich ist ein entsprechender Einbruch der Leistung um den Wert zu erkennen. 
+
 \input{tables/stability1.tex}
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm]{plots/stability140.pdf}
+    \includegraphics[width=\textwidth]{plots/stability140.pdf}
     \caption{Die Resonatorlänge ist gegen die Leistung aufgetragen. Dabei besteht der Resonator aus zwei konkaven Spiegeln mit jeweils $b_\text{i} = \SI{140}{\centi\meter}$.}
     \label{fig:stability140}
-\end{figure}   
+\end{figure} 
 
-\subsubsection{Zweiter Resonator}
+Die Stabilität wird auch für einen konkaven Spiegel mit Radius $\SI{140}{\centi\meter}$ in Kombination mit einem flachen Spiegel betrachtet. Die Werte sind in Tab. \ref{tab:stab2} eingetragen. Dargestellt sind sie in Abb. \ref{fig:stability_flat}.
+Hier ist der Grenze von \SI{140}{\centi\meter} keine Leistung mehr zu messen.
 
 \input{tables/stability2.tex}
 
@@ -26,29 +30,46 @@
 
 \subsection{Vermessung von TEM-Moden}
 
-\subsubsection{TEM$_{00}-$Mode}
-
+Die gemessenen Werte der TEM$_{00}$-Mode sind in Tab. \ref{tab:mode0} eingetragen und in Abb. \ref{fig:mode0} abgebildet. 
+Die Funktionsparameter ließen sich entsprechend dem in Sektion {sec:model} beschriebenen Model mit Formel \eqref{eq:mode0} beschreiben.
 \input{tables/mode0.tex}
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm]{plots/mode0.pdf}
-    \caption{Der Abstand senkrecht zur Laserachse ist gegen die gemessene Stromstärke aufgetragen. Zu sehen ist die TEM$_{00}-$Mode.}
+    \includegraphics[width=\textwidth]{plots/mode0.pdf}
+    \caption{Der Abstand senkrecht zur Laserachse ist gegen die gemessene Stromstärke aufgetragen. Zu sehen ist die TEM$_{00}$-Mode.}
     \label{fig:mode0}
 \end{figure}
 
-\subsubsection{TEM$_{01}-$Mode}
+Die Fitparameter ergeben sich zu 
+\begin{align*}
+    \mu &= \SI{5.814(23)}{\centi\meter} \\
+    w &= \SI{2.592(33)}{\centi\meter} \\ 
+    I_0 &= \SI{316(7)}{\micro\ampere}.
+\end{align*}
+
+
+Die gemessenen Werte der TEM$_{10}$-Mode sind in Tab. \ref{tab:mode1} eingetragen und in Abb. \ref{fig:mode1} abgebildet. 
+Die Funktionsparameter ließen sich mit Formel \eqref{eq:mode1} modellieren.
 
 \input{tables/mode1.tex}
 
 \begin{figure}
     \centering
     \includegraphics[width=15cm]{plots/mode1.pdf}
-    \caption{Der Abstand senkrecht zur Laserachse ist gegen die gemessene Stromstärke aufgetragen. Zu sehen ist die TEM$_{01}-$Mode.}
+    \caption{Der Abstand senkrecht zur Laserachse ist gegen die gemessene Stromstärke aufgetragen. Zu sehen ist die TEM$_{10}-$Mode.}
     \label{fig:mode1}
 \end{figure}
 
-\subsubsection{TEM$_{02}-$Mode}
+Die Fitparameter ergeben sich zu 
+\begin{align*}
+    \mu &= \SI{6.634(18)}{\centi\meter} \\
+    w &= \SI{2.447(18)}{\centi\meter} \\ 
+    I_0 &= \SI{10.46(17)}{\micro\ampere}.
+\end{align*}
+
+Die gemessenen Werte der TEM$_{20}$-Mode sind in Tab. \ref{tab:mode2} eingetragen und in Abb. \ref{fig:mode2} abgebildet. 
+Die Funktionsparameter ließen sich mit Formel \eqref{eq:mode2} modellieren.
 
 \input{tables/mode2.tex}
 
@@ -59,8 +80,16 @@
     \label{fig:mode2}
 \end{figure}
 
+Die Fitparameter ergeben sich zu 
+\begin{align*}
+    \mu &= \SI{6.16(7)}{\centi\meter} \\
+    w &= \SI{2.66(5)}{\centi\meter} \\ 
+    I_0 &= \SI{0.112(6)}{\micro\ampere}.
+\end{align*}
+
 \subsection{Messung der Polarisation}
 
+Die bestimmten Werte der Polarisation ergeben sich aus Tab. \ref{tab:polar} und sind in Abb. \ref{fig:polarisation} dargestellt. 
 \input{tables/polarisation.tex}
 
 \begin{figure}
@@ -70,4 +99,34 @@
     \label{fig:polarisation}
 \end{figure}    
 
+Die Messung wurde mit dem in Formel \eqref{eq:polar} beschriebenen Model gefittet. Die Fitparameter ergeben sich zu 
+\begin{align*}
+    P_0 &= \SI{4.399(26)}{\milli\watt} \\
+    \delta &= \SI{63.63(29)}{\degree}.
+\end{align*}
+
 \subsection{Bestimmung der Wellenlänge}
+
+Die Wellenlänge des Lasers wurde bestimmt mit verschiedenen Gittern bestimmt. 
+Dabei wurden drei verschiedene Gitterarten benutzt und anschließend sowohl der Abstand zwischen Gitter und Schirm, als auch der Abstand zwischen den Maxima der auf den Schirm projizierten Punkten bestimmt. 
+
+Mit Formel \eqref{eq:welle} können somit die Wellenlängen berechnet werden. 
+Die gemessenen Daten und berechneten Ergebnisse für drei verschiedene Gitter sind in Tab. \ref{tab:welle} eingetragen. 
+
+\begin{table}\caption{Die Daten und Ergebnisse der Wellenlängen-Messung.}
+    \label{tab:welle}
+    \centering
+    \sisetup{round-mode = places, round-integer-to-decimal=true}
+    \begin{tabular}{c S[] S[] S[]} 
+    \toprule
+    {Gitter} & {$d / \si{\centi\meter}$} & {$a / \si{\centi\meter}$} & {$P / \si{\nano\meter}$} \\
+    \midrule
+
+    \phantom{1}80/\si{\milli\meter} & 22.5 & 1.2 & 665.72 \\
+    100/\si{\milli\meter}           & 32.5 & 2.1 & 644.81 \\
+    600/\si{\milli\meter}           & 12.5 & 5.3 & 650.60 \\
+
+
+    \bottomrule
+\end{tabular}\end{table}
+    

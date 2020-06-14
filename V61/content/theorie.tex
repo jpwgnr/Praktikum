@@ -1,6 +1,3 @@
-\section{Ziel}
-Das Ziel des Versuchs ist es die Eigenschaften eines Helium-Neon-Lasers (He-Ne-Lasers) zu vermessen. 
-
 \section{Theorie}
 \label{sec:Theorie}
 
@@ -53,8 +50,8 @@ Bei einem optischen Resonator verteilt sich das Strahlungsfeld nicht auf alle Mo
 In einem stabilen Resonator reproduziert sich die Feldverteilung nach jedem Umlauf der Welle.
 Die Stabilitätsbedingung lautet
 \begin{equation}
-    0 < g_1 g_2 < 1 \text{oder} g_1 = g_2 = 0,
-    label{eq:stabilität}
+    0 < g_1 g_2 < 1 \text{ oder } g_1 = g_2 = 0,
+    \label{eq:stabilität}
 \end{equation}
 wobei $g_\text{i}$ die Stabilitätsparameter sind.
 
@@ -65,40 +62,67 @@ Maximaler Resonatorabstand:
 
 \subsection{Moden im Resonator}
 %
-$TEM_\text{mn}$ Moden sind stationäre Feldverteilungen.
-Moden mit $m=n=0$ heißen Fundamental- bzw. axiale Moden.
-Die Fundamentalmoden haben ein radial-symmetrisches Gauß’sches Intensitätsprofil. Senkrecht zur Resonatorachse sinkt die Intensität auf $1/e^2$ ihres Wertes $I_0$ auf der Achse. Man nennt w den Radius der $TEM_{00}$-Mode. Der minimale Radius $w_0$ liegt bei $z = 0$, d. h. in der Mitte des konfokalen Resonators.
-$w_0$ heißt die Strahltaille der Resonatormode.
+TEM$_{mn}$ Moden sind stationäre Feldverteilungen.
+Die TEM$_{00}$-Mode heißt Fundamental- bzw. axiale Mode.
+Die Fundamentalmoden haben ein radial-symmetrisches Gauß’sches Intensitätsprofil. Senkrecht zur Resonatorachse sinkt die Intensität auf $1/e^2$ ihres Wertes $I_0$ auf der Achse. Man nennt w den Radius der TEM$_{00}$-Mode. Der minimale Radius $w_0$ liegt bei $z=0$, d. h. in der Mitte des konfokalen Resonators.
+Der Parameter $w_0$ heißt die Strahltaille der Resonatormode.
 
 %Modenblende:
 Zur Selektion einzelner Moden eines Multimodelasers kann man in den Resonator optische Elemente einbauen, welche die Oszillation der unerwünschten Moden (höhere Moden) unterdrücken.
-
-%Unterschied longitudinale und transversale Moden:
-Transversale Moden (TEM-Moden)sind elektromagnetische Eigenschwingungszustände eines Systems in transversaler Richtung, also senkrecht zur Ausbreitungsrichtung.
-
-Longitudinal = längs der Ausbreitungsrichtung. 
+Transversale Moden (TEM-Moden) sind elektromagnetische Eigenschwingungszustände eines Systems in transversaler Richtung, also senkrecht zur Ausbreitungsrichtung.
+Longitudinal Moden laufen längs der Ausbreitungsrichtung. 
 Die Anzahl der longitudinalen Moden gibt Aufschluss über die Anzahl der Wellen, die im Resonator schwingen können.
 Für deren Auswahl eignet sich ein Fabry-Pérot-Interferometer.
 
+Die Amplitudenverteilung der TEM-Moden kann mit der Formel 
+\begin{equation}
+    A_{m,n}\left(x,y,z\right) = C_{mn} H_m\left(x^*\right)\cdot H_n\left(y^*\right) \cdot \exp\left(-\left( x^{*2} + y^{*2} \right)/4 \right) \exp\left( -i \phi \left( x,y,z \right)\right) 
+    \label{eq:amp}
+\end{equation}
+beschrieben werden, wobei $C_{mn}$ ein Normierungsfaktor ist, $H_m$ und $H_n$ die Hermiteschen Polynome darstellen und $x^*$ und $y^*$ die normierten Koordinaten mit $x^*= \sqrt{2} x/w$ und  $y^*= \sqrt{2} y/w$ sind mit 
+\begin{equation*}
+    w(z) = \sqrt{\lambda \cdot \frac{d}{2\pi}\left[ 1 + \left(\frac{2z}{d} \right)^2 \right]},
+\end{equation*}
+wobei $\lambda$ die Wellenlänge und $d$ der Abstand zum Schirm ist. %stimmt das? 
+
+Für die Intensitätsverteilung gilt $I\left(x,y\right) \propto \absolutevalue{A_{mn}}^2$ also gilt mit Formel \eqref{eq:amp} für die 
+TEM$_{00}$-Mode der Ausdruck 
+\begin{equation}
+    abc 
+    \label{eqn:mode0}
+\end{equation}
+für die 
+TEM$_{10}$-Mode der Ausdruck 
+\begin{equation}
+    abc 
+    \label{eqn:mode1}
+\end{equation}
+und für die 
+TEM$_{20}$-Mode der Ausdruck 
+\begin{equation}
+    abc .
+    \label{eqn:mode2}
+\end{equation}
 
 
-\subsection{Multimode- und Singlemode-Laserbetrieb}
-Singlemode = schmalbandig.
-Man unterscheidet Single-Mode-Laser, die nahezu auf nur einer Frequenz schwingen, und Multimode-Laser, welche mehrere Farblinien emittieren. 
 
-%Doppler-Effekt
-Eine Form der inhomogenen Linienverbreiterung ist die Dopplerverbreiterung in Gasen. Die Frequenz eines Photons ist abhängig von der Geschwindigkeit des emittierenden Atoms relativ zur Beobachtungsrichtung. Die Linienform ergibt sich als Überlagerung mehrerer Beiträge, also durch die unterschiedlichen Ausbreitungsrichtungen der Gasmoleküle.
-(etwas wenig)
+% \subsection{Multimode- und Singlemode-Laserbetrieb}
+
+% Singlemode sind schmalbandig.
+% Man unterscheidet Single-Mode-Laser, die nahezu auf nur einer Frequenz schwingen, und Multimode-Laser, welche mehrere Farblinien emittieren. 
+
+% %Doppler-Effekt
+% Eine Form der inhomogenen Linienverbreiterung ist die Dopplerverbreiterung in Gasen. Die Frequenz eines Photons ist abhängig von der Geschwindigkeit des emittierenden Atoms relativ zur Beobachtungsrichtung. Die Linienform ergibt sich als Überlagerung mehrerer Beiträge, also durch die unterschiedlichen Ausbreitungsrichtungen der Gasmoleküle.
+% (etwas wenig)
 
 
 %Verbreitung für den Neon-Übergang
 
 %Modenspektrum für Laser mit L=1,5m
-
-%Fabry-Pérot-Etalon
-Modenselektion mithilfe des Fabry-Pérot-Etalon:
-Das Fabry-Pérot-Etalon ist ein optischer Resonator, der aus zwei teildurchlässigen Spiegeln in unveränderlichem Abstand besteht. Eintreffendes Licht wird nur transmittiert, wenn die Wellenlängen die Resonanzbedingung des Resonators erfüllen.
-Andere Bereiche werden durch destruktive Interferenz der Teilstrahlen fast vollständig ausgelöscht. 
+% %Fabry-Pérot-Etalon
+% Modenselektion mithilfe des Fabry-Pérot-Etalon:
+% Das Fabry-Pérot-Etalon ist ein optischer Resonator, der aus zwei teildurchlässigen Spiegeln in unveränderlichem Abstand besteht. Eintreffendes Licht wird nur transmittiert, wenn die Wellenlängen die Resonanzbedingung des Resonators erfüllen.
+% Andere Bereiche werden durch destruktive Interferenz der Teilstrahlen fast vollständig ausgelöscht. 
 
 
 \subsection{Polarisation eines Lasers}
@@ -106,8 +130,19 @@ Andere Bereiche werden durch destruktive Interferenz der Teilstrahlen fast volls
 Durch Einfügen eines Brewster-Fensters in den Resonator kann eine Polarisationsrichtung selektiert werden.
 Die Fensterflächen stehen  zur optischen Achse im Brewster-Winkel. Licht, das unter dem Brewster-Winkel auftrifft und parallel zur Einfallsebene polarisiert ist, wird an der Oberfläche nicht reflektiert, sondern tritt ohne Verlust durch das Brewster-Fenster. Die senkrecht zur Einfallsebene polarisierte Komponente des Lichts wird allerdings reflektiert und somit im Laser unterdrückt.
 
+Das Model mit dem sich die Polarisation beschreiben lässt lautet 
+
+\begin{equation}
+    P(\phi) = P_0 \cdot \cos\left( \phi + \delta \right)^2. 
+    \label{eq:polar}
+\end{equation}
 %resultierende Polarisation
 
 \subsection{Bestimmung der Wellenlänge}
 %Formel
 
+Die Wellenlänge lässt sich mit der Formel 
+\begin{equation}
+    \lambda = \frac{b \cdot a}{\sqrt{d^2 + a^2}}
+\end{equation}
+bestimmen, wobei $b$ die breite der Spalte des Gitters ist, $a$ dem Abstand der Maxima entspricht und $d$ der Entfernung zwischen Gitter und Schirm.
