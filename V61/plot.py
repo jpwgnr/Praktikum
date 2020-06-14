@@ -4,6 +4,8 @@ import uncertainties.unumpy as unp
 from uncertainties import ufloat
 from scipy.optimize import curve_fit
 
+plt.rcParams.update({'font.size': 22})
+
 # Stabilitätsbedingung
 
 dist, intensity = np.genfromtxt("data/stability1.txt", unpack=True)
