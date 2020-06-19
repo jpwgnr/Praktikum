@@ -6,7 +6,7 @@ from scipy.optimize import curve_fit
 
 plt.rcParams.update({'font.size': 22})
 
-# Stabilitätsbedingung
+# Stabilitaetsbedingung
 
 dist, intensity = np.genfromtxt("data/stability1.txt", unpack=True)
 
@@ -14,7 +14,7 @@ plt.figure(figsize=(15,8))
 plt.xlabel(r"$d /$ cm")
 plt.ylabel(r"$P /$ mW")
 plt.grid()
-plt.plot(dist, intensity, "x", label="data", color="red")
+plt.plot(dist, intensity, "x", label="Datenpunkte", color="red")
 plt.legend()
 plt.savefig("plots/stability140.pdf")
 
@@ -24,7 +24,7 @@ plt.figure(figsize=(15,8))
 plt.xlabel(r"$d /$ \cm")
 plt.ylabel(r"$P /$ mW")
 plt.grid()
-plt.plot(dist2, intensity2, "x", label="data", color="red")
+plt.plot(dist2, intensity2, "x", label="Datenpunkte", color="red")
 plt.legend()
 plt.savefig("plots/stability_flat.pdf")
 
@@ -113,11 +113,12 @@ plt.ylabel(r"$P$ / mW")
 plt.grid()
 plt.plot(phi_new, pol(phi_new,*params_pol), label="Ausgleichskurve")
 plt.plot(phi, polar, "x", label="Datenpunkte")
+plt.legend()
 plt.savefig("plots/polarisation.pdf")
 
 
 
-# Wellenlänge
+# Wellenlaenge
 
 # def lambda_(d, gitter, a):
 #     return d * a
