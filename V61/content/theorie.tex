@@ -87,20 +87,20 @@ Die Stabilitätsparameter für zwei verschiedene Resonatoren sind in den Abbildu
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm]{plots/stability1.pdf}
+    \includegraphics[width=0.8\textwidth]{plots/stability1.pdf}
     \caption{Die Stabilitätsparameter für zwei konkave Spiegel mit jeweils einem Krümmungsradius von $b_\text{i} = \SI{140}{\centi\meter}$ sind in Abhängigkeit von der Resonatorlänge dargestellt. Der maximale Resonatorabstand beträgt $d = \SI{280}{\centi\meter}$.}
     \label{fig:stability1}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm]{plots/stability2.pdf}
+    \includegraphics[width=0.8\textwidth]{plots/stability2.pdf}
     \caption{Die Stabilitätsparameter für einen flachen und einen konkaven Spiegel mit einem Krümmungsradius von $b_2 = \SI{140}{\centi\meter}$ sind in Abhängigkeit von der Resonatorlänge dargestellt. Der maximale Resonatorabstand beträgt $d = \SI{140}{\centi\meter}$.}
     \label{fig:stability2}
 \end{figure}
 
 \subsection{Moden im Resonator}
-%
+\label{sec:model}
 %TEM$_{mn}$ Moden sind stationäre Feldverteilungen.
 %Die TEM$_{00}$-Mode heißt Fundamental- bzw. axiale Mode.
 %Die Fundamentalmoden haben ein radial-symmetrisches Gauß’sches Intensitätsprofil. Senkrecht zur Resonatorachse sinkt die Intensität auf $1/e^2$ ihres Wertes $I_0$ auf der Achse. Man nennt w den Radius der TEM$_{00}$-Mode. Der minimale Radius $w_0$ liegt bei $z=0$, d. h. in der Mitte des konfokalen Resonators.
@@ -127,21 +127,10 @@ wobei $\lambda$ die Wellenlänge und $d$ die Resonatorlänge ist.
 Für die Intensitätsverteilung gilt $I\left(x,y\right) \propto \absolutevalue{A_{mn}}^2$. Daraus ergibt sich mit Formel \eqref{eq:amp} für die 
 TEM$_{00}$-Mode der Ausdruck 
 \begin{equation}
-    abc.
+    I_0 \cdot \frac{2}{w^2} \cdot \exp\left(-\left(\frac{(x - \mu)}{w}\right)^2\right).
     \label{eq:mode0}
 \end{equation}
-Für die 
-TEM$_{10}$-Mode gilt der Ausdruck 
-\begin{equation}
-    abc
-    \label{eq:mode1}
-\end{equation}
-und für die 
-TEM$_{20}$-Mode 
-\begin{equation}
-    abc .
-    \label{eq:mode2}
-\end{equation}
+Für die TEM$_{10}$-Mode und die TEM$_{20}$-Mode das ganze analog.
 
 
 

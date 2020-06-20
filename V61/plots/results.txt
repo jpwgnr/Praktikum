@@ -7,4 +7,4 @@ Amplitude: 	4.399+/-0.026 mW,	 delta: 63.63+/-0.29
 
 Lambda (100/mm): 6.4481e-07
 Lambda (600/mm): 6.5060e-07
-Lambda (80/mm):  6.6572e-07
+Lambda (80/mm): 6.6572e-07
