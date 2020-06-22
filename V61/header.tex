@@ -120,6 +120,7 @@
 % Literaturverzeichnis
 \usepackage[
   backend=biber,
+  sorting= none,
 ]{biblatex}
 % Quellendatenbank
 \addbibresource{programme.bib}
@@ -133,6 +134,11 @@
 ]{hyperref}
 % erweiterte Bookmarks im PDF
 \usepackage{bookmark}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black}
+\xdefinecolor{tugreen}{RGB}{132, 184, 25}       % 0
+\colorlet{tulight}{tugreen!20!white}
+\colorlet{tudark}{tugreen!80!black}
 
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
@@ -141,7 +147,7 @@
 \usepackage{physics}
 
 \title{V61 - He-Ne-Laser }
-\date{Durchführung: 8.06.2020, Abgabe: 19.06.2020}
+\date{Durchführung: 8.06.2020, Abgabe: 22.06.2020}
 \author{
   Jan Herdieckerhoff
   \texorpdfstring{%

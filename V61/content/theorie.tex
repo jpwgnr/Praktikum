@@ -60,7 +60,7 @@ Die Wellenlänge eines Lasers lässt sich mithilfe eines Gitters mit der Formel
     \lambda = \frac{b \cdot a}{\sqrt{d^2 + a^2}}
     \label{eq:welle}
 \end{equation}
-bestimmen, wobei $b$ der Breite der Spalte des Gitters entspricht, $a$ dem Abstand der Maxima und $d$ der Entfernung zwischen Gitter und Schirm.
+bestimmen, wobei $b$ der Spaltbreite des Gitters entspricht, $a$ dem Abstand der Maxima und $d$ der Entfernung zwischen Gitter und Schirm.
 
 \subsection{Optischer Resonator und Stabilität}
 %Stabilitätsparameter
@@ -75,7 +75,7 @@ Die Stabilitätsbedingung lautet
 wobei $g_\text{i}$ die Stabilitätsparameter sind.
 Für diese gilt
 \begin{equation}
-    g_1 \cdot g_2 = \left(1-\frac{d}{b_1} \right)\left(1-\frac{d}{b_2} \right),
+    g_1 \cdot g_2 = \left(1-\frac{d}{b_1} \right)\cdot\left(1-\frac{d}{b_2} \right),
     \label{eq:parameter}
 \end{equation}
 
@@ -106,7 +106,7 @@ Die Stabilitätsparameter für zwei verschiedene Resonatoren sind in den Abbildu
 %Der Parameter $w_0$ heißt die Strahltaille der Resonatormode.
 
 %Modenblende:
-Zur Selektion einzelner TEM$_{mn}-$Moden eines Multimodelasers können optische Elemente in den Resonator eingesetzt werden, welche die Oszillation der unerwünschten Moden (höhere Moden) unterdrücken.
+Zur Selektion einzelner TEM$_{mn}-$Moden eines Multimodenlasers können optische Elemente in den Resonator eingesetzt werden, welche die Oszillation der unerwünschten Moden (höhere Moden) unterdrücken.
 %Transversale Moden (TEM-Moden) sind elektromagnetische Eigenschwingungszustände eines Systems in transversaler Richtung, also senkrecht zur Ausbreitungsrichtung.
 %Longitudinal Moden laufen längs der Ausbreitungsrichtung. 
 %Die Anzahl der longitudinalen Moden gibt Aufschluss über die Anzahl der Wellen, die im Resonator schwingen können.
@@ -128,10 +128,10 @@ Für die Intensitätsverteilung gilt $I\left(x,y\right) \propto \absolutevalue{A
 Daraus ergibt sich mit Formel \eqref{eq:amp} für die 
 TEM$_{00}$-Mode der Ausdruck 
 \begin{equation}
-    I_0 \cdot \frac{2}{w^2} \cdot \exp\left(-\left(\frac{(x - \mu)}{w}\right)^2\right).
+    I(x,y) = I_0 \cdot \frac{2}{w^2} \cdot \exp\left(-\left(\frac{(x - \mu)}{w}\right)^2\right).
     \label{eq:mode0}
 \end{equation}
-Für die TEM$_{10}$-Mode und die TEM$_{20}$-Mode das ganze analog.
+Für die TEM$_{10}$-Mode und die TEM$_{20}$-Mode gilt dies analog.
 
 
 
