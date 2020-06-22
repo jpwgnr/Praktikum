@@ -4,6 +4,9 @@ import numpy as np
 #from uncertainties import ufloat
 #from scipy.optimize import curve_fit
 
+plt.rcParams.update({'font.size': 22})
+
+
 d = np.arange(0., 280., 1.0)
 stability1 = (1 - d/140)**2
 
