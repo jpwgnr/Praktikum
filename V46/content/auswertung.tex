@@ -1,16 +1,60 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+Für die Auswertung wurden NumPy \cite{numpy}, Matplotlib \cite{matplotlib}, SciPy \cite{scipy} und Uncertainties \cite{uncertainties} verwendet.
 
 \subsection{Kraftflussdichte}
-B(z) gegen z auftragen, maximale Kraftflussdichte ermitteln (am Ort der Probe)
+Die mithilfe einer Hall-Sonde ermittelte maximale Kraftflussdichte des Magnetfelds bei maximaler Stromstärke beträgt
+\begin{equation*}
+    B = \SI{392}{\milli\tesla}.
+\end{equation*}
+Diese Kraftflussdichte wird in der Mitte des Luftspalts des Elektromagneten erreicht.
 
-\subsection{Faraday-Rotation}
-Messwerte: für neun verschiedene Wellenlängen jeweils die beiden Winkel pro Probe (hochrein und n-dotiert)
+\subsection{Effektive Masse mittels Faraday-Rotation}
+Die Werte für die Dicke und die Donatorenkonzentration für die drei Proben sind in Tab. \ref{tab:proben} zu finden.
+Die für die drei Proben eingestellten Winkel bei den verschiedenen Wellenlängen befinden sich in Tab..
+\input{tables/proben.tex}
 
-Damit Proben vergleichbar sind: Drehwinkel der Faraday-Rotation auf Probenlänge normieren (sind unterschiedlich lang).
-\begin{equation}
-    \theta = \frac{\theta_1 - \theta_2}{2L}
-\end{equation}
+%Tabelle Werte
+%\input{tables/winkel.tex}
 
-\subsection{Effektive Masse}
-Der Drehwinkel wird gegen $\lambda^2$ aufgetragen. Der Proportionalitätsfaktor zwischen den Größen wird bestimmt. Daraus wird die effektive Masse mit Formel \ref{eq:theta} berechnet.
+Die aus den Werten in Tab. berechneten und auf die Dicke der Probe skalierten Rotationswinkel befinden sich in Tab..
+%Tabelle berechnete Winkel
+\input{tables/skaliert.tex}
+
+Die quadrierte Wellenlänge ist in Abb. \ref{fig:alle} gegen die in Tab. stehenden Werte aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm]{plots/AlleProben.pdf}
+    \caption{Die Rotationswinkel der reinen und der beiden n-dotierten Proben sind gegen die quadratische Wellenlänge aufgetragen.}
+    \label{fig:alle}
+\end{figure}
+
+Zur Bestimmung der effektiven Masse wird jeweils die Differenz des Rotationswinkels der reinen Probe und des Rotationswinkels der dotierten Probe gebildet. Diese Werte sind in Tab. eingetragen.
+%Tabelle Winkel(frei)
+
+Der Drehwinkel wird für beide Proben gegen $\lambda^2$ aufgetragen. Der Proportionalitätsfaktor zwischen den Größen wird bestimmt. Daraus wird die effektive Masse mit Gleichung \ref{eq:theta} berechnet. In Abb. \ref{fig:probe1} sind die Werte für Probe 1 zu sehen, in Abb. \ref{fig:probe2} die für Probe 2.
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm]{plots/Probe1.pdf}
+    \caption{Die Differenz der Rotationswinkel von der reinen und der ersten n-dotierten Probe ist gegen die quadratische Wellenlänge aufgetragen. Zu sehen sind die Daten und eine Ausgleichsgerade.}
+    \label{fig:probe1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm]{plots/Probe2.pdf}
+    \caption{Die Differenz der Rotationswinkel von der reinen und der zweiten n-dotierten Probe ist gegen die quadratische Wellenlänge aufgetragen. Zu sehen sind die Daten und eine Ausgleichsgerade.}
+    \label{fig:probe2}
+\end{figure}
+
+Im Folgenden steht die Zahl im Index für die Probe. Die Steigungen der Ausgleichsgeraden werden zu
+\begin{align*}
+    s_1 &= \SI{0}{\radian\per\cubic\meter} \\
+    s_2 &= \SI{0}{\radian\per\cubic\meter}
+\end{align*}
+bestimmt. Daraus folgt für die effektiven Massen mit \ref{eq:theta}
+\begin{align*}
+    m_\text{eff,1} &= \num{0} \, m_\text{e} \\
+    m_\text{eff,2} &= \num{0} \, m_\text{e},
+\end{align*}
+wobei $m_\text{e}$ die Elektronenmasse ist.

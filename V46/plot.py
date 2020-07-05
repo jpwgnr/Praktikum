@@ -27,7 +27,9 @@ winkel1 = np.deg2rad(winkel1)/5.11e-3
 winkel2 = np.deg2rad(winkel2)/1.296e-3
 winkel3 = np.deg2rad(winkel3)/1.36e-3
 
-plt.figure()
+plt.figure(figsize=(15,8))
+plt.xlabel(r"$\lambda^2$ / $(\mu m)^2$")
+plt.ylabel(r"$\frac{\theta}{d}$ / $rad/m$")
 plt.plot(lambda_**2, winkel1, "x", label="Reine Probe")
 plt.plot(lambda_**2, winkel2, "x", label="Probe 1")
 plt.plot(lambda_**2, winkel3, "x", label="Probe 2")
@@ -49,7 +51,9 @@ def mass(x, a):
 
 params1, cov1 = curve_fit(mass, lambda_**2, diff1, p0=[12e12] )
 
-plt.figure()
+plt.figure(figsize=(15,8))
+plt.xlabel(r"x")
+plt.ylabel(r"y")
 plt.plot(lambda_**2, diff1, "x", label="Daten")
 plt.plot(lambda_**2, mass(lambda_**2, *params1), label="Fit")
 plt.legend(loc="best")
@@ -63,7 +67,9 @@ mass1 = unp.sqrt(const.elementary_charge**3 *N1 *B / (8* np.pi**2 *const.epsilon
 
 params2, cov2 = curve_fit(mass, lambda_**2, diff2, p0=[12e12] )
 
-plt.figure()
+plt.figure(figsize=(15,8))
+plt.xlabel(r"x")
+plt.ylabel(r"y")
 plt.plot(lambda_**2, diff2, "x", label="Daten")
 plt.plot(lambda_**2, mass(lambda_**2, *params2), label="Fit")
 plt.legend(loc="best")
@@ -78,5 +84,5 @@ mass2 = unp.sqrt(const.elementary_charge**3 *N2 *B / (8* np.pi**2 *const.epsilon
 print(mass2/const.electron_mass)
 
 f=  open("plots/results.txt", "w")
-f.write(f"Hallo")
+f.write("Hallo")
 f.close()
