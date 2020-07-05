@@ -37,7 +37,9 @@ err1 = np.sqrt(np.diag(cov1))
 a1 = ufloat(param1[0], err1[0])
 b1 = ufloat(param1[1], err1[1])
 
+gj = 2.0023
 gf1 = const.h/const.value("Bohr magneton") /a1
+I1 = 0.5*(gj/gf1 -1)
 
 param2, cov2 = curve_fit(func, f, B2)
 err2 = np.sqrt(np.diag(cov2))
@@ -45,6 +47,7 @@ a2 = ufloat(param2[0], err2[0])
 b2 = ufloat(param2[1], err2[1])
 
 gf2 = const.h/const.value("Bohr magneton") /a2
+I2 = 0.5*(gj/gf2 -1)
 
 plt.figure(figsize=(15,8))
 plt.plot(f, B1, "x", label="Daten")
@@ -58,7 +61,8 @@ f=  open("plots/results.txt", "w")
 f.write(f"B_Erdmagnetfeld: {B}\n")
 f.write(f"Peak 1: a1 = {a1}, b1 = {b1}\n")
 f.write(f"Peak 2: a2 = {a2}, b2 = {b2}\n")
-f.write(f"gf: {gf1}")
+f.write(f"gf: gf1 = {gf1}, gf2 = {gf2}\n")
+f.write(f"I: I1 = {I1}, I2 = {I2}\n")
 
 f.close()
 

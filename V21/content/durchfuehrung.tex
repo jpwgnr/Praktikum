@@ -23,6 +23,27 @@ Nachdem weitere optische Elemente eingesetzt sind, wird der ganze Aufbau mit ein
 Vor der Messung muss das Erdmagnetfeld kompensiert werden.
 Dazu wird durch einen Stromfluss durch die Sweep-Spule (Modulationsfeldspule) die horizontale Magnetfeldkomponente auf Null reguliert. Anschließend wird mithilfe der Vertikalfeldspule ein schmaler Peak eingestellt, um die Vertikalkomponente des Erdmagnetfeldes zu kompensieren. Die Messapparatur wird so ausgerichtet, dass der Lichtstrahl in Nord-Süd-Richtung verläuft. \cite{V21}
 
+Die Eigenschaften der Spulen sind in Tab. \ref{tab:spule} aufgelistet. 
+Alle drei Spulen sind Helmholtzspulen-Paare. Für sie gilt, dass die Magnetfeldstärke 
+\begin{equation*}
+    B = \mu_0 \cdot \frac{8 \cdot I \cdot N}{\sqrt{125} R}
+\end{equation*}
+beträgt mit der Stromstärke $I$, der Windungszahl $N$ und dem Radius $R$. 
+
+\begin{table}\caption{Die TEM$_{00}$-Mode. Der Abstand senkrecht zur Laserachse ist gegen die Stromstärke aufgelistet.}
+    \label{tab:mode0}
+    \centering
+    \sisetup{round-mode = places, round-precision=1, round-integer-to-decimal=true}
+    \begin{tabular}{c | S[] S[] S[]} 
+    \toprule
+    {Spule} & {$R / \si{\centi\metre}$} & {$R$} & {Verstärkung} \\
+    \midrule
+    Horizontal & 15.79 & 154 & 0.3 \\
+    Sweep & 16.39 & 11 & 0.1 \\ 
+    Vertikal & 11.735 & 20 & 0.1 \\ 
+    \bottomrule
+\end{tabular}\end{table}
+
 \subsection{Resonanzstelle}
 Die Frequenzen (der Sinusspannung) an der RF-Spule (Sweep-Spule und horizontale Spule) werden zwischen $\SI{100}{\kilo\hertz}$ und $\SI{1}{\mega\hertz}$ in $\SI{100}{\kilo\hertz}$ Schritten variiert. Dabei wird die Stärke des gesamten Horizontalfeldes in Abhängigkeit von der Resonanzfrequenz für beide Rb-Isotope (bei induzierter Emission) gemessen. Die Resonanzen für beide Isotope sollen sichtbar gemacht werden. Bei Frequenzen höher  ca. $\SI{200}{\kilo\hertz}$ wird zusätzlich ein horizontales Feld angelegt (Sweep-Spule reicht nicht mehr aus).
 

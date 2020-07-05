@@ -1,85 +1,84 @@
-\section{Ziel}
-
-
 \section{Theorie}
 \label{sec:Theorie}
 
-\subsection{Horizontalfeldkomponente, Landé-Faktoren und Kernspins}
+In diesem Versuch soll mittels optischen Pumpens die Kernspins $I$ der Isotope von Rubidium, $^{85}$Rb und $^{87}$Rb, bestimmt werden.
 
-\subsection{Quadratischer Zeeman-Effekt}
+\subsection{Landé-Faktoren}
 
-\subsection{Vorbereitungsfragen}
-Das wird später noch geändert:
+Ein Teilchen, das sich wie ein Elektron in einem Atom bewegt, besitzt einen Drehimpuls $\vec L$ bei der Bewegung um den Kern. 
+Der Spin $\vec S$, eine Größe, die aus der relativistischen Mechanik resultiert, beschreibt das Teilchen neben seiner Masse und Ladung. 
 
-%1
-%Zur welchen Klasse der Materialien zählt das Rubidium?
-Rubidium zählt zu den Alkalimetallen. Es befindet sich in der $\num{1}$. Hauptgruppe. 
-
-%Welchen Wert haben die Quantenzahlen: Bahndrehimpuls (L), Spin (S), Gesamtdrehimpuls der Elektronenschale (J), und Kernspin (I) eines 85Rb-Atoms im Grundzustand?
-Die Quantenzahlen eines $^{85}$Rb-Atoms in Grundzustand sind
+Beide Größen, $\vec L$ und $\vec S$ besitzen ein magnetisches Moment, die sich als 
 \begin{align*}
-    Bahndrehimpuls \, L = \num{0}, \\
-    Spin \, S = \frac{1}{2}, \\
-    Gesamtdrehimpuls \, J = \frac{1}{2}, \\
-    Kernspin \, I = \frac{5}{2}. %stimmen die Zahlen?
+    \mu_\text{L} &= \mu_\text{B} g_\text{L} \sqrt{L(L+1)} \\ 
+    \mu_\text{S} &= \mu_\text{B} g_\text{S} \sqrt{S(S+1)}
 \end{align*}
+darstellen lassen mit dem Bohrschen Magneton und den Landé-Faktoren $g_\text{L,S}$. 
 
-%Welche Werte ergeben sich für Gesamtdrehimpuls des Atoms (Quantenzahl F) im Grund- und in dem ersten angeregten Zustand (Kapitel 2 in Ref. [1])?
-Der Gesamtdrehimpuls des Atoms im Grundzustand ($^{85}$Rb) ist
+Da die Bewegung des Elektrons ein magnetisches Feld erzeugt und der Spin, der eine magnetische Größe ist, insofern mit diesem Magnetfeld interagiert, Koppeln der Spin und der Drehimpuls miteinander. 
+Die resultierende Größe ist der Gesamtdrehimpuls $\vec J = \vec L + \vec S$. 
+
+Auch hier ergibt sich ein magnetisches Moment $\mu_\text{J}$, das um die Richtung des Gesamtdrehimpulses präzediert, wobei der senkrechte Anteil im Mittel herausfällt und nur der parallele Anteil relevant ist. 
+
+Für $\mu_\text{J}$ ergibt sich 
 \begin{equation*}
-    F = \num{3},
+    \mu_\text{J} = \mu_\text{B} g_\text{J} \sqrt{J(J+1)}
 \end{equation*}
-im erstem angeregten Zustand ($^{87}$Rb) beträgt der Gesamtdrehimpuls des Atoms %ist 87Rb der erste angeregte Zustand?
+und für $g_\text{J}$ gilt 
 \begin{equation*}
-    F = \num{2}.
-\end{equation*} %stimmen die Zahlen?
+    g_\text{J} = 1 + \frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}.
+\end{equation*}
 
-%2
-%Welche Aufspaltungen entstehen durch das äußere Magnetfeld bei den 2S1/2 und 2P1/2 Niveaus?
+\subsection{Energieaufspaltung}
 
+Durch die Spin-Bahn-Kopplung werden die Energie Niveaus zum ersten mal gespalten, je nachdem in welche Richtung der Drehimpuls und der Spin gerichtet sind (parallel, orthogonal oder antiparallel).
+Diese Aufspaltung nennt sich Feinstruktur. 
 
-%Wie sieht ein Niveauschema aus?
+Die Energieverschiebung ergibt sich dann mit 
+\begin{equation*}
+    \Delta E = g_\text{J} \mu_\text{B} B m_\text{J}
+\end{equation*}
+wobei $m_\text{J}$ die Magnetquantenzahl ist.
 
-%Wovon hängt die Zeeman-Aufspaltung ( ΔEZ ) zwischen einzelnen Niveaus ab (Kapitel 2.5.7 in Ref. [1])?
-Die Zeeman-Aufspaltung $\Delta$E ist abhängig vom Landé-Faktor g, der Magnetfeldstärke B und xy:
-\begin{equation}
-    \Delta E = \mu_\text{B} \cdot g \cdot B.
-\end{equation}
+Die Hyperfeinstruktur spaltet die Energieniveaus ein weiteres mal. 
+Dabei kommt der Kernspin $I$ des Atoms in Spiel.
+Die Kopplung $\vec F = \vec J + \vec I$ nimmt Werte von $| I - J|$ bis $J+I$ an. 
+Mit einem angelegten Magnetfeld können diese Energieniveaus weiter gespalten werden, da das Magnetfeld auf die Hülle des Atoms wirkt, so dass sich $2F+1$ Unterniveaus ergeben. 
+Dabei ist die Energieverschiebung 
+\begin{equation*}
+    \Delta E_\text{Zeeman} = g_\text{F} \mu_\text{B} B
+\end{equation*}
 
+Der neue Landé-Faktor $g_\text{F}$ ist 
+\begin{equation*}
+    g_\text{F} = g_\text{J} \frac{F(F+1) + J(J+1) - I(I+1)}{2F(F+1)}.
+\end{equation*}
 
-%3
-%Welche Auswahlregeln gibt es für einen elektrischen Dipolübergang zwischen den beiden 2S1/2 und 2P1/2 Niveaus?
+\subsection{Optisches Pumpen}
 
-%Was bewirkt die Anregung dieser Zustände mit einem zirkular polarisierten Licht bei einem angelegten Magnetfeld?
+Um die einzelnen Energieniveaus zu messen, wird die Methode des optischen Pumpens genutzt. Dabei werden die Elektronen aus einem der zwei niedrigen Niveaus in ein höheres Niveau angeregt. 
+Anschließend wird dieses Niveau wieder geleert mittels (spontaner und induzierter) Emission und in nur in einen der beiden niedrigen Niveaus gefüllt. 
 
-%Woran liegt der Unterschied zwischen stimulierten und spontanen Emission?
-
-%Wie hängt die spontane Emission von der Frequenz ab (Kapitel 1.7.3 in Ref. [1])?
-
-
-%4
-%Welcher Zustand stellt sich bei der kontinuierlichen Beleuchtung mit zirkular polarisierten Licht ein? 
-
-%Was bedeutet Optisches Pumpen?
-
-%Wie sieht dabei der zeitliche Verlauf der Intensität des transmittierten Lichtes [2,3]?
-
-
-%5
-%Welche Auswahlregeln gibt es für magnetische Dipolübergänge?
-
-%Was passiert in dem optisch gepumpten System, wenn durch die RF-Feld-Frequenz (Hochfrequenz) f gegebene Energie ( ERF=hf ) der Zeeman Energie ( ΔEZ ) entspricht? 
-
-%Was geschieht dabei mit dem Absorptionsverhalten? 
-
-%Überlegen Sie wie eine Absorptionspeak-vs.-Magnetfeld Abhängigkeit aussehen soll.
-
-%Wie ermittelt man dadurch den Lande-Faktor gF?
-
-%Was passiert mit der transmittierten Lichtintensität bei null Magnetfeld?
+Es gibt $\sigma^+$- (rechtszirkulares Licht), $\sigma^-$- (linkszirkulares Licht) und $\pi$-Übergänge (linear polarisiertes Licht), die jeweils bestimmte Magnetquantenzahlen $\Delta m_\text{J}$ mit sich bringen (+1, -1, 0).
 
 
-%6
-%Was passiert wenn man die ERF gleich der ΔEZ wählt und dabei die RF- Feld-Amplitude variiert? 
+Dadurch erhöht sich die Transparenz. 
 
-%Welche Beziehung erwarten Sie dort zwischen der Frequenz der Rabi-Oszillationen und der Stärke des angelegten RF-Feldes [2,3]?
+Für bestimmte Resonanzen des Magnetfelds, also genau dann, wenn 
+\begin{equation*}
+    \Delta E_\text{Zeeman} = h \nu = g_\text{F} \mu_\text{B} B \Delta m_\text{J}
+\end{equation*}
+ist, sinkt die Transparenz wieder.
+
+Induzierte Transparenz ist ein Prozess, bei dem ein Photon eingestrahlt wird, welches genau die Energie, der Differenz zwischen den beiden Niveaus besitzt. Dadurch treten dann zwei Photonen aus, die sich in Energie, Ausbreitungsrichtung und Polarisation nicht unterscheiden. 
+
+Die induzierte Emission ist hier der dominante Prozess aufgrund der niedrigen Frequenz der Zeeman-Aufspaltung. 
+
+
+
+
+
+
+
+
+
