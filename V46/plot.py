@@ -27,6 +27,10 @@ winkel1 = np.deg2rad(winkel1)/5.11e-3
 winkel2 = np.deg2rad(winkel2)/1.296e-3
 winkel3 = np.deg2rad(winkel3)/1.36e-3
 
+np.savetxt("data/winkel1.txt", winkel1)
+np.savetxt("data/winkel2.txt", winkel2)
+np.savetxt("data/winkel3.txt", winkel3)
+
 plt.figure(figsize=(15,8))
 plt.xlabel(r"$\lambda^2$ / $(\mu m)^2$")
 plt.ylabel(r"$\frac{\theta}{d}$ / $rad/m$")
@@ -39,6 +43,10 @@ plt.savefig("plots/AlleProben.pdf")
 
 diff1 = np.abs(winkel2-winkel1) 
 diff2 = np.abs(winkel3-winkel1)
+
+np.savetxt("data/diff1.txt", diff1)
+np.savetxt("data/diff2.txt", diff2)
+
 
 N1 = 2.8e18
 N2 = 1.2e18

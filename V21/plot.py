@@ -57,12 +57,22 @@ plt.plot(f, func(f, *param2), label="Fit")
 plt.legend(loc="best")
 plt.savefig("plots/fits.pdf") 
 
+np.savetxt("data/f.txt", f)
+np.savetxt("data/hor1.txt", hor1)
+np.savetxt("data/hor2.txt", hor2)
+np.savetxt("data/sweep1.txt", sweep1)
+np.savetxt("data/sweep2.txt", sweep2)
+np.savetxt("data/B1.txt", B1)
+np.savetxt("data/B2.txt", B2)
+
 f=  open("plots/results.txt", "w")
 f.write(f"B_Erdmagnetfeld: {B}\n")
 f.write(f"Peak 1: a1 = {a1}, b1 = {b1}\n")
 f.write(f"Peak 2: a2 = {a2}, b2 = {b2}\n")
 f.write(f"gf: gf1 = {gf1}, gf2 = {gf2}\n")
 f.write(f"I: I1 = {I1}, I2 = {I2}\n")
+
+
 
 f.close()
 
