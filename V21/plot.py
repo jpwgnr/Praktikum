@@ -7,7 +7,7 @@ from scipy.optimize import curve_fit
 from something import some 
 import scipy.constants as const
 
-plt.rcParams.update({'font.size': 22})
+plt.rcParams.update({'font.size': 24})
 
 I_vert = 2.28 *0.1
 B = const.mu_0 * 8 * 20 * I_vert /(np.sqrt(125)*0.11735)
@@ -50,10 +50,14 @@ gf2 = const.h/const.value("Bohr magneton") /a2
 I2 = 0.5*(gj/gf2 -1)
 
 plt.figure(figsize=(15,8))
-plt.plot(f, B1, "x", label="Daten")
-plt.plot(f, B2, "x", label="Daten")
-plt.plot(f, func(f, *param1), label="Fit")
-plt.plot(f, func(f, *param2), label="Fit")
+plt.grid()
+plt.xlabel(r"$f$ / kHz")
+plt.ylabel(r"$B$ / $\mu$T")
+plt.plot(f*1e-3, B1*1e6, "x", color="C0", markersize=16, alpha=20, label="Peak 1")
+plt.plot(f*1e-3, B2*1e6, "x", color="C1", markersize=16, alpha=20, label="Peak 2")
+f_new = np.linspace(min(f)-100e3, max(f)+100e3)
+plt.plot(f_new*1e-3, func(f_new, *param1)*1e6, color="C0", linewidth=5,label="Ausgleichsgerade 1")
+plt.plot(f_new*1e-3, func(f_new, *param2)*1e6, color="C1", linewidth=5, label="Ausgleichsgerade 2")
 plt.legend(loc="best")
 plt.savefig("plots/fits.pdf") 
 

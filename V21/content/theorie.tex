@@ -1,32 +1,34 @@
 \section{Theorie}
 \label{sec:Theorie}
-In diesem Versuch soll mittels optischen Pumpens die Kernspins $I$ der Isotope von Rubidium, $^{85}$Rb und $^{87}$Rb, bestimmt werden.
+In diesem Versuch sollen mittels optischen Pumpens die Kernspins $I$ der Isotope $^{85}$Rb und $^{87}$Rb bestimmt werden. Rb ist das Element Rubidium. 
 
 \subsection{Landé-Faktoren}
 
 Ein Teilchen, das sich wie ein Elektron in einem Atom bewegt, besitzt einen Drehimpuls $\vec L$ bei der Bewegung um den Kern. 
-Der Spin $\vec S$, eine Größe, die aus der relativistischen Mechanik resultiert, beschreibt das Teilchen neben seiner Masse und Ladung. 
+Der Spin $\vec S$, eine Größe, die aus der relativistischen Quantenmechanik resultiert, charakterisiert das Teilchen neben seiner Masse und Ladung. 
 
-Beide Größen, $\vec L$ und $\vec S$ besitzen ein magnetisches Moment, die sich als 
+Beide Größen, Drehimpuls $\vec L$ und Spin $\vec S$, besitzen ein magnetisches Moment, das sich als 
 \begin{align*}
     \mu_\text{L} &= \mu_\text{B} g_\text{L} \sqrt{L(L+1)} \\ 
     \mu_\text{S} &= \mu_\text{B} g_\text{S} \sqrt{S(S+1)}
 \end{align*}
-darstellen lassen mit dem Bohrschen Magneton und den Landé-Faktoren $g_\text{L,S}$. 
+darstellen lässt mit dem Bohrschen Magneton und den Landé-Faktoren $g_\text{L,S}$. 
 
 Da die Bewegung des Elektrons ein magnetisches Feld erzeugt und der Spin, der eine magnetische Größe ist, insofern mit diesem Magnetfeld interagiert, Koppeln der Spin und der Drehimpuls miteinander. 
 Die resultierende Größe ist der Gesamtdrehimpuls $\vec J = \vec L + \vec S$. 
 
-Auch hier ergibt sich ein magnetisches Moment $\mu_\text{J}$, das um die Richtung des Gesamtdrehimpulses präzediert, wobei der senkrechte Anteil im Mittel herausfällt und nur der parallele Anteil relevant ist. 
+Auch hier ergibt sich ein magnetisches Moment $\vec \mu_\text{J}$, das um die Richtung des Gesamtdrehimpulses präzediert, wobei der senkrechte Anteil im Mittel herausfällt und nur der parallele Anteil relevant ist. 
 
-Für $\mu_\text{J}$ ergibt sich 
+Für $\vec \mu_\text{J}$ ergibt sich 
 \begin{equation*}
     \mu_\text{J} = \mu_\text{B} g_\text{J} \sqrt{J(J+1)}
 \end{equation*}
 und für $g_\text{J}$ gilt 
-\begin{equation*}
-    g_\text{J} = 1 + \frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}.
-\end{equation*}
+\begin{equation}
+    g_\text{J} = 1 + \frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}
+    \label{eq:gj}
+\end{equation}
+bei einer vektoriellen Betrachtung der magnetischen Momente und der dazugehörigen Größen $\vec J$, $\vec L$ und $\vec S$.
 
 \subsection{Energieaufspaltung}
 
@@ -40,18 +42,19 @@ Die Energieverschiebung ergibt sich dann mit
 wobei $m_\text{J}$ die Magnetquantenzahl ist.
 
 Die Hyperfeinstruktur spaltet die Energieniveaus ein weiteres mal. 
-Dabei kommt der Kernspin $I$ des Atoms in Spiel.
+Dabei kommt der Kernspin $I$ des Atoms in Spiel, wenn dieser von null verschieden ist.
 Die Kopplung $\vec F = \vec J + \vec I$ nimmt Werte von $| I - J|$ bis $J+I$ an. 
-Mit einem angelegten Magnetfeld können diese Energieniveaus weiter gespalten werden, da das Magnetfeld auf die Hülle des Atoms wirkt, so dass sich $2F+1$ Unterniveaus ergeben. 
+Mit einem Magnetfeld können diese Energieniveaus weiter gespalten werden, da das Magnetfeld auf die Hülle des Atoms wirkt, so dass sich $2F+1$ Unterniveaus ergeben. 
 Dabei ist die Energieverschiebung 
 \begin{equation*}
     \Delta E_\text{Zeeman} = g_\text{F} \mu_\text{B} B
 \end{equation*}
 
 Der neue Landé-Faktor $g_\text{F}$ ist 
-\begin{equation*}
+\begin{equation}
     g_\text{F} = g_\text{J} \frac{F(F+1) + J(J+1) - I(I+1)}{2F(F+1)}.
-\end{equation*}
+    \label{eq:I}
+\end{equation}
 
 \subsection{Optisches Pumpen}
 
@@ -70,8 +73,7 @@ Für bestimmte Resonanzen des Magnetfelds, also genau dann, wenn
 \end{equation}
 ist, sinkt die Transparenz wieder.
 
-Induzierte Transparenz ist ein Prozess, bei dem ein Photon eingestrahlt wird, welches genau die Energie, der Differenz zwischen den beiden Niveaus besitzt. Dadurch treten dann zwei Photonen aus, die sich in Energie, Ausbreitungsrichtung und Polarisation nicht unterscheiden. 
-
+Induzierte Emission ist ein Prozess, bei dem ein Photon eingestrahlt wird, welches genau die Energie, der Differenz zwischen den beiden Niveaus besitzt. Dadurch treten dann zwei Photonen aus, die sich in Energie, Ausbreitungsrichtung und Polarisation nicht unterscheiden. 
 Die induzierte Emission ist hier der dominante Prozess aufgrund der niedrigen Frequenz der Zeeman-Aufspaltung. 
 
 
