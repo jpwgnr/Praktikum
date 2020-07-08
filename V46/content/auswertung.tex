@@ -11,17 +11,17 @@ Diese Kraftflussdichte wird in der Mitte des Luftspalts des Elektromagneten erre
 
 \subsection{Effektive Masse mittels Faraday-Rotation}
 Die Werte für die Dicke und die Donatorenkonzentration für die drei Proben sind in Tab. \ref{tab:proben} zu finden.
-Die für die drei Proben eingestellten Winkel bei den verschiedenen Wellenlängen befinden sich in Tab..
 \input{tables/proben.tex}
 
-%Tabelle Werte
-%\input{tables/winkel.tex}
+Die eingestellten Winkel bei den verschiedenen Wellenlängen stehen in Tab. \ref{tab:winkel}.
 
-Die aus den Werten in Tab. berechneten und auf die Dicke der Probe skalierten Rotationswinkel befinden sich in Tab..
-%Tabelle berechnete Winkel
+\input{tables/winkel.tex}
+
+Die aus den Winkeln aus Tab. \ref{tab:winkel} mit \ref{eq:rotation} berechneten Rotationswinkel befinden sich in Tab. \ref{tab:skaliert}.
+
 \input{tables/skaliert.tex}
 
-Die quadrierte Wellenlänge ist in Abb. \ref{fig:alle} gegen die in Tab. stehenden Werte aufgetragen.
+Die quadrierte Wellenlänge ist in Abb. \ref{fig:alle} gegen die in Tab. \ref{tab:skaliert} stehenden Werte aufgetragen.
 \begin{figure}
     \centering
     \includegraphics[width=15cm]{plots/AlleProben.pdf}
@@ -29,8 +29,9 @@ Die quadrierte Wellenlänge ist in Abb. \ref{fig:alle} gegen die in Tab. stehend
     \label{fig:alle}
 \end{figure}
 
-Zur Bestimmung der effektiven Masse wird jeweils die Differenz des Rotationswinkels der reinen Probe und des Rotationswinkels der dotierten Probe gebildet. Diese Werte sind in Tab. eingetragen.
-%Tabelle Winkel(frei)
+Zur Bestimmung der effektiven Masse wird jeweils der Betrag der Differenz des Rotationswinkels der reinen Probe und des Rotationswinkels der dotierten Probe gebildet. Diese Werte sind in Tab. \ref{tab:frei} eingetragen.
+
+\input{tables/frei.tex}
 
 Der Drehwinkel wird für beide Proben gegen $\lambda^2$ aufgetragen. Der Proportionalitätsfaktor zwischen den Größen wird bestimmt. Daraus wird die effektive Masse mit Gleichung \ref{eq:theta} berechnet. In Abb. \ref{fig:probe1} sind die Werte für Probe 1 zu sehen, in Abb. \ref{fig:probe2} die für Probe 2.
 \begin{figure}
