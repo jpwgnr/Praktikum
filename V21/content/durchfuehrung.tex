@@ -2,8 +2,8 @@
 \label{sec:Durchführung}
 
 \subsection{Versuchsaufbau}
-Das Licht der Rubidium-Spektrallampe trifft zunächst auf eine Sammellinse. Anschließend geht es durch einen Interferenzfilter (D$_1-$Filter), der nur Licht mit einer Wellenlänge von $\lambda = \SI{794.8}{\nano\meter}$ durchlässt. Der darauffolgende Polarisationsfilter und die $\lambda / 4-$Platte bewirken, dass das austretende Licht rechtszirkular-polarisiert ist. Dieses Licht trifft auf die von drei Helmholtz-Spulenpaaren umgebene Dampfzelle. Das transmittierte Licht wird mithilfe einer Sammellinse auf einen Lichtdetektor fokussiert, welcher an einem Oszilloskop angeschlossen ist. \cite{V21}
 Der Versuchsaufbau ist in Abb. \ref{fig:aufbau} zu sehen.
+Das Licht der Rubidium-Spektrallampe trifft zunächst auf eine Sammellinse. Anschließend geht es durch einen Interferenzfilter (D$_1-$Filter), der nur Licht mit einer Wellenlänge von $\lambda = \SI{794.8}{\nano\meter}$ durchlässt. Der darauffolgende Polarisationsfilter und die $\lambda / 4-$Platte bewirken, dass das austretende Licht rechtszirkular polarisiert ist. Dieses Licht trifft auf die von drei Helmholtz-Spulenpaaren umgebene Dampfzelle. Das transmittierte Licht wird mithilfe einer Sammellinse auf einen Lichtdetektor fokussiert, welcher an einem Oszilloskop angeschlossen ist. \cite{V21}
 
 \begin{figure}
     \centering
@@ -11,17 +11,6 @@ Der Versuchsaufbau ist in Abb. \ref{fig:aufbau} zu sehen.
     \caption{Der Aufbau der Messapparatur. \cite{V21}}
     \label{fig:aufbau}
 \end{figure}
-
-\subsection{Justierung}
-Der Ofen, der die Dampfzelle heizt, wird eine halbe Stunde vor Beginn eingeschaltet. \cite{V21}
-
-Zunächst wird der Strahlengang so justiert, dass die Intensität maximal ist. Diese wird am Lichtdetektor gemessen.
-%Dazu ist der "Gain" überall $\num{1}$ und die Zeitkonstante beträgt $\SI{100}{\milli\second}$.
-Anschließend werden die beiden Linsen eingesetzt und mithilfe der Signalstärke am Galvanometer justiert.
-Nachdem weitere optische Elemente eingesetzt sind, wird der ganze Aufbau mit einer schwarzen Decke abgedeckt. \cite{V21}
-
-Vor der Messung muss das Erdmagnetfeld kompensiert werden.
-Dazu wird durch einen Stromfluss durch die Sweep-Spule (Modulationsfeldspule) die horizontale Magnetfeldkomponente auf Null reguliert. Anschließend wird mithilfe der Vertikalfeldspule ein schmaler Peak eingestellt, um die Vertikalkomponente des Erdmagnetfeldes zu kompensieren. Die Messapparatur wird so ausgerichtet, dass der Lichtstrahl in Nord-Süd-Richtung verläuft. \cite{V21}
 
 Die Eigenschaften der Spulen sind in Tab. \ref{tab:spule} aufgelistet. 
 Alle drei Spulen sind Helmholtzspulen-Paare. Für sie gilt, dass die Magnetfeldstärke 
@@ -45,5 +34,19 @@ beträgt mit der Stromstärke $I$, der Windungszahl $N$ und dem Radius $R$.
     \bottomrule
 \end{tabular}\end{table}
 
+
+\subsection{Justierung}
+Der Ofen, der die Dampfzelle heizt, wird eine halbe Stunde vor Beginn eingeschaltet.
+Zunächst wird der Strahlengang so justiert, dass die Intensität maximal ist. Diese wird am Lichtdetektor gemessen.
+%Dazu ist der "Gain" überall $\num{1}$ und die Zeitkonstante beträgt $\SI{100}{\milli\second}$.
+Anschließend werden die beiden Linsen eingesetzt und mithilfe der Signalstärke am Galvanometer justiert.
+Nachdem weitere optische Elemente eingesetzt sind, wird der ganze Aufbau mit einer schwarzen Decke abgedeckt. \cite{V21}
+
+Vor der Messung muss das Erdmagnetfeld kompensiert werden.
+Dazu wird durch einen Stromfluss durch die Sweep-Spule (Modulationsfeldspule) die horizontale Magnetfeldkomponente auf Null reguliert. Anschließend wird mithilfe der Vertikalfeldspule ein schmaler Peak eingestellt, um die Vertikalkomponente des Erdmagnetfeldes zu kompensieren. Die Messapparatur wird so ausgerichtet, dass der Lichtstrahl in Nord-Süd-Richtung verläuft. \cite{V21}
+
+\subsection{Messung der Resonanzstellen}
+
 Die Frequenz an den RF-Spulen wird zwischen $\SI{100}{\kilo\hertz}$ und $\SI{1}{\mega\hertz}$ in $\SI{100}{\kilo\hertz}$ Schritten variiert. Dabei wird die Stärke des gesamten Horizontalfeldes in Abhängigkeit von der Resonanzfrequenz für beide Rb-Isotope gemessen. Die Resonanzen für beide Isotope sollen sichtbar gemacht werden. Bei Frequenzen höher als $\SI{200}{\kilo\hertz}$ wird zusätzlich ein horizontales Feld angelegt.
+
 Es wird ein Foto eines typischen Signalbildes bei $\SI{100}{\kilo\hertz}$ gemacht.

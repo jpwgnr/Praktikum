@@ -5,8 +5,8 @@ Die Auswertung ist mithilfe von NumPy \cite{numpy}, Matplotlib \cite{matplotlib}
 
 \subsection{Horizontalfeldkomponente}
 
-Nachdem der Tisch so ausgerichtet wurde, dass nur die Horizontalkomponente das Magnetfelds einen Beitrag leistet, wird die Transparenz minimiert und die Stromstärke für dieses Minimum gemessen.
-Somit ergibt sich für die Horizontalfeldkomponente des Erdmagnetfeld mit Formel \ref{eq:B} ein Wert von 
+Nachdem der Tisch so ausgerichtet wurde, dass nur die Horizontalkomponente des Magnetfelds einen Beitrag leistet, wird die Transparenz minimiert und die Stromstärke für dieses Minimum gemessen.
+Somit ergibt sich für die Horizontalfeldkomponente des Erdmagnetfeld mit Gleichung \ref{eq:B} ein Wert von 
 \begin{equation*}
     B_\text{Erdmagnetfeld} = \SI{34.94}{\micro\tesla}.
 \end{equation*}
@@ -16,10 +16,10 @@ Der Literaturwert für die Horizontalfeldkomponente des Erdmagnetfelds beträgt 
 \end{equation*}
 
 \subsection{Landé-Faktoren und Kernspins der Rubidium-Isotope} 
-Im Folgenden steht der Index $\num{1}$ für $^{87}Rb$ und der Index $\num{2}$ für $^{85}Rb$. %richtig?
+Im Folgenden steht der Index $\num{1}$ für die Werte des ersten Peaks und der Index $\num{2}$ für die Werte des zweiten Peaks.
 
 Die gemessenen Werte sind in Tabelle \ref{tab:all}
-aufgelistet. Sie werden mit Formel \eqref{eq:B} in die jeweilige Magnetfeldstärke umgerechnet und die Magnetfeldstärken der Sweep- und der Horizontal-Spule werden für beide Peaks jeweils addiert.
+aufgelistet. Sie werden mit Gleichung \eqref{eq:B} in die jeweilige Magnetfeldstärke umgerechnet und die Magnetfeldstärken der Sweep- und der Horizontal-Spule werden für beide Peaks jeweils addiert.
 \input{table/table.tex}
 In Abb. \ref{fig:plot} werden die Magnetfeldstärken für beide Peaks gegen die Frequenz aufgetragen und eine Ausgleichsgerade wird jeweils durch die Messwerte gelegt. 
 \begin{figure}
@@ -31,22 +31,22 @@ In Abb. \ref{fig:plot} werden die Magnetfeldstärken für beide Peaks gegen die 
 
 Die Parameter der Ausgleichgeraden haben die folgenden Werte
 \begin{align*}
-    a_1 &= \SI{0.1465}{\micro\tesla\per\kilo\hertz} \\ %welche Einheit?
+    a_1 &= \SI{0.1465}{\micro\tesla\per\kilo\hertz} \\
     a_2 &= \SI{0.2178}{\micro\tesla\per\kilo\hertz} \\
     b_1 &= \SI{21.6}{\micro\tesla} \\
-    b_2 &= \SI{21.6}{\micro\tesla}
+    b_2 &= \SI{21.6}{\micro\tesla}.
 \end{align*}
-Aus der Steigung lässt sich jeweils mit Formel \ref{eq:Zeeman} der Landé-Faktor bestimmen zu
+Aus der Steigung lässt sich jeweils mit Gleichung \ref{eq:Zeeman} der Landé-Faktor bestimmen zu
 \begin{align*}
     g_{\text{F},1} &= \num{488 \pm 6} \\
     g_{\text{F},2} &= \num{328 \pm 2.8}.
 \end{align*}
 
-Mit den Quantenzahlen $L = 0, S = \frac{1}{2}, J = \frac{1}{2}$ für Rubidium lässt sich Formel \ref{eq:I} nach $I$ umstellen zu
+Mit den Quantenzahlen $L = 0, S = \frac{1}{2}, J = \frac{1}{2}$ für Rubidium lässt sich Gleichung \ref{eq:I} nach $I$ umstellen zu
 \begin{equation*}
-    I = J (\frac{g_\text{J}}{g_\text{F}} -1).
+    I = J \left( \frac{g_\text{J}}{g_\text{F}} -1 \right).
 \end{equation*} 
-Aus den experimentell bestimmten Landé-Faktoren und dem Theoriewert $g_\text{J} = \num{2.0023}$, der aus Formel \ref{eq:gj} folgt, lässt sich der Kernspin für beide Peaks zu
+Aus den experimentell bestimmten Landé-Faktoren und dem Theoriewert $g_\text{J} = \num{2.0023}$, der aus Gleichung \ref{eq:gj} folgt, lässt sich der Kernspin für beide Peaks zu
 \begin{align*}
     I_1 &= \num{1.553(23)} \\
     I_2 &= \num{2.552(26)}
@@ -67,7 +67,7 @@ Aus den beobachteten Amplituden bei $\SI{100}{\kilo\hertz}$, die in Abb. \ref{fi
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{fotos/Aufnahme.JPG}
-    \caption{Eine typische Aufnahme bei $\SI{100}{\kilo\hertz}$ um das Verhältnis zwischen den beiden Isotopen $^{85}$Rb und $^{87}$Rb festzustellen.}
+    \caption{Eine typische Aufnahme bei $\SI{100}{\kilo\hertz}$, um das Verhältnis zwischen den beiden Isotopen $^{85}$Rb und $^{87}$Rb festzustellen.}
     \label{fig:Aufnahme}
 \end{figure}
 In der Natur beträgt das Verhältnis
