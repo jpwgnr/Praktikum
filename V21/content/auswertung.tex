@@ -1,30 +1,31 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+Die Auswertung ist mithilfe von NumPy \cite{numpy}, Matplotlib \cite{matplotlib}, SciPy \cite{scipy} und Uncertainties \cite{uncertainties} erstellt.
+
 \subsection{Horizontalfeldkomponente}
 
 Nachdem der Tisch so ausgerichtet wurde, dass nur die Horizontalkomponente das Magnetfelds einen Beitrag leistet, wird die Transparenz minimiert und die Stromstärke für dieses Minimum gemessen.
-Somit ergibt sich für die Horizontalfeldkomponente des Erdmagnetfeld ein Wert von 
+Somit ergibt sich für die Horizontalfeldkomponente des Erdmagnetfeld mit Formel \ref{eq:B} ein Wert von 
 \begin{equation*}
-    B_\text{Erdmagnetfeld} = \SI{34.94}{\micro\tesla}
+    B_\text{Erdmagnetfeld} = \SI{34.94}{\micro\tesla}.
 \end{equation*}
-mit Formel \ref{eq:B}.
-Der Literaturwert für die Horizontalfeldkomponente des Erdmagnetfeld beträgt in Mitteleuropa ca. 
+Der Literaturwert für die Horizontalfeldkomponente des Erdmagnetfelds beträgt in Mitteleuropa ca. 
 \begin{equation*}
     B_\text{Erdmagnetfeld} = \SI{20}{\micro\tesla}.
 \end{equation*}
-%Formel dafür angeben
 
 \subsection{Landé-Faktoren und Kernspins der Rubidium-Isotope} 
+Im Folgenden steht der Index $\num{1}$ für $^{87}Rb$ und der Index $\num{2}$ für $^{85}Rb$. %richtig?
 
 Die gemessenen Werte sind in Tabelle \ref{tab:all}
-aufgelistet. Sie werden mit Formel \eqref{eq:B} in die jeweilige Magnetfeldstärke umgerechnet und die Magnetfeldstärke der Sweep- und der Horizontal Spule werden für beide Peaks jeweils addiert.
+aufgelistet. Sie werden mit Formel \eqref{eq:B} in die jeweilige Magnetfeldstärke umgerechnet und die Magnetfeldstärken der Sweep- und der Horizontal-Spule werden für beide Peaks jeweils addiert.
 \input{table/table.tex}
 In Abb. \ref{fig:plot} werden die Magnetfeldstärken für beide Peaks gegen die Frequenz aufgetragen und eine Ausgleichsgerade wird jeweils durch die Messwerte gelegt. 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{plots/fits.pdf}
-    \caption{Die Magnetfeldstärke $B$ beider Peaks ist gegen die Frequenz $f$ aufgetragen. Eine Ausgleichsgerade ist für beide Peaks durch die Werte gelegt worden um daraus die Landé-Faktoren zu berechnen.}
+    \caption{Die Magnetfeldstärke $B$ beider Peaks ist gegen die Frequenz $f$ aufgetragen. Eine Ausgleichsgerade ist für beide Peaks durch die Werte gelegt worden, um daraus die Landé-Faktoren zu berechnen.}
     \label{fig:plot}
 \end{figure}
 
@@ -41,11 +42,11 @@ Aus der Steigung lässt sich jeweils mit Formel \ref{eq:Zeeman} der Landé-Fakto
     g_{\text{F},2} &= \num{328 \pm 2.8}.
 \end{align*}
 
-Mit den Quantenzahlen $L = 0, S = 1/2, J = 1/2$ für Rubidium, lassen sich Formel \ref{eq:I} nach I umstellen zu
+Mit den Quantenzahlen $L = 0, S = \frac{1}{2}, J = \frac{1}{2}$ für Rubidium lässt sich Formel \ref{eq:I} nach $I$ umstellen zu
 \begin{equation*}
     I = J (\frac{g_\text{J}}{g_\text{F}} -1).
 \end{equation*} 
-Aus den experimentell bestimmten Landé-Faktoren und dem Theoriewert $g_\text{J} = \num{2.0023}$, der aus Formel \ref{eq:gj} folgt, lässt sich dann der Kernspin für beide Peaks zu
+Aus den experimentell bestimmten Landé-Faktoren und dem Theoriewert $g_\text{J} = \num{2.0023}$, der aus Formel \ref{eq:gj} folgt, lässt sich der Kernspin für beide Peaks zu
 \begin{align*}
     I_1 &= \num{1.553(23)} \\
     I_2 &= \num{2.552(26)}
