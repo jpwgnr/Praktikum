@@ -8,9 +8,7 @@ import scipy.constants as const
 from something import some 
 #Generate data 
 
-
-
-
+data = np.genfromtxt("")
 
 
 
