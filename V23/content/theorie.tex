@@ -11,6 +11,17 @@ Dieses Verhalten kann über die sogenannte Transferfunktion erklärt werden, die
 
 \section{Wasserstoffatom}
 
+Das Wasserstoff wird mittels eines Kugelresonators simuliert. Der Druck lässt sich durch die Helmholtzgleichung beschreiben. 
+Diese ist gegeben mit 
+\begin{equation*}
+    \frac{\partial^2}{\partial t^2} P(\vec r,t) = \frac{1}{\rho\kappa} \Delta P(\vec r,t),
+\end{equation*}
+wobei $\rho$ die Dichte ist und $\kappa$ die Kompressibilität. 
+
+Diese Differentialgleichung lässt sich mit dem Ansatz $p(r, \theta, \phi) = Y^m_l(\theta, \phi) \cdot f(r)$ lösen.
+Die $Y^m_l(\theta, \phi)$ heißen Kugelflächenfunktionen. und beschreiben wie die zeitunabhängige Druckverteilung auf der Oberfläche der Kugel aussieht. 
+
+
 
 \section{Festkörper}
 
@@ -22,6 +33,24 @@ erzeugt.
 
 Diese Bedingung folgt aus der Definition der Druckverteilung in dem Rohr. Diese kann mathematisch mithilfe der Helmholtz-Gleichung beschrieben werden als 
 \begin{equation*}
-    \frac{\partial^2}{\partial t^2} P(x,t) = \frac{1}{\rho\kappa}\frac{\partial^2}{\partial x^2} P(x,t).
+    \frac{\partial^2}{\partial t^2} P(x,t) = \frac{1}{\rho\kappa}\frac{\partial^2}{\partial x^2} P(x,t)
+\end{equation*}
+mit der Dichte $\rho$ und der Kompressibilität $\kappa$. 
+
+Analog beschreibt diese Resonanz ein Teilchen, das in einem Kasten eingesperrt ist. 
+Die Wellenfunktion dieses Teilchens ist die Schrödingergleichung mit 
+\begin{equation*}
+    i \hbar \frac{\partial}{\partial t} \Psi(x,t) = (- \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} + V(x)) \Psi(x,t).
+\end{equation*}
+Dabei ist $m$ die Teilchenmasse, $V(x)$ ein Potential. 
+
+In einem Potentialtopf der Länge $L$ wird die zeitunabhängige Schrödingergleichung zu 
+\begin{equation*}
+    E \psi(x) = - \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \psi(x).
+\end{equation*}
+
+Diese Gleichung kann durch eine ebene Welle gelöst werden. Damit ergibt sich dann aus der Randbedingung erneut
+\begin{equation*}
+    L = n \frac{\lambda}{2} = n \frac{c}{2f}.
 \end{equation*}
 
