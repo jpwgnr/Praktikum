@@ -3,14 +3,14 @@
 
 In diesem Versuch werden akustische Resonatoren als Analogien zu quantenmechanischen Systemen genutzt. 
 
-\section{Resonanzsystem}
+\subsection{Resonanzsystem}
 
-Das Resonanzsystem, das mittels eines Lautsprechers und eines Mikrofons, das Verhalten eines Wasserstoffatoms in Kapitel \ref{sec:Wasserstoff}, eines Wasserstoffmoleküls in Kapitel \ref{sec:Wasserstofmolekül} und eines 1D-Festkörpersystems in Kapitel \ref{sec:Festkörper} simuliert, erzeugt nicht konstante Frequenzen auch für den Fall, dass kein Resonator vorliegt.
+Das Resonanzsystem, das mittels eines Lautsprechers und eines Mikrofons, das Verhalten eines Wasserstoffatoms in Kapitel \ref{sec:Wasserstoff}, eines Wasserstoffmoleküls in Kapitel \ref{sec:Wasserstoffmolekül} und eines 1D-Festkörpersystems in Kapitel \ref{sec:Festkörper} simuliert, erzeugt nicht konstante Frequenzen auch für den Fall, dass kein Resonator vorliegt.
 Dieses Verhalten kann über die sogenannte Transferfunktion erklärt werden, die durch die Eigenschaften des Lautsprechers und Mikrofons beeinflusst wird. 
 
 
-\section{Wasserstoffatom}
-
+\subsection{Wasserstoffatom}
+\label{sec:Wasserstoff}
 Das Wasserstoff wird mittels eines Kugelresonators simuliert. Der Druck lässt sich durch die Helmholtzgleichung beschreiben. 
 Diese ist gegeben mit 
 \begin{equation*}
@@ -21,10 +21,20 @@ wobei $\rho$ die Dichte ist und $\kappa$ die Kompressibilität.
 Diese Differentialgleichung lässt sich mit dem Ansatz $p(r, \theta, \phi) = Y^m_l(\theta, \phi) \cdot f(r)$ lösen.
 Die $Y^m_l(\theta, \phi)$ heißen Kugelflächenfunktionen. und beschreiben wie die zeitunabhängige Druckverteilung auf der Oberfläche der Kugel aussieht. 
 
+Die Kugelflächenfunktionen ergeben sich zu 
+\begin{equation*}
+    Y^m_l (\theta, \phi) = \sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}} \cdot P^m_l(\cos \theta) \cdot e^{i m \phi},
+\end{equation*}
+wobei $P^m_l(\cos \theta)$ die Legendrepolynome 
+\begin{equation*}
+P^m_l(cos \theta) = \frac{(-1)^m}{2^l l!} (1- \cos^2 \theta)^{m/2} \frac{d^{l+m}}{d(\cos \theta)^{l+m}} (\cos^2 (\theta -1))^l
+\end{equation*}
+sind.
+\subsection{Wasserstoffmolekül}
+\label{sec:Wasserstoffmolekül}
 
-
-\section{Festkörper}
-
+\subsection{Festkörper}
+\label{sec:Festkörper}
 Der Festkörper wird durch einen Rohrresonator simuliert. In dem Resonator werden stehende Wellen für die Bedingung 
 \begin{equation*}
     L = n \frac{\lambda}{2} = n \frac{c}{2f}
@@ -44,7 +54,7 @@ Die Wellenfunktion dieses Teilchens ist die Schrödingergleichung mit
 \end{equation*}
 Dabei ist $m$ die Teilchenmasse, $V(x)$ ein Potential. 
 
-In einem Potentialtopf der Länge $L$ wird die zeitunabhängige Schrödingergleichung zu 
+In einem Potentialtopf ($V(0 < x < L) = 0, V(x \leq 0, x \geq L) \to \infty$) der Länge $L$ wird die zeitunabhängige Schrödingergleichung zu 
 \begin{equation*}
     E \psi(x) = - \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \psi(x).
 \end{equation*}
@@ -53,4 +63,7 @@ Diese Gleichung kann durch eine ebene Welle gelöst werden. Damit ergibt sich da
 \begin{equation*}
     L = n \frac{\lambda}{2} = n \frac{c}{2f}.
 \end{equation*}
+
+
+
 
