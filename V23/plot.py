@@ -5,15 +5,15 @@ from scipy import stats
 from uncertainties import ufloat
 from scipy.optimize import curve_fit
 import scipy.constants as const
-from something import some 
+#from something import some 
 #Generate data 
 
-data = np.genfromtxt("")
+#data = np.genfromtxt("")
 
 
 
 #save solution
-file = open("plots/solution.txt", "w")
-file.write(f"Hallo")
-file.close()
+#file = open("plots/solution.txt", "w")
+#file.write("Hallo")
+#file.close()
 
