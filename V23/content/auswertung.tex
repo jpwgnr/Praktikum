@@ -1,8 +1,74 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+Die Versuche wurden aus Zeitgründen nur mit dem Computer durchgeführt. Analysiert wurden die Ergebnisse mittels matplotlib, numpy, scipy und uncertainties.
+
 \subsection{1D-Festkörper}
+
+Die Peaks der Resonanzen sind für die Messungen für ein bis zwölf Zylinder in Tabelle \ref{tab:rohr} aufgetragen. 
+Daraus lässt sich mit Formel \ref{eq:speed} die Schallgeschwindigkeit zu \SI{320}{\meter\per\second} bestimmen. 
+
+Das Spektrum für \num{12} Zylinder ist in Abb. \ref{fig:spec12} aufgetragen.
+
+\begin{figure}
+    \centering
+    %\includegraphics[width=0.8\textwidth]{plots/spec12.pdf}
+    \caption{Das Frequenzspektrum für 12 Zylinder mit jeweils einer Länge von \SI{55}{\milli\metre}.}
+    \label{fig:spec12}
+\end{figure}
+
+Für den größeren Zylinder ergibt sich analog eine Schallgeschwindigkeit von \SI{320}{\meter\per\second}.
+
+Für jedes Rohr mit einer Blende kommt ein zusätzlicher Peak hinzu. 
+Das Spektrum für \num{10} Zylinder ist in Abb. \ref{fig:spec10} zu sehen. 
+
+\begin{figure}
+    \centering
+    %\includegraphics[width=0.8\textwidth]{plots/spec10.pdf}
+    \caption{Das Frequenzspektrum für 10 Zylinder mit jeweils einer Länge von \SI{55}{\milli\metre} mit Blendendurchmesser von \SI{16}{\milli\metre}.}
+    \label{fig:spec10}
+\end{figure}
+
+Das ganze wird erneut durchgeführt mit einer Blende mit \SI{13}{\milli\meter}. Ein Beispiel ist in Abb. \ref{fig:spec10_13} zu sehen. 
+
+\begin{figure}
+    \centering
+    %\includegraphics[width=0.8\textwidth]{plots/spec10_13.pdf}
+    \caption{Das Frequenzspektrum für 10 Zylinder mit jeweils einer Länge von \SI{55}{\milli\metre} mit Blendendurchmesser von \SI{13}{\milli\metre}.}
+    \label{fig:spec10_13}
+\end{figure}
+
+Die Messung wurde erneut variiert in dem einer der Zylinder durch einen Zylinder anderer Länge ersetzt wurde. Die neuen Längen sind \SI{37.5}{\milli\meter}, \SI{62.5}{\milli\meter} und \SI{75}{\milli\meter}.
+Die Veränderung ist in Abb. \ref{fig:var3} zu sehen.
+
+Eine Kette aus 10 Zylindern wurde abwechselnd aus \SI{50}{\milli\meter} und \SI{75}{\milli\meter} Zylindern zusammengesetzt mit \SI{16}{\milli\meter} Blenden.
+
+Das Ergebnis ist in Abb. \ref{fig:var4} zu sehen. 
+
+Die letzte Variation des Rohrresonators sind die \SI{13}{\milli\meter} und \SI{16}{\milli\meter} Blenden. 
+
+Die Ergebnisse sind in Abb. \ref{fig:var5} zu sehen.
 
 \subsection{Wasserstoff Atom}
 
+In Abb. \ref{fig:Wasserstoff1} ist das Frequenzspektrum eines Kugelresonators zu sehen bei einem Winkel von $\alpha = \SI{180}{\degree}$. 
+Dabei werden Daten in \SI{5}{\hertz} Schritten bei \SI{60}{\milli\second} pro Schritt aufgenommen.
+
+Die Winkelabhängigkeit der Amplitude von den Resonanzen bei \SI{2.3}{\kilo\hertz}, \SI{3.7}{\kilo\hertz}, \SI{7.4}{\kilo\hertz} und bei \SI{1}{\kilo\hertz} wird im folgenden untersucht. 
+
+In Tab. \ref{tab:winkelamp} sind die Amplitudenwerte für alle drei Peaks bei Winkeln von \SI{0}{\degree} bis \SI{180}{\degree} aufgetragen und in Abb. \ref{fig:Polar} als Polarplots abgebildet.
+
+Nur der Peak bei ca. \SI{2.3}{\kilo\hertz} wird mit verschiedenen Zwischenringen überprüft. Die Aufspaltung ist in Tab. \ref{tab:aufspaltung} gegen die Dicke der Ringe aufgetragen.
+
+Mit einer Dicke des Rings von \SI{9}{\milli\meter} wird die Winkelabhängigkeit erneut überprüft.
+
+In Abb. \ref{fig:polar2} ist dieser als Polarplot aufgetragen. Die dazugehörigen Quantenzahlen sind $l = 0, 1,2,3,4,5$ und $ m = 0, 1, 2,3,4,5$. 
+
 \subsection{Wasserstoff Molekül}
+
+Das Frequenzspektrum der Resonanz ist in Abb. \ref{fig:molek1} für drei verschiedene Blenden aufgetragen. 
+Es ist zu beobachten, dass \dots
+
+Das Frequenzspektrum wurde für verschiedene Winkel aufgenommen. Es wurden die Quantenzustände x,y vermessen. 
+Die Phasenverschiebung zwischen der oberen und unteren Kugel wurden bei \SI{180}{\degree} bestimmt. 
+Nicht alle vier Peaks sind zu erkennen. Der xy Peak fehlt. 
