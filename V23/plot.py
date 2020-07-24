@@ -163,7 +163,7 @@ ax12.plot(f_a2_12*1e-3, amp_a2_12);
 plt.savefig("plots/A_2.pdf")
 
 #1 Zylinder (l=75mm)
-fig_2 = plt.figure(figsize=(8,7))
+fig_2 = plt.figure(figsize=(15,8))
 ax1 = fig_2.add_subplot(111)
 ax1.set_xlabel(r"$f$/kHz")
 ax1.set_ylabel(r"Amplitude/ (a.u.)")
@@ -173,7 +173,7 @@ plt.savefig("plots/A_3.pdf")
 
 #B
 #2 bis 10 Zylinder (l=50mm), 1 bis 9 Blenden (d=16mm)
-fig_3 = plt.figure(figsize=(8,21))
+fig_3 = plt.figure(figsize=(8,14))
 ax1 = fig_3.add_subplot(9,1,1)
 #ax1.set_xlabel(r"$f$/kHz")
 ax1.set_ylabel(r"Amplitude/ (a.u.)")
@@ -277,7 +277,7 @@ ax3.plot(f_a3*1e-3, amp_a3);
 plt.savefig("plots/B_5.pdf")
 
 #8 Zylinder (l=50mm), 7 Blenden (abwechselnd d=13mm und d=16mm)
-fig_8 = plt.figure(figsize=(8,7))
+fig_8 = plt.figure(figsize=(15,8))
 ax1 = fig_8.add_subplot(111)
 ax1.set_xlabel(r"$f$/kHz")
 ax1.set_ylabel(r"Amplitude/ (a.u.)")
@@ -287,7 +287,7 @@ plt.savefig("plots/B_6.pdf")
 
 #C
 #180°
-fig_9 = plt.figure(figsize=(8,7))
+fig_9 = plt.figure(figsize=(15,8))
 ax1 = fig_9.add_subplot(111)
 ax1.set_xlabel(r"$f$/kHz")
 ax1.set_ylabel(r"Amplitude/ (a.u.)")
@@ -312,7 +312,7 @@ fig_12.add_subplot(111, projection='polar')
 plt.polar(phi_3, amp_3, '.')
 plt.savefig("plots/C_polar3.pdf")
 
-#Polarplot xy kHz
+#Polarplot 5 kHz
 fig_13 = plt.figure(figsize=(8,8))
 fig_13.add_subplot(111, projection='polar')
 plt.polar(phi_4, amp_4, '.')
@@ -335,7 +335,7 @@ ax3.plot(f_c4_3*1e-3, amp_c4_3);
 plt.savefig("plots/C_4.pdf")
 
 #Aufspaltung gegen Ringdicke
-fig_15 = plt.figure(figsize=(8,7))
+fig_15 = plt.figure(figsize=(15,8))
 ax1 = fig_15.add_subplot(111)
 ax1.set_xlabel(r"Ringdicke/ mm")
 ax1.set_ylabel(r"Aufspaltung")
@@ -372,7 +372,7 @@ ax4.plot(f_d1_4*1e-3, amp_d1_4);
 plt.savefig("plots/D_1.pdf")
 
 #Resonanzfreq. gegen Blendendurchmesser
-fig_18 = plt.figure(figsize=(8,7))
+fig_18 = plt.figure(figsize=(15,8))
 ax1 = fig_18.add_subplot(111)
 ax1.set_xlabel(r"Blendendurchmesser/ mm")
 ax1.set_ylabel(r"Resonanzfrequenz/ kHz")
