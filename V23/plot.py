@@ -387,6 +387,20 @@ plt.polar(phi_6, amp_6, '.')
 plt.savefig("plots/D_3.pdf")
 
 
+#Molekuel, bei 180 Grad
+f_d3_1, amp_d3_1 = np.genfromtxt("data/d_3_1.dat", unpack=True)
+f_d3_2, amp_d3_2 = np.genfromtxt("data/d_3_2.dat", unpack=True)
+
+fig_20 = plt.figure(figsize=(15,8))
+ax1 = fig_20.add_subplot(111)
+ax1.set_xlabel(r"$f$/kHz")
+ax1.set_ylabel(r"Amplitude/ (a.u.)")
+ax1.plot(f_d3_1*1e-3, amp_d3_1);
+#ax2 = fig_20.add_subplot(212)
+#ax2.set_xlabel(r"$f$/kHz")
+#ax2.set_ylabel(r"Amplitude/ (a.u.)")
+ax1.plot(f_d3_2*1e-3, amp_d3_2);
+plt.savefig("plots/D_phase.pdf")
 
 #save solution
 #file = open("plots/solution.txt", "w")
