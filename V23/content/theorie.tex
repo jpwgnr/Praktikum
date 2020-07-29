@@ -1,26 +1,73 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-In diesem Versuch werden akustische Resonatoren als Analogien zu quantenmechanischen Systemen genutzt. 
+In diesem Versuch werden verschiedene akustische Resonatoren genutzt um Analogien zu quantenmechanischen Systemen herzustellen. 
 
 \subsection{Resonanzsystem}
 
-Das Resonanzsystem, das mittels eines Lautsprechers und eines Mikrofons, das Verhalten eines Wasserstoffatoms in Kapitel \ref{sec:Wasserstoff}, eines Wasserstoffmoleküls in Kapitel \ref{sec:Wasserstoffmolekül} und eines 1D-Festkörpersystems in Kapitel \ref{sec:Festkörper} simuliert, erzeugt nicht konstante Frequenzen auch für den Fall, dass kein Resonator vorliegt.
-Dieses Verhalten kann über die sogenannte Transferfunktion erklärt werden, die durch die Eigenschaften des Lautsprechers und Mikrofons beeinflusst wird. 
+Beide Resonanzsysteme, ein Kugelresonator für das Verhalten eines Wasserstoffatoms in Kapitel \ref{sec:Wasserstoff} und eines Wasserstoffmoleküls in Kapitel \ref{sec:Wasserstoffmolekül}  und ein Rohrresonator für die Simulation eines 1D-Festkörpersystems in Kapitel \ref{sec:Festkörper}, funktionieren mit einem Lautsprecher und einem Mikrofon. Diese erzeugen nicht konstante Frequenzen auch für den Fall, dass kein Resonator vorliegt.
+Dieses Verhalten kann über die sogenannte Transferfunktion erklärt werden, die durch die Eigenschaften des Lautsprechers und Mikrofons gegeben ist. 
+
+\subsection{Festkörper}
+\label{sec:Festkörper}
+Der Festkörper wird durch einen Rohrresonator simuliert. In dem Resonator werden stehende Wellen erzeugt, wenn die Bedingung  
+\begin{equation}
+    L = n \frac{\lambda}{2} = n \frac{c}{2f} = n \frac{\pi}{k} 
+    \label{eq:speed}
+\end{equation}
+erfüllt ist, wobei $\lambda$ die Wellenlänge ist, $f$ die Frequenz und $k$ die Kreiswellenzahl. 
+
+Diese Bedingung folgt aus der Definition der Druckverteilung $P(x,t)$ in dem Rohr. Diese kann mathematisch mithilfe der Helmholtz-Gleichung beschrieben werden als 
+\begin{equation*}
+    \frac{\partial^2}{\partial t^2} P(x,t) = \frac{1}{\rho\kappa}\frac{\partial^2}{\partial x^2} P(x,t),
+\end{equation*}
+wobei $\rho$ die Dichte und $\kappa$ die Kompressibilität ist. 
+
+Analog dazu gilt in der Quantenmechanik für ein Teilchen, das in einem Kasten eingesperrt ist, die gleiche Bedingung. 
+
+Die Wellenfunktion dieses Teilchens ist die Schrödingergleichung mit 
+\begin{equation*}
+    i \hbar \frac{\partial}{\partial t} \Psi(x,t) = \left(- \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} + V(x)\right) \Psi(x,t).
+\end{equation*}
+Dabei ist $m$ die Teilchenmasse und $V(x)$ ein Potential. 
+In einem Potentialtopf ($V(0 < x < L) = 0, V(x \leq 0, x \geq L) \to \infty$) der Länge $L$ wird die zeitunabhängige Schrödingergleichung zu 
+\begin{equation*}
+    E \psi(x) = - \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \psi(x).
+\end{equation*}
+Diese Gleichung kann durch einen ebene Welleansatz gelöst werden. Damit ergibt sich dann aus der Randbedingung erneut
+\begin{equation*}
+    L = n \frac{\lambda}{2} = n \frac{c}{2f} = n \frac{\pi}{k}.
+\end{equation*}
+
+Mit Blenden zwischen den Rohrelementen entspricht das System dem eines gekoppelten Pendels.
+Der unterschied ist nur, dass man die Schwingung mit der gleichschwingenden Welle im Rohrresonator nicht beobachtet werden kann und dass Oberschwingungen nicht abgebildet werden können. 
+
+
+Wenn die Gesamtlänge des Rohrresonators $L$ ist, ist die Länge eines Segments $L_S = \frac{1}{n} L$. 
+Da die erste Resonanz bei $\lambda = \SI{0}{\hertz}$ liegt, ist diese nicht zu sehen. Bei höheren Frequenzen sind aber auch Resonanzen zu sehen. Dies sind die Resonanzen für den Fall, dass eine stehende Welle mit einem Knoten, zwei Knoten und so weiter entsteht. 
+
+Beim einbauen einer Blende wird die Druck- und Geschwindigkeitsverteilung nur nicht verändert, wenn sich die Blende an einem Punkt befindet, an dem die Geschwindigkeitsverteilung davon nicht beeinflusst wird also an einem Geschwindigkeitsknoten an dem die Geschwindigkeit der Luftmoleküle sowieso null ist.
+Die Wellenlängen sind für diesen Fall komplett indentisch zu dem Fall ohne Blenden, nur dass sie geringfügig niedriger sind aufgrund des veränderten Volumens beim einfügen einer Blende.
+
+Zusätzliche Resonanzen sind für den Fall zu erkennen, bei dem ein Geschwindigkeitshochpunkt an der Stelle der Blende zu finden ist.
+Die Blende ist dafür aber im Weg die Resonanzen sind daher nach links von der erwarteten Position verschoben im Spektrum. Somit ergeben sich sogenannte Bänder. Die niedrigste Resonanz im jeweiligen Band ist immer die unverschobene Resonanz.
+
+Die Analogie besteht darin, dass die Kopplung der Segmente mittels der Blenden einem Potential entspricht und somit auch Eigenschaften aus der Festkörperphysik wie die Bandstrukturen beschrieben werden können. 
+Die Bandstrukturen in einem periodischen Potential eines Festkörpers kann durch Atome mit diskreten Energieniveaus beschrieben werden. Bei einer Wechselwirkung der Atome ergibt sich eine Aufspaltung der Energieeigenzustände, sodass sich für viele Atome eine Aufspaltung in ein Band ergibt. 
 
 
 \subsection{Wasserstoffatom}
 \label{sec:Wasserstoff}
-Das Wasserstoff wird mittels eines Kugelresonators simuliert. Der Druck lässt sich durch die Helmholtzgleichung beschreiben. 
+Das Wasserstoffatom wird mittels eines Kugelresonators simuliert. Die Druckverteilung $P(\vec r,t)$ in der Kugel lässt sich durch die Helmholtzgleichung beschreiben. 
 Diese ist gegeben mit 
 \begin{equation*}
     \frac{\partial^2}{\partial t^2} P(\vec r,t) = \frac{1}{\rho\kappa} \Delta P(\vec r,t),
 \end{equation*}
-wobei $\rho$ die Dichte ist und $\kappa$ die Kompressibilität. 
+wobei $\rho$ die Dichte und $\kappa$ die Kompressibilität ist. 
 
 Diese Differentialgleichung lässt sich mit dem Ansatz $p(r, \theta, \phi) = Y^m_l(\theta, \phi) \cdot f(r)$ lösen.
 Die $Y^m_l(\theta, \phi)$ heißen Kugelflächenfunktionen. und beschreiben wie die zeitunabhängige Druckverteilung auf der Oberfläche der Kugel aussieht. 
-
+Da das Mikrofon nur auf der Oberfläche misst im Experiment, kann die $r$-Abhängigkeit $f(r)$ nicht gemessen werden. 
 Die Kugelflächenfunktionen ergeben sich zu 
 \begin{equation*}
     Y^m_l (\theta, \phi) = \sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}} \cdot P^m_l(\cos \theta) \cdot e^{i m \phi},
@@ -30,61 +77,34 @@ wobei $P^m_l(\cos \theta)$ die Legendrepolynome
 P^m_l(cos \theta) = \frac{(-1)^m}{2^l l!} (1- \cos^2 \theta)^{m/2} \frac{d^{l+m}}{d(\cos \theta)^{l+m}} (\cos^2 (\theta -1))^l
 \end{equation*}
 sind.
+
 Bei Kugelsymmetrie ist die Energie entartet bezüglich $m$. 
 Erst durch aufheben der Symmetrie wird die Entartung aufgehoben.  
 Das bedeutet, dass sie in dem Spektrum dann nicht mehr bei der gleichen Frequenz zu sehen sind. Da sich $\pm m$ aber nur in der Phase unterscheiden, bleiben die beiden entartet und $l+1$ peaks sind zu sehen. 
 Ein imaginärer Druck ist physikalisch nicht sinnvoll und kann im Experiment nicht gemessen werden. Die gemessenen Ergebnisse sind für also für alle $m$ proportional zu $\cos(m\phi)$. 
 
+Das Wasserstoffatom wird dargestellt als Wechselwirkung zwischen einem Proton mit der Ladung $+e$ und einem Elektron auf der Hüllenbahn mit einer Ladung $-e$. Beide Wechselwirken über das Coulombpotential. Wenn die Kugelsymmetrie dieses Problems ausgenutzt wird, ergibt sich als Lösung der Schrödingergleichung die Funktion 
+\begin{equation*}
+    \psi_{n,l,m} (r,t) = R_{n,l}(r) Y_{l}^m(\theta, \phi) \exp(-i E_n t/\hbar).
+\end{equation*}
+
+Dabei ist $R$ ein Radius-abhängiger Teil und die Exponentialfunktion die Lösung der Zeitabhängigkeit. 
+Die Kugelflächenfunktion ist die gleiche wie für den Kugelresonator. Daher die Analogie.
+
 \subsection{Wasserstoffmolekül}
 \label{sec:Wasserstoffmolekül}
 
-Mit einem zweiten Kugelresonator wird ein Wasserstoffmolekül simuliert. 
-Die beiden Kugeln können über verschiedene Blenden zusammengesetzt werden um verschieden starke Kopplungen zwischen den beiden Atomen zu simulieren. 
-Die Orbitale von Molekülen werden mit griechischen Buchstaben abgekürzt. Der $1\sigma$ Zustand setzt sich aus zwei $1s$ Zuständen mit positivem Vorzeichen zusammen. 
+Mit einem zweiten Kugelresonator wird ein Wasserstoffmolekül mit einem Elektron simuliert. 
+Die beiden Kugeln können über verschiedene Blenden zusammengesetzt werden, um verschieden starke Kopplungen zwischen den beiden Atomen zu simulieren. 
+Die Orbitale von den Molekülen werden mit griechischen Buchstaben abgekürzt. Der $1\sigma$ Zustand setzt sich aus zwei $1s$ Zuständen mit positivem Vorzeichen zusammen. 
 
-Durch Verwenden zweier gekoppelter Kugelresonatoren kann der Grundzustand $1\sigma$ zwar nicht sichtbar gemacht werden, da dafür die Resonanzfrequenz \SI{0}{\hertz} gemessen werden müsste, aber der anti-bindende Zustand bei verschiedenen Vorzeichen, kann gemessen werden in dem Resonator. 
+Durch Verwenden zweier gekoppelter Kugelresonatoren kann der Grundzustand $1\sigma$ zwar nicht sichtbar gemacht werden, da dafür die Resonanzfrequenz \SI{0}{\hertz} gemessen werden müsste, aber der anti-bindende Zustand bei verschiedenen Vorzeichen, kann in dem Resonator gemessen werden. DIe Anti-bindenden Zustände werden als $\sigma^*$ dargestellt. 
 
-\subsection{Festkörper}
-\label{sec:Festkörper}
-Der Festkörper wird durch einen Rohrresonator simuliert. In dem Resonator werden stehende Wellen für die Bedingung 
-\begin{equation*}
-    L = n \frac{\lambda}{2} = n \frac{c}{2f}
-\end{equation*}
-erzeugt. 
+Das anti-bindende Niveau $\sigma^*$ liegt energetisch höher als die $1s$ Zustände, das $\sigma$ Niveau energetisch niedriger. 
 
-Diese Bedingung folgt aus der Definition der Druckverteilung in dem Rohr. Diese kann mathematisch mithilfe der Helmholtz-Gleichung beschrieben werden als 
-\begin{equation*}
-    \frac{\partial^2}{\partial t^2} P(x,t) = \frac{1}{\rho\kappa}\frac{\partial^2}{\partial x^2} P(x,t)
-\end{equation*}
-mit der Dichte $\rho$ und der Kompressibilität $\kappa$. 
 
-Analog beschreibt diese Resonanz ein Teilchen, das in einem Kasten eingesperrt ist. 
-Die Wellenfunktion dieses Teilchens ist die Schrödingergleichung mit 
-\begin{equation*}
-    i \hbar \frac{\partial}{\partial t} \Psi(x,t) = \left(- \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} + V(x)\right) \Psi(x,t).
-\end{equation*}
-Dabei ist $m$ die Teilchenmasse, $V(x)$ ein Potential. 
 
-In einem Potentialtopf ($V(0 < x < L) = 0, V(x \leq 0, x \geq L) \to \infty$) der Länge $L$ wird die zeitunabhängige Schrödingergleichung zu 
-\begin{equation*}
-    E \psi(x) = - \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \psi(x).
-\end{equation*}
 
-Diese Gleichung kann durch eine ebene Welle gelöst werden. Damit ergibt sich dann aus der Randbedingung erneut
-\begin{equation*}
-    L = n \frac{\lambda}{2} = n \frac{c}{2f}.
-\end{equation*}
-
-Mit Blenden entspricht das System dem eines gekoppelten Pendels.
-Wie beim gekoppelten Pendel bekommt man für jedes zusätzliche Rohrsegment eine zusätzliche resonante Frequenz. 
-Die eine Resonanz ist dann an der gleichen Stelle, bei den Pendeln wäre dies der Fall des gleich Schwingens, die andere Resonanz ist dann der gegenschwingende Fall. 
-Bei einem dritten Pendel gibt es dann noch zusätzlich den Fall, dass zwei gleich Schwingen und eines der Pendel entgegengesetzt.
-Für unendlich viele Rohrsegmente spricht man dann von einem Band. Der Nachteil mit dem Rohr ist, dass Oberschwingungen nicht abgebildet werden können und das Gleich-Schwingen nicht beobachtet werden kann. 
-
-Wenn die Gesamtlänge des Rohrresonators $L$ ist, ist die Länge eines Segments $L_S = \frac{1}{2} L$. 
-Bei 
-
-Die Analogie besteht darin, dass die Kopplung der Segmente mittels der Blenden einem Potential entspricht und somit auch Eigenschaften wie die Bandstrukturen beschrieben werden können. 
 
 
 
