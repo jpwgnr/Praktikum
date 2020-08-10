@@ -273,16 +273,19 @@ ax1.legend()
 plt.savefig("plots/C_1.pdf")
 
 def legend0(phi, a):
-    return np.abs(a* np.cos(phi)**0)
+    return np.abs(a* np.cos(phi)**0) #P^0_0
 
 def legend1(phi, a):
-    return np.abs(a* np.cos(phi))
+    return np.abs(a* np.cos(phi)) #P^0_1
 
 def legend2(phi, a):
-    return np.abs(a* 0.5*(3*np.cos(phi)**2 -1))
+    return np.abs(a* 0.5*(3*np.cos(phi)**2 -1)) #P^0_2
 
 def legend3(phi, a):
-    return np.abs(a* 0.5*(5*np.cos(phi)**3 -3*np.cos(phi)))
+    return np.abs(a* 0.5*(5*np.cos(phi)**3 -3*np.cos(phi))) #P^0_3
+
+def legend4(phi, a):
+    return np.abs(a* 1/8 *(35*np.cos(phi)**4 -30*np.cos(phi)**2 +3)) #P^0_4
 
 phi = np.linspace(0, 2*np.pi, 1000)
 
@@ -304,7 +307,7 @@ print(a1)
 #Polarplot 3,7kHz
 ax2 =fig_10.add_subplot(222, projection='polar')
 ax2.plot(theta_2, amp_2, 'x', mew=3, markersize=16, label="Messwerte")
-ax2.plot(phi, legend1(phi, *param1),linewidth=4, label="Ausgleichskurve")
+ax2.plot(phi, legend2(phi, *param1),linewidth=4, label="Ausgleichskurve")
 ax2.legend()
 
 
@@ -315,7 +318,7 @@ print(a2)
 #Polarplot 5 kHz
 ax3 =fig_10.add_subplot(223, projection='polar')
 ax3.plot(theta_4, amp_4, 'x', mew=3, markersize=16, label="Messwerte")
-ax3.plot(phi, legend2(phi, *param2),linewidth=4, label="Ausgleichskurve")
+ax3.plot(phi, legend3(phi, *param2),linewidth=4, label="Ausgleichskurve")
 ax3.legend()
 
 param3, cov3 = curve_fit(legend3, theta_3[8:], amp_3[8:])
@@ -325,7 +328,7 @@ print(a3)
 #Polarplot 7,4kHz
 ax4 =fig_10.add_subplot(224, projection='polar')
 ax4.plot(theta_3, amp_3, 'x', mew=3, markersize=16, label="Messwerte")
-ax4.plot(phi, legend3(phi, *param3),linewidth=4, label="Ausgleichskurve")
+ax4.plot(phi, legend4(phi, *param3),linewidth=4, label="Ausgleichskurve")
 ax4.legend()
 plt.savefig("plots/C_polar1.pdf")
 
