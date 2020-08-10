@@ -120,6 +120,15 @@ params, cov = curve_fit(func, invers_laenge, delta_f)
 err = np.sqrt(np.diag(cov))
 c = ufloat(params[0], err[0])
 print(c)
+
+#Winkel umrechnen
+theta_1 = np.arccos(0.5* np.cos(np.deg2rad(phi_1)) -0.5)
+theta_2 = np.arccos(0.5* np.cos(np.deg2rad(phi_2)) -0.5)
+theta_3 = np.arccos(0.5* np.cos(np.deg2rad(phi_3)) -0.5)
+theta_4 = np.arccos(0.5* np.cos(np.deg2rad(phi_4)) -0.5)
+theta_5 = np.arccos(0.5* np.cos(np.deg2rad(phi_5)) -0.5)
+theta_6 = np.arccos(0.5* np.cos(np.deg2rad(phi_6)) -0.5)
+
 # Plots erstellen
 
 new_laenge = np.linspace(min(invers_laenge)-0.5, max(invers_laenge)+0.5)
@@ -277,45 +286,45 @@ def legend3(phi, a):
 
 phi = np.linspace(0, 2*np.pi, 1000)
 
-param0, cov0 = curve_fit(legend0, np.deg2rad(phi_1[8:]), amp_1[8:])
+param0, cov0 = curve_fit(legend0, theta_1[8:], amp_1[8:])
 err0 = np.sqrt(np.diag(cov0))
 a0 = ufloat(param0[0], err0[0])
 print(a0)
 #Polarplot 2,3kHz
 fig_10 = plt.figure(figsize=(25,25))
 ax1 =fig_10.add_subplot(221, projection='polar')
-ax1.plot(np.deg2rad(phi_1), amp_1, 'x', mew=3, markersize=16, label="Messwerte")
+ax1.plot(theta_1, amp_1, 'x', mew=3, markersize=16, label="Messwerte")
 ax1.plot(phi, legend0(phi, *param0),linewidth=4, label="Ausgleichskurve")
 ax1.legend()
 
-param1, cov1 = curve_fit(legend1, np.deg2rad(phi_2[8:]), amp_2[8:])
+param1, cov1 = curve_fit(legend1, theta_2[8:], amp_2[8:])
 err1 = np.sqrt(np.diag(cov1))
 a1 = ufloat(param1[0], err1[0])
 print(a1)
 #Polarplot 3,7kHz
 ax2 =fig_10.add_subplot(222, projection='polar')
-ax2.plot(np.deg2rad(phi_2), amp_2, 'x', mew=3, markersize=16, label="Messwerte")
+ax2.plot(theta_2, amp_2, 'x', mew=3, markersize=16, label="Messwerte")
 ax2.plot(phi, legend1(phi, *param1),linewidth=4, label="Ausgleichskurve")
 ax2.legend()
 
 
-param2, cov2 = curve_fit(legend2, np.deg2rad(phi_4[8:]), amp_4[8:])
+param2, cov2 = curve_fit(legend2, theta_4[8:], amp_4[8:])
 err2 = np.sqrt(np.diag(cov2))
 a2 = ufloat(param2[0], err2[0])
 print(a2)
 #Polarplot 5 kHz
 ax3 =fig_10.add_subplot(223, projection='polar')
-ax3.plot(np.deg2rad(phi_4), amp_4, 'x', mew=3, markersize=16, label="Messwerte")
+ax3.plot(theta_4, amp_4, 'x', mew=3, markersize=16, label="Messwerte")
 ax3.plot(phi, legend2(phi, *param2),linewidth=4, label="Ausgleichskurve")
 ax3.legend()
 
-param3, cov3 = curve_fit(legend3, np.deg2rad(phi_3[8:]), amp_3[8:])
+param3, cov3 = curve_fit(legend3, theta_3[8:], amp_3[8:])
 err3 = np.sqrt(np.diag(cov3))
 a3 = ufloat(param3[0], err3[0])
 print(a3)
 #Polarplot 7,4kHz
 ax4 =fig_10.add_subplot(224, projection='polar')
-ax4.plot(np.deg2rad(phi_3), amp_3, 'x', mew=3, markersize=16, label="Messwerte")
+ax4.plot(theta_3, amp_3, 'x', mew=3, markersize=16, label="Messwerte")
 ax4.plot(phi, legend3(phi, *param3),linewidth=4, label="Ausgleichskurve")
 ax4.legend()
 plt.savefig("plots/C_polar1.pdf")
@@ -354,23 +363,23 @@ plt.savefig("plots/C_Aufspaltung.pdf")
 def legend5(phi, a):
     return np.abs(a*(1-np.cos(phi)**2)**(0.5) )
 
-param5, cov5 = curve_fit(legend1, np.deg2rad(phi_5), amp_5)
+param5, cov5 = curve_fit(legend1, theta_5, amp_5)
 err5 = np.sqrt(np.diag(cov5))
 a5 = ufloat(param5[0], err5[0])
 print(a5)
 
-param5_1, cov5_1 = curve_fit(legend0, np.deg2rad(phi_5), amp_5_1)
+param5_1, cov5_1 = curve_fit(legend0, theta_5, amp_5_1)
 err5_1 = np.sqrt(np.diag(cov5_1))
 a5_1 = ufloat(param5_1[0], err5_1[0])
 print(a5_1)
 
 fig_16 = plt.figure(figsize=(25,12.5))
 ax1 =fig_16.add_subplot(121, projection='polar')
-ax1.plot(np.deg2rad(phi_5), amp_5_1, 'x', mew=3, markersize=16, label="Messwerte")
+ax1.plot(theta_5, amp_5_1, 'x', mew=3, markersize=16, label="Messwerte")
 ax1.plot(phi, legend0(phi, *param5_1),linewidth=4, label="Ausgleichskurve")
 ax1.legend()
 ax2 =fig_16.add_subplot(122, projection='polar')
-ax2.plot(np.deg2rad(phi_5), amp_5, 'x', mew=3, markersize=16, label="Messwerte")
+ax2.plot(theta_5, amp_5, 'x', mew=3, markersize=16, label="Messwerte")
 ax2.plot(phi, legend1(phi, *param5),linewidth=4, label="Ausgleichskurve")
 ax2.legend()
 plt.savefig("plots/C_polar5.pdf")
@@ -417,7 +426,7 @@ plt.savefig("plots/D_2.pdf")
 #Polarplot 2,3kHz & Blende
 fig_19 = plt.figure(figsize=(15,15))
 fig_19.add_subplot(111, projection='polar')
-plt.polar(np.deg2rad(phi_6), amp_6, 'x', mew=3, markersize=16, label="Messwerte")
+plt.polar(theta_6, amp_6, 'x', mew=3, markersize=16, label="Messwerte")
 plt.legend()
 plt.savefig("plots/D_3.pdf")
 

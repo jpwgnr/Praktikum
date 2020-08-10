@@ -5,7 +5,7 @@ In diesem Versuch werden verschiedene akustische Resonatoren genutzt, um Analogi
 
 \subsection{Resonanzsystem}
 
-Beide Resonanzsysteme, ein Kugelresonator für das Verhalten eines Wasserstoffatoms in Kapitel \ref{sec:Wasserstoff} und eines Wasserstoffmoleküls in Kapitel \ref{sec:Wasserstoffmolekül}  und ein Rohrresonator für die Simulation eines 1D-Festkörpersystems in Kapitel \ref{sec:Festkörper}, funktionieren mit einem Lautsprecher und einem Mikrofon. Diese erzeugen nicht konstante Frequenzen auch für den Fall, dass kein Resonator vorliegt.
+Beide Resonanzsysteme, ein Kugelresonator für das Verhalten eines Wasserstoffatoms in Kapitel \ref{sec:Wasserstoff} und eines Wasserstoffmoleküls in Kapitel \ref{sec:Wasserstoffmolekül}  und ein Rohrresonator für die Simulation eines 1D-Festkörpersystems in Kapitel \ref{sec:Festkörper}, funktionieren mit einem Lautsprecher und einem Mikrofon. Diese erzeugen frequenzabhängige Ausgangssignale auch für den Fall, dass kein Resonator vorliegt.
 Dieses Verhalten kann über die sogenannte Transferfunktion erklärt werden, die durch die Eigenschaften des Lautsprechers und Mikrofons gegeben ist. 
 
 \subsection{Festkörper}
@@ -80,7 +80,9 @@ sind \cite{QM1}.
 
 Bei Kugelsymmetrie ist die Energie bezüglich $m$ entartet. 
 Erst durch Aufheben der Symmetrie wird die Entartung aufgehoben.  
-Das bedeutet, dass sie in dem Spektrum dann nicht mehr bei der gleichen Frequenz zu sehen sind. Da sich $\pm m$ aber nur in der Phase unterscheiden, bleiben die beiden entartet und $l+1$ Peaks sind zu sehen. 
+Das bedeutet, dass sie in dem Spektrum dann nicht mehr bei der gleichen Frequenz zu sehen sind. Da sich $\pm m$ aber nur in der Phase unterscheiden, bleiben die beiden entartet und $l+1$ Peaks sind zu sehen statt $2l+1$ Peaks.
+%Verbesserung ??? weiß nicht ganz was er da will
+Die Aufspaltung entspricht der Aufspaltung in einem externen Magnetfeld. Dieser Effekt heißt Zeeman-Effekt.
 Ein imaginärer Druck ist physikalisch nicht sinnvoll und kann im Experiment nicht gemessen werden. Die gemessenen Ergebnisse sind also für alle $m$ proportional zu $\cos(m\phi)$. 
 
 Das Wasserstoffatom wird dargestellt als Wechselwirkung zwischen einem Proton mit der Ladung $+e$ und einem Elektron auf der Hüllenbahn mit einer Ladung $-e$. Beide wechselwirken über das Coulombpotential. Wenn die Kugelsymmetrie dieses Problems ausgenutzt wird, ergibt sich als Lösung der Schrödingergleichung die Funktion 
@@ -100,7 +102,10 @@ Die Orbitale von den Molekülen werden mit griechischen Buchstaben abgekürzt. D
 
 Durch Verwenden zweier gekoppelter Kugelresonatoren kann der Grundzustand $1\sigma$ zwar nicht sichtbar gemacht werden, da dafür die Resonanzfrequenz \SI{0}{\hertz} gemessen werden müsste, aber der anti-bindende Zustand bei verschiedenen Vorzeichen kann in dem Resonator gemessen werden. Die anti-bindenden Zustände werden als $\sigma^*$ dargestellt. 
 
-Das anti-bindende Niveau $\sigma^*$ liegt energetisch höher als die $1s$ Zustände, das $\sigma$-Niveau energetisch niedriger. \cite{QM2}
+Das anti-bindende Niveau $1\sigma^*$ liegt energetisch höher als die $1s$ Zustände, das $1\sigma$-Niveau energetisch niedriger. \cite{QM2}
+
+%Verbesserung:
+Im Versuch werden der $2\sigma$- bzw. der $1\pi$-Zustand vermessen. Der $1\pi$-Zustand setzt sich analog zum $1\sigma$-Zustand aus zwei $\num{2}$p-Zuständen mit $l= \num{1}$ und $m= \num{1}$ zusammen. Der $2\sigma$-Zustand setzt sich aus zwei $\num{2}$p-Zuständen mit $l=\num{1}$ und $m=\num{0}$ zusammen. Diese Zustände liegen energetisch höher als der $1\sigma$-Zustand. \cite{QM2}
 
 
 
