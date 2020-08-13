@@ -466,7 +466,7 @@ ax1.legend()
 plt.savefig("plots/D_phase.pdf")
 
 #save solution
-#file = open("plots/solution.txt", "w")
-#file.write("Hallo")
+#file = open("werte_molekuel.txt", "w")
+#file.write(f"Phi = {phi_6} \n \n Amp_6 = {amp_6} \n \n Amp_6b = {amp_6b} \n \n Amp_6c ={amp_6c} ")
 #file.close()
 

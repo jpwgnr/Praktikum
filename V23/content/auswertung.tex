@@ -80,7 +80,7 @@ Die Veränderung ist in der linken Spalte von Abb. \ref{fig:var4} zu sehen.
 Eine Kette aus 10 Zylindern wurde abwechselnd aus \SI{50}{\milli\meter} und \SI{75}{\milli\meter} Zylindern mit \SI{16}{\milli\meter} Blenden zusammengesetzt.
 Das Ergebnis ist als Vergleich zu einem einzelnen Zylinder der Länge \SI{50}{\milli\metre} und \SI{75}{\milli\metre} in der rechten Spalte von Abb. \ref{fig:var4} zu sehen. In der Analogie der Pendel entspricht dieser Fall einem Pendel mit alternierenden Massen der Segmente.
 %Verbesserung:
-Man kann die Bänder den einzelnen Resonanzen zuordnen. %warum?? Weil, ... 
+Man kann die Bänder den einzelnen Resonanzen zuordnen, weil die Resonatoren sich in bestimmten Schwingungen genau so verhalten, als wären die Segmente der jeweils anderen Größe dazwischen gar nicht da. Deshalb befinden sich die Bänder dann an der gleichen Stelle. Wenn mehr der anderen Segmente mitschwingen, entsteht das ganze Band.
  
 \begin{figure}
     \centering
@@ -300,12 +300,60 @@ In Abb. \ref{fig:resonanzen} ist die Resonanzfrequenz in Abhängigkeit vom Blend
     \label{fig:resonanzen}
 \end{figure}
 
-Das Frequenzspektrum mit einer Blende mit Durchmesser von \SI{16}{\milli\metre} wurde für verschiedene Winkel aufgenommen. Die Winkelverteilung der Amplitude ist in Abb. \ref{fig:polar_molekuel} als Polarplot dargestellt. 
+Das Frequenzspektrum mit einer Blende mit Durchmesser von \SI{16}{\milli\metre} wurde für verschiedene Winkel aufgenommen. Die Werte der Amplituden der Resonanzen bei dem jeweiligem Winkel stehen in Tab. \ref{tab:winkel2}. Die Winkelverteilung der Amplitude ist in Abb. \ref{fig:polar_molekuel} als Polarplot dargestellt. 
+
+\begin{table}\caption{Die Amplituden der jeweiligen Peaks bei verschiedenen Winkeln $\phi$.}
+    \label{tab:winkel2}
+    \centering
+    \sisetup{round-mode = places, round-integer-to-decimal=true}
+    \begin{tabular}{S[round-precision=1] S[] S[] S[]} 
+    \toprule
+    {$\phi / \si{\degree}$} & {\SI{2.3}{\kilo\hertz}} & {\SI{2.307}{\kilo\hertz}} & {\SI{2.409}{\kilo\hertz}} \\
+\midrule
+0 & 10.969 & 7.359 & 9.032 \\
+5 & 10.518 & 7.088 & 8.99 \\
+10 & 10.648 & 7.285 & 9.058 \\
+15 & 10.385 & 6.917 & 9.018 \\
+20 & 10.546 & 7.092 & 9.026 \\
+25 & 10.59 & 6.973 & 9.024 \\
+30 & 10.517 & 7.168 & 8.995 \\
+35 & 10.412 & 6.895 & 8.917 \\
+40 & 10.608 & 6.768 & 9.02 \\
+45 & 10.618 & 6.647 & 8.991 \\
+50 & 10.423 & 5.987 & 8.997 \\
+55 & 10.487 & 6.171 & 8.987 \\
+60 & 10.51 & 5.403 & 8.992 \\
+65 & 11.34 & 5.742 & 8.978 \\
+70 & 10.374 & 5.07 & 9.009 \\
+75 & 10.584 & 5.197 & 9.055 \\
+80 & 10.514 & 5.311 & 9.005 \\
+85 & 10.497 & 5.67 & 8.975 \\
+90 & 10.76 & 5.511 & 8.97 \\
+95 & 10.965 & 5.663 & 8.937 \\
+100 & 10.63 & 5.891 & 9.044 \\
+105 & 11.005 & 5.818 & 8.982 \\
+110 & 10.735 & 6.052 & 9.06 \\
+115 & 10.355 & 6.333 & 9.038 \\
+120 & 10.522 & 6.3 & 8.994 \\
+125 & 11.347 & 5.712 & 8.958 \\
+130 & 11.37 & 5.893 & 8.97 \\
+135 & 11.448 & 6.033 & 8.949 \\
+140 & 10.102 & 7.361 & 8.935 \\
+145 & 10.5 & 7.051 & 8.881 \\
+150 & 11.599 & 6.183 & 8.916 \\
+155 & 11.566 & 6.552 & 8.906 \\
+160 & 11.671 & 6.155 & 8.926 \\
+165 & 9.883 & 8.028 & 8.982 \\
+170 & 11.447 & 6.481 & 8.904 \\
+175 & 11.491 & 6.514 & 8.932 \\
+180 & 11.284 & 6.907 & 8.914 \\
+\bottomrule
+\end{tabular}\end{table}
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{plots/D_3.pdf}
-    \caption{Die Winkelverteilung der Amplitude bei der Resonanzfrequenz von \SI{2.3}{\kilo\hertz} mit einer Blende von \SI{16}{\milli\metre}. Der Winkel $\phi$ wurde vermessen.}
+    \caption{Die Winkelverteilung der Amplitude bei der Resonanzfrequenz von \SI{2.3}{\kilo\hertz} mit einer Blende von \SI{16}{\milli\metre}. Rechts daneben ist die Winkelverteilung der Amplitude bei \SI{2.307}{\kilo\hertz} zu sehen, unten die bei \SI{2.409}{\kilo\hertz}. Der Winkel $\phi$ wurde vermessen. Bei der Amplitude bei der Resonanzfrequenz von \SI{2.307}{\kilo\hertz} ist jeweils die Amplitude bei \SI{90}{\degree} abgezogen worden.}
     \label{fig:polar_molekuel}
 \end{figure}
 
